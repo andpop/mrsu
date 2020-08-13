@@ -1,0 +1,4 @@
+https://api.github.com/users/andpop-mrsu/repos
+token=14114e26612df5133c39331f9cbdd45b7048c398
+curl -i -u andpop-mrsu:14114e26612df5133c39331f9cbdd45b7048c398 https://api.github.com/users/andpop-mrsu
+url -i -u andpop-mrsu:$token https://api.github.com/user/repos -d '{"name":"test","private":false}'
