@@ -4,7 +4,7 @@ BASE_DIR="/home/andrey/labs_mrsu"
 REPS_FILE="reps.txt"
 # TEACHER_PROFILE="https://github.com/andpop-mrsu"
 # Привязку к удаленному репозиторию делаем по SSH, а не по HTTPS
-TEACHER_PROFILE="git@github.com:andpop-mrsu"
+TEACHER_PROFILE="git@github.com-mrsu:andpop-mrsu"
 TEACHER_EMAIL="andrvpopov@gmail.com"
 
 for rep in $(cat $REPS_FILE) ; do
@@ -17,6 +17,6 @@ for rep in $(cat $REPS_FILE) ; do
     git init
     git config user.email $TEACHER_EMAIL
     git remote add teacher "${TEACHER_PROFILE}/${rep}.git"
-    # git fetch teacher
-    # git checkout --track teacher/master
+    git fetch teacher
+    git checkout --track teacher/master
 done
