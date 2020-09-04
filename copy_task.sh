@@ -14,6 +14,8 @@ task_number=$1
 for option in `seq 1 5`; do
     echo "Вариант $option"
     for student in $(cat "${pwd}/option_${option}.txt"); do
+        echo "----------------------------------------------------------------------------------"
+        echo $student
         student_dir="${BASE_DIR}/402_${student}"
 
         cp "${pwd}/tasks/README.md" "${student_dir}/"
