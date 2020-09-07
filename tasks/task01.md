@@ -39,3 +39,7 @@ andrey    | 2020.09.03 16:54
 * Сделать Pull Request для добавления ветки Task01 из репозитория в вашем профиле в https://github.com/andpop-mrsu.
 * Задание будет считаться принятым после закрытия Pull Request в https://github.com/andpop-mrsu.
 * После принятия задания преподавателем синхронизировать с оригинальным свой локальный репозиторий (`git pull upstream master`), потом репозиторий в своем профиле GitHub (`git push origin master`).
+
+* * *
+#### Полезные ссылки
+* <https://youtu.be/pUT3mx1ZRUМ> "Pull request в опенсорс" от Hexlet. Инструкция по работе с Pull Request для добавления своего кода в open-source проекты (наша процедура отчетности организована точно по такой же схеме).   
