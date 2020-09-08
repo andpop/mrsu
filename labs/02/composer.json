@@ -1,0 +1,10 @@
+{
+    "name": "andrey/02",
+    "authors": [
+        {
+            "name": "Andrey Popov",
+            "email": "andpop@mail.ru"
+        }
+    ],
+    "require": {}
+}
