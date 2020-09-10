@@ -6,5 +6,11 @@
             "email": "andpop@mail.ru"
         }
     ],
+    "autoload": {
+        "files": [
+            "src/Controller.php",
+            "src/View.php"
+        ]
+    },
     "require": {}
 }
