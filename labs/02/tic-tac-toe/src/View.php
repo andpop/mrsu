@@ -1,8 +1,8 @@
 <?php
 namespace Andpop\tictactoe\View;
 
-function show()
+function showGreeting()
 {
-    echo "Start from View";
+    echo "This is the first screen of game." . PHP_EOL;
 }
 

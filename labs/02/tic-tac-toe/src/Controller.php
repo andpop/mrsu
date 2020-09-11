@@ -1,11 +1,11 @@
 <?php
 namespace Andpop\tictactoe\Controller;
 
-use function Andpop\tictactoe\View\show;
+use function Andpop\tictactoe\View\showGreeting;
 
 function startGame()
 {
-    echo "Start!!!!";
-    show();
+    /* Init params etc. */
+    showGreeting();
 }
 
