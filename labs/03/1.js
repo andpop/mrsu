@@ -1,18 +1,6 @@
-var glob = 1;
-function outer() {
-    var a = glob;
+console.log(a);
 
-    const inner = function() {
-        return a;
-    }
-
-    // a = 2;
-
-    return inner;
+if (false) {
+    let a = 1;
 }
 
-var f = outer();
-
-glob = 2; 
-
-console.log(f());
