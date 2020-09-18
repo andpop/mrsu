@@ -199,7 +199,7 @@ echo $a . PHP_EOL;   // 2
 * https://github.com/phpfunct/funct
 * https://github.com/maciejczyzewski/bottomline
 * Поиск на Packagist
-* https://github.com/ziadoz/awesome-php
+* Список в репозитории https://github.com/ziadoz/awesome-php
 
 #### Какие существуют общепринятые требования к оформлению кода?
 Программирование - это раздел не технических наук, а лингвистики.
