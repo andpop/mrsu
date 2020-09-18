@@ -19,11 +19,11 @@ for option in `seq 1 5`; do
         student_dir="${BASE_DIR}/402_${student}"
 
         cp "${pwd}/tasks/README.md" "${student_dir}/"
-        cp "${pwd}/tasks/task0${task_number}.md" "${student_dir}/"
+        # cp "${pwd}/tasks/task0${task_number}.md" "${student_dir}/"
 
-        if [ -f "${pwd}/tasks/specification_0${task_number}_0${option}.md" ]; then
-            cp "${pwd}/tasks/specification_0${task_number}_0${option}.md" "${student_dir}/"
-        fi
+        # if [ -f "${pwd}/tasks/specification_0${task_number}_0${option}.md" ]; then
+        #     cp "${pwd}/tasks/specification_0${task_number}_0${option}.md" "${student_dir}/"
+        # fi
 
 
         cd "${student_dir}"
