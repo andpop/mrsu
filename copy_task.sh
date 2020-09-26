@@ -27,7 +27,8 @@ for option in `seq 1 5`; do
 
 
         cd "${student_dir}"
-        git pull teacher
+        git fetch teacher
+        git merge -m "Merging from teacher repo"
         git add -A
         git commit -m "Change task ${task_number}"
         git push teacher master
