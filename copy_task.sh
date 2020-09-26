@@ -29,7 +29,7 @@ for option in `seq 1 5`; do
         cd "${student_dir}"
         git pull teacher
         git add -A
-        git commit -m "Add task ${task_number}"
+        git commit -m "Change task ${task_number}"
         git push teacher master
         cd "${pwd}"
     done
