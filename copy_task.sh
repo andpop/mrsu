@@ -18,6 +18,10 @@ for option in `seq 1 5`; do
         echo $student
         student_dir="${BASE_DIR}/402_${student}"
 
+        cd "${student_dir}"
+        git fetch teacher
+        git merge -m "Merging from teacher repo"
+
         cp "${pwd}/tasks/README.md" "${student_dir}/"
         cp "${pwd}/tasks/task0${task_number}.md" "${student_dir}/"
 
@@ -26,9 +30,6 @@ for option in `seq 1 5`; do
         fi
 
 
-        cd "${student_dir}"
-        git fetch teacher
-        git merge -m "Merging from teacher repo"
         git add -A
         git commit -m "Change task ${task_number}"
         git push teacher master
