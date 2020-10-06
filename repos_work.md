@@ -9,7 +9,6 @@ git checkout master
 git remote add student https://github.com/andpop/402_test.git
 git fetch student
 git merge student/Task01
-git push teacher master
 ```
 * Проверяем все в локальном репозитории. После проверки выгружаем все в master в свой репозиторий andpop-mrsu/402_test.
 ```sh
