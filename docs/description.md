@@ -32,6 +32,7 @@ for repo in $(cat reps.txt) ; do
     curl -i -u andpop-mrsu:$token https://api.github.com/user/repos -d "{\"name\":\"$repo\",\"private\":false}"
 done
 ```
+
 * Заводится каталог (~/labs_mrsu) для локальных репозиториев студентов. В этом каталоге скриптом make_dirs.sh для каждого студента создаются Git-репозитории, которые под алиасом teacher связываются с репозиториями в GitHub-профиле преподавателя.
 
 ```
@@ -58,6 +59,7 @@ for rep in $(cat $REPS_FILE) ; do
     git checkout --track teacher/master
 done
 ```
+
 * Если нужно, студенты распределяются по вариантам, ФИО заносятся в файлы option_1.txt, option_2.txt, option_3.txt, ...
 
 ## Добавление заданий в репозитории
