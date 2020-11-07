@@ -21,6 +21,7 @@
     // console.log(event);
     // elem.style.color = 'red';
 // };
+const getNodeIndex = element => [...element.parentNode.children].indexOf(element);
 
 let list = document.getElementById('list');
 list.onclick = (event) => {
@@ -28,7 +29,7 @@ list.onclick = (event) => {
     li.style.color = 'blue';
     // console.log(li);
     // console.dir(li);
-    console.log('Index = ', index(li));
+    console.log('Index = ', index(li), 'or', getNodeIndex(li));
 };
 
 function index(el) {
