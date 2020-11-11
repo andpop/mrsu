@@ -2,38 +2,46 @@ let db;
 
 let openRequest = indexedDB.open('test', 2);
 
+openRequest.onerror = function () {
+    console.log('open db request --- onerror');
+    console.log('Ошибка при открытии БД. Код ошибки: ', event.target.errorCode);
+    db = event.target.result;
+};
+
 openRequest.onsuccess = function (event) {
     console.log('open db --- onsuccess');
     db = event.target.result;
 
-    addPlay(db); 
-    addPlay(db); 
+    addGame(); 
+    addGame(); 
     addName(db);
     addName(db);
 };
 
-openRequest.onupgradeneeded = function () {
+openRequest.onupgradeneeded = function (event) {
     console.log('open db --- onupgradeneeded');
+
     db = event.target.result;
-    if (!db.objectStoreNames.contains('plays')) {
-        db.createObjectStore('plays', {keyPath: 'id', autoIncrement: true});
+    
+    if (!db.objectStoreNames.contains('games')) {
+        db.createObjectStore('games', {keyPath: 'id', autoIncrement: true});
     };
     if (!db.objectStoreNames.contains('names')) {
         db.createObjectStore('names', {autoIncrement: true});
     };
 };
 
-function addPlay(db) {
-    let transaction = db.transaction('plays', 'readwrite');
-    let plays = transaction.objectStore('plays');
+// ----------------------------------------------------------
+function addGame() {
+    let transaction = db.transaction('games', 'readwrite');
+    let games = transaction.objectStore('games');
 
-    let play = {
-        // id: 2,
+    let game = {
         name: 'Andrey',
-        result: 'lose'
+        result: 'loose'
     };
 
-    let request = plays.add(play);
+    let request = games.add(game);
 
     request.onsuccess = function () {
         console.log('Партия записана в БД');
@@ -63,6 +71,3 @@ function addName(db) {
         console.log('Ошибка при записи в БД', event.target.error);
     };
 };
-
-
-console.log(db);
