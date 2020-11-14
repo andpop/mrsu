@@ -15,17 +15,17 @@
         console.log('Hello!!!!');
     };
 
+    // ============================================
     const byeHandler = () => {
         console.log('Good Bye');
     };
 
-    // ============================================
-    bye.onclick = byeHandler; // window.bye
+    // bye.onclick = byeHandler; // window.bye
 
-    // let elem = document.getElementById('bye');
-    // elem.onclick = function () {
-    //     console.log('Good bye again');
-    // };
+    let elem = document.getElementById('bye');
+    elem.onclick = function () {
+        console.log('Good bye again');
+    };
 
     // ==============================================
     let noteElem = document.querySelector('#note');
