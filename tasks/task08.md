@@ -23,7 +23,11 @@ Frontend будет обмениваться с сервером данными 
 * Проверить работу приложения, открыв в браузере страницу http://localhost:3000/index.html или просто http://localhost:3000/.
 
 ### Создание backend-части приложения с помощью микрофреймворка Slim
-* В каталоге Task08 устанавливаем через Composer минимально необходимые пакеты для Slim: `composer require slim/slim slim/psr7 slim/http`. В результате должны создаться файлы Task08/composer.json, Task08/composer.lock и каталог Task08/vendor.
+* В каталоге Task08 устанавливаем через Composer минимально необходимые пакеты для Slim:
+```
+composer require slim/slim slim/psr7 slim/http
+``` 
+В результате должны создаться файлы Task08/composer.json, Task08/composer.lock и каталог Task08/vendor.
 * Создаем точку входа для Task08/public/index.php. Больше никаких PHP-файлов в Task08/backend/public быть не должно.
 * Задаем в index.php маршруты запросов и их обработчики. Пример:
 ```PHP
