@@ -37,18 +37,18 @@ $app = AppFactory::create();
 $app->addErrorMiddleware(true, true, true);
 
 $app->get('/', function ($request, $response) {
-    $response->write('Welcome to Slim!');
+    $response->write('Здесь должен открыться index.html');
     return $response;
 });
 
 
-$app->get('/users', function ($request, $response) {
-    $response->write('List users here');
+$app->get('/games', function ($request, $response) {
+    $response->write('Здесь должен вернуться JSON со всеми играми');
     return $response;
 });
 
-$app->post('/users', function ($request, $response) {
-    $response->write('New user');
+$app->post('/games', function ($request, $response) {
+    $response->write('Здесь должен приняться JSON с данными об одной игре и записаться в БД');
     return $response;
 });
 
@@ -57,7 +57,7 @@ $app->run();
 ```
 * В данной работе можно весь код разместить в одном файле index.php. Если же потребуется вынести код в отдельные файлы, то они должны размещаться в каталоге Task08/src и автоматически загружаться в index.php.
 * Приложение должно запускаться в браузере по адресам http://localhost:3000/index.html или просто http://localhost:3000, поэтому при получении GET-запроста на корневой адрес /, должна сработать переадресация на /index.html.
-
+* Базу данных разместить в каталоге Task08/db.
 
 ### Доработка документации проекта
 * В файле README.md должен быть описан процесс запуска приложения.
