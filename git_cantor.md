@@ -221,4 +221,63 @@ git reflog - это алиас для `git log --oneline -g`. Ключ -g пер
 
 ##           Просмотр
 ### 01. Сравнение коммитов, веток и не только: git diff
+`git diff commit_1 commit_2`
+
+Сравнение рабочего каталога с индексом
+`git diff`
+
+Сравнение рабочего каталога с коммитом
+`git diff HEAD`
+
+Эти команды игнорируют неотслеживаемые файлы
+
+Сравнение индекса с коммитом
+`git diff --cached`
+
+Можно указывать имена конкретных файлов для проверки
+`git diff index.html`
+
+Перед путями можно ставить --
+`git diff -- index.html`
+
+Просмотр информации перед коммитом
+`git diff -v`
+
+Если нужны только имена измененных файлов
+`git diff --name-only master feature`
+
+Сравнение отдельных файлов из разных коммитов
+`git diff commit1:path1 commit2:path2`
+
+Сравнение двух файлов на диске (независимо от Git-репозитория)
+`git diff --no-index path1 path2`
+
+### 02. Сравнение по словам, драйвер diff
+`git diff --word-diff`
+`git diff --word-diff=color` = `git diff --color-words`
+
+### 04. Вывод истории: git log, форматирование коммитов
+По умолчанию git log в обратном хронологическом порядке выводит информацию о коммитах, достижимых из HEAD.
+Формат по умолчанию:
+`git log --pretty=medium`
+
+Краткий формат
+`git log --pretty=oneline --abbrev-commit`
+`git log --oneline`
+
+История коммитов с описанием изменений
+`git log --patch` или `git log -p`
+
+### 05. Диапазоны коммитов для gil log и не только
+Вывод коммитов, достижимых из указанных веток, в псевдографике
+`git log master feature --graph`
+
+Коммиты, достижимые из feature и недостижимые из master
+`git log feature ^master`
+То же самое (коммиты ветки feature с момента отхождения от ветки master)
+`git log master..feature`
+`git log HEAD..feature`
+`git log ..feature`
+
+
 
