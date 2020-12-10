@@ -279,5 +279,33 @@ git reflog - это алиас для `git log --oneline -g`. Ключ -g пер
 `git log HEAD..feature`
 `git log ..feature`
 
+### 06. Вывод git log коммитов, меняющих определенный файл
+Вывод коммитов, в которых менялся файл index.html
+`git log index.html`
 
+Посмотреть конкретные различия в коммитах, т.е. как менялся файл в коммитах
+`git log -p index.html`
+
+
+
+##           Слияние
+### 01. Истинное слияние и разрешение конфликтов в git merge
+При слиянии master с feature произошел конфликт в файле index.html. Если нужно взять версию файла с master, то 
+`git checkout --ours index.html`
+Если нужно взять версию index.html из feature, то 
+`git checkout --theirs index.html`
+Вернуть версию, где указаны конфликутющие изменения
+`git checkout --merge index.html`
+
+Отказ от слияния (жесткий ресет)
+`git reset --hard`
+
+`git merge --abort`
+
+Получение конфликтного файла с дополнительной информацией о базовом состоянии файла (в общем коммите, до разделения веток)
+`git checkout --conflict=diff3 --merge index.html`
+Будет ours, theirs и base
+
+Продолжить слияние после исправления конфликтов
+`git merge --continue`
 
