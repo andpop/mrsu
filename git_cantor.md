@@ -125,7 +125,7 @@ git reflog - это алиас для `git log --oneline -g`. Ключ -g пер
 `git gc`
 
 Список всех недостижимых коммитов
-`git fsck --unreacheable`
+`git fsck --unreachable`
 
 Очистка всех reflog
 `git reflog expire --expire=now --all`
