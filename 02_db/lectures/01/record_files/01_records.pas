@@ -1,5 +1,5 @@
 program record_example;
-uses crt;
+uses crt, sysutils;
 type 
     TStudent = Record
         name: string[20];
@@ -13,13 +13,43 @@ var
     choice: char;
 
 procedure addRecord;
+var
+    student: TStudent;
 begin
-    writeln('Adding record');
+    clrscr;
+
+    write('Имя: ');
+    readln(student.name);
+    write('Фамилия: ');
+    readln(student.lastName);
+    write('Возраст: ');
+    readln(student.age);
+    
+    seek(f, fileSize(f));
+    write(f, student);
 end;
 
 procedure readRecord;
+var
+    student: TStudent;
+    n, countRecords: integer;
 begin
-    writeln('Reading record');
+    clrscr;
+    countRecords := fileSize(f);
+
+    write('Номер записи (1...' + intToStr(countRecords) + '): ');
+    repeat
+        readln(n);
+    until (n >= 1) and (n <= countRecords);
+
+    seek(f, n - 1);
+    read(f, student);
+    writeln('Запись: ', intToStr(n));
+    writeln('Имя: ', student.name);
+    writeln('Фамилия: ', student.lastName);
+    writeln('Возраст: ', student.age);
+
+    readln();
 end;
 
 procedure listRecords;
@@ -37,7 +67,33 @@ begin
     writeln('Deleting record');
 end;
 
+procedure openFile(fileName: string);
+var
+    code: integer;
 begin
+    assign(f, fileName);
+    {$I-}
+        reset(f);
+    {$I+}
+    code := IOResult;
+
+    if code <> 0 then
+    begin
+        {$I-}
+            rewrite(f);
+        {$I+}
+        code := IOResult;
+        if code <> 0 then
+        begin
+            writeln('Open file error');
+            halt;
+        end;
+    end;
+end;
+
+begin
+    openFile('students.dat');
+
     repeat
         // clrscr;
         writeln('(A)dd new record in file');
