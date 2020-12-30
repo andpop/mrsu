@@ -1,5 +1,7 @@
 program record_example;
+
 uses crt, sysutils;
+
 type 
     TStudent = Record
         name: string[20];
@@ -8,9 +10,22 @@ type
     end;
 
 var 
-    student, student2: TStudent;
     f: file of TStudent;
     choice: char;
+
+function getStudentData(): TStudent;
+var
+    student: TStudent;
+begin
+    write('Имя: ');
+    readln(student.name);
+    write('Фамилия: ');
+    readln(student.lastName);
+    write('Возраст: ');
+    readln(student.age);
+
+    getStudentData := student;
+end;
 
 function getRecordNumber(): integer;
 var n, countRecords: integer;
@@ -25,21 +40,21 @@ begin
     getRecordNumber := n;
 end;
 
+procedure saveRecord(n: integer; buffer: TStudent);
+begin
+    seek(f, n - 1);
+    write(f, buffer);
+end;
+
 procedure addRecord;
 var
     student: TStudent;
 begin
     clrscr;
 
-    write('Имя: ');
-    readln(student.name);
-    write('Фамилия: ');
-    readln(student.lastName);
-    write('Возраст: ');
-    readln(student.age);
+    student := getStudentData;
     
-    seek(f, fileSize(f));
-    write(f, student);
+    saveRecord(fileSize(f) + 1, student);
 end;
 
 procedure printRecord(n: integer; title: string);
@@ -57,7 +72,6 @@ end;
 
 procedure readRecord;
 var
-    student: TStudent;
     n: integer;
 begin
     clrscr;
@@ -67,33 +81,35 @@ begin
 
     writeln();
     writeln();
-    write('<Enter> - return to main menu');
+    write('<Enter> - вернуться в главное меню');
     readln();
 end;
 
 procedure listRecords;
 var
     student: TStudent;
-    countRecords: integer;
+    countRecords, recordNumber: integer;
 begin
     clrscr;
     
     countRecords := fileSize(f);
-    writeln('Count records: ', countRecords);
-    writeln('================================');
+    writeln('Всего записей: ', countRecords);
 
     seek(f, 0);
+    recordNumber := 0;
     while not eof(f) do
     begin
         read(f, student);
+        inc(recordNumber);
+
+        writeln('--------------------- ', recordNumber, ' --');
         writeln('Имя: ', student.name);
         writeln('Фамилия: ', student.lastName);
         writeln('Возраст: ', student.age);
-        writeln('------------------------------');
     end;
 
     writeln();
-    write('<Enter> - return to main menu');
+    write('<Enter> - вернуться в главное меню');
     readln();
 end;
 
@@ -106,16 +122,15 @@ begin
     n := getRecordNumber();
     clrscr;
     printRecord(n, 'Запись: ' + intToStr(n));
+    writeln('-------------------------------------');
 
-    writeln();
-    writeln();
-    write('<Enter> - return to main menu');
+    student := getStudentData;
+
+    saveRecord(n, student);
+    writeln('-------------------------------------');
+    writeln('Запись сохранена в файле');
+    write('<Enter> - вернуться в главное меню');
     readln();
-end;
-
-procedure deleteRecord;
-begin
-    writeln('Deleting record');
 end;
 
 procedure openFile(fileName: string);
@@ -142,65 +157,74 @@ begin
     end;
 end;
 
+procedure deleteRecord;
+var
+    buffer: TStudent;
+    tempFile: file of TStudent;
+    deleteRecordNumber, currentRecordNumber: integer;
+begin
+    clrscr;
+    deleteRecordNumber := getRecordNumber();
+    clrscr;
+
+    assign(tempFile, 'tmp.dat');
+    rewrite(tempFile);
+
+    seek(f, 0);
+    currentRecordNumber := 0;
+
+    while not eof(f) do
+    begin
+        read(f, buffer);
+        inc(currentRecordNumber);
+
+        if currentRecordNumber <> deleteRecordNumber then
+        begin
+            write(tempFile, buffer);
+        end;
+    end;
+
+    close(tempFile);
+    close(f);
+    erase(f);
+    rename(tempFile, 'students.dat');
+
+    openFile('students.dat');
+
+    writeln('Deleting record');
+end;
+
 begin
     openFile('students.dat');
 
     repeat
         clrscr;
-        writeln('(A)dd new record in file');
-        writeln('(R)ead the record from file');
-        writeln('(L)ist all records from file');
-        writeln('(U)pdate the record in file');
-        writeln('(D)elete the record from file');
+        writeln('1. Добавить запись в файл');
+        writeln('2. Отобразить одну запись');
+        writeln('3. Показать все записи');
+        writeln('4. Обновить запись');
+        writeln('5. Удалить запись');
         writeln('');
-        writeln('(Q)uit');
+        writeln('6. Выход');
 
         writeln('===============================');
         writeln();
-        write('Your choice: ');
+        write('Ваш выбор: ');
         readln(choice);
 
         choice := upcase(choice);
         case choice of 
-            'A': addRecord;
-            'R': readRecord;
-            'L': listRecords;
-            'U': updateRecord;
-            'D': deleteRecord;
+            '1': addRecord;
+            '2': readRecord;
+            '3': listRecords;
+            '4': updateRecord;
+            '5': deleteRecord;
         end;
 
-        writeln('=============================');
+        writeln('');
         writeln();
-    until (choice = 'Q');
+    until (choice = '6');
 
     halt;
 
-    student.name := 'Иван';
-    student.lastName := 'Петров';
-    student.age := 20;
-
-    with student2 do
-    begin
-        name := 'Анна';
-        lastName := 'Сидорова';
-        age := 19;
-    end;
-
-    writeln(student.name);
-    writeln(student2.name);
-
-    assign(f, 'students.dat');
-    // rewrite(f);
-    reset(f);
-    seek(f, fileSize(f));
-    write(f, student);
-    write(f, student2);
-    close(f);
-
-    // reset(f);
-    // seek(f, 0);
-    // read(f, student2);
-    // writeln(student2.name);
-    // writeln(student2.lastName);
-    // writeln(student2.age);
 end.
