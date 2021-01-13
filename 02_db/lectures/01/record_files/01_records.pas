@@ -13,7 +13,31 @@ var
     f: file of TStudent;
     choice: char;
 
-function getStudentData(): TStudent;
+procedure openFile(fileName: string);
+var
+    code: integer;
+begin
+    assign(f, fileName);
+    {$I-}
+        reset(f);
+    {$I+}
+    code := IOResult;
+
+    if code <> 0 then
+    begin
+        {$I-}
+            rewrite(f);
+        {$I+}
+        code := IOResult;
+        if code <> 0 then
+        begin
+            writeln('Open file error');
+            halt;
+        end;
+    end;
+end;
+
+function inputStudentData(): TStudent;
 var
     student: TStudent;
 begin
@@ -24,10 +48,10 @@ begin
     write('Возраст: ');
     readln(student.age);
 
-    getStudentData := student;
+    inputStudentData := student;
 end;
 
-function getRecordNumber(): integer;
+function inputRecordNumber(): integer;
 var n, countRecords: integer;
 begin
     countRecords := fileSize(f);
@@ -37,9 +61,19 @@ begin
         readln(n);
     until (n >= 1) and (n <= countRecords);
     
-    getRecordNumber := n;
+    inputRecordNumber := n;
 end;
 
+function inputLastName(): string;
+var lastName: string;
+begin
+    write('Фамилия: ');
+    readln(lastName);
+    
+    inputLastName := lastName;
+end;
+
+// ========================= CREATE =======================
 procedure saveRecord(n: integer; buffer: TStudent);
 begin
     seek(f, n - 1);
@@ -52,32 +86,65 @@ var
 begin
     clrscr;
 
-    student := getStudentData;
+    student := inputStudentData;
     
     saveRecord(fileSize(f) + 1, student);
 end;
 
-procedure printRecord(n: integer; title: string);
+
+
+// ========================= READ  =======================
+procedure readRecordByNumber;
 var
+    n: integer;
     student: TStudent;
 begin
+    clrscr;
+    n := inputRecordNumber();
+    clrscr;
+
     seek(f, n - 1);
     read(f, student);
-    writeln(title);
+    
+    writeln('Запись: ' + intToStr(n));
     writeln('Имя: ', student.name);
     writeln('Фамилия: ', student.lastName);
     writeln('Возраст: ', student.age);
 
+    writeln();
+    writeln();
+    write('<Enter> - вернуться в главное меню');
+    readln();
 end;
 
-procedure readRecord;
+procedure readRecordByLastname;
 var
-    n: integer;
+    lastName: string;
+    isFound: boolean;
+    student: TStudent;
 begin
     clrscr;
-    n := getRecordNumber();
+    lastName := inputLastName();
     clrscr;
-    printRecord(n, 'Запись: ' + intToStr(n));
+
+    seek(f, 0);
+    isFound := false;
+    while not eof(f) do
+    begin
+        read(f, student);
+        if (student.lastName = lastName) then
+        begin
+            isFound := true;
+            writeln('Имя: ', student.name);
+            writeln('Фамилия: ', student.lastName);
+            writeln('Возраст: ', student.age);
+        end;
+    end;
+
+    if (not isFound) then
+    begin
+        writeln('Фамилия ', lastName, ' в списке не найдена');
+    end;
 
     writeln();
     writeln();
@@ -113,18 +180,28 @@ begin
     readln();
 end;
 
-procedure updateRecord;
+
+// ========================= UPDATE  =======================
+procedure updateRecordByNumber;
 var
     student: TStudent;
     n: integer;
 begin
     clrscr;
-    n := getRecordNumber();
+    n := inputRecordNumber();
     clrscr;
-    printRecord(n, 'Запись: ' + intToStr(n));
+
+
+    seek(f, n - 1);
+    read(f, student);
+    
+    writeln('Запись: ' + intToStr(n));
+    writeln('Имя: ', student.name);
+    writeln('Фамилия: ', student.lastName);
+    writeln('Возраст: ', student.age);
     writeln('-------------------------------------');
 
-    student := getStudentData;
+    student := inputStudentData;
 
     saveRecord(n, student);
     writeln('-------------------------------------');
@@ -133,38 +210,16 @@ begin
     readln();
 end;
 
-procedure openFile(fileName: string);
-var
-    code: integer;
-begin
-    assign(f, fileName);
-    {$I-}
-        reset(f);
-    {$I+}
-    code := IOResult;
 
-    if code <> 0 then
-    begin
-        {$I-}
-            rewrite(f);
-        {$I+}
-        code := IOResult;
-        if code <> 0 then
-        begin
-            writeln('Open file error');
-            halt;
-        end;
-    end;
-end;
-
-procedure deleteRecord;
+// ========================= DELETE  =======================
+procedure deleteRecordByNumber;
 var
     buffer: TStudent;
     tempFile: file of TStudent;
     deleteRecordNumber, currentRecordNumber: integer;
 begin
     clrscr;
-    deleteRecordNumber := getRecordNumber();
+    deleteRecordNumber := inputRecordNumber();
     clrscr;
 
     assign(tempFile, 'tmp.dat');
@@ -194,18 +249,23 @@ begin
     writeln('Deleting record');
 end;
 
+// ========================= main program  =======================
 begin
     openFile('students.dat');
 
     repeat
         clrscr;
-        writeln('1. Добавить запись в файл');
-        writeln('2. Отобразить одну запись');
-        writeln('3. Показать все записи');
-        writeln('4. Обновить запись');
-        writeln('5. Удалить запись');
+        writeln('1. Добавить запись в файл (Create)');
+        writeln();
+        writeln('2. Найти запись по номеру (Read)');
+        writeln('3. Найти запись по фамилии (Read)');
+        writeln('4. Показать все записи (Read)');
+        writeln();
+        writeln('5. Обновить запись по номеру (Update)');
+        writeln();
+        writeln('6. Удалить запись по номеру (Delete)');
         writeln('');
-        writeln('6. Выход');
+        writeln('7. Выход');
 
         writeln('===============================');
         writeln();
@@ -215,16 +275,15 @@ begin
         choice := upcase(choice);
         case choice of 
             '1': addRecord;
-            '2': readRecord;
-            '3': listRecords;
-            '4': updateRecord;
-            '5': deleteRecord;
+            '2': readRecordByNumber;
+            '3': readRecordByLastName;
+            '4': listRecords;
+            '5': updateRecordByNumber;
+            '6': deleteRecordByNumber;
         end;
 
         writeln('');
         writeln();
-    until (choice = '6');
-
-    halt;
+    until (choice = '7');
 
 end.
