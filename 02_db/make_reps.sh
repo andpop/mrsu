@@ -1,10 +1,9 @@
 #!/bin/bash
 
-token=14114e26612df5133c39331f9cbdd45b7048c398
-
+token=933f601265a6d003ca17bb6762eefe0d896ecdf2
 rm ./reps.txt
 for student in $(cat students-list.txt); do
-   echo "402_$student" >> reps.txt
+   echo "303_$student" >> reps.txt
 done
 
 for repo in $(cat reps.txt) ; do
