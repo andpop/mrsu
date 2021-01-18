@@ -1,6 +1,75 @@
-program record_example;
+program sqlite_example;
 
-uses crt, sysutils;
+uses
+  CRT, Classes, SysUtils, SQLDB, SQLite3Conn;
+
+var
+  sqlite3: TSQLite3Connection;
+  dbTrans: TSQLTransaction;
+  dbQuery: TSQLQuery;
+  slNames: TStringList;
+
+function sqlDBError(const msg: string): string;
+begin
+  // error message reformatting
+  result := 'ERROR: '+StringReplace(msg,'TSQLite3Connection : ','',[]);
+end;
+
+function openDB(const dbName: string): boolean;
+begin
+  // create components
+  sqlite3 := TSQLite3Connection.Create(nil);
+  dbTrans := TSQLTransaction.Create(nil);
+  dbQuery := TSQLQuery.Create(nil);
+  slNames := TStringList.Create;
+
+  // setup components
+  sqlite3.Transaction   := dbTrans;
+  dbTrans.Database      := sqlite3;
+  dbQuery.Transaction   := dbTrans;
+  dbQuery.Database      := sqlite3;
+  slNames.CaseSensitive := false;
+
+  // setup db
+  sqlite3.DatabaseName := dbName;
+  sqlite3.HostName     := 'localhost';
+  sqlite3.CharSet      := 'UTF8';
+
+  // open db
+  if FileExists(dbName) then
+  try
+    sqlite3.Open;
+    result := sqlite3.Connected;
+  except
+    on E: Exception do
+    begin
+      sqlite3.Close;
+      writeln(sqlDBError(E.Message));
+    end;
+  end
+  else
+  begin
+    result := false;
+    writeln('Database file "',dbName,'" is not found.');
+  end;
+end;
+
+procedure closeDB;
+begin
+  // disconnect
+  if sqlite3.Connected then
+  begin
+    dbTrans.Commit;
+    dbQuery.Close;
+    sqlite3.Close;
+  end;
+
+  // release
+  slNames.Free;
+  dbQuery.Free;
+  dbTrans.Free;
+  sqlite3.Free;
+end;
 
 type 
     TStudent = Record
@@ -11,32 +80,11 @@ type
     end;
 
 var 
-    f: file of TStudent;
     choice: char;
-
-procedure openFile(fileName: string);
-var
-    code: integer;
-begin
-    assign(f, fileName);
-    {$I-}
-        reset(f);
-    {$I+}
-    code := IOResult;
-
-    if code <> 0 then
-    begin
-        {$I-}
-            rewrite(f);
-        {$I+}
-        code := IOResult;
-        if code <> 0 then
-        begin
-            writeln('Open file error');
-            halt;
-        end;
-    end;
-end;
+    sqlite3: TSQLite3Connection;
+    dbTrans: TSQLTransaction;
+    dbQuery: TSQLQuery;
+    slNames: TStringList;
 
 function inputStudentData(): TStudent;
 var
@@ -86,70 +134,33 @@ end;
 procedure addRecord;
 var
     student: TStudent;
+    sql: string;
 begin
     clrscr;
-
     student := inputStudentData;
-    
-    saveRecord(fileSize(f) + 1, student);
+
+    sql := 'INSERT INTO students (name,lastName, age, gender) VALUES';
+    sql := sql + '(' + student.name + ', ' + student.lastName + ', ' + student.age + ', '  + student.gender + ')';
+    writeln(sql);
+    // saveRecord(fileSize(f) + 1, student);
 end;
 
 
 
 // ========================= READ  =======================
-procedure readRecordByNumber;
-var
-    n: integer;
-    student: TStudent;
-begin
-    clrscr;
-    n := inputRecordNumber();
-    clrscr;
-
-    seek(f, n - 1);
-    read(f, student);
-    
-    writeln('Запись: ' + intToStr(n));
-    writeln('Имя: ', student.name);
-    writeln('Фамилия: ', student.lastName);
-    writeln('Пол: ', student.gender);
-    writeln('Возраст: ', student.age);
-
-    writeln();
-    writeln();
-    write('<Enter> - вернуться в главное меню');
-    readln();
-end;
-
 procedure readRecordByLastname;
 var
     lastName: string;
     isFound: boolean;
     student: TStudent;
+    sql: string;
 begin
     clrscr;
     lastName := inputLastName();
     clrscr;
 
-    seek(f, 0);
-    isFound := false;
-    while not eof(f) do
-    begin
-        read(f, student);
-        if (student.lastName = lastName) then
-        begin
-            isFound := true;
-            writeln('Имя: ', student.name);
-            writeln('Фамилия: ', student.lastName);
-            writeln('Пол: ', student.gender);
-            writeln('Возраст: ', student.age);
-        end;
-    end;
+    sql: = 'SELECT * FROM students WHERE lastName = ' + student.lastName;
 
-    if (not isFound) then
-    begin
-        writeln('Фамилия ', lastName, ' в списке не найдена');
-    end;
 
     writeln();
     writeln();
@@ -161,25 +172,26 @@ procedure listRecords;
 var
     student: TStudent;
     countRecords, recordNumber: integer;
+    sql: string;
 begin
     clrscr;
     
-    countRecords := fileSize(f);
-    writeln('Всего записей: ', countRecords);
+    sql := 'SELECT * FROM students';
+    // countRecords := fileSize(f);
+    // writeln('Всего записей: ', countRecords);
 
-    seek(f, 0);
-    recordNumber := 0;
-    while not eof(f) do
-    begin
-        read(f, student);
-        inc(recordNumber);
+    // recordNumber := 0;
+    // while not eof(f) do
+    // begin
+    //     read(f, student);
+    //     inc(recordNumber);
 
-        writeln('--------------------- ', recordNumber, ' --');
-        writeln('Имя: ', student.name);
-        writeln('Фамилия: ', student.lastName);
-        writeln('Пол: ', student.gender);
-        writeln('Возраст: ', student.age);
-    end;
+    //     writeln('--------------------- ', recordNumber, ' --');
+    //     writeln('Имя: ', student.name);
+    //     writeln('Фамилия: ', student.lastName);
+    //     writeln('Пол: ', student.gender);
+    //     writeln('Возраст: ', student.age);
+    // end;
 
     writeln();
     write('<Enter> - вернуться в главное меню');
@@ -192,11 +204,16 @@ procedure updateRecordByNumber;
 var
     student: TStudent;
     n: integer;
+    lastName: string;
+    sql: string;
 begin
     clrscr;
     n := inputRecordNumber();
     clrscr;
 
+    clrscr;
+    lastName := inputLastName();
+    clrscr;
 
     seek(f, n - 1);
     read(f, student);
@@ -258,7 +275,8 @@ end;
 
 // ========================= main program  =======================
 begin
-    openFile('students.dat');
+    // openFile('students.dat');
+    openDB('students.db');
 
     repeat
         clrscr;
@@ -293,4 +311,5 @@ begin
         writeln();
     until (choice = '7');
 
+    closeDB;
 end.

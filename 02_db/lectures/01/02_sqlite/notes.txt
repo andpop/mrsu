@@ -1,0 +1,11 @@
+Была ошибка Can't load Sqlite client library "libsqlite3.so".Check your installation
+
+Решение
+
+cd /
+sudo find -name libsqlite3.so*
+
+Нашел установленную библиотеку, сделал ссылку на нее:
+
+ sudo ln -sf /usr/lib/x86_64-linux-gnu/libsqlite3.so.0 /usr/lib/libsqlite3.so
+
