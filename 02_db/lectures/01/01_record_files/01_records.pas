@@ -5,8 +5,9 @@ uses crt, sysutils;
 type 
     TStudent = Record
         name: string[20];
-        lastName: string[30];
+        surname: string[30];
         age: integer;
+        gender: char;
     end;
 
 var 
@@ -44,7 +45,9 @@ begin
     write('Имя: ');
     readln(student.name);
     write('Фамилия: ');
-    readln(student.lastName);
+    readln(student.surname);
+    write('Пол: ');
+    readln(student.gender);
     write('Возраст: ');
     readln(student.age);
 
@@ -64,13 +67,13 @@ begin
     inputRecordNumber := n;
 end;
 
-function inputLastName(): string;
-var lastName: string;
+function inputSurname(): string;
+var surname: string;
 begin
     write('Фамилия: ');
-    readln(lastName);
+    readln(surname);
     
-    inputLastName := lastName;
+    inputSurname := surname;
 end;
 
 // ========================= CREATE =======================
@@ -85,7 +88,6 @@ var
     student: TStudent;
 begin
     clrscr;
-
     student := inputStudentData;
     
     saveRecord(fileSize(f) + 1, student);
@@ -108,7 +110,8 @@ begin
     
     writeln('Запись: ' + intToStr(n));
     writeln('Имя: ', student.name);
-    writeln('Фамилия: ', student.lastName);
+    writeln('Фамилия: ', student.surname);
+    writeln('Пол: ', student.gender);
     writeln('Возраст: ', student.age);
 
     writeln();
@@ -117,14 +120,14 @@ begin
     readln();
 end;
 
-procedure readRecordByLastname;
+procedure readRecordBySurname;
 var
-    lastName: string;
+    surname: string;
     isFound: boolean;
     student: TStudent;
 begin
     clrscr;
-    lastName := inputLastName();
+    surname := inputSurname();
     clrscr;
 
     seek(f, 0);
@@ -132,19 +135,22 @@ begin
     while not eof(f) do
     begin
         read(f, student);
-        if (student.lastName = lastName) then
+        if (student.surname = surname) then
         begin
             isFound := true;
-            writeln('Имя: ', student.name);
-            writeln('Фамилия: ', student.lastName);
-            writeln('Возраст: ', student.age);
+            break;
         end;
     end;
 
-    if (not isFound) then
+    if (isFound) then
     begin
-        writeln('Фамилия ', lastName, ' в списке не найдена');
-    end;
+        writeln('Имя: ', student.name);
+        writeln('Фамилия: ', student.surname);
+        writeln('Пол: ', student.gender);
+        writeln('Возраст: ', student.age);
+    end
+    else
+        writeln('Фамилия ', surname, ' в списке не найдена');
 
     writeln();
     writeln();
@@ -171,7 +177,8 @@ begin
 
         writeln('--------------------- ', recordNumber, ' --');
         writeln('Имя: ', student.name);
-        writeln('Фамилия: ', student.lastName);
+        writeln('Фамилия: ', student.surname);
+        writeln('Пол: ', student.gender);
         writeln('Возраст: ', student.age);
     end;
 
@@ -182,36 +189,89 @@ end;
 
 
 // ========================= UPDATE  =======================
-procedure updateRecordByNumber;
+procedure updateRecordBySurname;
 var
     student: TStudent;
+    surname: string;
     n: integer;
+    isFound: boolean;
 begin
     clrscr;
-    n := inputRecordNumber();
+    surname := inputSurname();
     clrscr;
 
+    seek(f, 0);
+    n := 0;
+    isFound := false;
+    while not eof(f) do
+    begin
+        read(f, student);
+        inc(n);
+        if (student.surname = surname) then
+        begin
+            isFound := true;
+            break;
+        end;
+    end;
 
-    seek(f, n - 1);
-    read(f, student);
-    
-    writeln('Запись: ' + intToStr(n));
-    writeln('Имя: ', student.name);
-    writeln('Фамилия: ', student.lastName);
-    writeln('Возраст: ', student.age);
-    writeln('-------------------------------------');
+    if isFound then
+    begin
+        writeln('Запись: ' + intToStr(n));
+        writeln('Имя: ', student.name);
+        writeln('Фамилия: ', student.surname);
+        writeln('Пол: ', student.gender);
+        writeln('Возраст: ', student.age);
+        writeln('-------------------------------------');
 
-    student := inputStudentData;
+        student := inputStudentData;
 
-    saveRecord(n, student);
-    writeln('-------------------------------------');
-    writeln('Запись сохранена в файле');
+        saveRecord(n, student);
+        writeln('-------------------------------------');
+        writeln('Запись сохранена в файле');
+    end
+    else
+        writeln('Фамилия ', surname, ' в списке не найдена');
+
     write('<Enter> - вернуться в главное меню');
     readln();
 end;
 
 
 // ========================= DELETE  =======================
+procedure deleteRecordBySurname;
+var
+    student: TStudent;
+    tempFile: file of TStudent;
+    surname: string;
+begin
+    clrscr;
+    surname := inputSurname();
+    clrscr;
+
+    assign(tempFile, 'tmp.dat');
+    rewrite(tempFile);
+
+    seek(f, 0);
+
+    while not eof(f) do
+    begin
+        read(f, student);
+
+        if student.surname <> surname then
+        begin
+            write(tempFile, student);
+        end;
+    end;
+
+    close(tempFile);
+    close(f);
+    erase(f);
+    rename(tempFile, 'students.dat');
+
+    openFile('students.dat');
+
+    //writeln('Deleting record');
+end;
 procedure deleteRecordByNumber;
 var
     buffer: TStudent;
@@ -261,9 +321,9 @@ begin
         writeln('3. Найти запись по фамилии (Read)');
         writeln('4. Показать все записи (Read)');
         writeln();
-        writeln('5. Обновить запись по номеру (Update)');
+        writeln('5. Обновить запись по фамилии (Update)');
         writeln();
-        writeln('6. Удалить запись по номеру (Delete)');
+        writeln('6. Удалить запись по фамилии (Delete)');
         writeln('');
         writeln('7. Выход');
 
@@ -276,10 +336,10 @@ begin
         case choice of 
             '1': addRecord;
             '2': readRecordByNumber;
-            '3': readRecordByLastName;
+            '3': readRecordBySurname;
             '4': listRecords;
-            '5': updateRecordByNumber;
-            '6': deleteRecordByNumber;
+            '5': updateRecordBySurname;
+            '6': deleteRecordBySurname;
         end;
 
         writeln('');
