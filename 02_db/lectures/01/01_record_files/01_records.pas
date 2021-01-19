@@ -94,7 +94,6 @@ begin
 end;
 
 
-
 // ========================= READ  =======================
 procedure readRecordByNumber;
 var
@@ -269,44 +268,6 @@ begin
     rename(tempFile, 'students.dat');
 
     openFile('students.dat');
-
-    //writeln('Deleting record');
-end;
-procedure deleteRecordByNumber;
-var
-    buffer: TStudent;
-    tempFile: file of TStudent;
-    deleteRecordNumber, currentRecordNumber: integer;
-begin
-    clrscr;
-    deleteRecordNumber := inputRecordNumber();
-    clrscr;
-
-    assign(tempFile, 'tmp.dat');
-    rewrite(tempFile);
-
-    seek(f, 0);
-    currentRecordNumber := 0;
-
-    while not eof(f) do
-    begin
-        read(f, buffer);
-        inc(currentRecordNumber);
-
-        if currentRecordNumber <> deleteRecordNumber then
-        begin
-            write(tempFile, buffer);
-        end;
-    end;
-
-    close(tempFile);
-    close(f);
-    erase(f);
-    rename(tempFile, 'students.dat');
-
-    openFile('students.dat');
-
-    writeln('Deleting record');
 end;
 
 // ========================= main program  =======================

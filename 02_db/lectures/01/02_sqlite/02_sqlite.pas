@@ -106,7 +106,7 @@ begin
     inputRecordNumber := n;
 end;
 
-function inputSurname(): string;
+function inputSurname: string;
 var surname: string;
 begin
     write('Фамилия: ');
@@ -116,13 +116,22 @@ begin
 end;
 
 // ========================= CREATE =======================
-
-procedure saveRecord(n: integer; buffer: TStudent);
+procedure execQuery(sql: string);
 begin
-    seek(f, n - 1);
-    write(f, buffer);
-end;
+    try
+        dbQuery.SQL.Text := sql;
+        dbTrans.Active := true;
+        dbQuery.ExecSQL;
 
+        dbTrans.Commit;
+    except
+        on E: Exception do
+        begin
+          dbTrans.Rollback;
+          writeln(E.Message);
+        end;
+    end;
+end;
 
 procedure addRecord;
 var
@@ -130,81 +139,23 @@ var
     sql: string;
 begin
     clrscr;
+    writeln('НОВАЯ ЗАПИСЬ:');
     student := inputStudentData;
 
     sql := 'INSERT INTO students (name, surname, age, gender) VALUES (';
     sql := sql +'"'+student.name+'", "'+student.surname+'", '+IntToStr(student.age)+', "'+student.gender+'")';
-    
-    try
-        // execute command
-        dbQuery.SQL.Text := sql;
-        dbTrans.Active := true;
-        dbQuery.ExecSQL;
 
-        // commit changes
-        dbTrans.Commit;
-    except
-        on E: Exception do
-        begin
-          // rollback changes
-          dbTrans.Rollback;
-          writeln(E.Message);
-        end;
-    end;
+    execQuery(sql);
 end;
-
 
 
 // ========================= READ  =======================
-
-procedure readRecordBySurname;
+procedure printRecords(sql: string);
 var
-    surname: string;
-    isFound: boolean;
-    student: TStudent;
-begin
-    clrscr;
-    surname := inputSurname();
-    clrscr;
-
-    seek(f, 0);
-    isFound := false;
-    while not eof(f) do
-    begin
-        read(f, student);
-        if (student.surname = surname) then
-        begin
-            isFound := true;
-            break;
-        end;
-    end;
-
-    if isFound then
-    begin
-        writeln('Имя: ', student.name);
-        writeln('Фамилия: ', student.surname);
-        writeln('Пол: ', student.gender);
-        writeln('Возраст: ', student.age);
-    end
-    else
-        writeln('Фамилия ', surname, ' в списке не найдена');
-
-    writeln();
-    writeln();
-    write('<Enter> - вернуться в главное меню');
-    readln();
-end;
-
-procedure listRecords;
-var
-    student: TStudent;
-    countRecords, recordNumber: integer;
-    sql: string;
+    recordNumber: integer;
 begin
     clrscr;
     
-    sql := 'SELECT * FROM students';
-
     try
         dbQuery.SQL.Text := sql;
         dbQuery.Open;
@@ -240,50 +191,44 @@ begin
     readln();
 end;
 
+procedure readRecordBySurname;
+var surname: string;
+begin
+    clrscr;
+    writeln('ПОИСК ЗАПИСИ');
+    surname := inputSurname;
+
+    printRecords('SELECT * FROM students WHERE surname="' + surname + '"');
+end;
+
+procedure listRecords;
+begin
+    printRecords('SELECT * FROM students ORDER BY surname');
+end;
+
 
 // ========================= UPDATE  =======================
 procedure updateRecordBySurname;
 var
     student: TStudent;
     surname: string;
-    n: integer;
-    isFound: boolean;
+    sql: string;
 begin
     clrscr;
-    surname := inputSurname();
-    clrscr;
+    writeln('ИЗМЕНЕНИЕ ЗАПИСИ');
+    surname := inputSurname;
+    writeln('Новые данные:');
+    student := inputStudentData;
 
-    seek(f, 0);
-    n := 0;
-    isFound := false;
-    while not eof(f) do
-    begin
-        read(f, student);
-        inc(n);
-        if (student.surname = surname) then
-        begin
-            isFound := true;
-            break;
-        end;
-    end;
 
-    if isFound then
-    begin
-        writeln('Запись: ' + intToStr(n));
-        writeln('Имя: ', student.name);
-        writeln('Фамилия: ', student.surname);
-        writeln('Пол: ', student.gender);
-        writeln('Возраст: ', student.age);
-        writeln('-------------------------------------');
-
-        student := inputStudentData;
-
-        saveRecord(n, student);
-        writeln('-------------------------------------');
-        writeln('Запись сохранена в файле');
-    end
-    else
-        writeln('Фамилия ', surname, ' в списке не найдена');
+    sql := 'UPDATE students SET';
+    sql := sql + ' name="'+student.name+'"';
+    sql := sql + ', surname="'+student.surname+'"';
+    sql := sql + ', age='+IntToStr(student.age);
+    sql := sql + ', gender="'+student.gender+'"';
+    sql := sql + ' WHERE surname="' + surname + '"';
+    
+    execQuery(sql);
 
     write('<Enter> - вернуться в главное меню');
     readln();
@@ -293,79 +238,19 @@ end;
 // ========================= DELETE  =======================
 procedure deleteRecordBySurname;
 var
-    student: TStudent;
-    tempFile: file of TStudent;
     surname: string;
+    sql: string;
 begin
-    {clrscr;
-
-    surname := inputSurname();
     clrscr;
+    writeln('УДАЛЕНИЕ ЗАПИСИ');
+    surname := inputSurname;
 
-    assign(tempFile, 'tmp.dat');
-    rewrite(tempFile);
-
-    seek(f, 0);
-
-    while not eof(f) do
-    begin
-        read(f, student);
-
-        if student.surname <> surname then
-        begin
-            write(tempFile, student);
-        end;
-    end;
-
-    close(tempFile);
-    close(f);
-    erase(f);
-    rename(tempFile, 'students.dat');
-
-    openFile('students.dat');}
-
-    //writeln('Deleting record');
-end;
-procedure deleteRecordByNumber;
-var
-    buffer: TStudent;
-    tempFile: file of TStudent;
-    deleteRecordNumber, currentRecordNumber: integer;
-begin
-    {clrscr;
-    deleteRecordNumber := inputRecordNumber();
-    clrscr;
-
-    assign(tempFile, 'tmp.dat');
-    rewrite(tempFile);
-
-    seek(f, 0);
-    currentRecordNumber := 0;
-
-    while not eof(f) do
-    begin
-        read(f, buffer);
-        inc(currentRecordNumber);
-
-        if currentRecordNumber <> deleteRecordNumber then
-        begin
-            write(tempFile, buffer);
-        end;
-    end;
-
-    close(tempFile);
-    close(f);
-    erase(f);
-    rename(tempFile, 'students.dat');
-
-    openFile('students.dat');
-
-    writeln('Deleting record');}
+    sql := 'DELETE FROM students WHERE surname="' + surname + '"';
+    execQuery(sql);
 end;
 
 // ========================= main program  =======================
 begin
-    // openFile('students.dat');
     openDB('students.db');
 
     repeat
