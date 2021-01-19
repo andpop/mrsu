@@ -1,7 +1,10 @@
-program record_example;
+program sqlite_example;
 
-uses crt, sysutils;
+{$MODE OBJFPC}{$H+}{$J-}
 
+uses
+  crt, Classes, SysUtils, SQLDB, SQLite3Conn;
+  
 type 
     TStudent = Record
         name: string[20];
@@ -10,32 +13,68 @@ type
         gender: char;
     end;
 
-var 
+var
+    sqlite3: TSQLite3Connection;
+    dbTrans: TSQLTransaction;
+    dbQuery: TSQLQuery;
+    slNames: TStringList;
     f: file of TStudent;
     choice: char;
 
-procedure openFile(fileName: string);
-var
-    code: integer;
+function openDB(const dbName: string): boolean;
 begin
-    assign(f, fileName);
-    {$I-}
-        reset(f);
-    {$I+}
-    code := IOResult;
+  // create components
+  sqlite3 := TSQLite3Connection.Create(nil);
+  dbTrans := TSQLTransaction.Create(nil);
+  dbQuery := TSQLQuery.Create(nil);
+  slNames := TStringList.Create;
 
-    if code <> 0 then
+  // setup components
+  sqlite3.Transaction   := dbTrans;
+  dbTrans.Database      := sqlite3;
+  dbQuery.Transaction   := dbTrans;
+  dbQuery.Database      := sqlite3;
+  slNames.CaseSensitive := false;
+
+  // setup db
+  sqlite3.DatabaseName := dbName;
+  sqlite3.HostName     := 'localhost';
+  sqlite3.CharSet      := 'UTF8';
+
+  // open db
+  if FileExists(dbName) then
+  try
+    sqlite3.Open;
+    result := sqlite3.Connected;
+  except
+    on E: Exception do
     begin
-        {$I-}
-            rewrite(f);
-        {$I+}
-        code := IOResult;
-        if code <> 0 then
-        begin
-            writeln('Open file error');
-            halt;
-        end;
+      sqlite3.Close;
+      writeln(E.Message);
     end;
+  end
+  else
+  begin
+    result := false;
+    writeln('Database file "',dbName,'" is not found.');
+  end;
+end;
+
+procedure closeDB;
+begin
+  // disconnect
+  if sqlite3.Connected then
+  begin
+    dbTrans.Commit;
+    dbQuery.Close;
+    sqlite3.Close;
+  end;
+
+  // release
+  slNames.Free;
+  dbQuery.Free;
+  dbTrans.Free;
+  sqlite3.Free;
 end;
 
 function inputStudentData(): TStudent;
@@ -77,48 +116,46 @@ begin
 end;
 
 // ========================= CREATE =======================
+
 procedure saveRecord(n: integer; buffer: TStudent);
 begin
     seek(f, n - 1);
     write(f, buffer);
 end;
 
+
 procedure addRecord;
 var
     student: TStudent;
+    sql: string;
 begin
     clrscr;
     student := inputStudentData;
+
+    sql := 'INSERT INTO students (name, surname, age, gender) VALUES (';
+    sql := sql +'"'+student.name+'", "'+student.surname+'", '+IntToStr(student.age)+', "'+student.gender+'")';
     
-    saveRecord(fileSize(f) + 1, student);
+    try
+        // execute command
+        dbQuery.SQL.Text := sql;
+        dbTrans.Active := true;
+        dbQuery.ExecSQL;
+
+        // commit changes
+        dbTrans.Commit;
+    except
+        on E: Exception do
+        begin
+          // rollback changes
+          dbTrans.Rollback;
+          writeln(E.Message);
+        end;
+    end;
 end;
 
 
 
 // ========================= READ  =======================
-procedure readRecordByNumber;
-var
-    n: integer;
-    student: TStudent;
-begin
-    clrscr;
-    n := inputRecordNumber();
-    clrscr;
-
-    seek(f, n - 1);
-    read(f, student);
-    
-    writeln('Запись: ' + intToStr(n));
-    writeln('Имя: ', student.name);
-    writeln('Фамилия: ', student.surname);
-    writeln('Пол: ', student.gender);
-    writeln('Возраст: ', student.age);
-
-    writeln();
-    writeln();
-    write('<Enter> - вернуться в главное меню');
-    readln();
-end;
 
 procedure readRecordBySurname;
 var
@@ -162,24 +199,40 @@ procedure listRecords;
 var
     student: TStudent;
     countRecords, recordNumber: integer;
+    sql: string;
 begin
     clrscr;
     
-    countRecords := fileSize(f);
-    writeln('Всего записей: ', countRecords);
+    sql := 'SELECT * FROM students';
 
-    seek(f, 0);
-    recordNumber := 0;
-    while not eof(f) do
-    begin
-        read(f, student);
-        inc(recordNumber);
+    try
+        dbQuery.SQL.Text := sql;
+        dbQuery.Open;
 
-        writeln('--------------------- ', recordNumber, ' --');
-        writeln('Имя: ', student.name);
-        writeln('Фамилия: ', student.surname);
-        writeln('Пол: ', student.gender);
-        writeln('Возраст: ', student.age);
+        if dbQuery.Active then
+        begin
+            clrscr;
+
+            writeln('Всего записей: ', dbQuery.RecordCount);
+
+            recordNumber := 0;
+            while not dbQuery.EOF do
+            begin
+                inc(recordNumber);
+
+                writeln('--------------------- ', recordNumber, ' --');
+                writeln('Имя: ', dbQuery.FieldByName('name').AsString);
+                writeln('Фамилия: ', dbQuery.FieldByName('surname').AsString);
+                writeln('Пол: ', dbQuery.FieldByName('gender').AsString);
+                writeln('Возраст: ', dbQuery.FieldByName('age').AsInteger);
+
+                dbQuery.Next;
+            end;
+        end;
+
+        dbQuery.Close;
+    except
+        on E: Exception do writeln(E.Message);
     end;
 
     writeln();
@@ -244,7 +297,8 @@ var
     tempFile: file of TStudent;
     surname: string;
 begin
-    clrscr;
+    {clrscr;
+
     surname := inputSurname();
     clrscr;
 
@@ -268,7 +322,7 @@ begin
     erase(f);
     rename(tempFile, 'students.dat');
 
-    openFile('students.dat');
+    openFile('students.dat');}
 
     //writeln('Deleting record');
 end;
@@ -278,7 +332,7 @@ var
     tempFile: file of TStudent;
     deleteRecordNumber, currentRecordNumber: integer;
 begin
-    clrscr;
+    {clrscr;
     deleteRecordNumber := inputRecordNumber();
     clrscr;
 
@@ -306,18 +360,18 @@ begin
 
     openFile('students.dat');
 
-    writeln('Deleting record');
+    writeln('Deleting record');}
 end;
 
 // ========================= main program  =======================
 begin
-    openFile('students.dat');
+    // openFile('students.dat');
+    openDB('students.db');
 
     repeat
         clrscr;
         writeln('1. Добавить запись в файл (Create)');
         writeln();
-        writeln('2. Найти запись по номеру (Read)');
         writeln('3. Найти запись по фамилии (Read)');
         writeln('4. Показать все записи (Read)');
         writeln();
@@ -335,7 +389,6 @@ begin
         choice := upcase(choice);
         case choice of 
             '1': addRecord;
-            '2': readRecordByNumber;
             '3': readRecordBySurname;
             '4': listRecords;
             '5': updateRecordBySurname;
