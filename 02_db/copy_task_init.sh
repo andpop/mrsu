@@ -10,7 +10,7 @@ task_number=$1
 for student in $(cat "${pwd}/students-list.txt"); do
     echo "----------------------------------------------------------------------------------"
     echo $student
-    student_dir="${BASE_DIR}/402_${student}"
+    student_dir="${BASE_DIR}/303_${student}"
 
     cd "${student_dir}"
     # git fetch teacher
@@ -25,7 +25,7 @@ for student in $(cat "${pwd}/students-list.txt"); do
 
 
         git add -A
-        git commit -m "Add readme"
+        git commit -m "Change readme"
         git push teacher master
         cd "${pwd}"
     done
