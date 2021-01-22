@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BASE_DIR="/home/andrey/labs_mrsu"
+BASE_DIR="/home/andrey/labs_303"
 
 pwd=$PWD
 echo $pwd
@@ -25,9 +25,9 @@ for option in `seq 1 5`; do
         cp "${pwd}/tasks/README.md" "${student_dir}/"
         cp "${pwd}/tasks/task0${task_number}.md" "${student_dir}/"
 
-        if [ -f "${pwd}/tasks/specification_0${task_number}_0${option}.md" ]; then
-            cp "${pwd}/tasks/specification_0${task_number}_0${option}.md" "${student_dir}/"
-        fi
+        # if [ -f "${pwd}/tasks/specification_0${task_number}_0${option}.md" ]; then
+        #     cp "${pwd}/tasks/specification_0${task_number}_0${option}.md" "${student_dir}/"
+        # fi
 
 
         git add -A
@@ -36,21 +36,3 @@ for option in `seq 1 5`; do
         cd "${pwd}"
     done
 done
-
-
-# TEACHER_PROFILE="git@github.com-mrsu:andpop-mrsu"
-# TEACHER_EMAIL="andrvpopov@gmail.com"
-
-# for rep in $(cat $REPS_FILE) ; do
-#     student_dir="${BASE_DIR}/$rep"
-#     if ! [ -d $student_dir ] ; then
-#         echo "Make directory: for ${student_dir}"
-#         mkdir $student_dir
-#     fi
-#     cd $student_dir
-#     git init
-#     git config user.email $TEACHER_EMAIL
-#     git remote add teacher "${TEACHER_PROFILE}/${rep}.git"
-#     git fetch teacher
-#     git checkout --track teacher/master
-# done
