@@ -50,7 +50,7 @@
 В функции `runTest()` реализовать несколько тест-кейсов для проверки корректности работы методов класса `Fraction`. Например: 
 ```
 // String representation test
-$m1 = new Fraction(1, 2);
+$m1 = new Fraction(4, 8);
 echo $m1;     // 1/2
 
 // Adding test
