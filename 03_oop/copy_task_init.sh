@@ -7,7 +7,7 @@ echo $pwd
 
 task_number=$1
 
-for student in $(cat "${pwd}/students_1.txt"); do
+for student in $(cat "${pwd}/students_2.txt"); do
     echo "----------------------------------------------------------------------------------"
     echo $student
     student_dir="${BASE_DIR}/402_${student}"
