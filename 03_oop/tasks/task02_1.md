@@ -48,6 +48,7 @@ Id: 5
 - - -
 
 ### Отправка задания на проверку
+Описание в файле [Git_instruction.md](Git_instruction.md)
 * Отправить созданный коммит в "форкнутый" репозиторий на GitHub (`git push origin`).
 * Сделать Pull Request для добавления ветки Task01 из репозитория в вашем профиле в https://github.com/andpop-mrsu.
 * Задание будет считаться принятым после закрытия Pull Request в https://github.com/andpop-mrsu.
