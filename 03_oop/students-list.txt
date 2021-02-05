@@ -6,7 +6,7 @@ Bikmaev_RR
 Bulatova_GR
 Geraskin_NS
 Durnaev_NS
-Egorov_OА
+Egorov_OA
 Kokulov_AF
 Kudashkin_AE
 Lihoradov_II
