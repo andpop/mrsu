@@ -25,7 +25,7 @@ echo --------------------------------------------------
 sqlite3 movies_rating.db -box -echo "SELECT * FROM users LIMIT 5"
 ```
 * Файл task3.bat должен быть в кодировке UTF-8.
-* После добавления файла db_init.bat в индекс локального репозитория Git (то есть после выполнения команды `git add ...`) нужно сделать этот файл исполняемым для Linux: `git update-index --chmod=+x db_init.bat`.
+* После добавления файла task3.bat в индекс локального репозитория Git (то есть после выполнения команды `git add ...`) нужно сделать этот файл исполняемым для Linux: `git update-index --chmod=+x task3.bat`.
 
 
 * * *
