@@ -1,10 +1,10 @@
-const Bond1 = {name: 'James Bond', salary: 50000};
+const bond1 = {name: 'James Bond', salary: 50000};
 
-const Bond2 = {name: 'James Bond', salary: 50000};
+const bond2 = {name: 'James Bond', salary: 50000};
 
-console.log(Bond1 === Bond2);
+console.log(bond1 === bond2);
 
-const Bond = {
+const bond = {
     name: 'James Bond', 
     salary: 50000,
     raiseSalary: function(percent) {
@@ -12,8 +12,8 @@ const Bond = {
     }
 };
 
-Bond.raiseSalary(10);
-console.log({Bond});
+bond.raiseSalary(10);
+console.log({bond});
 
 const anotherBond = {
     name: 'John Bond',

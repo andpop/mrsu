@@ -12,23 +12,23 @@ function createEmployee(name, salary) {
 };
 
 // ----------------------------------------------
-const Bond1 = createEmployee('James Bond', 100000);
-const Bond2 = createEmployee('John Bond', 45000);
+const bond1 = createEmployee('James Bond', 100000);
+const bond2 = createEmployee('John Bond', 45000);
 
-console.log({Bond1});
-console.log({Bond2});
-
-// ----------------------------------------------
-Bond1.raiseSalary(10);
-console.log({Bond1});
+console.log({bond1});
+console.log({bond2});
 
 // ----------------------------------------------
-Bond1.raiseSalary = function(percent) {
+bond1.raiseSalary(10);
+console.log({bond1});
+
+// ----------------------------------------------
+bond1.raiseSalary = function(percent) {
     this.salary = Number.MAX_VALUE;
 };
 
-Bond1.raiseSalary(10);
-console.log({Bond1});
+bond1.raiseSalary(10);
+console.log({bond1});
 
-Bond2.raiseSalary(10);
-console.log({Bond2});
+bond2.raiseSalary(10);
+console.log({bond2});
