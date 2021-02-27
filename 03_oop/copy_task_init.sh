@@ -13,17 +13,17 @@ for student in $(cat "${pwd}/students_1.txt"); do
     student_dir="${BASE_DIR}/402_${student}"
 
     cd "${student_dir}"
-    # git fetch teacher master
-    # git merge teacher/master -m "Pull from teacher"
+    git fetch teacher master
+    git merge teacher/master -m "Merging master from teacher repo"
 
     # cp "${pwd}/tasks/README.md" "${student_dir}/"
     # cp "${pwd}/tasks/Git_instruction.md" "${student_dir}/"
     # cp "${pwd}/tasks/PHP_instruction.md" "${student_dir}/"
-    cp "${pwd}/tasks/task03_1.md" "${student_dir}/task03.md"
+    cp "${pwd}/tasks/task04_1.md" "${student_dir}/task04.md"
     # cp -R "${pwd}/tasks/PHPUnit_example" "${student_dir}/"
 
     git add -A
-    git commit -m "Change task03"
+    git commit -m "Change task04"
     git push teacher master
     cd "${pwd}"
 done

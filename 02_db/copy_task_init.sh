@@ -7,7 +7,7 @@ echo $pwd
 
 task_number=$1
 
-for student in $(cat "${pwd}/students-list.txt"); do
+for student in $(cat "${pwd}/students-list_2.txt"); do
     echo "----------------------------------------------------------------------------------"
     echo $student
     student_dir="${BASE_DIR}/303_${student}"
@@ -18,11 +18,11 @@ for student in $(cat "${pwd}/students-list.txt"); do
 
     # cp "${pwd}/tasks/README.md" "${student_dir}/"
     # cp "${pwd}/tasks/task01.md" "${student_dir}/"
-    cp "${pwd}/tasks/Git_instruction.md" "${student_dir}/"
-    cp "${pwd}/tasks/task02.md" "${student_dir}/"
+    # cp "${pwd}/tasks/Git_instruction.md" "${student_dir}/"
+    cp "${pwd}/tasks/task04_2.md" "${student_dir}/task04.md"
 
     git add -A
-    git commit -m "Add task02"
+    git commit -m "Add task04"
     git push teacher master
     cd "${pwd}"
 done
