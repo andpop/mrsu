@@ -43,44 +43,38 @@ print_r($resultCollection->getProductsArray());  // [$p1]
 - - -
 
 ## Задание 2. Паттерн "Adapter"
-В интернет-магазине продаются товары с атрибутами: наименование, производитель, цена. На некоторый товар может быть указана скидка в процентах. 
-В каталоге Task05_1/src определены классы и интерфесы:
+В интернет-магазине принимаются платежи через различные системы, API которых сильно различается.
+В каталоге Task05_2/src определены классы и интерфесы:
 ```
-Product                   // Класс для товаров
-ProductCollection         // Класс для коллекции товаров
-ProductFilteringStrategy  // Интерфейс для стратегии фильтрации
+CreditCard               // API для работы с кредитной картой
+                         // Платеж считается проведенным, если метод transfer() 
+                         // возвращает строку "PayPal Success!"
+PayPal                   // API для работы с PayPal
+                         // Платеж считается проведенным, если метод authorizeTransaction()
+                         // возвращает строку, содержащую "Authorization code:"
+PaymentAdapterInterface  // Интерфейс для проведения платежей в нашей системе
 ```
-1. Нужно реализовать возможность фильтрации списка товаров из общего списка по различным критериям, применяя для этого паттерн "Strategy".
-* Создать классы, реализующие интерфейс `ProductFilteringStrtegy`:
-    * `ManufacturerFilter`. Фильтр по производителю товаров.
-    * `MaxPriceFilter`. Фильтр по максимальной цене товара (если для товара задана скидка, то ее нужно учитывать).
-* Дописать метод `ProductCollection->filter(ProductFilteringStrategy $filterStrategy): ProductCollection`, принимающий экземпляр конкретного фильтра и возвращающий экземпляр класса `ProductCollection` для отфильтрованного списка товаров.
+1. Нужно реализовать возможность приема платежей по системе PayPal и через обычную кредитную карту, применяя для этого паттерн "Adapter".
+* Создать классы, реализующие интерфейс `PaymentAdapterInterfave`:
+    * `CreditCardAdapter`. Адаптер для пластиковой карты.
+    * `PayPalAdapter`. Адаптер для системы PayPal.
 
 Пример клиентского кода:
 ```
-$p1 = new Product;
-$p1->name = 'Шоколад';
-$p1->listPrice = 100;
-$p1->sellingPrice = 50;
-$p1->manufacturer = 'Красный Октябрь';
+function collectMoney(PaymentAdapterInterface $paymentSystem, $amount)
+{
+    if ($paymentSystem->collectMoney($amount)) echo "Платеж {$amount} прошел\n";
+}
 
-$p2 = new Product;
-$p2->name = 'Мармелад';
-$p2->listPrice = 100;
-$p2->manufacturer = 'Ламзурь';
+$paypal = new PayPal('customer@aol.com', 'password');
+$cc = new CreditCard(1234567890123456, "09/22");
 
-$collection = new ProductCollection([$p1, $p2]);
-
-$resultCollection = $collection->filter(new ManufacturerFilter('Ламзурь'));
-print_r($resultCollection->getProductsArray());  // [$p2]
-
-$resultCollection = $collection->filter(new MaxPriceFilter(50));
-print_r($resultCollection->getProductsArray());  // [$p1]
+collectMoney(new PayPalAdapter($paypal), 100);
+collectMoney(new CreditCardAdapter($cc), 200);
 ```
-2. Используя PHPUnit, написать модульные тесты для проверки корректности обеих стратегий фильтрации товаров.
+2. Используя PHPUnit, написать модульные тесты для проверки корректности обоих адаптеров.
 
 ### Требования к оформлению и коду
-* Работать нужно в ветке Task05 Git-репозитория.
 * Проект для решения задания с тестами разместить в каталоге Task05_1.
 
 - - -
