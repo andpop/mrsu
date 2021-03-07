@@ -43,10 +43,10 @@ $p2->manufacturer = 'Ламзурь';
 $collection = new ProductCollection([$p1, $p2]);
 
 $resultCollection = $collection->filter(new ManufacturerFilter('Ламзурь'));
-print_r($resultCollection->getProductsArray());  // $p2
+print_r($resultCollection->getProductsArray());  // [$p2]
 
 $resultCollection = $collection->filter(new MaxPriceFilter(50));
-print_r($resultCollection->getProductsArray());  // $p1
+print_r($resultCollection->getProductsArray());  // [$p1]
 ```
 2. Используя PHPUnit, написать модульные тесты для проверки корректности обеих стратегий фильтрации товаров.
 
