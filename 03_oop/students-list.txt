@@ -5,6 +5,7 @@ Balashov_VV
 Bikmaev_RR
 Bulatova_GR
 Geraskin_NS
+Gurkov_ND
 Durnaev_NS
 Egorov_OA
 Kokulov_AF
