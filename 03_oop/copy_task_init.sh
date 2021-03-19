@@ -23,7 +23,7 @@ for student in $(cat "${pwd}/students-list.txt"); do
     # cp -R "${pwd}/tasks/PHPUnit_example" "${student_dir}/"
 
     git add -A
-    git commit -m "Add task05"
+    git commit -m "Change task05"
     git push teacher master
     cd "${pwd}"
 done
