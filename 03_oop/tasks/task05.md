@@ -47,10 +47,10 @@ print_r($resultCollection->getProductsArray());  // [$p1]
 ```
 CreditCard               // API для работы с кредитной картой
                          // Платеж считается проведенным, если метод transfer() 
-                         // возвращает строку "PayPal Success!"
+                         // возвращает строку, содержащую "Authorization code:"
 PayPal                   // API для работы с PayPal
                          // Платеж считается проведенным, если метод authorizeTransaction()
-                         // возвращает строку, содержащую "Authorization code:"
+                         // возвращает строку "PayPal Success!"
 PaymentAdapterInterface  // Интерфейс для проведения платежей в нашей системе
 ```
 1. Нужно реализовать возможность приема платежей по системе PayPal и через обычную кредитную карту, применяя для этого паттерн "Adapter".
