@@ -15,7 +15,7 @@ Parshin_DI
 Potapkina_UU
 Rodkina_DA
 Ruzaeva_AS
-Svitilnikov_DB
+Svetilnikov_DB
 Taynov_AA
 Tepaykin_MA
 Utkin_NV
