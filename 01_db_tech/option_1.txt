@@ -1,5 +1,4 @@
-Aleksandrov_KV
-Antonov_KY
-Aryanov_VA
-Balashov_VV
-Bikmaev_RR
+Antonova_SA
+Golubev_SU
+Guryanov_MA
+Duraeva_KV

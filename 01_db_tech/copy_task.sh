@@ -30,6 +30,11 @@ for option in `seq 1 5`; do
         fi
 
 
+        if [ -f "${pwd}/tasks/general_specification_0${option}.md" ]; then
+            cp "${pwd}/tasks/general_specification_0${option}.md" "${student_dir}/"
+        fi
+
+
         git add -A
         git commit -m "Change task ${task_number}"
         git push teacher master

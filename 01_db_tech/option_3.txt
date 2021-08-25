@@ -1,5 +1,4 @@
-Kokulov_AF
-Kudashkin_AE
-Lihoradov_II
-Loginov_AD
-Lomaykin_AS
+Oparin_NA
+Oreshkin_SV
+Polushina_DV
+Radynov_AS

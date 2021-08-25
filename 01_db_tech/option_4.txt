@@ -1,4 +1,6 @@
-Makushev_VA
-Makshev_NI
-Matveev_MD
-Paramanov_ON
+Razumov_DS
+Solodovnikov_AV
+Tanysheva_MN
+Chirkov_KA
+Usupov_B
+Yakubaev_KA

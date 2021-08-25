@@ -16,8 +16,8 @@ for student in $(cat "${pwd}/students-list.txt"); do
     # git fetch teacher
     # git merge -m "Merging from teacher repo"
 
-    # cp "${pwd}/tasks/README.md" "${student_dir}/"
-    # cp -R "${pwd}/tasks/dataset" "${student_dir}/"
+    cp "${pwd}/tasks/README.md" "${student_dir}/"
+    cp -R "${pwd}/tasks/dataset" "${student_dir}/"
 
         # if [ -f "${pwd}/tasks/specification_0${task_number}_0${option}.md" ]; then
         #     cp "${pwd}/tasks/specification_0${task_number}_0${option}.md" "${student_dir}/"
