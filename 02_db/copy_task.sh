@@ -16,7 +16,7 @@ for option in `seq 1 5`; do
     for student in $(cat "${pwd}/option_${option}.txt"); do
         echo "----------------------------------------------------------------------------------"
         echo $student
-        student_dir="${BASE_DIR}/402_${student}"
+        student_dir="${BASE_DIR}/303_${student}"
 
         cd "${student_dir}"
         git fetch teacher
