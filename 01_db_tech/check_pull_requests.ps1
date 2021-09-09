@@ -1,4 +1,4 @@
-$studentDir = "/home/andrey/labs_mrsu/"
+$studentDir = "/home/andrey/labs_402/"
 $teacherRepo = "https://api.github.com/repos/andpop-mrsu/" 
 $headers = @{}
 $headers.Add("Authorization", "Basic andpop-mrsu PAT-here!!!")
