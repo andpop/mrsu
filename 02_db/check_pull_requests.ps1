@@ -1,3 +1,4 @@
+#!pwsh
 $studentDir = "/home/andrey/labs_303/"
 $teacherRepo = "https://api.github.com/repos/andpop-mrsu/" 
 $headers = @{}
