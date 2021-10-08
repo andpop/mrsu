@@ -7,7 +7,7 @@ echo $pwd
 
 task_number=$2
 
-for student in $(cat "${pwd}/students-list2.txt"); do
+for student in $(cat "${pwd}/students-list1.txt"); do
 # for student in $(cat "${pwd}/list5.txt"); do
     echo "----------------------------------------------------------------------------------"
     echo $student
@@ -21,7 +21,7 @@ for student in $(cat "${pwd}/students-list2.txt"); do
     # cp "${pwd}/tasks/task03.md" "${student_dir}/"
     # cp "${pwd}/tasks/Git_instruction.md" "${student_dir}/"
     # cp "${pwd}/tasks/*.xls" "${student_dir}/"
-    cp "${pwd}/tasks/task03_1.md" "${student_dir}/task03.md"
+    rm "${student_dir}/task03.md"
     # cp "${pwd}/tasks/specification_01.md" "${student_dir}/specification.md"
 
     git add -A
