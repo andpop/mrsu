@@ -36,7 +36,7 @@ for option in `seq 1 5`; do
 
 
         git add -A
-        git commit -m "Change task ${task_number}"
+        git commit -m "Add task ${task_number}"
         git push teacher master
         cd "${pwd}"
     done
