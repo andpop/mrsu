@@ -19,8 +19,8 @@ for option in `seq 1 5`; do
         student_dir="${BASE_DIR}/303_${student}"
 
         cd "${student_dir}"
-        git fetch teacher
-        git merge -m "Merging from teacher repo"
+        git fetch teacher master
+        git merge teacher/master -m "Merging from teacher repo"
 
         cp "${pwd}/tasks/README.md" "${student_dir}/"
         cp "${pwd}/tasks/task0${task_number}.md" "${student_dir}/"
