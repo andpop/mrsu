@@ -17,7 +17,7 @@
     * После добавления файла start.bat в индекс локального репозитория Git (то есть после выполнения команды `git add ...`) нужно сделать этот файл исполняемым для Linux: `git update-index --chmod=+x db_init.bat`.
 
 ### Отправка задания на проверку
-* Выполнить коммит в ветке Task01 (в папке Task01 должны быть все файлы hello.php и start.bathello.php и start.bahello.php и start.bat).
+* Выполнить коммит в ветке Task01 (в папке Task01 должны быть файлы hello.php и start.bat).
 * Отправить созданный коммит в "форкнутый" репозиторий на GitHub (`git push origin`).
 * Сделать Pull Request для добавления ветки Task01 из репозитория в вашем профиле в https://github.com/andpop-mrsu.
 * Задание будет считаться принятым после закрытия Pull Request в https://github.com/andpop-mrsu.
