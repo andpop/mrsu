@@ -16,6 +16,7 @@
     * Composer
     * PHPUnit
 * JavaScript 
+    * Node.js, npm
     * Jest
 * PowerShell
 
