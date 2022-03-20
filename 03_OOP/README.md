@@ -21,4 +21,4 @@
     * Jest
 * PowerShell
 
-[[Лекции]](./content/lectures.md) [[Лабораторные работы]](./content/labs.md) [[Примеры кода]](https://github.com/andpop/MRSU-examples/tree/main/oop)
+[[Лекции]](./content/lectures.md) [[Лабораторные работы]](./content/labs.md) [[Вопросы к экзамену]](./content/topics.md) [[Примеры кода]](https://github.com/andpop/MRSU-examples/tree/main/oop)
