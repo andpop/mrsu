@@ -1,4 +1,8 @@
 ##                             Лабораторная работа 6 (JavaScript). Объектно-ориентированное программирование в JavaScript
+## Лекции
+* "ООП в JavaScript" https://youtu.be/D_pJghB4Mqo
+* "Использование this в JavaScript" https://youtu.be/oNYpmRVbHZs
+* "Тестирование в JavaScript" https://youtu.be/hFnJtssJsHc
 ## Задание 1. Работа с объектами-литералами
 1. Напишите функцию `createFraction(numerator, denominator)`, создающую объекты для работы с рациональными числами. Реализуйте методы:
 * `getNumer()` - возвращает числитель (нормализованный).

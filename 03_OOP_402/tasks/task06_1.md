@@ -1,4 +1,8 @@
 ##                             Лабораторная работа 6 (JavaScript). Объектно-ориентированное программирование в JavaScript
+## Лекции
+* "ООП в JavaScript" https://youtu.be/D_pJghB4Mqo
+* "Использование this в JavaScript" https://youtu.be/oNYpmRVbHZs
+* "Тестирование в JavaScript" https://youtu.be/hFnJtssJsHc
 ## Задание 1. Работа с объектами-литералами
 1. Напишите функцию `createVector(x, y, z)`, создающую объекты для работы с трехмерными векторами. Реализуйте методы:
 * Длина `getLength()` - определение длины вектора.
