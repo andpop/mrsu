@@ -32,7 +32,7 @@
 4. Используя PHPUnit, написать модульные тесты для проверки корректности работы всех методов классов `Stack`, `Queue` и функции `checkIfBalanced`.
 
 ### Требования к оформлению и коду
-* Работать нужно в ветке Task03 Git-репозитория.
+* Работать нужно в ветке Task03 Git-репозитория, в каталоге Task03.
 * PHPUnit установить локально в проект (`composer require phpunit/phpunit`). Прогон тестов из каталога tests: `./vendor/bin/phpunit --color tests`
 * Требования к оформления PHP-кода приведены в файле [PHP_instruction.md](PHP_instruction.md)
 
