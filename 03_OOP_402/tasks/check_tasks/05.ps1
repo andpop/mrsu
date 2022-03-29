@@ -1,28 +1,43 @@
 #!pwsh
-cd Task05/Task05_1
-"=================================================="
-pwd
-"=================================================="
-composer install
-phpcs --standard=PSR12 ./src/*
-./vendor/bin/phpunit tests --colors
+function Check-Task {
+    Write-Host "==================================================" -ForegroundColor yellow
+    Write-Host "Task: ${(pwd).Path}" -ForegroundColor yellow
+    Write-Host "==================================================" -ForegroundColor yellow
+    Write-Host "Check .gitignore" -Foreground yellow
+    type .gitignore
+    Write-Host "==================================================" -ForegroundColor yellow
+    composer install
 
+    Write-Host "==================================================" -ForegroundColor yellow
+    Write-Host "Check PSR" -Foreground yellow
+    phpcs --standard=PSR12 ./src/*
+    if ($?) {
+        Write-Host "PSR check done" -ForegroundColor green
+    } else {
+        Write-Host "PSR check FAILURE" -ForegroundColor red
+    }
+        
+    Write-Host "==================================================" -ForegroundColor yellow
+    Write-Host "Run tests" -Foreground yellow
+    ./vendor/bin/phpunit tests --colors
+    if ($?) {
+        Write-Host "Custom test check done" -ForegroundColor green
+    } else {
+        Write-Host "Custom test check FAILURE" -ForegroundColor red
+    }
+    Write-Host "==================================================" -ForegroundColor yellow
+}
+
+cd Task05/Task05_1
+Check-Task
 
 cd ../Task05_2
-"=================================================="
-pwd
-"=================================================="
-composer install
-phpcs --standard=PSR12 ./src/*
-./vendor/bin/phpunit tests --colors
+Check-Task
 
 cd ../Task05_3
-"=================================================="
-pwd
-"=================================================="
-composer install
-phpcs --standard=PSR12 ./src/*
-./vendor/bin/phpunit tests --colors
+Check-Task
 
-cd ..
-git push teacher master
+# cd ..
+# git push teacher master
+#
+# if (-not (git remote show student | Select-String $branch -Quiet)) {Write-Host "Ветки $branch нет"} else {Write-Host "Ветк $branch есть"}
