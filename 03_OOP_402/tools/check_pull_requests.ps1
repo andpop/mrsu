@@ -8,6 +8,6 @@ Get-ChildItem $studentDir -Attributes Directory |
         Out-Host -InputObject $_.Name
         $response = Invoke-RestMethod -Uri "${teacherRepo}$($_.Name)/pulls" -Headers $headers
         $obj = ($response | 
-            Select-Object -Property @{label='repo'; expression={$_.head.repo.name}}, @{label='student_repo'; expression={$_.head.repo.clone_url}}, number, title, created_at)
+            Select-Object -Property @{label='repo'; expression={$_.head.repo.name}}, @{label='student_repo'; expression={$_.head.repo.clone_url}}, number, @{label='branch'; expression={$_.head.ref}}, created_at)
         $obj | Format-List *
     }
