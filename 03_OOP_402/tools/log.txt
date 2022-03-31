@@ -1,0 +1,163 @@
+**********************
+PowerShell transcript start
+Start time: 20220331155622
+**********************
+Transcript started, output file is log.txt
+=====================================================
+/home/andrey/labs_402/402_Antonova_SA
+Task05
+Task from branch: Task05
+Creation date: 03/29/2022 18:25:31
+From github.com-mrsu:andpop-mrsu/402_Antonova_SA
+From github.com-mrsu:andpop-mrsu/402_Antonova_SA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+fatal: remote student already exists.
+fatal: remote student already exists.
+Already up to date.
+--------------------------------------------------
+/home/andrey/labs_402/402_Antonova_SA/Task05/Task05_1
+Task:  /home/andrey/labs_402/402_Antonova_SA/Task05/Task05_1
+--------------------------------------------------
+Check .gitignore
+No .gitignore
+--------------------------------------------------
+Installing dependencies from lock file (including require-dev)
+Installing dependencies from lock file (including require-dev)
+Verifying lock file contents can be installed on current platform.
+Verifying lock file contents can be installed on current platform.
+Nothing to install, update or remove
+Nothing to install, update or remove
+Generating autoload files
+Generating autoload files
+26 packages you are using are looking for funding.
+26 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+Use the `composer fund` command to find out more!
+--------------------------------------------------
+Check PSR
+PSR check done
+--------------------------------------------------
+Run tests
+PHPUnit 9.5.19 #StandWithUkraine
+
+...                                                                 3 / 3 (100%)
+
+Time: 00:00.003, Memory: 4.00 MB
+
+OK (3 tests, 6 assertions)
+Custom test check done
+--------------------------------------------------
+--------------------------------------------------
+/home/andrey/labs_402/402_Antonova_SA/Task05/Task05_2
+Task:  /home/andrey/labs_402/402_Antonova_SA/Task05/Task05_2
+--------------------------------------------------
+Check .gitignore
+No .gitignore
+--------------------------------------------------
+Installing dependencies from lock file (including require-dev)
+Installing dependencies from lock file (including require-dev)
+Verifying lock file contents can be installed on current platform.
+Verifying lock file contents can be installed on current platform.
+Nothing to install, update or remove
+Nothing to install, update or remove
+Generating autoload files
+Generating autoload files
+26 packages you are using are looking for funding.
+26 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+Use the `composer fund` command to find out more!
+--------------------------------------------------
+Check PSR
+PSR check done
+--------------------------------------------------
+Run tests
+PHPUnit 9.5.19 #StandWithUkraine
+
+..                                                                  2 / 2 (100%)
+
+Time: 00:00.003, Memory: 4.00 MB
+
+OK (2 tests, 2 assertions)
+Custom test check done
+--------------------------------------------------
+--------------------------------------------------
+/home/andrey/labs_402/402_Antonova_SA/Task05/Task05_3
+Task:  /home/andrey/labs_402/402_Antonova_SA/Task05/Task05_3
+--------------------------------------------------
+Check .gitignore
+No .gitignore
+--------------------------------------------------
+Installing dependencies from lock file (including require-dev)
+Installing dependencies from lock file (including require-dev)
+Verifying lock file contents can be installed on current platform.
+Verifying lock file contents can be installed on current platform.
+Nothing to install, update or remove
+Nothing to install, update or remove
+Generating autoload files
+Generating autoload files
+
+
+
+
+  [InvalidArgumentException]
+  [InvalidArgumentException]
+  A non-empty PSR-4 prefix must end with a namespace separator.
+  A non-empty PSR-4 prefix must end with a namespace separator.
+
+
+
+
+install [--prefer-source] [--prefer-dist] [--prefer-install PREFER-INSTALL] [--dry-run] [--dev] [--no-suggest] [--no-dev] [--no-autoloader] [--no-progress] [--no-install] [-v|vv|vvv|--verbose] [-o|--optimize-autoloader] [-a|--classmap-authoritative] [--apcu-autoloader] [--apcu-autoloader-prefix APCU-AUTOLOADER-PREFIX] [--ignore-platform-req IGNORE-PLATFORM-REQ] [--ignore-platform-reqs] [--] [<packages>]...
+install [--prefer-source] [--prefer-dist] [--prefer-install PREFER-INSTALL] [--dry-run] [--dev] [--no-suggest] [--no-dev] [--no-autoloader] [--no-progress] [--no-install] [-v|vv|vvv|--verbose] [-o|--optimize-autoloader] [-a|--classmap-authoritative] [--apcu-autoloader] [--apcu-autoloader-prefix APCU-AUTOLOADER-PREFIX] [--ignore-platform-req IGNORE-PLATFORM-REQ] [--ignore-platform-reqs] [--] [<packages>]...
+
+
+--------------------------------------------------
+Check PSR
+PSR check done
+--------------------------------------------------
+Run tests
+PHP Warning:  require(/home/andrey/labs_402/402_Antonova_SA/Task05/Task05_3/vendor/bin/../autoload.php): failed to open stream: No such file or directory in phpvfscomposer:///home/andrey/labs_402/402_Antonova_SA/Task05/Task05_3/vendor/phpunit/phpunit/phpunit on line 95
+PHP Warning:  require(/home/andrey/labs_402/402_Antonova_SA/Task05/Task05_3/vendor/bin/../autoload.php): failed to open stream: No such file or directory in phpvfscomposer:///home/andrey/labs_402/402_Antonova_SA/Task05/Task05_3/vendor/phpunit/phpunit/phpunit on line 95
+PHP Fatal error:  require(): Failed opening required '/home/andrey/labs_402/402_Antonova_SA/Task05/Task05_3/vendor/bin/../autoload.php' (include_path='.:/usr/share/php') in phpvfscomposer:///home/andrey/labs_402/402_Antonova_SA/Task05/Task05_3/vendor/phpunit/phpunit/phpunit on line 95
+PHP Fatal error:  require(): Failed opening required '/home/andrey/labs_402/402_Antonova_SA/Task05/Task05_3/vendor/bin/../autoload.php' (include_path='.:/usr/share/php') in phpvfscomposer:///home/andrey/labs_402/402_Antonova_SA/Task05/Task05_3/vendor/phpunit/phpunit/phpunit on line 95
+Custom test check FAILURE
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/402_Antonova_SA.git
+To github.com-mrsu:andpop-mrsu/402_Antonova_SA.git
+   65ba4df..cd3d0a5  master -> master
+   65ba4df..cd3d0a5  master -> master
+=====================================================
+/home/andrey/labs_402/402_Bikmaev_RR
+Task06
+Task from branch: Task06
+Creation date: 03/25/2022 18:53:40
+From github.com-mrsu:andpop-mrsu/402_Bikmaev_RR
+From github.com-mrsu:andpop-mrsu/402_Bikmaev_RR
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+fatal: remote student already exists.
+fatal: remote student already exists.
+Already up to date.
+No checking script check_Task06.ps1
+=====================================================
+/home/andrey/labs_402/402_Kloc_AI
+Solution #6
+Task from branch: Task06
+Creation date: 03/30/2022 12:33:41
+From github.com-mrsu:andpop-mrsu/402_Kloc_AI
+From github.com-mrsu:andpop-mrsu/402_Kloc_AI
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+fatal: remote student already exists.
+fatal: remote student already exists.
+Already up to date.
+No checking script check_Task06.ps1
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> $global:?
+True

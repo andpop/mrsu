@@ -1,15 +1,23 @@
 #!pwsh
+param($studentDir, $task)
+
 function Check-Task {
-    Write-Host "==================================================" -ForegroundColor yellow
-    Write-Host "Task: ${(pwd).Path}" -ForegroundColor yellow
-    Write-Host "==================================================" -ForegroundColor yellow
-    Write-Host "Check .gitignore" -Foreground yellow
-    type .gitignore
-    Write-Host "==================================================" -ForegroundColor yellow
+    Write-Host "--------------------------------------------------" -ForegroundColor blue
+    (Get-Location).Path
+    Write-Host "Task: ", (Get-Location).Path -ForegroundColor blue
+    Write-Host "--------------------------------------------------" -ForegroundColor blue
+    Write-Host "Check .gitignore" -Foreground blue
+    if (Test-Path .gitignore) {
+        type .gitignore
+    } else {
+        Write-Host "No .gitignore" -ForegroundColor red
+    }
+    Write-Host "--------------------------------------------------" -ForegroundColor blue
     composer install
 
-    Write-Host "==================================================" -ForegroundColor yellow
-    Write-Host "Check PSR" -Foreground yellow
+    Write-Host "--------------------------------------------------" -ForegroundColor blue
+    Write-Host "Check PSR" -Foreground blue
+    $params = "standard-PSR12", "./src/*"
     phpcs --standard=PSR12 ./src/*
     if ($?) {
         Write-Host "PSR check done" -ForegroundColor green
@@ -17,27 +25,27 @@ function Check-Task {
         Write-Host "PSR check FAILURE" -ForegroundColor red
     }
         
-    Write-Host "==================================================" -ForegroundColor yellow
-    Write-Host "Run tests" -Foreground yellow
+    Write-Host "--------------------------------------------------" -ForegroundColor blue
+    Write-Host "Run tests" -Foreground blue
     ./vendor/bin/phpunit tests --colors
     if ($?) {
         Write-Host "Custom test check done" -ForegroundColor green
     } else {
         Write-Host "Custom test check FAILURE" -ForegroundColor red
     }
-    Write-Host "==================================================" -ForegroundColor yellow
+    Write-Host "--------------------------------------------------" -ForegroundColor blue
 }
 
-cd Task05/Task05_1
-Check-Task
+$taskDir = "$studentDir/$task"
 
-cd ../Task05_2
+Push-Location "$taskDir/Task05_1"
 Check-Task
+Pop-Location
 
-cd ../Task05_3
+Push-Location "$taskDir/Task05_2"
 Check-Task
+Pop-Location
 
-# cd ..
-# git push teacher master
-#
-# if (-not (git remote show student | Select-String $branch -Quiet)) {Write-Host "Ветки $branch нет"} else {Write-Host "Ветк $branch есть"}
+Push-Location "$taskDir/Task05_3"
+Check-Task
+Pop-Location
