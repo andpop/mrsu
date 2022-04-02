@@ -1,8 +1,3 @@
-$studentDirsPath = "/home/andrey/labs_402/"
-$teacherRepo = "https://api.github.com/repos/andpop-mrsu/" 
-$headers = @{}
-$headers.Add("Authorization", "Basic andpop-mrsu PAT-here!!!")
-
 function Check-PullRequest {
     Process {
         $repo = $_.head.repo.name
@@ -30,7 +25,7 @@ function Check-PullRequest {
         Pop-Location
 
         if (-not (Test-Path $checkScript)) {
-            Write-Host "No checking script $checkScript" -ForegroundColor red
+            Write-Host "Checking script $checkScript not found" -ForegroundColor red
             return
         }
         & .\$checkScript -studentDir $studentDir -task $task
@@ -53,17 +48,9 @@ function Check-Student {
         $studentRepo = "${teacherRepo}$($_.Name)/pulls"
         $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
     
-        if ($pullRequests.count -eq 0) {return}
+        if ($pullRequests.count -eq 0) { return }
     
         $pullRequests | Check-PullRequest
     }
 }
 
-# ===================================================================================
-if (Test-Path "./log.txt") { Remove-Item ./log.txt }
-Start-Transcript -Path "log.txt" -UseMinimalHeader
-
-$studentDirs = (Get-ChildItem $studentDirsPath -Attributes Directory) 
-$studentDirs | Check-Student
-
-Stop-Transcript

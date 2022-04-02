@@ -1,6 +1,6 @@
 param($studentDir, $task)
 
-. ./check_functions.ps1
+. ./checks_for_task.ps1
 
 Push-Location "$studentDir/$task"
 
@@ -12,8 +12,10 @@ Test-File -Path composer.json -ShowContent
 Test-File -Path src/Test.php -ShowContent
 Test-File -Path src/run_test.php -ShowContent
 
-Run-Command -Command phpcs -Params "--standard=PSR12 ./src/*"
-Run-Command  -Command php -Params src/run_test.php
+Test-Command -Command phpcs -Params "--standard=PSR12 ./src/*"
+
+composer install
+Test-Command  -Command php -Params src/run_test.php
     
 Write-Host "--------------------------------------------------" -ForegroundColor blue
 

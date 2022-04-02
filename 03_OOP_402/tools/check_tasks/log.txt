@@ -1,0 +1,1041 @@
+**********************
+PowerShell transcript start
+Start time: 20220402132143
+**********************
+Transcript started, output file is log.txt
+=====================================================
+/home/andrey/labs_402/402_Bikmaev_RR
+Task06
+Task from branch: Task06
+Creation date: 03/25/2022 18:53:40
+Из github.com-mrsu:andpop-mrsu/402_Bikmaev_RR
+Из github.com-mrsu:andpop-mrsu/402_Bikmaev_RR
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   7dff358..9e05362  master     -> teacher/master
+   7dff358..9e05362  master     -> teacher/master
+Обновление 7dff358..9e05362
+Fast-forward
+ .gitignore                                         |   3 +
+ Task01/.gitignore                                  |   3 -
+ Task01/src/Fraction.php                            |   2 +-
+ Task02/Task02_1/composer.json                      |  19 ++
+ Task02/Task02_1/src/Fraction.php                   | 115 +++++++++
+ Task02/Task02_1/tests/FractionTest.php             | 125 ++++++++++
+ Task02/Task02_2/composer.json                      |  19 ++
+ Task02/Task02_2/src/Student.php                    |  99 ++++++++
+ Task02/Task02_2/src/StudentsList.php               |  56 +++++
+ Task02/Task02_2/tests/StudentTest.php              |  30 +++
+ Task02/Task02_2/tests/StudentsListTest.php         | 135 +++++++++++
+ Task03/composer.json                               |  22 ++
+ Task03/src/Index.php                               |  45 ++++
+ Task03/src/Queue.php                               |  66 +++++
+ Task03/src/QueueInterface.php                      |  16 ++
+ Task03/src/Stack.php                               |  66 +++++
+ Task03/src/StackInterface.php                      |  16 ++
+ Task03/tests/IndexTest.php                         |  22 ++
+ Task03/tests/QueueTest.php                         | 134 +++++++++++
+ Task03/tests/StackTest.php                         | 134 +++++++++++
+ Task04/Task04_1/composer.json                      |  19 ++
+ Task04/Task04_1/src/Student.php                    |  99 ++++++++
+ Task04/Task04_1/src/StudentsList.php               |  82 +++++++
+ Task04/Task04_1/tests/StudentTest.php              |  30 +++
+ Task04/Task04_1/tests/StudentsListTest.php         | 265 +++++++++++++++++++++
+ Task04/Task04_2/composer.json                      |  19 ++
+ Task04/Task04_2/src/Truncater.php                  |  41 ++++
+ Task04/Task04_2/tests/TruncaterTest.php            |  30 +++
+ Task04/Task04_3/composer.json                      |  19 ++
+ Task04/Task04_3/src/DBLogger.php                   |  32 +++
+ Task04/Task04_3/src/FileLogger.php                 |  19 ++
+ Task04/Task04_3/src/Logger.php                     |  19 ++
+ Task04/Task04_3/src/Student.php                    |  99 ++++++++
+ Task04/Task04_3/src/StudentsList.php               |  86 +++++++
+ Task04/Task04_3/tests/DBLoggerTest.php             |  41 ++++
+ Task04/Task04_3/tests/FileLoggerTest.php           |  42 ++++
+ Task05/Task05.drawio.html                          |  11 +
+ Task05/Task05_1/composer.json                      |  19 ++
+ Task05/Task05_1/src/ManufacturerFilter.php         |  32 +++
+ Task05/Task05_1/src/MaxPriceFilter.php             |  39 +++
+ Task05/Task05_1/src/Product.php                    |  30 +++
+ Task05/Task05_1/src/ProductCollection.php          |  30 +++
+ Task05/Task05_1/src/ProductFilteringStrategy.php   |  10 +
+ Task05/Task05_1/tests/ManufacturerFilterTest.php   |  38 +++
+ Task05/Task05_1/tests/MaxPriceFilterTest.php       |  64 +++++
+ Task05/Task05_2/composer.json                      |  19 ++
+ Task05/Task05_2/src/CreditCard.php                 |  27 +++
+ Task05/Task05_2/src/CreditCardAdapter.php          |  25 ++
+ Task05/Task05_2/src/PayPal.php                     |  27 +++
+ Task05/Task05_2/src/PayPalAdapter.php              |  25 ++
+ Task05/Task05_2/src/PaymentAdapterInterface.php    |  10 +
+ Task05/Task05_2/tests/CreditCardAdapterTest.php    |  25 ++
+ Task05/Task05_2/tests/PayPalAdapterTest.php        |  25 ++
+ Task05/Task05_3/composer.json                      |  20 ++
+ .../Task05_3/src/Decorators/BreakfastDecorator.php |  25 ++
+ Task05/Task05_3/src/Decorators/Decorator.php       |  27 +++
+ Task05/Task05_3/src/Decorators/DinnerDecorator.php |  25 ++
+ .../src/Decorators/FoodDeliveryDecorator.php       |  25 ++
+ .../Task05_3/src/Decorators/InternetDecorator.php  |  25 ++
+ Task05/Task05_3/src/Decorators/SofaDecorator.php   |  25 ++
+ Task05/Task05_3/src/EconomyRoom.php                |  13 +
+ Task05/Task05_3/src/Room.php                       |  27 +++
+ Task05/Task05_3/src/RoomInterface.php              |  11 +
+ Task05/Task05_3/src/StandardRoom.php               |  13 +
+ Task05/Task05_3/src/SuiteRoom.php                  |  13 +
+ Task05/Task05_3/tests/DecoratorTest.php            | 104 ++++++++
+ Task05/Task05_3/uml.jpg                            | Bin 0 -> 2906979 bytes
+ task02.md                                          |   2 +
+ task03.md                                          |  42 ++++
+ task04.md                                          |  54 +++++
+ task05.md                                          | 113 +++++++++
+ task06.md                                          |  52 ++++
+ task07.md                                          |  31 +++
+ 73 files changed, 3168 insertions(+), 4 deletions(-)
+ create mode 100644 .gitignore
+ delete mode 100644 Task01/.gitignore
+ create mode 100644 Task02/Task02_1/composer.json
+ create mode 100644 Task02/Task02_1/src/Fraction.php
+ create mode 100644 Task02/Task02_1/tests/FractionTest.php
+ create mode 100644 Task02/Task02_2/composer.json
+ create mode 100644 Task02/Task02_2/src/Student.php
+ create mode 100644 Task02/Task02_2/src/StudentsList.php
+ create mode 100644 Task02/Task02_2/tests/StudentTest.php
+ create mode 100644 Task02/Task02_2/tests/StudentsListTest.php
+ create mode 100644 Task03/composer.json
+ create mode 100644 Task03/src/Index.php
+ create mode 100644 Task03/src/Queue.php
+ create mode 100644 Task03/src/QueueInterface.php
+ create mode 100644 Task03/src/Stack.php
+ create mode 100644 Task03/src/StackInterface.php
+ create mode 100644 Task03/tests/IndexTest.php
+ create mode 100644 Task03/tests/QueueTest.php
+ create mode 100644 Task03/tests/StackTest.php
+ create mode 100644 Task04/Task04_1/composer.json
+ create mode 100644 Task04/Task04_1/src/Student.php
+ create mode 100644 Task04/Task04_1/src/StudentsList.php
+ create mode 100644 Task04/Task04_1/tests/StudentTest.php
+ create mode 100644 Task04/Task04_1/tests/StudentsListTest.php
+ create mode 100644 Task04/Task04_2/composer.json
+ create mode 100644 Task04/Task04_2/src/Truncater.php
+ create mode 100644 Task04/Task04_2/tests/TruncaterTest.php
+ create mode 100644 Task04/Task04_3/composer.json
+ create mode 100644 Task04/Task04_3/src/DBLogger.php
+ create mode 100644 Task04/Task04_3/src/FileLogger.php
+ create mode 100644 Task04/Task04_3/src/Logger.php
+ create mode 100644 Task04/Task04_3/src/Student.php
+ create mode 100644 Task04/Task04_3/src/StudentsList.php
+ create mode 100644 Task04/Task04_3/tests/DBLoggerTest.php
+ create mode 100644 Task04/Task04_3/tests/FileLoggerTest.php
+ create mode 100644 Task05/Task05.drawio.html
+ create mode 100644 Task05/Task05_1/composer.json
+ create mode 100644 Task05/Task05_1/src/ManufacturerFilter.php
+ create mode 100644 Task05/Task05_1/src/MaxPriceFilter.php
+ create mode 100644 Task05/Task05_1/src/Product.php
+ create mode 100644 Task05/Task05_1/src/ProductCollection.php
+ create mode 100644 Task05/Task05_1/src/ProductFilteringStrategy.php
+ create mode 100644 Task05/Task05_1/tests/ManufacturerFilterTest.php
+ create mode 100644 Task05/Task05_1/tests/MaxPriceFilterTest.php
+ create mode 100644 Task05/Task05_2/composer.json
+ create mode 100644 Task05/Task05_2/src/CreditCard.php
+ create mode 100644 Task05/Task05_2/src/CreditCardAdapter.php
+ create mode 100644 Task05/Task05_2/src/PayPal.php
+ create mode 100644 Task05/Task05_2/src/PayPalAdapter.php
+ create mode 100644 Task05/Task05_2/src/PaymentAdapterInterface.php
+ create mode 100644 Task05/Task05_2/tests/CreditCardAdapterTest.php
+ create mode 100644 Task05/Task05_2/tests/PayPalAdapterTest.php
+ create mode 100644 Task05/Task05_3/composer.json
+ create mode 100644 Task05/Task05_3/src/Decorators/BreakfastDecorator.php
+ create mode 100644 Task05/Task05_3/src/Decorators/Decorator.php
+ create mode 100644 Task05/Task05_3/src/Decorators/DinnerDecorator.php
+ create mode 100644 Task05/Task05_3/src/Decorators/FoodDeliveryDecorator.php
+ create mode 100644 Task05/Task05_3/src/Decorators/InternetDecorator.php
+ create mode 100644 Task05/Task05_3/src/Decorators/SofaDecorator.php
+ create mode 100644 Task05/Task05_3/src/EconomyRoom.php
+ create mode 100644 Task05/Task05_3/src/Room.php
+ create mode 100644 Task05/Task05_3/src/RoomInterface.php
+ create mode 100644 Task05/Task05_3/src/StandardRoom.php
+ create mode 100644 Task05/Task05_3/src/SuiteRoom.php
+ create mode 100644 Task05/Task05_3/tests/DecoratorTest.php
+ create mode 100644 Task05/Task05_3/uml.jpg
+ create mode 100644 task03.md
+ create mode 100644 task04.md
+ create mode 100644 task05.md
+ create mode 100644 task06.md
+ create mode 100644 task07.md
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/Raff312/402_Bikmaev_RR
+Из https://github.com/Raff312/402_Bikmaev_RR
+   a924713..7caf380  Task02     -> student/Task02
+   a924713..7caf380  Task02     -> student/Task02
+   23117cf..b01efb1  Task03     -> student/Task03
+   23117cf..b01efb1  Task03     -> student/Task03
+   2291ca1..b1149e9  Task04     -> student/Task04
+   2291ca1..b1149e9  Task04     -> student/Task04
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task06     -> student/Task06
+   5d80f28..9e05362  master     -> student/master
+   5d80f28..9e05362  master     -> student/master
+Обновление 9e05362..1cdcf82
+Fast-forward (no commit created; -m option ignored)
+ .gitignore                                 |  4 ++-
+ Task06/Task06_1/package.json               | 16 ++++++++++
+ Task06/Task06_1/src/createVector.js        | 47 ++++++++++++++++++++++++++++++
+ Task06/Task06_1/tests/createVector.test.js | 42 ++++++++++++++++++++++++++
+ Task06/Task06_2/package.json               | 16 ++++++++++
+ Task06/Task06_2/src/vector.js              | 45 ++++++++++++++++++++++++++++
+ Task06/Task06_2/tests/vector.test.js       | 42 ++++++++++++++++++++++++++
+ Task06/Task06_3/package.json               | 16 ++++++++++
+ Task06/Task06_3/src/vector.js              | 47 ++++++++++++++++++++++++++++++
+ Task06/Task06_3/tests/vector.test.js       | 42 ++++++++++++++++++++++++++
+ 10 files changed, 316 insertions(+), 1 deletion(-)
+ create mode 100644 Task06/Task06_1/package.json
+ create mode 100644 Task06/Task06_1/src/createVector.js
+ create mode 100644 Task06/Task06_1/tests/createVector.test.js
+ create mode 100644 Task06/Task06_2/package.json
+ create mode 100644 Task06/Task06_2/src/vector.js
+ create mode 100644 Task06/Task06_2/tests/vector.test.js
+ create mode 100644 Task06/Task06_3/package.json
+ create mode 100644 Task06/Task06_3/src/vector.js
+ create mode 100644 Task06/Task06_3/tests/vector.test.js
+Checking script check_Task06.ps1 not found
+=====================================================
+/home/andrey/labs_402/402_Kloc_AI
+Solution #6
+Task from branch: Task06
+Creation date: 03/30/2022 12:33:41
+Из github.com-mrsu:andpop-mrsu/402_Kloc_AI
+Из github.com-mrsu:andpop-mrsu/402_Kloc_AI
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   638bd2c..f542fb5  master     -> teacher/master
+   638bd2c..f542fb5  master     -> teacher/master
+Обновление 638bd2c..f542fb5
+Fast-forward
+ Task01.rarr                                      |  Bin 0 -> 1689 bytes
+ Task02/Task02_1/.gitignore                       |    1 +
+ Task02/Task02_1/composer.json                    |   21 +
+ Task02/Task02_1/composer.lock                    | 2105 +++++++++++++++++++++
+ Task02/Task02_1/src/Fraction.php                 |   75 +
+ Task02/Task02_1/tests/FractionTest.php           |   43 +
+ Task02/Task02_2/.gitignore                       |    1 +
+ Task02/Task02_2/composer.json                    |   21 +
+ Task02/Task02_2/composer.lock                    | 2115 ++++++++++++++++++++++
+ Task02/Task02_2/output                           |  Bin 0 -> 240 bytes
+ Task02/Task02_2/src/Student.php                  |   90 +
+ Task02/Task02_2/src/StudentsList.php             |   39 +
+ Task02/Task02_2/tests/StudentTest.php            |   36 +
+ Task02/Task02_2/tests/StudentsListTest.php       |   45 +
+ Task03/.gitignore                                |    2 +
+ Task03/composer.json                             |   25 +
+ Task03/composer.lock                             | 2105 +++++++++++++++++++++
+ Task03/src/Queue.php                             |   71 +
+ Task03/src/QueueInterface.php                    |   27 +
+ Task03/src/Stack.php                             |   82 +
+ Task03/src/StackInterface.php                    |   18 +
+ Task03/src/checkIfBalanced.php                   |   29 +
+ Task03/tests/CheckIfBalancedTest.php             |   17 +
+ Task03/tests/QueueTest.php                       |   47 +
+ Task03/tests/StackTest.php                       |   50 +
+ Task04/Task04_1/.gitignore                       |    2 +
+ Task04/Task04_1/composer.json                    |   21 +
+ Task04/Task04_1/composer.lock                    | 2110 +++++++++++++++++++++
+ Task04/Task04_1/src/Student.php                  |   90 +
+ Task04/Task04_1/src/StudentsList.php             |   65 +
+ Task04/Task04_1/tests/StudentTest.php            |   36 +
+ Task04/Task04_1/tests/StudentsListTest.php       |  109 ++
+ Task04/Task04_2/.gitignore                       |    2 +
+ Task04/Task04_2/composer.json                    |   21 +
+ Task04/Task04_2/composer.lock                    | 2110 +++++++++++++++++++++
+ Task04/Task04_2/src/Truncater.php                |   30 +
+ Task04/Task04_2/tests/TruncaterTest.php          |   19 +
+ Task04/Task04_3/.gitignore                       |    2 +
+ Task04/Task04_3/UML-KlotsAI.jpg                  |  Bin 0 -> 1519715 bytes
+ Task04/Task04_3/composer.json                    |   21 +
+ Task04/Task04_3/composer.lock                    | 2110 +++++++++++++++++++++
+ Task04/Task04_3/src/DBLogger.php                 |   26 +
+ Task04/Task04_3/src/FileLogger.php               |   15 +
+ Task04/Task04_3/src/Logger.php                   |   14 +
+ Task04/Task04_3/src/Student.php                  |   90 +
+ Task04/Task04_3/src/StudentsList.php             |   76 +
+ Task04/Task04_3/tests/LoggerTest.php             |   33 +
+ Task05/Task05_1/.gitignore                       |    1 +
+ Task05/Task05_1/composer.json                    |   22 +
+ Task05/Task05_1/composer.lock                    | 2110 +++++++++++++++++++++
+ Task05/Task05_1/src/ManufacturerFilter.php       |   25 +
+ Task05/Task05_1/src/MaxPriceFilter.php           |   31 +
+ Task05/Task05_1/src/Product.php                  |   11 +
+ Task05/Task05_1/src/ProductCollection.php        |   26 +
+ Task05/Task05_1/src/ProductFilteringStrategy.php |    8 +
+ Task05/Task05_1/tests/FilterTest.php             |   39 +
+ Task05/Task05_2/.gitignore                       |    1 +
+ Task05/Task05_2/composer.json                    |   22 +
+ Task05/Task05_2/composer.lock                    | 2110 +++++++++++++++++++++
+ Task05/Task05_2/src/CreditCard.php               |   20 +
+ Task05/Task05_2/src/CreditCardAdapter.php        |   21 +
+ Task05/Task05_2/src/PayPal.php                   |   20 +
+ Task05/Task05_2/src/PayPalAdapter.php            |   21 +
+ Task05/Task05_2/src/PaymentAdapterInterface.php  |    8 +
+ Task05/Task05_2/tests/PayTest.php                |   22 +
+ Task05/Task05_3/.gitignore                       |    1 +
+ Task05/Task05_3/UML-KlotsAI.jpg                  |  Bin 0 -> 237075 bytes
+ Task05/Task05_3/composer.json                    |   22 +
+ Task05/Task05_3/composer.lock                    | 2110 +++++++++++++++++++++
+ Task05/Task05_3/src/AdditionalServices.php       |   16 +
+ Task05/Task05_3/src/AdditionalSofa.php           |   21 +
+ Task05/Task05_3/src/BreakfastBuffet.php          |   21 +
+ Task05/Task05_3/src/DedicatedInternet.php        |   21 +
+ Task05/Task05_3/src/Dinner.php                   |   21 +
+ Task05/Task05_3/src/Economy.php                  |   20 +
+ Task05/Task05_3/src/FoodDelivery.php             |   21 +
+ Task05/Task05_3/src/HotelRoom.php                |    9 +
+ Task05/Task05_3/src/Luxury.php                   |   19 +
+ Task05/Task05_3/src/Standard.php                 |   19 +
+ Task05/Task05_3/tests/DecoratorTest.php          |   29 +
+ task02.md                                        |    2 +
+ task03.md                                        |   42 +
+ task04.md                                        |   54 +
+ task05.md                                        |  113 ++
+ task06.md                                        |   52 +
+ task07.md                                        |   31 +
+ 86 files changed, 21229 insertions(+)
+ create mode 100644 Task01.rarr
+ create mode 100644 Task02/Task02_1/.gitignore
+ create mode 100644 Task02/Task02_1/composer.json
+ create mode 100644 Task02/Task02_1/composer.lock
+ create mode 100644 Task02/Task02_1/src/Fraction.php
+ create mode 100644 Task02/Task02_1/tests/FractionTest.php
+ create mode 100644 Task02/Task02_2/.gitignore
+ create mode 100644 Task02/Task02_2/composer.json
+ create mode 100644 Task02/Task02_2/composer.lock
+ create mode 100644 Task02/Task02_2/output
+ create mode 100644 Task02/Task02_2/src/Student.php
+ create mode 100644 Task02/Task02_2/src/StudentsList.php
+ create mode 100644 Task02/Task02_2/tests/StudentTest.php
+ create mode 100644 Task02/Task02_2/tests/StudentsListTest.php
+ create mode 100644 Task03/.gitignore
+ create mode 100644 Task03/composer.json
+ create mode 100644 Task03/composer.lock
+ create mode 100644 Task03/src/Queue.php
+ create mode 100644 Task03/src/QueueInterface.php
+ create mode 100644 Task03/src/Stack.php
+ create mode 100644 Task03/src/StackInterface.php
+ create mode 100644 Task03/src/checkIfBalanced.php
+ create mode 100644 Task03/tests/CheckIfBalancedTest.php
+ create mode 100644 Task03/tests/QueueTest.php
+ create mode 100644 Task03/tests/StackTest.php
+ create mode 100644 Task04/Task04_1/.gitignore
+ create mode 100644 Task04/Task04_1/composer.json
+ create mode 100644 Task04/Task04_1/composer.lock
+ create mode 100644 Task04/Task04_1/src/Student.php
+ create mode 100644 Task04/Task04_1/src/StudentsList.php
+ create mode 100644 Task04/Task04_1/tests/StudentTest.php
+ create mode 100644 Task04/Task04_1/tests/StudentsListTest.php
+ create mode 100644 Task04/Task04_2/.gitignore
+ create mode 100644 Task04/Task04_2/composer.json
+ create mode 100644 Task04/Task04_2/composer.lock
+ create mode 100644 Task04/Task04_2/src/Truncater.php
+ create mode 100644 Task04/Task04_2/tests/TruncaterTest.php
+ create mode 100644 Task04/Task04_3/.gitignore
+ create mode 100644 Task04/Task04_3/UML-KlotsAI.jpg
+ create mode 100644 Task04/Task04_3/composer.json
+ create mode 100644 Task04/Task04_3/composer.lock
+ create mode 100644 Task04/Task04_3/src/DBLogger.php
+ create mode 100644 Task04/Task04_3/src/FileLogger.php
+ create mode 100644 Task04/Task04_3/src/Logger.php
+ create mode 100644 Task04/Task04_3/src/Student.php
+ create mode 100644 Task04/Task04_3/src/StudentsList.php
+ create mode 100644 Task04/Task04_3/tests/LoggerTest.php
+ create mode 100644 Task05/Task05_1/.gitignore
+ create mode 100644 Task05/Task05_1/composer.json
+ create mode 100644 Task05/Task05_1/composer.lock
+ create mode 100644 Task05/Task05_1/src/ManufacturerFilter.php
+ create mode 100644 Task05/Task05_1/src/MaxPriceFilter.php
+ create mode 100644 Task05/Task05_1/src/Product.php
+ create mode 100644 Task05/Task05_1/src/ProductCollection.php
+ create mode 100644 Task05/Task05_1/src/ProductFilteringStrategy.php
+ create mode 100644 Task05/Task05_1/tests/FilterTest.php
+ create mode 100644 Task05/Task05_2/.gitignore
+ create mode 100644 Task05/Task05_2/composer.json
+ create mode 100644 Task05/Task05_2/composer.lock
+ create mode 100644 Task05/Task05_2/src/CreditCard.php
+ create mode 100644 Task05/Task05_2/src/CreditCardAdapter.php
+ create mode 100644 Task05/Task05_2/src/PayPal.php
+ create mode 100644 Task05/Task05_2/src/PayPalAdapter.php
+ create mode 100644 Task05/Task05_2/src/PaymentAdapterInterface.php
+ create mode 100644 Task05/Task05_2/tests/PayTest.php
+ create mode 100644 Task05/Task05_3/.gitignore
+ create mode 100644 Task05/Task05_3/UML-KlotsAI.jpg
+ create mode 100644 Task05/Task05_3/composer.json
+ create mode 100644 Task05/Task05_3/composer.lock
+ create mode 100644 Task05/Task05_3/src/AdditionalServices.php
+ create mode 100644 Task05/Task05_3/src/AdditionalSofa.php
+ create mode 100644 Task05/Task05_3/src/BreakfastBuffet.php
+ create mode 100644 Task05/Task05_3/src/DedicatedInternet.php
+ create mode 100644 Task05/Task05_3/src/Dinner.php
+ create mode 100644 Task05/Task05_3/src/Economy.php
+ create mode 100644 Task05/Task05_3/src/FoodDelivery.php
+ create mode 100644 Task05/Task05_3/src/HotelRoom.php
+ create mode 100644 Task05/Task05_3/src/Luxury.php
+ create mode 100644 Task05/Task05_3/src/Standard.php
+ create mode 100644 Task05/Task05_3/tests/DecoratorTest.php
+ create mode 100644 task03.md
+ create mode 100644 task04.md
+ create mode 100644 task05.md
+ create mode 100644 task06.md
+ create mode 100644 task07.md
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/KlotsAI/402_Kloc_AI
+Из https://github.com/KlotsAI/402_Kloc_AI
+   abc98ed..5591069  Task02     -> student/Task02
+   abc98ed..5591069  Task02     -> student/Task02
+   93959d5..5ad758d  Task03     -> student/Task03
+   93959d5..5ad758d  Task03     -> student/Task03
+   1d1e0a9..82a6964  Task04     -> student/Task04
+   1d1e0a9..82a6964  Task04     -> student/Task04
+   d48e819..3546ea7  Task05     -> student/Task05
+   d48e819..3546ea7  Task05     -> student/Task05
+   226eb1e..093d680  Task06     -> student/Task06
+   226eb1e..093d680  Task06     -> student/Task06
+Merge made by the 'recursive' strategy.
+ Task06/Task06_1/.gitignore            |     3 +
+ Task06/Task06_1/package.json          |    17 +
+ Task06/Task06_1/src/index.js          |    42 +
+ Task06/Task06_1/tests/createVector.js |    37 +
+ Task06/Task06_2/.gitignore            |     1 +
+ Task06/Task06_2/package-lock.json     | 11106 ++++++++++++++++++++++++++++++++
+ Task06/Task06_2/package.json          |    17 +
+ Task06/Task06_2/src/index.js          |    38 +
+ Task06/Task06_2/tests/test-vector.js  |    37 +
+ Task06/Task06_3/.gitignore            |     1 +
+ Task06/Task06_3/package-lock.json     | 11106 ++++++++++++++++++++++++++++++++
+ Task06/Task06_3/package.json          |    17 +
+ Task06/Task06_3/src/index.js          |    40 +
+ Task06/Task06_3/tests/test-vector.js  |    37 +
+ 14 files changed, 22499 insertions(+)
+ create mode 100644 Task06/Task06_1/.gitignore
+ create mode 100644 Task06/Task06_1/package.json
+ create mode 100644 Task06/Task06_1/src/index.js
+ create mode 100644 Task06/Task06_1/tests/createVector.js
+ create mode 100644 Task06/Task06_2/.gitignore
+ create mode 100644 Task06/Task06_2/package-lock.json
+ create mode 100644 Task06/Task06_2/package.json
+ create mode 100644 Task06/Task06_2/src/index.js
+ create mode 100644 Task06/Task06_2/tests/test-vector.js
+ create mode 100644 Task06/Task06_3/.gitignore
+ create mode 100644 Task06/Task06_3/package-lock.json
+ create mode 100644 Task06/Task06_3/package.json
+ create mode 100644 Task06/Task06_3/src/index.js
+ create mode 100644 Task06/Task06_3/tests/test-vector.js
+Checking script check_Task06.ps1 not found
+=====================================================
+/home/andrey/labs_402/402_Oreshkin_SV
+Task06
+Task from branch: Task06
+Creation date: 04/02/2022 08:12:38
+error: Невозможно выполнить получение, так как у вас имеются не слитые файлы.
+error: Невозможно выполнить получение, так как у вас имеются не слитые файлы.
+подсказка: Исправьте их в рабочем каталоге, затем запустите «git add/rm <файл>»,
+подсказка: Исправьте их в рабочем каталоге, затем запустите «git add/rm <файл>»,
+подсказка: чтобы пометить исправление и сделайте коммит.
+подсказка: чтобы пометить исправление и сделайте коммит.
+fatal: Выход из-за неразрешенного конфликта.
+fatal: Выход из-за неразрешенного конфликта.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/SergeyOreshkin1/402_Oreshkin_SV
+Из https://github.com/SergeyOreshkin1/402_Oreshkin_SV
+   f27e630..34c21aa  Task02     -> student/Task02
+   f27e630..34c21aa  Task02     -> student/Task02
+   ecc9fe6..663b7f0  Task03     -> student/Task03
+   ecc9fe6..663b7f0  Task03     -> student/Task03
+ * [новая ветка]     Task03Fix  -> student/Task03Fix
+ * [новая ветка]     Task03Fix  -> student/Task03Fix
+   056239c..d18c2bd  Task04     -> student/Task04
+   056239c..d18c2bd  Task04     -> student/Task04
+   c4eedf1..bf96f21  Task05     -> student/Task05
+   c4eedf1..bf96f21  Task05     -> student/Task05
+   7be35c9..20d353f  Task06     -> student/Task06
+   7be35c9..20d353f  Task06     -> student/Task06
+   4b26203..14af9d7  master     -> student/master
+   4b26203..14af9d7  master     -> student/master
+error: Невозможно выполнить слияние, так как у вас имеются не слитые файлы.
+error: Невозможно выполнить слияние, так как у вас имеются не слитые файлы.
+подсказка: Исправьте их в рабочем каталоге, затем запустите «git add/rm <файл>»,
+подсказка: Исправьте их в рабочем каталоге, затем запустите «git add/rm <файл>»,
+подсказка: чтобы пометить исправление и сделайте коммит.
+подсказка: чтобы пометить исправление и сделайте коммит.
+fatal: Выход из-за неразрешенного конфликта.
+fatal: Выход из-за неразрешенного конфликта.
+Checking script check_Task06.ps1 not found
+=====================================================
+/home/andrey/labs_402/402_Usupov_B
+Task05
+Task from branch: Task05
+Creation date: 04/02/2022 08:12:42
+Из github.com-mrsu:andpop-mrsu/402_Usupov_B
+Из github.com-mrsu:andpop-mrsu/402_Usupov_B
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   a9fe3c9..2ef894b  master     -> teacher/master
+   a9fe3c9..2ef894b  master     -> teacher/master
+Обновление a9fe3c9..2ef894b
+Fast-forward
+ Task01/.gitignore                   |   2 +
+ Task01/bin/run-test                 |  14 +++++
+ Task01/bin/run-test.bat             |   5 ++
+ Task01/composer.json                |  16 +++++
+ Task01/src/Test.php                 |  31 ++++++++++
+ Task01/src/Vector.php               |  72 +++++++++++++++++++++++
+ Task02_1/.gitignore                 |   2 +
+ Task02_1/composer.json              |  17 ++++++
+ Task02_1/src/Vector.php             |  72 +++++++++++++++++++++++
+ Task02_1/tests/VectorTest.php       |  52 +++++++++++++++++
+ Task02_2/.gitignore                 |   2 +
+ Task02_2/composer.json              |  17 ++++++
+ Task02_2/output                     | Bin 0 -> 250 bytes
+ Task02_2/src/Book.php               |  86 +++++++++++++++++++++++++++
+ Task02_2/src/BooksList.php          |  39 +++++++++++++
+ Task02_2/tests/BookTest.php         |  41 +++++++++++++
+ Task02_2/tests/BooksListTest.php    |  46 +++++++++++++++
+ Task03/.gitignore                   |   2 +
+ Task03/composer.json                |  20 +++++++
+ Task03/src/CompareStrings.php       |  33 +++++++++++
+ Task03/src/Queue/Queue.php          |  64 ++++++++++++++++++++
+ Task03/src/Queue/QueueInterface.php |  13 +++++
+ Task03/src/Stack/Stack.php          |  63 ++++++++++++++++++++
+ Task03/src/Stack/StackInterface.php |  13 +++++
+ Task03/tests/CompareStringsTest.php |  18 ++++++
+ Task03/tests/QueueTest.php          |  47 +++++++++++++++
+ Task03/tests/StackTest.php          |  57 ++++++++++++++++++
+ task02.md                           |   2 +
+ task03.md                           |  47 +++++++++++++++
+ task04.md                           |  54 +++++++++++++++++
+ task05.md                           | 113 ++++++++++++++++++++++++++++++++++++
+ task06.md                           |  53 +++++++++++++++++
+ task07.md                           |  31 ++++++++++
+ 33 files changed, 1144 insertions(+)
+ create mode 100644 Task01/.gitignore
+ create mode 100644 Task01/bin/run-test
+ create mode 100644 Task01/bin/run-test.bat
+ create mode 100644 Task01/composer.json
+ create mode 100644 Task01/src/Test.php
+ create mode 100644 Task01/src/Vector.php
+ create mode 100644 Task02_1/.gitignore
+ create mode 100644 Task02_1/composer.json
+ create mode 100644 Task02_1/src/Vector.php
+ create mode 100644 Task02_1/tests/VectorTest.php
+ create mode 100644 Task02_2/.gitignore
+ create mode 100644 Task02_2/composer.json
+ create mode 100644 Task02_2/output
+ create mode 100644 Task02_2/src/Book.php
+ create mode 100644 Task02_2/src/BooksList.php
+ create mode 100644 Task02_2/tests/BookTest.php
+ create mode 100644 Task02_2/tests/BooksListTest.php
+ create mode 100644 Task03/.gitignore
+ create mode 100644 Task03/composer.json
+ create mode 100644 Task03/src/CompareStrings.php
+ create mode 100644 Task03/src/Queue/Queue.php
+ create mode 100644 Task03/src/Queue/QueueInterface.php
+ create mode 100644 Task03/src/Stack/Stack.php
+ create mode 100644 Task03/src/Stack/StackInterface.php
+ create mode 100644 Task03/tests/CompareStringsTest.php
+ create mode 100644 Task03/tests/QueueTest.php
+ create mode 100644 Task03/tests/StackTest.php
+ create mode 100644 task03.md
+ create mode 100644 task04.md
+ create mode 100644 task05.md
+ create mode 100644 task06.md
+ create mode 100644 task07.md
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/yusupovbekseyid/402_Usupov_B
+Из https://github.com/yusupovbekseyid/402_Usupov_B
+   aa319c9..b766fee  Task01     -> student/Task01
+   aa319c9..b766fee  Task01     -> student/Task01
+   b7ff873..8dc3fd4  Task02     -> student/Task02
+   b7ff873..8dc3fd4  Task02     -> student/Task02
+   ca4c1b0..85436e4  Task03     -> student/Task03
+   ca4c1b0..85436e4  Task03     -> student/Task03
+   0fd15cd..976ec5b  Task04     -> student/Task04
+   0fd15cd..976ec5b  Task04     -> student/Task04
+   b5afc70..ee0bb45  Task05     -> student/Task05
+   b5afc70..ee0bb45  Task05     -> student/Task05
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     Task08     -> student/Task08
+ * [новая ветка]     Task08     -> student/Task08
+Обновление 2ef894b..ee0bb45
+Fast-forward (no commit created; -m option ignored)
+ Task05_1/.gitignore                       |   2 ++
+ Task05_1/composer.json                    |  17 +++++++++++++
+ Task05_1/src/ManufacturerFilter.php       |  25 +++++++++++++++++++
+ Task05_1/src/MaxPriceFilter.php           |  31 ++++++++++++++++++++++++
+ Task05_1/src/Product.php                  |  11 +++++++++
+ Task05_1/src/ProductCollection.php        |  26 ++++++++++++++++++++
+ Task05_1/src/ProductFilteringStrategy.php |   8 ++++++
+ Task05_1/tests/FilterTest.php             |  39 ++++++++++++++++++++++++++++++
+ Task05_2/.gitignore                       |   2 ++
+ Task05_2/composer.json                    |  17 +++++++++++++
+ Task05_2/src/CreditCard.php               |  20 +++++++++++++++
+ Task05_2/src/CreditCardAdapter.php        |  21 ++++++++++++++++
+ Task05_2/src/PayPal.php                   |  20 +++++++++++++++
+ Task05_2/src/PayPalAdapter.php            |  21 ++++++++++++++++
+ Task05_2/src/PaymentAdapterInterface.php  |   8 ++++++
+ Task05_2/tests/PayTest.php                |  22 +++++++++++++++++
+ Task05_3/.gitignore                       |   2 ++
+ Task05_3/UML.jpg                          | Bin 0 -> 351962 bytes
+ Task05_3/composer.json                    |  17 +++++++++++++
+ Task05_3/src/AdditionalServices.php       |  16 ++++++++++++
+ Task05_3/src/AdditionalSofa.php           |  21 ++++++++++++++++
+ Task05_3/src/BreakfastBuffet.php          |  21 ++++++++++++++++
+ Task05_3/src/DedicatedInternet.php        |  21 ++++++++++++++++
+ Task05_3/src/Dinner.php                   |  21 ++++++++++++++++
+ Task05_3/src/Economy.php                  |  20 +++++++++++++++
+ Task05_3/src/FoodDelivery.php             |  21 ++++++++++++++++
+ Task05_3/src/HotelRoom.php                |   9 +++++++
+ Task05_3/src/Luxury.php                   |  19 +++++++++++++++
+ Task05_3/src/Standart.php                 |  19 +++++++++++++++
+ Task05_3/tests/DecoratorTest.php          |  29 ++++++++++++++++++++++
+ 30 files changed, 526 insertions(+)
+ create mode 100644 Task05_1/.gitignore
+ create mode 100644 Task05_1/composer.json
+ create mode 100644 Task05_1/src/ManufacturerFilter.php
+ create mode 100644 Task05_1/src/MaxPriceFilter.php
+ create mode 100644 Task05_1/src/Product.php
+ create mode 100644 Task05_1/src/ProductCollection.php
+ create mode 100644 Task05_1/src/ProductFilteringStrategy.php
+ create mode 100644 Task05_1/tests/FilterTest.php
+ create mode 100644 Task05_2/.gitignore
+ create mode 100644 Task05_2/composer.json
+ create mode 100644 Task05_2/src/CreditCard.php
+ create mode 100644 Task05_2/src/CreditCardAdapter.php
+ create mode 100644 Task05_2/src/PayPal.php
+ create mode 100644 Task05_2/src/PayPalAdapter.php
+ create mode 100644 Task05_2/src/PaymentAdapterInterface.php
+ create mode 100644 Task05_2/tests/PayTest.php
+ create mode 100644 Task05_3/.gitignore
+ create mode 100644 Task05_3/UML.jpg
+ create mode 100644 Task05_3/composer.json
+ create mode 100644 Task05_3/src/AdditionalServices.php
+ create mode 100644 Task05_3/src/AdditionalSofa.php
+ create mode 100644 Task05_3/src/BreakfastBuffet.php
+ create mode 100644 Task05_3/src/DedicatedInternet.php
+ create mode 100644 Task05_3/src/Dinner.php
+ create mode 100644 Task05_3/src/Economy.php
+ create mode 100644 Task05_3/src/FoodDelivery.php
+ create mode 100644 Task05_3/src/HotelRoom.php
+ create mode 100644 Task05_3/src/Luxury.php
+ create mode 100644 Task05_3/src/Standart.php
+ create mode 100644 Task05_3/tests/DecoratorTest.php
+
+Push-Location: /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks/check_Task05.ps1:23
+Line |
+  23 |  Push-Location "$taskDir/Task05_1"
+     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path '/home/andrey/labs_402/402_Usupov_B/Task05/Task05_1' because it does not exist.
+
+[91mPush-Location: [0m/home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks/check_Task05.ps1:23
+[96mLine |
+[96m  23 | [0m [96mPush-Location "$taskDir/Task05_1"[0m
+[96m     | [91m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[91m[96m     | [91mCannot find path '/home/andrey/labs_402/402_Usupov_B/Task05/Task05_1' because it does not exist.
+[0m
+--------------------------------------------------
+Task:  /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks
+--------------------------------------------------
+Check .gitignore
+.gitignore not found
+False
+--------------------------------------------------
+Check composer.json
+composer.json not found
+False
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+ERROR: The file "./src/*" does not exist.
+
+Run "phpcs --help" for usage information
+
+Execution fails
+False
+Composer could not find a composer.json file in /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks
+Composer could not find a composer.json file in /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks
+To initialize a project, please create a composer.json file as described in the https://getcomposer.org/ "Getting Started" section
+To initialize a project, please create a composer.json file as described in the https://getcomposer.org/ "Getting Started" section
+--------------------------------------------------
+Run: php src/run_test.php
+Could not open input file: src/run_test.php
+Execution fails
+False
+--------------------------------------------------
+Run: ./vendor/bin/phpunit tests --colors
+
+&: /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks/checks_for_task.ps1:30
+Line |
+  30 |      & $command $params.split(' ')
+     |        ~~~~~~~~
+     | The term './vendor/bin/phpunit' is not recognized as a name of a cmdlet, function, script file, or executable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+
+[91m&: [0m/home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks/checks_for_task.ps1:30
+[96mLine |
+[96m  30 | [0m     & [96m$command[0m $params.split(' ')
+[96m     | [91m       ~~~~~~~~
+[91m[96m     | [91mThe term './vendor/bin/phpunit' is not recognized as a name of a cmdlet, function, script file, or executable program. Check the spelling of the name, or if a path was
+[96m     | [91mincluded, verify that the path is correct and try again.
+[0m
+Execution fails
+False
+
+Push-Location: /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks/check_Task05.ps1:27
+Line |
+  27 |  Push-Location "$taskDir/Task05_2"
+     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path '/home/andrey/labs_402/402_Usupov_B/Task05/Task05_2' because it does not exist.
+
+[91mPush-Location: [0m/home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks/check_Task05.ps1:27
+[96mLine |
+[96m  27 | [0m [96mPush-Location "$taskDir/Task05_2"[0m
+[96m     | [91m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[91m[96m     | [91mCannot find path '/home/andrey/labs_402/402_Usupov_B/Task05/Task05_2' because it does not exist.
+[0m
+--------------------------------------------------
+Task:  /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks
+--------------------------------------------------
+Check .gitignore
+.gitignore not found
+False
+--------------------------------------------------
+Check composer.json
+composer.json not found
+False
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+ERROR: The file "./src/*" does not exist.
+
+Run "phpcs --help" for usage information
+
+Execution fails
+False
+Composer could not find a composer.json file in /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks
+Composer could not find a composer.json file in /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks
+To initialize a project, please create a composer.json file as described in the https://getcomposer.org/ "Getting Started" section
+To initialize a project, please create a composer.json file as described in the https://getcomposer.org/ "Getting Started" section
+--------------------------------------------------
+Run: php src/run_test.php
+Could not open input file: src/run_test.php
+Execution fails
+False
+--------------------------------------------------
+Run: ./vendor/bin/phpunit tests --colors
+
+&: /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks/checks_for_task.ps1:30
+Line |
+  30 |      & $command $params.split(' ')
+     |        ~~~~~~~~
+     | The term './vendor/bin/phpunit' is not recognized as a name of a cmdlet, function, script file, or executable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+
+[91m&: [0m/home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks/checks_for_task.ps1:30
+[96mLine |
+[96m  30 | [0m     & [96m$command[0m $params.split(' ')
+[96m     | [91m       ~~~~~~~~
+[91m[96m     | [91mThe term './vendor/bin/phpunit' is not recognized as a name of a cmdlet, function, script file, or executable program. Check the spelling of the name, or if a path was
+[96m     | [91mincluded, verify that the path is correct and try again.
+[0m
+Execution fails
+False
+
+Push-Location: /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks/check_Task05.ps1:31
+Line |
+  31 |  Push-Location "$taskDir/Task05_3"
+     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path '/home/andrey/labs_402/402_Usupov_B/Task05/Task05_3' because it does not exist.
+
+[91mPush-Location: [0m/home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks/check_Task05.ps1:31
+[96mLine |
+[96m  31 | [0m [96mPush-Location "$taskDir/Task05_3"[0m
+[96m     | [91m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[91m[96m     | [91mCannot find path '/home/andrey/labs_402/402_Usupov_B/Task05/Task05_3' because it does not exist.
+[0m
+--------------------------------------------------
+Task:  /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks
+--------------------------------------------------
+Check .gitignore
+.gitignore not found
+False
+--------------------------------------------------
+Check composer.json
+composer.json not found
+False
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+ERROR: The file "./src/*" does not exist.
+
+Run "phpcs --help" for usage information
+
+Execution fails
+False
+Composer could not find a composer.json file in /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks
+Composer could not find a composer.json file in /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks
+To initialize a project, please create a composer.json file as described in the https://getcomposer.org/ "Getting Started" section
+To initialize a project, please create a composer.json file as described in the https://getcomposer.org/ "Getting Started" section
+--------------------------------------------------
+Run: php src/run_test.php
+Could not open input file: src/run_test.php
+Execution fails
+False
+--------------------------------------------------
+Run: ./vendor/bin/phpunit tests --colors
+
+&: /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks/checks_for_task.ps1:30
+Line |
+  30 |      & $command $params.split(' ')
+     |        ~~~~~~~~
+     | The term './vendor/bin/phpunit' is not recognized as a name of a cmdlet, function, script file, or executable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+
+[91m&: [0m/home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks/checks_for_task.ps1:30
+[96mLine |
+[96m  30 | [0m     & [96m$command[0m $params.split(' ')
+[96m     | [91m       ~~~~~~~~
+[91m[96m     | [91mThe term './vendor/bin/phpunit' is not recognized as a name of a cmdlet, function, script file, or executable program. Check the spelling of the name, or if a path was
+[96m     | [91mincluded, verify that the path is correct and try again.
+[0m
+Execution fails
+False
+--------------------------------------------------
+Check uml.jpg
+uml.jpg not found
+False
+--------------------------------------------------
+=====================================================
+/home/andrey/labs_402/402_Usupov_B
+Task04
+Task from branch: Task04
+Creation date: 04/02/2022 08:05:53
+Из github.com-mrsu:andpop-mrsu/402_Usupov_B
+Из github.com-mrsu:andpop-mrsu/402_Usupov_B
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже обновлено.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Merge made by the 'recursive' strategy.
+ Task04_1/.gitignore              |   2 +
+ Task04_1/composer.json           |  17 ++++++
+ Task04_1/output                  | Bin 0 -> 806 bytes
+ Task04_1/src/Book.php            |  86 +++++++++++++++++++++++++++
+ Task04_1/src/BooksList.php       |  67 +++++++++++++++++++++
+ Task04_1/tests/BookTest.php      |  41 +++++++++++++
+ Task04_1/tests/BooksListTest.php | 125 +++++++++++++++++++++++++++++++++++++++
+ Task04_2/.gitignore              |   2 +
+ Task04_2/composer.json           |  18 ++++++
+ Task04_2/src/Truncater.php       |  30 ++++++++++
+ Task04_2/tests/TruncaterTest.php |  22 +++++++
+ Task04_3/.gitignore              |   2 +
+ Task04_3/UML.jpg                 | Bin 0 -> 499496 bytes
+ Task04_3/composer.json           |  18 ++++++
+ Task04_3/logs/.gitkeep           |   0
+ Task04_3/logs/logs.db            | Bin 0 -> 8192 bytes
+ Task04_3/logs/logs.txt           |   8 +++
+ Task04_3/src/Book.php            |  86 +++++++++++++++++++++++++++
+ Task04_3/src/BooksList.php       |  77 ++++++++++++++++++++++++
+ Task04_3/src/DBLogger.php        |  26 ++++++++
+ Task04_3/src/FileLogger.php      |  15 +++++
+ Task04_3/src/Logger.php          |  14 +++++
+ Task04_3/tests/LoggerTest.php    |  34 +++++++++++
+ 23 files changed, 690 insertions(+)
+ create mode 100644 Task04_1/.gitignore
+ create mode 100644 Task04_1/composer.json
+ create mode 100644 Task04_1/output
+ create mode 100644 Task04_1/src/Book.php
+ create mode 100644 Task04_1/src/BooksList.php
+ create mode 100644 Task04_1/tests/BookTest.php
+ create mode 100644 Task04_1/tests/BooksListTest.php
+ create mode 100644 Task04_2/.gitignore
+ create mode 100644 Task04_2/composer.json
+ create mode 100644 Task04_2/src/Truncater.php
+ create mode 100644 Task04_2/tests/TruncaterTest.php
+ create mode 100644 Task04_3/.gitignore
+ create mode 100644 Task04_3/UML.jpg
+ create mode 100644 Task04_3/composer.json
+ create mode 100644 Task04_3/logs/.gitkeep
+ create mode 100644 Task04_3/logs/logs.db
+ create mode 100644 Task04_3/logs/logs.txt
+ create mode 100644 Task04_3/src/Book.php
+ create mode 100644 Task04_3/src/BooksList.php
+ create mode 100644 Task04_3/src/DBLogger.php
+ create mode 100644 Task04_3/src/FileLogger.php
+ create mode 100644 Task04_3/src/Logger.php
+ create mode 100644 Task04_3/tests/LoggerTest.php
+
+Push-Location: /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks/check_Task04.ps1:22
+Line |
+  22 |  Push-Location "$taskDir/Task04_1"
+     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path '/home/andrey/labs_402/402_Usupov_B/Task04/Task04_1' because it does not exist.
+
+[91mPush-Location: [0m/home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks/check_Task04.ps1:22
+[96mLine |
+[96m  22 | [0m [96mPush-Location "$taskDir/Task04_1"[0m
+[96m     | [91m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[91m[96m     | [91mCannot find path '/home/andrey/labs_402/402_Usupov_B/Task04/Task04_1' because it does not exist.
+[0m
+--------------------------------------------------
+Task:  /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks
+--------------------------------------------------
+Check .gitignore
+.gitignore not found
+False
+--------------------------------------------------
+Check composer.json
+composer.json not found
+False
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+ERROR: The file "./src/*" does not exist.
+
+Run "phpcs --help" for usage information
+
+Execution fails
+False
+Composer could not find a composer.json file in /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks
+Composer could not find a composer.json file in /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks
+To initialize a project, please create a composer.json file as described in the https://getcomposer.org/ "Getting Started" section
+To initialize a project, please create a composer.json file as described in the https://getcomposer.org/ "Getting Started" section
+--------------------------------------------------
+Run: ./vendor/bin/phpunit tests --colors
+
+&: /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks/checks_for_task.ps1:30
+Line |
+  30 |      & $command $params.split(' ')
+     |        ~~~~~~~~
+     | The term './vendor/bin/phpunit' is not recognized as a name of a cmdlet, function, script file, or executable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+
+[91m&: [0m/home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks/checks_for_task.ps1:30
+[96mLine |
+[96m  30 | [0m     & [96m$command[0m $params.split(' ')
+[96m     | [91m       ~~~~~~~~
+[91m[96m     | [91mThe term './vendor/bin/phpunit' is not recognized as a name of a cmdlet, function, script file, or executable program. Check the spelling of the name, or if a path was
+[96m     | [91mincluded, verify that the path is correct and try again.
+[0m
+Execution fails
+False
+
+Push-Location: /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks/check_Task04.ps1:26
+Line |
+  26 |  Push-Location "$taskDir/Task04_2"
+     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path '/home/andrey/labs_402/402_Usupov_B/Task04/Task04_2' because it does not exist.
+
+[91mPush-Location: [0m/home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks/check_Task04.ps1:26
+[96mLine |
+[96m  26 | [0m [96mPush-Location "$taskDir/Task04_2"[0m
+[96m     | [91m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[91m[96m     | [91mCannot find path '/home/andrey/labs_402/402_Usupov_B/Task04/Task04_2' because it does not exist.
+[0m
+--------------------------------------------------
+Task:  /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks
+--------------------------------------------------
+Check .gitignore
+.gitignore not found
+False
+--------------------------------------------------
+Check composer.json
+composer.json not found
+False
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+ERROR: The file "./src/*" does not exist.
+
+Run "phpcs --help" for usage information
+
+Execution fails
+False
+Composer could not find a composer.json file in /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks
+Composer could not find a composer.json file in /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks
+To initialize a project, please create a composer.json file as described in the https://getcomposer.org/ "Getting Started" section
+To initialize a project, please create a composer.json file as described in the https://getcomposer.org/ "Getting Started" section
+--------------------------------------------------
+Run: ./vendor/bin/phpunit tests --colors
+
+&: /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks/checks_for_task.ps1:30
+Line |
+  30 |      & $command $params.split(' ')
+     |        ~~~~~~~~
+     | The term './vendor/bin/phpunit' is not recognized as a name of a cmdlet, function, script file, or executable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+
+[91m&: [0m/home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks/checks_for_task.ps1:30
+[96mLine |
+[96m  30 | [0m     & [96m$command[0m $params.split(' ')
+[96m     | [91m       ~~~~~~~~
+[91m[96m     | [91mThe term './vendor/bin/phpunit' is not recognized as a name of a cmdlet, function, script file, or executable program. Check the spelling of the name, or if a path was
+[96m     | [91mincluded, verify that the path is correct and try again.
+[0m
+Execution fails
+False
+
+Push-Location: /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks/check_Task04.ps1:30
+Line |
+  30 |  Push-Location "$taskDir/Task04_3"
+     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path '/home/andrey/labs_402/402_Usupov_B/Task04/Task04_3' because it does not exist.
+
+[91mPush-Location: [0m/home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks/check_Task04.ps1:30
+[96mLine |
+[96m  30 | [0m [96mPush-Location "$taskDir/Task04_3"[0m
+[96m     | [91m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[91m[96m     | [91mCannot find path '/home/andrey/labs_402/402_Usupov_B/Task04/Task04_3' because it does not exist.
+[0m
+--------------------------------------------------
+Task:  /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks
+--------------------------------------------------
+Check .gitignore
+.gitignore not found
+False
+--------------------------------------------------
+Check composer.json
+composer.json not found
+False
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+ERROR: The file "./src/*" does not exist.
+
+Run "phpcs --help" for usage information
+
+Execution fails
+False
+Composer could not find a composer.json file in /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks
+Composer could not find a composer.json file in /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks
+To initialize a project, please create a composer.json file as described in the https://getcomposer.org/ "Getting Started" section
+To initialize a project, please create a composer.json file as described in the https://getcomposer.org/ "Getting Started" section
+--------------------------------------------------
+Run: ./vendor/bin/phpunit tests --colors
+
+&: /home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks/checks_for_task.ps1:30
+Line |
+  30 |      & $command $params.split(' ')
+     |        ~~~~~~~~
+     | The term './vendor/bin/phpunit' is not recognized as a name of a cmdlet, function, script file, or executable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+
+[91m&: [0m/home/andrey/projects/mrsu/03_OOP_402/tools/check_tasks/checks_for_task.ps1:30
+[96mLine |
+[96m  30 | [0m     & [96m$command[0m $params.split(' ')
+[96m     | [91m       ~~~~~~~~
+[91m[96m     | [91mThe term './vendor/bin/phpunit' is not recognized as a name of a cmdlet, function, script file, or executable program. Check the spelling of the name, or if a path was
+[96m     | [91mincluded, verify that the path is correct and try again.
+[0m
+Execution fails
+False
+--------------------------------------------------
+Check uml.jpg
+uml.jpg not found
+False
+--------------------------------------------------
+**********************
+PowerShell transcript end
+End time: 20220402132557
+**********************

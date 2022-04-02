@@ -11,16 +11,18 @@ function Test-File {
         return $false
         type hello.php
     }
+    
     if ($showContent) {
         Get-Content $path
     }
+
     return $true
 }
 
-function Run-Command {
+function Test-Command {
     param(
         $command,
-        $params
+        $params = ""
     )
 
     Write-Host "--------------------------------------------------" -ForegroundColor blue
@@ -28,6 +30,8 @@ function Run-Command {
     & $command $params.split(' ')
     if (-not $?) {
         Write-Host "Execution fails" -ForegroundColor red
+        return $false
     }
 
+    return $true
 }
