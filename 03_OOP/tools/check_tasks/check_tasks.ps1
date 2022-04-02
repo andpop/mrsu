@@ -30,7 +30,7 @@ function Check-PullRequest {
         Pop-Location
 
         if (-not (Test-Path $checkScript)) {
-            Write-Host "No checking script $checkScript" -ForegroundColor red
+            Write-Host "Checking script $checkScript not found" -ForegroundColor red
             return
         }
         & .\$checkScript -studentDir $studentDir -task $task
