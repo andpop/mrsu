@@ -3,7 +3,8 @@
 $studentDirsPath = "/home/andrey/labs_402/"
 $teacherRepo = "https://api.github.com/repos/andpop-mrsu/" 
 $headers = @{}
-$headers.Add("Authorization", "Basic andpop-mrsu PAT-here!!!")
+$token = "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"
+$headers.Add("Authorization", "Token $token")
 
 . ./pull_requests.ps1
 

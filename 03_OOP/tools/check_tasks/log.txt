@@ -1,0 +1,9 @@
+**********************
+PowerShell transcript start
+Start time: 20220402143129
+**********************
+Transcript started, output file is log.txt
+**********************
+PowerShell transcript end
+End time: 20220402143142
+**********************
