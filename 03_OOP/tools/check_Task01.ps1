@@ -1,42 +1,17 @@
-#!pwsh
 param($studentDir, $task)
 
-function Check-Task {
-    Write-Host "--------------------------------------------------" -ForegroundColor blue
-    (Get-Location).Path
-    Write-Host "Task: ", (Get-Location).Path -ForegroundColor blue
-    Write-Host "--------------------------------------------------" -ForegroundColor blue
-    Write-Host "Check hello.php" -Foreground blue
-    if (Test-Path hello.php) {
-        type hello.php
-    } else {
-        Write-Host "No hello.php" -ForegroundColor red
-    }
+. ./check_functions.ps1
 
-    Write-Host "--------------------------------------------------" -ForegroundColor blue
-    Write-Host "Check start.bat" -Foreground blue
-    if (Test-Path start.bat) {
-        type start.bat
-    } else {
-        Write-Host "No start.bat" -ForegroundColor red
-    }
+Push-Location "$studentDir/$task"
 
-    Write-Host "--------------------------------------------------" -ForegroundColor blue
-    Write-Host "Run start.bat" -Foreground blue
-    if (Test-Path start.bat) { 
-        start.bat 
-        if ($?) {
-            Write-Host "start.bat check done" -ForegroundColor green
-        } else {
-            Write-Host "start.bat check FAILURE" -ForegroundColor red
-        }
-    }
-        
-    Write-Host "--------------------------------------------------" -ForegroundColor blue
-}
+Write-Host "--------------------------------------------------" -ForegroundColor blue
+Write-Host "Task: ", (Get-Location).Path -ForegroundColor blue
 
-$taskDir = "$studentDir/$task"
+Test-File -Path hello.php -ShowContent
+Test-File -Path start.bat -ShowContent
 
-Push-Location "$taskDir"
-Check-Task
+Run-Command -File start.bat -Command "./start.bat"
+    
+Write-Host "--------------------------------------------------" -ForegroundColor blue
+
 Pop-Location
