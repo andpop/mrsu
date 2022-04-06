@@ -1,61 +1,23 @@
 **********************
 PowerShell transcript start
-Start time: 20220402143525
+Start time: 20220406224832
 **********************
 Transcript started, output file is log.txt
 =====================================================
-/home/andrey/labs_402/402_Bikmaev_RR
-Task06
-Task from branch: Task06
-Creation date: 03/25/2022 18:53:40
-Из github.com-mrsu:andpop-mrsu/402_Bikmaev_RR
-Из github.com-mrsu:andpop-mrsu/402_Bikmaev_RR
+/home/andrey/labs_402/402_Tanysheva_MN
+#Task06
+Task from branch: master
+Creation date: 04/06/2022 16:15:05
+Из github.com-mrsu:andpop-mrsu/402_Tanysheva_MN
+Из github.com-mrsu:andpop-mrsu/402_Tanysheva_MN
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
 Уже обновлено.
 fatal: внешний репозиторий student уже существует
 fatal: внешний репозиторий student уже существует
 Уже обновлено.
-Checking script check_Task06.ps1 not found
-=====================================================
-/home/andrey/labs_402/402_Kloc_AI
-Solution #6
-Task from branch: Task06
-Creation date: 03/30/2022 12:33:41
-Из github.com-mrsu:andpop-mrsu/402_Kloc_AI
-Из github.com-mrsu:andpop-mrsu/402_Kloc_AI
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже обновлено.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Уже обновлено.
-Checking script check_Task06.ps1 not found
-=====================================================
-/home/andrey/labs_402/402_Oreshkin_SV
-Task06
-Task from branch: Task06
-Creation date: 04/02/2022 08:12:38
-error: Невозможно выполнить получение, так как у вас имеются не слитые файлы.
-error: Невозможно выполнить получение, так как у вас имеются не слитые файлы.
-подсказка: Исправьте их в рабочем каталоге, затем запустите «git add/rm <файл>»,
-подсказка: Исправьте их в рабочем каталоге, затем запустите «git add/rm <файл>»,
-подсказка: чтобы пометить исправление и сделайте коммит.
-подсказка: чтобы пометить исправление и сделайте коммит.
-fatal: Выход из-за неразрешенного конфликта.
-fatal: Выход из-за неразрешенного конфликта.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-error: Невозможно выполнить слияние, так как у вас имеются не слитые файлы.
-error: Невозможно выполнить слияние, так как у вас имеются не слитые файлы.
-подсказка: Исправьте их в рабочем каталоге, затем запустите «git add/rm <файл>»,
-подсказка: Исправьте их в рабочем каталоге, затем запустите «git add/rm <файл>»,
-подсказка: чтобы пометить исправление и сделайте коммит.
-подсказка: чтобы пометить исправление и сделайте коммит.
-fatal: Выход из-за неразрешенного конфликта.
-fatal: Выход из-за неразрешенного конфликта.
-Checking script check_Task06.ps1 not found
+Checking script check_master.ps1 not found
 **********************
 PowerShell transcript end
-End time: 20220402143545
+End time: 20220406224840
 **********************
