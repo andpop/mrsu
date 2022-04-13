@@ -1,23 +1,465 @@
 **********************
 PowerShell transcript start
-Start time: 20220406224832
+Start time: 20220413143534
 **********************
 Transcript started, output file is log.txt
 =====================================================
+/home/andrey/labs_402/402_Bikmaev_RR
+Task07 - Solution
+Task from branch: Task07
+Creation date: 04/09/2022 08:34:11
+From github.com-mrsu:andpop-mrsu/402_Bikmaev_RR
+From github.com-mrsu:andpop-mrsu/402_Bikmaev_RR
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+fatal: remote student already exists.
+fatal: remote student already exists.
+Already up to date.
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Bikmaev_RR/Task07
+--------------------------------------------------
+Check service_status.ps1
+service_status.ps1 not found
+False
+--------------------------------------------------
+Check check_links.ps1
+$desktopPath = [Environment]::GetFolderPath("Desktop")
+
+Get-Item "$desktopPath\*.lnk" | ForEach-Object {
+    $shell = New-Object -COM WScript.Shell
+    $shortcut = $shell.CreateShortcut($_.FullName)
+    $badLinksDir = "$desktopPath\BadLinks\"
+
+    If (!(Test-Path $shortcut.TargetPath)) {
+        If (!(Test-Path $badLinksDir)) {
+            New-Item -Path $badLinksDir -ItemType Directory
+        }
+
+        Move-Item -Path $_.FullName -Destination ($badLinksDir + $_.Name) -Force
+    }
+}
+True
+--------------------------------------------------
+Check excel.ps1
+$desktopPath = [Environment]::GetFolderPath("Desktop")
+
+$excelObj = New-Object -COM Excel.Application
+$excelWorkBook = $excelObj.Workbooks.Add()
+$excelWorkSheet = $excelWorkBook.Worksheets.Item(1)
+$excelWorkSheet.Cells.Item(2, 2) = "Привет от PowerShell"
+$excelWorkSheet.Cells.Item(2, 2).Font.Italic = $true
+$excelWorkSheet.Cells.Item(2, 2).Font.size = 12
+$excelWorkSheet.Columns.Item(2).ColumnWidth = 25
+$excelWorkBook.SaveAs("$desktopPath\"+$env:UserName+"_"+$env:ComputerName+".xlsx")
+$excelWorkBook.close($true)
+True
+--------------------------------------------------
+Check numbers.ps1
+$numbersapiUrl = "http://numbersapi.com";
+
+function Show-Date_Info {
+    "Show-Date_Info"
+
+    $date = Get-Date
+    "Сегодня: " + $date.ToString("dd.mm.yyyy")
+
+    Invoke-RestMethod ("$numbersapiUrl/" + $date.Day)
+    Invoke-RestMethod ("$numbersapiUrl/" + $date.Month)
+    Invoke-RestMethod ("$numbersapiUrl/" + $date.Year)
+}
+
+Show-Date_Info
+True
+--------------------------------------------------
+Run: pwsh ./numbers.ps1
+Show-Date_Info
+Сегодня: 13.35.2022
+13 is the speed of rush hour traffic on average in kilometres per hour in London.
+4 is the maximal number of horses in one row for carriage.
+2022 is an unremarkable number.
+True
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/402_Bikmaev_RR.git
+To github.com-mrsu:andpop-mrsu/402_Bikmaev_RR.git
+   1cdcf82..42237f1  master -> master
+   1cdcf82..42237f1  master -> master
+=====================================================
+/home/andrey/labs_402/402_Kloc_AI
+Solution #Task07
+Task from branch: Task07
+Creation date: 04/10/2022 08:55:49
+From github.com-mrsu:andpop-mrsu/402_Kloc_AI
+From github.com-mrsu:andpop-mrsu/402_Kloc_AI
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+fatal: remote student already exists.
+fatal: remote student already exists.
+Already up to date.
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Kloc_AI/Task07
+--------------------------------------------------
+Check service_status.ps1
+service_status.ps1 not found
+False
+--------------------------------------------------
+Check check_links.ps1
+Get-Item "C:\Users\$env:UserName\Desktop\*.lnk" | ForEach-Object {
+    $shell = New-Object -COM WScript.Shell
+    $shortcut = $shell.CreateShortcut($_.FullName)
+    $destination = "C:\Users\$env:UserName\Desktop\BadLinks\"
+    If (!(Test-Path $shortcut.TargetPath)) {
+        If (!(Test-Path $destination)) {
+        New-Item -Path $destination -ItemType Directory
+        }
+    Move-Item -Path $_.FullName -Destination $destination+$_.Name
+    }
+}
+True
+--------------------------------------------------
+Check excel.ps1
+$ExcelObj = New-Object -COM Excel.Application
+$ExcelWorkBook = $ExcelObj.Workbooks.Add()
+$ExcelWorkSheet = $ExcelWorkBook.Worksheets.Item(1)
+$ExcelWorkSheet.Cells.Item(2,2) = "Привет от PowerShell"
+$ExcelWorkSheet.Cells.Item(2,2).Font.Italic = $true
+$ExcelWorkSheet.Cells.Item(2,2).Font.size=12
+$ExcelWorkSheet.Columns.Item(2).ColumnWidth=25
+$ExcelWorkBook.SaveAs("C:\Users\$env:UserName\Desktop\"+$env:UserName+"_"+$env:ComputerName+".xlsx")
+$ExcelWorkBook.close($true)
+True
+--------------------------------------------------
+Check numbers.ps1
+function Show-Date_Info {
+"Show-Date_Info"
+$date = Get-Date
+"Today: "+$date.ToString("dd.mm.yyyy")
+$day = $date.Day
+Invoke-RestMethod http://numbersapi.com/$day
+$month = $date.Month
+Invoke-RestMethod http://numbersapi.com/$month
+$year = $date.Year
+Invoke-RestMethod http://numbersapi.com/$year
+}
+
+Show-Date_Info
+True
+--------------------------------------------------
+Run: pwsh ./numbers.ps1
+Show-Date_Info
+Today: 13.35.2022
+13 is the Youngest age a minor can rent or purchase a T rated game by the ESRB without parental (age 18 or older) consent.
+4 is the number of legs most furniture has.
+2022 is a number for which we're missing a fact (submit one to numbersapi at google mail!).
+True
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/402_Kloc_AI.git
+To github.com-mrsu:andpop-mrsu/402_Kloc_AI.git
+   893dcc5..8e40b92  master -> master
+   893dcc5..8e40b92  master -> master
+=====================================================
+/home/andrey/labs_402/402_Oparin_NA
+Task07
+Task from branch: Task07
+Creation date: 04/10/2022 14:05:54
+From github.com-mrsu:andpop-mrsu/402_Oparin_NA
+From github.com-mrsu:andpop-mrsu/402_Oparin_NA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+fatal: remote student already exists.
+fatal: remote student already exists.
+Already up to date.
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Oparin_NA/Task07
+--------------------------------------------------
+Check service_status.ps1
+service_status.ps1 not found
+False
+--------------------------------------------------
+Check check_links.ps1
+Get-Item "C:\Users\$env:UserName\Desktop\*.lnk" | ForEach-Object {
+$shell = New-Object -COM WScript.Shell
+$shortcut = $shell.CreateShortcut($_.FullName)
+
+
+
+If (!(Test-Path -Path $shortcut.TargetPath)) {
+        If (!(Test-Path C:\Users\$env:UserName\Desktop\BadLinks)) {
+            New-Item -ItemType Directory -Path C:\Users\$env:UserName\Desktop\BadLinks
+        }
+
+        Move-Item -Path $shortcut.FullName -Destination "C:\Users\$env:UserName\Desktop\BadLinks"
+    }
+}
+True
+--------------------------------------------------
+Check excel.ps1
+$ExcelObj = New-Object -COM Excel.Application
+$ExcelWorkBook = $ExcelObj.Workbooks.Add()
+$ExcelWorkSheet = $ExcelWorkBook.Worksheets.Item(1)
+$ExcelWorkSheet.Cells.Item(2,2) = "Привет от PowerShell"
+$ExcelWorkSheet.Cells.Item(2,2).Font.Italic = $true
+$ExcelWorkSheet.Cells.Item(2,2).Font.size=12
+$ExcelWorkSheet.Columns.Item(2).ColumnWidth=25
+$ExcelWorkBook.SaveAs("C:\Users\$env:UserName\Desktop\"+$env:UserName+"_"+$env:ComputerName+".xlsx")
+$ExcelWorkBook.close($true)
+True
+--------------------------------------------------
+Check numbers.ps1
+function Show-Date_Info {
+"Show-Date_Info"
+$date = Get-Date
+"Сегодня: "+$date.ToString("dd.mm.yyyy")
+$day = $date.Day
+Invoke-RestMethod http://numbersapi.com/$day
+$month = $date.Month
+Invoke-RestMethod http://numbersapi.com/$month
+$year = $date.Year
+Invoke-RestMethod http://numbersapi.com/$year
+}
+
+Show-Date_Info
+True
+--------------------------------------------------
+Run: pwsh ./numbers.ps1
+Show-Date_Info
+Сегодня: 13.36.2022
+13 is the speed of rush hour traffic on average in kilometres per hour in London.
+4 is the number of legs most furniture has.
+2022 is a number for which we're missing a fact (submit one to numbersapi at google mail!).
+True
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/402_Oparin_NA.git
+To github.com-mrsu:andpop-mrsu/402_Oparin_NA.git
+   7a83fe8..7dee59f  master -> master
+   7a83fe8..7dee59f  master -> master
+=====================================================
+/home/andrey/labs_402/402_Oreshkin_SV
+Task07
+Task from branch: Task07
+Creation date: 04/10/2022 06:12:03
+From github.com-mrsu:andpop-mrsu/402_Oreshkin_SV
+From github.com-mrsu:andpop-mrsu/402_Oreshkin_SV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+fatal: remote student already exists.
+fatal: remote student already exists.
+Already up to date.
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Oreshkin_SV/Task07
+--------------------------------------------------
+Check service_status.ps1
+service_status.ps1 not found
+False
+--------------------------------------------------
+Check check_links.ps1
+Get-Item "C:\Users\$env:UserName\Desktop\*.lnk" | ForEach-Object {
+    $shell = New-Object -COM WScript.Shell
+    $shortcut = $shell.CreateShortcut($_.FullName)
+    $destination = "C:\Users\$env:UserName\Desktop\BadLinks\"
+    If (!(Test-Path $shortcut.TargetPath)) {
+        If (!(Test-Path $destination)) {
+        New-Item -Path $destination -ItemType Directory
+        }
+    Move-Item -Path $_.FullName -Destination $destination+$_.Name
+    }
+}
+True
+--------------------------------------------------
+Check excel.ps1
+$ExcelObj = New-Object -COM Excel.Application
+$ExcelWorkBook = $ExcelObj.Workbooks.Add()
+$ExcelWorkSheet = $ExcelWorkBook.Worksheets.Item(1)
+$ExcelWorkSheet.Cells.Item(2,2) = "Привет от PowerShell"
+$ExcelWorkSheet.Cells.Item(2,2).Font.Italic = $true
+$ExcelWorkSheet.Cells.Item(2,2).Font.size=12
+$ExcelWorkSheet.Columns.Item(2).ColumnWidth=25
+$ExcelWorkBook.SaveAs("C:\Users\$env:UserName\Desktop\"+$env:UserName+"_"+$env:ComputerName+".xlsx")
+$ExcelWorkBook.close($true)
+True
+--------------------------------------------------
+Check numbers.ps1
+function Show-Date_Info {
+"Show-Date_Info"
+$date = Get-Date
+"Сегодня: "+$date.ToString("dd.mm.yyyy")
+$day = $date.Day
+Invoke-RestMethod http://numbersapi.com/$day
+$month = $date.Month
+Invoke-RestMethod http://numbersapi.com/$month
+$year = $date.Year
+Invoke-RestMethod http://numbersapi.com/$year
+}
+
+Show-Date_Info
+True
+--------------------------------------------------
+Run: pwsh ./numbers.ps1
+Show-Date_Info
+Сегодня: 13.36.2022
+13 is the number of Oscar nominations of actress Meryl Streep, who holds the record for the most Oscar nominated actress.
+4 is the number of chambers the mammalian heart consists of.
+2022 is a number for which we're missing a fact (submit one to numbersapi at google mail!).
+True
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/402_Oreshkin_SV.git
+To github.com-mrsu:andpop-mrsu/402_Oreshkin_SV.git
+   20d353f..b4f66c9  master -> master
+   20d353f..b4f66c9  master -> master
+=====================================================
 /home/andrey/labs_402/402_Tanysheva_MN
-#Task06
-Task from branch: master
-Creation date: 04/06/2022 16:15:05
-Из github.com-mrsu:andpop-mrsu/402_Tanysheva_MN
-Из github.com-mrsu:andpop-mrsu/402_Tanysheva_MN
+Add files via upload
+Task from branch: Task07
+Creation date: 04/10/2022 08:44:19
+From github.com-mrsu:andpop-mrsu/402_Tanysheva_MN
+From github.com-mrsu:andpop-mrsu/402_Tanysheva_MN
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-Уже обновлено.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Уже обновлено.
-Checking script check_master.ps1 not found
+Already up to date.
+fatal: remote student already exists.
+fatal: remote student already exists.
+Already up to date.
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Tanysheva_MN/Task07
+--------------------------------------------------
+Check service_status.ps1
+service_status.ps1 not found
+False
+--------------------------------------------------
+Check check_links.ps1
+Get-Item "C:\Users\$env:UserName\Desktop\*.lnk" | ForEach-Object {
+    $shell = New-Object -COM WScript.Shell
+    $shortcut = $shell.CreateShortcut($_.FullName)
+    $destination = "C:\Users\$env:UserName\Desktop\BadLinks\"
+    If (!(Test-Path $shortcut.TargetPath)) {
+        If (!(Test-Path $destination)) {
+        New-Item -Path $destination -ItemType Directory
+        }
+    Move-Item -Path $_.FullName -Destination $destination+$_.Name
+    }
+}
+True
+--------------------------------------------------
+Check excel.ps1
+$ExcelObj = New-Object -COM Excel.Application
+$ExcelWorkBook = $ExcelObj.Workbooks.Add()
+$ExcelWorkSheet = $ExcelWorkBook.Worksheets.Item(1)
+$ExcelWorkSheet.Cells.Item(2,2) = "Привет от PowerShell"
+$ExcelWorkSheet.Cells.Item(2,2).Font.Italic = $true
+$ExcelWorkSheet.Cells.Item(2,2).Font.size=12
+$ExcelWorkSheet.Columns.Item(2).ColumnWidth=25
+$ExcelWorkBook.SaveAs("C:\Users\$env:UserName\Desktop\"+$env:UserName+"_"+$env:ComputerName+".xlsx")
+$ExcelWorkBook.close($true)
+True
+--------------------------------------------------
+Check numbers.ps1
+function Show-Date_Info {
+"Show-Date_Info"
+$date = Get-Date
+"Today: "+$date.ToString("dd.mm.yyyy")
+$day = $date.Day
+Invoke-RestMethod http://numbersapi.com/$day
+$month = $date.Month
+Invoke-RestMethod http://numbersapi.com/$month
+$year = $date.Year
+Invoke-RestMethod http://numbersapi.com/$year
+}
+
+Show-Date_Info
+True
+--------------------------------------------------
+Run: pwsh ./numbers.ps1
+Show-Date_Info
+Today: 13.36.2022
+13 is the number of colonies that formed the United States.
+4 is the number of human blood groups (A, B, O, AB).
+2022 is a number for which we're missing a fact (submit one to numbersapi at google mail!).
+True
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/402_Tanysheva_MN.git
+To github.com-mrsu:andpop-mrsu/402_Tanysheva_MN.git
+   50c497e..c3a79ed  master -> master
+   50c497e..c3a79ed  master -> master
+=====================================================
+/home/andrey/labs_402/402_Yakubaev_KA
+Task07
+Task from branch: Task07
+Creation date: 04/10/2022 15:22:43
+From github.com-mrsu:andpop-mrsu/402_Yakubaev_KA
+From github.com-mrsu:andpop-mrsu/402_Yakubaev_KA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+fatal: remote student already exists.
+fatal: remote student already exists.
+Already up to date.
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Yakubaev_KA/Task07
+--------------------------------------------------
+Check service_status.ps1
+service_status.ps1 not found
+False
+--------------------------------------------------
+Check check_links.ps1
+Get-Item "C:\Users\$env:UserName\Desktop\*.lnk" | ForEach-Object {
+	$BadLinks = "C:\Users\$env:UserName\Desktop\BadLinks\";
+    $WScriptShell = New-Object -COM WScript.Shell;
+    $Shortcut = $WScriptShell.CreateShortcut($_.FullName);
+
+    If (!(Test-Path $Shortcut.TargetPath)) {
+        If (!(Test-Path $BadLinks)) {
+			New-Item -Path $BadLinks -ItemType Directory;
+        }
+		Move-Item -Path $_.FullName -Destination $BadLinks+$_.Name;
+    }
+}
+True
+--------------------------------------------------
+Check excel.ps1
+$ExcelObject = New-Object -COM Excel.Application;
+$ExcelWorkBook = $ExcelObject.Workbooks.Add();
+$ExcelWorkSheet = $ExcelWorkBook.Worksheets.Item(1);
+$x = 2;
+$y = 2;
+$ExcelWorkSheet.Cells.Item($x,$y) = "Привет от PowerShell";
+$ExcelWorkSheet.Cells.Item($x,$y).Font.size=12;
+$ExcelWorkSheet.Cells.Item($x,$y).Font.Italic = $true;
+$ExcelWorkBook.SaveAs("C:\Users\$env:UserName\Desktop\"+$env:UserName+"_"+$env:ComputerName+".xlsx");
+$ExcelWorkBook.close($true);
+True
+--------------------------------------------------
+Check numbers.ps1
+function Show-Date_Info {
+	"Show-Date_Info";
+	$date = Get-Date;
+	"Сегодня: "+$date.ToString("dd.mm.yyyy");
+	$day = $date.Day;
+	Invoke-RestMethod http://numbersapi.com/$day;
+	$month = $date.Month;
+	Invoke-RestMethod http://numbersapi.com/$month;
+	$year = $date.Year;
+	Invoke-RestMethod http://numbersapi.com/$year;
+}
+
+Show-Date_Info;
+True
+--------------------------------------------------
+Run: pwsh ./numbers.ps1
+Show-Date_Info
+Сегодня: 13.36.2022
+13 is the number of Oscar nominations of actress Meryl Streep, who holds the record for the most Oscar nominated actress.
+4 is the number of strings on a violin, a viola, a cello, double bass, a cuatro and a ukulele, and the number of string pairs on a mandolin.
+2022 is a number for which we're missing a fact (submit one to numbersapi at google mail!).
+True
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/402_Yakubaev_KA.git
+To github.com-mrsu:andpop-mrsu/402_Yakubaev_KA.git
+   92a4bdd..f7e392a  master -> master
+   92a4bdd..f7e392a  master -> master
 **********************
 PowerShell transcript end
-End time: 20220406224840
+End time: 20220413143651
 **********************
