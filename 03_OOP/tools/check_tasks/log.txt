@@ -1,9 +1,551 @@
 **********************
 PowerShell transcript start
+<<<<<<< HEAD
 Start time: 20220413144356
+=======
+Start time: 20220410000314
+>>>>>>> dc0a92fa22d9c06bbeab35e4d38838bcf4825512
 **********************
 Transcript started, output file is log.txt
+=====================================================
+/home/andrey/labs_302/302_Nagaev_DG
+Task03
+Task from branch: Task03
+Creation date: 04/09/2022 13:45:47
+Из github.com-mrsu:andpop-mrsu/302_Nagaev_DG
+Из github.com-mrsu:andpop-mrsu/302_Nagaev_DG
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже обновлено.
+Из https://github.com/sll0ne/302_Nagaev_DG
+Из https://github.com/sll0ne/302_Nagaev_DG
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 556a119..dc79126
+Fast-forward (no commit created; -m option ignored)
+ Task03/Book.php      |  88 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ Task03/Books.txt     | Bin 0 -> 202 bytes
+ Task03/BooksList.php |  37 ++++++++++++++++++++++
+ Task03/Test.php      |  61 +++++++++++++++++++++++++++++++++++
+ Task03/run_test.php  |   7 ++++
+ 5 files changed, 193 insertions(+)
+ create mode 100644 Task03/Book.php
+ create mode 100644 Task03/Books.txt
+ create mode 100644 Task03/BooksList.php
+ create mode 100644 Task03/Test.php
+ create mode 100644 Task03/run_test.php
+--------------------------------------------------
+Task:  /home/andrey/labs_302/302_Nagaev_DG/Task03
+--------------------------------------------------
+Check Test.php
+<?php
+
+function run_test()
+{
+    $book1 = new Book(
+        "Berserk",
+        array("Kentaro Miura"),
+        "Dark Horse Comics",
+        2009
+    );
+    $bookslist = new BooksList();
+    $bookslist->add($book1);
+    $bookslist->store('Books.txt');
+    $book2 = new Book(
+        "Программирование на C++",
+        array("Нейл Дейл", "Марк Хедингтон", "Чип Уимз"),
+        "ДМК Пресс",
+        1989
+    );
+    $book3 = new Book(
+        "Объектно-ориентированное программирование в С++",
+        array("Лафоре Роберт"),
+        "Питер",
+        2012
+    );
+    $bookslist->add($book2);
+    $bookslist->add($book3);
+    echo "Ожидание:".PHP_EOL.
+        "Id: 1".PHP_EOL.
+        "Название: Berserk".PHP_EOL.
+        "Автор 1: Kentaro Miura".PHP_EOL.
+        "Издательство: Dark Horse Comics".PHP_EOL.
+        "Год: 2009".PHP_EOL.
+        "Id: 2".PHP_EOL.
+        "Название: Программирование на C++".PHP_EOL.
+        "Автор 1: Нейл Дейл".PHP_EOL.
+        "Автор 2: Марк Хедингтон".PHP_EOL.
+        "Автор 2: Чип Уимз".PHP_EOL.
+        "Издательство: ДМК Пресс".PHP_EOL.
+        "Год: 2011".PHP_EOL.
+        "Id: 3".PHP_EOL.
+        "Название: Объектно-ориентированное программирование в С++".PHP_EOL.
+        "Автор 1: Лафоре Роберт".PHP_EOL.
+        "Издательство: Питер".PHP_EOL.
+        "Год: 2016".PHP_EOL.
+        "Получено:".PHP_EOL;
+    for ($i = 1; $i <= $bookslist->count(); $i++) {
+        echo $bookslist->get($i)->__toString();
+    }
+    $bookslist->load('Books.txt');
+    echo PHP_EOL."Ожидание:".PHP_EOL.
+        "Id: 1".PHP_EOL.
+        "Название: Berserk".PHP_EOL.
+        "Автор 1: Kentaro Miura".PHP_EOL.
+        "Издательство: Dark Horse Comics".PHP_EOL.
+        "Год: 2009".PHP_EOL.
+        "Получено:".PHP_EOL;
+    for ($i = 1; $i <= $bookslist->count(); $i++) {
+        echo $bookslist->get($i)->__toString();
+    }
+}
+True
+--------------------------------------------------
+Check run_test.php
+<?php
+
+require_once 'Book.php';
+require_once 'BooksList.php';
+require_once 'Test.php';
+
+run_test();
+True
+--------------------------------------------------
+Run: phpcs --standard=PSR12 *.php
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite.so' (tried: /usr/lib/php/20200930/pdo_sqlite.so (/usr/lib/php/20200930/pdo_sqlite.so: undefined symbol: sqlite3_column_table_name), /usr/lib/php/20200930/pdo_sqlite.so.so (/usr/lib/php/20200930/pdo_sqlite.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite.so' (tried: /usr/lib/php/20200930/pdo_sqlite.so (/usr/lib/php/20200930/pdo_sqlite.so: undefined symbol: sqlite3_column_table_name), /usr/lib/php/20200930/pdo_sqlite.so.so (/usr/lib/php/20200930/pdo_sqlite.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+
+FILE: /home/andrey/labs_302/302_Nagaev_DG/Task03/Book.php
+----------------------------------------------------------------------------------------------------
+FOUND 23 ERRORS AFFECTING 5 LINES
+----------------------------------------------------------------------------------------------------
+  3 | ERROR | [ ] Each class must be in a namespace of at least one level (a top-level vendor name)
+ 81 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 81 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 81 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 81 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 81 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 81 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 81 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 81 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 84 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 84 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 84 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 84 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 84 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 84 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 84 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 84 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 85 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 85 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 85 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 85 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 85 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 86 | ERROR | [x] Expected at least 1 space after "."; 0 found
+----------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 22 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------------------------------------
+
+
+FILE: /home/andrey/labs_302/302_Nagaev_DG/Task03/BooksList.php
+-----------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-----------------------------------------------------------------------------------------------
+ 3 | ERROR | Each class must be in a namespace of at least one level (a top-level vendor name)
+-----------------------------------------------------------------------------------------------
+
+
+FILE: /home/andrey/labs_302/302_Nagaev_DG/Task03/Test.php
+----------------------------------------------------------------------
+FOUND 78 ERRORS AFFECTING 26 LINES
+----------------------------------------------------------------------
+ 28 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 28 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 28 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 29 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 29 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 29 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 30 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 30 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 30 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 31 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 31 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 31 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 32 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 32 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 32 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 33 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 33 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 33 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 34 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 34 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 34 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 35 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 35 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 35 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 36 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 36 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 36 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 37 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 37 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 37 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 38 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 38 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 38 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 39 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 39 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 39 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 40 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 40 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 40 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 41 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 41 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 41 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 42 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 42 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 42 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 43 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 43 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 43 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 44 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 44 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 44 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 45 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 45 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 45 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 46 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 46 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 51 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 51 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 51 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 51 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 51 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 52 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 52 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 52 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 53 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 53 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 53 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 54 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 54 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 54 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 55 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 55 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 55 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 56 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 56 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 56 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 57 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 57 | ERROR | [x] Expected at least 1 space after "."; 0 found
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 78 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+Time: 93ms; Memory: 6MB
+
+Execution fails
+False
+--------------------------------------------------
+Run: php run_test.php
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite.so' (tried: /usr/lib/php/20200930/pdo_sqlite.so (/usr/lib/php/20200930/pdo_sqlite.so: undefined symbol: sqlite3_column_table_name), /usr/lib/php/20200930/pdo_sqlite.so.so (/usr/lib/php/20200930/pdo_sqlite.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite.so' (tried: /usr/lib/php/20200930/pdo_sqlite.so (/usr/lib/php/20200930/pdo_sqlite.so: undefined symbol: sqlite3_column_table_name), /usr/lib/php/20200930/pdo_sqlite.so.so (/usr/lib/php/20200930/pdo_sqlite.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+Ожидание:
+Id: 1
+Название: Berserk
+Автор 1: Kentaro Miura
+Издательство: Dark Horse Comics
+Год: 2009
+Id: 2
+Название: Программирование на C++
+Автор 1: Нейл Дейл
+Автор 2: Марк Хедингтон
+Автор 2: Чип Уимз
+Издательство: ДМК Пресс
+Год: 2011
+Id: 3
+Название: Объектно-ориентированное программирование в С++
+Автор 1: Лафоре Роберт
+Издательство: Питер
+Год: 2016
+Получено:
+Id: 1
+Название: Berserk
+Автор 1: Kentaro Miura
+Издательство: Dark Horse Comics
+Год: 2009
+Id: 2
+Название: Программирование на C++
+Автор 1: Нейл Дейл
+Автор 2: Марк Хедингтон
+Автор 3: Чип Уимз
+Издательство: ДМК Пресс
+Год: 1989
+Id: 3
+Название: Объектно-ориентированное программирование в С++
+Автор 1: Лафоре Роберт
+Издательство: Питер
+Год: 2012
+
+Ожидание:
+Id: 1
+Название: Berserk
+Автор 1: Kentaro Miura
+Издательство: Dark Horse Comics
+Год: 2009
+Получено:
+Id: 1
+Название: Berserk
+Автор 1: Kentaro Miura
+Издательство: Dark Horse Comics
+Год: 2009
+True
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/302_Nagaev_DG.git
+To github.com-mrsu:andpop-mrsu/302_Nagaev_DG.git
+   556a119..dc79126  master -> master
+   556a119..dc79126  master -> master
+=====================================================
+/home/andrey/labs_302/302_Ryazin_VA
+Fixed the branch Task05
+Task from branch: Task05
+Creation date: 04/09/2022 13:23:48
+Из github.com-mrsu:andpop-mrsu/302_Ryazin_VA
+Из github.com-mrsu:andpop-mrsu/302_Ryazin_VA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   d044493..2bad549  master     -> teacher/master
+   d044493..2bad549  master     -> teacher/master
+Обновление d044493..2bad549
+Fast-forward
+ Task02/.gitignore                   |    1 +
+ Task05/.gitignore                   |    1 +
+ Task05/.phpunit.result.cache        |    1 +
+ Task05/composer.json                |   19 +
+ Task05/composer.lock                | 2010 +++++++++++++++++++++++++++++++++++
+ Task05/phpunit.xml                  |   12 +
+ Task05/src/Test.php                 |   16 +
+ Task05/src/Truncater.php            |   33 +
+ Task05/src/run_test.php             |   10 +
+ Task05/tests/Unit/TruncaterTest.php |   23 +
+ 10 files changed, 2126 insertions(+)
+ create mode 100644 Task02/.gitignore
+ create mode 100644 Task05/.gitignore
+ create mode 100644 Task05/.phpunit.result.cache
+ create mode 100644 Task05/composer.json
+ create mode 100644 Task05/composer.lock
+ create mode 100644 Task05/phpunit.xml
+ create mode 100644 Task05/src/Test.php
+ create mode 100644 Task05/src/Truncater.php
+ create mode 100644 Task05/src/run_test.php
+ create mode 100644 Task05/tests/Unit/TruncaterTest.php
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/Vitaliy-Ryazin/302_Ryazin_VA
+Из https://github.com/Vitaliy-Ryazin/302_Ryazin_VA
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task05     -> student/Task05
+   39dfe57..734ccfd  master     -> student/master
+   39dfe57..734ccfd  master     -> student/master
+Обновление 2bad549..a3be5c6
+Fast-forward (no commit created; -m option ignored)
+ Task05/.phpunit.result.cache        |  1 -
+ Task05/composer.json                |  9 +++++----
+ Task05/src/Truncater.php            | 24 ++++++++++++++----------
+ Task05/src/run_test.php             |  2 +-
+ Task05/tests/Unit/TruncaterTest.php |  6 +++---
+ 5 files changed, 23 insertions(+), 19 deletions(-)
+ delete mode 100644 Task05/.phpunit.result.cache
+--------------------------------------------------
+Task:  /home/andrey/labs_302/302_Ryazin_VA/Task05
+--------------------------------------------------
+Check .gitignore
+vendor/
+True
+--------------------------------------------------
+Check composer.json
+{
+    "name": "rmvit/task05",
+    "autoload": {
+        "psr-4": {
+            "Rmvit\\Task05\\": [
+                "src/",
+                "tests/Unit/"
+            ]
+        },
+        "files": ["src/Test.php"]
+    },
+    "authors": [{
+        "name": "Rmvit",
+        "email": "rmvitaliy@yandex.ru"
+    }],
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "squizlabs/php_codesniffer": "^3.6"
+    }
+}
+True
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite.so' (tried: /usr/lib/php/20200930/pdo_sqlite.so (/usr/lib/php/20200930/pdo_sqlite.so: undefined symbol: sqlite3_column_table_name), /usr/lib/php/20200930/pdo_sqlite.so.so (/usr/lib/php/20200930/pdo_sqlite.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite.so' (tried: /usr/lib/php/20200930/pdo_sqlite.so (/usr/lib/php/20200930/pdo_sqlite.so: undefined symbol: sqlite3_column_table_name), /usr/lib/php/20200930/pdo_sqlite.so.so (/usr/lib/php/20200930/pdo_sqlite.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+
+FILE: /home/andrey/labs_302/302_Ryazin_VA/Task05/src/Truncater.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 35 | WARNING | Line exceeds 120 characters; contains 150 characters
+----------------------------------------------------------------------
+
+Time: 44ms; Memory: 6MB
+
+Execution fails
+False
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite.so' (tried: /usr/lib/php/20200930/pdo_sqlite.so (/usr/lib/php/20200930/pdo_sqlite.so: undefined symbol: sqlite3_column_table_name), /usr/lib/php/20200930/pdo_sqlite.so.so (/usr/lib/php/20200930/pdo_sqlite.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite.so' (tried: /usr/lib/php/20200930/pdo_sqlite.so (/usr/lib/php/20200930/pdo_sqlite.so: undefined symbol: sqlite3_column_table_name), /usr/lib/php/20200930/pdo_sqlite.so.so (/usr/lib/php/20200930/pdo_sqlite.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+Installing dependencies from lock file (including require-dev)
+Installing dependencies from lock file (including require-dev)
+Verifying lock file contents can be installed on current platform.
+Verifying lock file contents can be installed on current platform.
+Warning: The lock file is not up to date with the latest changes in composer.json. You may be getting outdated dependencies. It is recommended that you run `composer update` or `composer update <package name>`.
+Warning: The lock file is not up to date with the latest changes in composer.json. You may be getting outdated dependencies. It is recommended that you run `composer update` or `composer update <package name>`.
+Package operations: 34 installs, 0 updates, 0 removals
+Package operations: 34 installs, 0 updates, 0 removals
+    0 [>---------------------------]    0 [>---------------------------]    0 [>---------------------------]  - Installing symfony/polyfill-ctype (v1.25.0): Extracting archive
+    0 [>---------------------------]    0 [>---------------------------]    0 [>---------------------------]  - Installing symfony/polyfill-ctype (v1.25.0): Extracting archive
+  - Installing webmozart/assert (1.10.0): Extracting archive
+  - Installing webmozart/assert (1.10.0): Extracting archive
+  - Installing phpdocumentor/reflection-common (2.2.0): Extracting archive
+  - Installing phpdocumentor/reflection-common (2.2.0): Extracting archive
+  - Installing phpdocumentor/type-resolver (1.6.1): Extracting archive
+  - Installing phpdocumentor/type-resolver (1.6.1): Extracting archive
+  - Installing phpdocumentor/reflection-docblock (5.3.0): Extracting archive
+  - Installing phpdocumentor/reflection-docblock (5.3.0): Extracting archive
+  - Installing sebastian/version (3.0.2): Extracting archive
+  - Installing sebastian/version (3.0.2): Extracting archive
+  - Installing sebastian/type (3.0.0): Extracting archive
+  - Installing sebastian/type (3.0.0): Extracting archive
+  - Installing sebastian/resource-operations (3.0.3): Extracting archive
+  - Installing sebastian/resource-operations (3.0.3): Extracting archive
+  - Installing sebastian/recursion-context (4.0.4): Extracting archive
+  - Installing sebastian/recursion-context (4.0.4): Extracting archive
+  - Installing sebastian/object-reflector (2.0.4): Extracting archive
+  - Installing sebastian/object-reflector (2.0.4): Extracting archive
+  - Installing sebastian/object-enumerator (4.0.4): Extracting archive
+  - Installing sebastian/object-enumerator (4.0.4): Extracting archive
+  - Installing sebastian/global-state (5.0.5): Extracting archive
+  - Installing sebastian/global-state (5.0.5): Extracting archive
+  - Installing sebastian/exporter (4.0.4): Extracting archive
+  - Installing sebastian/exporter (4.0.4): Extracting archive
+  - Installing sebastian/environment (5.1.3): Extracting archive
+  - Installing sebastian/environment (5.1.3): Extracting archive
+  - Installing sebastian/diff (4.0.4): Extracting archive
+  - Installing sebastian/diff (4.0.4): Extracting archive
+  - Installing sebastian/comparator (4.0.6): Extracting archive
+  - Installing sebastian/comparator (4.0.6): Extracting archive
+  - Installing sebastian/code-unit (1.0.8): Extracting archive
+  - Installing sebastian/code-unit (1.0.8): Extracting archive
+  - Installing sebastian/cli-parser (1.0.1): Extracting archive
+  - Installing sebastian/cli-parser (1.0.1): Extracting archive
+  - Installing phpunit/php-timer (5.0.3): Extracting archive
+  - Installing phpunit/php-timer (5.0.3): Extracting archive
+  - Installing phpunit/php-text-template (2.0.4): Extracting archive
+  - Installing phpunit/php-text-template (2.0.4): Extracting archive
+  - Installing phpunit/php-invoker (3.1.1): Extracting archive
+  - Installing phpunit/php-invoker (3.1.1): Extracting archive
+  - Installing phpunit/php-file-iterator (3.0.6): Extracting archive
+  - Installing phpunit/php-file-iterator (3.0.6): Extracting archive
+  - Installing theseer/tokenizer (1.2.1): Extracting archive
+  - Installing theseer/tokenizer (1.2.1): Extracting archive
+  - Installing nikic/php-parser (v4.13.2): Extracting archive
+  - Installing nikic/php-parser (v4.13.2): Extracting archive
+  - Installing sebastian/lines-of-code (1.0.3): Extracting archive
+  - Installing sebastian/lines-of-code (1.0.3): Extracting archive
+  - Installing sebastian/complexity (2.0.2): Extracting archive
+  - Installing sebastian/complexity (2.0.2): Extracting archive
+  - Installing sebastian/code-unit-reverse-lookup (2.0.3): Extracting archive
+  - Installing sebastian/code-unit-reverse-lookup (2.0.3): Extracting archive
+  - Installing phpunit/php-code-coverage (9.2.15): Extracting archive
+  - Installing phpunit/php-code-coverage (9.2.15): Extracting archive
+  - Installing doctrine/instantiator (1.4.1): Extracting archive
+  - Installing doctrine/instantiator (1.4.1): Extracting archive
+  - Installing phpspec/prophecy (v1.15.0): Extracting archive
+  - Installing phpspec/prophecy (v1.15.0): Extracting archive
+  - Installing phar-io/version (3.2.1): Extracting archive
+  - Installing phar-io/version (3.2.1): Extracting archive
+  - Installing phar-io/manifest (2.0.3): Extracting archive
+  - Installing phar-io/manifest (2.0.3): Extracting archive
+  - Installing myclabs/deep-copy (1.11.0): Extracting archive
+  - Installing myclabs/deep-copy (1.11.0): Extracting archive
+  - Installing phpunit/phpunit (9.5.20): Extracting archive
+  - Installing phpunit/phpunit (9.5.20): Extracting archive
+  0/24 [>---------------------------]   0%
+  0/24 [>---------------------------]   0%
+ 10/24 [===========>----------------]  41%
+ 10/24 [===========>----------------]  41%
+ 24/24 [============================] 100%
+ 24/24 [============================] 100%
+ 24/24 [============================] 100%Generating autoload files
+ 24/24 [============================] 100%Generating autoload files
+26 packages you are using are looking for funding.
+26 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+Use the `composer fund` command to find out more!
+--------------------------------------------------
+Run: ./vendor/bin/phpunit tests --colors
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite.so' (tried: /usr/lib/php/20200930/pdo_sqlite.so (/usr/lib/php/20200930/pdo_sqlite.so: undefined symbol: sqlite3_column_table_name), /usr/lib/php/20200930/pdo_sqlite.so.so (/usr/lib/php/20200930/pdo_sqlite.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite.so' (tried: /usr/lib/php/20200930/pdo_sqlite.so (/usr/lib/php/20200930/pdo_sqlite.so: undefined symbol: sqlite3_column_table_name), /usr/lib/php/20200930/pdo_sqlite.so.so (/usr/lib/php/20200930/pdo_sqlite.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Fatal error:  Uncaught Error: Class "rmvit\Tests\TestCasep" not found in /home/andrey/labs_302/302_Ryazin_VA/Task05/tests/Unit/TruncaterTest.php:7
+PHP Fatal error:  Uncaught Error: Class "rmvit\Tests\TestCasep" not found in /home/andrey/labs_302/302_Ryazin_VA/Task05/tests/Unit/TruncaterTest.php:7
+Stack trace:
+Stack trace:
+#0 /home/andrey/labs_302/302_Ryazin_VA/Task05/vendor/phpunit/phpunit/src/Util/FileLoader.php(65): include_once()
+#0 /home/andrey/labs_302/302_Ryazin_VA/Task05/vendor/phpunit/phpunit/src/Util/FileLoader.php(65): include_once()
+#1 /home/andrey/labs_302/302_Ryazin_VA/Task05/vendor/phpunit/phpunit/src/Util/FileLoader.php(49): PHPUnit\Util\FileLoader::load()
+#1 /home/andrey/labs_302/302_Ryazin_VA/Task05/vendor/phpunit/phpunit/src/Util/FileLoader.php(49): PHPUnit\Util\FileLoader::load()
+#2 /home/andrey/labs_302/302_Ryazin_VA/Task05/vendor/phpunit/phpunit/src/Framework/TestSuite.php(401): PHPUnit\Util\FileLoader::checkAndLoad()
+#2 /home/andrey/labs_302/302_Ryazin_VA/Task05/vendor/phpunit/phpunit/src/Framework/TestSuite.php(401): PHPUnit\Util\FileLoader::checkAndLoad()
+#3 /home/andrey/labs_302/302_Ryazin_VA/Task05/vendor/phpunit/phpunit/src/Framework/TestSuite.php(529): PHPUnit\Framework\TestSuite->addTestFile()
+#3 /home/andrey/labs_302/302_Ryazin_VA/Task05/vendor/phpunit/phpunit/src/Framework/TestSuite.php(529): PHPUnit\Framework\TestSuite->addTestFile()
+#4 /home/andrey/labs_302/302_Ryazin_VA/Task05/vendor/phpunit/phpunit/src/Runner/BaseTestRunner.php(98): PHPUnit\Framework\TestSuite->addTestFiles()
+#4 /home/andrey/labs_302/302_Ryazin_VA/Task05/vendor/phpunit/phpunit/src/Runner/BaseTestRunner.php(98): PHPUnit\Framework\TestSuite->addTestFiles()
+#5 /home/andrey/labs_302/302_Ryazin_VA/Task05/vendor/phpunit/phpunit/src/TextUI/Command.php(120): PHPUnit\Runner\BaseTestRunner->getTest()
+#5 /home/andrey/labs_302/302_Ryazin_VA/Task05/vendor/phpunit/phpunit/src/TextUI/Command.php(120): PHPUnit\Runner\BaseTestRunner->getTest()
+#6 /home/andrey/labs_302/302_Ryazin_VA/Task05/vendor/phpunit/phpunit/src/TextUI/Command.php(96): PHPUnit\TextUI\Command->run()
+#6 /home/andrey/labs_302/302_Ryazin_VA/Task05/vendor/phpunit/phpunit/src/TextUI/Command.php(96): PHPUnit\TextUI\Command->run()
+#7 /home/andrey/labs_302/302_Ryazin_VA/Task05/vendor/phpunit/phpunit/phpunit(98): PHPUnit\TextUI\Command::main()
+#7 /home/andrey/labs_302/302_Ryazin_VA/Task05/vendor/phpunit/phpunit/phpunit(98): PHPUnit\TextUI\Command::main()
+#8 {main}
+#8 {main}
+
+
+Next PHPUnit\TextUI\RuntimeException: Class "rmvit\Tests\TestCasep" not found in /home/andrey/labs_302/302_Ryazin_VA/Task05/vendor/phpunit/phpunit/src/TextUI/Command.php:98
+Next PHPUnit\TextUI\RuntimeException: Class "rmvit\Tests\TestCasep" not found in /home/andrey/labs_302/302_Ryazin_VA/Task05/vendor/phpunit/phpunit/src/TextUI/Command.php:98
+Stack trace:
+Stack trace:
+#0 /home/andrey/labs_302/302_Ryazin_VA/Task05/vendor/phpunit/phpunit/phpunit(98): PHPUnit\TextUI\Command::main()
+#0 /home/andrey/labs_302/302_Ryazin_VA/Task05/vendor/phpunit/phpunit/phpunit(98): PHPUnit\TextUI\Command::main()
+#1 {main}
+#1 {main}
+  thrown in /home/andrey/labs_302/302_Ryazin_VA/Task05/vendor/phpunit/phpunit/src/TextUI/Command.php on line 98
+  thrown in /home/andrey/labs_302/302_Ryazin_VA/Task05/vendor/phpunit/phpunit/src/TextUI/Command.php on line 98
+Execution fails
+False
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/302_Ryazin_VA.git
+To github.com-mrsu:andpop-mrsu/302_Ryazin_VA.git
+   2bad549..a3be5c6  master -> master
+   2bad549..a3be5c6  master -> master
 **********************
 PowerShell transcript end
+<<<<<<< HEAD
 End time: 20220413144405
+=======
+End time: 20220410000849
+>>>>>>> dc0a92fa22d9c06bbeab35e4d38838bcf4825512
 **********************
