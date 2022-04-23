@@ -35,3 +35,15 @@ function Test-Command {
 
     return $true
 }
+
+function List-Directory {
+    param (
+        $directory
+    )
+
+    Write-Host "--------------------------------------------------" -ForegroundColor blue
+    Write-Host "$directory content:" -ForegroundColor blue
+    Get-ChildItem $directory
+
+    return true
+}
