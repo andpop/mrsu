@@ -1,23 +1,85 @@
 **********************
 PowerShell transcript start
-Start time: 20220423135750
+Start time: 20220426205302
 **********************
 Transcript started, output file is log.txt
 =====================================================
-/home/andrey/labs_302/302_Rodushkin_VE
-add Task06
+/home/andrey/labs_302/302_Ryazin_VA
+Task06
 Task from branch: Task06
-Creation date: 04/23/2022 09:53:16
-Из github.com-mrsu:andpop-mrsu/302_Rodushkin_VE
-Из github.com-mrsu:andpop-mrsu/302_Rodushkin_VE
+Creation date: 04/23/2022 11:48:40
+Из github.com-mrsu:andpop-mrsu/302_Ryazin_VA
+Из github.com-mrsu:andpop-mrsu/302_Ryazin_VA
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-Уже обновлено.
+   a3be5c6..85f0712  master     -> teacher/master
+   a3be5c6..85f0712  master     -> teacher/master
+Обновление a3be5c6..85f0712
+Fast-forward
+ task06.md | 75 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 75 insertions(+)
+ create mode 100644 task06.md
 fatal: внешний репозиторий student уже существует
 fatal: внешний репозиторий student уже существует
-Уже обновлено.
+Из https://github.com/Vitaliy-Ryazin/302_Ryazin_VA
+Из https://github.com/Vitaliy-Ryazin/302_Ryazin_VA
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task06     -> student/Task06
+   734ccfd..c8d7eee  master     -> student/master
+   734ccfd..c8d7eee  master     -> student/master
+Обновление 85f0712..3183c3c
+Fast-forward (no commit created; -m option ignored)
+ Task06/Task06_1/.gitignore                      |    1 +
+ Task06/Task06_1/composer.json                   |   20 +
+ Task06/Task06_1/composer.lock                   | 2173 +++++++++++++++++++++++
+ Task06/Task06_1/src/CreditCard.php              |   20 +
+ Task06/Task06_1/src/CreditCardAdapter.php       |   18 +
+ Task06/Task06_1/src/PayPal.php                  |   20 +
+ Task06/Task06_1/src/PayPalAdapter.php           |   18 +
+ Task06/Task06_1/src/PaymentAdapterInterface.php |    8 +
+ Task06/Task06_1/tests/Unit/PayTest.php          |   22 +
+ Task06/Task06_2/.gitignore                      |    1 +
+ Task06/Task06_2/composer.json                   |   19 +
+ Task06/Task06_2/composer.lock                   | 2173 +++++++++++++++++++++++
+ Task06/Task06_2/src/BreakfastDecorator.php      |   21 +
+ Task06/Task06_2/src/Decorator.php               |   23 +
+ Task06/Task06_2/src/DinnerDecorator.php         |   21 +
+ Task06/Task06_2/src/EconomyRoom.php             |   11 +
+ Task06/Task06_2/src/FoodDeliveryDecorator.php   |   21 +
+ Task06/Task06_2/src/InternetDecorator.php       |   21 +
+ Task06/Task06_2/src/Room.php                    |   25 +
+ Task06/Task06_2/src/RoomInterface.php           |    9 +
+ Task06/Task06_2/src/SofaDecorator.php           |   21 +
+ Task06/Task06_2/src/StandardRoom.php            |   11 +
+ Task06/Task06_2/src/SuiteRoom.php               |   11 +
+ Task06/Task06_2/tests/Unit/DecoratorTest.php    |   72 +
+ 24 files changed, 4760 insertions(+)
+ create mode 100644 Task06/Task06_1/.gitignore
+ create mode 100644 Task06/Task06_1/composer.json
+ create mode 100644 Task06/Task06_1/composer.lock
+ create mode 100644 Task06/Task06_1/src/CreditCard.php
+ create mode 100644 Task06/Task06_1/src/CreditCardAdapter.php
+ create mode 100644 Task06/Task06_1/src/PayPal.php
+ create mode 100644 Task06/Task06_1/src/PayPalAdapter.php
+ create mode 100644 Task06/Task06_1/src/PaymentAdapterInterface.php
+ create mode 100644 Task06/Task06_1/tests/Unit/PayTest.php
+ create mode 100644 Task06/Task06_2/.gitignore
+ create mode 100644 Task06/Task06_2/composer.json
+ create mode 100644 Task06/Task06_2/composer.lock
+ create mode 100644 Task06/Task06_2/src/BreakfastDecorator.php
+ create mode 100644 Task06/Task06_2/src/Decorator.php
+ create mode 100644 Task06/Task06_2/src/DinnerDecorator.php
+ create mode 100644 Task06/Task06_2/src/EconomyRoom.php
+ create mode 100644 Task06/Task06_2/src/FoodDeliveryDecorator.php
+ create mode 100644 Task06/Task06_2/src/InternetDecorator.php
+ create mode 100644 Task06/Task06_2/src/Room.php
+ create mode 100644 Task06/Task06_2/src/RoomInterface.php
+ create mode 100644 Task06/Task06_2/src/SofaDecorator.php
+ create mode 100644 Task06/Task06_2/src/StandardRoom.php
+ create mode 100644 Task06/Task06_2/src/SuiteRoom.php
+ create mode 100644 Task06/Task06_2/tests/Unit/DecoratorTest.php
 --------------------------------------------------
-Task:  /home/andrey/labs_302/302_Rodushkin_VE/Task06/Task06_1
+Task:  /home/andrey/labs_302/302_Ryazin_VA/Task06/Task06_1
 --------------------------------------------------
 Check .gitignore
 vendor/
@@ -25,131 +87,86 @@ True
 --------------------------------------------------
 Check composer.json
 {
-    "name": "rodushkinve/task06_1",
+    "name": "rmvit/task06_1",
     "autoload": {
         "psr-4": {
-            "Rodushkinve\\Task06_1\\": [
+            "Rmvit\\Task06_1\\": [
                 "src/",
                 "tests/Unit/"
             ]
-        },
-        "files": [ "src/Test.php" ]
-    },
-    "authors": [
-        {
-            "name": "Rodushkinve"
         }
-    ],
-    "require": {
-        "phpunit/phpunit": "^9.5"
-    }
+    },
+},
+"authors": [{
+    "name": "Rmvit",
+    "email": "rmvitaliy@yandex.ru"
+}],
+"require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "squizlabs/php_codesniffer": "^3.6"
+}
 }
 True
 --------------------------------------------------
 Run: phpcs --standard=PSR12 ./src/*
-
-FILE: /home/andrey/labs_302/302_Rodushkin_VE/Task06/Task06_1/src/CreditCard.php
--------------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------
- 20 | ERROR | [x] Expected 1 newline at end of file; 0 found
--------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------------
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite.so' (tried: /usr/lib/php/20200930/pdo_sqlite.so (/usr/lib/php/20200930/pdo_sqlite.so: undefined symbol: sqlite3_column_table_name), /usr/lib/php/20200930/pdo_sqlite.so.so (/usr/lib/php/20200930/pdo_sqlite.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite.so' (tried: /usr/lib/php/20200930/pdo_sqlite.so (/usr/lib/php/20200930/pdo_sqlite.so: undefined symbol: sqlite3_column_table_name), /usr/lib/php/20200930/pdo_sqlite.so.so (/usr/lib/php/20200930/pdo_sqlite.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+True
+--------------------------------------------------
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite.so' (tried: /usr/lib/php/20200930/pdo_sqlite.so (/usr/lib/php/20200930/pdo_sqlite.so: undefined symbol: sqlite3_column_table_name), /usr/lib/php/20200930/pdo_sqlite.so.so (/usr/lib/php/20200930/pdo_sqlite.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite.so' (tried: /usr/lib/php/20200930/pdo_sqlite.so (/usr/lib/php/20200930/pdo_sqlite.so: undefined symbol: sqlite3_column_table_name), /usr/lib/php/20200930/pdo_sqlite.so.so (/usr/lib/php/20200930/pdo_sqlite.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
 
 
-FILE: /home/andrey/labs_302/302_Rodushkin_VE/Task06/Task06_1/src/CreditCardAdapter.php
---------------------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------------
- 21 | ERROR | [x] Expected 1 newline at end of file; 0 found
---------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------------
 
 
-FILE: /home/andrey/labs_302/302_Rodushkin_VE/Task06/Task06_1/src/PaymentAdapterInterface.php
---------------------------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------------------
- 8 | ERROR | [x] Expected 1 newline at end of file; 0 found
---------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------------------
+  [Seld\JsonLint\ParsingException]
+  [Seld\JsonLint\ParsingException]
+  "./composer.json" does not contain valid JSON
+  "./composer.json" does not contain valid JSON
+  Parse error on line 10:
+  Parse error on line 10:
+  ... ]        }    },},"authors": [{
+  ... ]        }    },},"authors": [{
+  -------------------^
+  -------------------^
+  Expected: 'STRING' - It appears you have an extra trailing comma
+  Expected: 'STRING' - It appears you have an extra trailing comma
 
 
-FILE: /home/andrey/labs_302/302_Rodushkin_VE/Task06/Task06_1/src/PayPal.php
----------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
----------------------------------------------------------------------------
- 20 | ERROR | [x] Expected 1 newline at end of file; 0 found
----------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
----------------------------------------------------------------------------
 
 
-FILE: /home/andrey/labs_302/302_Rodushkin_VE/Task06/Task06_1/src/PayPalAdapter.php
-----------------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------------------
- 21 | ERROR | [x] Expected 1 newline at end of file; 0 found
-----------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-----------------------------------------------------------------------------------
+--------------------------------------------------
+src content:
 
+    Directory: /home/andrey/labs_302/302_Ryazin_VA/Task06/Task06_1/src
 
-FILE: /home/andrey/labs_302/302_Rodushkin_VE/Task06/Task06_1/src/Test.php
--------------------------------------------------------------------------------------------------------------
-FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------
- 1 | WARNING | No PHP code was found in this file and short open tags are not allowed by this install of
-   |         | PHP. This file may be using short open tags but PHP does not allow them.
--------------------------------------------------------------------------------------------------------------
+UnixMode   User             Group                 LastWriteTime           Size Name
+--------   ----             -----                 -------------           ---- ----
+-rw-rw-r-- andrey           andrey             26.04.2022 20:53            362 CreditCard.php
+-rw-rw-r-- andrey           andrey             26.04.2022 20:53            336 CreditCardAdapter.php
+-rw-rw-r-- andrey           andrey             26.04.2022 20:53            115 PaymentAdapterInterface.php
+-rw-rw-r-- andrey           andrey             26.04.2022 20:53            322 PayPal.php
+-rw-rw-r-- andrey           andrey             26.04.2022 20:53            316 PayPalAdapter.php
+--------------------------------------------------
+Run: ./vendor/bin/phpunit tests --colors
 
-Time: 69ms; Memory: 6MB
+&: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/checks_for_task.ps1:30
+Line |
+  30 |      & $command $params.split(' ')
+     |        ~~~~~~~~
+     | The term './vendor/bin/phpunit' is not recognized as a name of a cmdlet, function, script file, or executable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+
+&: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/checks_for_task.ps1:30
+Line |
+  30 |      & $command $params.split(' ')
+     |        ~~~~~~~~
+     | The term './vendor/bin/phpunit' is not recognized as a name of a cmdlet, function, script file, or executable program. Check the spelling of the name, or if a path was
+     | included, verify that the path is correct and try again.
 
 Execution fails
 False
 --------------------------------------------------
-Installing dependencies from lock file (including require-dev)
-Installing dependencies from lock file (including require-dev)
-Verifying lock file contents can be installed on current platform.
-Verifying lock file contents can be installed on current platform.
-Warning: The lock file is not up to date with the latest changes in composer.json. You may be getting outdated dependencies. It is recommended that you run `composer update` or `composer update <package name>`.
-Warning: The lock file is not up to date with the latest changes in composer.json. You may be getting outdated dependencies. It is recommended that you run `composer update` or `composer update <package name>`.
-Nothing to install, update or remove
-Nothing to install, update or remove
-Generating autoload files
-Generating autoload files
-26 packages you are using are looking for funding.
-26 packages you are using are looking for funding.
-Use the `composer fund` command to find out more!
-Use the `composer fund` command to find out more!
---------------------------------------------------
-src content:
-
-    Directory: /home/andrey/labs_302/302_Rodushkin_VE/Task06/Task06_1/src
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
------          23.04.2022    13:03            367 CreditCard.php
------          23.04.2022    13:03            433 CreditCardAdapter.php
------          23.04.2022    13:03            120 PaymentAdapterInterface.php
------          23.04.2022    13:03            327 PayPal.php
------          23.04.2022    13:03            409 PayPalAdapter.php
------          23.04.2022    13:03              1 Test.php
---------------------------------------------------
-Run: ./vendor/bin/phpunit tests --colors
- PHPUnit 9.5.20 [44m#StandWith[0m[43mUkraine[0m
-
-.                                                                   1 / 1 (100%)
-
-Time: 00:00.006, Memory: 4.00 MB
-
-OK (1 test, 2 assertions)
-True
---------------------------------------------------
-Task:  /home/andrey/labs_302/302_Rodushkin_VE/Task06/Task06_2
+Task:  /home/andrey/labs_302/302_Ryazin_VA/Task06/Task06_2
 --------------------------------------------------
 Check .gitignore
 vendor/
@@ -157,72 +174,127 @@ True
 --------------------------------------------------
 Check composer.json
 {
-    "name": "rodushkinve/task06_2",
+    "name": "rmvit/task06_2",
     "autoload": {
         "psr-4": {
-            "Rodushkinve\\Task06_2\\": [
+            "Rmvit\\Task062\\": [
                 "src/",
                 "tests/Unit/"
             ]
-        },
-        "files": [ "src/Test.php" ]
-    },
-    "authors": [
-        {
-            "name": "Rodushkinve"
         }
-    ],
-    "require": {
-        "phpunit/phpunit": "^9.5"
+    },
+    "authors": [{
+        "name": "Rmvit",
+        "email": "rmvitaliy@yandex.ru"
+    }],
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "squizlabs/php_codesniffer": "^3.6"
     }
 }
 True
 --------------------------------------------------
 Run: phpcs --standard=PSR12 ./src/*
-
-FILE: /home/andrey/labs_302/302_Rodushkin_VE/Task06/Task06_2/src/EconomyRoom.php
---------------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 11 | ERROR | [x] Expected 1 newline at end of file; 0 found
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: /home/andrey/labs_302/302_Rodushkin_VE/Task06/Task06_2/src/Room.php
--------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------
- 25 | ERROR | [x] Expected 1 newline at end of file; 0 found
--------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------
-
-
-FILE: /home/andrey/labs_302/302_Rodushkin_VE/Task06/Task06_2/src/Test.php
--------------------------------------------------------------------------------------------------------------
-FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------
- 1 | WARNING | No PHP code was found in this file and short open tags are not allowed by this install of
-   |         | PHP. This file may be using short open tags but PHP does not allow them.
--------------------------------------------------------------------------------------------------------------
-
-Time: 87ms; Memory: 6MB
-
-Execution fails
-False
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite.so' (tried: /usr/lib/php/20200930/pdo_sqlite.so (/usr/lib/php/20200930/pdo_sqlite.so: undefined symbol: sqlite3_column_table_name), /usr/lib/php/20200930/pdo_sqlite.so.so (/usr/lib/php/20200930/pdo_sqlite.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite.so' (tried: /usr/lib/php/20200930/pdo_sqlite.so (/usr/lib/php/20200930/pdo_sqlite.so: undefined symbol: sqlite3_column_table_name), /usr/lib/php/20200930/pdo_sqlite.so.so (/usr/lib/php/20200930/pdo_sqlite.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+True
 --------------------------------------------------
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite.so' (tried: /usr/lib/php/20200930/pdo_sqlite.so (/usr/lib/php/20200930/pdo_sqlite.so: undefined symbol: sqlite3_column_table_name), /usr/lib/php/20200930/pdo_sqlite.so.so (/usr/lib/php/20200930/pdo_sqlite.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite.so' (tried: /usr/lib/php/20200930/pdo_sqlite.so (/usr/lib/php/20200930/pdo_sqlite.so: undefined symbol: sqlite3_column_table_name), /usr/lib/php/20200930/pdo_sqlite.so.so (/usr/lib/php/20200930/pdo_sqlite.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
 Installing dependencies from lock file (including require-dev)
 Installing dependencies from lock file (including require-dev)
 Verifying lock file contents can be installed on current platform.
 Verifying lock file contents can be installed on current platform.
-Warning: The lock file is not up to date with the latest changes in composer.json. You may be getting outdated dependencies. It is recommended that you run `composer update` or `composer update <package name>`.
-Warning: The lock file is not up to date with the latest changes in composer.json. You may be getting outdated dependencies. It is recommended that you run `composer update` or `composer update <package name>`.
-Nothing to install, update or remove
-Nothing to install, update or remove
-Generating autoload files
-Generating autoload files
+Package operations: 35 installs, 0 updates, 0 removals
+Package operations: 35 installs, 0 updates, 0 removals
+  - Downloading sebastian/environment (5.1.4)
+  - Downloading sebastian/environment (5.1.4)
+  - Downloading squizlabs/php_codesniffer (3.6.2)
+  - Downloading squizlabs/php_codesniffer (3.6.2)
+ 0/2 [>---------------------------]   0%
+ 0/2 [>---------------------------]   0%
+ 1/2 [==============>-------------]  50%
+ 1/2 [==============>-------------]  50%
+ 2/2 [============================] 100%  - Installing symfony/polyfill-ctype (v1.25.0): Extracting archive
+ 2/2 [============================] 100%  - Installing symfony/polyfill-ctype (v1.25.0): Extracting archive
+  - Installing webmozart/assert (1.10.0): Extracting archive
+  - Installing webmozart/assert (1.10.0): Extracting archive
+  - Installing phpdocumentor/reflection-common (2.2.0): Extracting archive
+  - Installing phpdocumentor/reflection-common (2.2.0): Extracting archive
+  - Installing phpdocumentor/type-resolver (1.6.1): Extracting archive
+  - Installing phpdocumentor/type-resolver (1.6.1): Extracting archive
+  - Installing phpdocumentor/reflection-docblock (5.3.0): Extracting archive
+  - Installing phpdocumentor/reflection-docblock (5.3.0): Extracting archive
+  - Installing sebastian/version (3.0.2): Extracting archive
+  - Installing sebastian/version (3.0.2): Extracting archive
+  - Installing sebastian/type (3.0.0): Extracting archive
+  - Installing sebastian/type (3.0.0): Extracting archive
+  - Installing sebastian/resource-operations (3.0.3): Extracting archive
+  - Installing sebastian/resource-operations (3.0.3): Extracting archive
+  - Installing sebastian/recursion-context (4.0.4): Extracting archive
+  - Installing sebastian/recursion-context (4.0.4): Extracting archive
+  - Installing sebastian/object-reflector (2.0.4): Extracting archive
+  - Installing sebastian/object-reflector (2.0.4): Extracting archive
+  - Installing sebastian/object-enumerator (4.0.4): Extracting archive
+  - Installing sebastian/object-enumerator (4.0.4): Extracting archive
+  - Installing sebastian/global-state (5.0.5): Extracting archive
+  - Installing sebastian/global-state (5.0.5): Extracting archive
+  - Installing sebastian/exporter (4.0.4): Extracting archive
+  - Installing sebastian/exporter (4.0.4): Extracting archive
+  - Installing sebastian/environment (5.1.4): Extracting archive
+  - Installing sebastian/environment (5.1.4): Extracting archive
+  - Installing sebastian/diff (4.0.4): Extracting archive
+  - Installing sebastian/diff (4.0.4): Extracting archive
+  - Installing sebastian/comparator (4.0.6): Extracting archive
+  - Installing sebastian/comparator (4.0.6): Extracting archive
+  - Installing sebastian/code-unit (1.0.8): Extracting archive
+  - Installing sebastian/code-unit (1.0.8): Extracting archive
+  - Installing sebastian/cli-parser (1.0.1): Extracting archive
+  - Installing sebastian/cli-parser (1.0.1): Extracting archive
+  - Installing phpunit/php-timer (5.0.3): Extracting archive
+  - Installing phpunit/php-timer (5.0.3): Extracting archive
+  - Installing phpunit/php-text-template (2.0.4): Extracting archive
+  - Installing phpunit/php-text-template (2.0.4): Extracting archive
+  - Installing phpunit/php-invoker (3.1.1): Extracting archive
+  - Installing phpunit/php-invoker (3.1.1): Extracting archive
+  - Installing phpunit/php-file-iterator (3.0.6): Extracting archive
+  - Installing phpunit/php-file-iterator (3.0.6): Extracting archive
+  - Installing theseer/tokenizer (1.2.1): Extracting archive
+  - Installing theseer/tokenizer (1.2.1): Extracting archive
+  - Installing nikic/php-parser (v4.13.2): Extracting archive
+  - Installing nikic/php-parser (v4.13.2): Extracting archive
+  - Installing sebastian/lines-of-code (1.0.3): Extracting archive
+  - Installing sebastian/lines-of-code (1.0.3): Extracting archive
+  - Installing sebastian/complexity (2.0.2): Extracting archive
+  - Installing sebastian/complexity (2.0.2): Extracting archive
+  - Installing sebastian/code-unit-reverse-lookup (2.0.3): Extracting archive
+  - Installing sebastian/code-unit-reverse-lookup (2.0.3): Extracting archive
+  - Installing phpunit/php-code-coverage (9.2.15): Extracting archive
+  - Installing phpunit/php-code-coverage (9.2.15): Extracting archive
+  - Installing doctrine/instantiator (1.4.1): Extracting archive
+  - Installing doctrine/instantiator (1.4.1): Extracting archive
+  - Installing phpspec/prophecy (v1.15.0): Extracting archive
+  - Installing phpspec/prophecy (v1.15.0): Extracting archive
+  - Installing phar-io/version (3.2.1): Extracting archive
+  - Installing phar-io/version (3.2.1): Extracting archive
+  - Installing phar-io/manifest (2.0.3): Extracting archive
+  - Installing phar-io/manifest (2.0.3): Extracting archive
+  - Installing myclabs/deep-copy (1.11.0): Extracting archive
+  - Installing myclabs/deep-copy (1.11.0): Extracting archive
+  - Installing phpunit/phpunit (9.5.20): Extracting archive
+  - Installing phpunit/phpunit (9.5.20): Extracting archive
+  - Installing squizlabs/php_codesniffer (3.6.2): Extracting archive
+  - Installing squizlabs/php_codesniffer (3.6.2): Extracting archive
+  0/25 [>---------------------------]   0%
+  0/25 [>---------------------------]   0%
+ 10/25 [===========>----------------]  40%
+ 10/25 [===========>----------------]  40%
+ 23/25 [=========================>--]  92%
+ 23/25 [=========================>--]  92%
+ 24/25 [==========================>-]  96%
+ 24/25 [==========================>-]  96%
+ 25/25 [============================] 100%Generating autoload files
+ 25/25 [============================] 100%Generating autoload files
 26 packages you are using are looking for funding.
 26 packages you are using are looking for funding.
 Use the `composer fund` command to find out more!
@@ -230,38 +302,75 @@ Use the `composer fund` command to find out more!
 --------------------------------------------------
 src content:
 
-    Directory: /home/andrey/labs_302/302_Rodushkin_VE/Task06/Task06_2/src
+    Directory: /home/andrey/labs_302/302_Ryazin_VA/Task06/Task06_2/src
 
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
------          23.04.2022    13:03            428 BreakfastDecorator.php
------          23.04.2022    13:03            401 Decorator.php
------          23.04.2022    13:03            389 DinnerDecorator.php
------          23.04.2022    13:03            171 EconomyRoom.php
------          23.04.2022    13:03            424 FoodDeliveryDecorator.php
------          23.04.2022    13:03            420 InternetDecorator.php
------          23.04.2022    13:03            481 Room.php
------          23.04.2022    13:03            151 RoomInterface.php
------          23.04.2022    13:03            418 SofaDecorator.php
------          23.04.2022    13:03            177 StandardRoom.php
------          23.04.2022    13:03            166 SuiteRoom.php
------          23.04.2022    13:03              0 Test.php
+UnixMode   User             Group                 LastWriteTime           Size Name
+--------   ----             -----                 -------------           ---- ----
+-rw-rw-r-- andrey           andrey             26.04.2022 20:53            422 BreakfastDecorator.php
+-rw-rw-r-- andrey           andrey             26.04.2022 20:53            395 Decorator.php
+-rw-rw-r-- andrey           andrey             26.04.2022 20:53            383 DinnerDecorator.php
+-rw-rw-r-- andrey           andrey             26.04.2022 20:53            166 EconomyRoom.php
+-rw-rw-r-- andrey           andrey             26.04.2022 20:53            418 FoodDeliveryDecorator.php
+-rw-rw-r-- andrey           andrey             26.04.2022 20:53            414 InternetDecorator.php
+-rw-rw-r-- andrey           andrey             26.04.2022 20:53            476 Room.php
+-rw-rw-r-- andrey           andrey             26.04.2022 20:53            145 RoomInterface.php
+-rw-rw-r-- andrey           andrey             26.04.2022 20:53            412 SofaDecorator.php
+-rw-rw-r-- andrey           andrey             26.04.2022 20:53            171 StandardRoom.php
+-rw-rw-r-- andrey           andrey             26.04.2022 20:53            160 SuiteRoom.php
 --------------------------------------------------
 Run: ./vendor/bin/phpunit tests --colors
-PHPUnit 9.5.20 [44m#StandWith[0m[43mUkraine[0m
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite.so' (tried: /usr/lib/php/20200930/pdo_sqlite.so (/usr/lib/php/20200930/pdo_sqlite.so: undefined symbol: sqlite3_column_table_name), /usr/lib/php/20200930/pdo_sqlite.so.so (/usr/lib/php/20200930/pdo_sqlite.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite.so' (tried: /usr/lib/php/20200930/pdo_sqlite.so (/usr/lib/php/20200930/pdo_sqlite.so: undefined symbol: sqlite3_column_table_name), /usr/lib/php/20200930/pdo_sqlite.so.so (/usr/lib/php/20200930/pdo_sqlite.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHPUnit 9.5.20 #StandWithUkraine
 
-......                                                              6 / 6 (100%)
+EEEEEE                                                              6 / 6 (100%)
 
-Time: 00:00.008, Memory: 6.00 MB
+Time: 00:00.004, Memory: 4.00 MB
 
-OK (6 tests, 6 assertions)
-True
+There were 6 errors:
+
+1) Rmvit\Tests\DecoratorTest::testEconomyRoomGetPrice
+Error: Class "Rmvit\Task06_2\Room" not found
+
+/home/andrey/labs_302/302_Ryazin_VA/Task06/Task06_2/src/EconomyRoom.php:5
+/home/andrey/labs_302/302_Ryazin_VA/Task06/Task06_2/tests/Unit/DecoratorTest.php:18
+
+2) Rmvit\Tests\DecoratorTest::testStandardRoomGetPrice
+Error: Class "Rmvit\Task06_2\StandardRoom" not found
+
+/home/andrey/labs_302/302_Ryazin_VA/Task06/Task06_2/tests/Unit/DecoratorTest.php:27
+
+3) Rmvit\Tests\DecoratorTest::testSuiteRoomGetPrice
+Error: Class "Rmvit\Task06_2\SuiteRoom" not found
+
+/home/andrey/labs_302/302_Ryazin_VA/Task06/Task06_2/tests/Unit/DecoratorTest.php:37
+
+4) Rmvit\Tests\DecoratorTest::testEconomyRoomGetDescription
+Error: Class "Rmvit\Task06_2\Room" not found
+
+/home/andrey/labs_302/302_Ryazin_VA/Task06/Task06_2/src/EconomyRoom.php:5
+/home/andrey/labs_302/302_Ryazin_VA/Task06/Task06_2/tests/Unit/DecoratorTest.php:45
+
+5) Rmvit\Tests\DecoratorTest::testStandardRoomGetDescription
+Error: Class "Rmvit\Task06_2\StandardRoom" not found
+
+/home/andrey/labs_302/302_Ryazin_VA/Task06/Task06_2/tests/Unit/DecoratorTest.php:54
+
+6) Rmvit\Tests\DecoratorTest::testSuiteRoomGetDescription
+Error: Class "Rmvit\Task06_2\SuiteRoom" not found
+
+/home/andrey/labs_302/302_Ryazin_VA/Task06/Task06_2/tests/Unit/DecoratorTest.php:67
+
+ERRORS!
+Tests: 6, Assertions: 0, Errors: 6.
+Execution fails
+False
 --------------------------------------------------
-To github.com-mrsu:andpop-mrsu/302_Rodushkin_VE.git
-To github.com-mrsu:andpop-mrsu/302_Rodushkin_VE.git
-   352ed89..f81cb32  master -> master
-   352ed89..f81cb32  master -> master
+To github.com-mrsu:andpop-mrsu/302_Ryazin_VA.git
+To github.com-mrsu:andpop-mrsu/302_Ryazin_VA.git
+   85f0712..3183c3c  master -> master
+   85f0712..3183c3c  master -> master
 **********************
 PowerShell transcript end
-End time: 20220423135826
+End time: 20220426210311
 **********************
