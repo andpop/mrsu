@@ -17,8 +17,8 @@ function Check-Task {
 
 . ./checks_for_task.ps1
 
-# $taskDir = "$studentDir/$task"
-$taskDir = "$studentDir"
+$taskDir = "$studentDir/$task"
+# $taskDir = "$studentDir"
 
 Push-Location "$taskDir/Task07_1"
 Check-Task
