@@ -1,6 +1,5 @@
 #!/bin/bash
-
-token=1233334434334343434ss
+token=12345678
 rm ./reps.txt
 for student in $(cat students-list.txt); do
    echo "303_$student" >> reps.txt
