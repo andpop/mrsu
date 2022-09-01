@@ -1,4 +1,7 @@
-Oparin_NA
-Oreshkin_SV
-Polushina_DV
-Radynov_AS
+Zavodov_DA
+Kudryavtzev_DA
+Makarov_NA
+Ryazin_VA
+Trapeza_IV
+Haniev_RM
+
