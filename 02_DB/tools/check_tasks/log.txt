@@ -1,0 +1,122 @@
+**********************
+PowerShell transcript start
+Start time: 20220903145846
+**********************
+Transcript started, output file is log.txt
+PS>TerminatingError(Invoke-RestMethod): "{"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}"
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
+Line |
+  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
+Line |
+  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+
+>> TerminatingError(Invoke-RestMethod): "{"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}"
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
+Line |
+  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
+Line |
+  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+
+>> TerminatingError(Invoke-RestMethod): "{"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}"
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
+Line |
+  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
+Line |
+  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+
+>> TerminatingError(Invoke-RestMethod): "{"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}"
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
+Line |
+  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
+Line |
+  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+
+>> TerminatingError(Invoke-RestMethod): "{"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}"
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
+Line |
+  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
+Line |
+  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+
+>> TerminatingError(Invoke-RestMethod): "{"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}"
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
+Line |
+  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
+Line |
+  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+
+>> TerminatingError(Invoke-RestMethod): "{"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}"
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
+Line |
+  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
+Line |
+  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+
+>> TerminatingError(Invoke-RestMethod): "{"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}"
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
+Line |
+  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
+Line |
+  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> $global:?
+True
