@@ -1,122 +1,329 @@
 **********************
 PowerShell transcript start
-Start time: 20220903145846
+Start time: 20220904060226
 **********************
 Transcript started, output file is log.txt
-PS>TerminatingError(Invoke-RestMethod): "{"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}"
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
-Line |
-  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
-Line |
-  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
-
->> TerminatingError(Invoke-RestMethod): "{"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}"
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
-Line |
-  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
-Line |
-  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
-
->> TerminatingError(Invoke-RestMethod): "{"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}"
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
-Line |
-  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
-Line |
-  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
-
->> TerminatingError(Invoke-RestMethod): "{"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}"
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
-Line |
-  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
-Line |
-  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
-
->> TerminatingError(Invoke-RestMethod): "{"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}"
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
-Line |
-  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
-Line |
-  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
-
->> TerminatingError(Invoke-RestMethod): "{"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}"
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
-Line |
-  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
-Line |
-  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
-
->> TerminatingError(Invoke-RestMethod): "{"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}"
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
-Line |
-  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
-Line |
-  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
-
->> TerminatingError(Invoke-RestMethod): "{"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}"
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
-Line |
-  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/pull_requests.ps1:49
-Line |
-  49 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
-
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> $global:?
+=====================================================
+/home/andrey/labs_303/303_Akimova_DA
+Task01
+Task from branch: Task01
+Creation date: 09/03/2022 11:31:34
+Из github.com-mrsu:andpop-mrsu/303_Akimova_DA
+Из github.com-mrsu:andpop-mrsu/303_Akimova_DA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже обновлено.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже обновлено.
+--------------------------------------------------
+Task:  /home/andrey/labs_303/303_Akimova_DA/Task01
+--------------------------------------------------
+Check genres.txt
 True
+--------------------------------------------------
+Check movies.csv
+True
+--------------------------------------------------
+Check occupation.txt
+True
+--------------------------------------------------
+Check ratings.csv
+True
+--------------------------------------------------
+Check tags.csv
+True
+--------------------------------------------------
+Check users.txt
+True
+--------------------------------------------------
+Check ratings_count.txt
+232
+22
+True
+--------------------------------------------------
+Check README.md
+# Лабораторные работы для курса "Базы данных"
+### Мордовский госуниверситет, ПМиИ, 303 группа
+
+### Темы
+1. **Интерактивная работа с реляционными базами данных.** Проектирование базы данных. Создание и изменение таблиц. Вставка, выборка, изменение и удаление данных.
+2. **Программная работа с реляционной базой данных.** Создание PHP-приложения для работы с базой данных через PDO и ORM.
+
+### Задания и решения
+* Задания для выполнения размещаются в файлах task01.md, task02.md, ...
+* Проекты для решения заданий размещаются в каталогах Task01, Task02, Task03, ...
+* Прав на запись (коммиты) в данный репозиторий у студентов нет, файлы с решениями должны передаваться из личных репозиториев через механизм Pull Requests.
+* Задание будет считаться принятым после закрытия соответствующего Pull Request в этом репозитории.
+
+True
+--------------------------------------------------
+Check sqlite.txt
+3.39.2
+mode ascii
+mode csv
+mode column
+mode html
+mode insert
+mode json
+mode line
+mode list
+mode markdown
+mode qbox
+mode quote
+mode table
+mode tabs
+mode tcl
+True
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/303_Akimova_DA.git
+To github.com-mrsu:andpop-mrsu/303_Akimova_DA.git
+   a091163..c291f9e  master -> master
+   a091163..c291f9e  master -> master
+=====================================================
+/home/andrey/labs_303/303_Artamonov_AV
+Task01
+Task from branch: Task01
+Creation date: 09/03/2022 15:08:10
+Из github.com-mrsu:andpop-mrsu/303_Artamonov_AV
+Из github.com-mrsu:andpop-mrsu/303_Artamonov_AV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже обновлено.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже обновлено.
+--------------------------------------------------
+Task:  /home/andrey/labs_303/303_Artamonov_AV/Task01
+--------------------------------------------------
+Check genres.txt
+True
+--------------------------------------------------
+Check movies.csv
+True
+--------------------------------------------------
+Check occupation.txt
+True
+--------------------------------------------------
+Check ratings.csv
+True
+--------------------------------------------------
+Check tags.csv
+True
+--------------------------------------------------
+Check users.txt
+True
+--------------------------------------------------
+Check ratings_count.txt
+1,2
+120,22
+True
+--------------------------------------------------
+Check README.md
+movieId,title,genres
+userId,movieId,rating,timestamp
+userId,movieId,tag,timestamp
+True
+--------------------------------------------------
+Check sqlite.txt
+3.36.0
+ascii,box,csv,column,html,insert,json,line,list,markdown,quote,table,tabs,tcl
+True
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/303_Artamonov_AV.git
+To github.com-mrsu:andpop-mrsu/303_Artamonov_AV.git
+   90586ca..f7dda2f  master -> master
+   90586ca..f7dda2f  master -> master
+=====================================================
+/home/andrey/labs_303/303_Kochetkov_PA
+Task01
+Task from branch: Task01
+Creation date: 09/03/2022 13:49:25
+Из github.com-mrsu:andpop-mrsu/303_Kochetkov_PA
+Из github.com-mrsu:andpop-mrsu/303_Kochetkov_PA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже обновлено.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже обновлено.
+--------------------------------------------------
+Task:  /home/andrey/labs_303/303_Kochetkov_PA/Task01
+--------------------------------------------------
+Check genres.txt
+True
+--------------------------------------------------
+Check movies.csv
+True
+--------------------------------------------------
+Check occupation.txt
+True
+--------------------------------------------------
+Check ratings.csv
+True
+--------------------------------------------------
+Check tags.csv
+True
+--------------------------------------------------
+Check users.txt
+True
+--------------------------------------------------
+Check ratings_count.txt
+ratings_count.txt not found
+False
+--------------------------------------------------
+Check README.md
+movies.csv 3 поля (movieId, title, genres) 9743 записи
+ratings.csv 4 поля (userId, movieId, rating, timestamp) 18774 записи
+tags.csv 3 поля (userId, movieId, tag) 3684 записи
+gengers.txt 18 записей
+occupation.txt 21 запись
+sqlite.txt 15 записей
+users.txt 943 записи
+ratings_count.txt 2 записи
+True
+--------------------------------------------------
+Check sqlite.txt
+sqlite.txt not found
+False
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/303_Kochetkov_PA.git
+To github.com-mrsu:andpop-mrsu/303_Kochetkov_PA.git
+   df0e02b..a4e5393  master -> master
+   df0e02b..a4e5393  master -> master
+=====================================================
+/home/andrey/labs_303/303_Rjabikin_KS
+ Лабораторная работа №1
+Task from branch: Task01
+Creation date: 09/03/2022 12:27:09
+Из github.com-mrsu:andpop-mrsu/303_Rjabikin_KS
+Из github.com-mrsu:andpop-mrsu/303_Rjabikin_KS
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже обновлено.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже обновлено.
+--------------------------------------------------
+Task:  /home/andrey/labs_303/303_Rjabikin_KS/Task01
+--------------------------------------------------
+Check genres.txt
+True
+--------------------------------------------------
+Check movies.csv
+True
+--------------------------------------------------
+Check occupation.txt
+True
+--------------------------------------------------
+Check ratings.csv
+True
+--------------------------------------------------
+Check tags.csv
+True
+--------------------------------------------------
+Check users.txt
+True
+--------------------------------------------------
+Check ratings_count.txt
+    Значение минимального идентификатора пользователя из файла ratings.csv = 1
+    Количество строк с этим идентификатором = 232
+    Значение максимального идентификатора пользователя из файла ratings.csv = 120
+    Количество строк с этим идентификатором = 22
+True
+--------------------------------------------------
+Check README.md
+## Описание структуры файлов данных
+* Файл данных movies.csv имеет 3 поля (movieId, title, genres) и содержит 9743 записи
+* Файл данных ratings.csv имеет 4 поля (userId, movieId, rating, timestamp) и содержит 18774 записи
+* Файл данных tags.csv имеет 3 поля (userId, movieId, tag) и содержит 3684 записи
+True
+--------------------------------------------------
+Check sqlite.txt
+SQLite version 3.39.2
+В sqlite3 существуют следующие режимы вывода данных:
+ascii, box, csv, column, html, insert, json, line, list, markdown, quote, table, tabs, tcl
+True
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/303_Rjabikin_KS.git
+To github.com-mrsu:andpop-mrsu/303_Rjabikin_KS.git
+   03dab6d..4332c1f  master -> master
+   03dab6d..4332c1f  master -> master
+=====================================================
+/home/andrey/labs_303/303_Venediktova_JP
+Task01
+Task from branch: Task01
+Creation date: 09/03/2022 12:45:30
+Из github.com-mrsu:andpop-mrsu/303_Venediktova_JP
+Из github.com-mrsu:andpop-mrsu/303_Venediktova_JP
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже обновлено.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже обновлено.
+--------------------------------------------------
+Task:  /home/andrey/labs_303/303_Venediktova_JP/Task01
+--------------------------------------------------
+Check genres.txt
+True
+--------------------------------------------------
+Check movies.csv
+True
+--------------------------------------------------
+Check occupation.txt
+True
+--------------------------------------------------
+Check ratings.csv
+True
+--------------------------------------------------
+Check tags.csv
+True
+--------------------------------------------------
+Check users.txt
+True
+--------------------------------------------------
+Check ratings_count.txt
+1 233
+120 22
+True
+--------------------------------------------------
+Check README.md
+### Структура файлов данных
+
+- В файле movies.csv содержатся 3 поля (movieId, title, genres) 9743 записи
+- В файле ratings.csv содержатся 4 поля (userId, movieId, rating, timestamp) 18774 записи
+- В файле tags.csv содержатся 3 поля (userId, movieId, tag) 3684 записи
+- В файле gengers.txt представлено 18 записей
+- В файле occupation.txt представлена 21 запись
+- В файле sqlite.txt представлено 15 записей
+- В файле users.txt представлено 943 записи
+- В файле ratings_count.txt представлено 2 записи
+True
+--------------------------------------------------
+Check sqlite.txt
+     ascii       Columns/rows delimited by 0x1F and 0x1E
+     box         Tables using unicode box-drawing characters
+     csv         Comma-separated values
+     column      Output in columns.  (See .width)
+     html        HTML <table> code
+     insert      SQL insert statements for TABLE
+     json        Results in a JSON array
+     line        One value per line
+     list        Values delimited by "|"
+     markdown    Markdown table format
+     qbox        Shorthand for "box --width 60 --quote"
+     quote       Escape answers as for SQL
+     table       ASCII-art table
+     tabs        Tab-separated values
+     tcl         TCL list elements
+True
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/303_Venediktova_JP.git
+To github.com-mrsu:andpop-mrsu/303_Venediktova_JP.git
+   07d37ff..163abf6  master -> master
+   07d37ff..163abf6  master -> master
+**********************
+PowerShell transcript end
+End time: 20220904061319
+**********************

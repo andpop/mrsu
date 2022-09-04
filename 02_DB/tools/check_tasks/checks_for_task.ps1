@@ -9,7 +9,6 @@ function Test-File {
     if (-not (Test-Path $path)) {
         Write-Host "$path not found" -ForegroundColor red
         return $false
-        type hello.php
     }
     
     if ($showContent) {
