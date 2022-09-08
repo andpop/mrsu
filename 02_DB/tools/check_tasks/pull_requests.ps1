@@ -1,7 +1,8 @@
 function Check-PullRequest {
+    param (
+        [string]$studentDir
+    )
     Process {
-        $repo = $_.head.repo.name
-        $studentDir = $studentDirsPath + $repo
         $studentRepo = $_.head.repo.clone_url
         $number = $_.number
         $title = $_.title
@@ -44,13 +45,15 @@ function Check-PullRequest {
 }
 
 function Check-Student {
-    Process {
-        $studentRepo = "${teacherRepo}$($_.Name)/pulls"
-        $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-    
-        if ($pullRequests.count -eq 0) { return }
-    
-        $pullRequests | Check-PullRequest
-    }
+    param (
+        [string]$studentName
+    )
+    $studentRepo = "${teacherRepo}/${studentName}/pulls"
+    $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+
+    if ($pullRequests.count -eq 0) { return }
+
+    $pullRequests | Check-PullRequest -studentDir "${studentDirsPath}/${studentName}"
+
 }
 
