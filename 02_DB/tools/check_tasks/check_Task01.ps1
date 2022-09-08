@@ -1,19 +1,27 @@
-param($studentDir, $task)
+param(
+    [string]$studentDir,
+    [string]$task
+)
 
 function Check-Task {
     Write-Host "--------------------------------------------------" -ForegroundColor blue
     Write-Host "Task: ", (Get-Location).Path -ForegroundColor blue
 
-    Test-File -Path genres.txt
-    Test-File -Path movies.csv
-    Test-File -Path occupation.txt
-    Test-File -Path ratings.csv
-    Test-File -Path tags.csv
-    Test-File -Path users.txt
-    Test-File -Path ratings_count.txt -ShowContent
-    Test-File -Path README.md -ShowContent
-    Test-File -Path sqlite.txt -ShowContent
+    $doneChecks = $failureChecks = 0
 
+    if (Check-Path -Path genres.txt) { $doneChecks++ } else { $failureChecks++ }
+    if (Check-Path -Path movies.csv) { $doneChecks++ } else { $failureChecks++ }
+    if (Check-Path -Path occupation.txt) { $doneChecks++ } else { $failureChecks++ }
+    if (Check-Path -Path ratings.csv) { $doneChecks++ } else { $failureChecks++ }
+    if (Check-Path -Path tags.csv) { $doneChecks++ } else { $failureChecks++ }
+    if (Check-Path -Path users.txt) { $doneChecks++ } else { $failureChecks++ }
+    if (Check-Path -Path ratings_count.txt -ShowContent) { $doneChecks++ } else { $failureChecks++ }
+    if (Check-Path -Path README.md -ShowContent) { $doneChecks++ } else { $failureChecks++ }
+    if (Check-Path -Path sqlite.txt -ShowContent) { $doneChecks++ } else { $failureChecks++ }
+
+    Write-DelimiterString
+    Write-Host "Total ok: $doneChecks" -ForegroundColor green
+    Write-Host "Total error: $failureChecks" -ForegroundColor red
 }
 
 

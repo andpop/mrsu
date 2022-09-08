@@ -1,11 +1,15 @@
-function Test-File {
+function Write-DelimiterString {
+    Write-Host "--------------------------------------------------" -ForegroundColor blue
+}
+
+function Check-Path {
     param(
-        $path,
+        [string]$path,
         [switch]$showContent
     )
     
-    Write-Host "--------------------------------------------------" -ForegroundColor blue
-    Write-Host "Check $path" -Foreground blue
+    Write-DelimiterString
+    Write-Host "Check path: $path" -Foreground blue
     if (-not (Test-Path $path)) {
         Write-Host "$path not found" -ForegroundColor red
         return $false
@@ -18,13 +22,13 @@ function Test-File {
     return $true
 }
 
-function Test-Command {
+function Check-Command {
     param(
         $command,
         $params = ""
     )
 
-    Write-Host "--------------------------------------------------" -ForegroundColor blue
+    Write-DelimiterString
     Write-Host "Run: $command $params" -Foreground blue
     & $command $params.split(' ')
     if (-not $?) {

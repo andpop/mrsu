@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20220908212154
+Start time: 20220908223859
 **********************
 Transcript started, output file is log.txt
 =====================================================
@@ -19,95 +19,32 @@ fatal: внешний репозиторий student уже существует
 --------------------------------------------------
 Task:  /home/andrey/labs_303/303_Katin_DA/Task01
 --------------------------------------------------
-Check genres.txt
-True
+Check path: genres.txt
 --------------------------------------------------
-Check movies.csv
-True
+Check path: movies.csv
 --------------------------------------------------
-Check occupation.txt
-True
+Check path: occupation.txt
 --------------------------------------------------
-Check ratings.csv
-True
+Check path: ratings.csv
 --------------------------------------------------
-Check tags.csv
-True
+Check path: tags.csv
 --------------------------------------------------
-Check users.txt
-True
+Check path: users.txt
 --------------------------------------------------
-Check ratings_count.txt
-1 232
-120 22
-True
+Check path: ratings_count.txt
 --------------------------------------------------
-Check README.md
-# genres.txt
-Количество строк:
-18
-
-# movies.csv
-Количество строк:
-9742
-
-Поля:
-1. movieId
-2. title
-3. genres
-
-# occupation.txt
-Количество строк:
-21
-
-# ratings.csv
-Количество строк:
-18773
-
-Поля:
-1. userId
-2. movieId
-3. rating
-4. timestamp
-
-# tags.csv
-Количество строк:
-3683
-
-Поля:
-1. userId
-2. movieId
-3. tag
-4. timestamp
-
-# users.txt
-Количество строк:
-943
-True
+Check path: README.md
 --------------------------------------------------
-Check sqlite.txt
-SQLite version 3.39.2
-ascii
-box
-csv
-column
-html
-insert
-json
-line
-list
-markdown
-qbox
-quote
-table
-tabs
-tcl
-True
+Check path: sqlite.txt
 --------------------------------------------------
-PS>TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> $global:?
-True
+Total ok: 9
+Total error: 0
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/303_Katin_DA.git
+To github.com-mrsu:andpop-mrsu/303_Katin_DA.git
+   7c3b818..0af9a9c  master -> master
+   7c3b818..0af9a9c  master -> master
+**********************
+PowerShell transcript end
+End time: 20220908224035
+**********************
