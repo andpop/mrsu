@@ -9,7 +9,7 @@ function Check-Path {
     )
     
     Write-DelimiterString
-    Write-Host "Check path: $path" -ForegroundColor blue
+    Write-Host "Check path: $path" -Foreground blue
     if (-not (Test-Path $path)) {
         Write-Host "$path not found" -ForegroundColor red
         return $false
@@ -29,7 +29,7 @@ function Check-Command {
     )
 
     Write-DelimiterString
-    Write-Host "Run: $command $params" -ForegroundColor blue
+    Write-Host "Run: $command $params" -Foreground blue
     & $command $params.split(' ')
     if (-not $?) {
         Write-Host "Execution fails" -ForegroundColor red

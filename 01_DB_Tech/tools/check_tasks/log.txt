@@ -1,0 +1,87 @@
+**********************
+PowerShell transcript start
+Start time: 20220908231043
+**********************
+Transcript started, output file is log.txt
+https://api.github.com/repos/andpop-mrsu/402_Antonova_SA/pulls
+PS>TerminatingError(Invoke-RestMethod): "{"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}"
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/pull_requests.ps1:55
+Line |
+  55 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/pull_requests.ps1:55
+Line |
+  55 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}
+
+https://api.github.com/repos/andpop-mrsu/402_Bikmaev_RR/pulls
+PS>TerminatingError(Invoke-RestMethod): "{"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}"
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/pull_requests.ps1:55
+Line |
+  55 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/pull_requests.ps1:55
+Line |
+  55 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}
+
+https://api.github.com/repos/andpop-mrsu/402_Chirkov_KA/pulls
+PS>TerminatingError(Invoke-RestMethod): "{"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}"
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/pull_requests.ps1:55
+Line |
+  55 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/pull_requests.ps1:55
+Line |
+  55 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}
+
+https://api.github.com/repos/andpop-mrsu/402_Duraeva_KV/pulls
+PS>TerminatingError(Invoke-RestMethod): "{"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}"
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/pull_requests.ps1:55
+Line |
+  55 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/pull_requests.ps1:55
+Line |
+  55 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}
+
+https://api.github.com/repos/andpop-mrsu/402_Golubev_SU/pulls
+PS>TerminatingError(Invoke-RestMethod): "{"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}"
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/pull_requests.ps1:55
+Line |
+  55 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/pull_requests.ps1:55
+Line |
+  55 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}
+
+https://api.github.com/repos/andpop-mrsu/402_Guryanov_MA/pulls
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> $global:?
+True
