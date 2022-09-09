@@ -48,9 +48,9 @@ function Check-Student {
     param (
         [string]$studentName
     )
-    $studentRepo = "${teacherRepo}/${studentName}/pulls"
+    Write-Host $studentName -ForegroundColor gray
 
-    Write-Host $studentRepo -ForegroundColor gray
+    $studentRepo = "${teacherRepo}/${studentName}/pulls"
 
     $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
 

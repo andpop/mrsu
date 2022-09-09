@@ -1,87 +1,115 @@
 **********************
 PowerShell transcript start
-Start time: 20220908231043
+Start time: 20220909164406
 **********************
 Transcript started, output file is log.txt
-https://api.github.com/repos/andpop-mrsu/402_Antonova_SA/pulls
-PS>TerminatingError(Invoke-RestMethod): "{"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}"
+402_Arhipov_KA
+402_Ariskin_NV
+402_Bansimba-Zita_EV
+402_Chulkina_AV
+402_Demidov_VA
+=====================================================
+/home/andrey/labs_402/402_Demidov_VA
+Task01
+Task from branch: Task01
+Creation date: 09/09/2022 10:26:54
+From github.com-mrsu:andpop-mrsu/402_Demidov_VA
+From github.com-mrsu:andpop-mrsu/402_Demidov_VA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+fatal: remote student already exists.
+fatal: remote student already exists.
+Already up to date.
 
-Invoke-RestMethod: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/pull_requests.ps1:55
+Push-Location: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/check_Task01.ps1:30
 Line |
-  55 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}
+  30 |  Push-Location "$taskDir"
+     |  ~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path '/home/andrey/labs_402/402_Demidov_VA/Task01' because it does not exist.
 
-Invoke-RestMethod: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/pull_requests.ps1:55
+Push-Location: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/check_Task01.ps1:30
 Line |
-  55 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}
+  30 |  Push-Location "$taskDir"
+     |  ~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path '/home/andrey/labs_402/402_Demidov_VA/Task01' because it does not exist.
 
-https://api.github.com/repos/andpop-mrsu/402_Bikmaev_RR/pulls
-PS>TerminatingError(Invoke-RestMethod): "{"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}"
+--------------------------------------------------
+Task:  /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks
+--------------------------------------------------
+Check path: self-logger.bat
+self-logger.bat not found
+--------------------------------------------------
+Check path: task1.php
+task1.php not found
+--------------------------------------------------
+Check path: README.md
+README.md not found
+False
+--------------------------------------------------
+Check path: README_logger.md
+README_logger.md not found
+--------------------------------------------------
+Total ok: 0
+Total error: 3
+--------------------------------------------------
+402_Eskin_DS
+402_Gorlienko_NV
+=====================================================
+/home/andrey/labs_402/402_Gorlienko_NV
+Task01
+Task from branch: Task01
+Creation date: 09/09/2022 11:08:32
+From github.com-mrsu:andpop-mrsu/402_Gorlienko_NV
+From github.com-mrsu:andpop-mrsu/402_Gorlienko_NV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+fatal: remote student already exists.
+fatal: remote student already exists.
+Already up to date.
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Gorlienko_NV/Task01
+--------------------------------------------------
+Check path: self-logger.bat
+--------------------------------------------------
+Check path: task1.php
+--------------------------------------------------
+Check path: README.md
+## Описание проекта
 
-Invoke-RestMethod: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/pull_requests.ps1:55
-Line |
-  55 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/pull_requests.ps1:55
-Line |
-  55 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}
-
-https://api.github.com/repos/andpop-mrsu/402_Chirkov_KA/pulls
-PS>TerminatingError(Invoke-RestMethod): "{"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}"
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/pull_requests.ps1:55
-Line |
-  55 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/pull_requests.ps1:55
-Line |
-  55 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}
-
-https://api.github.com/repos/andpop-mrsu/402_Duraeva_KV/pulls
-PS>TerminatingError(Invoke-RestMethod): "{"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}"
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/pull_requests.ps1:55
-Line |
-  55 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/pull_requests.ps1:55
-Line |
-  55 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}
-
-https://api.github.com/repos/andpop-mrsu/402_Golubev_SU/pulls
-PS>TerminatingError(Invoke-RestMethod): "{"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}"
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/pull_requests.ps1:55
-Line |
-  55 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/pull_requests.ps1:55
-Line |
-  55 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}
-
-https://api.github.com/repos/andpop-mrsu/402_Guryanov_MA/pulls
+* * *
+Написать консольный вариант для игры \"Виселица\" (согласно общей спецификации) с сохранением информации о партиях в базе данных SQLite.
+    
+Псевдографика для игры:
+    
+    +---+    +---+    +---+    +---+    +---+    +---+    +---+
+        |    0   |    0   |    0   |    0   |    0   |    0   |
+        |        |    |   |   /|   |   /|\  |   /|\  |   /|\  |
+        |        |        |        |        |   /    |   / \  |
+       ===      ===      ===      ===      ===      ===      ===
+* * *     
+Режим работы приложения должны определяться при запуске по аргументам командной строки:
+  * new (краткий параметр -n). Новая игра. Этот же режим используется по умолчанию, если программа запускается без параметров.
+  * --list (-l). Вывод списка всех сохраненных игр.
+  * --replay id (-r id). Повтор игры с идентификатором id.
+  * --help (-h). Вывод краткой информации о приложении и доступных ключах для запуска в разных режимах.
+True
+--------------------------------------------------
+Check path: README_logger.md
+README_logger.md not found
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
 PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
 >> TerminatingError(): "The pipeline has been stopped."
 >> TerminatingError(): "The pipeline has been stopped."
 >> TerminatingError(): "The pipeline has been stopped."
 >> $global:?
 True
+**********************
+PowerShell transcript end
+End time: 20220909164427
+**********************

@@ -3,11 +3,11 @@ function Write-DelimiterString {
 }
 
 function Check-Path {
+    [CmdletBinding()]
     param(
         [string]$path,
-        [switch]$showContent
+        [switch]$ShowContent
     )
-    
     Write-DelimiterString
     Write-Host "Check path: $path" -Foreground blue
     if (-not (Test-Path $path)) {
@@ -15,8 +15,8 @@ function Check-Path {
         return $false
     }
     
-    if ($showContent) {
-        Get-Content $path
+    if ($ShowContent) {
+        Write-Host (Get-Content $path -Raw)
     }
 
     return $true
