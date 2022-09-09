@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20220909164406
+Start time: 20220909184039
 **********************
 Transcript started, output file is log.txt
 402_Arhipov_KA
@@ -13,46 +13,19 @@ Transcript started, output file is log.txt
 Task01
 Task from branch: Task01
 Creation date: 09/09/2022 10:26:54
-From github.com-mrsu:andpop-mrsu/402_Demidov_VA
-From github.com-mrsu:andpop-mrsu/402_Demidov_VA
+Из github.com-mrsu:andpop-mrsu/402_Demidov_VA
+Из github.com-mrsu:andpop-mrsu/402_Demidov_VA
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-Already up to date.
-fatal: remote student already exists.
-fatal: remote student already exists.
-Already up to date.
-
-Push-Location: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/check_Task01.ps1:30
-Line |
-  30 |  Push-Location "$taskDir"
-     |  ~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot find path '/home/andrey/labs_402/402_Demidov_VA/Task01' because it does not exist.
-
-Push-Location: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/check_Task01.ps1:30
-Line |
-  30 |  Push-Location "$taskDir"
-     |  ~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot find path '/home/andrey/labs_402/402_Demidov_VA/Task01' because it does not exist.
-
---------------------------------------------------
-Task:  /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks
---------------------------------------------------
-Check path: self-logger.bat
-self-logger.bat not found
---------------------------------------------------
-Check path: task1.php
-task1.php not found
---------------------------------------------------
-Check path: README.md
-README.md not found
-False
---------------------------------------------------
-Check path: README_logger.md
-README_logger.md not found
---------------------------------------------------
-Total ok: 0
-Total error: 3
---------------------------------------------------
+Уже обновлено.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже обновлено.
+There are no folder /home/andrey/labs_402/402_Demidov_VA/Task01
+To github.com-mrsu:andpop-mrsu/402_Demidov_VA.git
+To github.com-mrsu:andpop-mrsu/402_Demidov_VA.git
+   f59b727..810ad0b  master -> master
+   f59b727..810ad0b  master -> master
 402_Eskin_DS
 402_Gorlienko_NV
 =====================================================
@@ -60,14 +33,38 @@ Total error: 3
 Task01
 Task from branch: Task01
 Creation date: 09/09/2022 11:08:32
-From github.com-mrsu:andpop-mrsu/402_Gorlienko_NV
-From github.com-mrsu:andpop-mrsu/402_Gorlienko_NV
+Из github.com-mrsu:andpop-mrsu/402_Gorlienko_NV
+Из github.com-mrsu:andpop-mrsu/402_Gorlienko_NV
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-Already up to date.
-fatal: remote student already exists.
-fatal: remote student already exists.
-Already up to date.
+Уже обновлено.
+Из https://github.com/youngkolya/402_Gorlienko_NV
+Из https://github.com/youngkolya/402_Gorlienko_NV
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 7bda621..4dbeca3
+Fast-forward (no commit created; -m option ignored)
+ README.md                    |  14 ----------
+ Task01/README.md             |  18 +++++++++++++
+ Task01/README_self-logger.md |   8 ++++++
+ Task01/logger.db             | Bin 0 -> 8192 bytes
+ Task01/self-logger.bat       |  21 +++++++++++++++
+ Task01/task1.php             |  12 +++++++++
+ general_specification_01.md  |  21 ---------------
+ specification_01_01.md       |  14 ----------
+ task01.md                    |  59 -------------------------------------------
+ 9 files changed, 59 insertions(+), 108 deletions(-)
+ delete mode 100644 README.md
+ create mode 100644 Task01/README.md
+ create mode 100644 Task01/README_self-logger.md
+ create mode 100644 Task01/logger.db
+ create mode 100644 Task01/self-logger.bat
+ create mode 100644 Task01/task1.php
+ delete mode 100644 general_specification_01.md
+ delete mode 100644 specification_01_01.md
+ delete mode 100644 task01.md
 --------------------------------------------------
 Task:  /home/andrey/labs_402/402_Gorlienko_NV/Task01
 --------------------------------------------------
@@ -94,22 +91,534 @@ Check path: README.md
   * --list (-l). Вывод списка всех сохраненных игр.
   * --replay id (-r id). Повтор игры с идентификатором id.
   * --help (-h). Вывод краткой информации о приложении и доступных ключах для запуска в разных режимах.
-True
 --------------------------------------------------
 Check path: README_logger.md
 README_logger.md not found
 --------------------------------------------------
-Total ok: 2
+Total ok: 3
 Total error: 1
 --------------------------------------------------
-PS>TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> $global:?
-True
+To github.com-mrsu:andpop-mrsu/402_Gorlienko_NV.git
+To github.com-mrsu:andpop-mrsu/402_Gorlienko_NV.git
+   7bda621..4dbeca3  master -> master
+   7bda621..4dbeca3  master -> master
+402_Haniev_RM
+402_Inevatkina_KM
+402_Kiruhin_AA
+=====================================================
+/home/andrey/labs_402/402_Kiruhin_AA
+Task01
+Task from branch: Task01
+Creation date: 09/08/2022 18:45:02
+Из github.com-mrsu:andpop-mrsu/402_Kiruhin_AA
+Из github.com-mrsu:andpop-mrsu/402_Kiruhin_AA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже обновлено.
+Из https://github.com/Ne1k/402_Kiruhin_AA
+Из https://github.com/Ne1k/402_Kiruhin_AA
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 7f2f57e..7e8a06c
+Fast-forward (no commit created; -m option ignored)
+ Task01/README.md             | 11 +++++++++++
+ Task01/README_self-logger.md |  8 ++++++++
+ Task01/self-logger.bat       | 21 +++++++++++++++++++++
+ Task01/task1.php             | 12 ++++++++++++
+ 4 files changed, 52 insertions(+)
+ create mode 100644 Task01/README.md
+ create mode 100644 Task01/README_self-logger.md
+ create mode 100644 Task01/self-logger.bat
+ create mode 100644 Task01/task1.php
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Kiruhin_AA/Task01
+--------------------------------------------------
+Check path: self-logger.bat
+--------------------------------------------------
+Check path: task1.php
+--------------------------------------------------
+Check path: README.md
+## Описание проекта
+
+Написать консольный вариант для игры "Крестики-нолики" (согласно общей спецификации) с сохранением информации о партиях в базе данных SQLite.
+
+Для отображения используются символы (фигуры) "X" и "O".
+Координаты ячеек вводятся с клавиатуры в виде двух чисел, разделённых пробелом. Первое число - номер строки, второе число - номер столбца.
+Режим работы приложения должны определяться при запуске по аргументам командной строки:
+--new (краткий параметр -n). Новая игра. Этот же режим используется по умолчанию, если программа запускается без параметров.
+--list (-l). Вывод списка всех сохраненных партий.
+--replay id (-r id). Повтор всех ходов игры с идентификатором id.
+--help (-h). Вывод краткой информации о приложении, формате ввода координат и доступных ключах для запуска в разных режимах.
+--------------------------------------------------
+Check path: README_logger.md
+README_logger.md not found
+--------------------------------------------------
+Total ok: 3
+Total error: 1
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/402_Kiruhin_AA.git
+To github.com-mrsu:andpop-mrsu/402_Kiruhin_AA.git
+   7f2f57e..7e8a06c  master -> master
+   7f2f57e..7e8a06c  master -> master
+402_Kudryavtzev_DA
+402_Makarov_NA
+=====================================================
+/home/andrey/labs_402/402_Makarov_NA
+_
+Task from branch: Task01
+Creation date: 09/08/2022 18:22:17
+Из github.com-mrsu:andpop-mrsu/402_Makarov_NA
+Из github.com-mrsu:andpop-mrsu/402_Makarov_NA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже обновлено.
+Из https://github.com/ma-karov/402_Makarov_NA
+Из https://github.com/ma-karov/402_Makarov_NA
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 3bc9957..49120e2
+Fast-forward (no commit created; -m option ignored)
+ Task01/README.md             | 18 ++++++++++++++++++
+ Task01/README_self-logger.md |  8 ++++++++
+ Task01/self-logger.bat       | 21 +++++++++++++++++++++
+ Task01/task1.php             | 22 ++++++++++++++++++++++
+ 4 files changed, 69 insertions(+)
+ create mode 100644 Task01/README.md
+ create mode 100644 Task01/README_self-logger.md
+ create mode 100644 Task01/self-logger.bat
+ create mode 100644 Task01/task1.php
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Makarov_NA/Task01
+--------------------------------------------------
+Check path: self-logger.bat
+--------------------------------------------------
+Check path: task1.php
+--------------------------------------------------
+Check path: README.md
+## Описание проекта
+
+* * *
+Написать консольный вариант для игры \"Виселица\" (согласно общей спецификации) с сохранением информации о партиях в базе данных SQLite.
+    
+Псевдографика для игры:
+    
+    +---+    +---+    +---+    +---+    +---+    +---+    +---+
+        |    0   |    0   |    0   |    0   |    0   |    0   |
+        |        |    |   |   /|   |   /|\  |   /|\  |   /|\  |
+        |        |        |        |        |   /    |   / \  |
+       ===      ===      ===      ===      ===      ===      ===
+* * *     
+Режим работы приложения должны определяться при запуске по аргументам командной строки:
+  * new (краткий параметр -n). Новая игра. Этот же режим используется по умолчанию, если программа запускается без параметров.
+  * --list (-l). Вывод списка всех сохраненных игр.
+  * --replay id (-r id). Повтор игры с идентификатором id.
+  * --help (-h). Вывод краткой информации о приложении и доступных ключах для запуска в разных режимах.
+--------------------------------------------------
+Check path: README_logger.md
+README_logger.md not found
+--------------------------------------------------
+Total ok: 3
+Total error: 1
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/402_Makarov_NA.git
+To github.com-mrsu:andpop-mrsu/402_Makarov_NA.git
+   3bc9957..49120e2  master -> master
+   3bc9957..49120e2  master -> master
+402_Nagaev_DG
+=====================================================
+/home/andrey/labs_402/402_Nagaev_DG
+Task01
+Task from branch: Task01
+Creation date: 09/08/2022 18:58:29
+Из github.com-mrsu:andpop-mrsu/402_Nagaev_DG
+Из github.com-mrsu:andpop-mrsu/402_Nagaev_DG
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже обновлено.
+Из https://github.com/sll0ne/402_Nagaev_DG
+Из https://github.com/sll0ne/402_Nagaev_DG
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 0652f9b..89b8989
+Fast-forward (no commit created; -m option ignored)
+ Task01/README.md             | 14 ++++++++++++++
+ Task01/README_self-logger.md |  8 ++++++++
+ Task01/self-logger.bat       | 21 +++++++++++++++++++++
+ Task01/task1.php             | 13 +++++++++++++
+ 4 files changed, 56 insertions(+)
+ create mode 100644 Task01/README.md
+ create mode 100644 Task01/README_self-logger.md
+ create mode 100644 Task01/self-logger.bat
+ create mode 100644 Task01/task1.php
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Nagaev_DG/Task01
+--------------------------------------------------
+Check path: self-logger.bat
+--------------------------------------------------
+Check path: task1.php
+--------------------------------------------------
+Check path: README.md
+## Задача для первого блока
+### Вариант 2
+Написать консольный вариант для игры "Угадай число" (согласно общей спецификации) с сохранением информации о партиях в базе данных SQLite.
+
+* * *
+
+* Режим работы приложения должны определяться при запуске по аргументам командной строки:
+    * `--new` (краткий параметр `-n`). Новая игра. Этот же режим используется по умолчанию, если программа запускается без параметров.
+    * `--list` (`-l`). Вывод списка всех сохраненных игр.
+    * `--list win` (`-l win`). Вывод списка всех игр, в которых победил человек.
+    * `--list loose` (`-l loose`). Вывод списка всех игр, в которых человек проиграл.
+    * `--top`. Вывод статистики по игрокам. Для каждого игрока нужно посчитать количество побед и проигрышей, список отсортировать по количеству побед (чемпионы располагаются вверху списка).
+    * `--replay id` (`-r id`). Повтор всех ходов игры с идентификатором id.
+    * `--help` (`-h`). Вывод краткой информации о приложении и доступных ключах для запуска в разных режимах.
+--------------------------------------------------
+Check path: README_logger.md
+README_logger.md not found
+--------------------------------------------------
+Total ok: 3
+Total error: 1
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/402_Nagaev_DG.git
+To github.com-mrsu:andpop-mrsu/402_Nagaev_DG.git
+   0652f9b..89b8989  master -> master
+   0652f9b..89b8989  master -> master
+402_Pochtov_AA
+402_Polyakina_AM
+402_Pozharskiy_VS
+402_Rodushkin_VE
+=====================================================
+/home/andrey/labs_402/402_Rodushkin_VE
+add Task01
+Task from branch: Task01
+Creation date: 09/08/2022 19:15:50
+Из github.com-mrsu:andpop-mrsu/402_Rodushkin_VE
+Из github.com-mrsu:andpop-mrsu/402_Rodushkin_VE
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже обновлено.
+Из https://github.com/VladislavRE250401/402_Rodushkin_VE
+Из https://github.com/VladislavRE250401/402_Rodushkin_VE
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 2d9e513..be3c2c7
+Fast-forward (no commit created; -m option ignored)
+ Task01/README.md             | 21 +++++++++++++++++++++
+ Task01/README_self-logger.md |  8 ++++++++
+ Task01/self-logger.bat       | 21 +++++++++++++++++++++
+ Task01/task1.php             | 14 ++++++++++++++
+ 4 files changed, 64 insertions(+)
+ create mode 100644 Task01/README.md
+ create mode 100644 Task01/README_self-logger.md
+ create mode 100644 Task01/self-logger.bat
+ create mode 100644 Task01/task1.php
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Rodushkin_VE/Task01
+--------------------------------------------------
+Check path: self-logger.bat
+--------------------------------------------------
+Check path: task1.php
+--------------------------------------------------
+Check path: README.md
+## Описание проекта
+
+Вариант 2
+
+Написать консольный вариант для игры \"Угадай число"\ (согласно общей спецификации) с сохранением информации о партиях в базе данных SQLite.
+
+• Режим работы приложения должны определяться при запуске по аргументам командной строки:
+
+    ○ --new (краткий параметр -n). Новая игра. Этот же режим используется по умолчанию, если программа запускается без параметров.
+	
+    ○ --list (-l). Вывод списка всех сохраненных игр.
+	
+    ○ --list win (-l win). Вывод списка всех игр, в которых победил человек.
+	
+    ○ --list loose (-l loose). Вывод списка всех игр, в которых человек проиграл.
+	
+    ○ --top. Вывод статистики по игрокам. Для каждого игрока нужно посчитать количество побед и проигрышей, список отсортировать по количеству побед (чемпионы располагаются вверху списка).
+	
+    ○ --replay id (-r id). Повтор всех ходов игры с идентификатором id.
+	
+    ○ --help (-h). Вывод краткой информации о приложении и доступных ключах для запуска в разных режимах.
+--------------------------------------------------
+Check path: README_logger.md
+README_logger.md not found
+--------------------------------------------------
+Total ok: 3
+Total error: 1
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/402_Rodushkin_VE.git
+To github.com-mrsu:andpop-mrsu/402_Rodushkin_VE.git
+   2d9e513..be3c2c7  master -> master
+   2d9e513..be3c2c7  master -> master
+402_Ryazin_VA
+=====================================================
+/home/andrey/labs_402/402_Ryazin_VA
+Added branch Task01
+Task from branch: Task01
+Creation date: 09/09/2022 09:06:41
+Из github.com-mrsu:andpop-mrsu/402_Ryazin_VA
+Из github.com-mrsu:andpop-mrsu/402_Ryazin_VA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже обновлено.
+Из https://github.com/Vitaliy-Ryazin/402_Ryazin_VA
+Из https://github.com/Vitaliy-Ryazin/402_Ryazin_VA
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление bbfa8b9..2e5c3d4
+Fast-forward (no commit created; -m option ignored)
+ Task01/README.md             |  18 ++++++++++++++++++
+ Task01/README_self-logger.md |   8 ++++++++
+ Task01/logger.db             | Bin 0 -> 8192 bytes
+ Task01/self-logger.bat       |  21 +++++++++++++++++++++
+ Task01/task1.php             |  22 ++++++++++++++++++++++
+ 5 files changed, 69 insertions(+)
+ create mode 100644 Task01/README.md
+ create mode 100644 Task01/README_self-logger.md
+ create mode 100644 Task01/logger.db
+ create mode 100755 Task01/self-logger.bat
+ create mode 100644 Task01/task1.php
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Ryazin_VA/Task01
+--------------------------------------------------
+Check path: self-logger.bat
+--------------------------------------------------
+Check path: task1.php
+--------------------------------------------------
+Check path: README.md
+## Описание проекта
+
+* * *
+Написать консольный вариант для игры \"Виселица\" (согласно общей спецификации) с сохранением информации о партиях в базе данных SQLite.
+    
+Псевдографика для игры:
+    
+    +---+    +---+    +---+    +---+    +---+    +---+    +---+
+        |    0   |    0   |    0   |    0   |    0   |    0   |
+        |        |    |   |   /|   |   /|\  |   /|\  |   /|\  |
+        |        |        |        |        |   /    |   / \  |
+       ===      ===      ===      ===      ===      ===      ===
+* * *     
+Режим работы приложения должны определяться при запуске по аргументам командной строки:
+  * new (краткий параметр -n). Новая игра. Этот же режим используется по умолчанию, если программа запускается без параметров.
+  * --list (-l). Вывод списка всех сохраненных игр.
+  * --replay id (-r id). Повтор игры с идентификатором id.
+  * --help (-h). Вывод краткой информации о приложении и доступных ключах для запуска в разных режимах.
+--------------------------------------------------
+Check path: README_logger.md
+README_logger.md not found
+--------------------------------------------------
+Total ok: 3
+Total error: 1
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/402_Ryazin_VA.git
+To github.com-mrsu:andpop-mrsu/402_Ryazin_VA.git
+   bbfa8b9..2e5c3d4  master -> master
+   bbfa8b9..2e5c3d4  master -> master
+402_Trapeza_IV
+=====================================================
+/home/andrey/labs_402/402_Trapeza_IV
+Task01
+Task from branch: Task01
+Creation date: 09/09/2022 12:50:27
+Из github.com-mrsu:andpop-mrsu/402_Trapeza_IV
+Из github.com-mrsu:andpop-mrsu/402_Trapeza_IV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже обновлено.
+Из https://github.com/azepart/402_Trapeza_IV
+Из https://github.com/azepart/402_Trapeza_IV
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 367e4bf..bc64049
+Fast-forward (no commit created; -m option ignored)
+ Task01/Task01/README.md             |  18 ++++++++++++++++++
+ Task01/Task01/README_self-logger.md |   8 ++++++++
+ Task01/Task01/logger.db             | Bin 0 -> 8192 bytes
+ Task01/Task01/self-logger.bat       |  21 +++++++++++++++++++++
+ Task01/Task01/task1.php             |  22 ++++++++++++++++++++++
+ 5 files changed, 69 insertions(+)
+ create mode 100644 Task01/Task01/README.md
+ create mode 100644 Task01/Task01/README_self-logger.md
+ create mode 100644 Task01/Task01/logger.db
+ create mode 100644 Task01/Task01/self-logger.bat
+ create mode 100644 Task01/Task01/task1.php
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Trapeza_IV/Task01
+--------------------------------------------------
+Check path: self-logger.bat
+self-logger.bat not found
+--------------------------------------------------
+Check path: task1.php
+task1.php not found
+--------------------------------------------------
+Check path: README.md
+README.md not found
+--------------------------------------------------
+Check path: README_logger.md
+README_logger.md not found
+--------------------------------------------------
+Total ok: 0
+Total error: 4
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/402_Trapeza_IV.git
+To github.com-mrsu:andpop-mrsu/402_Trapeza_IV.git
+   367e4bf..bc64049  master -> master
+   367e4bf..bc64049  master -> master
+402_Tzyganov_AA
+=====================================================
+/home/andrey/labs_402/402_Tzyganov_AA
+Task01
+Task from branch: Task01
+Creation date: 09/09/2022 13:19:11
+Из github.com-mrsu:andpop-mrsu/402_Tzyganov_AA
+Из github.com-mrsu:andpop-mrsu/402_Tzyganov_AA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже обновлено.
+Из https://github.com/Areverest/402_Tzyganov_AA
+Из https://github.com/Areverest/402_Tzyganov_AA
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 38ebf61..b69fda8
+Fast-forward (no commit created; -m option ignored)
+ Task01/README.md             |  23 +++++++++++++++++++++++
+ Task01/logger.db             | Bin 0 -> 8192 bytes
+ Task01/readme_self-logger.md |   8 ++++++++
+ Task01/self-logger.bat       |  21 +++++++++++++++++++++
+ Task01/task1.php             |  16 ++++++++++++++++
+ 5 files changed, 68 insertions(+)
+ create mode 100644 Task01/README.md
+ create mode 100644 Task01/logger.db
+ create mode 100644 Task01/readme_self-logger.md
+ create mode 100644 Task01/self-logger.bat
+ create mode 100644 Task01/task1.php
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Tzyganov_AA/Task01
+--------------------------------------------------
+Check path: self-logger.bat
+--------------------------------------------------
+Check path: task1.php
+--------------------------------------------------
+Check path: README.md
+## Задача для первого блока
+### Вариант 4
+Написать программу для игры "Холодно-горячо"(cold-hot). Игрок пытается угадать случайное трехзначное число (без повторяющихся цифр), сгенерированное компьютером. После каждой попытки компьютер предоставляет игроку подсказки трех типов:
+* "Холодно". Ни одна цифра не отгадана.
+* "Тепло" Одна цифра отгадана, но не отгадана ее позиция. 
+* "Горячо". Одна цифра и ее позиция отгадана.
+На каждом ходе компьютер должен выдать три подсказки, отсортированные в алфавитном порядке. Если секретное число 456, а предположение игрока — 546, подсказки будут иметь вид «Горячо Тепло Тепло». Подсказка «Горячо» относится к 6, а «Тепло Тепло» — к 4 и 5.
+
+* * *
+
+* Информация о датах и исходах всех партий, а также о всех попытках, сделанных во время игры, должна сохраняться в базе данных.
+* Для каждой игры в базе должна храниться следующая информация:
+    * Дата игры
+    * Имя игрока
+    * Загаданное компьютером число
+    * Исход игры (угадал/не угадал)
+    * Запись попыток в формате: 
+      `номер попытки | предложенная буква | результат`
+* В программе должны быть реализованы три режима:
+    * Новая игра.
+    * Вывод списка всех сохраненных в базе партий.
+    * Повтор любой сохраненной партии (то есть повтор всех ходов из этой партии).
+--------------------------------------------------
+Check path: README_logger.md
+README_logger.md not found
+--------------------------------------------------
+Total ok: 3
+Total error: 1
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/402_Tzyganov_AA.git
+To github.com-mrsu:andpop-mrsu/402_Tzyganov_AA.git
+   38ebf61..b69fda8  master -> master
+   38ebf61..b69fda8  master -> master
+402_Uvarov_AV
+402_Zavodov_DA
+=====================================================
+/home/andrey/labs_402/402_Zavodov_DA
+Task01
+Task from branch: Task01
+Creation date: 09/09/2022 10:27:03
+Из github.com-mrsu:andpop-mrsu/402_Zavodov_DA
+Из github.com-mrsu:andpop-mrsu/402_Zavodov_DA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже обновлено.
+Из https://github.com/DZavodov/402_Zavodov_DA
+Из https://github.com/DZavodov/402_Zavodov_DA
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление c74e5dd..70d5c9f
+Fast-forward (no commit created; -m option ignored)
+ Task01/README.md             |  18 ++++++++++++++++++
+ Task01/README_self-logger.md |   8 ++++++++
+ Task01/logger.db             | Bin 0 -> 8192 bytes
+ Task01/self-logger.bat       |  21 +++++++++++++++++++++
+ Task01/task1.php             |  22 ++++++++++++++++++++++
+ 5 files changed, 69 insertions(+)
+ create mode 100644 Task01/README.md
+ create mode 100644 Task01/README_self-logger.md
+ create mode 100644 Task01/logger.db
+ create mode 100644 Task01/self-logger.bat
+ create mode 100644 Task01/task1.php
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Zavodov_DA/Task01
+--------------------------------------------------
+Check path: self-logger.bat
+--------------------------------------------------
+Check path: task1.php
+--------------------------------------------------
+Check path: README.md
+## Описание проекта
+
+* * *
+Написать консольный вариант для игры \"Виселица\" (согласно общей спецификации) с сохранением информации о партиях в базе данных SQLite.
+    
+Псевдографика для игры:
+    
+    +---+    +---+    +---+    +---+    +---+    +---+    +---+
+        |    0   |    0   |    0   |    0   |    0   |    0   |
+        |        |    |   |   /|   |   /|\  |   /|\  |   /|\  |
+        |        |        |        |        |   /    |   / \  |
+       ===      ===      ===      ===      ===      ===      ===
+* * *     
+Режим работы приложения должны определяться при запуске по аргументам командной строки:
+  * new (краткий параметр -n). Новая игра. Этот же режим используется по умолчанию, если программа запускается без параметров.
+  * --list (-l). Вывод списка всех сохраненных игр.
+  * --replay id (-r id). Повтор игры с идентификатором id.
+  * --help (-h). Вывод краткой информации о приложении и доступных ключах для запуска в разных режимах.
+--------------------------------------------------
+Check path: README_logger.md
+README_logger.md not found
+--------------------------------------------------
+Total ok: 3
+Total error: 1
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/402_Zavodov_DA.git
+To github.com-mrsu:andpop-mrsu/402_Zavodov_DA.git
+   c74e5dd..70d5c9f  master -> master
+   c74e5dd..70d5c9f  master -> master
 **********************
 PowerShell transcript end
-End time: 20220909164427
+End time: 20220909190344
 **********************

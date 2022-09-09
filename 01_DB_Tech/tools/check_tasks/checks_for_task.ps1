@@ -3,7 +3,6 @@ function Write-DelimiterString {
 }
 
 function Check-Path {
-    [CmdletBinding()]
     param(
         [string]$path,
         [switch]$ShowContent

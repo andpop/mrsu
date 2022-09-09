@@ -5,18 +5,17 @@ function Write-DelimiterString {
 function Check-Path {
     param(
         [string]$path,
-        [switch]$showContent
+        [switch]$ShowContent
     )
-    
     Write-DelimiterString
-    Write-Host "Check path: $path" -ForegroundColor blue
+    Write-Host "Check path: $path" -Foreground blue
     if (-not (Test-Path $path)) {
         Write-Host "$path not found" -ForegroundColor red
         return $false
     }
     
-    if ($showContent) {
-        Get-Content $path
+    if ($ShowContent) {
+        Write-Host (Get-Content $path -Raw)
     }
 
     return $true
@@ -29,7 +28,7 @@ function Check-Command {
     )
 
     Write-DelimiterString
-    Write-Host "Run: $command $params" -ForegroundColor blue
+    Write-Host "Run: $command $params" -Foreground blue
     & $command $params.split(' ')
     if (-not $?) {
         Write-Host "Execution fails" -ForegroundColor red

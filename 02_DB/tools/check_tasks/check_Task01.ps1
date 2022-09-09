@@ -29,6 +29,11 @@ function Check-Task {
 
 $taskDir = "$studentDir/$task"
 
+if (-not (Test-Path $taskDir)) {
+    Write-Host "There are no folder $taskDir" -ForegroundColor red
+    return
+}
+
 Push-Location "$taskDir"
 Check-Task
 Pop-Location
