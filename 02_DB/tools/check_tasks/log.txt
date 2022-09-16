@@ -1,23 +1,47 @@
 **********************
 PowerShell transcript start
-Start time: 20220908223859
+Start time: 20220910130750
 **********************
 Transcript started, output file is log.txt
 =====================================================
-/home/andrey/labs_303/303_Katin_DA
-Task01
+/home/andrey/labs_303/303_Melkonjan_MA
+add Task01
 Task from branch: Task01
-Creation date: 09/08/2022 11:31:32
-Из github.com-mrsu:andpop-mrsu/303_Katin_DA
-Из github.com-mrsu:andpop-mrsu/303_Katin_DA
+Creation date: 09/09/2022 20:16:55
+Из github.com-mrsu:andpop-mrsu/303_Melkonjan_MA
+Из github.com-mrsu:andpop-mrsu/303_Melkonjan_MA
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-Уже обновлено.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Уже обновлено.
+Уже актуально.
+Из https://github.com/0-melkonyanma-0/303_Melkonjan_MA
+Из https://github.com/0-melkonyanma-0/303_Melkonjan_MA
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 8583bd7..60ebd13
+Fast-forward (no commit created; -m option ignored)
+ Task01/README.md         |     1 +
+ Task01/genres.txt        |    18 +
+ Task01/movies.csv        |  9743 +++++++++++++++++++++++
+ Task01/occupation.txt    |    21 +
+ Task01/ratings.csv       | 18774 +++++++++++++++++++++++++++++++++++++++++++++
+ Task01/ratings_count.txt |     2 +
+ Task01/sqlite.txt        |    15 +
+ Task01/tags.csv          |  3684 +++++++++
+ Task01/users.txt         |   943 +++
+ 9 files changed, 33201 insertions(+)
+ create mode 100644 Task01/README.md
+ create mode 100644 Task01/genres.txt
+ create mode 100644 Task01/movies.csv
+ create mode 100644 Task01/occupation.txt
+ create mode 100644 Task01/ratings.csv
+ create mode 100644 Task01/ratings_count.txt
+ create mode 100644 Task01/sqlite.txt
+ create mode 100644 Task01/tags.csv
+ create mode 100644 Task01/users.txt
 --------------------------------------------------
-Task:  /home/andrey/labs_303/303_Katin_DA/Task01
+Task:  /home/andrey/labs_303/303_Melkonjan_MA/Task01
 --------------------------------------------------
 Check path: genres.txt
 --------------------------------------------------
@@ -32,19 +56,344 @@ Check path: tags.csv
 Check path: users.txt
 --------------------------------------------------
 Check path: ratings_count.txt
+1,232
+120,22
 --------------------------------------------------
 Check path: README.md
+movieId,title,genres userId,movieId,rating,timestamp userId,movieId,tag,timestamp
 --------------------------------------------------
 Check path: sqlite.txt
+3.36.0
+ascii     Columns/rows delimited by 0x1F and 0x1E
+box       Tables using unicode box-drawing characters
+csv       Comma-separated values
+column    Output in columns.  (See .width)
+html      HTML <table> code
+insert    SQL insert statements for TABLE
+json      Results in a JSON array
+line      One value per line
+list      Values delimited by "|"
+markdown  Markdown table format
+quote     Escape answers as for SQL
+table     ASCII-art table
+tabs      Tab-separated values
+tcl       TCL list elements
 --------------------------------------------------
 Total ok: 9
 Total error: 0
 --------------------------------------------------
-To github.com-mrsu:andpop-mrsu/303_Katin_DA.git
-To github.com-mrsu:andpop-mrsu/303_Katin_DA.git
-   7c3b818..0af9a9c  master -> master
-   7c3b818..0af9a9c  master -> master
+To github.com-mrsu:andpop-mrsu/303_Melkonjan_MA.git
+To github.com-mrsu:andpop-mrsu/303_Melkonjan_MA.git
+   8583bd7..60ebd13  master -> master
+   8583bd7..60ebd13  master -> master
+=====================================================
+/home/andrey/labs_303/303_Nikishkin_EV
+Task01
+Task from branch: Task01
+Creation date: 09/09/2022 20:01:08
+Из github.com-mrsu:andpop-mrsu/303_Nikishkin_EV
+Из github.com-mrsu:andpop-mrsu/303_Nikishkin_EV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/666EGOR777/303_Nikishkin_EV
+Из https://github.com/666EGOR777/303_Nikishkin_EV
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление a6bc31d..e38cd3f
+Fast-forward (no commit created; -m option ignored)
+ Task01/README.md         |    20 +
+ Task01/genres.txt        |    18 +
+ Task01/movies.csv        |  9743 +++++++++++++++++++++++
+ Task01/occupation.txt    |    21 +
+ Task01/ratings.csv       | 18774 +++++++++++++++++++++++++++++++++++++++++++++
+ Task01/ratings_count.txt |     2 +
+ Task01/sqlite.txt        |     2 +
+ Task01/tags.csv          |  3684 +++++++++
+ Task01/users.txt         |   943 +++
+ 9 files changed, 33207 insertions(+)
+ create mode 100644 Task01/README.md
+ create mode 100644 Task01/genres.txt
+ create mode 100644 Task01/movies.csv
+ create mode 100644 Task01/occupation.txt
+ create mode 100644 Task01/ratings.csv
+ create mode 100644 Task01/ratings_count.txt
+ create mode 100644 Task01/sqlite.txt
+ create mode 100644 Task01/tags.csv
+ create mode 100644 Task01/users.txt
+--------------------------------------------------
+Task:  /home/andrey/labs_303/303_Nikishkin_EV/Task01
+--------------------------------------------------
+Check path: genres.txt
+--------------------------------------------------
+Check path: movies.csv
+--------------------------------------------------
+Check path: occupation.txt
+--------------------------------------------------
+Check path: ratings.csv
+--------------------------------------------------
+Check path: tags.csv
+--------------------------------------------------
+Check path: users.txt
+--------------------------------------------------
+Check path: ratings_count.txt
+1-232
+120-22
+--------------------------------------------------
+Check path: README.md
+# genres.txt
+- столбцы не проименованы
+# movies.csv
+* "movieId"
+* "title"
+* "genres"
+# occupation.txt
+* "administrator"
+# ratings.csv
+* "userId" 
+* "movieId" 
+* "rating" 
+* "timestamp" 
+# tags.csv
+* "userId"
+* "movieId"
+* "tag"
+* "timestamp"
+# users.txt
+-
+--------------------------------------------------
+Check path: sqlite.txt
+SQLite version 3.37.0
+ascii box column csv html insert json line list markdown quote table tabs tcl
+--------------------------------------------------
+Total ok: 9
+Total error: 0
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/303_Nikishkin_EV.git
+To github.com-mrsu:andpop-mrsu/303_Nikishkin_EV.git
+   a6bc31d..e38cd3f  master -> master
+   a6bc31d..e38cd3f  master -> master
+=====================================================
+/home/andrey/labs_303/303_Prokopenko_AS
+Task01
+Task from branch: Task01
+Creation date: 09/09/2022 20:08:49
+Из github.com-mrsu:andpop-mrsu/303_Prokopenko_AS
+Из github.com-mrsu:andpop-mrsu/303_Prokopenko_AS
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/Tokacads/303_Prokopenko_AS
+Из https://github.com/Tokacads/303_Prokopenko_AS
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 0521eed..aa86037
+Fast-forward (no commit created; -m option ignored)
+ .DS_Store                |   Bin 0 -> 6148 bytes
+ Task01/README.md         |     3 +
+ Task01/genres.txt        |    18 +
+ Task01/movies.csv        |  9743 +++++++++++++++++++++++
+ Task01/occupation.txt    |    21 +
+ Task01/ratings.csv       | 18774 +++++++++++++++++++++++++++++++++++++++++++++
+ Task01/ratings_count.txt |     2 +
+ Task01/sqlite.txt        |     2 +
+ Task01/tags.csv          |  3684 +++++++++
+ Task01/users.txt         |   943 +++
+ 10 files changed, 33190 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 Task01/README.md
+ create mode 100644 Task01/genres.txt
+ create mode 100644 Task01/movies.csv
+ create mode 100644 Task01/occupation.txt
+ create mode 100644 Task01/ratings.csv
+ create mode 100644 Task01/ratings_count.txt
+ create mode 100644 Task01/sqlite.txt
+ create mode 100644 Task01/tags.csv
+ create mode 100644 Task01/users.txt
+--------------------------------------------------
+Task:  /home/andrey/labs_303/303_Prokopenko_AS/Task01
+--------------------------------------------------
+Check path: genres.txt
+--------------------------------------------------
+Check path: movies.csv
+--------------------------------------------------
+Check path: occupation.txt
+--------------------------------------------------
+Check path: ratings.csv
+--------------------------------------------------
+Check path: tags.csv
+--------------------------------------------------
+Check path: users.txt
+--------------------------------------------------
+Check path: ratings_count.txt
+1,232
+120,22
+--------------------------------------------------
+Check path: README.md
+movieId,title,genres
+userId,movieId,rating,timestamp
+userId,movieId,tag,timestamp
+--------------------------------------------------
+Check path: sqlite.txt
+3.36.0
+ascii,box,csv,column,html,insert,json,line,list,markdown,quote,table,tabs,tcl
+--------------------------------------------------
+Total ok: 9
+Total error: 0
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/303_Prokopenko_AS.git
+To github.com-mrsu:andpop-mrsu/303_Prokopenko_AS.git
+   0521eed..aa86037  master -> master
+   0521eed..aa86037  master -> master
+=====================================================
+/home/andrey/labs_303/303_Prokopenko_DS
+Task01
+Task from branch: Task01
+Creation date: 09/10/2022 09:45:13
+Из github.com-mrsu:andpop-mrsu/303_Prokopenko_DS
+Из github.com-mrsu:andpop-mrsu/303_Prokopenko_DS
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/DanilProkopenko/303_Prokopenko_DS
+Из https://github.com/DanilProkopenko/303_Prokopenko_DS
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление cfbd428..dce1116
+Fast-forward (no commit created; -m option ignored)
+ Task01/README.md         |     3 +
+ Task01/genres.txt        |    18 +
+ Task01/movies.csv        |  9743 +++++++++++++++++++++++
+ Task01/occupation.txt    |    21 +
+ Task01/ratings.csv       | 18774 +++++++++++++++++++++++++++++++++++++++++++++
+ Task01/ratings_count.txt |     2 +
+ Task01/sqlite.txt        |     2 +
+ Task01/tags.csv          |  3684 +++++++++
+ Task01/users.txt         |   943 +++
+ 9 files changed, 33190 insertions(+)
+ create mode 100644 Task01/README.md
+ create mode 100644 Task01/genres.txt
+ create mode 100644 Task01/movies.csv
+ create mode 100644 Task01/occupation.txt
+ create mode 100644 Task01/ratings.csv
+ create mode 100644 Task01/ratings_count.txt
+ create mode 100644 Task01/sqlite.txt
+ create mode 100644 Task01/tags.csv
+ create mode 100644 Task01/users.txt
+--------------------------------------------------
+Task:  /home/andrey/labs_303/303_Prokopenko_DS/Task01
+--------------------------------------------------
+Check path: genres.txt
+--------------------------------------------------
+Check path: movies.csv
+--------------------------------------------------
+Check path: occupation.txt
+--------------------------------------------------
+Check path: ratings.csv
+--------------------------------------------------
+Check path: tags.csv
+--------------------------------------------------
+Check path: users.txt
+--------------------------------------------------
+Check path: ratings_count.txt
+1,232
+120,22
+--------------------------------------------------
+Check path: README.md
+movieId,title,genres
+userId,movieId,rating,timestamp
+userId,movieId,tag,timestamp
+--------------------------------------------------
+Check path: sqlite.txt
+3.36.0
+ascii,box,csv,column,html,insert,json,line,list,markdown,quote,table,tabs,tcl
+--------------------------------------------------
+Total ok: 9
+Total error: 0
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/303_Prokopenko_DS.git
+To github.com-mrsu:andpop-mrsu/303_Prokopenko_DS.git
+   cfbd428..dce1116  master -> master
+   cfbd428..dce1116  master -> master
+=====================================================
+/home/andrey/labs_303/303_Rodkin_AV
+Task01
+Task from branch: Task01
+Creation date: 09/09/2022 20:03:42
+Из github.com-mrsu:andpop-mrsu/303_Rodkin_AV
+Из github.com-mrsu:andpop-mrsu/303_Rodkin_AV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/Stavlenik/303_Rodkin_AV
+Из https://github.com/Stavlenik/303_Rodkin_AV
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 2eae91a..775aa32
+Fast-forward (no commit created; -m option ignored)
+ Task01/README.md         |     3 +
+ Task01/genres.txt        |    18 +
+ Task01/movies.csv        |  9743 +++++++++++++++++++++++
+ Task01/occupation.txt    |    21 +
+ Task01/ratings.csv       | 18774 +++++++++++++++++++++++++++++++++++++++++++++
+ Task01/ratings_count.txt |     2 +
+ Task01/sqlite.txt        |     2 +
+ Task01/tags.csv          |  3684 +++++++++
+ Task01/users.txt         |   943 +++
+ 9 files changed, 33190 insertions(+)
+ create mode 100644 Task01/README.md
+ create mode 100644 Task01/genres.txt
+ create mode 100644 Task01/movies.csv
+ create mode 100644 Task01/occupation.txt
+ create mode 100644 Task01/ratings.csv
+ create mode 100644 Task01/ratings_count.txt
+ create mode 100644 Task01/sqlite.txt
+ create mode 100644 Task01/tags.csv
+ create mode 100644 Task01/users.txt
+--------------------------------------------------
+Task:  /home/andrey/labs_303/303_Rodkin_AV/Task01
+--------------------------------------------------
+Check path: genres.txt
+--------------------------------------------------
+Check path: movies.csv
+--------------------------------------------------
+Check path: occupation.txt
+--------------------------------------------------
+Check path: ratings.csv
+--------------------------------------------------
+Check path: tags.csv
+--------------------------------------------------
+Check path: users.txt
+--------------------------------------------------
+Check path: ratings_count.txt
+1,232
+120,22
+--------------------------------------------------
+Check path: README.md
+movieId,title,genres
+userId,movieId,rating,timestamp
+userId,movieId,tag,timestamp
+--------------------------------------------------
+Check path: sqlite.txt
+3.39.3
+ascii,box,csv,column,html,insert,json,line,list,markdown,quote,table,tabs,tcl
+--------------------------------------------------
+Total ok: 9
+Total error: 0
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/303_Rodkin_AV.git
+To github.com-mrsu:andpop-mrsu/303_Rodkin_AV.git
+   2eae91a..775aa32  master -> master
+   2eae91a..775aa32  master -> master
 **********************
 PowerShell transcript end
-End time: 20220908224035
+End time: 20220910131523
 **********************
