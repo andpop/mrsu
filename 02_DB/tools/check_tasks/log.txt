@@ -1,153 +1,114 @@
 **********************
 PowerShell transcript start
-Start time: 20220916232413
+Start time: 20220926173309
 **********************
 Transcript started, output file is log.txt
 =====================================================
-/home/andrey/labs_303/303_Akajkin_SV
-Complete the Task01
-Task from branch: Task01
-Creation date: 09/10/2022 11:56:40
-Из github.com-mrsu:andpop-mrsu/303_Akajkin_SV
-Из github.com-mrsu:andpop-mrsu/303_Akajkin_SV
+/home/andrey/labs_303/303_Melkonjan_MA
+add Task02
+Task from branch: Task02
+Creation date: 09/25/2022 20:43:51
+Из github.com-mrsu:andpop-mrsu/303_Melkonjan_MA
+Из github.com-mrsu:andpop-mrsu/303_Melkonjan_MA
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
 Уже актуально.
-Из https://github.com/SergeyHaise/303_Akajkin_SV
-Из https://github.com/SergeyHaise/303_Akajkin_SV
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Обновление 38b1c16..c1f99de
-Fast-forward (no commit created; -m option ignored)
- Task01/README.md         |     3 +
- Task01/genres.txt        |    18 +
- Task01/movies.csv        |  9743 +++++++++++++++++++++++
- Task01/occupation.txt    |    21 +
- Task01/ratings.csv       | 18774 +++++++++++++++++++++++++++++++++++++++++++++
- Task01/ratings_count.txt |     2 +
- Task01/sqlite.txt        |     2 +
- Task01/tags.csv          |  3684 +++++++++
- Task01/users.txt         |   943 +++
- 9 files changed, 33190 insertions(+)
- create mode 100644 Task01/README.md
- create mode 100644 Task01/genres.txt
- create mode 100644 Task01/movies.csv
- create mode 100644 Task01/occupation.txt
- create mode 100644 Task01/ratings.csv
- create mode 100644 Task01/ratings_count.txt
- create mode 100644 Task01/sqlite.txt
- create mode 100644 Task01/tags.csv
- create mode 100644 Task01/users.txt
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
 --------------------------------------------------
-Task:  /home/andrey/labs_303/303_Akajkin_SV/Task01
+Task:  /home/andrey/labs_303/303_Melkonjan_MA/Task02
 --------------------------------------------------
-Check path: genres.txt
---------------------------------------------------
-Check path: movies.csv
---------------------------------------------------
-Check path: occupation.txt
---------------------------------------------------
-Check path: ratings.csv
---------------------------------------------------
-Check path: tags.csv
---------------------------------------------------
-Check path: users.txt
---------------------------------------------------
-Check path: ratings_count.txt
-1 232
-120 22
+Check path: db_init.bat
+#!/bin/bash
+python3 make_db_init.py
+sqlite3 movies_rating.db < db_init.sql
 --------------------------------------------------
 Check path: README.md
-ratings.csv: userId,moveId,raiting,timestamp
-movies.csv: movieId,title,genres
-tags.csv: userId,movieId,tag,timestamp
+На компьютере должен быть устоновлен Python v.3 и SQLite3 и этого будет достаточно чтобы все работало коректно на `Linux` и `macOS`,
+для коректной работы на `Windows` в `db_init.bat` нужно изменить строку
+`sqlite3 movies_rating.db < db_init.sql` на `sqlite3 -init db_init.sql movies_rating.db`.
 --------------------------------------------------
-Check path: sqlite.txt
-3.31.1
-ascii,box,csv,column,html,insert,json,line,list,markdown,quote,table,tabs,tcl
+Run: ./db_init.bat
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "make_db_init.py", line 79, in <module>
+  File "make_db_init.py", line 79, in <module>
+    user_data = read[i].removesuffix('\n').split("|")
+    user_data = read[i].removesuffix('\n').split("|")
+AttributeError: 'str' object has no attribute 'removesuffix'
+AttributeError: 'str' object has no attribute 'removesuffix'
+/home/andrey/labs_303/303_Melkonjan_MA/Task02/db_init.bat: строка 3: db_init.sql: Нет такого файла или каталога
+/home/andrey/labs_303/303_Melkonjan_MA/Task02/db_init.bat: строка 3: db_init.sql: Нет такого файла или каталога
+Execution fails
+False
 --------------------------------------------------
-Total ok: 9
+Check path: movies_rating.db
+Count records in movies:
+Error: in prepare, no such table: movies
+Error: in prepare, no such table: movies
+Count records in ratings:
+Error: in prepare, no such table: ratings
+Error: in prepare, no such table: ratings
+Count records in tags:
+Error: in prepare, no such table: tags
+Error: in prepare, no such table: tags
+Count records in users:
+Error: in prepare, no such table: users
+Error: in prepare, no such table: users
+--------------------------------------------------
+Total ok: 3
 Total error: 0
 --------------------------------------------------
-To github.com-mrsu:andpop-mrsu/303_Akajkin_SV.git
-To github.com-mrsu:andpop-mrsu/303_Akajkin_SV.git
-   38b1c16..c1f99de  master -> master
-   38b1c16..c1f99de  master -> master
+To github.com-mrsu:andpop-mrsu/303_Melkonjan_MA.git
+To github.com-mrsu:andpop-mrsu/303_Melkonjan_MA.git
+   16b71f4..d7a0c79  master -> master
+   16b71f4..d7a0c79  master -> master
 =====================================================
-/home/andrey/labs_303/303_Kaderov_RO
-Task01
-Task from branch: Task01
-Creation date: 09/10/2022 12:27:59
-Из github.com-mrsu:andpop-mrsu/303_Kaderov_RO
-Из github.com-mrsu:andpop-mrsu/303_Kaderov_RO
+/home/andrey/labs_303/303_Turaev_DV
+Task02
+Task from branch: Task02
+Creation date: 09/24/2022 10:38:52
+Из github.com-mrsu:andpop-mrsu/303_Turaev_DV
+Из github.com-mrsu:andpop-mrsu/303_Turaev_DV
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
 Уже актуально.
-Из https://github.com/RKSvetoFoR/303_Kaderov_RO
-Из https://github.com/RKSvetoFoR/303_Kaderov_RO
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Обновление 498a4e7..7ea9e1c
-Fast-forward (no commit created; -m option ignored)
- Task01/README.md         |     3 +
- Task01/genres.txt        |    18 +
- Task01/movies.csv        |  9743 +++++++++++++++++++++++
- Task01/occupation.txt    |    21 +
- Task01/ratings.csv       | 18774 +++++++++++++++++++++++++++++++++++++++++++++
- Task01/ratings_count.txt |     2 +
- Task01/sqlite.txt        |     2 +
- Task01/tags.csv          |  3684 +++++++++
- Task01/users.txt         |   943 +++
- 9 files changed, 33190 insertions(+)
- create mode 100644 Task01/README.md
- create mode 100644 Task01/genres.txt
- create mode 100644 Task01/movies.csv
- create mode 100644 Task01/occupation.txt
- create mode 100644 Task01/ratings.csv
- create mode 100644 Task01/ratings_count.txt
- create mode 100644 Task01/sqlite.txt
- create mode 100644 Task01/tags.csv
- create mode 100644 Task01/users.txt
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
 --------------------------------------------------
-Task:  /home/andrey/labs_303/303_Kaderov_RO/Task01
+Task:  /home/andrey/labs_303/303_Turaev_DV/Task02
 --------------------------------------------------
-Check path: genres.txt
---------------------------------------------------
-Check path: movies.csv
---------------------------------------------------
-Check path: occupation.txt
---------------------------------------------------
-Check path: ratings.csv
---------------------------------------------------
-Check path: tags.csv
---------------------------------------------------
-Check path: users.txt
---------------------------------------------------
-Check path: ratings_count.txt
-1,232
-120,22
+Check path: db_init.bat
+#!/bin/bash
+python3 make_db_init.py
+sqlite3 movies_rating.db < db_init.sql
 --------------------------------------------------
 Check path: README.md
-movieId,title,genres
-userId,movieId,rating,timestamp
-userId,movieId,tag,timestamp
+На компьютере должны быть установлены Python v.3 и SQLite
 --------------------------------------------------
-Check path: sqlite.txt
-3.36.0
-ascii,box,csv,column,html,insert,json,line,list,markdown,quote,table,tabs,tcl
+Run: ./db_init.bat
+True
 --------------------------------------------------
-Total ok: 9
+Check path: movies_rating.db
+Count records in movies:
+9742
+Count records in ratings:
+18773
+Count records in tags:
+3683
+Count records in users:
+943
+--------------------------------------------------
+Total ok: 3
 Total error: 0
 --------------------------------------------------
-To github.com-mrsu:andpop-mrsu/303_Kaderov_RO.git
-To github.com-mrsu:andpop-mrsu/303_Kaderov_RO.git
-   498a4e7..7ea9e1c  master -> master
-   498a4e7..7ea9e1c  master -> master
+To github.com-mrsu:andpop-mrsu/303_Turaev_DV.git
+To github.com-mrsu:andpop-mrsu/303_Turaev_DV.git
+   52ae0a4..4a9b3a1  master -> master
+   52ae0a4..4a9b3a1  master -> master
 **********************
 PowerShell transcript end
-End time: 20220916232607
+End time: 20220926174354
 **********************
