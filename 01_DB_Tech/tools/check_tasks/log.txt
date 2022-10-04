@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20220921165945
+Start time: 20221003165349
 **********************
 Transcript started, output file is log.txt
 402_Arhipov_KA
@@ -15,6 +15,20 @@ Transcript started, output file is log.txt
 402_Kiruhin_AA
 402_Kudryavtzev_DA
 402_Makarov_NA
+=====================================================
+/home/andrey/labs_402/402_Makarov_NA
+Add files via upload
+Task from branch: Task03
+Creation date: 09/30/2022 17:56:07
+Из github.com-mrsu:andpop-mrsu/402_Makarov_NA
+Из github.com-mrsu:andpop-mrsu/402_Makarov_NA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+Checking script check_Task03.ps1 not found
 402_Nagaev_DG
 402_Pochtov_AA
 402_Polyakina_AM
@@ -24,44 +38,138 @@ Transcript started, output file is log.txt
 /home/andrey/labs_402/402_Rodushkin_VE
 change Task02
 Task from branch: Task02
-Creation date: 09/21/2022 13:51:55
+Creation date: 09/21/2022 15:06:42
 Из github.com-mrsu:andpop-mrsu/402_Rodushkin_VE
 Из github.com-mrsu:andpop-mrsu/402_Rodushkin_VE
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Из https://github.com/VladislavRE250401/402_Rodushkin_VE
-Из https://github.com/VladislavRE250401/402_Rodushkin_VE
-   84716ce..7506da4  Task02     -> student/Task02
-   84716ce..7506da4  Task02     -> student/Task02
 Обновление 84716ce..7506da4
-Fast-forward (no commit created; -m option ignored)
+Fast-forward
  Task02/guess_number | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Добавление Task02/guess_number/src/View.php
+Добавление Task02/guess_number/src/Controller.php
+Добавление Task02/guess_number/composer.json
+Добавление Task02/guess_number/bin/guess-number.php
+Добавление Task02/guess_number/bin/guess-number.bat
+Добавление Task02/guess_number/README.md
+Добавление Task02/guess_number/.gitignore
+КОНФЛИКТ (файл/каталог): Уже существует каталог с именем «Task02/guess_number» в «student/Task02». Добавление «Task02/guess_number» как «Task02/guess_number~HEAD»
+Сбой автоматического слияния; исправьте конфликты, затем зафиксируйте результат.
 --------------------------------------------------
 Task:  /home/andrey/labs_402/402_Rodushkin_VE/Task02
 --------------------------------------------------
 Check path: README.md
-README.md not found
+## Описание проекта
+
+* * *
+Написать программу для игры "Угадай число" (guess-number). Компьютер загадывает число в диапазоне от 1 до максимального числа, заданного в настройках. Игрок должен угадать это число за несколько попыток (максимальное количество попыток задано в настройках). После каждой попытки компьютер сообщает, было ли введенное числе больше или меньше загаданного.
+
+* * *
+
+* Информация о датах и исходах всех партий, а также о всех попытках, сделанных во время игры, должна сохраняться в базе данных.
+* Для каждой игры в базе должна храниться следующая информация:
+    * Дата игры
+    * Имя игрока
+    * Максимально возможное число
+    * Загаданное компьютером число
+    * Исход игры (угадал/не угадал)
+    * Запись попыток в формате: 
+      `номер попытки | предложенное число | ответ компьютера`
+* В программе должны быть реализованы шесть режимов:
+    * Новая игра.
+    * Вывод списка всех сохраненных игр.
+    * Вывод списка всех игр, в которых победил человек.
+    * Вывод списка всех игр, в которых человек проиграл.
+    * Вывод статистики по игрокам. Для каждого игрока нужно посчитать количество побед и проигрышей, список отсортировать по количеству побед (чемпионы располагаются вверху списка).
+    * Повтор любой сохраненной партии (то есть повтор всех ходов из этой партии).
+
+    * * * 
+
+    ## Требования
+
+    Минимальная версия PHP: 8.0 \
+    Минимальная версия Composer: 2.1.6
+
+    * * * 
+
+    ## Инструкция по установке и запуску игры
+
+    Из Github:
+
+1. Склонировать проект на локальную машину;
+2. Установить composer, если он не установлен;
+3. Перейти в корневой каталог;
+4. Выполнить в консоли команду `composer update`;
+5. Перейти в каталог bin из корнегого каталога и запустить файл guess-number.bat.
+
+Из Packagist:
+
+1. Установить composer, если он не установлен;
+2. Перейти в каталог, в который вы будете клонировать проект;
+3. Выполнить команду `composer require rodushkinve/guess_number`;
+4. Перейти в каталог vendor/bin;
+5. Запустить файл guess-number.bat.
+
+* * *
+
+## Ссылки
+
+Packagist: <https://packagist.org/packages/vladislav_re250401/guess-number>
 --------------------------------------------------
 Check path: composer.json
-composer.json not found
+{
+    "name": "vladislav_re250401/guess-number",
+    "type": "project",
+    "authors": [
+        {
+            "name": "rodushkinve"
+        }    
+    ],
+    "description": "",
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.11"
+    },
+    "bin": [
+        "bin/guess-number.php"
+    ],
+    "autoload": {
+        "files": [
+            "src/Controller.php",
+            "src/View.php"
+        ]
+    }
+}
 --------------------------------------------------
 Check path: src/Controller.php
-src/Controller.php not found
+<?php
+
+namespace vladislav_re250401\guess_number\Controller;
+use function vladislav_re250401\guess_number\View\showGame;
+
+function startGame()
+{
+   echo "Game started" .PHP_EOL;
+   showGame();
+}
 --------------------------------------------------
 Check path: src/View.php
-src/View.php not found
+<?php
+
+namespace vladislav_re250401\guess_number\View;
+
+function showGame()
+{
+    echo "Game shown".PHP_EOL;
+}
 --------------------------------------------------
-Total ok: 0
-Total error: 4
+Total ok: 4
+Total error: 0
 --------------------------------------------------
-To github.com-mrsu:andpop-mrsu/402_Rodushkin_VE.git
-To github.com-mrsu:andpop-mrsu/402_Rodushkin_VE.git
-   84716ce..7506da4  master -> master
-   84716ce..7506da4  master -> master
+Everything up-to-date
+Everything up-to-date
 402_Ryazin_VA
 402_Trapeza_IV
 402_Tzyganov_AA
@@ -69,5 +177,5 @@ To github.com-mrsu:andpop-mrsu/402_Rodushkin_VE.git
 402_Zavodov_DA
 **********************
 PowerShell transcript end
-End time: 20220921170730
+End time: 20221003170227
 **********************

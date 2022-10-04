@@ -1,13 +1,13 @@
 **********************
 PowerShell transcript start
-Start time: 20220926173309
+Start time: 20221003164722
 **********************
 Transcript started, output file is log.txt
 =====================================================
 /home/andrey/labs_303/303_Melkonjan_MA
-add Task02
+Fix Task02
 Task from branch: Task02
-Creation date: 09/25/2022 20:43:51
+Creation date: 09/30/2022 17:01:12
 Из github.com-mrsu:andpop-mrsu/303_Melkonjan_MA
 Из github.com-mrsu:andpop-mrsu/303_Melkonjan_MA
  * branch            master     -> FETCH_HEAD
@@ -15,7 +15,13 @@ Creation date: 09/25/2022 20:43:51
 Уже актуально.
 fatal: внешний репозиторий student уже существует
 fatal: внешний репозиторий student уже существует
-Уже актуально.
+Из https://github.com/0-melkonyanma-0/303_Melkonjan_MA
+Из https://github.com/0-melkonyanma-0/303_Melkonjan_MA
+   d7a0c79..44c2c8e  Task02     -> student/Task02
+   d7a0c79..44c2c8e  Task02     -> student/Task02
+ + ca232e3...d7a0c79 master     -> student/master  (принудительное обновление)
+ + ca232e3...d7a0c79 master     -> student/master  (принудительное обновление)
+Merge made by the 'recursive' strategy.
 --------------------------------------------------
 Task:  /home/andrey/labs_303/303_Melkonjan_MA/Task02
 --------------------------------------------------
@@ -28,65 +34,6 @@ Check path: README.md
 На компьютере должен быть устоновлен Python v.3 и SQLite3 и этого будет достаточно чтобы все работало коректно на `Linux` и `macOS`,
 для коректной работы на `Windows` в `db_init.bat` нужно изменить строку
 `sqlite3 movies_rating.db < db_init.sql` на `sqlite3 -init db_init.sql movies_rating.db`.
---------------------------------------------------
-Run: ./db_init.bat
-Traceback (most recent call last):
-Traceback (most recent call last):
-  File "make_db_init.py", line 79, in <module>
-  File "make_db_init.py", line 79, in <module>
-    user_data = read[i].removesuffix('\n').split("|")
-    user_data = read[i].removesuffix('\n').split("|")
-AttributeError: 'str' object has no attribute 'removesuffix'
-AttributeError: 'str' object has no attribute 'removesuffix'
-/home/andrey/labs_303/303_Melkonjan_MA/Task02/db_init.bat: строка 3: db_init.sql: Нет такого файла или каталога
-/home/andrey/labs_303/303_Melkonjan_MA/Task02/db_init.bat: строка 3: db_init.sql: Нет такого файла или каталога
-Execution fails
-False
---------------------------------------------------
-Check path: movies_rating.db
-Count records in movies:
-Error: in prepare, no such table: movies
-Error: in prepare, no such table: movies
-Count records in ratings:
-Error: in prepare, no such table: ratings
-Error: in prepare, no such table: ratings
-Count records in tags:
-Error: in prepare, no such table: tags
-Error: in prepare, no such table: tags
-Count records in users:
-Error: in prepare, no such table: users
-Error: in prepare, no such table: users
---------------------------------------------------
-Total ok: 3
-Total error: 0
---------------------------------------------------
-To github.com-mrsu:andpop-mrsu/303_Melkonjan_MA.git
-To github.com-mrsu:andpop-mrsu/303_Melkonjan_MA.git
-   16b71f4..d7a0c79  master -> master
-   16b71f4..d7a0c79  master -> master
-=====================================================
-/home/andrey/labs_303/303_Turaev_DV
-Task02
-Task from branch: Task02
-Creation date: 09/24/2022 10:38:52
-Из github.com-mrsu:andpop-mrsu/303_Turaev_DV
-Из github.com-mrsu:andpop-mrsu/303_Turaev_DV
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Уже актуально.
---------------------------------------------------
-Task:  /home/andrey/labs_303/303_Turaev_DV/Task02
---------------------------------------------------
-Check path: db_init.bat
-#!/bin/bash
-python3 make_db_init.py
-sqlite3 movies_rating.db < db_init.sql
---------------------------------------------------
-Check path: README.md
-На компьютере должны быть установлены Python v.3 и SQLite
 --------------------------------------------------
 Run: ./db_init.bat
 True
@@ -104,11 +51,111 @@ Count records in users:
 Total ok: 3
 Total error: 0
 --------------------------------------------------
-To github.com-mrsu:andpop-mrsu/303_Turaev_DV.git
-To github.com-mrsu:andpop-mrsu/303_Turaev_DV.git
-   52ae0a4..4a9b3a1  master -> master
-   52ae0a4..4a9b3a1  master -> master
+To github.com-mrsu:andpop-mrsu/303_Melkonjan_MA.git
+To github.com-mrsu:andpop-mrsu/303_Melkonjan_MA.git
+   d7a0c79..f5c229e  master -> master
+   d7a0c79..f5c229e  master -> master
+=====================================================
+/home/andrey/labs_303/303_Pomelova_AS
+Task01
+Task from branch: Task01
+Creation date: 10/01/2022 10:11:27
+Из github.com-mrsu:andpop-mrsu/303_Pomelova_AS
+Из github.com-mrsu:andpop-mrsu/303_Pomelova_AS
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   2612fd3..44b13fe  master     -> teacher/master
+   2612fd3..44b13fe  master     -> teacher/master
+Обновление 2612fd3..44b13fe
+Fast-forward
+ dataset/ratings.csv | 18774 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ task02.md           |    44 +
+ 2 files changed, 18818 insertions(+)
+ create mode 100644 dataset/ratings.csv
+ create mode 100644 task02.md
+Из https://github.com/AlinaPomelova/303_Pomelova_AS
+Из https://github.com/AlinaPomelova/303_Pomelova_AS
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 44b13fe..e031cb3
+Fast-forward (no commit created; -m option ignored)
+ Task01/README.md         |    12 +
+ Task01/genres.txt        |    18 +
+ Task01/movies.csv        |  9743 +++++++++++++++++++++++
+ Task01/occupation.txt    |    21 +
+ Task01/ratings.csv       | 18774 +++++++++++++++++++++++++++++++++++++++++++++
+ Task01/ratings_count.txt |     2 +
+ Task01/sqlite.txt        |    15 +
+ Task01/tags.csv          |  3684 +++++++++
+ Task01/users.txt         |   943 +++
+ 9 files changed, 33212 insertions(+)
+ create mode 100644 Task01/README.md
+ create mode 100644 Task01/genres.txt
+ create mode 100644 Task01/movies.csv
+ create mode 100644 Task01/occupation.txt
+ create mode 100644 Task01/ratings.csv
+ create mode 100644 Task01/ratings_count.txt
+ create mode 100644 Task01/sqlite.txt
+ create mode 100644 Task01/tags.csv
+ create mode 100644 Task01/users.txt
+--------------------------------------------------
+Task:  /home/andrey/labs_303/303_Pomelova_AS/Task01
+--------------------------------------------------
+Check path: genres.txt
+--------------------------------------------------
+Check path: movies.csv
+--------------------------------------------------
+Check path: occupation.txt
+--------------------------------------------------
+Check path: ratings.csv
+--------------------------------------------------
+Check path: tags.csv
+--------------------------------------------------
+Check path: users.txt
+--------------------------------------------------
+Check path: ratings_count.txt
+1 233
+120 22
+--------------------------------------------------
+Check path: README.md
+# Структура файлов данных
+
+* В файле movies.csv содержатся 3 поля (movieId, title, genres) 9743 записи
+* В файле ratings.csv содержатся 4 поля (userId, movieId, rating, timestamp) 18774 записи
+* В файле tags.csv содержатся 3 поля (userId, movieId, tag) 3684 записи
+* В файле gengers.txt представлено 18 записей
+* В файле occupation.txt представлена 21 запись
+* В файле sqlite.txt представлено 15 записей
+* В файле users.txt представлено 943 записи
+* В файле ratings_count.txt представлено 2 записи# Лабораторные работы для курса "Базы данных"
+--------------------------------------------------
+Check path: sqlite.txt
+     ascii      
+     box       
+     csv         
+     column      
+     html        
+     insert      
+     json        
+     line        
+     list        
+     markdown    
+     qbox       
+     quote       
+     table       
+     tabs        
+     tcl
+--------------------------------------------------
+Total ok: 9
+Total error: 0
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/303_Pomelova_AS.git
+To github.com-mrsu:andpop-mrsu/303_Pomelova_AS.git
+   44b13fe..e031cb3  master -> master
+   44b13fe..e031cb3  master -> master
 **********************
 PowerShell transcript end
-End time: 20220926174354
+End time: 20221003165042
 **********************
