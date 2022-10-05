@@ -7,7 +7,7 @@ function Check-Task {
     Test-File -Path .gitignore -ShowContent
     Test-File -Path composer.json -ShowContent
 
-    Test-Command -Command phpcs -Params "--standard=PSR12 ./src/*"
+    Test-Command -Command phpcs -Params "--standard=PSR12 ./src/*" 
 
     composer install
     Test-Command  -Command php -Params src/run_test.php
