@@ -18,3 +18,7 @@
 * Сделать Pull Request для добавления ветки Task04 из репозитория в вашем профиле в https://github.com/andpop-mrsu.
 * Задание будет считаться принятым после закрытия Pull Request в https://github.com/andpop-mrsu.
 * После принятия задания преподавателем синхронизировать с оригинальным свой локальный репозиторий (`git pull upstream master`), потом репозиторий в своем профиле GitHub (`git push origin master`).
+
+* * *
+### Лекции
+* "Работа с СУБД из PHP" https://youtu.be/K32RH1h_RR0?t=3907

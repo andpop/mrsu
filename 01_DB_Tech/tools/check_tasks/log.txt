@@ -1,23 +1,8 @@
 **********************
 PowerShell transcript start
-Start time: 20221005164729
+Start time: 20221006200945
 **********************
 Transcript started, output file is log.txt
-000_402_Rodushkin_VE
-PS>TerminatingError(Invoke-RestMethod): "{"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}"
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/pull_requests.ps1:55
-Line |
-  55 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/pull_requests.ps1:55
-Line |
-  55 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}
-
 402_Arhipov_KA
 402_Ariskin_NV
 402_Bansimba-Zita_EV
@@ -30,13 +15,18 @@ Line |
 402_Kiruhin_AA
 402_Kudryavtzev_DA
 402_Makarov_NA
+402_Nagaev_DG
+402_Pochtov_AA
+402_Polyakina_AM
+402_Pozharskiy_VS
+402_Rodushkin_VE
 =====================================================
-/home/andrey/labs_402/402_Makarov_NA
-Add files via upload
+/home/andrey/labs_402/402_Rodushkin_VE
+add Task03
 Task from branch: Task03
-Creation date: 09/30/2022 17:56:07
-Из github.com-mrsu:andpop-mrsu/402_Makarov_NA
-Из github.com-mrsu:andpop-mrsu/402_Makarov_NA
+Creation date: 10/06/2022 15:31:28
+Из github.com-mrsu:andpop-mrsu/402_Rodushkin_VE
+Из github.com-mrsu:andpop-mrsu/402_Rodushkin_VE
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
 Уже актуально.
@@ -44,7 +34,7 @@ fatal: внешний репозиторий student уже существует
 fatal: внешний репозиторий student уже существует
 Уже актуально.
 --------------------------------------------------
-Task:  /home/andrey/labs_402/402_Makarov_NA/Task03
+Task:  /home/andrey/labs_402/402_Rodushkin_VE/Task03
 --------------------------------------------------
 Check path: README.md
 ## Описание проекта
@@ -75,7 +65,7 @@ Check path: README.md
 
     ## Требования
 
-    Минимальная версия PHP: 7.4 и выше \
+    Минимальная версия PHP: 8.0 \
     Минимальная версия Composer: 2.1.6
 
     * * * 
@@ -94,7 +84,7 @@ Check path: README.md
 
 1. Установить composer, если он не установлен;
 2. Перейти в каталог, в который вы будете клонировать проект;
-3. Выполнить команду `composer require klotsai/guess_number`;
+3. Выполнить команду `composer create-project vladislav_re250401/guess-number`;
 4. Перейти в каталог vendor/bin;
 5. Запустить файл guess-number.bat.
 
@@ -102,16 +92,16 @@ Check path: README.md
 
 ## Ссылки
 
-Packagist: <https://packagist.org/packages/ma_karov/guess-number>
+Packagist: <https://packagist.org/packages/vladislav_re250401/guess-number>
 --------------------------------------------------
 Check path: composer.json
 {
-    "name": "ma_karov/guess_number",
+    "name": "vladislav_re250401/guess-number",
     "type": "project",
     "authors": [
         {
-            "name": "MakarovNA"
-        }
+            "name": "rodushkinve"
+        }    
     ],
     "description": "",
     "require": {
@@ -130,35 +120,41 @@ Check path: composer.json
 --------------------------------------------------
 Run: phpcs --standard=PSR12 ./src/*
 
-FILE: /home/andrey/labs_402/402_Makarov_NA/Task03/guess_number/src/Controller.php
-----------------------------------------------------------------------------------
+FILE: /home/andrey/labs_402/402_Rodushkin_VE/Task03/guess_number/src/Controller.php
+-----------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------------------
- 1 | ERROR | [x] End of line character is invalid; expected "\n" but found "\r\n"
-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+ 97 | ERROR | [x] Expected 1 newline at end of file; 0 found
+-----------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
 
 
-FILE: /home/andrey/labs_402/402_Makarov_NA/Task03/guess_number/src/View.php
-----------------------------------------------------------------------------------
+FILE: /home/andrey/labs_402/402_Rodushkin_VE/Task03/guess_number/src/View.php
+-----------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------------------
- 1 | ERROR | [x] End of line character is invalid; expected "\n" but found "\r\n"
-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+ 30 | ERROR | [x] Expected 1 newline at end of file; 0 found
+-----------------------------------------------------------------------------
 PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------
 
-Time: 35ms; Memory: 6MB
+Time: 39ms; Memory: 6MB
 Execution fails
 --------------------------------------------------
 Total ok: 2
 Total error: 1
 --------------------------------------------------
-PS>TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> $global:?
-True
+To github.com-mrsu:andpop-mrsu/402_Rodushkin_VE.git
+To github.com-mrsu:andpop-mrsu/402_Rodushkin_VE.git
+   0d2c24c..f31189a  master -> master
+   0d2c24c..f31189a  master -> master
+402_Ryazin_VA
+402_Trapeza_IV
+402_Tzyganov_AA
+402_Uvarov_AV
+402_Zavodov_DA
+**********************
+PowerShell transcript end
+End time: 20221006201407
+**********************

@@ -7,7 +7,7 @@ echo $pwd
 
 # task_number=$2
 
-for student in $(cat "${pwd}/students-list1.txt"); do
+for student in $(cat "${pwd}/students-list2.txt"); do
 # for student in $(cat "${pwd}/list5.txt"); do
     echo "----------------------------------------------------------------------------------"
     echo $student
