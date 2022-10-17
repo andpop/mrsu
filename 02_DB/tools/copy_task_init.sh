@@ -18,7 +18,7 @@ for student in $(cat "${pwd}/students-list2.txt"); do
     git merge teacher/master -m "Merging master from teacher repo"
 
     # cp "${pwd}/../tasks/README.md" "${student_dir}/"
-    cp "${pwd}/../tasks/task02.md" "${student_dir}/"
+    cp "${pwd}/../tasks/task03_2.md" "${student_dir}/task03.md"
     # cp "${pwd}/../tasks/Git_instruction.md" "${student_dir}/"
     # cp "${pwd}/tasks/*.xls" "${student_dir}/"
     # cp "${pwd}/tasks/task08_5.md" "${student_dir}/task08.md"
@@ -26,7 +26,7 @@ for student in $(cat "${pwd}/students-list2.txt"); do
     # cp "${pwd}/tasks/specification_01.md" "${student_dir}/specification.md"
 
     git add -A
-    git commit -m "Add task02"
+    git commit -m "Add task03"
     git push teacher master
     cd "${pwd}"
 done

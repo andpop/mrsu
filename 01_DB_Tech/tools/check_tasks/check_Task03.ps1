@@ -30,8 +30,6 @@ function Check-Task {
 
     if (Check-Path -Path README.md -ShowContent) { $doneChecks++ } else { $failureChecks++ }
     if (Check-Path -Path composer.json -ShowContent) { $doneChecks++ } else { $failureChecks++ }
-    # if (Check-Path -Path (Join-Path -Path src -ChildPath Controller.php) -ShowContent) { $doneChecks++ } else { $failureChecks++ }
-    # if (Check-Path -Path (Join-Path -Path src -ChildPath View.php) -ShowContent) { $doneChecks++ } else { $failureChecks++ }
 
     if (Check-Command -Command phpcs -Params "--standard=PSR12 ./src/*") { $doneChecks++ } else  { $failureChecks++ }
 

@@ -1,9 +1,12 @@
 Akajkin_SV
 Denisov_RV
 Kaderov_RO
-Makarova_AJ
+Kochetkov_PA
 Melkonjan_MA
 Negrja_MJ
+Prokopenko_AS
+Prokopenko_DS
 Rodkin_AV
 Timovkin_AJ
 Turaev_DV
+Fedin_DA

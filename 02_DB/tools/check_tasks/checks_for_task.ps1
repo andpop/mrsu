@@ -29,11 +29,30 @@ function Check-Command {
 
     Write-DelimiterString
     Write-Host "Run: $command $params" -Foreground blue
-    & $command $params.split(' ')
+    $str = (& $command $params.split(' ') | Out-String)
+    
     if (-not $?) {
+        Write-Host $str
         Write-Host "Execution fails" -ForegroundColor red
         return $false
     }
 
+    Write-Host $str
     return $true
 }
+# function Check-Command {
+#     param(
+#         $command,
+#         $params = ""
+#     )
+
+#     Write-DelimiterString
+#     Write-Host "Run: $command $params" -Foreground blue
+#     & $command $params.split(' ')
+#     if (-not $?) {
+#         Write-Host "Execution fails" -ForegroundColor red
+#         return $false
+#     }
+
+#     return $true
+# }

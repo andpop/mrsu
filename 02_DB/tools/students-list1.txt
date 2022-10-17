@@ -4,12 +4,8 @@ Bugreeva_AM
 Venediktova_JP
 Zinkina_KV
 Katin_DA
-Kochetkov_PA
 Meljakin_EV
 Nikishkin_EV
 Nujanzin_MA
 Pomelova_AS
-Prokopenko_AS
-Prokopenko_DS
 Rjabikin_KS
-Fedin_DA
