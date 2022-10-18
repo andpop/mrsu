@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20221006200945
+Start time: 20221018230017
 **********************
 Transcript started, output file is log.txt
 402_Arhipov_KA
@@ -15,6 +15,230 @@ Transcript started, output file is log.txt
 402_Kiruhin_AA
 402_Kudryavtzev_DA
 402_Makarov_NA
+=====================================================
+/home/andrey/labs_402/402_Makarov_NA
+_
+Task from branch: Task04
+Creation date: 10/12/2022 19:58:56
+Из github.com-mrsu:andpop-mrsu/402_Makarov_NA
+Из github.com-mrsu:andpop-mrsu/402_Makarov_NA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Makarov_NA/Task04
+--------------------------------------------------
+Check path: README.md
+## Описание проекта
+
+* * *
+Написать программу для игры "Угадай число" (guess-number). Компьютер загадывает число в диапазоне от 1 до максимального числа, заданного в настройках. Игрок должен угадать это число за несколько попыток (максимальное количество попыток задано в настройках). После каждой попытки компьютер сообщает, было ли введенное числе больше или меньше загаданного.
+
+* * *
+
+* В программе реализованы шесть режимов, которым соответствуют ключи:
+    * `--new`. Новая игра.
+    * `--list`. Вывод списка всех сохраненных игр.
+    * `--list winners`. Вывод списка всех игр, в которых победил человек.
+    * `--list looser`. Вывод списка всех игр, в которых человек проиграл.
+    * `--top`. Вывод статистики по игрокам. Для каждого игрока нужно считается количество побед и проигрышей, список сортируется по количеству побед (первые позиции занимают игроки с наибольшим количеством побед).
+    * `--replay id`. Повтор игры с идентификатором id.
+
+    * * * 
+
+* Информация о датах и исходах всех партий, а также о всех попытках, сделанных во время игры, должна сохраняться в базе данных.
+* Для каждой игры в базе должна храниться следующая информация:
+    * Дата игры
+    * Имя игрока
+    * Максимально возможное число
+    * Загаданное компьютером число
+    * Исход игры (угадал/не угадал)
+    * Запись попыток в формате: 
+      `номер попытки | предложенное число | ответ компьютера`
+* В программе должны быть реализованы шесть режимов:
+    * Новая игра.
+    * Вывод списка всех сохраненных игр.
+    * Вывод списка всех игр, в которых победил человек.
+    * Вывод списка всех игр, в которых человек проиграл.
+    * Вывод статистики по игрокам. Для каждого игрока нужно считается количество побед и проигрышей, список сортируется по количеству побед (первые позиции занимают игроки с наибольшим количеством побед).
+    * Повтор любой сохранённой партии (то есть повтор всех ходов из этой партии).
+
+    * * * 
+
+    ## База данных
+
+* Информация об играх и всех ходах сохраняется автоматически в базу данных GN.db, находящуюся в каталоге bin.
+* Для просмотра данных из БД используйте командную строку и запускайте файл guess-number.php находящийся в каталоге bin со следующими коммандами:
+    * Для просмотра всех игр используйте комманду `--list`.
+    * `--list winners`. Вывод списка всех игр, в которых победил человек.
+    * `--list looser`. Вывод списка всех игр, в которых человек проиграл.
+    * `--top`. Вывод статистики по игрокам. Для каждого игрока нужно считается количество побед и проигрышей, список сортируется по количеству побед (первые позиции занимаю игроки с наибольшим количеством побед).
+    * `--replay id`. Повтор игры с идентификатором id.
+    
+    * * *
+
+    ## Требования
+
+    Минимальная версия PHP: 7.4 и выше \
+    Минимальная версия Composer: 2.1.6
+
+    * * * 
+
+    ## Инструкция по установке и запуску игры
+
+    Из Github:
+
+1. Склонировать проект на локальную машину;
+2. Установить composer, если он не установлен;
+3. Перейти в корневой каталог;
+4. Выполнить в консоли команду `composer update`;
+5. Перейти в каталог bin из корнегого каталога и запустить файл guess-number.bat.
+
+Из Packagist:
+
+1. Установить composer, если он не установлен;
+2. Перейти в каталог, в который вы будете клонировать проект;
+3. Выполнить команду `composer require ma_karov/guess-number`;
+4. Перейти в каталог vendor/bin;
+5. Запустить файл guess-number.bat.
+
+* * *
+
+## Ссылки
+
+Packagist: <https://packagist.org/packages/ma_karov/guess-number>
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "ma_karov/guess_number",
+    "type": "project",
+    "authors": [
+        {
+            "name": "MakarovNA"
+        }
+    ],
+    "description": "",
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.13"
+    },
+    "bin": [
+        "bin/guess-number.php"
+    ],
+    "autoload": {
+        "files": [
+            "src/Controller.php",
+            "src/View.php",
+            "src/Model.php",
+            "src/DB.php"
+        ]
+    }
+}
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+FILE: /home/andrey/labs_402/402_Makarov_NA/Task04/guess_number/src/DB.php
+--------------------------------------------------------------------------------
+FOUND 22 ERRORS AFFECTING 17 LINES
+--------------------------------------------------------------------------------
+  13 | ERROR | [x] Parentheses must be used when instantiating a new class
+  38 | ERROR | [x] Inline control structures are not allowed
+  40 | ERROR | [x] Expected 1 space(s) after ELSE keyword; newline found
+  40 | ERROR | [x] Inline control structures are not allowed
+  41 | ERROR | [x] Parentheses must be used when instantiating a new class
+  46 | ERROR | [x] Parentheses must be used when instantiating a new class
+  76 | ERROR | [x] Parentheses must be used when instantiating a new class
+  95 | ERROR | [x] Parentheses must be used when instantiating a new class
+ 104 | ERROR | [x] Parentheses must be used when instantiating a new class
+ 106 | ERROR | [x] Inline control structures are not allowed
+ 108 | ERROR | [x] Inline control structures are not allowed
+ 110 | ERROR | [x] Expected 1 space(s) after ELSE keyword; newline found
+ 110 | ERROR | [x] Inline control structures are not allowed
+ 113 | ERROR | [x] Expected 1 space(s) after WHILE keyword; 0 found
+ 113 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
+ 126 | ERROR | [x] Expected 1 space(s) after WHILE keyword; 0 found
+ 126 | ERROR | [x] Inline control structures are not allowed
+ 133 | ERROR | [x] Parentheses must be used when instantiating a new class
+ 141 | ERROR | [x] Expected 1 space(s) after WHILE keyword; 0 found
+ 141 | ERROR | [x] Inline control structures are not allowed
+ 147 | ERROR | [x] Parentheses must be used when instantiating a new class
+ 151 | ERROR | [x] Inline control structures are not allowed
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 22 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /home/andrey/labs_402/402_Makarov_NA/Task04/guess_number/src/Model.php
+--------------------------------------------------------------------------------
+FOUND 30 ERRORS AFFECTING 25 LINES
+--------------------------------------------------------------------------------
+  30 | ERROR | [x] Expected 1 space(s) after WHILE keyword; 0 found
+  30 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
+  34 | ERROR | [x] Expected 1 space(s) after WHILE keyword; 0 found
+  34 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
+  40 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
+  48 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
+  52 | ERROR | [x] Expected 1 space after closing brace; newline found
+  53 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
+  62 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
+  75 | ERROR | [x] Inline control structures are not allowed
+  77 | ERROR | [x] Inline control structures are not allowed
+  79 | ERROR | [x] Inline control structures are not allowed
+  81 | ERROR | [x] Inline control structures are not allowed
+  83 | ERROR | [x] Expected 1 space(s) after ELSE keyword; newline found
+  83 | ERROR | [x] Inline control structures are not allowed
+  91 | ERROR | [x] Expected 1 space(s) after WHILE keyword; 0 found
+  91 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
+  93 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
+  97 | ERROR | [x] Expected 1 space after closing brace; newline found
+  98 | ERROR | [x] Inline control structures are not allowed
+ 100 | ERROR | [x] Inline control structures are not allowed
+ 102 | ERROR | [x] Inline control structures are not allowed
+ 104 | ERROR | [x] Inline control structures are not allowed
+ 106 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
+ 115 | ERROR | [x] Inline control structures are not allowed
+ 117 | ERROR | [x] Expected 1 space(s) after ELSE keyword; newline found
+ 117 | ERROR | [x] Inline control structures are not allowed
+ 119 | ERROR | [x] Blank line found at end of control structure
+ 120 | ERROR | [x] Expected 1 space after closing brace; newline found
+ 121 | ERROR | [x] Inline control structures are not allowed
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 30 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /home/andrey/labs_402/402_Makarov_NA/Task04/guess_number/src/View.php
+-------------------------------------------------------------------------------
+FOUND 12 ERRORS AFFECTING 10 LINES
+-------------------------------------------------------------------------------
+ 35 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
+ 42 | ERROR | [x] Expected 1 space after closing brace; newline found
+ 43 | ERROR | [x] Expected 1 space(s) after ELSE keyword; newline found
+ 43 | ERROR | [x] Inline control structures are not allowed
+ 51 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
+ 55 | ERROR | [x] Expected 1 space after closing brace; newline found
+ 56 | ERROR | [x] Expected 1 space(s) after ELSE keyword; newline found
+ 65 | ERROR | [x] Inline control structures are not allowed
+ 92 | ERROR | [x] Inline control structures are not allowed
+ 94 | ERROR | [x] Inline control structures are not allowed
+ 96 | ERROR | [x] Expected 1 space(s) after ELSE keyword; newline found
+ 96 | ERROR | [x] Inline control structures are not allowed
+-------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 12 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------
+
+Time: 61ms; Memory: 6MB
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/402_Makarov_NA.git
+To github.com-mrsu:andpop-mrsu/402_Makarov_NA.git
+   5af741f..dfd6e91  master -> master
+   5af741f..dfd6e91  master -> master
 402_Nagaev_DG
 402_Pochtov_AA
 402_Polyakina_AM
@@ -22,9 +246,9 @@ Transcript started, output file is log.txt
 402_Rodushkin_VE
 =====================================================
 /home/andrey/labs_402/402_Rodushkin_VE
-add Task03
-Task from branch: Task03
-Creation date: 10/06/2022 15:31:28
+add Task04
+Task from branch: Task04
+Creation date: 10/18/2022 15:09:02
 Из github.com-mrsu:andpop-mrsu/402_Rodushkin_VE
 Из github.com-mrsu:andpop-mrsu/402_Rodushkin_VE
  * branch            master     -> FETCH_HEAD
@@ -34,7 +258,7 @@ fatal: внешний репозиторий student уже существует
 fatal: внешний репозиторий student уже существует
 Уже актуально.
 --------------------------------------------------
-Task:  /home/andrey/labs_402/402_Rodushkin_VE/Task03
+Task:  /home/andrey/labs_402/402_Rodushkin_VE/Task04
 --------------------------------------------------
 Check path: README.md
 ## Описание проекта
@@ -120,26 +344,23 @@ Check path: composer.json
 --------------------------------------------------
 Run: phpcs --standard=PSR12 ./src/*
 
-FILE: /home/andrey/labs_402/402_Rodushkin_VE/Task03/guess_number/src/Controller.php
------------------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
------------------------------------------------------------------------------------
- 97 | ERROR | [x] Expected 1 newline at end of file; 0 found
------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
------------------------------------------------------------------------------------
+FILE: /home/andrey/labs_402/402_Rodushkin_VE/Task04/guess_number/src/DataBase.php
+---------------------------------------------------------------------------------
+FOUND 8 ERRORS AFFECTING 8 LINES
+---------------------------------------------------------------------------------
+  13 | ERROR | [x] Parentheses must be used when instantiating a new class
+  41 | ERROR | [x] Parentheses must be used when instantiating a new class
+  47 | ERROR | [x] Parentheses must be used when instantiating a new class
+  77 | ERROR | [x] Parentheses must be used when instantiating a new class
+  96 | ERROR | [x] Parentheses must be used when instantiating a new class
+ 105 | ERROR | [x] Parentheses must be used when instantiating a new class
+ 135 | ERROR | [x] Parentheses must be used when instantiating a new class
+ 150 | ERROR | [x] Parentheses must be used when instantiating a new class
+---------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 8 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+---------------------------------------------------------------------------------
 
-
-FILE: /home/andrey/labs_402/402_Rodushkin_VE/Task03/guess_number/src/View.php
------------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
------------------------------------------------------------------------------
- 30 | ERROR | [x] Expected 1 newline at end of file; 0 found
------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
------------------------------------------------------------------------------
-
-Time: 39ms; Memory: 6MB
+Time: 56ms; Memory: 6MB
 Execution fails
 --------------------------------------------------
 Total ok: 2
@@ -147,8 +368,8 @@ Total error: 1
 --------------------------------------------------
 To github.com-mrsu:andpop-mrsu/402_Rodushkin_VE.git
 To github.com-mrsu:andpop-mrsu/402_Rodushkin_VE.git
-   0d2c24c..f31189a  master -> master
-   0d2c24c..f31189a  master -> master
+   f3eea78..b2bf7d2  master -> master
+   f3eea78..b2bf7d2  master -> master
 402_Ryazin_VA
 402_Trapeza_IV
 402_Tzyganov_AA
@@ -156,5 +377,5 @@ To github.com-mrsu:andpop-mrsu/402_Rodushkin_VE.git
 402_Zavodov_DA
 **********************
 PowerShell transcript end
-End time: 20221006201407
+End time: 20221018231304
 **********************
