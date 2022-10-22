@@ -1,4 +1,4 @@
-Tepaykin_MA
-Utkin_NV
-Chernova_AA
-Shabanov_DO
+Rjabikin_KS
+Timovkin_AJ
+Turaev_DV
+Fedin_DA

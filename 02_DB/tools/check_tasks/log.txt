@@ -1,118 +1,20 @@
 **********************
 PowerShell transcript start
-Start time: 20221022133048
+Start time: 20221022155822
 **********************
 Transcript started, output file is log.txt
 =====================================================
-/home/andrey/labs_303/303_Prokopenko_DS
-add
-Task from branch: Task02
-Creation date: 10/22/2022 10:23:01
-Из github.com-mrsu:andpop-mrsu/303_Prokopenko_DS
-Из github.com-mrsu:andpop-mrsu/303_Prokopenko_DS
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже обновлено.
-Из https://github.com/DanilProkopenko/303_Prokopenko_DS
-Из https://github.com/DanilProkopenko/303_Prokopenko_DS
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Merge made by the 'recursive' strategy.
- Task02/README.md       |   1 +
- Task02/db_init.bat     |   2 +
- Task02/make_db_init.py | 144 +++++++++++++++++++++++++++++++++++++++++++++++++
- 3 files changed, 147 insertions(+)
- create mode 100644 Task02/README.md
- create mode 100644 Task02/db_init.bat
- create mode 100644 Task02/make_db_init.py
---------------------------------------------------
-Task:  /home/andrey/labs_303/303_Prokopenko_DS/Task02
---------------------------------------------------
-Check path: db_init.bat
-#!/bin/bash
-python3 make_db_init.py && sqlite3 movies_rating.db < db_init.sql
---------------------------------------------------
-Check path: README.md
-You need next packages for correct work db_ini.bat script: python3, sqlite3; db_init.bat will create sql script 'db_init.sql' and then, if sql script was created succesfully, will create database for sqlite3
---------------------------------------------------
-Run: ./db_init.bat
-PS>TerminatingError(): "Cannot run a document in the middle of a pipeline: /home/andrey/labs_303/303_Prokopenko_DS/Task02/db_init.bat."
-
-InvalidOperation: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/checks_for_task.ps1:32
-Line |
-  32 |      $str = (& $command $params.split(' ') | Out-String)
-     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot run a document in the middle of a pipeline: /home/andrey/labs_303/303_Prokopenko_DS/Task02/db_init.bat.
-
-[91mInvalidOperation: [0m/home/andrey/projects/mrsu/02_DB/tools/check_tasks/checks_for_task.ps1:32
-[96mLine |
-[96m  32 | [0m     $str = ([96m& $command $params.split(' ')[0m | Out-String)
-[96m     | [91m             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[91m[96m     | [91mCannot run a document in the middle of a pipeline:
-[96m     | [91m/home/andrey/labs_303/303_Prokopenko_DS/Task02/db_init.bat.
-[0m
-
-Execution fails
-False
---------------------------------------------------
-Check path: movies_rating.db
-movies_rating.db not found
-Count records in movies:
-Error: no such table: movies
-Error: no such table: movies
-Count records in ratings:
-Error: no such table: ratings
-Error: no such table: ratings
-Count records in tags:
-Error: no such table: tags
-Error: no such table: tags
-Count records in users:
-Error: no such table: users
-Error: no such table: users
---------------------------------------------------
-Total ok: 2
-Total error: 1
---------------------------------------------------
-To github.com-mrsu:andpop-mrsu/303_Prokopenko_DS.git
-To github.com-mrsu:andpop-mrsu/303_Prokopenko_DS.git
-   38fe534..953e175  master -> master
-   38fe534..953e175  master -> master
-=====================================================
-/home/andrey/labs_303/303_Rodkin_AV
-Task02
-Task from branch: Task02
-Creation date: 10/21/2022 16:46:51
-Из github.com-mrsu:andpop-mrsu/303_Rodkin_AV
-Из github.com-mrsu:andpop-mrsu/303_Rodkin_AV
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже обновлено.
-Из https://github.com/Stavlenik/303_Rodkin_AV
-Из https://github.com/Stavlenik/303_Rodkin_AV
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Merge made by the 'recursive' strategy.
- Task2/Readme.md       |   1 +
- Task2/db_init.bat     |   2 +
- Task2/make_db_init.py | 144 ++++++++++++++++++++++++++++++++++++++++++++++++++
- 3 files changed, 147 insertions(+)
- create mode 100644 Task2/Readme.md
- create mode 100644 Task2/db_init.bat
- create mode 100644 Task2/make_db_init.py
-There are no folder /home/andrey/labs_303/303_Rodkin_AV/Task02
-To github.com-mrsu:andpop-mrsu/303_Rodkin_AV.git
-To github.com-mrsu:andpop-mrsu/303_Rodkin_AV.git
-   556dc93..3a2e369  master -> master
-   556dc93..3a2e369  master -> master
+/home/andrey/labs_303/303_Denisov_RV
+add Task01
+Task from branch: Task01
+Creation date: 10/22/2022 11:20:53
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> $global:?
+True
 **********************
 PowerShell transcript end
-End time: 20221022133723
+End time: 20221022155949
 **********************
