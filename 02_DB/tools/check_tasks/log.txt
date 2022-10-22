@@ -1,372 +1,60 @@
 **********************
 PowerShell transcript start
-Start time: 20221017223448
+Start time: 20221022133048
 **********************
 Transcript started, output file is log.txt
 =====================================================
-/home/andrey/labs_303/303_Akimova_DA
-Task02
+/home/andrey/labs_303/303_Prokopenko_DS
+add
 Task from branch: Task02
-Creation date: 10/15/2022 15:52:26
-Из github.com-mrsu:andpop-mrsu/303_Akimova_DA
-Из github.com-mrsu:andpop-mrsu/303_Akimova_DA
+Creation date: 10/22/2022 10:23:01
+Из github.com-mrsu:andpop-mrsu/303_Prokopenko_DS
+Из github.com-mrsu:andpop-mrsu/303_Prokopenko_DS
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-   5136705..155f397  master     -> teacher/master
-   5136705..155f397  master     -> teacher/master
-Обновление 5136705..155f397
-Fast-forward
- task03.md | 44 ++++++++++++++++++++++++++++++++++++++++++++
- 1 file changed, 44 insertions(+)
- create mode 100644 task03.md
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Из https://github.com/Alsweire/303_Akimova_DA
-Из https://github.com/Alsweire/303_Akimova_DA
+Уже обновлено.
+Из https://github.com/DanilProkopenko/303_Prokopenko_DS
+Из https://github.com/DanilProkopenko/303_Prokopenko_DS
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
  * [новая ветка]     Task02     -> student/Task02
  * [новая ветка]     Task02     -> student/Task02
-Обновление 155f397..2c6a81d
-Fast-forward (no commit created; -m option ignored)
- Task02/.idea/Task02.iml                            |    14 +
- Task02/.idea/csv-plugin.xml                        |    23 +
- Task02/.idea/dataSources.local.xml                 |    18 +
- Task02/.idea/dataSources.xml                       |    12 +
- .../8e116e93-3e3b-4656-8d70-c42eb8675b20.xml       |  1317 +
- Task02/.idea/modules.xml                           |     8 +
- Task02/.idea/sqldialects.xml                       |     7 +
- Task02/.idea/vcs.xml                               |     6 +
- Task02/.idea/workspace.xml                         |    80 +
- Task02/db_init.sql                                 | 33191 +++++++++++++++++++
- Task02/identifier.sqlite                           |     0
- Task02/movies.csv                                  |  9743 ++++++
- Task02/ratings.csv                                 | 18774 +++++++++++
- Task02/script.py                                   |   189 +
- Task02/tags.csv                                    |  3684 ++
- Task02/users.txt                                   |   943 +
- 16 files changed, 68009 insertions(+)
- create mode 100644 Task02/.idea/Task02.iml
- create mode 100644 Task02/.idea/csv-plugin.xml
- create mode 100644 Task02/.idea/dataSources.local.xml
- create mode 100644 Task02/.idea/dataSources.xml
- create mode 100644 Task02/.idea/dataSources/8e116e93-3e3b-4656-8d70-c42eb8675b20.xml
- create mode 100644 Task02/.idea/modules.xml
- create mode 100644 Task02/.idea/sqldialects.xml
- create mode 100644 Task02/.idea/vcs.xml
- create mode 100644 Task02/.idea/workspace.xml
- create mode 100644 Task02/db_init.sql
- create mode 100644 Task02/identifier.sqlite
- create mode 100644 Task02/movies.csv
- create mode 100644 Task02/ratings.csv
- create mode 100644 Task02/script.py
- create mode 100644 Task02/tags.csv
- create mode 100644 Task02/users.txt
---------------------------------------------------
-Task:  /home/andrey/labs_303/303_Akimova_DA/Task02
---------------------------------------------------
-Check path: db_init.bat
-db_init.bat not found
---------------------------------------------------
-Check path: README.md
-README.md not found
---------------------------------------------------
-Run: ./db_init.bat
-
-&: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/checks_for_task.ps1:32
-Line |
-  32 |      $str = (& $command $params.split(' ') | Out-String)
-     |                ~~~~~~~~
-     | The term './db_init.bat' is not recognized as a name of a cmdlet, function, script file, or executable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
-
-&: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/checks_for_task.ps1:32
-Line |
-  32 |      $str = (& $command $params.split(' ') | Out-String)
-     |                ~~~~~~~~
-     | The term './db_init.bat' is not recognized as a name of a cmdlet, function, script file, or executable program. Check
-     | the spelling of the name, or if a path was included, verify that the path is correct and try again.
-
-
-Execution fails
-False
---------------------------------------------------
-Check path: movies_rating.db
-movies_rating.db not found
-Count records in movies:
-Error: in prepare, no such table: movies
-Error: in prepare, no such table: movies
-Count records in ratings:
-Error: in prepare, no such table: ratings
-Error: in prepare, no such table: ratings
-Count records in tags:
-Error: in prepare, no such table: tags
-Error: in prepare, no such table: tags
-Count records in users:
-Error: in prepare, no such table: users
-Error: in prepare, no such table: users
---------------------------------------------------
-Total ok: 0
-Total error: 3
---------------------------------------------------
-To github.com-mrsu:andpop-mrsu/303_Akimova_DA.git
-To github.com-mrsu:andpop-mrsu/303_Akimova_DA.git
-   155f397..2c6a81d  master -> master
-   155f397..2c6a81d  master -> master
-=====================================================
-/home/andrey/labs_303/303_Rjabikin_KS
-Task03
-Task from branch: Task03
-Creation date: 10/15/2022 20:35:09
-Из github.com-mrsu:andpop-mrsu/303_Rjabikin_KS
-Из github.com-mrsu:andpop-mrsu/303_Rjabikin_KS
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-   4b5159c..b512a9a  master     -> teacher/master
-   4b5159c..b512a9a  master     -> teacher/master
-Обновление 4b5159c..b512a9a
-Fast-forward
- Task02/README.md              |     3 +
- Task02/dataset/genres.txt     |    18 +
- Task02/dataset/movies.csv     |  9743 +++++++++++++++++++++
- Task02/dataset/occupation.txt |    21 +
- Task02/dataset/ratings.csv    | 18774 ++++++++++++++++++++++++++++++++++++++++
- Task02/dataset/tags.csv       |  3684 ++++++++
- Task02/dataset/users.txt      |   943 ++
- Task02/db_init.bat            |     3 +
- Task02/make_init_db.py        |   159 +
- task03.md                     |    44 +
- 10 files changed, 33392 insertions(+)
- create mode 100644 Task02/README.md
- create mode 100644 Task02/dataset/genres.txt
- create mode 100644 Task02/dataset/movies.csv
- create mode 100644 Task02/dataset/occupation.txt
- create mode 100644 Task02/dataset/ratings.csv
- create mode 100644 Task02/dataset/tags.csv
- create mode 100644 Task02/dataset/users.txt
- create mode 100644 Task02/db_init.bat
- create mode 100644 Task02/make_init_db.py
- create mode 100644 task03.md
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Из https://github.com/Kilvii/303_Rjabikin_KS
-Из https://github.com/Kilvii/303_Rjabikin_KS
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task03     -> student/Task03
-   c3d06a1..e93eca5  master     -> student/master
-   c3d06a1..e93eca5  master     -> student/master
-Обновление b512a9a..f4e7b71
-Fast-forward (no commit created; -m option ignored)
- Task03/db_init.sql | 33190 +++++++++++++++++++++++++++++++++++++++++++++++++++
- Task03/task3.bat   |    50 +
- 2 files changed, 33240 insertions(+)
- create mode 100644 Task03/db_init.sql
- create mode 100644 Task03/task3.bat
---------------------------------------------------
-Task:  /home/andrey/labs_303/303_Rjabikin_KS/Task03
---------------------------------------------------
-Check path: db_init.sql
---------------------------------------------------
-Check path: task3.bat
-#!/bin/bash
-chcp 65001
-
-sqlite3 movies_rating.db < db_init.sql
-
-echo "1. Составить список фильмов, имеющих хотя бы одну оценку. Список фильмов отсортировать по году выпуска и по названиям. В списке оставить первые 10 фильмов."
-echo --------------------------------------------------
-sqlite3 movies_rating.db -box -echo "SELECT title FROM ratings INNER JOIN movies on movies.id = ratings.movie_id and year NOT NULL GROUP BY title HAVING count(movie_id) ORDER BY year,title LIMIT 10;"
-echo ""
-
-echo "2.Вывести список всех пользователей, фамилии (не имена!) которых начинаются на букву 'A'. Полученный список отсортировать по дате регистрации. В списке оставить первых 5 пользователей."
-echo --------------------------------------------------
-sqlite3 movies_rating.db -box -echo "SELECT name FROM users WHERE SUBSTRING(name ,instr(name,' ')+1) LIKE 'A%' ORDER BY register_date LIMIT 5;"
-echo ""
-
-echo "3.Написать запрос, возвращающий информацию о рейтингах в более читаемом формате: имя и фамилия эксперта, название фильма, год выпуска, оценка и дата оценки в формате ГГГГ-ММ-ДД. Отсортировать данные по имени эксперта, затем названию фильма и оценке. В списке оставить первые 50 записей."
-echo --------------------------------------------------
-sqlite3 movies_rating.db -box -echo "SELECT name,title,year,rating,DATE(timestamp,'unixepoch') as date FROM ratings INNER JOIN movies on movies.id = ratings.movie_id INNER JOIN users on ratings.user_id = users.id ORDER BY users.name,title,rating LIMIT 50;"
-echo ""
-
-echo "4.Вывести список фильмов с указанием тегов, которые были им присвоены пользователями. Сортировать по году выпуска, затем по названию фильма, затем по тегу. В списке оставить первые 40 записей."
-echo --------------------------------------------------
-sqlite3 movies_rating.db -box -echo "SELECT title,tag FROM tags INNER JOIN movies on movie_id == movies.id WHERE year NOT NULL ORDER BY year,title,tag LIMIT 40;"
-echo ""
-
-echo "5.Вывести список самых свежих фильмов. В список должны войти все фильмы последнего года выпуска, имеющиеся в базе данных. Запрос должен быть универсальным, не зависящим от исходных данных (нужный год выпуска должен определяться в запросе, а не жестко задаваться)"
-echo --------------------------------------------------
-sqlite3 movies_rating.db -box -echo "SELECT title FROM movies WHERE year=(SELECT max(year) FROM movies);"
-echo ""
-
-echo "6.Найти все комедии, выпущенные после 2000 года, которые понравились мужчинам (оценка не ниже 4.5). Для каждого фильма в этом списке вывести название, год выпуска и количество таких оценок. Результат отсортировать по году выпуска и названию фильма."
-echo --------------------------------------------------
-sqlite3 movies_rating.db -box -echo "SELECT comedy.title,comedy.year,count(comedy.title) as number_rating FROM ratings INNER JOIN (SELECT title,id,year FROM movies WHERE genres LIKE '%Comedy%' AND year > 2000) comedy ON movie_id == comedy.id INNER JOIN users ON ratings.user_id = users.id WHERE gender == 'male' GROUP BY comedy.title ORDER BY comedy.year,comedy.title;"
-echo ""
-
-echo "7.Провести анализ занятий (профессий) пользователей - вывести количество пользователей для каждого рода занятий. Найти самую распространенную и самую редкую профессию посетитетей сайта."
-echo --------------------------------------------------
-sqlite3 movies_rating.db -box -echo "SELECT users.occupation,count(users.occupation) as number_occupation FROM users GROUP BY occupation;"
-echo ""
-
-echo " Самая распространённая профессия."
-sqlite3 movies_rating.db -box -echo "SELECT occupation,max(number_occupation) as common_profession FROM (SELECT users.occupation,count(users.occupation) as number_occupation FROM users GROUP BY occupation);"
-echo ""
-
-echo " Самая редкая профессия."
-sqlite3 movies_rating.db -box -echo "SELECT occupation,min(number_occupation) as rarest_profession FROM (SELECT users.occupation,count(users.occupation) as number_occupation FROM users GROUP BY occupation);"
-echo ""
---------------------------------------------------
-Run: ./task3.bat
-PS>TerminatingError(): "Cannot run a document in the middle of a pipeline: /home/andrey/labs_303/303_Rjabikin_KS/Task03/task3.bat."
-
-InvalidOperation: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/checks_for_task.ps1:32
-Line |
-  32 |      $str = (& $command $params.split(' ') | Out-String)
-     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot run a document in the middle of a pipeline: /home/andrey/labs_303/303_Rjabikin_KS/Task03/task3.bat.
-
-InvalidOperation: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/checks_for_task.ps1:32
-Line |
-  32 |      $str = (& $command $params.split(' ') | Out-String)
-     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot run a document in the middle of a pipeline: /home/andrey/labs_303/303_Rjabikin_KS/Task03/task3.bat.
-
-
-Execution fails
---------------------------------------------------
-Total ok: 2
-Total error: 1
---------------------------------------------------
-To github.com-mrsu:andpop-mrsu/303_Rjabikin_KS.git
-To github.com-mrsu:andpop-mrsu/303_Rjabikin_KS.git
-   b512a9a..f4e7b71  master -> master
-   b512a9a..f4e7b71  master -> master
-=====================================================
-/home/andrey/labs_303/303_Rjabikin_KS
-Fixed Script for Task02
-Task from branch: Task02
-Creation date: 10/15/2022 18:33:47
-Из github.com-mrsu:andpop-mrsu/303_Rjabikin_KS
-Из github.com-mrsu:andpop-mrsu/303_Rjabikin_KS
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
 Merge made by the 'recursive' strategy.
- Task02/make_init_db.py | 73 +++++++++++++++++++++++++-------------------------
- 1 file changed, 37 insertions(+), 36 deletions(-)
---------------------------------------------------
-Task:  /home/andrey/labs_303/303_Rjabikin_KS/Task02
---------------------------------------------------
-Check path: db_init.bat
-#!/bin/bash
-python3 make_init_db.py
-sqlite3 movies_rating.db < db_init.sql
---------------------------------------------------
-Check path: README.md
-## Требования к запуску
-* На компьютере должен быть устоновлен Python v.3 и SQLite3
-* Для коректной работы на Windows в db_init.bat нужно изменить строку sqlite3 movies_rating.db < db_init.sql на sqlite3 -init db_init.sql movies_rating.db.
---------------------------------------------------
-Run: ./db_init.bat
-PS>TerminatingError(): "Cannot run a document in the middle of a pipeline: /home/andrey/labs_303/303_Rjabikin_KS/Task02/db_init.bat."
-
-InvalidOperation: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/checks_for_task.ps1:32
-Line |
-  32 |      $str = (& $command $params.split(' ') | Out-String)
-     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot run a document in the middle of a pipeline: /home/andrey/labs_303/303_Rjabikin_KS/Task02/db_init.bat.
-
-InvalidOperation: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/checks_for_task.ps1:32
-Line |
-  32 |      $str = (& $command $params.split(' ') | Out-String)
-     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot run a document in the middle of a pipeline: /home/andrey/labs_303/303_Rjabikin_KS/Task02/db_init.bat.
-
-
-Execution fails
-False
---------------------------------------------------
-Check path: movies_rating.db
-movies_rating.db not found
-Count records in movies:
-Error: in prepare, no such table: movies
-Error: in prepare, no such table: movies
-Count records in ratings:
-Error: in prepare, no such table: ratings
-Error: in prepare, no such table: ratings
-Count records in tags:
-Error: in prepare, no such table: tags
-Error: in prepare, no such table: tags
-Count records in users:
-Error: in prepare, no such table: users
-Error: in prepare, no such table: users
---------------------------------------------------
-Total ok: 2
-Total error: 1
---------------------------------------------------
-To github.com-mrsu:andpop-mrsu/303_Rjabikin_KS.git
-To github.com-mrsu:andpop-mrsu/303_Rjabikin_KS.git
-   f4e7b71..4403119  master -> master
-   f4e7b71..4403119  master -> master
-=====================================================
-/home/andrey/labs_303/303_Venediktova_JP
-Task02
-Task from branch: Task02
-Creation date: 10/15/2022 22:28:17
-Из github.com-mrsu:andpop-mrsu/303_Venediktova_JP
-Из github.com-mrsu:andpop-mrsu/303_Venediktova_JP
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-   b393184..3e1f2c9  master     -> teacher/master
-   b393184..3e1f2c9  master     -> teacher/master
-Обновление b393184..3e1f2c9
-Fast-forward
- task03.md | 44 ++++++++++++++++++++++++++++++++++++++++++++
- 1 file changed, 44 insertions(+)
- create mode 100644 task03.md
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Из https://github.com/yanavenediktova/303_Venediktova_JP
-Из https://github.com/yanavenediktova/303_Venediktova_JP
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
-Merge made by the 'recursive' strategy.
- Task02/README.md       |   3 +
- Task02/db_init.bat     |   3 +
- Task02/make_db_init.py | 148 +++++++++++++++++++++++++++++++++++++++++++++++++
- 3 files changed, 154 insertions(+)
+ Task02/README.md       |   1 +
+ Task02/db_init.bat     |   2 +
+ Task02/make_db_init.py | 144 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 147 insertions(+)
  create mode 100644 Task02/README.md
  create mode 100644 Task02/db_init.bat
  create mode 100644 Task02/make_db_init.py
 --------------------------------------------------
-Task:  /home/andrey/labs_303/303_Venediktova_JP/Task02
+Task:  /home/andrey/labs_303/303_Prokopenko_DS/Task02
 --------------------------------------------------
 Check path: db_init.bat
 #!/bin/bash
-python3 make_db_init.py
-sqlite3 movies_rating.db < db_init.sql
+python3 make_db_init.py && sqlite3 movies_rating.db < db_init.sql
 --------------------------------------------------
 Check path: README.md
-- На компьютере должны быть установлены sqlite3, python3;
-- db_init.bat создаст db_init.sql
-- При успешком выополнении предыдущего действия создастся база данных
+You need next packages for correct work db_ini.bat script: python3, sqlite3; db_init.bat will create sql script 'db_init.sql' and then, if sql script was created succesfully, will create database for sqlite3
 --------------------------------------------------
 Run: ./db_init.bat
-PS>TerminatingError(): "Cannot run a document in the middle of a pipeline: /home/andrey/labs_303/303_Venediktova_JP/Task02/db_init.bat."
+PS>TerminatingError(): "Cannot run a document in the middle of a pipeline: /home/andrey/labs_303/303_Prokopenko_DS/Task02/db_init.bat."
 
 InvalidOperation: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/checks_for_task.ps1:32
 Line |
   32 |      $str = (& $command $params.split(' ') | Out-String)
      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot run a document in the middle of a pipeline: /home/andrey/labs_303/303_Venediktova_JP/Task02/db_init.bat.
+     | Cannot run a document in the middle of a pipeline: /home/andrey/labs_303/303_Prokopenko_DS/Task02/db_init.bat.
 
-InvalidOperation: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/checks_for_task.ps1:32
-Line |
-  32 |      $str = (& $command $params.split(' ') | Out-String)
-     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot run a document in the middle of a pipeline: /home/andrey/labs_303/303_Venediktova_JP/Task02/db_init.bat.
-
+[91mInvalidOperation: [0m/home/andrey/projects/mrsu/02_DB/tools/check_tasks/checks_for_task.ps1:32
+[96mLine |
+[96m  32 | [0m     $str = ([96m& $command $params.split(' ')[0m | Out-String)
+[96m     | [91m             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[91m[96m     | [91mCannot run a document in the middle of a pipeline:
+[96m     | [91m/home/andrey/labs_303/303_Prokopenko_DS/Task02/db_init.bat.
+[0m
 
 Execution fails
 False
@@ -374,26 +62,57 @@ False
 Check path: movies_rating.db
 movies_rating.db not found
 Count records in movies:
-Error: in prepare, no such table: movies
-Error: in prepare, no such table: movies
+Error: no such table: movies
+Error: no such table: movies
 Count records in ratings:
-Error: in prepare, no such table: ratings
-Error: in prepare, no such table: ratings
+Error: no such table: ratings
+Error: no such table: ratings
 Count records in tags:
-Error: in prepare, no such table: tags
-Error: in prepare, no such table: tags
+Error: no such table: tags
+Error: no such table: tags
 Count records in users:
-Error: in prepare, no such table: users
-Error: in prepare, no such table: users
+Error: no such table: users
+Error: no such table: users
 --------------------------------------------------
 Total ok: 2
 Total error: 1
 --------------------------------------------------
-To github.com-mrsu:andpop-mrsu/303_Venediktova_JP.git
-To github.com-mrsu:andpop-mrsu/303_Venediktova_JP.git
-   3e1f2c9..d4dae70  master -> master
-   3e1f2c9..d4dae70  master -> master
+To github.com-mrsu:andpop-mrsu/303_Prokopenko_DS.git
+To github.com-mrsu:andpop-mrsu/303_Prokopenko_DS.git
+   38fe534..953e175  master -> master
+   38fe534..953e175  master -> master
+=====================================================
+/home/andrey/labs_303/303_Rodkin_AV
+Task02
+Task from branch: Task02
+Creation date: 10/21/2022 16:46:51
+Из github.com-mrsu:andpop-mrsu/303_Rodkin_AV
+Из github.com-mrsu:andpop-mrsu/303_Rodkin_AV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже обновлено.
+Из https://github.com/Stavlenik/303_Rodkin_AV
+Из https://github.com/Stavlenik/303_Rodkin_AV
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Merge made by the 'recursive' strategy.
+ Task2/Readme.md       |   1 +
+ Task2/db_init.bat     |   2 +
+ Task2/make_db_init.py | 144 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 147 insertions(+)
+ create mode 100644 Task2/Readme.md
+ create mode 100644 Task2/db_init.bat
+ create mode 100644 Task2/make_db_init.py
+There are no folder /home/andrey/labs_303/303_Rodkin_AV/Task02
+To github.com-mrsu:andpop-mrsu/303_Rodkin_AV.git
+To github.com-mrsu:andpop-mrsu/303_Rodkin_AV.git
+   556dc93..3a2e369  master -> master
+   556dc93..3a2e369  master -> master
 **********************
 PowerShell transcript end
-End time: 20221017224757
+End time: 20221022133723
 **********************
