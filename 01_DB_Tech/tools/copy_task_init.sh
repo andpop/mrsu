@@ -21,11 +21,11 @@ for student in $(cat "${pwd}/students-list.txt"); do
     # cp "${pwd}/tasks/task01.md" "${student_dir}/"
     # cp "${pwd}/../Git_instruction.md" "${student_dir}/"
     # cp "${pwd}/tasks/*.xls" "${student_dir}/"
-    cp "${pwd}/../tasks/task04.md" "${student_dir}/task04.md"
+    cp "${pwd}/../tasks/task05.md" "${student_dir}/task05.md"
     # cp "${pwd}/tasks/specification_01.md" "${student_dir}/specification.md"
 
     git add -A
-    git commit -m "Add task04"
+    git commit -m "Add task05"
     git push teacher master
     cd "${pwd}"
 done
