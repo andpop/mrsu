@@ -24,12 +24,12 @@ function Check-Path {
 function Check-Command {
     param(
         $command,
-        $params = ""
+        $params = @()
     )
 
     Write-DelimiterString
     Write-Host "Run: $command $params" -Foreground blue
-    $str = (& $command $params.split(' ') | Out-String)
+    $str = (& $command $params | Out-String)
     
     if (-not $?) {
         Write-Host $str
@@ -40,19 +40,3 @@ function Check-Command {
     Write-Host $str
     return $true
 }
-# function Check-Command {
-#     param(
-#         $command,
-#         $params = ""
-#     )
-
-#     Write-DelimiterString
-#     Write-Host "Run: $command $params" -Foreground blue
-#     & $command $params.split(' ')
-#     if (-not $?) {
-#         Write-Host "Execution fails" -ForegroundColor red
-#         return $false
-#     }
-
-#     return $true
-# }

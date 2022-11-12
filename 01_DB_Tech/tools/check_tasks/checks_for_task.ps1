@@ -29,7 +29,8 @@ function Check-Command {
 
     Write-DelimiterString
     Write-Host "Run: $command $params" -Foreground blue
-    $str = (& $command $params.split(' ') | Out-String)
+    $str = (& $command $params | Out-String)
+    # $str = (& $command $params.split(' ') | Out-String)
     
     if (-not $?) {
         Write-Host $str

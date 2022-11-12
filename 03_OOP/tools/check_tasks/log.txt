@@ -1,23 +1,22 @@
 **********************
 PowerShell transcript start
-Start time: 20220616224706
+Start time: 20221105093838
 **********************
 Transcript started, output file is log.txt
-=====================================================
-/home/andrey/labs_302/302_Pochtov_AA
-Task07 Task06 Task05 Task04
-Task from branch: master
-Creation date: 06/15/2022 14:48:29
-Из github.com-mrsu:andpop-mrsu/302_Pochtov_AA
-Из github.com-mrsu:andpop-mrsu/302_Pochtov_AA
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже обновлено.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Уже обновлено.
-Checking script check_master.ps1 not found
+
+Get-ChildItem: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/run_check.ps1:14
+Line |
+  14 |  $studentDirs = (Get-ChildItem $studentDirsPath -Attributes Directory)
+     |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path '/home/andrey/labs_302/' because it does not exist.
+
+Get-ChildItem: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/run_check.ps1:14
+Line |
+  14 |  $studentDirs = (Get-ChildItem $studentDirsPath -Attributes Directory)
+     |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path '/home/andrey/labs_302/' because it does not exist.
+
 **********************
 PowerShell transcript end
-End time: 20220616224715
+End time: 20221105093838
 **********************

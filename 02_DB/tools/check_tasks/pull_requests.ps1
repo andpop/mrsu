@@ -14,9 +14,6 @@ function Check-PullRequest {
         Write-Host "=====================================================" -ForegroundColor cyan 
         
         Write-Host $studentDir -ForegroundColor yellow 
-        Write-Host $title -ForegroundColor yellow 
-        Write-Host "Task from branch: $branch" -ForegroundColor yellow
-        Write-Host "Creation date: $datePR" -ForegroundColor yellow
         
         Push-Location $studentDir
         git pull teacher master
@@ -30,6 +27,11 @@ function Check-PullRequest {
             return
         }
         & .\$checkScript -studentDir $studentDir -task $task
+
+        Write-Host $studentDir -ForegroundColor yellow 
+        Write-Host $title -ForegroundColor yellow 
+        Write-Host "Task from branch: $branch" -ForegroundColor yellow
+        Write-Host "Creation date: $datePR" -ForegroundColor yellow
 
         do {
             $yesNo = Read-Host "Push task on GitHub (y/n)?"
@@ -48,6 +50,8 @@ function Check-Student {
     param (
         [string]$studentName
     )
+    Write-Host $studentName
+
     $studentRepo = "${teacherRepo}/${studentName}/pulls"
     $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
 
