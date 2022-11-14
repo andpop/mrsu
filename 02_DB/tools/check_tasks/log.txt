@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20221112153326
+Start time: 20221114144736
 **********************
 Transcript started, output file is log.txt
 303_Akajkin_SV
@@ -10,7 +10,6 @@ Transcript started, output file is log.txt
 303_Denisov_RV
 303_Fedin_DA
 303_Kaderov_RO
-303_Katin_DA
 303_Kochetkov_PA
 303_Makarova_AJ
 303_Meljakin_EV
@@ -24,52 +23,30 @@ Transcript started, output file is log.txt
 Из github.com-mrsu:andpop-mrsu/303_Nujanzin_MA
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-Уже обновлено.
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Уже обновлено.
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
 --------------------------------------------------
-Task:  /home/andrey/labs_303/303_Nujanzin_MA/Task05
+Task:  /home/andrey/labs_303/303_Nujanzin_MA/Task06
 --------------------------------------------------
 Check path: db_init.sql
 --------------------------------------------------
-Check path: db_add.sql
-INSERT INTO 'users' ('first_name', 'last_name', 'email', 'gender', 'occupation_id') VALUES
-('Maksim', 'Negrya', 'negmaksim@gmail.com', 'male', 1), 
-('Egor', 'Nikishkin', 'nikishkin@gmail.com', 'male', 2),
-('Maksim', 'Nuyanzin', 'nuyanzin@gmail.com', 'male', 3),
-('Alina', 'Pomelova', 'pomelova@gmail.com', 'female', 4),
-('Anton', 'Prokopenko', 'prok@gmail.com', 'male', 5);
-
-INSERT INTO 'movies' ('title', 'year') VALUES
-('Dune: Part One', 2021),
-('Wrath of Man', 2021),
-('Nobody', 2021);
-
-INSERT INTO ratings ('user_id', 'movie_id', 'rating') VALUES
-(13, 8, 4.3),
-(13, 9, 4.0),
-(13, 10, 0.0);
+Check path: ER.jpg
 --------------------------------------------------
 Check path: db_schema.jpg
 --------------------------------------------------
-Run: sqlite3 test.db .read db_init.sql
-
---------------------------------------------------
-Run: sqlite3 test.db select count(*) from users
-943
---------------------------------------------------
-Total ok: 5
+Total ok: 3
 Total error: 0
 --------------------------------------------------
 /home/andrey/labs_303/303_Nujanzin_MA
-add task05
-Task from branch: Task05
-Creation date: 11/11/2022 23:27:55
+added task06
+Task from branch: Task06
+Creation date: 11/13/2022 12:53:33
 To github.com-mrsu:andpop-mrsu/303_Nujanzin_MA.git
 To github.com-mrsu:andpop-mrsu/303_Nujanzin_MA.git
-   43efcc6..487a7d4  master -> master
-   43efcc6..487a7d4  master -> master
+   487a7d4..48a488f  master -> master
+   487a7d4..48a488f  master -> master
 303_Pomelova_AS
 303_Prokopenko_AS
 303_Prokopenko_DS
@@ -81,5 +58,5 @@ To github.com-mrsu:andpop-mrsu/303_Nujanzin_MA.git
 303_Zinkina_KV
 **********************
 PowerShell transcript end
-End time: 20221112154530
+End time: 20221114145251
 **********************
