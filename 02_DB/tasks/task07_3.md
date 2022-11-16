@@ -20,3 +20,7 @@
 Процедура отправки задания на проверку и манипуляции с репозиториями после проверки описаны в файле [Git_instruction.md](Git_instruction.md).
 
 * * *
+
+### Лекции
+* Консольные приложения на PHP. https://youtu.be/UGU_TiZnrkM
+* Frontend и backend. Веб-приложения на PHP. https://youtu.be/nngT3DShFF4

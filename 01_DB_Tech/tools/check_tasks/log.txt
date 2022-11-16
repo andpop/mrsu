@@ -1,23 +1,8 @@
 **********************
 PowerShell transcript start
-Start time: 20221101172715
+Start time: 20221105183949
 **********************
 Transcript started, output file is log.txt
-000_402_Rodushkin_VE
-PS>TerminatingError(Invoke-RestMethod): "{"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}"
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/pull_requests.ps1:55
-Line |
-  55 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/01_DB_Tech/tools/check_tasks/pull_requests.ps1:55
-Line |
-  55 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/pulls#list-pull-requests"}
-
 402_Arhipov_KA
 402_Ariskin_NV
 402_Bansimba-Zita_EV
@@ -27,13 +12,176 @@ Line |
 402_Gorlienko_NV
 402_Haniev_RM
 402_Inevatkina_KM
-PS>TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> $global:?
-True
+=====================================================
+/home/andrey/labs_402/402_Inevatkina_KM
+Task02
+Task from branch: Task02
+Creation date: 11/01/2022 14:58:11
+Из github.com-mrsu:andpop-mrsu/402_Inevatkina_KM
+Из github.com-mrsu:andpop-mrsu/402_Inevatkina_KM
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   7f1e41a..ce13d06  master     -> teacher/master
+   7f1e41a..ce13d06  master     -> teacher/master
+Обновление 7f1e41a..ce13d06
+Fast-forward
+ Task01/README.md                                   | 11 ++++++++
+ Task01/README_self-logger.md                       |  8 ++++++
+ Task01/self-logger.bat                             | 21 ++++++++++++++++
+ Task01/task1.php                                   | 12 +++++++++
+ ...21\203\320\274\320\265\320\275\321\202 (2).txt" |  0
+ task05.md                                          | 24 ++++++++++++++++++
+ task06.md                                          | 29 ++++++++++++++++++++++
+ 7 files changed, 105 insertions(+)
+ create mode 100644 Task01/README.md
+ create mode 100644 Task01/README_self-logger.md
+ create mode 100644 Task01/self-logger.bat
+ create mode 100644 Task01/task1.php
+ create mode 100644 "Task01/\320\235\320\276\320\262\321\213\320\271 \321\202\320\265\320\272\321\201\321\202\320\276\320\262\321\213\320\271 \320\264\320\276\320\272\321\203\320\274\320\265\320\275\321\202 (2).txt"
+ create mode 100644 task05.md
+ create mode 100644 task06.md
+Из https://github.com/InevatkinaKM/402_Inevatkina_KM1
+Из https://github.com/InevatkinaKM/402_Inevatkina_KM1
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Merge made by the 'recursive' strategy.
+ Task02/.gitignore              |  2 ++
+ Task02/README.md               | 51 ++++++++++++++++++++++++++++++++++++++++++
+ Task02/bin/command_hangman.bat |  3 +++
+ Task02/bin/command_hangman.php | 11 +++++++++
+ Task02/composer.json           | 26 +++++++++++++++++++++
+ Task02/src/Controller.php      |  9 ++++++++
+ Task02/src/View.php            |  6 +++++
+ 7 files changed, 108 insertions(+)
+ create mode 100644 Task02/.gitignore
+ create mode 100644 Task02/README.md
+ create mode 100644 Task02/bin/command_hangman.bat
+ create mode 100644 Task02/bin/command_hangman.php
+ create mode 100644 Task02/composer.json
+ create mode 100644 Task02/src/Controller.php
+ create mode 100644 Task02/src/View.php
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Inevatkina_KM/Task02
+There are no game folder
+--------------------------------------------------
+To github.com-mrsu:andpop-mrsu/402_Inevatkina_KM.git
+To github.com-mrsu:andpop-mrsu/402_Inevatkina_KM.git
+   ce13d06..de2ec1d  master -> master
+   ce13d06..de2ec1d  master -> master
+402_Kiruhin_AA
+402_Kudryavtzev_DA
+402_Makarov_NA
+402_Nagaev_DG
+402_Pochtov_AA
+402_Polyakina_AM
+402_Pozharskiy_VS
+402_Rodushkin_VE
+=====================================================
+/home/andrey/labs_402/402_Rodushkin_VE
+change Task05
+Task from branch: master
+Creation date: 11/01/2022 18:29:31
+Из github.com-mrsu:andpop-mrsu/402_Rodushkin_VE
+Из github.com-mrsu:andpop-mrsu/402_Rodushkin_VE
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   b2bf7d2..c87f973  master     -> teacher/master
+   b2bf7d2..c87f973  master     -> teacher/master
+Обновление b2bf7d2..c87f973
+Fast-forward
+ Task04/guess_number/composer.json        |   4 +-
+ Task05/guess-number/.gitignore           |   2 +
+ Task05/guess-number/README.md            |  56 ++++++++++++
+ Task05/guess-number/bin/guess-number.bat |   3 +
+ Task05/guess-number/bin/guess-number.php |   9 ++
+ Task05/guess-number/composer.json        |  24 +++++
+ Task05/guess-number/src/Controller.php   |  14 +++
+ Task05/guess-number/src/DataBase.php     | 145 +++++++++++++++++++++++++++++++
+ Task05/guess-number/src/GameModel.php    | 117 +++++++++++++++++++++++++
+ Task05/guess-number/src/View.php         |  96 ++++++++++++++++++++
+ Task05/guess_number/.gitignore           |   2 +
+ Task05/guess_number/README.md            |  56 ++++++++++++
+ Task05/guess_number/bin/guess-number.bat |   3 +
+ Task05/guess_number/bin/guess-number.php |   9 ++
+ Task05/guess_number/composer.json        |  24 +++++
+ Task05/guess_number/src/Controller.php   |  14 +++
+ Task05/guess_number/src/DataBase.php     | 145 +++++++++++++++++++++++++++++++
+ Task05/guess_number/src/GameModel.php    | 117 +++++++++++++++++++++++++
+ Task05/guess_number/src/View.php         |  96 ++++++++++++++++++++
+ task05.md                                |  24 +++++
+ task06.md                                |  29 +++++++
+ 21 files changed, 988 insertions(+), 1 deletion(-)
+ create mode 100644 Task05/guess-number/.gitignore
+ create mode 100644 Task05/guess-number/README.md
+ create mode 100644 Task05/guess-number/bin/guess-number.bat
+ create mode 100644 Task05/guess-number/bin/guess-number.php
+ create mode 100644 Task05/guess-number/composer.json
+ create mode 100644 Task05/guess-number/src/Controller.php
+ create mode 100644 Task05/guess-number/src/DataBase.php
+ create mode 100644 Task05/guess-number/src/GameModel.php
+ create mode 100644 Task05/guess-number/src/View.php
+ create mode 100644 Task05/guess_number/.gitignore
+ create mode 100644 Task05/guess_number/README.md
+ create mode 100644 Task05/guess_number/bin/guess-number.bat
+ create mode 100644 Task05/guess_number/bin/guess-number.php
+ create mode 100644 Task05/guess_number/composer.json
+ create mode 100644 Task05/guess_number/src/Controller.php
+ create mode 100644 Task05/guess_number/src/DataBase.php
+ create mode 100644 Task05/guess_number/src/GameModel.php
+ create mode 100644 Task05/guess_number/src/View.php
+ create mode 100644 task05.md
+ create mode 100644 task06.md
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/VladislavRE250401/402_Rodushkin_VE
+Из https://github.com/VladislavRE250401/402_Rodushkin_VE
+   b2bf7d2..dd15052  Task04     -> student/Task04
+   b2bf7d2..dd15052  Task04     -> student/Task04
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task05     -> student/Task05
+   314c76d..b5efe6c  master     -> student/master
+   314c76d..b5efe6c  master     -> student/master
+Удаление Task05/guess-number/src/View.php
+Удаление Task05/guess-number/src/GameModel.php
+Удаление Task05/guess-number/src/DataBase.php
+Удаление Task05/guess-number/src/Controller.php
+Удаление Task05/guess-number/composer.json
+Удаление Task05/guess-number/bin/guess-number.php
+Удаление Task05/guess-number/bin/guess-number.bat
+Удаление Task05/guess-number/README.md
+Удаление Task05/guess-number/.gitignore
+Merge made by the 'recursive' strategy.
+ Task05/guess-number/.gitignore           |   2 -
+ Task05/guess-number/README.md            |  56 ------------
+ Task05/guess-number/bin/guess-number.bat |   3 -
+ Task05/guess-number/bin/guess-number.php |   9 --
+ Task05/guess-number/composer.json        |  24 -----
+ Task05/guess-number/src/Controller.php   |  14 ---
+ Task05/guess-number/src/DataBase.php     | 145 -------------------------------
+ Task05/guess-number/src/GameModel.php    | 117 -------------------------
+ Task05/guess-number/src/View.php         |  96 --------------------
+ Task05/guess_number/composer.json        |   2 +-
+ 10 files changed, 1 insertion(+), 467 deletions(-)
+ delete mode 100644 Task05/guess-number/.gitignore
+ delete mode 100644 Task05/guess-number/README.md
+ delete mode 100644 Task05/guess-number/bin/guess-number.bat
+ delete mode 100644 Task05/guess-number/bin/guess-number.php
+ delete mode 100644 Task05/guess-number/composer.json
+ delete mode 100644 Task05/guess-number/src/Controller.php
+ delete mode 100644 Task05/guess-number/src/DataBase.php
+ delete mode 100644 Task05/guess-number/src/GameModel.php
+ delete mode 100644 Task05/guess-number/src/View.php
+Checking script check_master.ps1 not found
+402_Ryazin_VA
+402_Trapeza_IV
+402_Tzyganov_AA
+402_Uvarov_AV
+402_Zavodov_DA
 **********************
 PowerShell transcript end
-End time: 20221101172719
+End time: 20221105184754
 **********************
