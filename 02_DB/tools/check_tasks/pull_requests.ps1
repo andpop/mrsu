@@ -23,6 +23,8 @@ function Check-PullRequest {
         Pop-Location
 
         if (-not (Test-Path $checkScript)) {
+            Write-Host "Task from branch: $branch" -ForegroundColor yellow
+            Write-Host "Creation date: $datePR" -ForegroundColor yellow
             Write-Host "Checking script $checkScript not found" -ForegroundColor red
             return
         }

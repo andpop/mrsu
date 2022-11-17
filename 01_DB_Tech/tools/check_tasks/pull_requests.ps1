@@ -23,14 +23,17 @@ function Check-PullRequest {
         Pop-Location
 
         if (-not (Test-Path $checkScript)) {
+            write-host $title -foregroundcolor yellow 
+            write-host "task from branch: $branch" -foregroundcolor yellow
+            write-host "creation date: $datepr" -foregroundcolor yellow
             Write-Host "Checking script $checkScript not found" -ForegroundColor red
             return
         }
         & .\$checkScript -studentDir $studentDir -task $task
 
-        Write-Host $title -ForegroundColor yellow 
-        Write-Host "Task from branch: $branch" -ForegroundColor yellow
-        Write-Host "Creation date: $datePR" -ForegroundColor yellow
+        write-host $title -foregroundcolor yellow 
+        write-host "task from branch: $branch" -foregroundcolor yellow
+        write-host "creation date: $datepr" -foregroundcolor yellow
 
         do {
             $yesNo = Read-Host "Push task on GitHub (y/n)?"
