@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20221117174054
+Start time: 20221119143811
 **********************
 Transcript started, output file is log.txt
 402_Arhipov_KA
@@ -11,9 +11,212 @@ Transcript started, output file is log.txt
 402_Eskin_DS
 402_Gorlienko_NV
 402_Haniev_RM
+=====================================================
+/home/andrey/labs_402/402_Haniev_RM
+Из github.com-mrsu:andpop-mrsu/402_Haniev_RM
+Из github.com-mrsu:andpop-mrsu/402_Haniev_RM
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   d35331e..d77b47f  master     -> teacher/master
+   d35331e..d77b47f  master     -> teacher/master
+Обновление d35331e..d77b47f
+Fast-forward
+ Task01/README.md                  |  18 ++++++
+ Task01/README_logger.md           |   8 +++
+ Task01/logger.db                  | Bin 0 -> 8192 bytes
+ Task01/self-logger.bat            |  21 +++++++
+ Task01/task1.php                  |  21 +++++++
+ Task02/hangman/.gitignore         |   2 +
+ Task02/hangman/README.md          |  51 ++++++++++++++++
+ Task02/hangman/bin/hangman.bat    |   3 +
+ Task02/hangman/bin/hangman.php    |  11 ++++
+ Task02/hangman/composer.json      |  26 ++++++++
+ Task02/hangman/src/Controller.php |   9 +++
+ Task02/hangman/src/View.php       |   6 ++
+ Task03/hangman/.gitignore         |   2 +
+ Task03/hangman/README.md          |  51 ++++++++++++++++
+ Task03/hangman/bin/hangman.bat    |   5 ++
+ Task03/hangman/bin/hangman.php    |  13 ++++
+ Task03/hangman/composer.json      |  27 ++++++++
+ Task03/hangman/src/Controller.php |  70 +++++++++++++++++++++
+ Task03/hangman/src/View.php       |  53 ++++++++++++++++
+ Task04/hangman/.gitignore         |   2 +
+ Task04/hangman/README.md          |  51 ++++++++++++++++
+ Task04/hangman/bin/hangman.bat    |   5 ++
+ Task04/hangman/bin/hangman.php    |  18 ++++++
+ Task04/hangman/composer.json      |  28 +++++++++
+ Task04/hangman/src/Controller.php | 111 +++++++++++++++++++++++++++++++++
+ Task04/hangman/src/Model.php      | 125 ++++++++++++++++++++++++++++++++++++++
+ Task04/hangman/src/View.php       |  24 ++++++++
+ Task05/hangman/.gitignore         |   2 +
+ Task05/hangman/README.md          |  51 ++++++++++++++++
+ Task05/hangman/bin/hangman.bat    |   5 ++
+ Task05/hangman/bin/hangman.php    |  18 ++++++
+ Task05/hangman/composer.json      |  26 ++++++++
+ Task05/hangman/src/Controller.php | 110 +++++++++++++++++++++++++++++++++
+ Task05/hangman/src/Model.php      | 122 +++++++++++++++++++++++++++++++++++++
+ Task05/hangman/src/View.php       |  24 ++++++++
+ 35 files changed, 1119 insertions(+)
+ create mode 100644 Task01/README.md
+ create mode 100644 Task01/README_logger.md
+ create mode 100644 Task01/logger.db
+ create mode 100644 Task01/self-logger.bat
+ create mode 100644 Task01/task1.php
+ create mode 100644 Task02/hangman/.gitignore
+ create mode 100644 Task02/hangman/README.md
+ create mode 100644 Task02/hangman/bin/hangman.bat
+ create mode 100644 Task02/hangman/bin/hangman.php
+ create mode 100644 Task02/hangman/composer.json
+ create mode 100644 Task02/hangman/src/Controller.php
+ create mode 100644 Task02/hangman/src/View.php
+ create mode 100644 Task03/hangman/.gitignore
+ create mode 100644 Task03/hangman/README.md
+ create mode 100644 Task03/hangman/bin/hangman.bat
+ create mode 100644 Task03/hangman/bin/hangman.php
+ create mode 100644 Task03/hangman/composer.json
+ create mode 100644 Task03/hangman/src/Controller.php
+ create mode 100644 Task03/hangman/src/View.php
+ create mode 100644 Task04/hangman/.gitignore
+ create mode 100644 Task04/hangman/README.md
+ create mode 100644 Task04/hangman/bin/hangman.bat
+ create mode 100644 Task04/hangman/bin/hangman.php
+ create mode 100644 Task04/hangman/composer.json
+ create mode 100644 Task04/hangman/src/Controller.php
+ create mode 100644 Task04/hangman/src/Model.php
+ create mode 100644 Task04/hangman/src/View.php
+ create mode 100644 Task05/hangman/.gitignore
+ create mode 100644 Task05/hangman/README.md
+ create mode 100644 Task05/hangman/bin/hangman.bat
+ create mode 100644 Task05/hangman/bin/hangman.php
+ create mode 100644 Task05/hangman/composer.json
+ create mode 100644 Task05/hangman/src/Controller.php
+ create mode 100644 Task05/hangman/src/Model.php
+ create mode 100644 Task05/hangman/src/View.php
+Из https://github.com/RusJ-KH/402_Haniev_RM
+Из https://github.com/RusJ-KH/402_Haniev_RM
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Merge made by the 'ort' strategy.
+ Task06/README.md         | 12 ++++++
+ Task06/index.html        | 29 ++++++++++++++
+ Task06/src/Controller.js | 99 ++++++++++++++++++++++++++++++++++++++++++++++++
+ Task06/src/View.js       | 70 ++++++++++++++++++++++++++++++++++
+ Task06/style.css         | 34 +++++++++++++++++
+ 5 files changed, 244 insertions(+)
+ create mode 100644 Task06/README.md
+ create mode 100644 Task06/index.html
+ create mode 100644 Task06/src/Controller.js
+ create mode 100644 Task06/src/View.js
+ create mode 100644 Task06/style.css
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Haniev_RM/Task06
+--------------------------------------------------
+Check path: README.md
+# Описание проекта
+
+### Браузерная игра "Виселица"  
+* Компьютер загадывает слово из шести букви рисует на странице отдельные пустые клетки для каждой буквы. Игрок пытается угадать буквы (вводя их по одной в текстовое поле), а затем и все слово целиком. Если игрок правильно угадывает букву, компьютер вписывает ее в клетку. Если ошибается, то рисует одну из частей тела повешенного человека. Чтобы победить, игрок должен угадать все буквы в слове до того, как повешенный человечек будет полностью нарисован.
+
+### Требования к игре:
+* Браузер должен поддерживать JS 
+ 
+
+### Инструкция по установке и запуску 
+* Перейти по ссылке https://rusj-kh.github.io;
+* Следовать дальнейшим указаниям игры;
+--------------------------------------------------
+Total ok: 1
+Total error: 0
+--------------------------------------------------
+Added Task06
+task from branch: Task06
+creation date: 11/18/2022 13:16:27
+To github.com-mrsu:andpop-mrsu/402_Haniev_RM.git
+To github.com-mrsu:andpop-mrsu/402_Haniev_RM.git
+   d77b47f..5644c53  master -> master
+   d77b47f..5644c53  master -> master
 402_Inevatkina_KM
 402_Kiruhin_AA
 402_Kudryavtzev_DA
+=====================================================
+/home/andrey/labs_402/402_Kudryavtzev_DA
+Из github.com-mrsu:andpop-mrsu/402_Kudryavtzev_DA
+Из github.com-mrsu:andpop-mrsu/402_Kudryavtzev_DA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже обновлено.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Из https://github.com/MrlLegend/402_Kudryavtzev_DA
+Из https://github.com/MrlLegend/402_Kudryavtzev_DA
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     task03     -> student/task03
+ * [новая ветка]     task03     -> student/task03
+ * [новая ветка]     task04     -> student/task04
+ * [новая ветка]     task04     -> student/task04
+Обновление e901a64..f547a77
+Fast-forward (no commit created; -m option ignored)
+ task03/hangman/.gitignore         |  2 ++
+ task03/hangman/README.md          | 51 ++++++++++++++++++++++++++++
+ task03/hangman/bin/hangman.bat    |  5 +++
+ task03/hangman/bin/hangman.php    | 13 +++++++
+ task03/hangman/composer.json      | 27 +++++++++++++++
+ task03/hangman/src/Controller.php | 71 +++++++++++++++++++++++++++++++++++++++
+ task03/hangman/src/View.php       | 53 +++++++++++++++++++++++++++++
+ 7 files changed, 222 insertions(+)
+ create mode 100644 task03/hangman/.gitignore
+ create mode 100644 task03/hangman/README.md
+ create mode 100644 task03/hangman/bin/hangman.bat
+ create mode 100644 task03/hangman/bin/hangman.php
+ create mode 100644 task03/hangman/composer.json
+ create mode 100644 task03/hangman/src/Controller.php
+ create mode 100644 task03/hangman/src/View.php
+task03
+task from branch: task03
+creation date: 11/19/2022 07:10:12
+Checking script check_task03.ps1 not found
+=====================================================
+/home/andrey/labs_402/402_Kudryavtzev_DA
+Из github.com-mrsu:andpop-mrsu/402_Kudryavtzev_DA
+Из github.com-mrsu:andpop-mrsu/402_Kudryavtzev_DA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже обновлено.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Merge made by the 'ort' strategy.
+ task04/hangman/.gitignore         |   2 +
+ task04/hangman/README.md          |  51 +++++++++++++++
+ task04/hangman/bin/hangman.bat    |   5 ++
+ task04/hangman/bin/hangman.php    |  18 ++++++
+ task04/hangman/composer.json      |  28 +++++++++
+ task04/hangman/src/Controller.php | 111 +++++++++++++++++++++++++++++++++
+ task04/hangman/src/Model.php      | 126 ++++++++++++++++++++++++++++++++++++++
+ task04/hangman/src/View.php       |  24 ++++++++
+ 8 files changed, 365 insertions(+)
+ create mode 100644 task04/hangman/.gitignore
+ create mode 100644 task04/hangman/README.md
+ create mode 100644 task04/hangman/bin/hangman.bat
+ create mode 100644 task04/hangman/bin/hangman.php
+ create mode 100644 task04/hangman/composer.json
+ create mode 100644 task04/hangman/src/Controller.php
+ create mode 100644 task04/hangman/src/Model.php
+ create mode 100644 task04/hangman/src/View.php
+task04
+task from branch: task04
+creation date: 11/19/2022 07:04:06
+Checking script check_task04.ps1 not found
 402_Makarov_NA
 402_Nagaev_DG
 402_Pochtov_AA
@@ -21,18 +224,49 @@ Transcript started, output file is log.txt
 402_Pozharskiy_VS
 402_Rodushkin_VE
 402_Ryazin_VA
+402_Trapeza_IV
 =====================================================
-/home/andrey/labs_402/402_Ryazin_VA
-Из github.com-mrsu:andpop-mrsu/402_Ryazin_VA
-Из github.com-mrsu:andpop-mrsu/402_Ryazin_VA
+/home/andrey/labs_402/402_Trapeza_IV
+Из github.com-mrsu:andpop-mrsu/402_Trapeza_IV
+Из github.com-mrsu:andpop-mrsu/402_Trapeza_IV
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Уже актуально.
+Уже обновлено.
+Из https://github.com/azepart/402_Trapeza_IV
+Из https://github.com/azepart/402_Trapeza_IV
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 9f82717..14c7514
+Fast-forward (no commit created; -m option ignored)
+ Task07/README.md         |  24 +++++++++
+ Task07/index.html        |  41 ++++++++++++++++
+ Task07/src/Controller.js | 123 +++++++++++++++++++++++++++++++++++++++++++++++
+ Task07/src/Model.js      | 111 ++++++++++++++++++++++++++++++++++++++++++
+ Task07/src/View.js       |  88 +++++++++++++++++++++++++++++++++
+ Task07/style.css         |  24 +++++++++
+ 6 files changed, 411 insertions(+)
+ create mode 100644 Task07/README.md
+ create mode 100644 Task07/index.html
+ create mode 100644 Task07/src/Controller.js
+ create mode 100644 Task07/src/Model.js
+ create mode 100644 Task07/src/View.js
+ create mode 100644 Task07/style.css
 --------------------------------------------------
-Task:  /home/andrey/labs_402/402_Ryazin_VA/Task07
+Task:  /home/andrey/labs_402/402_Trapeza_IV/Task07
 --------------------------------------------------
 Check path: README.md
 # Описание проекта
@@ -57,24 +291,456 @@ Check path: README.md
  
 
 ### Инструкция по установке и запуску 
-* Перейти по ссылке https://vitaliy-ryazin.github.io/hangman_JS/;
+* Перейти по ссылке https://azepart.github.io/trapezaiv2/;
 * Следовать дальнейшим указаниям игры.
 --------------------------------------------------
 Total ok: 1
 Total error: 0
 --------------------------------------------------
-Added branch Task07
+Task07
 task from branch: Task07
-creation date: 11/16/2022 12:39:58
-To github.com-mrsu:andpop-mrsu/402_Ryazin_VA.git
-To github.com-mrsu:andpop-mrsu/402_Ryazin_VA.git
-   92309d0..6763a61  master -> master
-   92309d0..6763a61  master -> master
-402_Trapeza_IV
+creation date: 11/18/2022 13:55:37
+To github.com-mrsu:andpop-mrsu/402_Trapeza_IV.git
+To github.com-mrsu:andpop-mrsu/402_Trapeza_IV.git
+   9f82717..14c7514  master -> master
+   9f82717..14c7514  master -> master
+=====================================================
+/home/andrey/labs_402/402_Trapeza_IV
+Из github.com-mrsu:andpop-mrsu/402_Trapeza_IV
+Из github.com-mrsu:andpop-mrsu/402_Trapeza_IV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже обновлено.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Merge made by the 'ort' strategy.
+ Task06/README.md         | 12 ++++++
+ Task06/index.html        | 29 ++++++++++++++
+ Task06/src/Controller.js | 99 ++++++++++++++++++++++++++++++++++++++++++++++++
+ Task06/src/View.js       | 70 ++++++++++++++++++++++++++++++++++
+ Task06/style.css         | 20 ++++++++++
+ 5 files changed, 230 insertions(+)
+ create mode 100644 Task06/README.md
+ create mode 100644 Task06/index.html
+ create mode 100644 Task06/src/Controller.js
+ create mode 100644 Task06/src/View.js
+ create mode 100644 Task06/style.css
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Trapeza_IV/Task06
+--------------------------------------------------
+Check path: README.md
+# Описание проекта
+
+### Браузерная игра "Виселица"  
+* Компьютер загадывает слово из шести букви рисует на странице отдельные пустые клетки для каждой буквы. Игрок пытается угадать буквы (вводя их по одной в текстовое поле), а затем и все слово целиком. Если игрок правильно угадывает букву, компьютер вписывает ее в клетку. Если ошибается, то рисует одну из частей тела повешенного человека. Чтобы победить, игрок должен угадать все буквы в слове до того, как повешенный человечек будет полностью нарисован.
+
+### Требования к игре:
+* Браузер должен поддерживать JS 
+ 
+
+### Инструкция по установке и запуску 
+* Перейти по ссылке https://azepart.github.io/trapezaiv/;
+* Следовать дальнейшим указаниям игры;
+--------------------------------------------------
+Total ok: 1
+Total error: 0
+--------------------------------------------------
+Task06
+task from branch: Task06
+creation date: 11/18/2022 13:54:47
+To github.com-mrsu:andpop-mrsu/402_Trapeza_IV.git
+To github.com-mrsu:andpop-mrsu/402_Trapeza_IV.git
+   14c7514..6b01526  master -> master
+   14c7514..6b01526  master -> master
+=====================================================
+/home/andrey/labs_402/402_Trapeza_IV
+Из github.com-mrsu:andpop-mrsu/402_Trapeza_IV
+Из github.com-mrsu:andpop-mrsu/402_Trapeza_IV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже обновлено.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Merge made by the 'ort' strategy.
+ Task05/hangman/.gitignore         |   2 +
+ Task05/hangman/README.md          |  51 ++++++++++++++++
+ Task05/hangman/bin/hangman.bat    |   5 ++
+ Task05/hangman/bin/hangman.php    |  18 ++++++
+ Task05/hangman/composer.json      |  26 ++++++++
+ Task05/hangman/src/Controller.php | 110 ++++++++++++++++++++++++++++++++++
+ Task05/hangman/src/Model.php      | 122 ++++++++++++++++++++++++++++++++++++++
+ Task05/hangman/src/View.php       |  24 ++++++++
+ 8 files changed, 358 insertions(+)
+ create mode 100644 Task05/hangman/.gitignore
+ create mode 100644 Task05/hangman/README.md
+ create mode 100644 Task05/hangman/bin/hangman.bat
+ create mode 100644 Task05/hangman/bin/hangman.php
+ create mode 100644 Task05/hangman/composer.json
+ create mode 100644 Task05/hangman/src/Controller.php
+ create mode 100644 Task05/hangman/src/Model.php
+ create mode 100644 Task05/hangman/src/View.php
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Trapeza_IV/Task05
+--------------------------------------------------
+Check path: README.md
+## Описание проекта
+
+* * *
+Написать программу для игры "Виселица" (hangman). Компьютер загадывает слово из шести букв (список возможных слов нужно заранее сгенерировать и сохранить в базе данных) и рисует на странице отдельные пустые клетки для каждой буквы. Игрок пытается угадать буквы, а затем и все слово целиком. Если игрок правильно угадывает букву, компьютер вписывает ее в клетку. Если ошибается, то рисует одну из частей тела повешенного человека (использовать псевдографику). Чтобы победить, игрок должен угадать все буквы в слове до того, как повешенный человечек будет полностью нарисован.
+
+* * *
+
+* Информация о датах и исходах всех партий, а также о всех попытках, сделанных во время игры? должна сохраняться в базе данных.
+* Для каждой игры в базе должна храниться следующая информация:
+    * Дата игры
+    * Имя игрока
+    * Загаданное компьютером слово
+    * Исход игры (угадал/не угадал)
+    * Запись попыток в формате: номер попытки | предложенная буква | результат
+* В программе должны быть реализованы три режима:
+    * Новая игра.
+    * Вывод списка всех сохраненных в базе партий.
+    * Повтор любой сохраненной партии (то есть повтор всех ходов из этой партии).
+
+* * * 
+
+## Требования
+
+Минимальная версия PHP: 8.0 \
+Минимальная версия Composer: 2.4.2
+
+* * * 
+
+## Инструкция по установке и запуску игры
+
+Из Github:
+
+1. Склонировать проект на локальную машину;
+2. Установить composer, если он не установлен;
+3. Перейти в корневой каталог;
+4. Выполнить в консоли команду `composer update`;
+5. Перейти в каталог bin из корнегого каталога и запустить файл hangman.bat.
+
+Из Packagist:
+
+1. Установить composer, если он не установлен;
+2. Перейти в каталог, в который вы будете клонировать проект;
+3. Выполнить команду `composer create-project trapezaiv/hangman`;
+4. Перейти в каталог vendor/bin;
+5. Запустить файл hangman.bat.
+
+* * *
+
+## Ссылки
+
+Packagist: <https://packagist.org/packages/trapezaiv/hangman>
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "trapezaiv/hangman",
+    "description": "Game",
+    "autoload": {
+        "files": [
+			"src/Controller.php",
+			"src/View.php",
+            "src/Model.php"
+		]
+    },
+	"bin": [
+		"bin/hangman.php"
+	],
+	"type": "project",
+    "authors": [
+        {
+            "name": "Igor-Trapeza",
+            "email": "azepart@yandex.ru"
+        }
+    ],
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.13",
+        "gabordemooij/redbean": "dev-master",
+        "squizlabs/php_codesniffer": "^3.7"
+    }
+}
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+FILE: /home/andrey/labs_402/402_Trapeza_IV/Task05/hangman/src/Model.php
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1 | WARNING | A file should declare new symbols (classes, functions, constants, etc.) and cause no other side effects, or it should execute logic with side effects, but should not do both.
+   |         | The first symbol is defined on line 12 and the first side effect is on line 10.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Time: 66ms; Memory: 6MB
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+Task05
+task from branch: Task05
+creation date: 11/18/2022 13:53:52
+To github.com-mrsu:andpop-mrsu/402_Trapeza_IV.git
+To github.com-mrsu:andpop-mrsu/402_Trapeza_IV.git
+   6b01526..fbe8da0  master -> master
+   6b01526..fbe8da0  master -> master
+=====================================================
+/home/andrey/labs_402/402_Trapeza_IV
+Из github.com-mrsu:andpop-mrsu/402_Trapeza_IV
+Из github.com-mrsu:andpop-mrsu/402_Trapeza_IV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже обновлено.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Merge made by the 'ort' strategy.
+ Task04/hangman/.gitignore         |   2 +
+ Task04/hangman/README.md          |  51 +++++++++++++++
+ Task04/hangman/bin/hangman.bat    |   5 ++
+ Task04/hangman/bin/hangman.php    |  18 ++++++
+ Task04/hangman/composer.json      |  28 +++++++++
+ Task04/hangman/src/Controller.php | 111 +++++++++++++++++++++++++++++++++
+ Task04/hangman/src/Model.php      | 126 ++++++++++++++++++++++++++++++++++++++
+ Task04/hangman/src/View.php       |  24 ++++++++
+ 8 files changed, 365 insertions(+)
+ create mode 100644 Task04/hangman/.gitignore
+ create mode 100644 Task04/hangman/README.md
+ create mode 100644 Task04/hangman/bin/hangman.bat
+ create mode 100644 Task04/hangman/bin/hangman.php
+ create mode 100644 Task04/hangman/composer.json
+ create mode 100644 Task04/hangman/src/Controller.php
+ create mode 100644 Task04/hangman/src/Model.php
+ create mode 100644 Task04/hangman/src/View.php
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Trapeza_IV/Task04
+--------------------------------------------------
+Check path: README.md
+## Описание проекта
+
+* * *
+Написать программу для игры "Виселица" (hangman). Компьютер загадывает слово из шести букв (список возможных слов нужно заранее сгенерировать и сохранить в базе данных) и рисует на странице отдельные пустые клетки для каждой буквы. Игрок пытается угадать буквы, а затем и все слово целиком. Если игрок правильно угадывает букву, компьютер вписывает ее в клетку. Если ошибается, то рисует одну из частей тела повешенного человека (использовать псевдографику). Чтобы победить, игрок должен угадать все буквы в слове до того, как повешенный человечек будет полностью нарисован.
+
+* * *
+
+* Информация о датах и исходах всех партий, а также о всех попытках, сделанных во время игры, должна сохраняться в базе данных.
+* Для каждой игры в базе должна храниться следующая информация:
+    * Дата игры
+    * Имя игрока
+    * Загаданное компьютером слово
+    * Исход игры (угадал/не угадал)
+    * Запись попыток в формате: номер попытки | предложенная буква | результат
+* В программе должны быть реализованы три режима:
+    * Новая игра.
+    * Вывод списка всех сохраненных в базе партий.
+    * Повтор любой сохраненной партии (то есть повтор всех ходов из этой партии).
+
+* * * 
+
+## Требования
+
+Минимальная версия PHP: 8.0 \
+Минимальная версия Composer: 2.4.2
+
+* * * 
+
+## Инструкция по установке и запуску игры
+
+Из Github:
+
+1. Склонировать проект на локальную машину;
+2. Установить composer, если он не установлен;
+3. Перейти в корневой каталог;
+4. Выполнить в консоли команду `composer update`;
+5. Перейти в каталог bin из корнегого каталога и запустить файл hangman.bat.
+
+Из Packagist:
+
+1. Установить composer, если он не установлен;
+2. Перейти в каталог, в который вы будете клонировать проект;
+3. Выполнить команду `composer create-project trapezaiv/hangman`;
+4. Перейти в каталог vendor/bin;
+5. Запустить файл hangman.bat.
+
+* * *
+
+## Ссылки
+
+Packagist: <https://packagist.org/packages/trapezaiv/hangman>
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "trapezaiv/hangman",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Igor-Trapeza",
+            "email": "azepart@yandex.ru"
+        }
+    ],
+    "description": "Game",
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.15",
+        "squizlabs/php_codesniffer": "^3.7"
+    },
+    "bin": [
+        "bin/hangman.php"
+    ],
+    "autoload": {
+        "psr-4": {
+            "trapezaiv\\hangman\\": "src/"
+        },
+        "files": [
+			"src/Controller.php",
+			"src/View.php",
+            "src/Model.php"
+		]
+    }
+}
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+--------------------------------------------------
+Total ok: 3
+Total error: 0
+--------------------------------------------------
+Task04
+task from branch: Task04
+creation date: 11/18/2022 13:52:38
+To github.com-mrsu:andpop-mrsu/402_Trapeza_IV.git
+To github.com-mrsu:andpop-mrsu/402_Trapeza_IV.git
+   fbe8da0..5932a31  master -> master
+   fbe8da0..5932a31  master -> master
 402_Tzyganov_AA
 402_Uvarov_AV
 402_Zavodov_DA
+=====================================================
+/home/andrey/labs_402/402_Zavodov_DA
+Из github.com-mrsu:andpop-mrsu/402_Zavodov_DA
+Из github.com-mrsu:andpop-mrsu/402_Zavodov_DA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   1389b23..7f4c3ba  master     -> teacher/master
+   1389b23..7f4c3ba  master     -> teacher/master
+Обновление 1389b23..7f4c3ba
+Fast-forward
+ Task04/hangman/.gitignore         |   2 +
+ Task04/hangman/README.md          |  51 +++++++++++++++
+ Task04/hangman/bin/hangman.bat    |   5 ++
+ Task04/hangman/bin/hangman.php    |  18 ++++++
+ Task04/hangman/composer.json      |  28 +++++++++
+ Task04/hangman/src/Controller.php | 111 +++++++++++++++++++++++++++++++++
+ Task04/hangman/src/Model.php      | 126 ++++++++++++++++++++++++++++++++++++++
+ Task04/hangman/src/View.php       |  24 ++++++++
+ Task05/hangman/.gitignore         |   2 +
+ Task05/hangman/README.md          |  51 +++++++++++++++
+ Task05/hangman/bin/hangman.bat    |   5 ++
+ Task05/hangman/bin/hangman.php    |  18 ++++++
+ Task05/hangman/composer.json      |  26 ++++++++
+ Task05/hangman/src/Controller.php | 110 +++++++++++++++++++++++++++++++++
+ Task05/hangman/src/Model.php      | 122 ++++++++++++++++++++++++++++++++++++
+ Task05/hangman/src/View.php       |  24 ++++++++
+ Task06/README.md                  |  12 ++++
+ Task06/index.html                 |  29 +++++++++
+ Task06/src/Controller.js          |  99 ++++++++++++++++++++++++++++++
+ Task06/src/View.js                |  70 +++++++++++++++++++++
+ Task06/style.css                  |  20 ++++++
+ 21 files changed, 953 insertions(+)
+ create mode 100644 Task04/hangman/.gitignore
+ create mode 100644 Task04/hangman/README.md
+ create mode 100644 Task04/hangman/bin/hangman.bat
+ create mode 100644 Task04/hangman/bin/hangman.php
+ create mode 100644 Task04/hangman/composer.json
+ create mode 100644 Task04/hangman/src/Controller.php
+ create mode 100644 Task04/hangman/src/Model.php
+ create mode 100644 Task04/hangman/src/View.php
+ create mode 100644 Task05/hangman/.gitignore
+ create mode 100644 Task05/hangman/README.md
+ create mode 100644 Task05/hangman/bin/hangman.bat
+ create mode 100644 Task05/hangman/bin/hangman.php
+ create mode 100644 Task05/hangman/composer.json
+ create mode 100644 Task05/hangman/src/Controller.php
+ create mode 100644 Task05/hangman/src/Model.php
+ create mode 100644 Task05/hangman/src/View.php
+ create mode 100644 Task06/README.md
+ create mode 100644 Task06/index.html
+ create mode 100644 Task06/src/Controller.js
+ create mode 100644 Task06/src/View.js
+ create mode 100644 Task06/style.css
+Из https://github.com/DZavodov/402_Zavodov_DA
+Из https://github.com/DZavodov/402_Zavodov_DA
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 7f4c3ba..bb4b279
+Fast-forward (no commit created; -m option ignored)
+ Task07/README.md         |  24 +++++++++
+ Task07/index.html        |  41 ++++++++++++++++
+ Task07/src/Controller.js | 123 +++++++++++++++++++++++++++++++++++++++++++++++
+ Task07/src/Model.js      | 111 ++++++++++++++++++++++++++++++++++++++++++
+ Task07/src/View.js       |  88 +++++++++++++++++++++++++++++++++
+ Task07/style.css         |  24 +++++++++
+ 6 files changed, 411 insertions(+)
+ create mode 100644 Task07/README.md
+ create mode 100644 Task07/index.html
+ create mode 100644 Task07/src/Controller.js
+ create mode 100644 Task07/src/Model.js
+ create mode 100644 Task07/src/View.js
+ create mode 100644 Task07/style.css
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Zavodov_DA/Task07
+--------------------------------------------------
+Check path: README.md
+# Описание проекта
+
+### Браузерная игра "Виселица"  
+* Компьютер загадывает слово из шести букви рисует на странице отдельные пустые клетки для каждой буквы. Игрок пытается угадать буквы (вводя их по одной в текстовое поле), а затем и все слово целиком. Если игрок правильно угадывает букву, компьютер вписывает ее в клетку. Если ошибается, то рисует одну из частей тела повешенного человека. Чтобы победить, игрок должен угадать все буквы в слове до того, как повешенный человечек будет полностью нарисован.
+
+* Информация о датах и исходах всех партий, а также о всех ходах, сделанных во время игры, сохраняется в базе данных indexedDB.
+* Для каждой игры в базе хранится следующая информация:
+    * id игры
+    * Имя игрока
+    * Дата игры
+    * Загаданное слово
+    * Статус игры
+* В программе реализованы три режима:
+    * `Начать игру`. Новая игра.
+    * `Список игр`. Вывод списка всех сохраненных игр.
+    * `Показать игру`. Повтор игры с идентификатором id.
+
+### Требования к игре:
+* Браузер должен поддерживать JS 
+ 
+
+### Инструкция по установке и запуску 
+* Перейти по ссылке https://dzavodov.github.io/Hangman_JS/;
+* Следовать дальнейшим указаниям игры.
+--------------------------------------------------
+Total ok: 1
+Total error: 0
+--------------------------------------------------
+Task07
+task from branch: Task07
+creation date: 11/19/2022 07:32:24
+To github.com-mrsu:andpop-mrsu/402_Zavodov_DA.git
+To github.com-mrsu:andpop-mrsu/402_Zavodov_DA.git
+   7f4c3ba..bb4b279  master -> master
+   7f4c3ba..bb4b279  master -> master
 **********************
 PowerShell transcript end
-End time: 20221117174411
+End time: 20221119145058
 **********************

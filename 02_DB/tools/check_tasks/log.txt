@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20221114144736
+Start time: 20221119145148
 **********************
 Transcript started, output file is log.txt
 303_Akajkin_SV
@@ -10,6 +10,94 @@ Transcript started, output file is log.txt
 303_Denisov_RV
 303_Fedin_DA
 303_Kaderov_RO
+303_Katin_DA
+=====================================================
+/home/andrey/labs_303/303_Katin_DA
+Из github.com-mrsu:andpop-mrsu/303_Katin_DA
+Из github.com-mrsu:andpop-mrsu/303_Katin_DA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   f5ea8c9..033c104  master     -> teacher/master
+   f5ea8c9..033c104  master     -> teacher/master
+Обновление f5ea8c9..033c104
+Fast-forward
+ task07.md | 26 ++++++++++++++++++++++++++
+ 1 file changed, 26 insertions(+)
+ create mode 100644 task07.md
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Из https://github.com/dmitriykatinn/303_Katin_DA-1
+Из https://github.com/dmitriykatinn/303_Katin_DA-1
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task05     -> student/Task05
+Merge made by the 'ort' strategy.
+ Task05/data_add.sql  |    34 +
+ Task05/db_init.sql   | 43017 +++++++++++++++++++++++++++++++++++++++++++++++++
+ Task05/db_schema.jpg |   Bin 0 -> 60618 bytes
+ 3 files changed, 43051 insertions(+)
+ create mode 100644 Task05/data_add.sql
+ create mode 100644 Task05/db_init.sql
+ create mode 100644 Task05/db_schema.jpg
+--------------------------------------------------
+Task:  /home/andrey/labs_303/303_Katin_DA/Task05
+--------------------------------------------------
+Check path: db_init.sql
+--------------------------------------------------
+Check path: data_add.sql
+pragma foreign_keys = ON;
+
+insert into users(name, surname, email, gender, register_date, occupation_id) values
+("Dmitriy", "Katin", "dmitriykatinn@gmail.com", "male", DATE("now"), (select id from occupations where occupations.title = "student"));
+insert into users(name, surname, email, gender, register_date, occupation_id) values
+("Pavel", "Kochetkov", "pavel.kochetkov@gmail.com", "male", DATE("now"), (select id from occupations where occupations.title = "student"));
+insert into users(name, surname, email, gender, register_date, occupation_id) values
+("Margar", "Melkonyan", "margar.melkonyan@gmail.com", "male", DATE("now"), (select id from occupations where occupations.title = "student"));
+insert into users(name, surname, email, gender, register_date, occupation_id) values
+("Egor", "Melyakin", "egor.melyakin@gmail.com", "male", DATE("now"), (select id from occupations where occupations.title = "student"));
+insert into users(name, surname, email, gender, register_date, occupation_id) values
+("Maksim", "Negrya", "maksim.negrya@gmail.com", "male", DATE("now"), (select id from occupations where occupations.title = "student"));
+
+
+insert into movies(title, year) values
+("The Witcher", 2019);
+insert into movies(title, year) values
+("1917", 2019);
+insert into movies(title, year) values
+("Unthinkable", 2009);
+
+
+insert into ratings(user_id, movie_id, rating, "timestamp") values(
+(select id from users where users.email = "dmitriykatinn@gmail.com"), 
+(select id from movies where movies.title = "The Witcher" and movies.year = 2019),
+4, strftime('%s','now'));
+insert into ratings(user_id, movie_id, rating, "timestamp") values(
+(select id from users where users.email = "dmitriykatinn@gmail.com"), 
+(select id from movies where movies.title = "1917" and movies.year = 2019),
+4.5, strftime('%s','now'));
+insert into ratings(user_id, movie_id, rating, "timestamp") values(
+(select id from users where users.email = "dmitriykatinn@gmail.com"), 
+(select id from movies where movies.title = "Unthinkable" and movies.year = 2009),
+4, strftime('%s','now'));
+--------------------------------------------------
+Check path: db_schema.jpg
+--------------------------------------------------
+Run: sqlite3 test.db .read db_init.sql
+
+--------------------------------------------------
+Run: sqlite3 test.db select count(*) from users
+943
+--------------------------------------------------
+Total ok: 5
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs_303/303_Katin_DA
+Task05
+Task from branch: Task05
+Creation date: 11/12/2022 20:22:59
+To github.com-mrsu:andpop-mrsu/303_Katin_DA.git
+To github.com-mrsu:andpop-mrsu/303_Katin_DA.git
+   033c104..737155e  master -> master
+   033c104..737155e  master -> master
 303_Kochetkov_PA
 303_Makarova_AJ
 303_Meljakin_EV
@@ -17,36 +105,6 @@ Transcript started, output file is log.txt
 303_Negrja_MJ
 303_Nikishkin_EV
 303_Nujanzin_MA
-=====================================================
-/home/andrey/labs_303/303_Nujanzin_MA
-Из github.com-mrsu:andpop-mrsu/303_Nujanzin_MA
-Из github.com-mrsu:andpop-mrsu/303_Nujanzin_MA
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Уже актуально.
---------------------------------------------------
-Task:  /home/andrey/labs_303/303_Nujanzin_MA/Task06
---------------------------------------------------
-Check path: db_init.sql
---------------------------------------------------
-Check path: ER.jpg
---------------------------------------------------
-Check path: db_schema.jpg
---------------------------------------------------
-Total ok: 3
-Total error: 0
---------------------------------------------------
-/home/andrey/labs_303/303_Nujanzin_MA
-added task06
-Task from branch: Task06
-Creation date: 11/13/2022 12:53:33
-To github.com-mrsu:andpop-mrsu/303_Nujanzin_MA.git
-To github.com-mrsu:andpop-mrsu/303_Nujanzin_MA.git
-   487a7d4..48a488f  master -> master
-   487a7d4..48a488f  master -> master
 303_Pomelova_AS
 303_Prokopenko_AS
 303_Prokopenko_DS
@@ -58,5 +116,5 @@ To github.com-mrsu:andpop-mrsu/303_Nujanzin_MA.git
 303_Zinkina_KV
 **********************
 PowerShell transcript end
-End time: 20221114145251
+End time: 20221119145400
 **********************
