@@ -1,15 +1,2163 @@
 **********************
 PowerShell transcript start
-Start time: 20221119143811
+Start time: 20221206233654
 **********************
 Transcript started, output file is log.txt
 402_Arhipov_KA
 402_Ariskin_NV
 402_Bansimba-Zita_EV
 402_Chulkina_AV
+=====================================================
+/home/andrey/labs_402/402_Chulkina_AV
+Из github.com-mrsu:andpop-mrsu/402_Chulkina_AV
+Из github.com-mrsu:andpop-mrsu/402_Chulkina_AV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   2d3eca8..807c3ff  master     -> teacher/master
+   2d3eca8..807c3ff  master     -> teacher/master
+Обновление 2d3eca8..807c3ff
+Fast-forward
+ task05.md | 24 +++++++++++++++++++
+ task06.md | 29 +++++++++++++++++++++++
+ task07.md | 27 +++++++++++++++++++++
+ task08.md | 80 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 4 files changed, 160 insertions(+)
+ create mode 100644 task05.md
+ create mode 100644 task06.md
+ create mode 100644 task07.md
+ create mode 100644 task08.md
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/Nastyalover/402_Chulkina_AV
+Из https://github.com/Nastyalover/402_Chulkina_AV
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     Task07     -> student/Task07
+Merge made by the 'recursive' strategy.
+ Task02/cold-hot/.gitignore                         |    2 +
+ Task02/cold-hot/README.md                          |   62 ++
+ Task02/cold-hot/bin/cold-hot.bat                   |    5 +
+ Task02/cold-hot/bin/cold-hot.php                   |   13 +
+ Task02/cold-hot/composer.json                      |   16 +
+ Task02/cold-hot/src/Controller.php                 |    9 +
+ Task02/cold-hot/src/View.php                       |    7 +
+ Task03/cold-hot/.gitignore                         |    2 +
+ Task03/cold-hot/README.md                          |   62 ++
+ Task03/cold-hot/bin/cold-hot.bat                   |    5 +
+ Task03/cold-hot/bin/cold-hot.php                   |   20 +
+ Task03/cold-hot/composer.json                      |   16 +
+ Task03/cold-hot/src/Controller.php                 |   76 ++
+ Task03/cold-hot/src/View.php                       |   37 +
+ Task04/cold-hot/.gitignore                         |    2 +
+ Task04/cold-hot/README.md                          |   62 ++
+ Task04/cold-hot/bin/cold-hot.bat                   |    5 +
+ Task04/cold-hot/bin/cold-hot.php                   |   20 +
+ Task04/cold-hot/composer.json                      |   24 +
+ Task04/cold-hot/src/Controller.php                 |  206 ++++
+ Task04/cold-hot/src/View.php                       |   27 +
+ Task05/cold-hot/.gitignore                         |    3 +
+ Task05/cold-hot/README.md                          |   62 ++
+ Task05/cold-hot/bin/cold-hot.bat                   |    5 +
+ Task05/cold-hot/bin/cold-hot.php                   |   22 +
+ Task05/cold-hot/composer.json                      |   26 +
+ Task05/cold-hot/src/Controller.php                 |   98 ++
+ Task05/cold-hot/src/Model.php                      |   64 ++
+ Task05/cold-hot/src/View.php                       |   27 +
+ Task06/.gitattributes                              |    2 +
+ Task06/Controller.js                               |   48 +
+ Task06/Model.js                                    |    3 +
+ Task06/README.md                                   |   29 +
+ Task06/View.js                                     |    7 +
+ Task06/index.html                                  |   20 +
+ Task06/style.css                                   |   36 +
+ Task07/.gitattributes                              |    2 +
+ Task07/.vs/ProjectSettings.json                    |    3 +
+ .../ed08f4ed-f903-4e28-92bf-a9ac8425dc49.vsidx     |  Bin 0 -> 23644 bytes
+ Task07/.vs/Task07/FileContentIndex/read.lock       |    0
+ Task07/.vs/Task07/config/applicationhost.config    | 1016 ++++++++++++++++++++
+ Task07/.vs/Task07/v16/.suo                         |  Bin 0 -> 14336 bytes
+ Task07/.vs/Task07/v17/.wsuo                        |  Bin 0 -> 16384 bytes
+ Task07/.vs/VSWorkspaceState.json                   |    9 +
+ Task07/.vs/slnx.sqlite                             |  Bin 0 -> 90112 bytes
+ Task07/README.md                                   |   29 +
+ Task07/css/style.css                               |   57 ++
+ Task07/index.html                                  |   30 +
+ Task07/src/Controller.js                           |   86 ++
+ Task07/src/Model.js                                |   82 ++
+ Task07/src/View.js                                 |   57 ++
+ 51 files changed, 2501 insertions(+)
+ create mode 100644 Task02/cold-hot/.gitignore
+ create mode 100644 Task02/cold-hot/README.md
+ create mode 100644 Task02/cold-hot/bin/cold-hot.bat
+ create mode 100644 Task02/cold-hot/bin/cold-hot.php
+ create mode 100644 Task02/cold-hot/composer.json
+ create mode 100644 Task02/cold-hot/src/Controller.php
+ create mode 100644 Task02/cold-hot/src/View.php
+ create mode 100644 Task03/cold-hot/.gitignore
+ create mode 100644 Task03/cold-hot/README.md
+ create mode 100644 Task03/cold-hot/bin/cold-hot.bat
+ create mode 100644 Task03/cold-hot/bin/cold-hot.php
+ create mode 100644 Task03/cold-hot/composer.json
+ create mode 100644 Task03/cold-hot/src/Controller.php
+ create mode 100644 Task03/cold-hot/src/View.php
+ create mode 100644 Task04/cold-hot/.gitignore
+ create mode 100644 Task04/cold-hot/README.md
+ create mode 100644 Task04/cold-hot/bin/cold-hot.bat
+ create mode 100644 Task04/cold-hot/bin/cold-hot.php
+ create mode 100644 Task04/cold-hot/composer.json
+ create mode 100644 Task04/cold-hot/src/Controller.php
+ create mode 100644 Task04/cold-hot/src/View.php
+ create mode 100644 Task05/cold-hot/.gitignore
+ create mode 100644 Task05/cold-hot/README.md
+ create mode 100644 Task05/cold-hot/bin/cold-hot.bat
+ create mode 100644 Task05/cold-hot/bin/cold-hot.php
+ create mode 100644 Task05/cold-hot/composer.json
+ create mode 100644 Task05/cold-hot/src/Controller.php
+ create mode 100644 Task05/cold-hot/src/Model.php
+ create mode 100644 Task05/cold-hot/src/View.php
+ create mode 100644 Task06/.gitattributes
+ create mode 100644 Task06/Controller.js
+ create mode 100644 Task06/Model.js
+ create mode 100644 Task06/README.md
+ create mode 100644 Task06/View.js
+ create mode 100644 Task06/index.html
+ create mode 100644 Task06/style.css
+ create mode 100644 Task07/.gitattributes
+ create mode 100644 Task07/.vs/ProjectSettings.json
+ create mode 100644 Task07/.vs/Task07/FileContentIndex/ed08f4ed-f903-4e28-92bf-a9ac8425dc49.vsidx
+ create mode 100644 Task07/.vs/Task07/FileContentIndex/read.lock
+ create mode 100644 Task07/.vs/Task07/config/applicationhost.config
+ create mode 100644 Task07/.vs/Task07/v16/.suo
+ create mode 100644 Task07/.vs/Task07/v17/.wsuo
+ create mode 100644 Task07/.vs/VSWorkspaceState.json
+ create mode 100644 Task07/.vs/slnx.sqlite
+ create mode 100644 Task07/README.md
+ create mode 100644 Task07/css/style.css
+ create mode 100644 Task07/index.html
+ create mode 100644 Task07/src/Controller.js
+ create mode 100644 Task07/src/Model.js
+ create mode 100644 Task07/src/View.js
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Chulkina_AV/Task07
+--------------------------------------------------
+Check path: README.md
+# ColdHotJS
+ 
+# Описание проекта
+
+Игра "Холодно-горячо"(cold-hot). Игрок пытается угадать случайное трехзначное число (без повторяющихся цифр), сгенерированное компьютером. После каждой попытки компьютер предоставляет игроку подсказки трех типов:
+"Холодно". Ни одна цифра не отгадана.
+"Тепло" Одна цифра отгадана, но не отгадана ее позиция.
+"Горячо". Одна цифра и ее позиция отгадана.
+
+* * *
+
+* "Холодно". Ни одна цифра не отгадана.
+* "Тепло" Одна цифра отгадана, но не отгадана ее позиция. 
+* "Горячо". Одна цифра и ее позиция отгадана.
+На каждом ходе компьютер должен выдать три подсказки, отсортированные в алфавитном порядке. Если секретное число 456, а предположение игрока — 546, подсказки будут иметь вид «Горячо Тепло Тепло». Подсказка «Горячо» относится к 6, а «Тепло Тепло» — к 4 и 5.
+* Необходимо писать трехзначное число без запятых между цифрами.
+
+* * *
+
+## Требования
+
+Браузер с поддержкой JS
+
+* * *
+
+## Инструкция по установке и запуску игры
+
+1. Перейти по ссылке https://nastyalover.github.io/cold-hot-js7/
+2. Приступить к игре
+--------------------------------------------------
+Total ok: 1
+Total error: 0
+--------------------------------------------------
+Task07
+task from branch: Task07
+creation date: 12/06/2022 16:34:50
+To github.com-mrsu:andpop-mrsu/402_Chulkina_AV.git
+To github.com-mrsu:andpop-mrsu/402_Chulkina_AV.git
+   807c3ff..ba09fcc  master -> master
+   807c3ff..ba09fcc  master -> master
+=====================================================
+/home/andrey/labs_402/402_Chulkina_AV
+Из github.com-mrsu:andpop-mrsu/402_Chulkina_AV
+Из github.com-mrsu:andpop-mrsu/402_Chulkina_AV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Chulkina_AV/Task06
+--------------------------------------------------
+Check path: README.md
+# ColdHotJS
+ 
+# Описание проекта
+
+Игра "Холодно-горячо"(cold-hot). Игрок пытается угадать случайное трехзначное число (без повторяющихся цифр), сгенерированное компьютером. После каждой попытки компьютер предоставляет игроку подсказки трех типов:
+"Холодно". Ни одна цифра не отгадана.
+"Тепло" Одна цифра отгадана, но не отгадана ее позиция.
+"Горячо". Одна цифра и ее позиция отгадана.
+
+* * *
+
+* "Холодно". Ни одна цифра не отгадана.
+* "Тепло" Одна цифра отгадана, но не отгадана ее позиция. 
+* "Горячо". Одна цифра и ее позиция отгадана.
+На каждом ходе компьютер должен выдать три подсказки, отсортированные в алфавитном порядке. Если секретное число 456, а предположение игрока — 546, подсказки будут иметь вид «Горячо Тепло Тепло». Подсказка «Горячо» относится к 6, а «Тепло Тепло» — к 4 и 5.
+* Необходимо писать трехзначное число без запятых между цифрами.
+
+* * *
+
+## Требования
+
+Браузер с поддержкой JS
+
+* * *
+
+## Инструкция по установке и запуску игры
+
+1. Перейти по ссылке https://nastyalover.github.io/cold-hot-js6/
+2. Приступить к игре
+--------------------------------------------------
+Total ok: 1
+Total error: 0
+--------------------------------------------------
+Task06
+task from branch: Task06
+creation date: 12/06/2022 16:34:10
+Everything up-to-date
+Everything up-to-date
+=====================================================
+/home/andrey/labs_402/402_Chulkina_AV
+Из github.com-mrsu:andpop-mrsu/402_Chulkina_AV
+Из github.com-mrsu:andpop-mrsu/402_Chulkina_AV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Chulkina_AV/Task05
+--------------------------------------------------
+Check path: README.md
+# Описание проекта
+
+Написать программу для игры "Холодно-горячо"(cold-hot). Игрок пытается угадать случайное трехзначное число (без повторяющихся цифр), сгенерированное компьютером. После каждой попытки компьютер предоставляет игроку подсказки трех типов:
+
+* * *
+
+* "Холодно". Ни одна цифра не отгадана.
+* "Тепло" Одна цифра отгадана, но не отгадана ее позиция. 
+* "Горячо". Одна цифра и ее позиция отгадана.
+На каждом ходе компьютер должен выдать три подсказки, отсортированные в алфавитном порядке. Если секретное число 456, а предположение игрока — 546, подсказки будут иметь вид «Горячо Тепло Тепло». Подсказка «Горячо» относится к 6, а «Тепло Тепло» — к 4 и 5.
+
+* * *
+
+* Информация о датах и исходах всех партий, а также о всех попытках, сделанных во время игры, должна сохраняться в базе данных.
+* Для каждой игры в базе должна храниться следующая информация:
+    * Дата игры
+    * Имя игрока
+    * Загаданное компьютером слово
+    * Исход игры (угадал/не угадал)
+    * Запись попыток в формате: 
+      `номер попытки | предложенная буква | результат`
+
+* * *
+
+* Режим работы приложения должны определяться при запуске по аргументам командной строки:
+    * `--new`. Новая игра. Этот же режим используется по умолчанию, если программа запускается без параметров.
+    * `--list`. Вывод списка всех сохраненных игр.
+    * `--replay id`. Повтор игры с идентификатором id.
+    * `--help`. Вывод краткой информации о приложении и доступных ключах для запуска в разных режимах.
+
+* * *
+
+## Требования
+
+Минимальная версия PHP: 7.4.13 \
+Минимальная версия Composer: 2.1.6
+
+* * *
+
+## Инструкция по установке и запуску игры
+
+Из Github:
+
+1. Склонировать проект на локальную машину;
+2. Установить composer, если он не установлен;
+3. Перейти в корневой каталог;
+4. Выполнить в консоли команду `composer update`;
+5. Перейти в каталог bin из корнегого каталога и запустить файл cold-hot.bat.
+
+Из Packagist:
+
+1. Установить composer, если он не установлен;
+2. Перейти в каталог, в который вы будете клонировать проект;
+3. Выполнить команду `composer create-project nastyalover/cold-hot`;
+4. Перейти в каталог bin;
+5. Запустить файл cold-hot.bat.
+
+* * *
+
+## Ссылки
+
+Packagist: <https://packagist.org/packages/nastyalover/cold-hot>
+--------------------------------------------------
+Check path: composer.json
+{
+  "name": "nastyalover/cold-hot",
+  "require": {
+    "wp-cli/php-cli-tools": "^0.11.13",
+    "gabordemooij/redbean": "dev-master"
+  },
+  "type": "project",
+  "authors": [
+    {
+      "name": "nastyalover",
+    }
+  ],
+  "bin": [
+    "bin/cold_hot.php"
+  ],
+  "autoload": {
+    "files": [
+      "src/Controller.php",
+      "src/View.php",
+      "src/Model.php"
+    ]
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.6"
+  }
+}
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+FILE: /home/andrey/labs_402/402_Chulkina_AV/Task05/cold-hot/src/Model.php
+----------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+----------------------------------------------------------------------------------------------------------------------------------------------
+ 1 | WARNING | A file should declare new symbols (classes, functions, constants, etc.) and cause no other side effects, or it should execute
+   |         | logic with side effects, but should not do both. The first symbol is defined on line 9 and the first side effect is on line 7.
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Time: 79ms; Memory: 6MB
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+Task05
+task from branch: Task05
+creation date: 12/06/2022 16:33:23
+Everything up-to-date
+Everything up-to-date
+=====================================================
+/home/andrey/labs_402/402_Chulkina_AV
+Из github.com-mrsu:andpop-mrsu/402_Chulkina_AV
+Из github.com-mrsu:andpop-mrsu/402_Chulkina_AV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Chulkina_AV/Task04
+--------------------------------------------------
+Check path: README.md
+# Описание проекта
+
+Написать программу для игры "Холодно-горячо"(cold-hot). Игрок пытается угадать случайное трехзначное число (без повторяющихся цифр), сгенерированное компьютером. После каждой попытки компьютер предоставляет игроку подсказки трех типов:
+
+* * *
+
+* "Холодно". Ни одна цифра не отгадана.
+* "Тепло" Одна цифра отгадана, но не отгадана ее позиция. 
+* "Горячо". Одна цифра и ее позиция отгадана.
+На каждом ходе компьютер должен выдать три подсказки, отсортированные в алфавитном порядке. Если секретное число 456, а предположение игрока — 546, подсказки будут иметь вид «Горячо Тепло Тепло». Подсказка «Горячо» относится к 6, а «Тепло Тепло» — к 4 и 5.
+
+* * *
+
+* Информация о датах и исходах всех партий, а также о всех попытках, сделанных во время игры, должна сохраняться в базе данных.
+* Для каждой игры в базе должна храниться следующая информация:
+    * Дата игры
+    * Имя игрока
+    * Загаданное компьютером слово
+    * Исход игры (угадал/не угадал)
+    * Запись попыток в формате: 
+      `номер попытки | предложенная буква | результат`
+
+* * *
+
+* Режим работы приложения должны определяться при запуске по аргументам командной строки:
+    * `--new`. Новая игра. Этот же режим используется по умолчанию, если программа запускается без параметров.
+    * `--list`. Вывод списка всех сохраненных игр.
+    * `--replay id`. Повтор игры с идентификатором id.
+    * `--help`. Вывод краткой информации о приложении и доступных ключах для запуска в разных режимах.
+
+* * *
+
+## Требования
+
+Минимальная версия PHP: 7.4.13 \
+Минимальная версия Composer: 2.1.6
+
+* * *
+
+## Инструкция по установке и запуску игры
+
+Из Github:
+
+1. Склонировать проект на локальную машину;
+2. Установить composer, если он не установлен;
+3. Перейти в корневой каталог;
+4. Выполнить в консоли команду `composer update`;
+5. Перейти в каталог bin из корнегого каталога и запустить файл cold-hot.bat.
+
+Из Packagist:
+
+1. Установить composer, если он не установлен;
+2. Перейти в каталог, в который вы будете клонировать проект;
+3. Выполнить команду `composer create-project nastyalover/cold-hot`;
+4. Перейти в каталог bin;
+5. Запустить файл cold-hot.bat.
+
+* * *
+
+## Ссылки
+
+Packagist: <https://packagist.org/packages/nastyalover/cold-hot>
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "sifon/cold-hot",
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.13"
+    },
+    "type": "project",
+    "authors": [
+      {
+        "name": "nastyalover"
+      }
+    ],
+    "bin": [
+        "bin/cold_hot.php"
+    ],
+    "autoload":{
+        "files":[
+            "src/Controller.php",
+            "src/View.php"
+        ]
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.6"
+    }
+}
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+--------------------------------------------------
+Total ok: 3
+Total error: 0
+--------------------------------------------------
+Task04
+task from branch: Task04
+creation date: 12/06/2022 16:32:44
+Everything up-to-date
+Everything up-to-date
+=====================================================
+/home/andrey/labs_402/402_Chulkina_AV
+Из github.com-mrsu:andpop-mrsu/402_Chulkina_AV
+Из github.com-mrsu:andpop-mrsu/402_Chulkina_AV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Chulkina_AV/Task03
+--------------------------------------------------
+Check path: README.md
+# Описание проекта
+
+Написать программу для игры "Холодно-горячо"(cold-hot). Игрок пытается угадать случайное трехзначное число (без повторяющихся цифр), сгенерированное компьютером. После каждой попытки компьютер предоставляет игроку подсказки трех типов:
+
+* * *
+
+* "Холодно". Ни одна цифра не отгадана.
+* "Тепло" Одна цифра отгадана, но не отгадана ее позиция. 
+* "Горячо". Одна цифра и ее позиция отгадана.
+На каждом ходе компьютер должен выдать три подсказки, отсортированные в алфавитном порядке. Если секретное число 456, а предположение игрока — 546, подсказки будут иметь вид «Горячо Тепло Тепло». Подсказка «Горячо» относится к 6, а «Тепло Тепло» — к 4 и 5.
+
+* * *
+
+* Информация о датах и исходах всех партий, а также о всех попытках, сделанных во время игры, должна сохраняться в базе данных.
+* Для каждой игры в базе должна храниться следующая информация:
+    * Дата игры
+    * Имя игрока
+    * Загаданное компьютером слово
+    * Исход игры (угадал/не угадал)
+    * Запись попыток в формате: 
+      `номер попытки | предложенная буква | результат`
+
+* * *
+
+* Режим работы приложения должны определяться при запуске по аргументам командной строки:
+    * `--new`. Новая игра. Этот же режим используется по умолчанию, если программа запускается без параметров.
+    * `--list`. Вывод списка всех сохраненных игр.
+    * `--replay id`. Повтор игры с идентификатором id.
+    * `--help`. Вывод краткой информации о приложении и доступных ключах для запуска в разных режимах.
+
+* * *
+
+## Требования
+
+Минимальная версия PHP: 7.4.13 \
+Минимальная версия Composer: 2.1.6
+
+* * *
+
+## Инструкция по установке и запуску игры
+
+Из Github:
+
+1. Склонировать проект на локальную машину;
+2. Установить composer, если он не установлен;
+3. Перейти в корневой каталог;
+4. Выполнить в консоли команду `composer update`;
+5. Перейти в каталог bin из корнегого каталога и запустить файл cold-hot.bat.
+
+Из Packagist:
+
+1. Установить composer, если он не установлен;
+2. Перейти в каталог, в который вы будете клонировать проект;
+3. Выполнить команду `composer create-project nastyalover/cold-hot`;
+4. Перейти в каталог bin;
+5. Запустить файл cold-hot.bat.
+
+* * *
+
+## Ссылки
+
+Packagist: <https://packagist.org/packages/nastyalover/cold-hot>
+--------------------------------------------------
+Check path: composer.json
+{
+  "name": "nastyalover/cold-hot",
+  "require": {
+    "wp-cli/php-cli-tools": "^0.11.13"
+  },
+  "type": "project",
+  "bin": [
+    "bin/cold_hot.php"
+  ],
+  "autoload": {
+    "files": [
+      "src/Controller.php",
+      "src/View.php"
+    ]
+  }
+}
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+--------------------------------------------------
+Total ok: 3
+Total error: 0
+--------------------------------------------------
+Task03
+task from branch: Task03
+creation date: 12/06/2022 16:31:58
+Everything up-to-date
+Everything up-to-date
+=====================================================
+/home/andrey/labs_402/402_Chulkina_AV
+Из github.com-mrsu:andpop-mrsu/402_Chulkina_AV
+Из github.com-mrsu:andpop-mrsu/402_Chulkina_AV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Chulkina_AV/Task02
+--------------------------------------------------
+Check path: README.md
+# Описание проекта
+
+Написать программу для игры "Холодно-горячо"(cold-hot). Игрок пытается угадать случайное трехзначное число (без повторяющихся цифр), сгенерированное компьютером. После каждой попытки компьютер предоставляет игроку подсказки трех типов:
+
+* * *
+
+* "Холодно". Ни одна цифра не отгадана.
+* "Тепло" Одна цифра отгадана, но не отгадана ее позиция. 
+* "Горячо". Одна цифра и ее позиция отгадана.
+На каждом ходе компьютер должен выдать три подсказки, отсортированные в алфавитном порядке. Если секретное число 456, а предположение игрока — 546, подсказки будут иметь вид «Горячо Тепло Тепло». Подсказка «Горячо» относится к 6, а «Тепло Тепло» — к 4 и 5.
+
+* * *
+
+* Информация о датах и исходах всех партий, а также о всех попытках, сделанных во время игры, должна сохраняться в базе данных.
+* Для каждой игры в базе должна храниться следующая информация:
+    * Дата игры
+    * Имя игрока
+    * Загаданное компьютером слово
+    * Исход игры (угадал/не угадал)
+    * Запись попыток в формате: 
+      `номер попытки | предложенная буква | результат`
+
+* * *
+
+* Режим работы приложения должны определяться при запуске по аргументам командной строки:
+    * `--new`. Новая игра. Этот же режим используется по умолчанию, если программа запускается без параметров.
+    * `--list`. Вывод списка всех сохраненных игр.
+    * `--replay id`. Повтор игры с идентификатором id.
+    * `--help`. Вывод краткой информации о приложении и доступных ключах для запуска в разных режимах.
+
+* * *
+
+## Требования
+
+Минимальная версия PHP: 7.4.13 \
+Минимальная версия Composer: 2.1.6
+
+* * *
+
+## Инструкция по установке и запуску игры
+
+Из Github:
+
+1. Склонировать проект на локальную машину;
+2. Установить composer, если он не установлен;
+3. Перейти в корневой каталог;
+4. Выполнить в консоли команду `composer update`;
+5. Перейти в каталог bin из корнегого каталога и запустить файл cold-hot.bat.
+
+Из Packagist:
+
+1. Установить composer, если он не установлен;
+2. Перейти в каталог, в который вы будете клонировать проект;
+3. Выполнить команду `composer create-project nastyalover/cold-hot`;
+4. Перейти в каталог bin;
+5. Запустить файл cold-hot.bat.
+
+* * *
+
+## Ссылки
+
+Packagist: <https://packagist.org/packages/nastyalover/cold-hot>
+--------------------------------------------------
+Check path: composer.json
+{
+  "name": "nastyalover/cold-hot",
+  "require": {
+    "wp-cli/php-cli-tools": "^0.11.13"
+  },
+  "type": "project",
+  "bin": [
+    "bin/cold_hot.php"
+  ],
+  "autoload": {
+    "files": [
+      "src/Controller.php",
+      "src/View.php"
+    ]
+  }
+}
+--------------------------------------------------
+Check path: src/Controller.php
+<?php
+    namespace arever\cold_hot\Controller;
+    use function arever\cold_hot\View\showGame;
+
+    function startGame(){
+        echo "Game started".PHP_EOL;
+        showGame();
+    }
+?>
+--------------------------------------------------
+Check path: src/View.php
+<?php
+    namespace arever\cold_hot\View;
+
+    function showGame(){
+        echo "Game shown".PHP_EOL;
+    }
+?>
+--------------------------------------------------
+Total ok: 4
+Total error: 0
+--------------------------------------------------
+Task02
+task from branch: Task02
+creation date: 12/06/2022 16:31:07
+Everything up-to-date
+Everything up-to-date
 402_Demidov_VA
 402_Eskin_DS
+=====================================================
+/home/andrey/labs_402/402_Eskin_DS
+Из github.com-mrsu:andpop-mrsu/402_Eskin_DS
+Из github.com-mrsu:andpop-mrsu/402_Eskin_DS
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   2c9ca73..06a5f81  master     -> teacher/master
+   2c9ca73..06a5f81  master     -> teacher/master
+Обновление 2c9ca73..06a5f81
+Fast-forward
+ task05.md | 24 +++++++++++++++++++
+ task06.md | 29 +++++++++++++++++++++++
+ task07.md | 27 +++++++++++++++++++++
+ task08.md | 80 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 4 files changed, 160 insertions(+)
+ create mode 100644 task05.md
+ create mode 100644 task06.md
+ create mode 100644 task07.md
+ create mode 100644 task08.md
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/DmitryEskin1/402_Eskin_DS
+Из https://github.com/DmitryEskin1/402_Eskin_DS
+   2c9ca73..4bd0e4c  Task01     -> student/Task01
+   2c9ca73..4bd0e4c  Task01     -> student/Task01
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     Task07     -> student/Task07
+Merge made by the 'recursive' strategy.
+ Task01/README.md                         |  32 +++--
+ Task01/self-logger.bat                   |   8 +-
+ Task01/task1.php                         |  34 +++--
+ Task02/guess_number/README.md            |  56 ++++++++
+ Task02/guess_number/bin/guess-number.bat |   3 +
+ Task02/guess_number/bin/guess-number.php |   9 ++
+ Task02/guess_number/composer.json        |  22 ++++
+ Task02/guess_number/composer.lock        |  73 +++++++++++
+ Task02/guess_number/src/Controller.php   |  10 ++
+ Task02/guess_number/src/View.php         |   8 ++
+ Task03/guess_number/README.md            |  56 ++++++++
+ Task03/guess_number/bin/guess-number.bat |   3 +
+ Task03/guess_number/bin/guess-number.php |  12 ++
+ Task03/guess_number/composer.json        |  22 ++++
+ Task03/guess_number/src/Controller.php   |  97 ++++++++++++++
+ Task03/guess_number/src/View.php         |  30 +++++
+ Task04/guess_number/.gitignore           |   2 +
+ Task04/guess_number/README.md            |  78 +++++++++++
+ Task04/guess_number/bin/guess-number.bat |   3 +
+ Task04/guess_number/bin/guess-number.php |  12 ++
+ Task04/guess_number/composer.json        |  24 ++++
+ Task04/guess_number/src/Controller.php   |  14 ++
+ Task04/guess_number/src/DB.php           | 154 ++++++++++++++++++++++
+ Task04/guess_number/src/Model.php        | 126 ++++++++++++++++++
+ Task04/guess_number/src/View.php         |  98 ++++++++++++++
+ Task05/guess_number/README.md            |  80 +++++++++++
+ Task05/guess_number/bin/guess-number.bat |   3 +
+ Task05/guess_number/bin/guess-number.php |  13 ++
+ Task05/guess_number/composer.json        |  25 ++++
+ Task05/guess_number/src/Controller.php   |  14 ++
+ Task05/guess_number/src/DB.php           | 145 ++++++++++++++++++++
+ Task05/guess_number/src/Model.php        | 118 +++++++++++++++++
+ Task05/guess_number/src/View.php         | 100 ++++++++++++++
+ Task06/README.md                         |  15 +++
+ Task06/index.html                        |  56 ++++++++
+ Task06/src/Model.js                      |  63 +++++++++
+ Task06/src/View.js                       |  75 +++++++++++
+ Task06/src/main.js                       |  21 +++
+ Task06/style.css                         | 151 +++++++++++++++++++++
+ Task07/README.md                         |  15 +++
+ Task07/index.html                        |  74 +++++++++++
+ Task07/src/DB.js                         | 219 +++++++++++++++++++++++++++++++
+ Task07/src/Model.js                      |  81 ++++++++++++
+ Task07/src/View.js                       | 105 +++++++++++++++
+ Task07/src/main.js                       |  34 +++++
+ Task07/style.css                         | 149 +++++++++++++++++++++
+ 46 files changed, 2508 insertions(+), 34 deletions(-)
+ create mode 100644 Task02/guess_number/README.md
+ create mode 100644 Task02/guess_number/bin/guess-number.bat
+ create mode 100644 Task02/guess_number/bin/guess-number.php
+ create mode 100644 Task02/guess_number/composer.json
+ create mode 100644 Task02/guess_number/composer.lock
+ create mode 100644 Task02/guess_number/src/Controller.php
+ create mode 100644 Task02/guess_number/src/View.php
+ create mode 100644 Task03/guess_number/README.md
+ create mode 100644 Task03/guess_number/bin/guess-number.bat
+ create mode 100644 Task03/guess_number/bin/guess-number.php
+ create mode 100644 Task03/guess_number/composer.json
+ create mode 100644 Task03/guess_number/src/Controller.php
+ create mode 100644 Task03/guess_number/src/View.php
+ create mode 100644 Task04/guess_number/.gitignore
+ create mode 100644 Task04/guess_number/README.md
+ create mode 100644 Task04/guess_number/bin/guess-number.bat
+ create mode 100644 Task04/guess_number/bin/guess-number.php
+ create mode 100644 Task04/guess_number/composer.json
+ create mode 100644 Task04/guess_number/src/Controller.php
+ create mode 100644 Task04/guess_number/src/DB.php
+ create mode 100644 Task04/guess_number/src/Model.php
+ create mode 100644 Task04/guess_number/src/View.php
+ create mode 100644 Task05/guess_number/README.md
+ create mode 100644 Task05/guess_number/bin/guess-number.bat
+ create mode 100644 Task05/guess_number/bin/guess-number.php
+ create mode 100644 Task05/guess_number/composer.json
+ create mode 100644 Task05/guess_number/src/Controller.php
+ create mode 100644 Task05/guess_number/src/DB.php
+ create mode 100644 Task05/guess_number/src/Model.php
+ create mode 100644 Task05/guess_number/src/View.php
+ create mode 100644 Task06/README.md
+ create mode 100644 Task06/index.html
+ create mode 100644 Task06/src/Model.js
+ create mode 100644 Task06/src/View.js
+ create mode 100644 Task06/src/main.js
+ create mode 100644 Task06/style.css
+ create mode 100644 Task07/README.md
+ create mode 100644 Task07/index.html
+ create mode 100644 Task07/src/DB.js
+ create mode 100644 Task07/src/Model.js
+ create mode 100644 Task07/src/View.js
+ create mode 100644 Task07/src/main.js
+ create mode 100644 Task07/style.css
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Eskin_DS/Task07
+--------------------------------------------------
+Check path: README.md
+## Описание проекта
+
+* * *
+Игра "Угадай число". Компьютер загадывает число в диапазоне от 1 до 10. Игрок должен угадать это число за несколько попыток (максимальное количество попыток равно трём). После каждой попытки компьютер сообщает, было ли введённое число больше или меньше загаданного.
+
+* * *
+
+* Требования к игре:
+    * Браузер с поддержкой JS.
+
+* * * 
+
+* Инструкция по запуску игры: 
+    * Перейти по ссылке : https://DmitryEskin1.github.io/JsAppTask07/
+    * Следовать указанием игры.
+--------------------------------------------------
+Total ok: 1
+Total error: 0
+--------------------------------------------------
+Task07
+task from branch: Task07
+creation date: 12/04/2022 16:47:02
+To github.com-mrsu:andpop-mrsu/402_Eskin_DS.git
+To github.com-mrsu:andpop-mrsu/402_Eskin_DS.git
+   06a5f81..b2e3b6b  master -> master
+   06a5f81..b2e3b6b  master -> master
+=====================================================
+/home/andrey/labs_402/402_Eskin_DS
+Из github.com-mrsu:andpop-mrsu/402_Eskin_DS
+Из github.com-mrsu:andpop-mrsu/402_Eskin_DS
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Eskin_DS/Task06
+--------------------------------------------------
+Check path: README.md
+## Описание проекта
+
+* * *
+Игра "Угадай число". Компьютер загадывает число в диапазоне от 1 до 10. Игрок должен угадать это число за несколько попыток (максимальное количество попыток равно трём). После каждой попытки компьютер сообщает, было ли введённое число больше или меньше загаданного.
+
+* * *
+
+* Требования к игре:
+    * Браузер с поддержкой JS.
+
+* * * 
+
+* Инструкция по запуску игры: 
+    * Перейти по ссылке : https://DmitryEskin1.github.io/JsAppTask06/
+    * Следовать указанием игры.
+--------------------------------------------------
+Total ok: 1
+Total error: 0
+--------------------------------------------------
+Task06
+task from branch: Task06
+creation date: 12/04/2022 16:46:15
+Everything up-to-date
+Everything up-to-date
+=====================================================
+/home/andrey/labs_402/402_Eskin_DS
+Из github.com-mrsu:andpop-mrsu/402_Eskin_DS
+Из github.com-mrsu:andpop-mrsu/402_Eskin_DS
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Eskin_DS/Task05
+--------------------------------------------------
+Check path: README.md
+## Описание проекта
+
+* * *
+Написать программу для игры "Угадай число" (guess-number). Компьютер загадывает число в диапазоне от 1 до максимального числа, заданного в настройках. Игрок должен угадать это число за несколько попыток (максимальное количество попыток задано в настройках). После каждой попытки компьютер сообщает, было ли введенное числе больше или меньше загаданного.
+
+* * *
+
+* В программе реализованы шесть режимов, которым соответствуют ключи:
+    * `--new`. Новая игра.
+    * `--list`. Вывод списка всех сохраненных игр.
+    * `--list winners`. Вывод списка всех игр, в которых победил человек.
+    * `--list looser`. Вывод списка всех игр, в которых человек проиграл.
+    * `--top`. Вывод статистики по игрокам. Для каждого игрока нужно считается количество побед и проигрышей, список сортируется по количеству побед (первые позиции занимают игроки с наибольшим количеством побед).
+    * `--replay id`. Повтор игры с идентификатором id.
+
+    * * * 
+
+* Информация о датах и исходах всех партий, а также о всех попытках, сделанных во время игры, должна сохраняться в базе данных.
+* Для каждой игры в базе должна храниться следующая информация:
+    * Дата игры
+    * Имя игрока
+    * Максимально возможное число
+    * Загаданное компьютером число
+    * Исход игры (угадал/не угадал)
+    * Запись попыток в формате: 
+      `номер попытки | предложенное число | ответ компьютера`
+* В программе должны быть реализованы шесть режимов:
+    * Новая игра.
+    * Вывод списка всех сохраненных игр.
+    * Вывод списка всех игр, в которых победил человек.
+    * Вывод списка всех игр, в которых человек проиграл.
+    * Вывод статистики по игрокам. Для каждого игрока нужно считается количество побед и проигрышей, список сортируется по количеству побед (первые позиции занимают игроки с наибольшим количеством побед).
+    * Повтор любой сохранённой партии (то есть повтор всех ходов из этой партии).
+
+    * * * 
+
+    ## База данных
+
+* Информация об играх и всех ходах сохраняется автоматически в базу данных GN.db, находящуюся в каталоге bin.
+* Для просмотра данных из БД используйте командную строку и запускайте файл guess-number.php находящийся в каталоге bin со следующими коммандами:
+    * Для просмотра всех игр используйте комманду `--list`.
+    * `--list winners`. Вывод списка всех игр, в которых победил человек.
+    * `--list looser`. Вывод списка всех игр, в которых человек проиграл.
+    * `--top`. Вывод статистики по игрокам. Для каждого игрока нужно считается количество побед и проигрышей, список сортируется по количеству побед (первые позиции занимаю игроки с наибольшим количеством побед).
+    * `--replay id`. Повтор игры с идентификатором id.
+    
+    * * *
+
+    ## Требования
+
+    Минимальная версия PHP: 7.4 и выше \
+    Минимальная версия Composer: 2.1.6 \
+    Установленный RedBean ORM
+
+    * * * 
+
+    ## Инструкция по установке и запуску игры
+
+    Из Github:
+
+1. Склонировать проект на локальную машину;
+2. Установить composer, если он не установлен;
+3. Перейти в корневой каталог;
+4. Выполнить в консоли команду `composer install` для установки RedBean ORM;
+5. Выполнить в консоли команду `composer update`;
+6. Перейти в каталог bin из корнегого каталога и запустить файл guess-number.bat.
+
+Из Packagist:
+
+1. Установить composer, если он не установлен;
+2. Перейти в каталог, в который вы будете клонировать проект;
+3. Выполнить команду `composer require dmitryeskin1/guess-number`;
+4. Перейти в каталог vendor/bin;
+5. Запустить файл guess-number.bat.
+
+* * *
+
+## Ссылки
+
+Packagist: <https://packagist.org/packages/dmitryeskin1/guess-number>
+--------------------------------------------------
+Check path: composer.json
+{
+  "name": "dmitryeskin1/guess_number",
+  "type": "project",
+  "authors": [
+    {
+      "name": "dmitryeskin1"
+    }
+  ],
+  "description": "",
+  "require": {
+    "wp-cli/php-cli-tools": "^0.11.13",
+    "gabordemooij/redbean": "dev-master"
+  },
+  "bin": [
+    "bin/guess-number.php"
+  ],
+  "autoload": {
+    "files": [
+      "src/Controller.php",
+      "src/View.php",
+      "src/Model.php",
+      "src/DB.php"
+    ]
+  }
+}
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+--------------------------------------------------
+Total ok: 3
+Total error: 0
+--------------------------------------------------
+Task05
+task from branch: Task05
+creation date: 12/04/2022 16:45:13
+Everything up-to-date
+Everything up-to-date
+=====================================================
+/home/andrey/labs_402/402_Eskin_DS
+Из github.com-mrsu:andpop-mrsu/402_Eskin_DS
+Из github.com-mrsu:andpop-mrsu/402_Eskin_DS
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Eskin_DS/Task04
+--------------------------------------------------
+Check path: README.md
+## Описание проекта
+
+* * *
+Написать программу для игры "Угадай число" (guess-number). Компьютер загадывает число в диапазоне от 1 до максимального числа, заданного в настройках. Игрок должен угадать это число за несколько попыток (максимальное количество попыток задано в настройках). После каждой попытки компьютер сообщает, было ли введенное числе больше или меньше загаданного.
+
+* * *
+
+* В программе реализованы шесть режимов, которым соответствуют ключи:
+    * `--new`. Новая игра.
+    * `--list`. Вывод списка всех сохраненных игр.
+    * `--list winners`. Вывод списка всех игр, в которых победил человек.
+    * `--list looser`. Вывод списка всех игр, в которых человек проиграл.
+    * `--top`. Вывод статистики по игрокам. Для каждого игрока нужно считается количество побед и проигрышей, список сортируется по количеству побед (первые позиции занимают игроки с наибольшим количеством побед).
+    * `--replay id`. Повтор игры с идентификатором id.
+
+    * * * 
+
+* Информация о датах и исходах всех партий, а также о всех попытках, сделанных во время игры, должна сохраняться в базе данных.
+* Для каждой игры в базе должна храниться следующая информация:
+    * Дата игры
+    * Имя игрока
+    * Максимально возможное число
+    * Загаданное компьютером число
+    * Исход игры (угадал/не угадал)
+    * Запись попыток в формате: 
+      `номер попытки | предложенное число | ответ компьютера`
+* В программе должны быть реализованы шесть режимов:
+    * Новая игра.
+    * Вывод списка всех сохраненных игр.
+    * Вывод списка всех игр, в которых победил человек.
+    * Вывод списка всех игр, в которых человек проиграл.
+    * Вывод статистики по игрокам. Для каждого игрока нужно считается количество побед и проигрышей, список сортируется по количеству побед (первые позиции занимают игроки с наибольшим количеством побед).
+    * Повтор любой сохранённой партии (то есть повтор всех ходов из этой партии).
+
+    * * * 
+
+    ## База данных
+
+* Информация об играх и всех ходах сохраняется автоматически в базу данных GN.db, находящуюся в каталоге bin.
+* Для просмотра данных из БД используйте командную строку и запускайте файл guess-number.php находящийся в каталоге bin со следующими коммандами:
+    * Для просмотра всех игр используйте комманду `--list`.
+    * `--list winners`. Вывод списка всех игр, в которых победил человек.
+    * `--list looser`. Вывод списка всех игр, в которых человек проиграл.
+    * `--top`. Вывод статистики по игрокам. Для каждого игрока нужно считается количество побед и проигрышей, список сортируется по количеству побед (первые позиции занимаю игроки с наибольшим количеством побед).
+    * `--replay id`. Повтор игры с идентификатором id.
+    
+    * * *
+
+    ## Требования
+
+    Минимальная версия PHP: 7.4 и выше \
+    Минимальная версия Composer: 2.1.6
+
+    * * * 
+
+    ## Инструкция по установке и запуску игры
+
+    Из Github:
+
+1. Склонировать проект на локальную машину;
+2. Установить composer, если он не установлен;
+3. Перейти в корневой каталог;
+4. Выполнить в консоли команду `composer update`;
+5. Перейти в каталог bin из корнегого каталога и запустить файл guess-number.bat.
+
+Из Packagist:
+
+1. Установить composer, если он не установлен;
+2. Перейти в каталог, в который вы будете клонировать проект;
+3. Выполнить команду `composer require dmitryeskin1/guess-number`;
+4. Перейти в каталог vendor/bin;
+5. Запустить файл guess-number.bat.
+
+* * *
+
+## Ссылки
+
+Packagist: <https://packagist.org/packages/dmitryeskin1/guess-number>
+--------------------------------------------------
+Check path: composer.json
+{
+  "name": "dmitryeskin1/guess_number",
+  "type": "project",
+  "authors": [
+    {
+      "name": "dmitryeskin1"
+    }
+  ],
+  "description": "",
+  "require": {
+    "wp-cli/php-cli-tools": "^0.11.13"
+  },
+  "bin": [
+    "bin/guess-number.php"
+  ],
+  "autoload": {
+    "files": [
+      "src/Controller.php",
+      "src/View.php",
+      "src/Model.php",
+      "src/DB.php"
+    ]
+  }
+}
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+FILE: /home/andrey/labs_402/402_Eskin_DS/Task04/guess_number/src/DB.php
+--------------------------------------------------------------------------------
+FOUND 22 ERRORS AFFECTING 17 LINES
+--------------------------------------------------------------------------------
+  13 | ERROR | [x] Parentheses must be used when instantiating a new class
+  38 | ERROR | [x] Inline control structures are not allowed
+  40 | ERROR | [x] Expected 1 space(s) after ELSE keyword; newline found
+  40 | ERROR | [x] Inline control structures are not allowed
+  41 | ERROR | [x] Parentheses must be used when instantiating a new class
+  46 | ERROR | [x] Parentheses must be used when instantiating a new class
+  76 | ERROR | [x] Parentheses must be used when instantiating a new class
+  95 | ERROR | [x] Parentheses must be used when instantiating a new class
+ 104 | ERROR | [x] Parentheses must be used when instantiating a new class
+ 106 | ERROR | [x] Inline control structures are not allowed
+ 108 | ERROR | [x] Inline control structures are not allowed
+ 110 | ERROR | [x] Expected 1 space(s) after ELSE keyword; newline found
+ 110 | ERROR | [x] Inline control structures are not allowed
+ 113 | ERROR | [x] Expected 1 space(s) after WHILE keyword; 0 found
+ 113 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
+ 126 | ERROR | [x] Expected 1 space(s) after WHILE keyword; 0 found
+ 126 | ERROR | [x] Inline control structures are not allowed
+ 133 | ERROR | [x] Parentheses must be used when instantiating a new class
+ 141 | ERROR | [x] Expected 1 space(s) after WHILE keyword; 0 found
+ 141 | ERROR | [x] Inline control structures are not allowed
+ 147 | ERROR | [x] Parentheses must be used when instantiating a new class
+ 151 | ERROR | [x] Inline control structures are not allowed
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 22 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /home/andrey/labs_402/402_Eskin_DS/Task04/guess_number/src/Model.php
+--------------------------------------------------------------------------------
+FOUND 30 ERRORS AFFECTING 25 LINES
+--------------------------------------------------------------------------------
+  30 | ERROR | [x] Expected 1 space(s) after WHILE keyword; 0 found
+  30 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
+  34 | ERROR | [x] Expected 1 space(s) after WHILE keyword; 0 found
+  34 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
+  40 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
+  48 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
+  52 | ERROR | [x] Expected 1 space after closing brace; newline found
+  53 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
+  62 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
+  75 | ERROR | [x] Inline control structures are not allowed
+  77 | ERROR | [x] Inline control structures are not allowed
+  79 | ERROR | [x] Inline control structures are not allowed
+  81 | ERROR | [x] Inline control structures are not allowed
+  83 | ERROR | [x] Expected 1 space(s) after ELSE keyword; newline found
+  83 | ERROR | [x] Inline control structures are not allowed
+  91 | ERROR | [x] Expected 1 space(s) after WHILE keyword; 0 found
+  91 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
+  93 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
+  97 | ERROR | [x] Expected 1 space after closing brace; newline found
+  98 | ERROR | [x] Inline control structures are not allowed
+ 100 | ERROR | [x] Inline control structures are not allowed
+ 102 | ERROR | [x] Inline control structures are not allowed
+ 104 | ERROR | [x] Inline control structures are not allowed
+ 106 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
+ 115 | ERROR | [x] Inline control structures are not allowed
+ 117 | ERROR | [x] Expected 1 space(s) after ELSE keyword; newline found
+ 117 | ERROR | [x] Inline control structures are not allowed
+ 119 | ERROR | [x] Blank line found at end of control structure
+ 120 | ERROR | [x] Expected 1 space after closing brace; newline found
+ 121 | ERROR | [x] Inline control structures are not allowed
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 30 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /home/andrey/labs_402/402_Eskin_DS/Task04/guess_number/src/View.php
+-------------------------------------------------------------------------------
+FOUND 12 ERRORS AFFECTING 10 LINES
+-------------------------------------------------------------------------------
+ 35 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
+ 42 | ERROR | [x] Expected 1 space after closing brace; newline found
+ 43 | ERROR | [x] Expected 1 space(s) after ELSE keyword; newline found
+ 43 | ERROR | [x] Inline control structures are not allowed
+ 51 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
+ 55 | ERROR | [x] Expected 1 space after closing brace; newline found
+ 56 | ERROR | [x] Expected 1 space(s) after ELSE keyword; newline found
+ 65 | ERROR | [x] Inline control structures are not allowed
+ 92 | ERROR | [x] Inline control structures are not allowed
+ 94 | ERROR | [x] Inline control structures are not allowed
+ 96 | ERROR | [x] Expected 1 space(s) after ELSE keyword; newline found
+ 96 | ERROR | [x] Inline control structures are not allowed
+-------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 12 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------
+
+Time: 55ms; Memory: 6MB
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+Task04
+task from branch: Task04
+creation date: 12/04/2022 16:44:20
+Everything up-to-date
+Everything up-to-date
+=====================================================
+/home/andrey/labs_402/402_Eskin_DS
+Из github.com-mrsu:andpop-mrsu/402_Eskin_DS
+Из github.com-mrsu:andpop-mrsu/402_Eskin_DS
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Eskin_DS/Task03
+--------------------------------------------------
+Check path: README.md
+## Описание проекта
+
+* * *
+Написать программу для игры "Угадай число" (guess-number). Компьютер загадывает число в диапазоне от 1 до максимального числа, заданного в настройках. Игрок должен угадать это число за несколько попыток (максимальное количество попыток задано в настройках). После каждой попытки компьютер сообщает, было ли введенное числе больше или меньше загаданного.
+
+* * *
+
+* Информация о датах и исходах всех партий, а также о всех попытках, сделанных во время игры, должна сохраняться в базе данных.
+* Для каждой игры в базе должна храниться следующая информация:
+    * Дата игры
+    * Имя игрока
+    * Максимально возможное число
+    * Загаданное компьютером число
+    * Исход игры (угадал/не угадал)
+    * Запись попыток в формате: 
+      `номер попытки | предложенное число | ответ компьютера`
+* В программе должны быть реализованы шесть режимов:
+    * Новая игра.
+    * Вывод списка всех сохраненных игр.
+    * Вывод списка всех игр, в которых победил человек.
+    * Вывод списка всех игр, в которых человек проиграл.
+    * Вывод статистики по игрокам. Для каждого игрока нужно посчитать количество побед и проигрышей, список отсортировать по количеству побед (чемпионы располагаются вверху списка).
+    * Повтор любой сохраненной партии (то есть повтор всех ходов из этой партии).
+
+    * * * 
+
+    ## Требования
+
+    Минимальная версия PHP: 7.4 и выше \
+    Минимальная версия Composer: 2.1.6
+
+    * * * 
+
+    ## Инструкция по установке и запуску игры
+
+    Из Github:
+
+1. Склонировать проект на локальную машину;
+2. Установить composer, если он не установлен;
+3. Перейти в корневой каталог;
+4. Выполнить в консоли команду `composer update`;
+5. Перейти в каталог bin из корнегого каталога и запустить файл guess-number.bat.
+
+Из Packagist:
+
+1. Установить composer, если он не установлен;
+2. Перейти в каталог, в который вы будете клонировать проект;
+3. Выполнить команду `composer require dmitryeskin1/guess_number`;
+4. Перейти в каталог vendor/bin;
+5. Запустить файл guess-number.bat.
+
+* * *
+
+## Ссылки
+
+Packagist: <https://packagist.org/packages/dmitryeskin1/guess-number>
+--------------------------------------------------
+Check path: composer.json
+{
+  "name": "dmitryeskin1/guess_number",
+  "type": "project",
+  "authors": [
+    {
+      "name": "dmitryeskin1"
+    }
+  ],
+  "description": "",
+  "require": {
+    "wp-cli/php-cli-tools": "^0.11.11"
+  },
+  "bin": [
+    "bin/guess-number.php"
+  ],
+  "autoload": {
+    "files": [
+      "src/Controller.php",
+      "src/View.php"
+    ]
+  }
+}
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+--------------------------------------------------
+Total ok: 3
+Total error: 0
+--------------------------------------------------
+Task03
+task from branch: Task03
+creation date: 12/04/2022 16:43:09
+Everything up-to-date
+Everything up-to-date
+=====================================================
+/home/andrey/labs_402/402_Eskin_DS
+Из github.com-mrsu:andpop-mrsu/402_Eskin_DS
+Из github.com-mrsu:andpop-mrsu/402_Eskin_DS
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Eskin_DS/Task02
+--------------------------------------------------
+Check path: README.md
+## Описание проекта
+
+* * *
+Написать программу для игры "Угадай число" (guess-number). Компьютер загадывает число в диапазоне от 1 до максимального числа, заданного в настройках. Игрок должен угадать это число за несколько попыток (максимальное количество попыток задано в настройках). После каждой попытки компьютер сообщает, было ли введенное числе больше или меньше загаданного.
+
+* * *
+
+* Информация о датах и исходах всех партий, а также о всех попытках, сделанных во время игры, должна сохраняться в базе данных.
+* Для каждой игры в базе должна храниться следующая информация:
+    * Дата игры
+    * Имя игрока
+    * Максимально возможное число
+    * Загаданное компьютером число
+    * Исход игры (угадал/не угадал)
+    * Запись попыток в формате: 
+      `номер попытки | предложенное число | ответ компьютера`
+* В программе должны быть реализованы шесть режимов:
+    * Новая игра.
+    * Вывод списка всех сохраненных игр.
+    * Вывод списка всех игр, в которых победил человек.
+    * Вывод списка всех игр, в которых человек проиграл.
+    * Вывод статистики по игрокам. Для каждого игрока нужно посчитать количество побед и проигрышей, список отсортировать по количеству побед (чемпионы располагаются вверху списка).
+    * Повтор любой сохраненной партии (то есть повтор всех ходов из этой партии).
+
+    * * * 
+
+    ## Требования
+
+    Минимальная версия PHP: 8.0 \
+    Минимальная версия Composer: 2.1.6
+
+    * * * 
+
+    ## Инструкция по установке и запуску игры
+
+    Из Github:
+
+1. Склонировать проект на локальную машину;
+2. Установить composer, если он не установлен;
+3. Перейти в корневой каталог;
+4. Выполнить в консоли команду `composer update`;
+5. Перейти в каталог bin из корнегого каталога и запустить файл guess-number.bat.
+
+Из Packagist:
+
+1. Установить composer, если он не установлен;
+2. Перейти в каталог, в который вы будете клонировать проект;
+3. Выполнить команду `composer require dmitryeskin1/guess_number`;
+4. Перейти в каталог vendor/bin;
+5. Запустить файл guess-number.bat.
+
+* * *
+
+## Ссылки
+
+Packagist: <https://packagist.org/packages/dmitryeskin1/guess-number>
+--------------------------------------------------
+Check path: composer.json
+{
+  "name": "dmitryeskin1/guess-number",
+  "type": "project",
+  "authors": [
+    {
+      "name": "dmitryeskin1"
+    }
+  ],
+  "description": "",
+  "require": {
+    "wp-cli/php-cli-tools": "^0.11.11"
+  },
+  "bin": [
+    "bin/guess-number.php"
+  ],
+  "autoload": {
+    "files": [
+      "src/Controller.php",
+      "src/View.php"
+    ]
+  }
+}
+--------------------------------------------------
+Check path: src/Controller.php
+<?php
+
+namespace dmitryeskin1\guess_number\Controller;
+use function dmitryeskin1\guess_number\View\showGame;
+
+function startGame()
+{
+   echo "Game started" .PHP_EOL;
+   showGame();
+}
+--------------------------------------------------
+Check path: src/View.php
+<?php
+
+namespace dmitryeskin1\guess_number\View;
+
+function showGame()
+{
+    echo "Game shown".PHP_EOL;
+}
+--------------------------------------------------
+Total ok: 4
+Total error: 0
+--------------------------------------------------
+Task02
+task from branch: Task02
+creation date: 12/04/2022 16:42:11
+Everything up-to-date
+Everything up-to-date
+=====================================================
+/home/andrey/labs_402/402_Eskin_DS
+Из github.com-mrsu:andpop-mrsu/402_Eskin_DS
+Из github.com-mrsu:andpop-mrsu/402_Eskin_DS
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Eskin_DS/Task01
+--------------------------------------------------
+Check path: self-logger.bat
+--------------------------------------------------
+Check path: task1.php
+--------------------------------------------------
+Check path: README.md
+## Описание проекта
+
+* * *
+Написать консольный вариант для игры \"Виселица\" (согласно общей спецификации) с сохранением информации о партиях в базе данных SQLite.
+    
+Псевдографика для игры:
+    
+    +---+    +---+    +---+    +---+    +---+    +---+    +---+
+        |    0   |    0   |    0   |    0   |    0   |    0   |
+        |        |    |   |   /|   |   /|\  |   /|\  |   /|\  |
+        |        |        |        |        |   /    |   / \  |
+       ===      ===      ===      ===      ===      ===      ===
+* * *     
+Режим работы приложения должны определяться при запуске по аргументам командной строки:
+  * new (краткий параметр -n). Новая игра. Этот же режим используется по умолчанию, если программа запускается без параметров.
+  * --list (-l). Вывод списка всех сохраненных игр.
+  * --replay id (-r id). Повтор игры с идентификатором id.
+  * --help (-h). Вывод краткой информации о приложении и доступных ключах для запуска в разных режимах.
+--------------------------------------------------
+Check path: README_logger.md
+README_logger.md not found
+--------------------------------------------------
+Total ok: 3
+Total error: 1
+--------------------------------------------------
+Task01
+task from branch: Task01
+creation date: 12/04/2022 16:40:55
+Everything up-to-date
+Everything up-to-date
 402_Gorlienko_NV
+=====================================================
+/home/andrey/labs_402/402_Gorlienko_NV
+Из github.com-mrsu:andpop-mrsu/402_Gorlienko_NV
+Из github.com-mrsu:andpop-mrsu/402_Gorlienko_NV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   d2a2b37..c03dac8  master     -> teacher/master
+   d2a2b37..c03dac8  master     -> teacher/master
+Обновление d2a2b37..c03dac8
+Fast-forward
+ task05.md | 24 +++++++++++++++++++
+ task06.md | 29 +++++++++++++++++++++++
+ task07.md | 27 +++++++++++++++++++++
+ task08.md | 80 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 4 files changed, 160 insertions(+)
+ create mode 100644 task05.md
+ create mode 100644 task06.md
+ create mode 100644 task07.md
+ create mode 100644 task08.md
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/youngkolya/402_Gorlienko_NV
+Из https://github.com/youngkolya/402_Gorlienko_NV
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     Task07     -> student/Task07
+Merge made by the 'recursive' strategy.
+ Task02/.gitignore                      |   2 +
+ Task02/README.md                       |  48 ++++++
+ Task02/bin/tic-tac-toe.bat             |   3 +
+ Task02/bin/tic-tac-toe.php             |  11 ++
+ Task02/composer.json                   |  23 +++
+ Task02/src/Controller.php              |   9 ++
+ Task02/src/View.php                    |   6 +
+ Task03/tic-tac-toe/.gitignore          |   2 +
+ Task03/tic-tac-toe/README.md           |  48 ++++++
+ Task03/tic-tac-toe/bin/tic-tac-toe.bat |   3 +
+ Task03/tic-tac-toe/bin/tic-tac-toe.php |  11 ++
+ Task03/tic-tac-toe/composer.json       |  23 +++
+ Task03/tic-tac-toe/composer.lock       |  73 +++++++++
+ Task03/tic-tac-toe/src/Controller.php  | 128 ++++++++++++++++
+ Task03/tic-tac-toe/src/Model.php       | 183 +++++++++++++++++++++++
+ Task03/tic-tac-toe/src/View.php        |  35 +++++
+ Task04/tic-tac-toe/.gitignore          |   2 +
+ Task04/tic-tac-toe/README.md           |  53 +++++++
+ Task04/tic-tac-toe/bin/tic-tac-toe     |  14 ++
+ Task04/tic-tac-toe/composer.json       |  23 +++
+ Task04/tic-tac-toe/composer.lock       |  69 +++++++++
+ Task04/tic-tac-toe/src/Controller.php  | 252 +++++++++++++++++++++++++++++++
+ Task04/tic-tac-toe/src/Model.php       | 257 ++++++++++++++++++++++++++++++++
+ Task04/tic-tac-toe/src/View.php        |  35 +++++
+ Task05/tic-tac-toe/.gitignore          |   2 +
+ Task05/tic-tac-toe/README.md           |  53 +++++++
+ Task05/tic-tac-toe/bin/tic-tac-toe     |  14 ++
+ Task05/tic-tac-toe/composer.json       |  23 +++
+ Task05/tic-tac-toe/composer.lock       |  69 +++++++++
+ Task05/tic-tac-toe/src/Controller.php  | 261 +++++++++++++++++++++++++++++++++
+ Task05/tic-tac-toe/src/Model.php       | 253 ++++++++++++++++++++++++++++++++
+ Task05/tic-tac-toe/src/View.php        |  35 +++++
+ Task06/README.md                       |  19 +++
+ Task06/css/style.css                   |  66 +++++++++
+ Task06/index.html                      |  19 +++
+ Task06/js/Controller.js                | 122 +++++++++++++++
+ Task06/js/Model.js                     |  57 +++++++
+ Task06/js/View.js                      |   3 +
+ Task07/README.md                       |  19 +++
+ Task07/css/style.css                   |  66 +++++++++
+ Task07/index.html                      |  19 +++
+ Task07/js/Controller.js                | 122 +++++++++++++++
+ Task07/js/Model.js                     |  57 +++++++
+ Task07/js/View.js                      |   3 +
+ 44 files changed, 2595 insertions(+)
+ create mode 100644 Task02/.gitignore
+ create mode 100644 Task02/README.md
+ create mode 100644 Task02/bin/tic-tac-toe.bat
+ create mode 100644 Task02/bin/tic-tac-toe.php
+ create mode 100644 Task02/composer.json
+ create mode 100644 Task02/src/Controller.php
+ create mode 100644 Task02/src/View.php
+ create mode 100644 Task03/tic-tac-toe/.gitignore
+ create mode 100644 Task03/tic-tac-toe/README.md
+ create mode 100644 Task03/tic-tac-toe/bin/tic-tac-toe.bat
+ create mode 100644 Task03/tic-tac-toe/bin/tic-tac-toe.php
+ create mode 100644 Task03/tic-tac-toe/composer.json
+ create mode 100644 Task03/tic-tac-toe/composer.lock
+ create mode 100644 Task03/tic-tac-toe/src/Controller.php
+ create mode 100644 Task03/tic-tac-toe/src/Model.php
+ create mode 100644 Task03/tic-tac-toe/src/View.php
+ create mode 100644 Task04/tic-tac-toe/.gitignore
+ create mode 100644 Task04/tic-tac-toe/README.md
+ create mode 100644 Task04/tic-tac-toe/bin/tic-tac-toe
+ create mode 100644 Task04/tic-tac-toe/composer.json
+ create mode 100644 Task04/tic-tac-toe/composer.lock
+ create mode 100644 Task04/tic-tac-toe/src/Controller.php
+ create mode 100644 Task04/tic-tac-toe/src/Model.php
+ create mode 100644 Task04/tic-tac-toe/src/View.php
+ create mode 100644 Task05/tic-tac-toe/.gitignore
+ create mode 100644 Task05/tic-tac-toe/README.md
+ create mode 100644 Task05/tic-tac-toe/bin/tic-tac-toe
+ create mode 100644 Task05/tic-tac-toe/composer.json
+ create mode 100644 Task05/tic-tac-toe/composer.lock
+ create mode 100644 Task05/tic-tac-toe/src/Controller.php
+ create mode 100644 Task05/tic-tac-toe/src/Model.php
+ create mode 100644 Task05/tic-tac-toe/src/View.php
+ create mode 100644 Task06/README.md
+ create mode 100644 Task06/css/style.css
+ create mode 100644 Task06/index.html
+ create mode 100644 Task06/js/Controller.js
+ create mode 100644 Task06/js/Model.js
+ create mode 100644 Task06/js/View.js
+ create mode 100644 Task07/README.md
+ create mode 100644 Task07/css/style.css
+ create mode 100644 Task07/index.html
+ create mode 100644 Task07/js/Controller.js
+ create mode 100644 Task07/js/Model.js
+ create mode 100644 Task07/js/View.js
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Gorlienko_NV/Task07
+--------------------------------------------------
+Check path: README.md
+# Описание проекта
+
+Игра в "Крестики-нолики" (tic-tac-toe) с компьютером на поле произвольного размера (от 3x3 до 10x10).
+Бот делает ход автоматически через 0.4 секунды после того, как Вы сделали ход.
+Крестики всегда ходят первыми.
+Кем Вы будете играть (крестиком или ноликом) выбирается случайным образом.
+
+* * *
+
+## Требования
+
+Браузер с поддержкой JS
+
+* * *
+
+## Инструкция по установке и запуску игры
+
+1. Перейти по ссылке https://youngkolya.github.io/tic-tac-toe-js7/
+2. Приступить к игре
+--------------------------------------------------
+Total ok: 1
+Total error: 0
+--------------------------------------------------
+Task07
+task from branch: Task07
+creation date: 12/06/2022 17:13:38
+To github.com-mrsu:andpop-mrsu/402_Gorlienko_NV.git
+To github.com-mrsu:andpop-mrsu/402_Gorlienko_NV.git
+   c03dac8..083e147  master -> master
+   c03dac8..083e147  master -> master
+=====================================================
+/home/andrey/labs_402/402_Gorlienko_NV
+Из github.com-mrsu:andpop-mrsu/402_Gorlienko_NV
+Из github.com-mrsu:andpop-mrsu/402_Gorlienko_NV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Gorlienko_NV/Task06
+--------------------------------------------------
+Check path: README.md
+# Описание проекта
+
+Игра в "Крестики-нолики" (tic-tac-toe) с компьютером на поле произвольного размера (от 3x3 до 10x10).
+Бот делает ход автоматически через 0.4 секунды после того, как Вы сделали ход.
+Крестики всегда ходят первыми.
+Кем Вы будете играть (крестиком или ноликом) выбирается случайным образом.
+
+* * *
+
+## Требования
+
+Браузер с поддержкой JS
+
+* * *
+
+## Инструкция по установке и запуску игры
+
+1. Перейти по ссылке https://youngkolya.github.io/tic-tac-toe-js6/
+2. Приступить к игре
+--------------------------------------------------
+Total ok: 1
+Total error: 0
+--------------------------------------------------
+Task06
+task from branch: Task06
+creation date: 12/06/2022 17:13:03
+Everything up-to-date
+Everything up-to-date
+=====================================================
+/home/andrey/labs_402/402_Gorlienko_NV
+Из github.com-mrsu:andpop-mrsu/402_Gorlienko_NV
+Из github.com-mrsu:andpop-mrsu/402_Gorlienko_NV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Gorlienko_NV/Task05
+--------------------------------------------------
+Check path: README.md
+# Описание проекта
+
+Игры в "Крестики-нолики" (tic-tac-toe) с компьютером на поле произвольного размера (от 3x3 до 10x10).
+
+* * *
+
+* Для отображения используются символы (фигуры) "X" и "O".
+* Начинают ходить всегда крестики, кем играет человек определяется случайным образом.
+* Информация о датах и исходах всех партий, а также о всех ходах, сделанных во время игры, сохраняется в базе данных SQLite.
+* Для каждой партии в базе хранится следующая информация:
+  * Размер поля
+  * Дата игры
+  * Имя игрока
+  * Какой фигурой играл человек
+  * Какая фигура выиграла в партии
+  * Запись ходов в формате: `номер хода | координата X | координата O`
+* В программе реализованы три режима, которым соответствуют ключи:
+  * `--new`. Новая игра.
+  * `--list`. Вывод списка всех сохраненных партий.
+  * `--replay id`. Повтор игры с идентификатором id.
+
+* * *
+
+## Требования
+
+Минимальная версия PHP: 7.4.7 \
+Минимальная версия Composer: 1.9.3
+
+* * *
+
+## Инструкция по установке и запуску игры
+
+Из Github:
+
+1. Склонировать проект на локальную машину;
+2. Установить composer, если он не установлен;
+3. Перейти в корневой каталог;
+4. Выполнить в консоли команду `composer update`;
+5. Перейти в каталог bin из корнегого каталога и запустить файл tic-tac-toe.bat.
+
+Из Packagist:
+
+1. Установить composer, если он не установлен;
+2. Перейти в каталог, в который вы будете клонировать проект;
+3. Выполнить команду `composer create-project youngkolya/tic-tac-toe`;
+4. Перейти в каталог vendor/bin;
+5. Запустить файл tic-tac-toe.bat.
+
+* * *
+
+## Ссылки
+
+Packagist: <https://packagist.org/packages/youngkolya/tic-tac-toe>
+--------------------------------------------------
+Check path: composer.json
+{
+  "name": "youngkolya/tic-tac-toe",
+  "type": "project",
+  "authors": [
+    {
+      "name": "youngkolya"
+    }
+  ],
+  "description": "",
+  "require": {
+    "wp-cli/php-cli-tools": "^0.11.11"
+  },
+  "bin": [
+    "bin/tic-tac-toe"
+  ],
+  "autoload": {
+    "files": [
+      "src/Controller.php",
+      "src/View.php",
+      "src/Model.php"
+    ]
+  }
+}
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+FILE: /home/andrey/labs_402/402_Gorlienko_NV/Task05/tic-tac-toe/src/Controller.php
+----------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------------------
+  12 | ERROR | [x] Header blocks must not contain blank lines
+ 235 | ERROR | [x] Whitespace found at end of line
+----------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------------------
+
+
+FILE: /home/andrey/labs_402/402_Gorlienko_NV/Task05/tic-tac-toe/src/Model.php
+-------------------------------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 2 LINES
+-------------------------------------------------------------------------------------------
+   7 | ERROR | [x] Header blocks must be separated by a single blank line
+ 250 | ERROR | [x] Expected 1 blank line at end of file; 4 found
+ 250 | ERROR | [x] The closing brace for the class must go on the next line after the body
+-------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------------
+
+Time: 76ms; Memory: 8MB
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+Task05
+task from branch: Task05
+creation date: 12/06/2022 17:12:23
+Everything up-to-date
+Everything up-to-date
+=====================================================
+/home/andrey/labs_402/402_Gorlienko_NV
+Из github.com-mrsu:andpop-mrsu/402_Gorlienko_NV
+Из github.com-mrsu:andpop-mrsu/402_Gorlienko_NV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Gorlienko_NV/Task04
+--------------------------------------------------
+Check path: README.md
+# Описание проекта
+
+Игры в "Крестики-нолики" (tic-tac-toe) с компьютером на поле произвольного размера (от 3x3 до 10x10).
+
+* * *
+
+* Для отображения используются символы (фигуры) "X" и "O".
+* Начинают ходить всегда крестики, кем играет человек определяется случайным образом.
+* Информация о датах и исходах всех партий, а также о всех ходах, сделанных во время игры, сохраняется в базе данных SQLite.
+* Для каждой партии в базе хранится следующая информация:
+  * Размер поля
+  * Дата игры
+  * Имя игрока
+  * Какой фигурой играл человек
+  * Какая фигура выиграла в партии
+  * Запись ходов в формате: `номер хода | координата X | координата O`
+* В программе реализованы три режима, которым соответствуют ключи:
+  * `--new`. Новая игра.
+  * `--list`. Вывод списка всех сохраненных партий.
+  * `--replay id`. Повтор игры с идентификатором id.
+
+* * *
+
+## Требования
+
+Минимальная версия PHP: 7.4.7 \
+Минимальная версия Composer: 1.9.3
+
+* * *
+
+## Инструкция по установке и запуску игры
+
+Из Github:
+
+1. Склонировать проект на локальную машину;
+2. Установить composer, если он не установлен;
+3. Перейти в корневой каталог;
+4. Выполнить в консоли команду `composer update`;
+5. Перейти в каталог bin из корнегого каталога и запустить файл tic-tac-toe.bat.
+
+Из Packagist:
+
+1. Установить composer, если он не установлен;
+2. Перейти в каталог, в который вы будете клонировать проект;
+3. Выполнить команду `composer create-project youngkolya/tic-tac-toe`;
+4. Перейти в каталог vendor/bin;
+5. Запустить файл tic-tac-toe.bat.
+
+* * *
+
+## Ссылки
+
+Packagist: <https://packagist.org/packages/youngkolya/tic-tac-toe>
+--------------------------------------------------
+Check path: composer.json
+{
+  "name": "youngkolya/tic-tac-toe",
+  "type": "project",
+  "authors": [
+    {
+      "name": "youngkolya"
+    }
+  ],
+  "description": "",
+  "require": {
+    "wp-cli/php-cli-tools": "^0.11.11"
+  },
+  "bin": [
+    "bin/tic-tac-toe"
+  ],
+  "autoload": {
+    "files": [
+      "src/Controller.php",
+      "src/View.php",
+      "src/Model.php"
+    ]
+  }
+}
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+FILE: /home/andrey/labs_402/402_Gorlienko_NV/Task04/tic-tac-toe/src/Controller.php
+----------------------------------------------------------------------------------
+FOUND 11 ERRORS AND 1 WARNING AFFECTING 10 LINES
+----------------------------------------------------------------------------------
+  11 | ERROR   | [x] Header blocks must not contain blank lines
+  40 | ERROR   | [x] Opening brace should be on a new line
+ 112 | ERROR   | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 115 | ERROR   | [x] Expected 1 space after closing brace; newline found
+ 116 | ERROR   | [x] Expected 1 space(s) after ELSE keyword; 0 found
+ 163 | ERROR   | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 167 | ERROR   | [x] Expected at least 1 space before "-"; 0 found
+ 167 | ERROR   | [x] Expected at least 1 space after "-"; 0 found
+ 169 | ERROR   | [x] Expected at least 1 space before "-"; 0 found
+ 169 | ERROR   | [x] Expected at least 1 space after "-"; 0 found
+ 170 | ERROR   | [x] Whitespace found at end of line
+ 227 | WARNING | [ ] Line exceeds 120 characters; contains 124 characters
+----------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 11 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------------------
+
+
+FILE: /home/andrey/labs_402/402_Gorlienko_NV/Task04/tic-tac-toe/src/Model.php
+-------------------------------------------------------------------------------------------
+FOUND 18 ERRORS AFFECTING 13 LINES
+-------------------------------------------------------------------------------------------
+ 217 | ERROR | [x] Line indented incorrectly; expected at least 4 spaces, found 0
+ 217 | ERROR | [x] Opening brace indented incorrectly; expected 4 spaces, found 0
+ 218 | ERROR | [x] Line indented incorrectly; expected 8 spaces, found 4
+ 219 | ERROR | [x] Line indented incorrectly; expected at least 12 spaces, found 8
+ 219 | ERROR | [x] Parentheses must be used when instantiating a new class
+ 221 | ERROR | [x] Line indented incorrectly; expected at least 12 spaces, found 4
+ 229 | ERROR | [x] Line indented incorrectly; expected at least 12 spaces, found 4
+ 232 | ERROR | [x] Line indented incorrectly; expected at least 12 spaces, found 4
+ 238 | ERROR | [x] Line indented incorrectly; expected at least 12 spaces, found 4
+ 239 | ERROR | [x] Line indented incorrectly; expected 8 spaces, found 4
+ 240 | ERROR | [x] Line indented incorrectly; expected at least 12 spaces, found 8
+ 240 | ERROR | [x] Parentheses must be used when instantiating a new class
+ 241 | ERROR | [x] Line indented incorrectly; expected 8 spaces, found 4
+ 242 | ERROR | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+ 243 | ERROR | [x] Line indented incorrectly; expected 4 spaces, found 0
+ 243 | ERROR | [x] Closing brace indented incorrectly; expected 4 spaces, found 0
+ 254 | ERROR | [x] Expected 1 blank line at end of file; 4 found
+ 254 | ERROR | [x] The closing brace for the class must go on the next line after the body
+-------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 18 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------------
+
+Time: 90ms; Memory: 8MB
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+Task04
+task from branch: Task04
+creation date: 12/06/2022 17:11:45
+Everything up-to-date
+Everything up-to-date
+=====================================================
+/home/andrey/labs_402/402_Gorlienko_NV
+Из github.com-mrsu:andpop-mrsu/402_Gorlienko_NV
+Из github.com-mrsu:andpop-mrsu/402_Gorlienko_NV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Gorlienko_NV/Task03
+--------------------------------------------------
+Check path: README.md
+## Описание проекта
+
+---
+
+Написать консольный вариант для игры "Крестики-нолики" (согласно общей спецификации) с сохранением информации о партиях в базе данных SQLite.
+
+---
+
+Для отображения используются символы (фигуры) "X" и "O".
+Координаты ячеек вводятся с клавиатуры в виде двух чисел, разделённых пробелом. Первое число - номер строки, второе число - номер столбца.
+Режим работы приложения должны определяться при запуске по аргументам командной строки:
+--new (краткий параметр -n). Новая игра. Этот же режим используется по умолчанию, если программа запускается без параметров.
+--list (-l). Вывод списка всех сохраненных партий.
+--replay id (-r id). Повтор всех ходов игры с идентификатором id.
+--help (-h). Вывод краткой информации о приложении, формате ввода координат и доступных ключах для запуска в разных режимах.
+
+    * * *
+
+    ## Требования
+
+    Минимальная версия PHP: 8.0 \
+    Минимальная версия Composer: 2.1.6
+
+    * * *
+
+    ## Инструкция по установке и запуску игры
+
+    Из Github:
+
+1. Склонировать проект на локальную машину;
+2. Установить composer, если он не установлен;
+3. Перейти в корневой каталог;
+4. Выполнить в консоли команду `composer update`;
+5. Перейти в каталог bin из корнегого каталога и запустить файл tic-tac-toe.bat.
+
+Из Packagist:
+
+1. Установить composer, если он не установлен;
+2. Перейти в каталог, в который вы будете клонировать проект;
+3. Выполнить команду `composer create-project youngkolya/tic-tac-toe`;
+4. Перейти в каталог vendor/bin;
+5. Запустить файл tic_tac_toe.bat.
+
+---
+
+## Ссылки
+
+Packagist: <https://packagist.org/packages/youngkolya/tic-tac-toe>
+--------------------------------------------------
+Check path: composer.json
+{
+  "name": "youngkolya/tic-tac-toe",
+  "type": "project",
+  "authors": [
+    {
+      "name": "youngkolya"
+    }
+  ],
+  "description": "",
+  "require": {
+    "wp-cli/php-cli-tools": "^0.11.11"
+  },
+  "bin": [
+    "bin/tic-tac-toe"
+  ],
+  "autoload": {
+    "files": [
+      "src/Controller.php",
+      "src/View.php",
+      "src/Model.php"
+    ]
+  }
+}
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+FILE: /home/andrey/labs_402/402_Gorlienko_NV/Task03/tic-tac-toe/src/Controller.php
+----------------------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------------------
+ 90 | ERROR | [x] Expected at least 1 space before "-"; 0 found
+ 90 | ERROR | [x] Expected at least 1 space after "-"; 0 found
+ 92 | ERROR | [x] Expected at least 1 space before "-"; 0 found
+ 92 | ERROR | [x] Expected at least 1 space after "-"; 0 found
+----------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------------------
+
+Time: 61ms; Memory: 6MB
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+Task03
+task from branch: Task03
+creation date: 12/06/2022 17:10:42
+Everything up-to-date
+Everything up-to-date
+=====================================================
+/home/andrey/labs_402/402_Gorlienko_NV
+Из github.com-mrsu:andpop-mrsu/402_Gorlienko_NV
+Из github.com-mrsu:andpop-mrsu/402_Gorlienko_NV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs_402/402_Gorlienko_NV/Task02
+There are no game folder
+--------------------------------------------------
+Task02
+task from branch: Task02
+creation date: 12/06/2022 17:09:38
+Everything up-to-date
+Everything up-to-date
 402_Haniev_RM
 =====================================================
 /home/andrey/labs_402/402_Haniev_RM
@@ -17,9 +2165,9 @@ Transcript started, output file is log.txt
 Из github.com-mrsu:andpop-mrsu/402_Haniev_RM
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-   d35331e..d77b47f  master     -> teacher/master
-   d35331e..d77b47f  master     -> teacher/master
-Обновление d35331e..d77b47f
+   07c88ec..6805ca2  master     -> teacher/master
+   07c88ec..6805ca2  master     -> teacher/master
+Обновление 07c88ec..6805ca2
 Fast-forward
  Task01/README.md                  |  18 ++++++
  Task01/README_logger.md           |   8 +++
@@ -56,7 +2204,22 @@ Fast-forward
  Task05/hangman/src/Controller.php | 110 +++++++++++++++++++++++++++++++++
  Task05/hangman/src/Model.php      | 122 +++++++++++++++++++++++++++++++++++++
  Task05/hangman/src/View.php       |  24 ++++++++
- 35 files changed, 1119 insertions(+)
+ Task06/README.md                  |  12 ++++
+ Task06/index.html                 |  29 +++++++++
+ Task06/src/Controller.js          |  99 ++++++++++++++++++++++++++++++
+ Task06/src/View.js                |  70 +++++++++++++++++++++
+ Task06/style.css                  |  34 +++++++++++
+ Task07/README.md                  |  24 ++++++++
+ Task07/index.html                 |  41 +++++++++++++
+ Task07/src/Controller.js          | 123 +++++++++++++++++++++++++++++++++++++
+ Task07/src/Model.js               | 111 +++++++++++++++++++++++++++++++++
+ Task07/src/View.js                |  88 +++++++++++++++++++++++++++
+ Task07/style.css                  |  41 +++++++++++++
+ task05.md                         |  24 ++++++++
+ task06.md                         |  29 +++++++++
+ task07.md                         |  27 ++++++++
+ task08.md                         |  80 ++++++++++++++++++++++++
+ 50 files changed, 1951 insertions(+)
  create mode 100644 Task01/README.md
  create mode 100644 Task01/README_logger.md
  create mode 100644 Task01/logger.db
@@ -92,131 +2255,201 @@ Fast-forward
  create mode 100644 Task05/hangman/src/Controller.php
  create mode 100644 Task05/hangman/src/Model.php
  create mode 100644 Task05/hangman/src/View.php
-Из https://github.com/RusJ-KH/402_Haniev_RM
-Из https://github.com/RusJ-KH/402_Haniev_RM
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task04     -> student/Task04
- * [новая ветка]     Task04     -> student/Task04
- * [новая ветка]     Task05     -> student/Task05
- * [новая ветка]     Task05     -> student/Task05
- * [новая ветка]     Task06     -> student/Task06
- * [новая ветка]     Task06     -> student/Task06
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Merge made by the 'ort' strategy.
- Task06/README.md         | 12 ++++++
- Task06/index.html        | 29 ++++++++++++++
- Task06/src/Controller.js | 99 ++++++++++++++++++++++++++++++++++++++++++++++++
- Task06/src/View.js       | 70 ++++++++++++++++++++++++++++++++++
- Task06/style.css         | 34 +++++++++++++++++
- 5 files changed, 244 insertions(+)
  create mode 100644 Task06/README.md
  create mode 100644 Task06/index.html
  create mode 100644 Task06/src/Controller.js
  create mode 100644 Task06/src/View.js
  create mode 100644 Task06/style.css
---------------------------------------------------
-Task:  /home/andrey/labs_402/402_Haniev_RM/Task06
---------------------------------------------------
-Check path: README.md
-# Описание проекта
-
-### Браузерная игра "Виселица"  
-* Компьютер загадывает слово из шести букви рисует на странице отдельные пустые клетки для каждой буквы. Игрок пытается угадать буквы (вводя их по одной в текстовое поле), а затем и все слово целиком. Если игрок правильно угадывает букву, компьютер вписывает ее в клетку. Если ошибается, то рисует одну из частей тела повешенного человека. Чтобы победить, игрок должен угадать все буквы в слове до того, как повешенный человечек будет полностью нарисован.
-
-### Требования к игре:
-* Браузер должен поддерживать JS 
- 
-
-### Инструкция по установке и запуску 
-* Перейти по ссылке https://rusj-kh.github.io;
-* Следовать дальнейшим указаниям игры;
---------------------------------------------------
-Total ok: 1
-Total error: 0
---------------------------------------------------
-Added Task06
-task from branch: Task06
-creation date: 11/18/2022 13:16:27
-To github.com-mrsu:andpop-mrsu/402_Haniev_RM.git
-To github.com-mrsu:andpop-mrsu/402_Haniev_RM.git
-   d77b47f..5644c53  master -> master
-   d77b47f..5644c53  master -> master
+ create mode 100644 Task07/README.md
+ create mode 100644 Task07/index.html
+ create mode 100644 Task07/src/Controller.js
+ create mode 100644 Task07/src/Model.js
+ create mode 100644 Task07/src/View.js
+ create mode 100644 Task07/style.css
+ create mode 100644 task05.md
+ create mode 100644 task06.md
+ create mode 100644 task07.md
+ create mode 100644 task08.md
+Из https://github.com/RusJ-KH/402_Haniev_RM
+Из https://github.com/RusJ-KH/402_Haniev_RM
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     Task08     -> student/Task08
+ * [новая ветка]     Task08     -> student/Task08
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 6805ca2..fa5bb4e
+Fast-forward (no commit created; -m option ignored)
+ Task08/.gitignore           |   4 ++
+ Task08/README.md            |  33 ++++++++++
+ Task08/composer.json        |   7 ++
+ Task08/public/Controller.js | 123 +++++++++++++++++++++++++++++++++++
+ Task08/public/Model.js      | 111 +++++++++++++++++++++++++++++++
+ Task08/public/README.md     |  24 +++++++
+ Task08/public/View.js       |  88 +++++++++++++++++++++++++
+ Task08/public/index.html    |  41 ++++++++++++
+ Task08/public/index.php     | 155 ++++++++++++++++++++++++++++++++++++++++++++
+ Task08/public/style.css     |  41 ++++++++++++
+ 10 files changed, 627 insertions(+)
+ create mode 100644 Task08/.gitignore
+ create mode 100644 Task08/README.md
+ create mode 100644 Task08/composer.json
+ create mode 100644 Task08/public/Controller.js
+ create mode 100644 Task08/public/Model.js
+ create mode 100644 Task08/public/README.md
+ create mode 100644 Task08/public/View.js
+ create mode 100644 Task08/public/index.html
+ create mode 100644 Task08/public/index.php
+ create mode 100644 Task08/public/style.css
+Added Task08
+task from branch: Task08
+creation date: 12/06/2022 20:25:01
+Checking script check_Task08.ps1 not found
 402_Inevatkina_KM
 402_Kiruhin_AA
-402_Kudryavtzev_DA
 =====================================================
-/home/andrey/labs_402/402_Kudryavtzev_DA
-Из github.com-mrsu:andpop-mrsu/402_Kudryavtzev_DA
-Из github.com-mrsu:andpop-mrsu/402_Kudryavtzev_DA
+/home/andrey/labs_402/402_Kiruhin_AA
+Из github.com-mrsu:andpop-mrsu/402_Kiruhin_AA
+Из github.com-mrsu:andpop-mrsu/402_Kiruhin_AA
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-Уже обновлено.
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Из https://github.com/MrlLegend/402_Kudryavtzev_DA
-Из https://github.com/MrlLegend/402_Kudryavtzev_DA
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     task03     -> student/task03
- * [новая ветка]     task03     -> student/task03
- * [новая ветка]     task04     -> student/task04
- * [новая ветка]     task04     -> student/task04
-Обновление e901a64..f547a77
+   5b418e8..3e0bb4e  master     -> teacher/master
+   5b418e8..3e0bb4e  master     -> teacher/master
+Обновление 5b418e8..3e0bb4e
+Fast-forward
+ Task04/tic-tac-toe/.gitignore         |   2 +
+ Task04/tic-tac-toe/README.md          |  53 +++++++
+ Task04/tic-tac-toe/bin/tic-tac-toe    |  14 ++
+ Task04/tic-tac-toe/composer.json      |  23 +++
+ Task04/tic-tac-toe/composer.lock      |  69 +++++++++
+ Task04/tic-tac-toe/src/Controller.php | 252 ++++++++++++++++++++++++++++++++
+ Task04/tic-tac-toe/src/Model.php      | 257 +++++++++++++++++++++++++++++++++
+ Task04/tic-tac-toe/src/View.php       |  35 +++++
+ Task05/tic-tac-toe/.gitignore         |   2 +
+ Task05/tic-tac-toe/README.md          |  53 +++++++
+ Task05/tic-tac-toe/bin/tic-tac-toe    |  14 ++
+ Task05/tic-tac-toe/composer.json      |  23 +++
+ Task05/tic-tac-toe/composer.lock      |  69 +++++++++
+ Task05/tic-tac-toe/src/Controller.php | 261 ++++++++++++++++++++++++++++++++++
+ Task05/tic-tac-toe/src/Model.php      | 253 ++++++++++++++++++++++++++++++++
+ Task05/tic-tac-toe/src/View.php       |  35 +++++
+ Task06/README.md                      |  19 +++
+ Task06/css/style.css                  |  66 +++++++++
+ Task06/index.html                     |  19 +++
+ Task06/js/Controller.js               | 122 ++++++++++++++++
+ Task06/js/Model.js                    |  57 ++++++++
+ Task06/js/View.js                     |   3 +
+ Task07/README.md                      |  19 +++
+ Task07/css/style.css                  |  66 +++++++++
+ Task07/index.html                     |  19 +++
+ Task07/js/Controller.js               | 122 ++++++++++++++++
+ Task07/js/Model.js                    |  57 ++++++++
+ Task07/js/View.js                     |   3 +
+ task05.md                             |  24 ++++
+ task06.md                             |  29 ++++
+ task07.md                             |  27 ++++
+ task08.md                             |  80 +++++++++++
+ 32 files changed, 2147 insertions(+)
+ create mode 100644 Task04/tic-tac-toe/.gitignore
+ create mode 100644 Task04/tic-tac-toe/README.md
+ create mode 100644 Task04/tic-tac-toe/bin/tic-tac-toe
+ create mode 100644 Task04/tic-tac-toe/composer.json
+ create mode 100644 Task04/tic-tac-toe/composer.lock
+ create mode 100644 Task04/tic-tac-toe/src/Controller.php
+ create mode 100644 Task04/tic-tac-toe/src/Model.php
+ create mode 100644 Task04/tic-tac-toe/src/View.php
+ create mode 100644 Task05/tic-tac-toe/.gitignore
+ create mode 100644 Task05/tic-tac-toe/README.md
+ create mode 100644 Task05/tic-tac-toe/bin/tic-tac-toe
+ create mode 100644 Task05/tic-tac-toe/composer.json
+ create mode 100644 Task05/tic-tac-toe/composer.lock
+ create mode 100644 Task05/tic-tac-toe/src/Controller.php
+ create mode 100644 Task05/tic-tac-toe/src/Model.php
+ create mode 100644 Task05/tic-tac-toe/src/View.php
+ create mode 100644 Task06/README.md
+ create mode 100644 Task06/css/style.css
+ create mode 100644 Task06/index.html
+ create mode 100644 Task06/js/Controller.js
+ create mode 100644 Task06/js/Model.js
+ create mode 100644 Task06/js/View.js
+ create mode 100644 Task07/README.md
+ create mode 100644 Task07/css/style.css
+ create mode 100644 Task07/index.html
+ create mode 100644 Task07/js/Controller.js
+ create mode 100644 Task07/js/Model.js
+ create mode 100644 Task07/js/View.js
+ create mode 100644 task05.md
+ create mode 100644 task06.md
+ create mode 100644 task07.md
+ create mode 100644 task08.md
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/Ne1k/402_Kiruhin_AA
+Из https://github.com/Ne1k/402_Kiruhin_AA
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     Task08     -> student/Task08
+ * [новая ветка]     Task08     -> student/Task08
+Обновление 3e0bb4e..6039ce0
 Fast-forward (no commit created; -m option ignored)
- task03/hangman/.gitignore         |  2 ++
- task03/hangman/README.md          | 51 ++++++++++++++++++++++++++++
- task03/hangman/bin/hangman.bat    |  5 +++
- task03/hangman/bin/hangman.php    | 13 +++++++
- task03/hangman/composer.json      | 27 +++++++++++++++
- task03/hangman/src/Controller.php | 71 +++++++++++++++++++++++++++++++++++++++
- task03/hangman/src/View.php       | 53 +++++++++++++++++++++++++++++
- 7 files changed, 222 insertions(+)
- create mode 100644 task03/hangman/.gitignore
- create mode 100644 task03/hangman/README.md
- create mode 100644 task03/hangman/bin/hangman.bat
- create mode 100644 task03/hangman/bin/hangman.php
- create mode 100644 task03/hangman/composer.json
- create mode 100644 task03/hangman/src/Controller.php
- create mode 100644 task03/hangman/src/View.php
-task03
-task from branch: task03
-creation date: 11/19/2022 07:10:12
-Checking script check_task03.ps1 not found
-=====================================================
-/home/andrey/labs_402/402_Kudryavtzev_DA
-Из github.com-mrsu:andpop-mrsu/402_Kudryavtzev_DA
-Из github.com-mrsu:andpop-mrsu/402_Kudryavtzev_DA
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже обновлено.
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Merge made by the 'ort' strategy.
- task04/hangman/.gitignore         |   2 +
- task04/hangman/README.md          |  51 +++++++++++++++
- task04/hangman/bin/hangman.bat    |   5 ++
- task04/hangman/bin/hangman.php    |  18 ++++++
- task04/hangman/composer.json      |  28 +++++++++
- task04/hangman/src/Controller.php | 111 +++++++++++++++++++++++++++++++++
- task04/hangman/src/Model.php      | 126 ++++++++++++++++++++++++++++++++++++++
- task04/hangman/src/View.php       |  24 ++++++++
- 8 files changed, 365 insertions(+)
- create mode 100644 task04/hangman/.gitignore
- create mode 100644 task04/hangman/README.md
- create mode 100644 task04/hangman/bin/hangman.bat
- create mode 100644 task04/hangman/bin/hangman.php
- create mode 100644 task04/hangman/composer.json
- create mode 100644 task04/hangman/src/Controller.php
- create mode 100644 task04/hangman/src/Model.php
- create mode 100644 task04/hangman/src/View.php
-task04
-task from branch: task04
-creation date: 11/19/2022 07:04:06
-Checking script check_task04.ps1 not found
+ Task08/.gitignore                     |   1 +
+ Task08/README.md                      |  28 ++
+ Task08/composer.json                  |   7 +
+ Task08/composer.lock                  | 849 ++++++++++++++++++++++++++++++++++
+ Task08/public/css/style.css           |  73 +++
+ Task08/public/index.html              |  14 +
+ Task08/public/index.php               | 161 +++++++
+ Task08/public/js/Controller.js        | 197 ++++++++
+ Task08/public/js/Model.js             |  57 +++
+ Task08/public/js/View.js              |   4 +
+ Task08/public/js_list/Model.js        |  14 +
+ Task08/public/js_list/View.js         |  30 ++
+ Task08/public/js_replay/Controller.js |   8 +
+ Task08/public/js_replay/Model.js      |  14 +
+ Task08/public/js_replay/View.js       |  23 +
+ Task08/public/list.html               |  13 +
+ Task08/public/play.html               |  21 +
+ Task08/public/replay.html             |  16 +
+ 18 files changed, 1530 insertions(+)
+ create mode 100644 Task08/.gitignore
+ create mode 100644 Task08/README.md
+ create mode 100644 Task08/composer.json
+ create mode 100644 Task08/composer.lock
+ create mode 100644 Task08/public/css/style.css
+ create mode 100644 Task08/public/index.html
+ create mode 100644 Task08/public/index.php
+ create mode 100644 Task08/public/js/Controller.js
+ create mode 100644 Task08/public/js/Model.js
+ create mode 100644 Task08/public/js/View.js
+ create mode 100644 Task08/public/js_list/Model.js
+ create mode 100644 Task08/public/js_list/View.js
+ create mode 100644 Task08/public/js_replay/Controller.js
+ create mode 100644 Task08/public/js_replay/Model.js
+ create mode 100644 Task08/public/js_replay/View.js
+ create mode 100644 Task08/public/list.html
+ create mode 100644 Task08/public/play.html
+ create mode 100644 Task08/public/replay.html
+Task08
+task from branch: Task08
+creation date: 12/03/2022 13:21:43
+Checking script check_Task08.ps1 not found
+402_Kudryavtzev_DA
 402_Makarov_NA
 402_Nagaev_DG
 402_Pochtov_AA
@@ -224,407 +2457,24 @@ Checking script check_task04.ps1 not found
 402_Pozharskiy_VS
 402_Rodushkin_VE
 402_Ryazin_VA
-402_Trapeza_IV
 =====================================================
-/home/andrey/labs_402/402_Trapeza_IV
-Из github.com-mrsu:andpop-mrsu/402_Trapeza_IV
-Из github.com-mrsu:andpop-mrsu/402_Trapeza_IV
+/home/andrey/labs_402/402_Ryazin_VA
+Из github.com-mrsu:andpop-mrsu/402_Ryazin_VA
+Из github.com-mrsu:andpop-mrsu/402_Ryazin_VA
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-Уже обновлено.
-Из https://github.com/azepart/402_Trapeza_IV
-Из https://github.com/azepart/402_Trapeza_IV
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task04     -> student/Task04
- * [новая ветка]     Task04     -> student/Task04
- * [новая ветка]     Task05     -> student/Task05
- * [новая ветка]     Task05     -> student/Task05
- * [новая ветка]     Task06     -> student/Task06
- * [новая ветка]     Task06     -> student/Task06
- * [новая ветка]     Task07     -> student/Task07
- * [новая ветка]     Task07     -> student/Task07
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Обновление 9f82717..14c7514
-Fast-forward (no commit created; -m option ignored)
- Task07/README.md         |  24 +++++++++
- Task07/index.html        |  41 ++++++++++++++++
- Task07/src/Controller.js | 123 +++++++++++++++++++++++++++++++++++++++++++++++
- Task07/src/Model.js      | 111 ++++++++++++++++++++++++++++++++++++++++++
- Task07/src/View.js       |  88 +++++++++++++++++++++++++++++++++
- Task07/style.css         |  24 +++++++++
- 6 files changed, 411 insertions(+)
- create mode 100644 Task07/README.md
- create mode 100644 Task07/index.html
- create mode 100644 Task07/src/Controller.js
- create mode 100644 Task07/src/Model.js
- create mode 100644 Task07/src/View.js
- create mode 100644 Task07/style.css
---------------------------------------------------
-Task:  /home/andrey/labs_402/402_Trapeza_IV/Task07
---------------------------------------------------
-Check path: README.md
-# Описание проекта
-
-### Браузерная игра "Виселица"  
-* Компьютер загадывает слово из шести букви рисует на странице отдельные пустые клетки для каждой буквы. Игрок пытается угадать буквы (вводя их по одной в текстовое поле), а затем и все слово целиком. Если игрок правильно угадывает букву, компьютер вписывает ее в клетку. Если ошибается, то рисует одну из частей тела повешенного человека. Чтобы победить, игрок должен угадать все буквы в слове до того, как повешенный человечек будет полностью нарисован.
-
-* Информация о датах и исходах всех партий, а также о всех ходах, сделанных во время игры, сохраняется в базе данных indexedDB.
-* Для каждой игры в базе хранится следующая информация:
-    * id игры
-    * Имя игрока
-    * Дата игры
-    * Загаданное слово
-    * Статус игры
-* В программе реализованы три режима:
-    * `Начать игру`. Новая игра.
-    * `Список игр`. Вывод списка всех сохраненных игр.
-    * `Показать игру`. Повтор игры с идентификатором id.
-
-### Требования к игре:
-* Браузер должен поддерживать JS 
- 
-
-### Инструкция по установке и запуску 
-* Перейти по ссылке https://azepart.github.io/trapezaiv2/;
-* Следовать дальнейшим указаниям игры.
---------------------------------------------------
-Total ok: 1
-Total error: 0
---------------------------------------------------
-Task07
-task from branch: Task07
-creation date: 11/18/2022 13:55:37
-To github.com-mrsu:andpop-mrsu/402_Trapeza_IV.git
-To github.com-mrsu:andpop-mrsu/402_Trapeza_IV.git
-   9f82717..14c7514  master -> master
-   9f82717..14c7514  master -> master
-=====================================================
-/home/andrey/labs_402/402_Trapeza_IV
-Из github.com-mrsu:andpop-mrsu/402_Trapeza_IV
-Из github.com-mrsu:andpop-mrsu/402_Trapeza_IV
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже обновлено.
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Merge made by the 'ort' strategy.
- Task06/README.md         | 12 ++++++
- Task06/index.html        | 29 ++++++++++++++
- Task06/src/Controller.js | 99 ++++++++++++++++++++++++++++++++++++++++++++++++
- Task06/src/View.js       | 70 ++++++++++++++++++++++++++++++++++
- Task06/style.css         | 20 ++++++++++
- 5 files changed, 230 insertions(+)
- create mode 100644 Task06/README.md
- create mode 100644 Task06/index.html
- create mode 100644 Task06/src/Controller.js
- create mode 100644 Task06/src/View.js
- create mode 100644 Task06/style.css
---------------------------------------------------
-Task:  /home/andrey/labs_402/402_Trapeza_IV/Task06
---------------------------------------------------
-Check path: README.md
-# Описание проекта
-
-### Браузерная игра "Виселица"  
-* Компьютер загадывает слово из шести букви рисует на странице отдельные пустые клетки для каждой буквы. Игрок пытается угадать буквы (вводя их по одной в текстовое поле), а затем и все слово целиком. Если игрок правильно угадывает букву, компьютер вписывает ее в клетку. Если ошибается, то рисует одну из частей тела повешенного человека. Чтобы победить, игрок должен угадать все буквы в слове до того, как повешенный человечек будет полностью нарисован.
-
-### Требования к игре:
-* Браузер должен поддерживать JS 
- 
-
-### Инструкция по установке и запуску 
-* Перейти по ссылке https://azepart.github.io/trapezaiv/;
-* Следовать дальнейшим указаниям игры;
---------------------------------------------------
-Total ok: 1
-Total error: 0
---------------------------------------------------
-Task06
-task from branch: Task06
-creation date: 11/18/2022 13:54:47
-To github.com-mrsu:andpop-mrsu/402_Trapeza_IV.git
-To github.com-mrsu:andpop-mrsu/402_Trapeza_IV.git
-   14c7514..6b01526  master -> master
-   14c7514..6b01526  master -> master
-=====================================================
-/home/andrey/labs_402/402_Trapeza_IV
-Из github.com-mrsu:andpop-mrsu/402_Trapeza_IV
-Из github.com-mrsu:andpop-mrsu/402_Trapeza_IV
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже обновлено.
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Merge made by the 'ort' strategy.
- Task05/hangman/.gitignore         |   2 +
- Task05/hangman/README.md          |  51 ++++++++++++++++
- Task05/hangman/bin/hangman.bat    |   5 ++
- Task05/hangman/bin/hangman.php    |  18 ++++++
- Task05/hangman/composer.json      |  26 ++++++++
- Task05/hangman/src/Controller.php | 110 ++++++++++++++++++++++++++++++++++
- Task05/hangman/src/Model.php      | 122 ++++++++++++++++++++++++++++++++++++++
- Task05/hangman/src/View.php       |  24 ++++++++
- 8 files changed, 358 insertions(+)
- create mode 100644 Task05/hangman/.gitignore
- create mode 100644 Task05/hangman/README.md
- create mode 100644 Task05/hangman/bin/hangman.bat
- create mode 100644 Task05/hangman/bin/hangman.php
- create mode 100644 Task05/hangman/composer.json
- create mode 100644 Task05/hangman/src/Controller.php
- create mode 100644 Task05/hangman/src/Model.php
- create mode 100644 Task05/hangman/src/View.php
---------------------------------------------------
-Task:  /home/andrey/labs_402/402_Trapeza_IV/Task05
---------------------------------------------------
-Check path: README.md
-## Описание проекта
-
-* * *
-Написать программу для игры "Виселица" (hangman). Компьютер загадывает слово из шести букв (список возможных слов нужно заранее сгенерировать и сохранить в базе данных) и рисует на странице отдельные пустые клетки для каждой буквы. Игрок пытается угадать буквы, а затем и все слово целиком. Если игрок правильно угадывает букву, компьютер вписывает ее в клетку. Если ошибается, то рисует одну из частей тела повешенного человека (использовать псевдографику). Чтобы победить, игрок должен угадать все буквы в слове до того, как повешенный человечек будет полностью нарисован.
-
-* * *
-
-* Информация о датах и исходах всех партий, а также о всех попытках, сделанных во время игры? должна сохраняться в базе данных.
-* Для каждой игры в базе должна храниться следующая информация:
-    * Дата игры
-    * Имя игрока
-    * Загаданное компьютером слово
-    * Исход игры (угадал/не угадал)
-    * Запись попыток в формате: номер попытки | предложенная буква | результат
-* В программе должны быть реализованы три режима:
-    * Новая игра.
-    * Вывод списка всех сохраненных в базе партий.
-    * Повтор любой сохраненной партии (то есть повтор всех ходов из этой партии).
-
-* * * 
-
-## Требования
-
-Минимальная версия PHP: 8.0 \
-Минимальная версия Composer: 2.4.2
-
-* * * 
-
-## Инструкция по установке и запуску игры
-
-Из Github:
-
-1. Склонировать проект на локальную машину;
-2. Установить composer, если он не установлен;
-3. Перейти в корневой каталог;
-4. Выполнить в консоли команду `composer update`;
-5. Перейти в каталог bin из корнегого каталога и запустить файл hangman.bat.
-
-Из Packagist:
-
-1. Установить composer, если он не установлен;
-2. Перейти в каталог, в который вы будете клонировать проект;
-3. Выполнить команду `composer create-project trapezaiv/hangman`;
-4. Перейти в каталог vendor/bin;
-5. Запустить файл hangman.bat.
-
-* * *
-
-## Ссылки
-
-Packagist: <https://packagist.org/packages/trapezaiv/hangman>
---------------------------------------------------
-Check path: composer.json
-{
-    "name": "trapezaiv/hangman",
-    "description": "Game",
-    "autoload": {
-        "files": [
-			"src/Controller.php",
-			"src/View.php",
-            "src/Model.php"
-		]
-    },
-	"bin": [
-		"bin/hangman.php"
-	],
-	"type": "project",
-    "authors": [
-        {
-            "name": "Igor-Trapeza",
-            "email": "azepart@yandex.ru"
-        }
-    ],
-    "require": {
-        "wp-cli/php-cli-tools": "^0.11.13",
-        "gabordemooij/redbean": "dev-master",
-        "squizlabs/php_codesniffer": "^3.7"
-    }
-}
---------------------------------------------------
-Run: phpcs --standard=PSR12 ./src/*
-
-FILE: /home/andrey/labs_402/402_Trapeza_IV/Task05/hangman/src/Model.php
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 1 | WARNING | A file should declare new symbols (classes, functions, constants, etc.) and cause no other side effects, or it should execute logic with side effects, but should not do both.
-   |         | The first symbol is defined on line 12 and the first side effect is on line 10.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-Time: 66ms; Memory: 6MB
-Execution fails
---------------------------------------------------
-Total ok: 2
-Total error: 1
---------------------------------------------------
-Task05
-task from branch: Task05
-creation date: 11/18/2022 13:53:52
-To github.com-mrsu:andpop-mrsu/402_Trapeza_IV.git
-To github.com-mrsu:andpop-mrsu/402_Trapeza_IV.git
-   6b01526..fbe8da0  master -> master
-   6b01526..fbe8da0  master -> master
-=====================================================
-/home/andrey/labs_402/402_Trapeza_IV
-Из github.com-mrsu:andpop-mrsu/402_Trapeza_IV
-Из github.com-mrsu:andpop-mrsu/402_Trapeza_IV
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже обновлено.
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Merge made by the 'ort' strategy.
- Task04/hangman/.gitignore         |   2 +
- Task04/hangman/README.md          |  51 +++++++++++++++
- Task04/hangman/bin/hangman.bat    |   5 ++
- Task04/hangman/bin/hangman.php    |  18 ++++++
- Task04/hangman/composer.json      |  28 +++++++++
- Task04/hangman/src/Controller.php | 111 +++++++++++++++++++++++++++++++++
- Task04/hangman/src/Model.php      | 126 ++++++++++++++++++++++++++++++++++++++
- Task04/hangman/src/View.php       |  24 ++++++++
- 8 files changed, 365 insertions(+)
- create mode 100644 Task04/hangman/.gitignore
- create mode 100644 Task04/hangman/README.md
- create mode 100644 Task04/hangman/bin/hangman.bat
- create mode 100644 Task04/hangman/bin/hangman.php
- create mode 100644 Task04/hangman/composer.json
- create mode 100644 Task04/hangman/src/Controller.php
- create mode 100644 Task04/hangman/src/Model.php
- create mode 100644 Task04/hangman/src/View.php
---------------------------------------------------
-Task:  /home/andrey/labs_402/402_Trapeza_IV/Task04
---------------------------------------------------
-Check path: README.md
-## Описание проекта
-
-* * *
-Написать программу для игры "Виселица" (hangman). Компьютер загадывает слово из шести букв (список возможных слов нужно заранее сгенерировать и сохранить в базе данных) и рисует на странице отдельные пустые клетки для каждой буквы. Игрок пытается угадать буквы, а затем и все слово целиком. Если игрок правильно угадывает букву, компьютер вписывает ее в клетку. Если ошибается, то рисует одну из частей тела повешенного человека (использовать псевдографику). Чтобы победить, игрок должен угадать все буквы в слове до того, как повешенный человечек будет полностью нарисован.
-
-* * *
-
-* Информация о датах и исходах всех партий, а также о всех попытках, сделанных во время игры, должна сохраняться в базе данных.
-* Для каждой игры в базе должна храниться следующая информация:
-    * Дата игры
-    * Имя игрока
-    * Загаданное компьютером слово
-    * Исход игры (угадал/не угадал)
-    * Запись попыток в формате: номер попытки | предложенная буква | результат
-* В программе должны быть реализованы три режима:
-    * Новая игра.
-    * Вывод списка всех сохраненных в базе партий.
-    * Повтор любой сохраненной партии (то есть повтор всех ходов из этой партии).
-
-* * * 
-
-## Требования
-
-Минимальная версия PHP: 8.0 \
-Минимальная версия Composer: 2.4.2
-
-* * * 
-
-## Инструкция по установке и запуску игры
-
-Из Github:
-
-1. Склонировать проект на локальную машину;
-2. Установить composer, если он не установлен;
-3. Перейти в корневой каталог;
-4. Выполнить в консоли команду `composer update`;
-5. Перейти в каталог bin из корнегого каталога и запустить файл hangman.bat.
-
-Из Packagist:
-
-1. Установить composer, если он не установлен;
-2. Перейти в каталог, в который вы будете клонировать проект;
-3. Выполнить команду `composer create-project trapezaiv/hangman`;
-4. Перейти в каталог vendor/bin;
-5. Запустить файл hangman.bat.
-
-* * *
-
-## Ссылки
-
-Packagist: <https://packagist.org/packages/trapezaiv/hangman>
---------------------------------------------------
-Check path: composer.json
-{
-    "name": "trapezaiv/hangman",
-    "type": "project",
-    "authors": [
-        {
-            "name": "Igor-Trapeza",
-            "email": "azepart@yandex.ru"
-        }
-    ],
-    "description": "Game",
-    "require": {
-        "wp-cli/php-cli-tools": "^0.11.15",
-        "squizlabs/php_codesniffer": "^3.7"
-    },
-    "bin": [
-        "bin/hangman.php"
-    ],
-    "autoload": {
-        "psr-4": {
-            "trapezaiv\\hangman\\": "src/"
-        },
-        "files": [
-			"src/Controller.php",
-			"src/View.php",
-            "src/Model.php"
-		]
-    }
-}
---------------------------------------------------
-Run: phpcs --standard=PSR12 ./src/*
-
---------------------------------------------------
-Total ok: 3
-Total error: 0
---------------------------------------------------
-Task04
-task from branch: Task04
-creation date: 11/18/2022 13:52:38
-To github.com-mrsu:andpop-mrsu/402_Trapeza_IV.git
-To github.com-mrsu:andpop-mrsu/402_Trapeza_IV.git
-   fbe8da0..5932a31  master -> master
-   fbe8da0..5932a31  master -> master
-402_Tzyganov_AA
-402_Uvarov_AV
-402_Zavodov_DA
-=====================================================
-/home/andrey/labs_402/402_Zavodov_DA
-Из github.com-mrsu:andpop-mrsu/402_Zavodov_DA
-Из github.com-mrsu:andpop-mrsu/402_Zavodov_DA
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-   1389b23..7f4c3ba  master     -> teacher/master
-   1389b23..7f4c3ba  master     -> teacher/master
-Обновление 1389b23..7f4c3ba
+   bb2daf9..ad60959  master     -> teacher/master
+   bb2daf9..ad60959  master     -> teacher/master
+Обновление bb2daf9..ad60959
 Fast-forward
+ Task02/hangman/composer.json      |   2 +-
+ Task03/hangman/.gitignore         |   2 +
+ Task03/hangman/README.md          |  51 +++++++++++++++
+ Task03/hangman/bin/hangman.bat    |   5 ++
+ Task03/hangman/bin/hangman.php    |  13 ++++
+ Task03/hangman/composer.json      |  27 ++++++++
+ Task03/hangman/src/Controller.php |  71 +++++++++++++++++++++
+ Task03/hangman/src/View.php       |  53 ++++++++++++++++
  Task04/hangman/.gitignore         |   2 +
  Task04/hangman/README.md          |  51 +++++++++++++++
  Task04/hangman/bin/hangman.bat    |   5 ++
@@ -646,7 +2496,24 @@ Fast-forward
  Task06/src/Controller.js          |  99 ++++++++++++++++++++++++++++++
  Task06/src/View.js                |  70 +++++++++++++++++++++
  Task06/style.css                  |  20 ++++++
- 21 files changed, 953 insertions(+)
+ Task07/README.md                  |  24 ++++++++
+ Task07/index.html                 |  41 +++++++++++++
+ Task07/src/Controller.js          | 123 +++++++++++++++++++++++++++++++++++++
+ Task07/src/Model.js               | 111 +++++++++++++++++++++++++++++++++
+ Task07/src/View.js                |  88 ++++++++++++++++++++++++++
+ Task07/style.css                  |  24 ++++++++
+ task05.md                         |  24 ++++++++
+ task06.md                         |  29 +++++++++
+ task07.md                         |  27 ++++++++
+ task08.md                         |  80 ++++++++++++++++++++++++
+ 39 files changed, 1747 insertions(+), 1 deletion(-)
+ create mode 100644 Task03/hangman/.gitignore
+ create mode 100644 Task03/hangman/README.md
+ create mode 100644 Task03/hangman/bin/hangman.bat
+ create mode 100644 Task03/hangman/bin/hangman.php
+ create mode 100644 Task03/hangman/composer.json
+ create mode 100644 Task03/hangman/src/Controller.php
+ create mode 100644 Task03/hangman/src/View.php
  create mode 100644 Task04/hangman/.gitignore
  create mode 100644 Task04/hangman/README.md
  create mode 100644 Task04/hangman/bin/hangman.bat
@@ -668,79 +2535,67 @@ Fast-forward
  create mode 100644 Task06/src/Controller.js
  create mode 100644 Task06/src/View.js
  create mode 100644 Task06/style.css
-Из https://github.com/DZavodov/402_Zavodov_DA
-Из https://github.com/DZavodov/402_Zavodov_DA
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task04     -> student/Task04
- * [новая ветка]     Task04     -> student/Task04
- * [новая ветка]     Task05     -> student/Task05
- * [новая ветка]     Task05     -> student/Task05
- * [новая ветка]     Task06     -> student/Task06
- * [новая ветка]     Task06     -> student/Task06
- * [новая ветка]     Task07     -> student/Task07
- * [новая ветка]     Task07     -> student/Task07
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Обновление 7f4c3ba..bb4b279
-Fast-forward (no commit created; -m option ignored)
- Task07/README.md         |  24 +++++++++
- Task07/index.html        |  41 ++++++++++++++++
- Task07/src/Controller.js | 123 +++++++++++++++++++++++++++++++++++++++++++++++
- Task07/src/Model.js      | 111 ++++++++++++++++++++++++++++++++++++++++++
- Task07/src/View.js       |  88 +++++++++++++++++++++++++++++++++
- Task07/style.css         |  24 +++++++++
- 6 files changed, 411 insertions(+)
  create mode 100644 Task07/README.md
  create mode 100644 Task07/index.html
  create mode 100644 Task07/src/Controller.js
  create mode 100644 Task07/src/Model.js
  create mode 100644 Task07/src/View.js
  create mode 100644 Task07/style.css
---------------------------------------------------
-Task:  /home/andrey/labs_402/402_Zavodov_DA/Task07
---------------------------------------------------
-Check path: README.md
-# Описание проекта
-
-### Браузерная игра "Виселица"  
-* Компьютер загадывает слово из шести букви рисует на странице отдельные пустые клетки для каждой буквы. Игрок пытается угадать буквы (вводя их по одной в текстовое поле), а затем и все слово целиком. Если игрок правильно угадывает букву, компьютер вписывает ее в клетку. Если ошибается, то рисует одну из частей тела повешенного человека. Чтобы победить, игрок должен угадать все буквы в слове до того, как повешенный человечек будет полностью нарисован.
-
-* Информация о датах и исходах всех партий, а также о всех ходах, сделанных во время игры, сохраняется в базе данных indexedDB.
-* Для каждой игры в базе хранится следующая информация:
-    * id игры
-    * Имя игрока
-    * Дата игры
-    * Загаданное слово
-    * Статус игры
-* В программе реализованы три режима:
-    * `Начать игру`. Новая игра.
-    * `Список игр`. Вывод списка всех сохраненных игр.
-    * `Показать игру`. Повтор игры с идентификатором id.
-
-### Требования к игре:
-* Браузер должен поддерживать JS 
- 
-
-### Инструкция по установке и запуску 
-* Перейти по ссылке https://dzavodov.github.io/Hangman_JS/;
-* Следовать дальнейшим указаниям игры.
---------------------------------------------------
-Total ok: 1
-Total error: 0
---------------------------------------------------
-Task07
-task from branch: Task07
-creation date: 11/19/2022 07:32:24
-To github.com-mrsu:andpop-mrsu/402_Zavodov_DA.git
-To github.com-mrsu:andpop-mrsu/402_Zavodov_DA.git
-   7f4c3ba..bb4b279  master -> master
-   7f4c3ba..bb4b279  master -> master
+ create mode 100644 task05.md
+ create mode 100644 task06.md
+ create mode 100644 task07.md
+ create mode 100644 task08.md
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/Vitaliy-Ryazin/402_Ryazin_VA
+Из https://github.com/Vitaliy-Ryazin/402_Ryazin_VA
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     Task08     -> student/Task08
+ * [новая ветка]     Task08     -> student/Task08
+   bbfa8b9..ad60959  master     -> student/master
+   bbfa8b9..ad60959  master     -> student/master
+Merge made by the 'recursive' strategy.
+ Task08/.gitignore           |   4 ++
+ Task08/README.md            |  33 ++++++++++
+ Task08/composer.json        |   7 ++
+ Task08/public/Controller.js | 123 +++++++++++++++++++++++++++++++++++
+ Task08/public/Model.js      | 111 +++++++++++++++++++++++++++++++
+ Task08/public/README.md     |  24 +++++++
+ Task08/public/View.js       |  88 +++++++++++++++++++++++++
+ Task08/public/index.html    |  41 ++++++++++++
+ Task08/public/index.php     | 155 ++++++++++++++++++++++++++++++++++++++++++++
+ Task08/public/style.css     |  24 +++++++
+ 10 files changed, 610 insertions(+)
+ create mode 100644 Task08/.gitignore
+ create mode 100644 Task08/README.md
+ create mode 100644 Task08/composer.json
+ create mode 100644 Task08/public/Controller.js
+ create mode 100644 Task08/public/Model.js
+ create mode 100644 Task08/public/README.md
+ create mode 100644 Task08/public/View.js
+ create mode 100644 Task08/public/index.html
+ create mode 100644 Task08/public/index.php
+ create mode 100644 Task08/public/style.css
+Added branch Task08
+task from branch: Task08
+creation date: 12/03/2022 08:07:42
+Checking script check_Task08.ps1 not found
+402_Trapeza_IV
+402_Tzyganov_AA
+402_Uvarov_AV
+402_Zavodov_DA
 **********************
 PowerShell transcript end
-End time: 20221119145058
+End time: 20221206234928
 **********************
