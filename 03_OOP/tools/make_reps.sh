@@ -1,10 +1,9 @@
 #!/bin/bash
 
-token=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1
-
+token=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
 rm ./reps.txt
 for student in $(cat students-list.txt); do
-   echo "302_$student" >> reps.txt
+   echo "302_OOP_$student" >> reps.txt
 done
 
 for repo in $(cat reps.txt) ; do

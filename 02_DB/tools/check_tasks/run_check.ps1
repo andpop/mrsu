@@ -1,7 +1,7 @@
 #!pwsh
 # Комментария нет в коммите
 
-$studentDirsPath = "/home/andrey/labs_303"
+$studentDirsPath = "/home/andrey/labs/303"
 $teacherRepo = "https://api.github.com/repos/andpop-mrsu" 
 $headers = @{}
 $token = ''

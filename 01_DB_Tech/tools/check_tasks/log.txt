@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20221209183349
+Start time: 20230109093555
 **********************
 Transcript started, output file is log.txt
 402_Arhipov_KA
@@ -14,44 +14,140 @@ Transcript started, output file is log.txt
 402_Inevatkina_KM
 402_Kiruhin_AA
 402_Kudryavtzev_DA
-=====================================================
-/home/andrey/labs_402/402_Kudryavtzev_DA
-Из github.com-mrsu:andpop-mrsu/402_Kudryavtzev_DA
-Из github.com-mrsu:andpop-mrsu/402_Kudryavtzev_DA
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже обновлено.
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Из https://github.com/MrlLegend/402_Kudryavtzev_DA
-Из https://github.com/MrlLegend/402_Kudryavtzev_DA
-   fee8321..211f843  master     -> student/master
-   fee8321..211f843  master     -> student/master
-Merge made by the 'ort' strategy.
- task05/hangman/.gitignore         |   2 +
- task05/hangman/README.md          |  51 ++++++++++++++++
- task05/hangman/bin/hangman.bat    |   5 ++
- task05/hangman/bin/hangman.php    |  18 ++++++
- task05/hangman/composer.json      |  26 ++++++++
- task05/hangman/src/Controller.php | 110 ++++++++++++++++++++++++++++++++++
- task05/hangman/src/Model.php      | 122 ++++++++++++++++++++++++++++++++++++++
- task05/hangman/src/View.php       |  24 ++++++++
- 8 files changed, 358 insertions(+)
- create mode 100644 task05/hangman/.gitignore
- create mode 100644 task05/hangman/README.md
- create mode 100644 task05/hangman/bin/hangman.bat
- create mode 100644 task05/hangman/bin/hangman.php
- create mode 100644 task05/hangman/composer.json
- create mode 100644 task05/hangman/src/Controller.php
- create mode 100644 task05/hangman/src/Model.php
- create mode 100644 task05/hangman/src/View.php
-task05
-task from branch: master
-creation date: 12/09/2022 15:08:49
-Checking script check_master.ps1 not found
 402_Makarov_NA
 402_Nagaev_DG
 402_Pochtov_AA
+=====================================================
+/home/andrey/labs_402/402_Pochtov_AA
+Из github.com-mrsu:andpop-mrsu/402_Pochtov_AA
+Из github.com-mrsu:andpop-mrsu/402_Pochtov_AA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   6d81a9c..4d37ba0  master     -> teacher/master
+   6d81a9c..4d37ba0  master     -> teacher/master
+Обновление 6d81a9c..4d37ba0
+Fast-forward
+ Task01/README.md                         |  21 +++
+ Task01/README_self-logger.md             |   8 +
+ Task01/self-logger.bat                   |  21 +++
+ Task01/task1.php                         |  14 ++
+ Task02/guess_number/README.md            |  56 ++++++
+ Task02/guess_number/bin/guess-number.bat |   3 +
+ Task02/guess_number/bin/guess-number.php |   9 +
+ Task02/guess_number/composer.json        |  22 +++
+ Task02/guess_number/src/Controller.php   |  10 ++
+ Task02/guess_number/src/View.php         |   8 +
+ Task03/guess_number/README.md            |  56 ++++++
+ Task03/guess_number/bin/guess-number.bat |   3 +
+ Task03/guess_number/bin/guess-number.php |   9 +
+ Task03/guess_number/composer.json        |  22 +++
+ Task03/guess_number/src/Controller.php   |  97 +++++++++++
+ Task03/guess_number/src/View.php         |  30 ++++
+ Task04/guess_number/README.md            |  56 ++++++
+ Task04/guess_number/bin/guess-number.bat |   3 +
+ Task04/guess_number/bin/guess-number.php |   9 +
+ Task04/guess_number/composer.json        |  24 +++
+ Task04/guess_number/src/Controller.php   |  14 ++
+ Task04/guess_number/src/DataBase.php     | 159 +++++++++++++++++
+ Task04/guess_number/src/GameModel.php    | 117 +++++++++++++
+ Task04/guess_number/src/View.php         |  96 +++++++++++
+ Task05/guess_number/README.md            |  56 ++++++
+ Task05/guess_number/bin/guess-number.bat |   3 +
+ Task05/guess_number/bin/guess-number.php |   9 +
+ Task05/guess_number/composer.json        |  24 +++
+ Task05/guess_number/src/Controller.php   |  14 ++
+ Task05/guess_number/src/DataBase.php     | 145 ++++++++++++++++
+ Task05/guess_number/src/GameModel.php    | 117 +++++++++++++
+ Task05/guess_number/src/View.php         |  96 +++++++++++
+ Task08/README.md                         |  38 +++++
+ Task08/composer.json                     |  22 +++
+ Task08/public/index.html                 |  74 ++++++++
+ Task08/public/index.php                  | 148 ++++++++++++++++
+ Task08/public/js/Controller.js           |  45 +++++
+ Task08/public/js/Model.js                | 283 +++++++++++++++++++++++++++++++
+ Task08/public/js/View.js                 | 102 +++++++++++
+ Task08/public/styles/style.css           | 149 ++++++++++++++++
+ task08.md                                |  80 +++++++++
+ 41 files changed, 2272 insertions(+)
+ create mode 100644 Task01/README.md
+ create mode 100644 Task01/README_self-logger.md
+ create mode 100644 Task01/self-logger.bat
+ create mode 100644 Task01/task1.php
+ create mode 100644 Task02/guess_number/README.md
+ create mode 100644 Task02/guess_number/bin/guess-number.bat
+ create mode 100644 Task02/guess_number/bin/guess-number.php
+ create mode 100644 Task02/guess_number/composer.json
+ create mode 100644 Task02/guess_number/src/Controller.php
+ create mode 100644 Task02/guess_number/src/View.php
+ create mode 100644 Task03/guess_number/README.md
+ create mode 100644 Task03/guess_number/bin/guess-number.bat
+ create mode 100644 Task03/guess_number/bin/guess-number.php
+ create mode 100644 Task03/guess_number/composer.json
+ create mode 100644 Task03/guess_number/src/Controller.php
+ create mode 100644 Task03/guess_number/src/View.php
+ create mode 100644 Task04/guess_number/README.md
+ create mode 100644 Task04/guess_number/bin/guess-number.bat
+ create mode 100644 Task04/guess_number/bin/guess-number.php
+ create mode 100644 Task04/guess_number/composer.json
+ create mode 100644 Task04/guess_number/src/Controller.php
+ create mode 100644 Task04/guess_number/src/DataBase.php
+ create mode 100644 Task04/guess_number/src/GameModel.php
+ create mode 100644 Task04/guess_number/src/View.php
+ create mode 100644 Task05/guess_number/README.md
+ create mode 100644 Task05/guess_number/bin/guess-number.bat
+ create mode 100644 Task05/guess_number/bin/guess-number.php
+ create mode 100644 Task05/guess_number/composer.json
+ create mode 100644 Task05/guess_number/src/Controller.php
+ create mode 100644 Task05/guess_number/src/DataBase.php
+ create mode 100644 Task05/guess_number/src/GameModel.php
+ create mode 100644 Task05/guess_number/src/View.php
+ create mode 100644 Task08/README.md
+ create mode 100644 Task08/composer.json
+ create mode 100644 Task08/public/index.html
+ create mode 100644 Task08/public/index.php
+ create mode 100644 Task08/public/js/Controller.js
+ create mode 100644 Task08/public/js/Model.js
+ create mode 100644 Task08/public/js/View.js
+ create mode 100644 Task08/public/styles/style.css
+ create mode 100644 task08.md
+Из https://github.com/ktkrst/402_Pochtov_AA
+Из https://github.com/ktkrst/402_Pochtov_AA
+ * [новая ветка]     ktkrst-patch-1 -> student/ktkrst-patch-1
+ * [новая ветка]     ktkrst-patch-1 -> student/ktkrst-patch-1
+ * [новая ветка]     master         -> student/master
+ * [новая ветка]     master         -> student/master
+Merge made by the 'recursive' strategy.
+ Task06/README.md       |  15 ++++
+ Task06/index.html      |  56 +++++++++++++
+ Task06/src/Model.js    |  63 ++++++++++++++
+ Task06/src/View.js     |  75 +++++++++++++++++
+ Task06/src/main.js     |  21 +++++
+ Task06/style.css       | 151 ++++++++++++++++++++++++++++++++++
+ Task07/README.md       |  15 ++++
+ Task07/index.html      |  74 +++++++++++++++++
+ Task07/src/DataBase.js | 219 +++++++++++++++++++++++++++++++++++++++++++++++++
+ Task07/src/Model.js    |  81 ++++++++++++++++++
+ Task07/src/View.js     | 105 ++++++++++++++++++++++++
+ Task07/src/main.js     |  34 ++++++++
+ Task07/style.css       | 149 +++++++++++++++++++++++++++++++++
+ 13 files changed, 1058 insertions(+)
+ create mode 100644 Task06/README.md
+ create mode 100644 Task06/index.html
+ create mode 100644 Task06/src/Model.js
+ create mode 100644 Task06/src/View.js
+ create mode 100644 Task06/src/main.js
+ create mode 100644 Task06/style.css
+ create mode 100644 Task07/README.md
+ create mode 100644 Task07/index.html
+ create mode 100644 Task07/src/DataBase.js
+ create mode 100644 Task07/src/Model.js
+ create mode 100644 Task07/src/View.js
+ create mode 100644 Task07/src/main.js
+ create mode 100644 Task07/style.css
+pull request 2
+task from branch: master
+creation date: 01/08/2023 23:17:08
+Checking script check_master.ps1 not found
 402_Polyakina_AM
 402_Pozharskiy_VS
 402_Rodushkin_VE
@@ -62,5 +158,5 @@ Checking script check_master.ps1 not found
 402_Zavodov_DA
 **********************
 PowerShell transcript end
-End time: 20221209183401
+End time: 20230109093608
 **********************
