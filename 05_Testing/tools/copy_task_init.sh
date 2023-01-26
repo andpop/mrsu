@@ -18,8 +18,6 @@ for student in $(cat "${pwd}/students-list.txt"); do
 
     cp "${pwd}/../tasks/README.md" "${student_dir}/"
     cp "${pwd}/../tasks/Git_instruction.md" "${student_dir}/"
-    cp "${pwd}/../tasks/PHP_instruction.md" "${student_dir}/"
-    cp "${pwd}/../tasks/Pull_Request_flow.pdf" "${student_dir}/"
     cp "${pwd}/../tasks/task01.md" "${student_dir}/task01.md"
     # cp -R "${pwd}/../tasks/PHPUnit_example" "${student_dir}/"
 
