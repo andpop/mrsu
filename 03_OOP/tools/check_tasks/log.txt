@@ -1,22 +1,43 @@
 **********************
 PowerShell transcript start
-Start time: 20221105093838
+Start time: 20230204160606
 **********************
 Transcript started, output file is log.txt
+302_OOP_Ariskin_NV
+302_OOP_Azarkina_NV
+=====================================================
+/home/andrey/labs/302_OOP/302_OOP_Azarkina_NV
+Из github.com-mrsu:andpop-mrsu/302_OOP_Azarkina_NV
+Из github.com-mrsu:andpop-mrsu/302_OOP_Azarkina_NV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже обновлено.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Уже обновлено.
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/302_OOP_Azarkina_NV/Task01
+--------------------------------------------------
+Check path: hello.php
+--------------------------------------------------
+Check path: start.bat
+--------------------------------------------------
+Run: ./start.bat
+2023-02-04 16:06:12
 
-Get-ChildItem: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/run_check.ps1:14
-Line |
-  14 |  $studentDirs = (Get-ChildItem $studentDirsPath -Attributes Directory)
-     |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot find path '/home/andrey/labs_302/' because it does not exist.
-
-Get-ChildItem: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/run_check.ps1:14
-Line |
-  14 |  $studentDirs = (Get-ChildItem $studentDirsPath -Attributes Directory)
-     |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot find path '/home/andrey/labs_302/' because it does not exist.
-
-**********************
-PowerShell transcript end
-End time: 20221105093838
-**********************
+Азаркина Наталья
+--------------------------------------------------
+Total ok: 3
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/302_OOP/302_OOP_Azarkina_NV
+Task01
+Task from branch: Task01
+Creation date: 02/04/2023 11:17:47
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> $global:?
+True

@@ -11,7 +11,7 @@ TEACHER_PROFILE="git@github.com-mrsu:andpop-mrsu"
 TEACHER_EMAIL="andrvpopov@gmail.com"
 
 for student in $(cat $STUDENTS_FILE) ; do
-    student_dir="${BASE_DIR}/$student"
+    student_dir="${BASE_DIR}/${STREAM}_$student"
     if ! [ -d $student_dir ] ; then
         echo "Make directory: for ${student_dir}"
         mkdir $student_dir
