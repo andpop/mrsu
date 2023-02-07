@@ -1,49 +1,42 @@
-function Test-File {
-    param(
-        $path,
-        [switch]$showContent
-    )
-    
+function Write-DelimiterString {
     Write-Host "--------------------------------------------------" -ForegroundColor blue
-    Write-Host "Check $path" -Foreground blue
+}
+
+function Check-Path {
+    param(
+        [string]$path,
+        [switch]$ShowContent
+    )
+    Write-DelimiterString
+    Write-Host "Check path: $path" -Foreground blue
     if (-not (Test-Path $path)) {
         Write-Host "$path not found" -ForegroundColor red
         return $false
-        type hello.php
     }
     
-    if ($showContent) {
-        Get-Content $path
+    if ($ShowContent) {
+        Write-Host (Get-Content $path -Raw)
     }
 
     return $true
 }
 
-function Test-Command {
+function Check-Command {
     param(
         $command,
-        $params = ""
+        $params = @()
     )
 
-    Write-Host "--------------------------------------------------" -ForegroundColor blue
+    Write-DelimiterString
     Write-Host "Run: $command $params" -Foreground blue
-    & $command $params.split(' ')
+    $str = (& $command $params | Out-String)
+    
     if (-not $?) {
+        Write-Host $str
         Write-Host "Execution fails" -ForegroundColor red
         return $false
     }
 
+    Write-Host $str
     return $true
-}
-
-function List-Directory {
-    param (
-        $directory
-    )
-
-    Write-Host "--------------------------------------------------" -ForegroundColor blue
-    Write-Host "$directory content:" -ForegroundColor blue
-    Get-ChildItem $directory
-
-    return true
 }

@@ -1,43 +1,71 @@
 **********************
 PowerShell transcript start
-Start time: 20230204160606
+Start time: 20230207145113
 **********************
 Transcript started, output file is log.txt
 302_OOP_Ariskin_NV
 302_OOP_Azarkina_NV
+302_OOP_Bochkov_NM
+302_OOP_Burlakova_TS
+302_OOP_Egorova_OA
+302_OOP_Ezhikov_NA
+302_OOP_Jakunchev_NS
 =====================================================
-/home/andrey/labs/302_OOP/302_OOP_Azarkina_NV
-Из github.com-mrsu:andpop-mrsu/302_OOP_Azarkina_NV
-Из github.com-mrsu:andpop-mrsu/302_OOP_Azarkina_NV
+/home/andrey/labs/302_OOP/302_OOP_Jakunchev_NS
+Из github.com-mrsu:andpop-mrsu/302_OOP_Jakunchev_NS
+Из github.com-mrsu:andpop-mrsu/302_OOP_Jakunchev_NS
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-Уже обновлено.
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Уже обновлено.
+Уже актуально.
+Из https://github.com/nyakunchev/302_OOP_Jakunchev_NS
+Из https://github.com/nyakunchev/302_OOP_Jakunchev_NS
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 51e9a89..099d6f6
+Fast-forward (no commit created; -m option ignored)
+ Task01/hello.php | 3 +++
+ Task01/start.bat | 2 ++
+ 2 files changed, 5 insertions(+)
+ create mode 100644 Task01/hello.php
+ create mode 100755 Task01/start.bat
 --------------------------------------------------
-Task:  /home/andrey/labs/302_OOP/302_OOP_Azarkina_NV/Task01
+Task:  /home/andrey/labs/302_OOP/302_OOP_Jakunchev_NS/Task01
 --------------------------------------------------
 Check path: hello.php
 --------------------------------------------------
 Check path: start.bat
 --------------------------------------------------
 Run: ./start.bat
-2023-02-04 16:06:12
-
-Азаркина Наталья
+2023-02-07 14:51:21 Якунчев Никита
 --------------------------------------------------
 Total ok: 3
 Total error: 0
 --------------------------------------------------
-/home/andrey/labs/302_OOP/302_OOP_Azarkina_NV
+/home/andrey/labs/302_OOP/302_OOP_Jakunchev_NS
 Task01
 Task from branch: Task01
-Creation date: 02/04/2023 11:17:47
-PS>TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> $global:?
-True
+Creation date: 02/05/2023 17:24:17
+To github.com-mrsu:andpop-mrsu/302_OOP_Jakunchev_NS.git
+To github.com-mrsu:andpop-mrsu/302_OOP_Jakunchev_NS.git
+   51e9a89..099d6f6  master -> master
+   51e9a89..099d6f6  master -> master
+302_OOP_Konyshev_AE
+302_OOP_Kosolapov_DA
+302_OOP_Kruchinkin_AA
+302_OOP_Kudashkina_JuE
+302_OOP_Maksimova_AO
+302_OOP_Minin_DE
+302_OOP_Morozov_PS
+302_OOP_Nazarov_KV
+302_OOP_Oshina_NV
+302_OOP_Pimenov_AV
+302_OOP_Pinjajkina_DA
+302_OOP_Tereshkina_ES
+302_OOP_Tjurin_SA
+302_OOP_Zhukov_DE
+**********************
+PowerShell transcript end
+End time: 20230207145226
+**********************

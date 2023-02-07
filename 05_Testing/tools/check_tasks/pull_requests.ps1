@@ -1,7 +1,8 @@
 function Check-PullRequest {
+    param (
+        [string]$studentDir
+    )
     Process {
-        $repo = $_.head.repo.name
-        $studentDir = $studentDirsPath + $repo
         $studentRepo = $_.head.repo.clone_url
         $number = $_.number
         $title = $_.title
@@ -13,9 +14,6 @@ function Check-PullRequest {
         Write-Host "=====================================================" -ForegroundColor cyan 
         
         Write-Host $studentDir -ForegroundColor yellow 
-        Write-Host $title -ForegroundColor yellow 
-        Write-Host "Task from branch: $branch" -ForegroundColor yellow
-        Write-Host "Creation date: $datePR" -ForegroundColor yellow
         
         Push-Location $studentDir
         git pull teacher master
@@ -25,10 +23,17 @@ function Check-PullRequest {
         Pop-Location
 
         if (-not (Test-Path $checkScript)) {
+            Write-Host "Task from branch: $branch" -ForegroundColor yellow
+            Write-Host "Creation date: $datePR" -ForegroundColor yellow
             Write-Host "Checking script $checkScript not found" -ForegroundColor red
             return
         }
         & .\$checkScript -studentDir $studentDir -task $task
+
+        Write-Host $studentDir -ForegroundColor yellow 
+        Write-Host $title -ForegroundColor yellow 
+        Write-Host "Task from branch: $branch" -ForegroundColor yellow
+        Write-Host "Creation date: $datePR" -ForegroundColor yellow
 
         do {
             $yesNo = Read-Host "Push task on GitHub (y/n)?"
@@ -44,13 +49,17 @@ function Check-PullRequest {
 }
 
 function Check-Student {
-    Process {
-        $studentRepo = "${teacherRepo}$($_.Name)/pulls"
-        $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-    
-        if ($pullRequests.count -eq 0) { return }
-    
-        $pullRequests | Check-PullRequest
-    }
+    param (
+        [string]$studentName
+    )
+    Write-Host $studentName
+
+    $studentRepo = "${teacherRepo}/${studentName}/pulls"
+    $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+
+    if ($pullRequests.count -eq 0) { return }
+
+    $pullRequests | Check-PullRequest -studentDir "${studentDirsPath}/${studentName}"
+
 }
 
