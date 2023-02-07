@@ -2,6 +2,9 @@
 * Зарегистрироваться на GitHub. Сделать форк своего репозитория  из https://github.com/andpop-mrsu.
 * Установить и выполнить первичную настройку Git на локальной машине (`git config --global user.name`, `git config --global user.email`).
 * Склонировать "форкнутый" репозиторий из своего профиля GitHub на локальную машину (`git clone`). При этом удаленный репозиторий в вашем профиле будет привязан под именем *origin*.
+* Настроить аутентификацию для выполнения операций на GitHub с помощью SSH-ключей или персонального токена доступа (Personal Access Token, PAT).
+    * Для доступа к GitHub по SSH нужно сгенерировать на локальной машине закрытый и открытый ключи SSH и зарегистрировать открытый ключ в своем профиле на GitHub (раздел SSH and GPG keys).
+    * Для доступа к GitHub по PAT нужно сгенерировать новый токен на GitHub в разделе Developer settings/Personal access tokens/Tokens (classic), скопировать его в буфер и выполнить команду `git remote set-url origin https://<githubtoken>@github.com/<username>/<repositoryname>.git` Вместо выражения в угловых скобках подставить соответсвующие значения.
 * Добавить привязку к оригинальному репозиторию под именем *upstream* (`git remote add upstream https://github.com/andpop-mrsu/402_XXX_XX.git`).
 * Создать в локальном репозитории ветку TaskXX с номером задания (`git checkout -b Task01`). Далее работать в этой ветке.
 
