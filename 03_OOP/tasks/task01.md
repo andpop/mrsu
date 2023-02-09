@@ -36,6 +36,6 @@
     * Д. Скляр, А. Трахтенберг "PHP. Рецепты программирования", 3-е изд., глава 26. СПб.: Питер, 2015.
 * Система управления версиями Git.
     * <https://git-scm.com/book/ru/v2/> S.Chacon, B. Straub "Pro Git". Электронная книга про Git (перевод на русский язык).
-    * <https://learn.javascript.ru/screencast/git> Скринкаст Ильи Кантора по Git.
+    * <https://youtu.be/XeK0UylJYu8?list=PLDyvV36pndZEgSRzWGuXFrTRUFuAAMciE> Крэш-курс по Git и GitHub от Ильи Кантора
 * Веб-сервис GitHub для хостинга IT-проектов и их совместной разработки
     * <https://youtu.be/pUT3mx1ZRUМ> "Pull request в опенсорс" от Hexlet. Инструкция по работе с Pull Request для добавления своего кода в open-source проекты (наша процедура отчетности организована точно по такой же схеме).   
