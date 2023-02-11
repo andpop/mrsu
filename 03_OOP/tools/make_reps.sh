@@ -1,6 +1,6 @@
 #!/bin/bash
 
-token=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
+token=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
 rm ./reps.txt
 for student in $(cat students-list.txt); do
    echo "302_OOP_$student" >> reps.txt

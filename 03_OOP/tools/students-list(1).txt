@@ -1,15 +1,10 @@
-**********************
-PowerShell transcript start
-Start time: 20230211163525
-**********************
-Transcript started, output file is log.txt
-302_OOP_Ariskin_NV
 302_OOP_Azarkina_NV
+302_OOP_Ariskin_NV
 302_OOP_Bochkov_NM
 302_OOP_Burlakova_TS
 302_OOP_Egorova_OA
 302_OOP_Ezhikov_NA
-302_OOP_Jakunchev_NS
+302_OOP_Zhukov_DE
 302_OOP_Konyshev_AE
 302_OOP_Kosolapov_DA
 302_OOP_Kruchinkin_AA
@@ -23,8 +18,4 @@ Transcript started, output file is log.txt
 302_OOP_Pinjajkina_DA
 302_OOP_Tereshkina_ES
 302_OOP_Tjurin_SA
-302_OOP_Zhukov_DE
-**********************
-PowerShell transcript end
-End time: 20230211163532
-**********************
+302_OOP_Jakunchev_NS
