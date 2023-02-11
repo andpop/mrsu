@@ -10,6 +10,7 @@ Transcript started, output file is log.txt
 302_OOP_Egorova_OA
 302_OOP_Ezhikov_NA
 302_OOP_Jakunchev_NS
+
 =====================================================
 /home/andrey/labs/302_OOP/302_OOP_Jakunchev_NS
 Из github.com-mrsu:andpop-mrsu/302_OOP_Jakunchev_NS
