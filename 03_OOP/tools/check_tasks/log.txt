@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20230211163525
+Start time: 20230218102613
 **********************
 Transcript started, output file is log.txt
 302_OOP_Ariskin_NV
@@ -11,6 +11,27 @@ Transcript started, output file is log.txt
 302_OOP_Ezhikov_NA
 302_OOP_Jakunchev_NS
 302_OOP_Konyshev_AE
+=====================================================
+/home/andrey/labs/302_OOP/302_OOP_Konyshev_AE
+Из github.com-mrsu:andpop-mrsu/302_OOP_Konyshev_AE
+Из github.com-mrsu:andpop-mrsu/302_OOP_Konyshev_AE
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже обновлено.
+Из https://github.com/ortemx/302_OOP_Konyshev_AE
+Из https://github.com/ortemx/302_OOP_Konyshev_AE
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление a9c2657..6dbb3e3
+Fast-forward (no commit created; -m option ignored)
+ Task01/hello.php | 4 ++++
+ Task01/start.bat | 2 ++
+ 2 files changed, 6 insertions(+)
+ create mode 100644 Task01/hello.php
+ create mode 100644 Task01/start.bat
+Task from branch: master
+Creation date: 02/11/2023 19:00:15
+Checking script check_master.ps1 not found
 302_OOP_Kosolapov_DA
 302_OOP_Kruchinkin_AA
 302_OOP_Kudashkina_JuE
@@ -26,5 +47,5 @@ Transcript started, output file is log.txt
 302_OOP_Zhukov_DE
 **********************
 PowerShell transcript end
-End time: 20230211163532
+End time: 20230218102632
 **********************
