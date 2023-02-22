@@ -9,7 +9,7 @@ function Check-Task {
 
     $doneChecks = $failureChecks = 0
 
-    if (Check-Path -Path Fraction.php) { $doneChecks++ } else { $failureChecks++ }
+    if ((Check-Path -Path Fraction.php) || (Check-Path -Path Vector.php)) { $doneChecks++ } else { $failureChecks++ }
     if (Check-Path -Path Test.php) { $doneChecks++ } else { $failureChecks++ }
     if (Check-Path -Path run_test.php -ShowContent) { $doneChecks++ } else { $failureChecks++ }
 

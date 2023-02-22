@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20230218102613
+Start time: 20230222133631
 **********************
 Transcript started, output file is log.txt
 302_OOP_Ariskin_NV
@@ -10,28 +10,106 @@ Transcript started, output file is log.txt
 302_OOP_Egorova_OA
 302_OOP_Ezhikov_NA
 302_OOP_Jakunchev_NS
-302_OOP_Konyshev_AE
 =====================================================
-/home/andrey/labs/302_OOP/302_OOP_Konyshev_AE
-Из github.com-mrsu:andpop-mrsu/302_OOP_Konyshev_AE
-Из github.com-mrsu:andpop-mrsu/302_OOP_Konyshev_AE
+/home/andrey/labs/302_OOP/302_OOP_Jakunchev_NS
+Из github.com-mrsu:andpop-mrsu/302_OOP_Jakunchev_NS
+Из github.com-mrsu:andpop-mrsu/302_OOP_Jakunchev_NS
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-Уже обновлено.
-Из https://github.com/ortemx/302_OOP_Konyshev_AE
-Из https://github.com/ortemx/302_OOP_Konyshev_AE
+Уже актуально.
+Из https://github.com/nyakunchev/302_OOP_Jakunchev_NS
+Из https://github.com/nyakunchev/302_OOP_Jakunchev_NS
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
  * [новая ветка]     master     -> student/master
  * [новая ветка]     master     -> student/master
-Обновление a9c2657..6dbb3e3
+Обновление 4003731..6975310
 Fast-forward (no commit created; -m option ignored)
- Task01/hello.php | 4 ++++
- Task01/start.bat | 2 ++
- 2 files changed, 6 insertions(+)
- create mode 100644 Task01/hello.php
- create mode 100644 Task01/start.bat
-Task from branch: master
-Creation date: 02/11/2023 19:00:15
-Checking script check_master.ps1 not found
+ Task02/Test.php     | 30 +++++++++++++++++++++
+ Task02/Vector.php   | 78 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Task02/run_test.php |  6 +++++
+ 3 files changed, 114 insertions(+)
+ create mode 100644 Task02/Test.php
+ create mode 100644 Task02/Vector.php
+ create mode 100644 Task02/run_test.php
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/302_OOP_Jakunchev_NS/Task02
+--------------------------------------------------
+Check path: Fraction.php
+Fraction.php not found
+--------------------------------------------------
+Check path: Test.php
+--------------------------------------------------
+Check path: run_test.php
+<?php
+
+require_once("Vector.php");
+require_once("Test.php");
+runTest();
+--------------------------------------------------
+Run: php run_test.php
+Ожидается: (2;2;8)
+Получено: (2;2;8)
+Ожидается: (6;3;17)
+Получено: (6;3;17)
+Ожидается: (-2;1;-1)
+Получено: (-2;1;-1)
+Ожидается: (6;6;24)
+Получено: (6;6;24)
+Ожидается: 82
+Получено: 82
+Ожидается: (10;14;-6)
+Получено: (10;14;-6)
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./*
+
+FILE: /home/andrey/labs/302_OOP/302_OOP_Jakunchev_NS/Task02/run_test.php
+------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+------------------------------------------------------------------------
+ 5 | ERROR | [x] Expected 1 blank line at end of file; 2 found
+------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------
+
+
+FILE: /home/andrey/labs/302_OOP/302_OOP_Jakunchev_NS/Task02/Test.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 29 | ERROR | [x] Expected 1 blank line at end of file; 2 found
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: /home/andrey/labs/302_OOP/302_OOP_Jakunchev_NS/Task02/Vector.php
+---------------------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+---------------------------------------------------------------------------------
+  3 | ERROR | [ ] Each class must be in a namespace of at least one level (a
+    |       |     top-level vendor name)
+ 13 | ERROR | [x] Parentheses must be used when instantiating a new class
+ 77 | ERROR | [x] Expected 1 blank line at end of file; 2 found
+---------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+---------------------------------------------------------------------------------
+
+Time: 36ms; Memory: 6MB
+Execution fails
+--------------------------------------------------
+Total ok: 3
+Total error: 2
+--------------------------------------------------
+/home/andrey/labs/302_OOP/302_OOP_Jakunchev_NS
+Task02
+Task from branch: Task02
+Creation date: 02/19/2023 19:03:38
+To github.com-mrsu:andpop-mrsu/302_OOP_Jakunchev_NS.git
+To github.com-mrsu:andpop-mrsu/302_OOP_Jakunchev_NS.git
+   4003731..6975310  master -> master
+   4003731..6975310  master -> master
+302_OOP_Konyshev_AE
 302_OOP_Kosolapov_DA
 302_OOP_Kruchinkin_AA
 302_OOP_Kudashkina_JuE
@@ -47,5 +125,5 @@ Checking script check_master.ps1 not found
 302_OOP_Zhukov_DE
 **********************
 PowerShell transcript end
-End time: 20230218102632
+End time: 20230222133915
 **********************

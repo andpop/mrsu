@@ -1,151 +1,9 @@
 **********************
 PowerShell transcript start
-Start time: 20230207143118
+Start time: 20230215170057
 **********************
 Transcript started, output file is log.txt
 202M_Testing_Aleksandrov_KV
-=====================================================
-/home/andrey/labs/202M_Testing/202M_Testing_Aleksandrov_KV
-Из github.com-mrsu:andpop-mrsu/202M_Testing_Aleksandrov_KV
-Из github.com-mrsu:andpop-mrsu/202M_Testing_Aleksandrov_KV
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Уже актуально.
---------------------------------------------------
-Task:  /home/andrey/labs/202M_Testing/202M_Testing_Aleksandrov_KV/Task03
---------------------------------------------------
-Total ok: 0
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/202M_Testing/202M_Testing_Aleksandrov_KV
-Task03
-Task from branch: Task03
-Creation date: 02/05/2023 17:04:52
-=====================================================
-/home/andrey/labs/202M_Testing/202M_Testing_Aleksandrov_KV
-Из github.com-mrsu:andpop-mrsu/202M_Testing_Aleksandrov_KV
-Из github.com-mrsu:andpop-mrsu/202M_Testing_Aleksandrov_KV
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Уже актуально.
---------------------------------------------------
-Task:  /home/andrey/labs/202M_Testing/202M_Testing_Aleksandrov_KV/Task02
---------------------------------------------------
-Total ok: 0
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/202M_Testing/202M_Testing_Aleksandrov_KV
-Task02
-Task from branch: Task02
-Creation date: 02/05/2023 16:23:00
-=====================================================
-/home/andrey/labs/202M_Testing/202M_Testing_Aleksandrov_KV
-Из github.com-mrsu:andpop-mrsu/202M_Testing_Aleksandrov_KV
-Из github.com-mrsu:andpop-mrsu/202M_Testing_Aleksandrov_KV
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Уже актуально.
---------------------------------------------------
-Task:  /home/andrey/labs/202M_Testing/202M_Testing_Aleksandrov_KV/Task01
---------------------------------------------------
-Check path: check.txt
-Позитивное тестирование:
-    Первый аргумент: 10, Второй аргумент: 10, Третий аргумент: 10. Результат: "equilateral"
-    Первый аргумент: 10, Второй аргумент: 12, Третий аргумент: 14. Результат: "nonequilateral"
-    Первый аргумент: 10, Второй аргумент: 10, Третий аргумент: 19. Результат: "isosceles"
-Негативное тестирование:
-    Первый аргумент: "a", Второй аргумент: "b", Третий аргумент: "c". Результат: "__main__.IncorrectTriangleSides: Sides set incorrectly"
-    Первый аргумент: 1, Второй аргумент: 2, Третий аргумент: 3. Результат: "__main__.IncorrectTriangleSides: Sides set incorrectly"
---------------------------------------------------
-Check path: triangle_func.py
---------------------------------------------------
-Check path: triangle_class.py
-triangle_class.py not found
---------------------------------------------------
-Check path: test_func.py
---------------------------------------------------
-Check path: test_class.py
---------------------------------------------------
-Run: python3 triangle_func.py -v
-Trying:
-    get_triangle_type(10, 10, 10)
-Expecting:
-    'equilateral'
-ok
-Trying:
-    get_triangle_type(10, 12, 14)
-Expecting:
-    'nonequilateral'
-ok
-Trying:
-    get_triangle_type(10, 10, 19)
-Expecting:
-    'isosceles'
-ok
-Trying:
-    get_triangle_type("a","b","c")
-Expecting:
-    Traceback (most recent call last):
-     ...
-    IncorrectTriangleSides: Sides set incorrectly
-ok
-Trying:
-    get_triangle_type(1, 2, 3)
-Expecting:
-    Traceback (most recent call last):
-     ...
-    IncorrectTriangleSides: Sides set incorrectly
-ok
-2 items had no tests:
-    __main__
-    __main__.IncorrectTriangleSides
-1 items passed all tests:
-   5 tests in __main__.get_triangle_type
-5 tests in 3 items.
-5 passed and 0 failed.
-Test passed.
---------------------------------------------------
-Run: python3 test_func.py -v
-
---------------------------------------------------
-Run: pytest -v
-============================= test session starts ==============================
-platform linux -- Python 3.8.10, pytest-7.2.1, pluggy-1.0.0 -- /usr/bin/python3
-cachedir: .pytest_cache
-rootdir: /home/andrey/labs/202M_Testing/202M_Testing_Aleksandrov_KV/Task01
-collecting ... collected 12 items
-
-test_class.py::TestTriangleClass::test_triangle_create PASSED            [  8%]
-test_class.py::TestTriangleClass::test_triangle_create_with_value_error PASSED [ 16%]
-test_class.py::TestTriangleClass::test_triangle_create_with_incorrect_sides PASSED [ 25%]
-test_class.py::TestTriangleClass::test_triangle_method_type_nonequilateral PASSED [ 33%]
-test_class.py::TestTriangleClass::test_triangle_method_type_equilateral PASSED [ 41%]
-test_class.py::TestTriangleClass::test_triangle_method_type_isosceles PASSED [ 50%]
-test_class.py::TestTriangleClass::test_triangle_method_perimeter PASSED  [ 58%]
-test_func.py::TestTriangleFunction::test_equilateral_triangle PASSED     [ 66%]
-test_func.py::TestTriangleFunction::test_incorrect_sides PASSED          [ 75%]
-test_func.py::TestTriangleFunction::test_isosceles_triangle PASSED       [ 83%]
-test_func.py::TestTriangleFunction::test_nonequilateral_triangle PASSED  [ 91%]
-test_func.py::TestTriangleFunction::test_type_error PASSED               [100%]
-
-============================== 12 passed in 0.02s ==============================
---------------------------------------------------
-Total ok: 7
-Total error: 1
---------------------------------------------------
-/home/andrey/labs/202M_Testing/202M_Testing_Aleksandrov_KV
-Task01
-Task from branch: Task01
-Creation date: 02/05/2023 10:53:06
 202M_Testing_Antonov_KJu
 202M_Testing_Arjanov_VA
 202M_Testing_Egorov_OA
@@ -156,7 +14,53 @@ Creation date: 02/05/2023 10:53:06
 202M_Testing_Plaksin_DV
 202M_Testing_Shabarin_IA
 202M_Testing_Trostin_SA
+=====================================================
+/home/andrey/labs/202M_Testing/202M_Testing_Trostin_SA
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Trostin_SA
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Trostin_SA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs/202M_Testing/202M_Testing_Trostin_SA/Task03
+--------------------------------------------------
+Total ok: 0
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/202M_Testing/202M_Testing_Trostin_SA
+add Task03
+Task from branch: Task03
+Creation date: 02/12/2023 17:47:27
+To github.com-mrsu:andpop-mrsu/202M_Testing_Trostin_SA.git
+To github.com-mrsu:andpop-mrsu/202M_Testing_Trostin_SA.git
+   29527cf..5f3ea20  master -> master
+   29527cf..5f3ea20  master -> master
+=====================================================
+/home/andrey/labs/202M_Testing/202M_Testing_Trostin_SA
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Trostin_SA
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Trostin_SA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs/202M_Testing/202M_Testing_Trostin_SA/Task02
+--------------------------------------------------
+Total ok: 0
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/202M_Testing/202M_Testing_Trostin_SA
+add Task02
+Task from branch: Task02
+Creation date: 02/12/2023 17:42:44
+Everything up-to-date
+Everything up-to-date
 **********************
 PowerShell transcript end
-End time: 20230207143206
+End time: 20230215170123
 **********************
