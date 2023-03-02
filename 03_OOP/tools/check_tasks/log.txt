@@ -1,120 +1,80 @@
 **********************
 PowerShell transcript start
-Start time: 20230222133631
+Start time: 20230302143320
 **********************
 Transcript started, output file is log.txt
 302_OOP_Ariskin_NV
+=====================================================
+/home/andrey/labs/302_OOP/302_OOP_Ariskin_NV
+Из github.com-mrsu:andpop-mrsu/302_OOP_Ariskin_NV
+Из github.com-mrsu:andpop-mrsu/302_OOP_Ariskin_NV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+Task from branch: Task03
+Creation date: 03/01/2023 18:16:43
+Checking script check_Task03.ps1 not found
 302_OOP_Azarkina_NV
 302_OOP_Bochkov_NM
 302_OOP_Burlakova_TS
 302_OOP_Egorova_OA
 302_OOP_Ezhikov_NA
 302_OOP_Jakunchev_NS
-=====================================================
-/home/andrey/labs/302_OOP/302_OOP_Jakunchev_NS
-Из github.com-mrsu:andpop-mrsu/302_OOP_Jakunchev_NS
-Из github.com-mrsu:andpop-mrsu/302_OOP_Jakunchev_NS
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-Из https://github.com/nyakunchev/302_OOP_Jakunchev_NS
-Из https://github.com/nyakunchev/302_OOP_Jakunchev_NS
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Обновление 4003731..6975310
-Fast-forward (no commit created; -m option ignored)
- Task02/Test.php     | 30 +++++++++++++++++++++
- Task02/Vector.php   | 78 +++++++++++++++++++++++++++++++++++++++++++++++++++++
- Task02/run_test.php |  6 +++++
- 3 files changed, 114 insertions(+)
- create mode 100644 Task02/Test.php
- create mode 100644 Task02/Vector.php
- create mode 100644 Task02/run_test.php
---------------------------------------------------
-Task:  /home/andrey/labs/302_OOP/302_OOP_Jakunchev_NS/Task02
---------------------------------------------------
-Check path: Fraction.php
-Fraction.php not found
---------------------------------------------------
-Check path: Test.php
---------------------------------------------------
-Check path: run_test.php
-<?php
-
-require_once("Vector.php");
-require_once("Test.php");
-runTest();
---------------------------------------------------
-Run: php run_test.php
-Ожидается: (2;2;8)
-Получено: (2;2;8)
-Ожидается: (6;3;17)
-Получено: (6;3;17)
-Ожидается: (-2;1;-1)
-Получено: (-2;1;-1)
-Ожидается: (6;6;24)
-Получено: (6;6;24)
-Ожидается: 82
-Получено: 82
-Ожидается: (10;14;-6)
-Получено: (10;14;-6)
---------------------------------------------------
-Run: phpcs --standard=PSR12 ./*
-
-FILE: /home/andrey/labs/302_OOP/302_OOP_Jakunchev_NS/Task02/run_test.php
-------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-------------------------------------------------------------------------
- 5 | ERROR | [x] Expected 1 blank line at end of file; 2 found
-------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-------------------------------------------------------------------------
-
-
-FILE: /home/andrey/labs/302_OOP/302_OOP_Jakunchev_NS/Task02/Test.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------
- 29 | ERROR | [x] Expected 1 blank line at end of file; 2 found
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-----------------------------------------------------------------------
-
-
-FILE: /home/andrey/labs/302_OOP/302_OOP_Jakunchev_NS/Task02/Vector.php
----------------------------------------------------------------------------------
-FOUND 3 ERRORS AFFECTING 3 LINES
----------------------------------------------------------------------------------
-  3 | ERROR | [ ] Each class must be in a namespace of at least one level (a
-    |       |     top-level vendor name)
- 13 | ERROR | [x] Parentheses must be used when instantiating a new class
- 77 | ERROR | [x] Expected 1 blank line at end of file; 2 found
----------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
----------------------------------------------------------------------------------
-
-Time: 36ms; Memory: 6MB
-Execution fails
---------------------------------------------------
-Total ok: 3
-Total error: 2
---------------------------------------------------
-/home/andrey/labs/302_OOP/302_OOP_Jakunchev_NS
-Task02
-Task from branch: Task02
-Creation date: 02/19/2023 19:03:38
-To github.com-mrsu:andpop-mrsu/302_OOP_Jakunchev_NS.git
-To github.com-mrsu:andpop-mrsu/302_OOP_Jakunchev_NS.git
-   4003731..6975310  master -> master
-   4003731..6975310  master -> master
 302_OOP_Konyshev_AE
 302_OOP_Kosolapov_DA
 302_OOP_Kruchinkin_AA
 302_OOP_Kudashkina_JuE
 302_OOP_Maksimova_AO
 302_OOP_Minin_DE
+=====================================================
+/home/andrey/labs/302_OOP/302_OOP_Minin_DE
+Из github.com-mrsu:andpop-mrsu/302_OOP_Minin_DE
+Из github.com-mrsu:andpop-mrsu/302_OOP_Minin_DE
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/302_OOP_Minin_DE/Task01
+--------------------------------------------------
+Check path: hello.php
+--------------------------------------------------
+Check path: start.bat
+--------------------------------------------------
+Run: ./start.bat
+PS>TerminatingError(): "Cannot run a document in the middle of a pipeline: /home/andrey/labs/302_OOP/302_OOP_Minin_DE/Task01/start.bat."
+
+InvalidOperation: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/checks_for_task.ps1:32
+Line |
+  32 |      $str = (& $command $params | Out-String)
+     |              ~~~~~~~~~~~~~~~~~~
+     | Cannot run a document in the middle of a pipeline: /home/andrey/labs/302_OOP/302_OOP_Minin_DE/Task01/start.bat.
+
+InvalidOperation: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/checks_for_task.ps1:32
+Line |
+  32 |      $str = (& $command $params | Out-String)
+     |              ~~~~~~~~~~~~~~~~~~
+     | Cannot run a document in the middle of a pipeline: /home/andrey/labs/302_OOP/302_OOP_Minin_DE/Task01/start.bat.
+
+
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/302_OOP/302_OOP_Minin_DE
+Task01
+Task from branch: Task01
+Creation date: 03/02/2023 08:19:10
+To github.com-mrsu:andpop-mrsu/302_OOP_Minin_DE.git
+To github.com-mrsu:andpop-mrsu/302_OOP_Minin_DE.git
+   fe18ad7..a94b541  master -> master
+   fe18ad7..a94b541  master -> master
 302_OOP_Morozov_PS
 302_OOP_Nazarov_KV
 302_OOP_Oshina_NV
@@ -125,5 +85,5 @@ To github.com-mrsu:andpop-mrsu/302_OOP_Jakunchev_NS.git
 302_OOP_Zhukov_DE
 **********************
 PowerShell transcript end
-End time: 20230222133915
+End time: 20230302143418
 **********************
