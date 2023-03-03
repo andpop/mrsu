@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20230302143320
+Start time: 20230303090912
 **********************
 Transcript started, output file is log.txt
 302_OOP_Ariskin_NV
@@ -20,6 +20,53 @@ Checking script check_Task03.ps1 not found
 302_OOP_Azarkina_NV
 302_OOP_Bochkov_NM
 302_OOP_Burlakova_TS
+=====================================================
+/home/andrey/labs/302_OOP/302_OOP_Burlakova_TS
+Из github.com-mrsu:andpop-mrsu/302_OOP_Burlakova_TS
+Из github.com-mrsu:andpop-mrsu/302_OOP_Burlakova_TS
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/302_OOP_Burlakova_TS/Task02
+--------------------------------------------------
+Check path: Fraction.php
+--------------------------------------------------
+Check path: Test.php
+--------------------------------------------------
+Check path: run_test.php
+run_test.php not found
+--------------------------------------------------
+Run: php run_test.php
+Could not open input file: run_test.php
+Execution fails
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./*
+
+FILE: /home/andrey/labs/302_OOP/302_OOP_Burlakova_TS/Task02/Fraction.php
+-----------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-----------------------------------------------------------------------------------------------
+ 3 | ERROR | Each class must be in a namespace of at least one level (a top-level vendor name)
+-----------------------------------------------------------------------------------------------
+
+Time: 39ms; Memory: 6MB
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 3
+--------------------------------------------------
+/home/andrey/labs/302_OOP/302_OOP_Burlakova_TS
+Task02
+Task from branch: Task02
+Creation date: 03/02/2023 18:27:49
+To github.com-mrsu:andpop-mrsu/302_OOP_Burlakova_TS.git
+To github.com-mrsu:andpop-mrsu/302_OOP_Burlakova_TS.git
+   cc351c2..af238fe  master -> master
+   cc351c2..af238fe  master -> master
 302_OOP_Egorova_OA
 302_OOP_Ezhikov_NA
 302_OOP_Jakunchev_NS
@@ -29,52 +76,6 @@ Checking script check_Task03.ps1 not found
 302_OOP_Kudashkina_JuE
 302_OOP_Maksimova_AO
 302_OOP_Minin_DE
-=====================================================
-/home/andrey/labs/302_OOP/302_OOP_Minin_DE
-Из github.com-mrsu:andpop-mrsu/302_OOP_Minin_DE
-Из github.com-mrsu:andpop-mrsu/302_OOP_Minin_DE
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Уже актуально.
---------------------------------------------------
-Task:  /home/andrey/labs/302_OOP/302_OOP_Minin_DE/Task01
---------------------------------------------------
-Check path: hello.php
---------------------------------------------------
-Check path: start.bat
---------------------------------------------------
-Run: ./start.bat
-PS>TerminatingError(): "Cannot run a document in the middle of a pipeline: /home/andrey/labs/302_OOP/302_OOP_Minin_DE/Task01/start.bat."
-
-InvalidOperation: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/checks_for_task.ps1:32
-Line |
-  32 |      $str = (& $command $params | Out-String)
-     |              ~~~~~~~~~~~~~~~~~~
-     | Cannot run a document in the middle of a pipeline: /home/andrey/labs/302_OOP/302_OOP_Minin_DE/Task01/start.bat.
-
-InvalidOperation: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/checks_for_task.ps1:32
-Line |
-  32 |      $str = (& $command $params | Out-String)
-     |              ~~~~~~~~~~~~~~~~~~
-     | Cannot run a document in the middle of a pipeline: /home/andrey/labs/302_OOP/302_OOP_Minin_DE/Task01/start.bat.
-
-
-Execution fails
---------------------------------------------------
-Total ok: 2
-Total error: 1
---------------------------------------------------
-/home/andrey/labs/302_OOP/302_OOP_Minin_DE
-Task01
-Task from branch: Task01
-Creation date: 03/02/2023 08:19:10
-To github.com-mrsu:andpop-mrsu/302_OOP_Minin_DE.git
-To github.com-mrsu:andpop-mrsu/302_OOP_Minin_DE.git
-   fe18ad7..a94b541  master -> master
-   fe18ad7..a94b541  master -> master
 302_OOP_Morozov_PS
 302_OOP_Nazarov_KV
 302_OOP_Oshina_NV
@@ -85,5 +86,5 @@ To github.com-mrsu:andpop-mrsu/302_OOP_Minin_DE.git
 302_OOP_Zhukov_DE
 **********************
 PowerShell transcript end
-End time: 20230302143418
+End time: 20230303094545
 **********************
