@@ -1,32 +1,74 @@
 <?php
+  
+    function run_test(){
+        //Correct vector creation
+        $v1 = new Vector(1.5,-2,3);
+        $expectedResult = "(1.5; -2; 3)";
 
+        echo PHP_EOL . "СОЗДАНИЕ ВЕКТОРА" . PHP_EOL . "Ожидается: {$expectedResult}" . PHP_EOL;
+        echo "Получено: {$v1}" . PHP_EOL;
+        if ($v1 == $expectedResult) {
+            echo "Проверка прошла!" . PHP_EOL;
+        } else {
+            echo "Проверка НЕ прошла!" . PHP_EOL;
+        }
 
-function runTest()
-{
-    // String representation test
-    $m1 = new Fraction(4, 8);
-    echo "Ожидается: 1/2" . PHP_EOL;
-    echo "Получено: " . $m1 . PHP_EOL;
+        $v2 = new Vector(13,70,20.5);
+        $v3 = new Vector(2,-10,20.5);
+        $v4 = $v2->add($v3);
+        $expectedResult = "(15; 60; 41)";
 
-    // Adding test
-    $m2 = new Fraction(1, 4);
-    $m3 = $m1->add($m2);
-    echo "Ожидается: 3/4" . PHP_EOL;
-    echo "Получено: " . $m3 . PHP_EOL;
+        echo PHP_EOL . "СЛОЖЕНИЕ ВЕКТОРОВ" . PHP_EOL . "Ожидается: {$expectedResult}" . PHP_EOL;
+        echo "Получено: {$v4}" . PHP_EOL;
+        if ($v4 == $expectedResult) {
+            echo "Проверка прошла!" . PHP_EOL;
+        } else {
+            echo "Проверка НЕ прошла!" . PHP_EOL;
+        }
 
-    // Subtraction test
-    $m4 = new Fraction(-5, 2);
-    $m5 = $m4->sub($m2);
-    echo "Ожидается: -2'3/4" . PHP_EOL;
-    echo "Получено: " . $m5 . PHP_EOL;
-    
-    $m6 = new Fraction(25, 6);
-    $m7 = $m6->add($m4);
-    echo "Ожидается: 1'5/12" . PHP_EOL;
-    echo "Получено: " . $m7 . PHP_EOL;
+        $v5 = $v2->sub($v3);
+        $expectedResult = "(11; 80; 0)";
 
-    $m8 = new Fraction(-7, 8);
-    $m9 = $m6->sub($m8);
-    echo "Ожидается: 2'7/24" . PHP_EOL;
-    echo "Получено: " . $m9 . PHP_EOL;
-}
+        echo PHP_EOL . "ВЫЧИТАНИЕ ВЕКТОРОВ" . PHP_EOL . "Ожидается: {$expectedResult}" . PHP_EOL;
+        echo "Получено: {$v5}" . PHP_EOL;
+        if ($v5 == $expectedResult) {
+            echo "Проверка прошла!" . PHP_EOL;
+        } else {
+            echo "Проверка НЕ прошла!" . PHP_EOL;
+        }
+
+        $v6 = $v1->product(7);
+        $expectedResult = "(10.5; -14; 21)";
+
+        echo PHP_EOL . "УМНОЖЕНИЕ ВЕКТОРА НА ЧИСЛО" . PHP_EOL . "Ожидается: {$expectedResult}" . PHP_EOL;
+        echo "Получено: {$v6}" . PHP_EOL;
+        if ($v6 == $expectedResult) {
+            echo "Проверка прошла!" . PHP_EOL;
+        } else {
+            echo "Проверка НЕ прошла!" . PHP_EOL;
+        }
+
+        $v7 = $v2->scalarProduct($v3);
+        $expectedResult = "-253.75";
+
+        echo PHP_EOL . "СКАЛЯРНОЕ УМНОЖЕНИЕ ВЕКТОРОВ" . PHP_EOL . "Ожидается: {$expectedResult}" . PHP_EOL;
+        echo "Получено: {$v7}" . PHP_EOL;
+        if ($v7 == $expectedResult) {
+            echo "Проверка прошла!" . PHP_EOL;
+        } else {
+            echo "Проверка НЕ прошла!" . PHP_EOL;
+        }
+
+        $v8 = $v2->vectorProduct($v3);
+        $expectedResult = "(1640; -225.5; -270)";
+
+        echo PHP_EOL . "ВЕКТОРНОЕ УМНОЖЕНИЕ ВЕКТОРОВ" . PHP_EOL . "Ожидается: {$expectedResult}" . PHP_EOL;
+        echo "Получено: {$v8}" . PHP_EOL;
+        if ($v8 == $expectedResult) {
+            echo "Проверка прошла!" . PHP_EOL;
+        } else {
+            echo "Проверка НЕ прошла!" . PHP_EOL;
+        }
+        
+
+    }
