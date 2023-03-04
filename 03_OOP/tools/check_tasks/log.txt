@@ -1,90 +1,204 @@
 **********************
 PowerShell transcript start
-Start time: 20230303090912
+Start time: 20230304132408
 **********************
 Transcript started, output file is log.txt
 302_OOP_Ariskin_NV
-=====================================================
-/home/andrey/labs/302_OOP/302_OOP_Ariskin_NV
-Из github.com-mrsu:andpop-mrsu/302_OOP_Ariskin_NV
-Из github.com-mrsu:andpop-mrsu/302_OOP_Ariskin_NV
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Уже актуально.
-Task from branch: Task03
-Creation date: 03/01/2023 18:16:43
-Checking script check_Task03.ps1 not found
 302_OOP_Azarkina_NV
 302_OOP_Bochkov_NM
 302_OOP_Burlakova_TS
+302_OOP_Egorova_OA
+302_OOP_Ezhikov_NA
 =====================================================
-/home/andrey/labs/302_OOP/302_OOP_Burlakova_TS
-Из github.com-mrsu:andpop-mrsu/302_OOP_Burlakova_TS
-Из github.com-mrsu:andpop-mrsu/302_OOP_Burlakova_TS
+/home/andrey/labs/302_OOP/302_OOP_Ezhikov_NA
+Из github.com-mrsu:andpop-mrsu/302_OOP_Ezhikov_NA
+Из github.com-mrsu:andpop-mrsu/302_OOP_Ezhikov_NA
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Уже актуально.
+Уже обновлено.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Из https://github.com/Yukiowtnb/302_OOP_Ezhikov_NA
+Из https://github.com/Yukiowtnb/302_OOP_Ezhikov_NA
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+   fa4387b..5d06bd6  master     -> student/master
+   fa4387b..5d06bd6  master     -> student/master
+Обновление 5d06bd6..9f6caeb
+Fast-forward (no commit created; -m option ignored)
+ Task03/Student.php      |  57 ++++++++++++++++++++++++++++++++++++++++++
+ Task03/StudentsList.bin | Bin 0 -> 699 bytes
+ Task03/StudentsList.php |  45 +++++++++++++++++++++++++++++++++
+ Task03/Test.php         |  65 ++++++++++++++++++++++++++++++++++++++++++++++++
+ Task03/run_test.php     |   6 +++++
+ 5 files changed, 173 insertions(+)
+ create mode 100644 Task03/Student.php
+ create mode 100644 Task03/StudentsList.bin
+ create mode 100644 Task03/StudentsList.php
+ create mode 100644 Task03/Test.php
+ create mode 100644 Task03/run_test.php
 --------------------------------------------------
-Task:  /home/andrey/labs/302_OOP/302_OOP_Burlakova_TS/Task02
+Task:  /home/andrey/labs/302_OOP/302_OOP_Ezhikov_NA/Task03
 --------------------------------------------------
-Check path: Fraction.php
+Check path: Book.php
+Book.php not found
+--------------------------------------------------
+Check path: BooksList.php
+BooksList.php not found
 --------------------------------------------------
 Check path: Test.php
 --------------------------------------------------
 Check path: run_test.php
-run_test.php not found
+<?php
+
+require_once("Student.php");
+require_once("StudentsList.php");
+require_once("Test.php");
+runTest();
 --------------------------------------------------
 Run: php run_test.php
-Could not open input file: run_test.php
-Execution fails
+
+StudentsList1
+
+Id: 1
+Фамилия: Иванов
+Имя: Сергей
+Факультет: ФМиИТ
+Группа: 303
+Количество человек в списке: 1
+
+Id: 2
+Фамилия: Петухов
+Имя: Артём
+Факультет: ГиИиТ
+Группа: 322
+Количество человек в списке: 2
+
+Id: 3
+Фамилия: Козлов
+Имя: Сергей
+Факультет: ГИТИС
+Группа: 220
+Количество человек в списке: 3
+
+StudentsList1
+
+
+Id: 1
+Фамилия: Иванов
+Имя: Сергей
+Факультет: ФМиИТ
+Группа: 303
+
+Id: 2
+Фамилия: Петухов
+Имя: Артём
+Факультет: ГиИиТ
+Группа: 322
+
+Id: 3
+Фамилия: Козлов
+Имя: Сергей
+Факультет: ГИТИС
+Группа: 220
+
+StudentsList2
+
+Количество человек в списке: 0
+
+StudentsList2
+
+Количество человек в списке: 3
+
+Id: 1
+Фамилия: Иванов
+Имя: Сергей
+Факультет: ФМиИТ
+Группа: 303
+
+Id: 2
+Фамилия: Петухов
+Имя: Артём
+Факультет: ГиИиТ
+Группа: 322
+
+Id: 3
+Фамилия: Козлов
+Имя: Сергей
+Факультет: ГИТИС
+Группа: 220
 --------------------------------------------------
 Run: phpcs --standard=PSR12 ./*
 
-FILE: /home/andrey/labs/302_OOP/302_OOP_Burlakova_TS/Task02/Fraction.php
------------------------------------------------------------------------------------------------
+FILE: /home/andrey/labs/302_OOP/302_OOP_Ezhikov_NA/Task03/run_test.php
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
------------------------------------------------------------------------------------------------
- 3 | ERROR | Each class must be in a namespace of at least one level (a top-level vendor name)
------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 6 | ERROR | [x] Expected 1 newline at end of file; 0 found
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
 
-Time: 39ms; Memory: 6MB
+
+FILE: /home/andrey/labs/302_OOP/302_OOP_Ezhikov_NA/Task03/Student.php
+----------------------------------------------------------------------------
+FOUND 6 ERRORS AFFECTING 6 LINES
+----------------------------------------------------------------------------
+ 27 | ERROR | [x] Spaces must be used to indent lines; tabs are not allowed
+ 28 | ERROR | [x] Spaces must be used to indent lines; tabs are not allowed
+ 29 | ERROR | [x] Spaces must be used to indent lines; tabs are not allowed
+ 30 | ERROR | [x] Spaces must be used to indent lines; tabs are not allowed
+ 31 | ERROR | [x] Spaces must be used to indent lines; tabs are not allowed
+ 57 | ERROR | [x] Expected 1 newline at end of file; 0 found
+----------------------------------------------------------------------------
+PHPCBF CAN FIX THE 6 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------------
+
+
+FILE: /home/andrey/labs/302_OOP/302_OOP_Ezhikov_NA/Task03/StudentsList.php
+--------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 1 LINE
+--------------------------------------------------------------------------
+ 45 | ERROR | [x] Expected 1 newline at end of file; 0 found
+ 45 | ERROR | [x] Whitespace found at end of line
+--------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------
+
+
+FILE: /home/andrey/labs/302_OOP/302_OOP_Ezhikov_NA/Task03/Test.php
+----------------------------------------------------------------------------
+FOUND 7 ERRORS AFFECTING 6 LINES
+----------------------------------------------------------------------------
+ 11 | ERROR | [x] Spaces must be used to indent lines; tabs are not allowed
+ 42 | ERROR | [x] Spaces must be used to indent lines; tabs are not allowed
+ 42 | ERROR | [x] Whitespace found at end of line
+ 43 | ERROR | [x] Spaces must be used to indent lines; tabs are not allowed
+ 55 | ERROR | [x] Spaces must be used to indent lines; tabs are not allowed
+ 60 | ERROR | [x] Spaces must be used to indent lines; tabs are not allowed
+ 65 | ERROR | [x] Expected 1 newline at end of file; 0 found
+----------------------------------------------------------------------------
+PHPCBF CAN FIX THE 7 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------------
+
+Time: 49ms; Memory: 6MB
 Execution fails
 --------------------------------------------------
-Total ok: 2
+Total ok: 3
 Total error: 3
 --------------------------------------------------
-/home/andrey/labs/302_OOP/302_OOP_Burlakova_TS
-Task02
-Task from branch: Task02
-Creation date: 03/02/2023 18:27:49
-To github.com-mrsu:andpop-mrsu/302_OOP_Burlakova_TS.git
-To github.com-mrsu:andpop-mrsu/302_OOP_Burlakova_TS.git
-   cc351c2..af238fe  master -> master
-   cc351c2..af238fe  master -> master
-302_OOP_Egorova_OA
-302_OOP_Ezhikov_NA
-302_OOP_Jakunchev_NS
-302_OOP_Konyshev_AE
-302_OOP_Kosolapov_DA
-302_OOP_Kruchinkin_AA
-302_OOP_Kudashkina_JuE
-302_OOP_Maksimova_AO
-302_OOP_Minin_DE
-302_OOP_Morozov_PS
-302_OOP_Nazarov_KV
-302_OOP_Oshina_NV
-302_OOP_Pimenov_AV
-302_OOP_Pinjajkina_DA
-302_OOP_Tereshkina_ES
-302_OOP_Tjurin_SA
-302_OOP_Zhukov_DE
+/home/andrey/labs/302_OOP/302_OOP_Ezhikov_NA
+Лабораторная 3
+Task from branch: Task03
+Creation date: 03/04/2023 10:14:00
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> $global:?
+True
 **********************
 PowerShell transcript end
-End time: 20230303094545
+End time: 20230304132503
 **********************
