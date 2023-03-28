@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20230319213616
+Start time: 20230320214855
 **********************
 Transcript started, output file is log.txt
 202M_Testing_Aleksandrov_KV
@@ -14,29 +14,9 @@ Transcript started, output file is log.txt
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
 Уже актуально.
-Из https://github.com/oleg-egorov/202M_Testing_Egorov_OA
-Из https://github.com/oleg-egorov/202M_Testing_Egorov_OA
- * [новая ветка]     Tasks-1-3  -> student/Tasks-1-3
- * [новая ветка]     Tasks-1-3  -> student/Tasks-1-3
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Обновление 70d3de9..b875fc2
-Fast-forward (no commit created; -m option ignored)
- Task01/Triangle.py                                 |  24 +++++++++++
- Task01/check.txt                                   |   7 +++
- Task01/test_class.py                               |  31 ++++++++++++++
- Task01/test_func.py                                |  26 ++++++++++++
- Task01/triangle_func.py                            |  47 +++++++++++++++++++++
- ...6\320\262\320\260\320\275\320\270\321\217.docx" | Bin 0 -> 2180429 bytes
- ...6\320\262\320\260\320\275\320\270\321\217.docx" | Bin 0 -> 2243171 bytes
- 7 files changed, 135 insertions(+)
- create mode 100644 Task01/Triangle.py
- create mode 100644 Task01/check.txt
- create mode 100644 Task01/test_class.py
- create mode 100644 Task01/test_func.py
- create mode 100644 Task01/triangle_func.py
- create mode 100644 "Task02/\320\236\321\202\321\207\320\265\321\202 \321\200\321\203\321\207\320\275\320\276\320\263\320\276 \321\202\320\265\321\201\321\202\320\270\321\200\320\276\320\262\320\260\320\275\320\270\321\217.docx"
- create mode 100644 "Task03/\320\236\321\202\321\207\320\265\321\202 selenium ide \321\202\320\265\321\201\321\202\320\270\321\200\320\276\320\262\320\260\320\275\320\270\321\217.docx"
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
 Task from branch: Tasks-1-3
 Creation date: 03/19/2023 13:20:21
 Checking script check_Tasks-1-3.ps1 not found
@@ -45,220 +25,9 @@ Checking script check_Tasks-1-3.ps1 not found
 202M_Testing_Lihoradov_II
 202M_Testing_Makshev_NI
 202M_Testing_Plaksin_DV
-=====================================================
-/home/andrey/labs/202M_Testing/202M_Testing_Plaksin_DV
-Из github.com-mrsu:andpop-mrsu/202M_Testing_Plaksin_DV
-Из github.com-mrsu:andpop-mrsu/202M_Testing_Plaksin_DV
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Из https://github.com/plaksindv/202M_Testing_Plaksin_DV
-Из https://github.com/plaksindv/202M_Testing_Plaksin_DV
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task03     -> student/Task03
-Merge made by the 'recursive' strategy.
- ...\276\320\262\320\260\320\275\320\270\320\265.docx" | Bin 0 -> 7753460 bytes
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 "Task03/Selenium \321\202\320\265\321\201\321\202\320\270\321\200\320\276\320\262\320\260\320\275\320\270\320\265.docx"
---------------------------------------------------
-Task:  /home/andrey/labs/202M_Testing/202M_Testing_Plaksin_DV/Task03
---------------------------------------------------
-Total ok: 0
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/202M_Testing/202M_Testing_Plaksin_DV
-Task03 - Completed
-Task from branch: Task03
-Creation date: 03/17/2023 20:17:44
-To github.com-mrsu:andpop-mrsu/202M_Testing_Plaksin_DV.git
-To github.com-mrsu:andpop-mrsu/202M_Testing_Plaksin_DV.git
-   9e7f028..aa36265  master -> master
-   9e7f028..aa36265  master -> master
 202M_Testing_Shabarin_IA
-=====================================================
-/home/andrey/labs/202M_Testing/202M_Testing_Shabarin_IA
-Из github.com-mrsu:andpop-mrsu/202M_Testing_Shabarin_IA
-Из github.com-mrsu:andpop-mrsu/202M_Testing_Shabarin_IA
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-Из https://github.com/Igshab2000/202M_Testing_Shabarin_IA
-Из https://github.com/Igshab2000/202M_Testing_Shabarin_IA
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Обновление 8553e2a..ae95b21
-Fast-forward (no commit created; -m option ignored)
- ...\276\320\262\320\260\320\275\320\270\321\217.docx" | Bin 0 -> 1863401 bytes
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 "Task03/\320\236\321\202\321\207\320\265\321\202 selenium ide \321\202\320\265\321\201\321\202\320\270\321\200\320\276\320\262\320\260\320\275\320\270\321\217.docx"
---------------------------------------------------
-Task:  /home/andrey/labs/202M_Testing/202M_Testing_Shabarin_IA/Task03
---------------------------------------------------
-Total ok: 0
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/202M_Testing/202M_Testing_Shabarin_IA
-feat: added a third task
-Task from branch: Task03
-Creation date: 03/18/2023 22:16:05
-To github.com-mrsu:andpop-mrsu/202M_Testing_Shabarin_IA.git
-To github.com-mrsu:andpop-mrsu/202M_Testing_Shabarin_IA.git
-   8553e2a..ae95b21  master -> master
-   8553e2a..ae95b21  master -> master
-=====================================================
-/home/andrey/labs/202M_Testing/202M_Testing_Shabarin_IA
-Из github.com-mrsu:andpop-mrsu/202M_Testing_Shabarin_IA
-Из github.com-mrsu:andpop-mrsu/202M_Testing_Shabarin_IA
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Merge made by the 'recursive' strategy.
- ...\276\320\262\320\260\320\275\320\270\321\217.docx" | Bin 0 -> 1769779 bytes
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 "Task02/\320\236\321\202\321\207\320\265\321\202 \321\200\321\203\321\207\320\275\320\276\320\263\320\276 \321\202\320\265\321\201\321\202\320\270\321\200\320\276\320\262\320\260\320\275\320\270\321\217.docx"
---------------------------------------------------
-Task:  /home/andrey/labs/202M_Testing/202M_Testing_Shabarin_IA/Task02
---------------------------------------------------
-Total ok: 0
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/202M_Testing/202M_Testing_Shabarin_IA
-feat: added a second task
-Task from branch: Task02
-Creation date: 03/18/2023 22:14:30
-To github.com-mrsu:andpop-mrsu/202M_Testing_Shabarin_IA.git
-To github.com-mrsu:andpop-mrsu/202M_Testing_Shabarin_IA.git
-   ae95b21..8d3c809  master -> master
-   ae95b21..8d3c809  master -> master
-=====================================================
-/home/andrey/labs/202M_Testing/202M_Testing_Shabarin_IA
-Из github.com-mrsu:andpop-mrsu/202M_Testing_Shabarin_IA
-Из github.com-mrsu:andpop-mrsu/202M_Testing_Shabarin_IA
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Merge made by the 'recursive' strategy.
- Task01/Triangle.py      | 24 ++++++++++++++++++++++++
- Task01/check.txt        |  7 +++++++
- Task01/test_class.py    | 31 +++++++++++++++++++++++++++++++
- Task01/test_func.py     | 26 ++++++++++++++++++++++++++
- Task01/triangle_func.py | 47 +++++++++++++++++++++++++++++++++++++++++++++++
- 5 files changed, 135 insertions(+)
- create mode 100644 Task01/Triangle.py
- create mode 100644 Task01/check.txt
- create mode 100644 Task01/test_class.py
- create mode 100644 Task01/test_func.py
- create mode 100644 Task01/triangle_func.py
---------------------------------------------------
-Task:  /home/andrey/labs/202M_Testing/202M_Testing_Shabarin_IA/Task01
---------------------------------------------------
-Check path: check.txt
-Позитивное тестирование:
-    Первый аргумент: 17, Второй аргумент: 17, Третий аргумент: 17. Результат: "equilateral"
-    Первый аргумент: 7, Второй аргумент: 9, Третий аргумент: 11. Результат: "nonequilateral"
-    Первый аргумент: 15, Второй аргумент: 15, Третий аргумент: 20. Результат: "isosceles"
-Негативное тестирование:
-    Первый аргумент: "a", Второй аргумент: "b", Третий аргумент: "c". Результат: "__main__.IncorrectTriangleSides: Sides set incorrectly"
-    Первый аргумент: 1, Второй аргумент: 2, Третий аргумент: 3. Результат: "__main__.IncorrectTriangleSides: Sides set incorrectly"
---------------------------------------------------
-Check path: triangle_func.py
---------------------------------------------------
-Check path: triangle_class.py
-triangle_class.py not found
---------------------------------------------------
-Check path: test_func.py
---------------------------------------------------
-Check path: test_class.py
---------------------------------------------------
-Run: python3 triangle_func.py -v
-Trying:
-    get_triangle_type(9, 9, 9)
-Expecting:
-    'equilateral'
-ok
-Trying:
-    get_triangle_type(9, 11, 13)
-Expecting:
-    'nonequilateral'
-ok
-Trying:
-    get_triangle_type(12, 12, 18)
-Expecting:
-    'isosceles'
-ok
-Trying:
-    get_triangle_type("a","b","c")
-Expecting:
-    Traceback (most recent call last):
-     ...
-    IncorrectTriangleSides: Sides set incorrectly
-ok
-Trying:
-    get_triangle_type(1, 2, 3)
-Expecting:
-    Traceback (most recent call last):
-     ...
-    IncorrectTriangleSides: Sides set incorrectly
-ok
-2 items had no tests:
-    __main__
-    __main__.IncorrectTriangleSides
-1 items passed all tests:
-   5 tests in __main__.get_triangle_type
-5 tests in 3 items.
-5 passed and 0 failed.
-Test passed.
---------------------------------------------------
-Run: python3 test_func.py -v
-
---------------------------------------------------
-Run: pytest -v
-============================= test session starts ==============================
-platform linux -- Python 3.8.10, pytest-7.2.2, pluggy-1.0.0 -- /usr/bin/python3
-cachedir: .pytest_cache
-rootdir: /home/andrey/labs/202M_Testing/202M_Testing_Shabarin_IA/Task01
-collecting ... collected 12 items
-
-test_class.py::TestTriangleClass::test_triangle_create PASSED            [  8%]
-test_class.py::TestTriangleClass::test_triangle_create_with_value_error PASSED [ 16%]
-test_class.py::TestTriangleClass::test_triangle_create_with_incorrect_sides PASSED [ 25%]
-test_class.py::TestTriangleClass::test_triangle_method_type_nonequilateral PASSED [ 33%]
-test_class.py::TestTriangleClass::test_triangle_method_type_equilateral PASSED [ 41%]
-test_class.py::TestTriangleClass::test_triangle_method_type_isosceles PASSED [ 50%]
-test_class.py::TestTriangleClass::test_triangle_method_perimeter PASSED  [ 58%]
-test_func.py::TestTriangleFunction::test_equilateral_triangle PASSED     [ 66%]
-test_func.py::TestTriangleFunction::test_incorrect_sides PASSED          [ 75%]
-test_func.py::TestTriangleFunction::test_isosceles_triangle PASSED       [ 83%]
-test_func.py::TestTriangleFunction::test_nonequilateral_triangle PASSED  [ 91%]
-test_func.py::TestTriangleFunction::test_type_error PASSED               [100%]
-
-============================== 12 passed in 0.03s ==============================
---------------------------------------------------
-Total ok: 7
-Total error: 1
---------------------------------------------------
-/home/andrey/labs/202M_Testing/202M_Testing_Shabarin_IA
-feat: Completed the first task
-Task from branch: Task01
-Creation date: 03/17/2023 20:32:34
-To github.com-mrsu:andpop-mrsu/202M_Testing_Shabarin_IA.git
-To github.com-mrsu:andpop-mrsu/202M_Testing_Shabarin_IA.git
-   8d3c809..4733734  master -> master
-   8d3c809..4733734  master -> master
 202M_Testing_Trostin_SA
 **********************
 PowerShell transcript end
-End time: 20230319214547
+End time: 20230320214902
 **********************

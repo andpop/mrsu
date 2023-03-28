@@ -9,6 +9,7 @@ function Check-Task {
 
     $doneChecks = $failureChecks = 0
 
+    composer install
     if (Check-Path -Path composer.json -ShowContent) { $doneChecks++ } else { $failureChecks++ }
     if (Check-Path -Path src/Stack.php -ShowContent) { $doneChecks++ } else { $failureChecks++ }
     if (Check-Path -Path src/Test.php) { $doneChecks++ } else { $failureChecks++ }

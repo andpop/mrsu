@@ -1,17 +1,14 @@
 **********************
 PowerShell transcript start
-Start time: 20230319221643
+Start time: 20230323233344
 **********************
 Transcript started, output file is log.txt
 302_OOP_Ariskin_NV
 302_OOP_Azarkina_NV
-302_OOP_Bochkov_NM
-302_OOP_Burlakova_TS
-302_OOP_Egorova_OA
 =====================================================
-/home/andrey/labs/302_OOP/302_OOP_Egorova_OA
-Из github.com-mrsu:andpop-mrsu/302_OOP_Egorova_OA
-Из github.com-mrsu:andpop-mrsu/302_OOP_Egorova_OA
+/home/andrey/labs/302_OOP/302_OOP_Azarkina_NV
+Из github.com-mrsu:andpop-mrsu/302_OOP_Azarkina_NV
+Из github.com-mrsu:andpop-mrsu/302_OOP_Azarkina_NV
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
 Уже актуально.
@@ -19,11 +16,23 @@ fatal: внешний репозиторий student уже существует
 fatal: внешний репозиторий student уже существует
 Уже актуально.
 --------------------------------------------------
-Task:  /home/andrey/labs/302_OOP/302_OOP_Egorova_OA/Task04
+Task:  /home/andrey/labs/302_OOP/302_OOP_Azarkina_NV/Task04
+Installing dependencies from lock file (including require-dev)
+Installing dependencies from lock file (including require-dev)
+Verifying lock file contents can be installed on current platform.
+Verifying lock file contents can be installed on current platform.
+Warning: The lock file is not up to date with the latest changes in composer.json. You may be getting outdated dependencies. It is recommended that you run `composer update` or `composer update <package name>`.
+Warning: The lock file is not up to date with the latest changes in composer.json. You may be getting outdated dependencies. It is recommended that you run `composer update` or `composer update <package name>`.
+Package operations: 1 install, 0 updates, 0 removals
+Package operations: 1 install, 0 updates, 0 removals
+  - Installing squizlabs/php_codesniffer (3.7.2): Extracting archive
+  - Installing squizlabs/php_codesniffer (3.7.2): Extracting archive
+Generating autoload files
+Generating autoload files
 --------------------------------------------------
 Check path: composer.json
 {
-    "name": "egorovaoa02/task04",
+    "name": "natalia/task04",
     "autoload": {
         "psr-4": {
             "App\\": "src/"
@@ -35,8 +44,421 @@ Check path: composer.json
     },
     "authors": [
         {
-            "name": "egorovaoa02",
-            "email": "egorovaoa02@mail.ru"
+            "name": "Natalia Azarkina",
+            "email": "azarkinanat@mail.ru"
+        }
+    ],
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.7"
+    }
+}
+--------------------------------------------------
+Check path: src/Stack.php
+<?php
+
+namespace App;
+
+class Stack implements StackInterface
+{
+    private $stack;
+
+    public function __construct(mixed ...$elems)
+    {
+        $this->push(...$elems);
+    }
+
+    public function push(mixed ...$elems)
+    {
+        foreach ($elems as $index => $elem) {
+            $this->stack[] = $elem;
+        }
+    }
+
+    public function pop()
+    {
+        if ($this->isEmpty()) {
+            return null;
+        } else {
+            $elem = $this->stack[count($this->stack) - 1];
+            $this->stack = array_slice($this->stack, 0, -1);
+            return $elem;
+        }
+    }
+
+    public function top()
+    {
+        if ($this->isEmpty()) {
+            return null;
+        } else {
+            return $this->stack[count($this->stack) - 1];
+        }
+    }
+
+    public function isEmpty()
+    {
+        return count($this->stack) == 0;
+    }
+
+    public function copy()
+    {
+        $temp_stack = new Stack();
+        foreach ($this->stack as $index => $elem) {
+            $temp_stack->push($elem);
+        }
+        return $temp_stack;
+    }
+
+    public function __toString()
+    {
+        if ($this->isEmpty()) {
+            return "[]";
+        } else {
+            $temp = "[";
+            foreach ($this->stack as $index => $elem) {
+                $temp = $temp . $elem . "->";
+            }
+            return substr($temp, 0, -2) . "]";
+        }
+    }
+}
+--------------------------------------------------
+Check path: src/Test.php
+--------------------------------------------------
+Check path: src/run_test.php
+<?php
+
+require __DIR__ . "/../vendor/autoload.php";
+
+runTest();
+--------------------------------------------------
+Run: php src/run_test.php
+Ожидается: false, true
+Получено: false, true
+Ожидается: [1->2->3]
+Получено: [1->2->3]
+Ожидается: 1, [], 
+Получено: 1, [], 
+Ожидается: 3
+Получено: 3
+Ожидается: [1->2->3]
+Получено: [1->2->3]
+Ожидается: false, true
+Получено: false, true
+Ожидается: true, false, false
+Получено: true, false, false
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+--------------------------------------------------
+Total ok: 6
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/302_OOP/302_OOP_Azarkina_NV
+Task04
+Task from branch: Task04
+Creation date: 03/22/2023 19:33:47
+To github.com-mrsu:andpop-mrsu/302_OOP_Azarkina_NV.git
+To github.com-mrsu:andpop-mrsu/302_OOP_Azarkina_NV.git
+   39a7881..2af69a6  master -> master
+   39a7881..2af69a6  master -> master
+302_OOP_Bochkov_NM
+302_OOP_Burlakova_TS
+302_OOP_Egorova_OA
+302_OOP_Ezhikov_NA
+302_OOP_Jakunchev_NS
+302_OOP_Konyshev_AE
+302_OOP_Kosolapov_DA
+302_OOP_Kruchinkin_AA
+302_OOP_Kudashkina_JuE
+=====================================================
+/home/andrey/labs/302_OOP/302_OOP_Kudashkina_JuE
+Из github.com-mrsu:andpop-mrsu/302_OOP_Kudashkina_JuE
+Из github.com-mrsu:andpop-mrsu/302_OOP_Kudashkina_JuE
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   d990487..afdce13  master     -> teacher/master
+   d990487..afdce13  master     -> teacher/master
+Обновление d990487..afdce13
+Fast-forward
+ Task03/Student.php      |  63 +++++++++++++++++++++++++++++++++++++++++++++
+ Task03/StudentsList.bin | Bin 0 -> 533 bytes
+ Task03/StudentsList.php |  45 +++++++++++++++++++++++++++++++++
+ Task03/Test.php         |  66 ++++++++++++++++++++++++++++++++++++++++++++++++
+ Task03/run_test.php     |   6 +++++
+ task04.md               |  50 ++++++++++++++++++++++++++++++++++++
+ 6 files changed, 230 insertions(+)
+ create mode 100644 Task03/Student.php
+ create mode 100644 Task03/StudentsList.bin
+ create mode 100644 Task03/StudentsList.php
+ create mode 100644 Task03/Test.php
+ create mode 100644 Task03/run_test.php
+ create mode 100644 task04.md
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/freedrobili/302_OOP_Kudashkina_JuE
+Из https://github.com/freedrobili/302_OOP_Kudashkina_JuE
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task04     -> student/Task04
+   dc4a817..afdce13  master     -> student/master
+   dc4a817..afdce13  master     -> student/master
+Обновление afdce13..983810a
+Fast-forward (no commit created; -m option ignored)
+ Task04/.gitignore              |  1 +
+ Task04/composer.json           | 21 ++++++++++++
+ Task04/composer.lock           | 76 ++++++++++++++++++++++++++++++++++++++++++
+ Task04/src/Stack.php           | 67 +++++++++++++++++++++++++++++++++++++
+ Task04/src/StackInterface.php  | 13 ++++++++
+ Task04/src/Test.php            | 43 ++++++++++++++++++++++++
+ Task04/src/checkIfBalanced.php | 25 ++++++++++++++
+ Task04/src/run_test.php        |  5 +++
+ 8 files changed, 251 insertions(+)
+ create mode 100644 Task04/.gitignore
+ create mode 100644 Task04/composer.json
+ create mode 100644 Task04/composer.lock
+ create mode 100644 Task04/src/Stack.php
+ create mode 100644 Task04/src/StackInterface.php
+ create mode 100644 Task04/src/Test.php
+ create mode 100644 Task04/src/checkIfBalanced.php
+ create mode 100644 Task04/src/run_test.php
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/302_OOP_Kudashkina_JuE/Task04
+Installing dependencies from lock file (including require-dev)
+Installing dependencies from lock file (including require-dev)
+Verifying lock file contents can be installed on current platform.
+Verifying lock file contents can be installed on current platform.
+Package operations: 1 install, 0 updates, 0 removals
+Package operations: 1 install, 0 updates, 0 removals
+  - Installing squizlabs/php_codesniffer (3.7.2): Extracting archive
+  - Installing squizlabs/php_codesniffer (3.7.2): Extracting archive
+Generating autoload files
+Generating autoload files
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "yuliya/task04",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        },
+        "files": [
+            "src/checkIfBalanced.php",
+            "src/Test.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Yuliya Kudashkina",
+            "email": "kudashkina-yuliya@mail.ru"
+        }
+    ],
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.7"
+    }
+}
+--------------------------------------------------
+Check path: src/Stack.php
+<?php
+
+namespace App;
+
+class Stack implements StackInterface
+{
+    private $stack;
+
+    public function __construct(mixed ...$elems)
+    {
+        $this->push(...$elems);
+    }
+
+    public function push(mixed ...$elems)
+    {
+        foreach ($elems as $index => $elem) {
+            $this->stack[] = $elem;
+        }
+    }
+
+    public function pop()
+    {
+        if ($this->isEmpty()) {
+            return null;
+        } else {
+            $elem = $this->stack[count($this->stack) - 1];
+            $this->stack = array_slice($this->stack, 0, -1);
+            return $elem;
+        }
+    }
+
+    public function top()
+    {
+        if ($this->isEmpty()) {
+            return null;
+        } else {
+            return $this->stack[count($this->stack) - 1];
+        }
+    }
+
+    public function isEmpty()
+    {
+        return count($this->stack) == 0;
+    }
+
+    public function copy()
+    {
+        $temp_stack = new Stack();
+        foreach ($this->stack as $index => $elem) {
+            $temp_stack->push($elem);
+        }
+        return $temp_stack;
+    }
+
+    public function __toString()
+    {
+        if ($this->isEmpty()) {
+            return "[]";
+        } else {
+            $temp = "[";
+            foreach ($this->stack as $index => $elem) {
+                $temp = $temp . $elem . "->";
+            }
+            return substr($temp, 0, -2) . "]";
+        }
+    }
+}
+--------------------------------------------------
+Check path: src/Test.php
+--------------------------------------------------
+Check path: src/run_test.php
+<?php
+
+require __DIR__ . "/../vendor/autoload.php";
+
+runTest();
+--------------------------------------------------
+Run: php src/run_test.php
+Ожидается: false, true
+Получено: false, true
+Ожидается: [1->2->3]
+Получено: [1->2->3]
+Ожидается: 1, [], 
+Получено: 1, [], 
+Ожидается: 3
+Получено: 3
+Ожидается: [1->2->3]
+Получено: [1->2->3]
+Ожидается: false, true
+Получено: false, true
+Ожидается: true, false, false
+Получено: true, false, false
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+--------------------------------------------------
+Total ok: 6
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/302_OOP/302_OOP_Kudashkina_JuE
+Task04
+Task from branch: Task04
+Creation date: 03/20/2023 18:34:05
+To github.com-mrsu:andpop-mrsu/302_OOP_Kudashkina_JuE.git
+To github.com-mrsu:andpop-mrsu/302_OOP_Kudashkina_JuE.git
+   afdce13..983810a  master -> master
+   afdce13..983810a  master -> master
+302_OOP_Maksimova_AO
+302_OOP_Minin_DE
+302_OOP_Morozov_PS
+302_OOP_Nazarov_KV
+=====================================================
+/home/andrey/labs/302_OOP/302_OOP_Nazarov_KV
+Из github.com-mrsu:andpop-mrsu/302_OOP_Nazarov_KV
+Из github.com-mrsu:andpop-mrsu/302_OOP_Nazarov_KV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   76da800..de3fe09  master     -> teacher/master
+   76da800..de3fe09  master     -> teacher/master
+Обновление 76da800..de3fe09
+Fast-forward
+ Task03/Book.php     |  56 ++++++++++++++++++++++++++++++++++++++++++++++
+ Task03/BookList.php |  45 +++++++++++++++++++++++++++++++++++++
+ Task03/Booklist.bin | Bin 0 -> 531 bytes
+ Task03/Test.php     |  63 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Task03/run_test.php |   6 +++++
+ task04.md           |  55 +++++++++++++++++++++++++++++++++++++++++++++
+ 6 files changed, 225 insertions(+)
+ create mode 100644 Task03/Book.php
+ create mode 100644 Task03/BookList.php
+ create mode 100644 Task03/Booklist.bin
+ create mode 100644 Task03/Test.php
+ create mode 100644 Task03/run_test.php
+ create mode 100644 task04.md
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/Hazzardgg/302_OOP_Nazarov_KV
+Из https://github.com/Hazzardgg/302_OOP_Nazarov_KV
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task04     -> student/Task04
+   2b88b84..de3fe09  master     -> student/master
+   2b88b84..de3fe09  master     -> student/master
+Обновление de3fe09..8c20ee8
+Fast-forward (no commit created; -m option ignored)
+ Task04/.gitignore             |  1 +
+ Task04/composer.json          | 19 ++++++++++++
+ Task04/src/Stack.php          | 67 +++++++++++++++++++++++++++++++++++++++++++
+ Task04/src/StackInterface.php | 13 +++++++++
+ Task04/src/Test.php           | 43 +++++++++++++++++++++++++++
+ Task04/src/compareStrings.php | 27 +++++++++++++++++
+ Task04/src/run_test.php       |  5 ++++
+ 7 files changed, 175 insertions(+)
+ create mode 100644 Task04/.gitignore
+ create mode 100644 Task04/composer.json
+ create mode 100644 Task04/src/Stack.php
+ create mode 100644 Task04/src/StackInterface.php
+ create mode 100644 Task04/src/Test.php
+ create mode 100644 Task04/src/compareStrings.php
+ create mode 100644 Task04/src/run_test.php
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/302_OOP_Nazarov_KV/Task04
+No composer.lock file present. Updating dependencies to latest instead of installing from lock file. See https://getcomposer.org/install for more information.
+No composer.lock file present. Updating dependencies to latest instead of installing from lock file. See https://getcomposer.org/install for more information.
+Loading composer repositories with package information
+Loading composer repositories with package information
+Updating dependencies
+Updating dependencies
+Nothing to modify in lock file
+Nothing to modify in lock file
+Writing lock file
+Writing lock file
+Installing dependencies from lock file (including require-dev)
+Installing dependencies from lock file (including require-dev)
+Nothing to install, update or remove
+Nothing to install, update or remove
+Generating autoload files
+Generating autoload files
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "kirill/task04",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        },
+        "files": [
+            "src/compareStrings.php",
+            "src/Test.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Hazzardgg",
+            "email": "kirya_nazarov_2002@mail.ru"
         }
     ],
     "require": {}
@@ -49,26 +471,32 @@ namespace App;
 
 class Stack implements StackInterface
 {
-    private array $stack = [];
+    private $stack;
 
-    public function __construct(mixed ...$elements)
+    public function __construct(mixed ...$elems)
     {
-        $this->push(...$elements);
+        $this->push(...$elems);
     }
 
-    public function push(mixed ...$elements): void
+    public function push(mixed ...$elems)
     {
-        foreach ($elements as $value) {
-            $this->stack[] = $value;
+        foreach ($elems as $index => $elem) {
+            $this->stack[] = $elem;
         }
     }
 
-    public function pop(): mixed
+    public function pop()
     {
-        return array_pop($this->stack);
+        if ($this->isEmpty()) {
+            return null;
+        } else {
+            $elem = $this->stack[count($this->stack) - 1];
+            $this->stack = array_slice($this->stack, 0, -1);
+            return $elem;
+        }
     }
 
-    public function top(): mixed
+    public function top()
     {
         if ($this->isEmpty()) {
             return null;
@@ -77,30 +505,239 @@ class Stack implements StackInterface
         }
     }
 
-    public function isEmpty(): bool
+    public function isEmpty()
     {
-        return count($this->stack) === 0;
+        return count($this->stack) == 0;
     }
 
-    public function copy(): Stack
+    public function copy()
     {
-        return new Stack(...$this->stack);
+        $temp_stack = new Stack();
+        foreach ($this->stack as $index => $elem) {
+            $temp_stack->push($elem);
+        }
+        return $temp_stack;
     }
 
-    public function __toString(): string
+    public function __toString()
     {
         if ($this->isEmpty()) {
             return "[]";
+        } else {
+            $temp = "";
+            foreach ($this->stack as $index => $elem) {
+                $temp = $elem . "->" . $temp;
+            }
+            return "[" . substr($temp, 0, -2) . "]";
         }
-
-        $output = '[';
-
-        for ($i = count($this->stack) - 1; $i >= 0; $i--) {
-            $output .= "{$this->stack[$i]}->";
-        }
-
-        return substr($output, 0, -2) . "]";
     }
+}
+--------------------------------------------------
+Check path: src/Test.php
+--------------------------------------------------
+Check path: src/run_test.php
+<?php
+
+require __DIR__ . "/../vendor/autoload.php";
+
+runTest();
+--------------------------------------------------
+Run: php src/run_test.php
+Ожидается: false, true
+Получено: false, true
+Ожидается: [3->2->1]
+Получено: [3->2->1]
+Ожидается: 1, [], 
+Получено: 1, [], 
+Ожидается: 3
+Получено: 3
+Ожидается: [3->2->1]
+Получено: [3->2->1]
+Ожидается: false, true
+Получено: false, true
+Ожидается: true, false, true
+Получено: true, false, true
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+--------------------------------------------------
+Total ok: 6
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/302_OOP/302_OOP_Nazarov_KV
+Task04
+Task from branch: Task04
+Creation date: 03/22/2023 19:28:51
+To github.com-mrsu:andpop-mrsu/302_OOP_Nazarov_KV.git
+To github.com-mrsu:andpop-mrsu/302_OOP_Nazarov_KV.git
+   de3fe09..8c20ee8  master -> master
+   de3fe09..8c20ee8  master -> master
+302_OOP_Oshina_NV
+302_OOP_Pimenov_AV
+302_OOP_Pinjajkina_DA
+302_OOP_Tereshkina_ES
+302_OOP_Tjurin_SA
+302_OOP_Zhukov_DE
+=====================================================
+/home/andrey/labs/302_OOP/302_OOP_Zhukov_DE
+Из github.com-mrsu:andpop-mrsu/302_OOP_Zhukov_DE
+Из github.com-mrsu:andpop-mrsu/302_OOP_Zhukov_DE
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   a54f074..fce1916  master     -> teacher/master
+   a54f074..fce1916  master     -> teacher/master
+Обновление a54f074..fce1916
+Fast-forward
+ Task03/Student.php      |  81 ++++++++++++++++++++++++++++++++++++++++++++++++
+ Task03/Students.bin     | Bin 0 -> 960 bytes
+ Task03/StudentsList.php |  41 ++++++++++++++++++++++++
+ Task03/Test.php         |  49 +++++++++++++++++++++++++++++
+ Task03/run_test.php     |   6 ++++
+ task04.md               |  50 ++++++++++++++++++++++++++++++
+ 6 files changed, 227 insertions(+)
+ create mode 100644 Task03/Student.php
+ create mode 100644 Task03/Students.bin
+ create mode 100644 Task03/StudentsList.php
+ create mode 100644 Task03/Test.php
+ create mode 100644 Task03/run_test.php
+ create mode 100644 task04.md
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/KeyJay77/302_OOP_Zhukov_DE
+Из https://github.com/KeyJay77/302_OOP_Zhukov_DE
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task04     -> student/Task04
+   52238fa..fce1916  master     -> student/master
+   52238fa..fce1916  master     -> student/master
+Обновление fce1916..9f9eac1
+Fast-forward (no commit created; -m option ignored)
+ Task04/.gitignore              |  1 +
+ Task04/composer.json           | 21 ++++++++++
+ Task04/composer.lock           | 76 +++++++++++++++++++++++++++++++++++
+ Task04/src/Stack.php           | 70 ++++++++++++++++++++++++++++++++
+ Task04/src/StackInterface.php  | 14 +++++++
+ Task04/src/Test.php            | 90 ++++++++++++++++++++++++++++++++++++++++++
+ Task04/src/checkIfBalanced.php | 25 ++++++++++++
+ Task04/src/run_test.php        |  5 +++
+ 8 files changed, 302 insertions(+)
+ create mode 100644 Task04/.gitignore
+ create mode 100644 Task04/composer.json
+ create mode 100644 Task04/composer.lock
+ create mode 100644 Task04/src/Stack.php
+ create mode 100644 Task04/src/StackInterface.php
+ create mode 100644 Task04/src/Test.php
+ create mode 100644 Task04/src/checkIfBalanced.php
+ create mode 100644 Task04/src/run_test.php
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/302_OOP_Zhukov_DE/Task04
+Installing dependencies from lock file (including require-dev)
+Installing dependencies from lock file (including require-dev)
+Verifying lock file contents can be installed on current platform.
+Verifying lock file contents can be installed on current platform.
+Package operations: 1 install, 0 updates, 0 removals
+Package operations: 1 install, 0 updates, 0 removals
+  - Installing squizlabs/php_codesniffer (3.7.2): Extracting archive
+  - Installing squizlabs/php_codesniffer (3.7.2): Extracting archive
+Generating autoload files
+Generating autoload files
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "keyjay/task04",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        },
+        "files": [
+            "src/checkIfBalanced.php",
+            "src/Test.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "KeyJay77",
+            "email": "dima.zhukov.02@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.7"
+    }
+}
+--------------------------------------------------
+Check path: src/Stack.php
+<?php
+namespace App;
+
+class Stack implements StackInterface
+{
+    public $list = array();
+
+    public function __construct(mixed...$elems)
+    {
+        $this->push(...$elems);
+    }
+
+    public function push(mixed...$elems)
+    {
+        foreach ($elems as $i => $elem) {
+            $this->list[] = $elem;
+        }
+    }
+
+    public function pop()
+    {
+        return array_pop($this->list);
+    }
+
+    public function top()
+    {
+        $top_tier = count($this->list);
+        $top_tier -= 1;
+        return $this->list[$top_tier];
+
+    }
+
+    public function isEmpty()
+    {
+        if (count($this->list) == 0) {
+            echo 'Стэк пуст' . PHP_EOL;
+            return true;
+        } else {
+            echo 'Стэк не пуст' . PHP_EOL;
+            return false;
+        }
+
+    }
+
+    public function copy()
+    {
+        $copy = new Stack();
+        foreach ($this->list as $i => $elem) {
+            $copy->push($elem);
+        }
+        return $copy;
+    }
+
+    public function __toString()
+    {
+        if ($this->list) {
+            $reverse = array_reverse($this->list);
+            $string = '[';
+            foreach ($reverse as $elem) {
+                $string .= $elem . '->';
+            }
+            $string = substr($string, 0, -2) . ']';
+            return $string;
+        } else {
+            return "[]";
+        }
+    }
+
+
 }
 --------------------------------------------------
 Check path: src/Test.php
@@ -113,93 +750,84 @@ require_once __DIR__ . "/../vendor/autoload.php";
 runTest();
 --------------------------------------------------
 Run: php src/run_test.php
-Cоздание СТЕКа и метод __toString:
-Ожидали: [5->4->3->2->1]
-Получили: [5->4->3->2->1]
-Проверка: ПРОШЛА
-
-Метод push:
-Ожидали: [7->6->5->4->3->2->1]
-Получили: [7->6->5->4->3->2->1]
-Проверка: ПРОШЛА
-
-Метод pop:
-Ожидали: 7
-Получили: 7
-Было: [7->6->5->4->3->2->1]
-Стало: [6->5->4->3->2->1]
-Проверка: ПРОШЛА
-
-Метод top:
-Ожидали: 6
-Получили: 6
-Было: [6->5->4->3->2->1]
-Стало: [6->5->4->3->2->1]
-Проверка: ПРОШЛА
-
-Метод isEmpty:
-Ожидали: []
-Получили: []
-Проверка: ПРОШЛА
-
-Метод copy:
-Ожидали: [6->5->4->3->2->1]
-Получили: [6->5->4->3->2->1]
-Проверка: ПРОШЛА
-
-Функция checkIfBalanced:
-Ожидали: Cимволы в строке (ab[cd{}]) сбалансированы
-Получили: Cимволы в строке (ab[cd{}]) сбалансированы
-Проверка: ПРОШЛА
-
-Ожидали: Cимволы в строке (ab[cd{]} НЕ сбалансированы
-Получили: Cимволы в строке (ab[cd{]} НЕ сбалансированы
-Проверка: ПРОШЛА
+Стэк не пуст
+Начальный стэк
+Проверка пройдена.
+Ожидание: [5->4->3->2] Получено: [5->4->3->2]
+Push
+Проверка пройдена.
+Ожидание: [8->6->5->4->3->2] Получено: [8->6->5->4->3->2]
+Pop
+Проверка пройдена.
+Ожидание: [6->5->4->3->2] Получено: [6->5->4->3->2]
+Top
+Проверка пройдена.
+Ожидание: 6 Получено: 6
+Copy
+Проверка пройдена.
+Ожидание: [] Получено: []
+Проверка пройдена.
+Ожидание: [6->5->4->3->2] Получено: [6->5->4->3->2]
+ifBalanced
+Ожидание: true, false, false
+Стэк пуст
+Получено: true, false, false
 --------------------------------------------------
 Run: phpcs --standard=PSR12 ./src/*
 
+FILE: /home/andrey/labs/302_OOP/302_OOP_Zhukov_DE/Task04/src/Stack.php
+-------------------------------------------------------------------------------------------------------------------
+FOUND 6 ERRORS AFFECTING 6 LINES
+-------------------------------------------------------------------------------------------------------------------
+  1 | ERROR | [x] Header blocks must be separated by a single blank line
+  8 | ERROR | [x] Expected 1 space between type hint and argument "$elems"; 0 found
+ 13 | ERROR | [x] Expected 1 space between type hint and argument "$elems"; 0 found
+ 31 | ERROR | [x] Function closing brace must go on the next line following the body; found 1 blank lines before
+    |       |     brace
+ 43 | ERROR | [x] Function closing brace must go on the next line following the body; found 1 blank lines before
+    |       |     brace
+ 70 | ERROR | [x] The closing brace for the class must go on the next line after the body
+-------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 6 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /home/andrey/labs/302_OOP/302_OOP_Zhukov_DE/Task04/src/StackInterface.php
+-------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+-------------------------------------------------------------------------------
+  8 | ERROR | [x] Whitespace found at end of line
+ 14 | ERROR | [x] Expected 1 newline at end of file; 0 found
+-------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------
+
+
+FILE: /home/andrey/labs/302_OOP/302_OOP_Zhukov_DE/Task04/src/Test.php
+-------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------------------------------
+ 90 | ERROR | [x] Function closing brace must go on the next line following the body; found 1 blank lines before
+    |       |     brace
+-------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------------------------------------
+
+Time: 53ms; Memory: 6MB
+Execution fails
 --------------------------------------------------
-Total ok: 6
-Total error: 0
+Total ok: 5
+Total error: 1
 --------------------------------------------------
-/home/andrey/labs/302_OOP/302_OOP_Egorova_OA
+/home/andrey/labs/302_OOP/302_OOP_Zhukov_DE
 Task04
 Task from branch: Task04
-Creation date: 03/18/2023 20:58:21
-To github.com-mrsu:andpop-mrsu/302_OOP_Egorova_OA.git
-To github.com-mrsu:andpop-mrsu/302_OOP_Egorova_OA.git
-   31d43eb..a465c1d  master -> master
-   31d43eb..a465c1d  master -> master
-302_OOP_Ezhikov_NA
-302_OOP_Jakunchev_NS
-302_OOP_Konyshev_AE
-302_OOP_Kosolapov_DA
-302_OOP_Kruchinkin_AA
-=====================================================
-/home/andrey/labs/302_OOP/302_OOP_Kruchinkin_AA
-Из github.com-mrsu:andpop-mrsu/302_OOP_Kruchinkin_AA
-Из github.com-mrsu:andpop-mrsu/302_OOP_Kruchinkin_AA
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Уже актуально.
-Task from branch: new_branch
-Creation date: 03/17/2023 19:44:03
-Checking script check_new_branch.ps1 not found
-302_OOP_Kudashkina_JuE
-302_OOP_Maksimova_AO
-302_OOP_Minin_DE
-302_OOP_Morozov_PS
-302_OOP_Nazarov_KV
-302_OOP_Oshina_NV
-302_OOP_Pimenov_AV
-302_OOP_Pinjajkina_DA
-302_OOP_Tereshkina_ES
-302_OOP_Tjurin_SA
-302_OOP_Zhukov_DE
+Creation date: 03/22/2023 20:20:27
+To github.com-mrsu:andpop-mrsu/302_OOP_Zhukov_DE.git
+To github.com-mrsu:andpop-mrsu/302_OOP_Zhukov_DE.git
+   fce1916..9f9eac1  master -> master
+   fce1916..9f9eac1  master -> master
 **********************
 PowerShell transcript end
-End time: 20230319221856
+End time: 20230323233942
 **********************
