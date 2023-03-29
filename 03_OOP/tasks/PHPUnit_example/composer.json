@@ -1,9 +1,9 @@
 {
-    "name": "geraskin_vm/task01",
+    "name": "ivan/app",
     "authors": [
         {
-            "name": "Vyacheslav Geraskin",
-            "email": "geraskin.slava@mail.ru"
+            "name": "Ivan Ivanov",
+            "email": "Ivan@mail.ru"
         }
     ],
     "type": "project",
