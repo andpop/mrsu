@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20230517155127
+Start time: 20230517155505
 **********************
 Transcript started, output file is log.txt
 302_OOP_Ariskin_NV
@@ -57,16 +57,16 @@ PASS __tests__/vector.test.js
     ✓ Проверка метода getLength (2 ms)
     ✓ Проверка метода add (1 ms)
     ✓ Проверка метода add (1 ms)
-    ✓ Проверка метода sub (1 ms)
-    ✓ Проверка метода sub (1 ms)
+    ✓ Проверка метода sub
+    ✓ Проверка метода sub
     ✓ Проверка метода product (1 ms)
     ✓ Проверка метода product (1 ms)
     ✓ Проверка метода scalarProduct
     ✓ Проверка метода scalarProduct
-    ✓ Проверка метода vectorProduct (1 ms)
-    ✓ Проверка метода vectorProduct (1 ms)
-    ✓ Проверка метода toString
-    ✓ Проверка метода toString
+    ✓ Проверка метода vectorProduct
+    ✓ Проверка метода vectorProduct
+    ✓ Проверка метода toString (1 ms)
+    ✓ Проверка метода toString (1 ms)
 
 
 Test Suites: 1 passed, 1 total
@@ -75,8 +75,8 @@ Tests:       7 passed, 7 total
 Tests:       7 passed, 7 total
 Snapshots:   0 total
 Snapshots:   0 total
-Time:        0.411 s, estimated 1 s
-Time:        0.411 s, estimated 1 s
+Time:        0.412 s, estimated 1 s
+Time:        0.412 s, estimated 1 s
 Ran all test suites.
 Ran all test suites.
 --------------------------------------------------
@@ -119,16 +119,16 @@ PASS __tests__/vector.test.js
   Vector
     ✓ Проверка метода getLength (2 ms)
     ✓ Проверка метода getLength (2 ms)
-    ✓ Проверка метода add
-    ✓ Проверка метода add
+    ✓ Проверка метода add (1 ms)
+    ✓ Проверка метода add (1 ms)
     ✓ Проверка метода sub
     ✓ Проверка метода sub
-    ✓ Проверка метода product (1 ms)
-    ✓ Проверка метода product (1 ms)
-    ✓ Проверка метода scalarProduct
-    ✓ Проверка метода scalarProduct
-    ✓ Проверка метода vectorProduct (1 ms)
-    ✓ Проверка метода vectorProduct (1 ms)
+    ✓ Проверка метода product
+    ✓ Проверка метода product
+    ✓ Проверка метода scalarProduct (1 ms)
+    ✓ Проверка метода scalarProduct (1 ms)
+    ✓ Проверка метода vectorProduct
+    ✓ Проверка метода vectorProduct
     ✓ Проверка метода toString
     ✓ Проверка метода toString
 
@@ -139,8 +139,8 @@ Tests:       7 passed, 7 total
 Tests:       7 passed, 7 total
 Snapshots:   0 total
 Snapshots:   0 total
-Time:        0.418 s, estimated 1 s
-Time:        0.418 s, estimated 1 s
+Time:        0.416 s, estimated 1 s
+Time:        0.416 s, estimated 1 s
 Ran all test suites.
 Ran all test suites.
 --------------------------------------------------
@@ -183,18 +183,18 @@ PASS __tests__/vector.test.js
   Vector
     ✓ Проверка метода get (2 ms)
     ✓ Проверка метода get (2 ms)
-    ✓ Проверка метода add
-    ✓ Проверка метода add
-    ✓ Проверка метода sub
-    ✓ Проверка метода sub
-    ✓ Проверка метода product (1 ms)
-    ✓ Проверка метода product (1 ms)
-    ✓ Проверка метода scalarProduct
-    ✓ Проверка метода scalarProduct
+    ✓ Проверка метода add (1 ms)
+    ✓ Проверка метода add (1 ms)
+    ✓ Проверка метода sub (1 ms)
+    ✓ Проверка метода sub (1 ms)
+    ✓ Проверка метода product
+    ✓ Проверка метода product
+    ✓ Проверка метода scalarProduct (1 ms)
+    ✓ Проверка метода scalarProduct (1 ms)
     ✓ Проверка метода vectorProduct
     ✓ Проверка метода vectorProduct
-    ✓ Проверка метода toString (1 ms)
-    ✓ Проверка метода toString (1 ms)
+    ✓ Проверка метода toString
+    ✓ Проверка метода toString
 
 
 Test Suites: 1 passed, 1 total
@@ -203,8 +203,8 @@ Tests:       7 passed, 7 total
 Tests:       7 passed, 7 total
 Snapshots:   0 total
 Snapshots:   0 total
-Time:        0.6 s
-Time:        0.6 s
+Time:        0.416 s, estimated 1 s
+Time:        0.416 s, estimated 1 s
 Ran all test suites.
 Ran all test suites.
 --------------------------------------------------
@@ -215,10 +215,291 @@ Total error: 0
 Task07(continuation)
 Task from branch: Task07
 Creation date: 05/13/2023 20:37:01
-PS>TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> $global:?
-True
+remote: Resolving deltas:   0% (0/5)
+remote: Resolving deltas:   0% (0/5)        
+remote: Resolving deltas:  20% (1/5)
+remote: Resolving deltas:  20% (1/5)        
+remote: Resolving deltas:  40% (2/5)
+remote: Resolving deltas:  40% (2/5)        
+remote: Resolving deltas:  60% (3/5)
+remote: Resolving deltas:  60% (3/5)        
+remote: Resolving deltas:  80% (4/5)
+remote: Resolving deltas:  80% (4/5)        
+remote: Resolving deltas: 100% (5/5)
+remote: Resolving deltas: 100% (5/5)        
+remote: Resolving deltas: 100% (5/5), completed with 1 local object.
+remote: Resolving deltas: 100% (5/5), completed with 1 local object.        
+To github.com-mrsu:andpop-mrsu/302_OOP_Egorova_OA.git
+To github.com-mrsu:andpop-mrsu/302_OOP_Egorova_OA.git
+   9b43756..8094b11  master -> master
+   9b43756..8094b11  master -> master
+302_OOP_Ezhikov_NA
+302_OOP_Jakunchev_NS
+302_OOP_Konyshev_AE
+302_OOP_Kosolapov_DA
+302_OOP_Kruchinkin_AA
+302_OOP_Kudashkina_JuE
+302_OOP_Maksimova_AO
+302_OOP_Minin_DE
+302_OOP_Morozov_PS
+302_OOP_Nazarov_KV
+302_OOP_Oshina_NV
+302_OOP_Pimenov_AV
+302_OOP_Pinjajkina_DA
+302_OOP_Tereshkina_ES
+302_OOP_Tjurin_SA
+302_OOP_Zhukov_DE
+=====================================================
+/home/andrey/labs/302_OOP/302_OOP_Zhukov_DE
+Из github.com-mrsu:andpop-mrsu/302_OOP_Zhukov_DE
+Из github.com-mrsu:andpop-mrsu/302_OOP_Zhukov_DE
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/302_OOP_Zhukov_DE/Task07/Task07_1
+--------------------------------------------------
+Check path: package.json
+{
+  "name": "task07_1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "directories": {
+    "test": "tests"
+  },
+  "description": "",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^29.5.0"    
+  }
+}
+
+added 279 packages, and audited 280 packages in 12s
+
+31 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+> task07_1@1.0.0 test
+> cross-env NODE_OPTIONS=--experimental-vm-modules npx jest
+
+(node:8727) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(node:8727) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/Vector.test.js
+PASS tests/Vector.test.js
+  createVector
+  createVector
+    ✓ getLength() (2 ms)
+    ✓ getLength() (2 ms)
+    ✓ add()
+    ✓ add()
+    ✓ sub() (1 ms)
+    ✓ sub() (1 ms)
+    ✓ product() (1 ms)
+    ✓ product() (1 ms)
+    ✓ scalarProduct()
+    ✓ scalarProduct()
+    ✓ vectorProduct()
+    ✓ vectorProduct()
+    ✓ toString()
+    ✓ toString()
+
+
+Test Suites: 1 passed, 1 total
+Test Suites: 1 passed, 1 total
+Tests:       7 passed, 7 total
+Tests:       7 passed, 7 total
+Snapshots:   0 total
+Snapshots:   0 total
+Time:        0.319 s
+Time:        0.319 s
+Ran all test suites.
+Ran all test suites.
+--------------------------------------------------
+Total ok: 1
+Total error: 0
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/302_OOP_Zhukov_DE/Task07/Task07_2
+--------------------------------------------------
+Check path: package.json
+{
+  "name": "task07_2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "directories": {
+    "test": "tests"
+  },
+  "description": "",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^29.5.0"
+  }
+}
+
+added 279 packages, and audited 280 packages in 3s
+
+31 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+> task07_2@1.0.0 test
+> cross-env NODE_OPTIONS=--experimental-vm-modules npx jest
+
+(node:8823) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(node:8823) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/Vector.test.js
+PASS tests/Vector.test.js
+  createVector
+  createVector
+    ✓ getLength() (1 ms)
+    ✓ getLength() (1 ms)
+    ✓ add() (1 ms)
+    ✓ add() (1 ms)
+    ✓ sub()
+    ✓ sub()
+    ✓ product() (1 ms)
+    ✓ product() (1 ms)
+    ✓ scalarProduct()
+    ✓ scalarProduct()
+    ✓ vectorProduct()
+    ✓ vectorProduct()
+    ✓ toString()
+    ✓ toString()
+
+
+Test Suites: 1 passed, 1 total
+Test Suites: 1 passed, 1 total
+Tests:       7 passed, 7 total
+Tests:       7 passed, 7 total
+Snapshots:   0 total
+Snapshots:   0 total
+Time:        0.327 s
+Time:        0.327 s
+Ran all test suites.
+Ran all test suites.
+--------------------------------------------------
+Total ok: 1
+Total error: 0
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/302_OOP_Zhukov_DE/Task07/Task07_3
+--------------------------------------------------
+Check path: package.json
+{
+  "name": "task07_3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "directories": {
+    "test": "tests"
+  },
+  "description": "",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^29.5.0"
+  }
+}
+
+added 279 packages, and audited 280 packages in 3s
+
+31 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+> task07_3@1.0.0 test
+> cross-env NODE_OPTIONS=--experimental-vm-modules npx jest
+
+(node:8915) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(node:8915) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/Vector.test.js
+PASS tests/Vector.test.js
+  createVector
+  createVector
+    ✓ getLength() (2 ms)
+    ✓ getLength() (2 ms)
+    ✓ add()
+    ✓ add()
+    ✓ sub() (1 ms)
+    ✓ sub() (1 ms)
+    ✓ product()
+    ✓ product()
+    ✓ scalarProduct()
+    ✓ scalarProduct()
+    ✓ vectorProduct()
+    ✓ vectorProduct()
+    ✓ toString()
+    ✓ toString()
+
+
+Test Suites: 1 passed, 1 total
+Test Suites: 1 passed, 1 total
+Tests:       7 passed, 7 total
+Tests:       7 passed, 7 total
+Snapshots:   0 total
+Snapshots:   0 total
+Time:        0.317 s
+Time:        0.317 s
+Ran all test suites.
+Ran all test suites.
+--------------------------------------------------
+Total ok: 1
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/302_OOP/302_OOP_Zhukov_DE
+Task07
+Task from branch: Task07
+Creation date: 05/13/2023 22:32:10
+remote: Resolving deltas:   0% (0/7)
+remote: Resolving deltas:   0% (0/7)        
+remote: Resolving deltas:  14% (1/7)
+remote: Resolving deltas:  14% (1/7)        
+remote: Resolving deltas:  28% (2/7)
+remote: Resolving deltas:  28% (2/7)        
+remote: Resolving deltas:  42% (3/7)
+remote: Resolving deltas:  42% (3/7)        
+remote: Resolving deltas:  57% (4/7)
+remote: Resolving deltas:  57% (4/7)        
+remote: Resolving deltas:  71% (5/7)
+remote: Resolving deltas:  71% (5/7)        
+remote: Resolving deltas:  85% (6/7)
+remote: Resolving deltas:  85% (6/7)        
+remote: Resolving deltas: 100% (7/7)
+remote: Resolving deltas: 100% (7/7)        
+remote: Resolving deltas: 100% (7/7), completed with 1 local object.
+remote: Resolving deltas: 100% (7/7), completed with 1 local object.        
+To github.com-mrsu:andpop-mrsu/302_OOP_Zhukov_DE.git
+To github.com-mrsu:andpop-mrsu/302_OOP_Zhukov_DE.git
+   84f1912..e2d9d80  master -> master
+   84f1912..e2d9d80  master -> master
+**********************
+PowerShell transcript end
+End time: 20230517160843
+**********************
