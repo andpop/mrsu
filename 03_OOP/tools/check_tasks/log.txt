@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20230531103427
+Start time: 20230616141927
 **********************
 Transcript started, output file is log.txt
 302_OOP_Ariskin_NV
@@ -22,124 +22,9 @@ Transcript started, output file is log.txt
 302_OOP_Pimenov_AV
 302_OOP_Pinjajkina_DA
 302_OOP_Tereshkina_ES
-=====================================================
-/home/andrey/labs/302_OOP/302_OOP_Tereshkina_ES
-Из github.com-mrsu:andpop-mrsu/302_OOP_Tereshkina_ES
-Из github.com-mrsu:andpop-mrsu/302_OOP_Tereshkina_ES
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Из https://github.com/Catlinka/302_OOP_Tereshkina_ES
-Из https://github.com/Catlinka/302_OOP_Tereshkina_ES
- * [новая ветка]     Task08     -> student/Task08
- * [новая ветка]     Task08     -> student/Task08
-   4ddffdc..62cdba5  master     -> student/master
-   4ddffdc..62cdba5  master     -> student/master
-Обновление 62cdba5..b287130
-Fast-forward (no commit created; -m option ignored)
- Task08/check_links.ps1     | 13 +++++++++++++
- Task08/excel.ps1           | 20 ++++++++++++++++++++
- Task08/numbers.ps1         | 21 +++++++++++++++++++++
- Task08/services_status.ps1 |  7 +++++++
- 4 files changed, 61 insertions(+)
- create mode 100644 Task08/check_links.ps1
- create mode 100644 Task08/excel.ps1
- create mode 100644 Task08/numbers.ps1
- create mode 100644 Task08/services_status.ps1
---------------------------------------------------
-Task:  /home/andrey/labs/302_OOP/302_OOP_Tereshkina_ES/Task08
---------------------------------------------------
-Check path: services_status.ps1
-Get-Service | Select-Object Name, Status | Foreach-Object {
-    if ($_.Status -eq "Running") {
-        Write-Host $_.Name -ForegroundColor Green
-    } else {
-        Write-Host $_.Name -ForegroundColor Red
-    }
-}
---------------------------------------------------
-Check path: check_links.ps1
-$shell = New-Object -ComObject WScript.Shell
-$desktop = $shell.SpecialFolders("Desktop")
-$badLinks = Join-Path $desktop "BadLinks"
-if (-not (Test-Path $badLinks)) {
-    New-Item -ItemType Directory -Path $badLinks | Out-Null
-}
-
-Get-ChildItem $desktop -Filter *.lnk | ForEach-Object {
-    $link = $shell.CreateShortcut($_.FullName)
-    if (-not (Test-Path $link.TargetPath)) {
-        Move-Item $_.FullName $badLinks
-    }
-}
---------------------------------------------------
-Check path: excel.ps1
-$excel = New-Object -ComObject Excel.Application
-
-$workbook = $excel.Workbooks.Add()
-
-$sheet = $workbook.ActiveSheet
-
-$cell = $sheet.Cells.Item(2, 2)
-$cell.Value2 = "Привет от PowerShell"
-$cell.Font.Size = 12
-$cell.Font.Italic = $true
-
-$currentUser = $env:USERNAME
-$computerName = $env:COMPUTERNAME
-
-$fileName = "$currentUser`_$computerName.xlsx"
-$savePath = Join-Path $PSScriptRoot $fileName
-$workbook.SaveAs($savePath)
-
-$workbook.Close()
-$excel.Quit()
---------------------------------------------------
-Check path: numbers.ps1
-function Show-Date_Info {
-    $date = Get-Date
-    $day = $date.Day
-    $month = $date.Month
-    $year = $date.Year
-    $url = "http://numbersapi.com/$day"
-    $response_day = Invoke-RestMethod -Uri $url -Method Get
-
-    $url = "http://numbersapi.com/$month"
-    $response_month = Invoke-RestMethod -Uri $url -Method Get
-
-    $url = "http://numbersapi.com/$year"
-    $response_year = Invoke-RestMethod -Uri $url -Method Get
-
-    Write-Host "Сегодня: $day.$month.$year"
-    Write-Host $response_day
-    Write-Host $response_month
-    Write-Host $response_year
-}
-
-Show-Date_Info
---------------------------------------------------
-Total ok: 4
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/302_OOP/302_OOP_Tereshkina_ES
-Task08
-Task from branch: Task08
-Creation date: 05/30/2023 19:24:40
-remote: Resolving deltas:   0% (0/1)
-remote: Resolving deltas:   0% (0/1)        
-remote: Resolving deltas: 100% (1/1)
-remote: Resolving deltas: 100% (1/1)        
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.        
-To github.com-mrsu:andpop-mrsu/302_OOP_Tereshkina_ES.git
-To github.com-mrsu:andpop-mrsu/302_OOP_Tereshkina_ES.git
-   62cdba5..b287130  master -> master
-   62cdba5..b287130  master -> master
 302_OOP_Tjurin_SA
 302_OOP_Zhukov_DE
 **********************
 PowerShell transcript end
-End time: 20230531103610
+End time: 20230616141939
 **********************
