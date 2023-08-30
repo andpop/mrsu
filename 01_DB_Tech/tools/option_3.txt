@@ -1,7 +1,5 @@
-Zavodov_DA
-Kudryavtzev_DA
-Makarov_NA
-Ryazin_VA
-Trapeza_IV
-Haniev_RM
-
+Kudashkina_JuE
+Maksimova_AO
+Minin_DE
+Morozov_PS
+Nazarov_KV
