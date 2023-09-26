@@ -9,8 +9,8 @@ function Check-Task {
 
     $doneChecks = $failureChecks = 0
 
-    if (Check-Path -Path self-logger.bat) { $doneChecks++ } else { $failureChecks++ }
-    if (Check-Path -Path task1.php) { $doneChecks++ } else { $failureChecks++ }
+    if (Check-Path -Path self-logger.bat -ShowContent) { $doneChecks++ } else { $failureChecks++ }
+    if (Check-Path -Path task1.php -ShowContent) { $doneChecks++ } else { $failureChecks++ }
     if (Check-Path -Path README.md -ShowContent) { $doneChecks++ } else { $failureChecks++ }
     if (Check-Path -Path README_logger.md -ShowContent) { $doneChecks++ } else { $failureChecks++ }
 

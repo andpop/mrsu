@@ -1,6 +1,6 @@
 #!pwsh
 
-$studentDirsPath = "/home/andrey/labs_402"
+$studentDirsPath = "/home/andrey/labs/402_DBTech"
 $teacherRepo = "https://api.github.com/repos/andpop-mrsu" 
 $headers = @{}
 $token = ''
