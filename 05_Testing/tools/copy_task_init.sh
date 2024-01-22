@@ -18,15 +18,15 @@ for student in $(cat "${pwd}/students-list.txt"); do
 
     cp "${pwd}/../tasks/README.md" "${student_dir}/"
     cp "${pwd}/../tasks/Git_instruction.md" "${student_dir}/"
-    # cp "${pwd}/../tasks/task01.md" "${student_dir}/task01.md"
-    cp "${pwd}/../tasks/task02.md" "${student_dir}/task02.md"
-    cp "${pwd}/../tasks/task03.md" "${student_dir}/task03.md"
-    cp "${pwd}/../tasks/report_example_1.docx" "${student_dir}/"
-    cp "${pwd}/../tasks/report_example_2.docx" "${student_dir}/"
+    cp "${pwd}/../tasks/task01.md" "${student_dir}/task01.md"
+    # cp "${pwd}/../tasks/task02.md" "${student_dir}/task02.md"
+    # cp "${pwd}/../tasks/task03.md" "${student_dir}/task03.md"
+    # cp "${pwd}/../tasks/report_example_1.docx" "${student_dir}/"
+    # cp "${pwd}/../tasks/report_example_2.docx" "${student_dir}/"
     # cp -R "${pwd}/../tasks/PHPUnit_example" "${student_dir}/"
 
     git add -A
-    git commit -m "Add tasks"
+    git commit -m "Add task 1"
     git push teacher master
     cd "${pwd}"
 done
