@@ -1,11 +1,16 @@
-302_OOP_Maksimova_AO
-302_OOP_Minin_DE
-302_OOP_Morozov_PS
-302_OOP_Nazarov_KV
-302_OOP_Oshina_NV
-302_OOP_Pimenov_AV
-302_OOP_Pinjajkina_DA
-302_OOP_Tereshkina_ES
-302_OOP_Tjurin_SA
-302_OOP_Jakunchev_NS
+302_OOP_Abramov_AI
+302_OOP_Biushkin_DV
+302_OOP_Grigoreva_LV
+302_OOP_Zharkov_KS
+302_OOP_Zaharova_EA
+302_OOP_Kuzmin_NA
+302_OOP_Kuchin_RS
+302_OOP_Malkin_DA
+302_OOP_Polushatov_AS
+302_OOP_Slushkin_DV
+302_OOP_Tazin_AN
+302_OOP_Fedoseev_AS
+302_OOP_Cybisov_IE
+302_OOP_Sherstnev_KI
+302_OOP_Shurygina_KN
 

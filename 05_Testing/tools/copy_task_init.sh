@@ -10,7 +10,7 @@ task_number=$1
 for student in $(cat "${pwd}/students-list.txt"); do
     echo "----------------------------------------------------------------------------------"
     echo $student
-    student_dir="${BASE_DIR}/${student}"
+    student_dir="${BASE_DIR}/202M_Testing_${student}"
 
     cd "${student_dir}"
     git fetch teacher master
