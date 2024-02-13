@@ -1,30 +1,455 @@
 **********************
 PowerShell transcript start
-Start time: 20230616141927
+Start time: 20240209153406
 **********************
 Transcript started, output file is log.txt
-302_OOP_Ariskin_NV
-302_OOP_Azarkina_NV
-302_OOP_Bochkov_NM
-302_OOP_Burlakova_TS
-302_OOP_Egorova_OA
-302_OOP_Ezhikov_NA
-302_OOP_Jakunchev_NS
-302_OOP_Konyshev_AE
-302_OOP_Kosolapov_DA
-302_OOP_Kruchinkin_AA
-302_OOP_Kudashkina_JuE
-302_OOP_Maksimova_AO
-302_OOP_Minin_DE
-302_OOP_Morozov_PS
-302_OOP_Nazarov_KV
-302_OOP_Oshina_NV
-302_OOP_Pimenov_AV
-302_OOP_Pinjajkina_DA
-302_OOP_Tereshkina_ES
-302_OOP_Tjurin_SA
-302_OOP_Zhukov_DE
+302_OOP_Abramov_AI
+=====================================================
+/home/andrey/labs/302_OOP/302_OOP_Abramov_AI
+Из github.com-mrsu:andpop-mrsu/302_OOP_Abramov_AI
+Из github.com-mrsu:andpop-mrsu/302_OOP_Abramov_AI
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/Antonizsar13/302_OOP_Abramov_AI
+Из https://github.com/Antonizsar13/302_OOP_Abramov_AI
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 557811e..671a87c
+Fast-forward (no commit created; -m option ignored)
+ Task01/hello.php | 6 ++++++
+ Task01/start.bat | 3 +++
+ 2 files changed, 9 insertions(+)
+ create mode 100644 Task01/hello.php
+ create mode 100755 Task01/start.bat
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/302_OOP_Abramov_AI/Task01
+--------------------------------------------------
+Check path: hello.php
+--------------------------------------------------
+Check path: start.bat
+--------------------------------------------------
+Run: ./start.bat
+
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/302_OOP/302_OOP_Abramov_AI
+Task01
+Task from branch: Task01
+Creation date: 02/07/2024 18:13:00
+To github.com-mrsu:andpop-mrsu/302_OOP_Abramov_AI.git
+To github.com-mrsu:andpop-mrsu/302_OOP_Abramov_AI.git
+   557811e..671a87c  master -> master
+   557811e..671a87c  master -> master
+302_OOP_Biushkin_DV
+=====================================================
+/home/andrey/labs/302_OOP/302_OOP_Biushkin_DV
+Из github.com-mrsu:andpop-mrsu/302_OOP_Biushkin_DV
+Из github.com-mrsu:andpop-mrsu/302_OOP_Biushkin_DV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/DenisBiushkin/302_OOP_Biushkin_DV
+Из https://github.com/DenisBiushkin/302_OOP_Biushkin_DV
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 0f34d6b..689dc4f
+Fast-forward (no commit created; -m option ignored)
+ Task01/hello.php | 5 +++++
+ Task01/start.bat | 2 ++
+ 2 files changed, 7 insertions(+)
+ create mode 100644 Task01/hello.php
+ create mode 100755 Task01/start.bat
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/302_OOP_Biushkin_DV/Task01
+--------------------------------------------------
+Check path: hello.php
+--------------------------------------------------
+Check path: start.bat
+--------------------------------------------------
+Run: ./start.bat
+2024-02-09 15:43:39 Biushkin Denis
+--------------------------------------------------
+Total ok: 3
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/302_OOP/302_OOP_Biushkin_DV
+Task01
+Task from branch: Task01
+Creation date: 02/03/2024 22:15:01
+To github.com-mrsu:andpop-mrsu/302_OOP_Biushkin_DV.git
+To github.com-mrsu:andpop-mrsu/302_OOP_Biushkin_DV.git
+   0f34d6b..689dc4f  master -> master
+   0f34d6b..689dc4f  master -> master
+302_OOP_Chernomorskiy_MM
+302_OOP_Cybisov_IE
+302_OOP_Fedoseev_AS
+=====================================================
+/home/andrey/labs/302_OOP/302_OOP_Fedoseev_AS
+Из github.com-mrsu:andpop-mrsu/302_OOP_Fedoseev_AS
+Из github.com-mrsu:andpop-mrsu/302_OOP_Fedoseev_AS
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/kabyfed/302_OOP_Fedoseev_AS
+Из https://github.com/kabyfed/302_OOP_Fedoseev_AS
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 68ddd68..c861eff
+Fast-forward (no commit created; -m option ignored)
+ Task01/hello.php | 4 ++++
+ Task01/start.bat | 3 +++
+ 2 files changed, 7 insertions(+)
+ create mode 100644 Task01/hello.php
+ create mode 100755 Task01/start.bat
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/302_OOP_Fedoseev_AS/Task01
+--------------------------------------------------
+Check path: hello.php
+--------------------------------------------------
+Check path: start.bat
+--------------------------------------------------
+Run: ./start.bat
+2024-02-09 15:44:31 Fedoseev Artem
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/302_OOP/302_OOP_Fedoseev_AS
+Task01
+Task from branch: Task01
+Creation date: 02/05/2024 08:26:55
+To github.com-mrsu:andpop-mrsu/302_OOP_Fedoseev_AS.git
+To github.com-mrsu:andpop-mrsu/302_OOP_Fedoseev_AS.git
+   68ddd68..c861eff  master -> master
+   68ddd68..c861eff  master -> master
+302_OOP_Grigoreva_LV
+302_OOP_Kaymakova_EV
+=====================================================
+/home/andrey/labs/302_OOP/302_OOP_Kaymakova_EV
+Из github.com-mrsu:andpop-mrsu/302_OOP_Kaymakova_EV
+Из github.com-mrsu:andpop-mrsu/302_OOP_Kaymakova_EV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/kaymka/302_OOP_Kaymakova_EV
+Из https://github.com/kaymka/302_OOP_Kaymakova_EV
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 33b3546..d3dab8e
+Fast-forward (no commit created; -m option ignored)
+ Task01/hello.php | 5 +++++
+ Task01/start.bat | 2 ++
+ 2 files changed, 7 insertions(+)
+ create mode 100644 Task01/hello.php
+ create mode 100644 Task01/start.bat
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/302_OOP_Kaymakova_EV/Task01
+--------------------------------------------------
+Check path: hello.php
+--------------------------------------------------
+Check path: start.bat
+--------------------------------------------------
+Run: ./start.bat
+PS>TerminatingError(): "Cannot run a document in the middle of a pipeline: /home/andrey/labs/302_OOP/302_OOP_Kaymakova_EV/Task01/start.bat."
+
+InvalidOperation: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/checks_for_task.ps1:32
+Line |
+  32 |      $str = (& $command $params | Out-String)
+     |              ~~~~~~~~~~~~~~~~~~
+     | Cannot run a document in the middle of a pipeline: /home/andrey/labs/302_OOP/302_OOP_Kaymakova_EV/Task01/start.bat.
+
+InvalidOperation: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/checks_for_task.ps1:32
+Line |
+  32 |      $str = (& $command $params | Out-String)
+     |              ~~~~~~~~~~~~~~~~~~
+     | Cannot run a document in the middle of a pipeline: /home/andrey/labs/302_OOP/302_OOP_Kaymakova_EV/Task01/start.bat.
+
+
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/302_OOP/302_OOP_Kaymakova_EV
+task01 ready
+Task from branch: Task01
+Creation date: 02/09/2024 11:56:20
+To github.com-mrsu:andpop-mrsu/302_OOP_Kaymakova_EV.git
+To github.com-mrsu:andpop-mrsu/302_OOP_Kaymakova_EV.git
+   33b3546..d3dab8e  master -> master
+   33b3546..d3dab8e  master -> master
+302_OOP_Kolotuhin_DV
+=====================================================
+/home/andrey/labs/302_OOP/302_OOP_Kolotuhin_DV
+Из github.com-mrsu:andpop-mrsu/302_OOP_Kolotuhin_DV
+Из github.com-mrsu:andpop-mrsu/302_OOP_Kolotuhin_DV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/DmitriiKolotuhin/302_OOP_Kolotuhin_DV
+Из https://github.com/DmitriiKolotuhin/302_OOP_Kolotuhin_DV
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление b2c9cdd..b3ade0f
+Fast-forward (no commit created; -m option ignored)
+ Task01/hello.php | 5 +++++
+ Task01/start.bat | 2 ++
+ 2 files changed, 7 insertions(+)
+ create mode 100644 Task01/hello.php
+ create mode 100644 Task01/start.bat
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/302_OOP_Kolotuhin_DV/Task01
+--------------------------------------------------
+Check path: hello.php
+--------------------------------------------------
+Check path: start.bat
+--------------------------------------------------
+Run: ./start.bat
+PS>TerminatingError(): "Cannot run a document in the middle of a pipeline: /home/andrey/labs/302_OOP/302_OOP_Kolotuhin_DV/Task01/start.bat."
+
+InvalidOperation: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/checks_for_task.ps1:32
+Line |
+  32 |      $str = (& $command $params | Out-String)
+     |              ~~~~~~~~~~~~~~~~~~
+     | Cannot run a document in the middle of a pipeline: /home/andrey/labs/302_OOP/302_OOP_Kolotuhin_DV/Task01/start.bat.
+
+InvalidOperation: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/checks_for_task.ps1:32
+Line |
+  32 |      $str = (& $command $params | Out-String)
+     |              ~~~~~~~~~~~~~~~~~~
+     | Cannot run a document in the middle of a pipeline: /home/andrey/labs/302_OOP/302_OOP_Kolotuhin_DV/Task01/start.bat.
+
+
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/302_OOP/302_OOP_Kolotuhin_DV
+Dima vremia add
+Task from branch: Task01
+Creation date: 02/09/2024 11:30:59
+To github.com-mrsu:andpop-mrsu/302_OOP_Kolotuhin_DV.git
+To github.com-mrsu:andpop-mrsu/302_OOP_Kolotuhin_DV.git
+   b2c9cdd..b3ade0f  master -> master
+   b2c9cdd..b3ade0f  master -> master
+302_OOP_Krasulin_NI
+302_OOP_Kuchin_RS
+302_OOP_Kuzmin_NA
+302_OOP_Malkin_DA
+302_OOP_Mezin_RV
+302_OOP_Orifov_MA
+=====================================================
+/home/andrey/labs/302_OOP/302_OOP_Orifov_MA
+Из github.com-mrsu:andpop-mrsu/302_OOP_Orifov_MA
+Из github.com-mrsu:andpop-mrsu/302_OOP_Orifov_MA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/StaticNur/302_OOP_Orifov_MA
+Из https://github.com/StaticNur/302_OOP_Orifov_MA
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 43e8137..8db10df
+Fast-forward (no commit created; -m option ignored)
+ Task01/hello.php | 5 +++++
+ Task01/start.bat | 2 ++
+ 2 files changed, 7 insertions(+)
+ create mode 100644 Task01/hello.php
+ create mode 100755 Task01/start.bat
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/302_OOP_Orifov_MA/Task01
+--------------------------------------------------
+Check path: hello.php
+--------------------------------------------------
+Check path: start.bat
+--------------------------------------------------
+Run: ./start.bat
+2024-02-09 15:55:21 Orifov Muxammadnur
+--------------------------------------------------
+Total ok: 3
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/302_OOP/302_OOP_Orifov_MA
+task01 ready
+Task from branch: Task01
+Creation date: 02/09/2024 10:10:08
+To github.com-mrsu:andpop-mrsu/302_OOP_Orifov_MA.git
+To github.com-mrsu:andpop-mrsu/302_OOP_Orifov_MA.git
+   43e8137..8db10df  master -> master
+   43e8137..8db10df  master -> master
+302_OOP_Polushatov_AS
+302_OOP_Puchkin_IYu
+=====================================================
+/home/andrey/labs/302_OOP/302_OOP_Puchkin_IYu
+Из github.com-mrsu:andpop-mrsu/302_OOP_Puchkin_IYu
+Из github.com-mrsu:andpop-mrsu/302_OOP_Puchkin_IYu
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/shindasayonara/302_OOP_Puchkin_IYu
+Из https://github.com/shindasayonara/302_OOP_Puchkin_IYu
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 8a86299..1cd471d
+Fast-forward (no commit created; -m option ignored)
+ Task01/hello.php | 5 +++++
+ Task01/start.bat | 2 ++
+ 2 files changed, 7 insertions(+)
+ create mode 100644 Task01/hello.php
+ create mode 100644 Task01/start.bat
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/302_OOP_Puchkin_IYu/Task01
+--------------------------------------------------
+Check path: hello.php
+--------------------------------------------------
+Check path: start.bat
+--------------------------------------------------
+Run: ./start.bat
+PS>TerminatingError(): "Cannot run a document in the middle of a pipeline: /home/andrey/labs/302_OOP/302_OOP_Puchkin_IYu/Task01/start.bat."
+
+InvalidOperation: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/checks_for_task.ps1:32
+Line |
+  32 |      $str = (& $command $params | Out-String)
+     |              ~~~~~~~~~~~~~~~~~~
+     | Cannot run a document in the middle of a pipeline: /home/andrey/labs/302_OOP/302_OOP_Puchkin_IYu/Task01/start.bat.
+
+InvalidOperation: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/checks_for_task.ps1:32
+Line |
+  32 |      $str = (& $command $params | Out-String)
+     |              ~~~~~~~~~~~~~~~~~~
+     | Cannot run a document in the middle of a pipeline: /home/andrey/labs/302_OOP/302_OOP_Puchkin_IYu/Task01/start.bat.
+
+
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/302_OOP/302_OOP_Puchkin_IYu
+Первая лабораторная работа "Вывод времени и имя"
+Task from branch: Task01
+Creation date: 02/09/2024 11:27:53
+To github.com-mrsu:andpop-mrsu/302_OOP_Puchkin_IYu.git
+To github.com-mrsu:andpop-mrsu/302_OOP_Puchkin_IYu.git
+   8a86299..1cd471d  master -> master
+   8a86299..1cd471d  master -> master
+302_OOP_Sherstnev_KI
+302_OOP_Shokov_DR
+302_OOP_Shurygina_KN
+302_OOP_Slushkin_DV
+302_OOP_Tazin_AN
+302_OOP_Tenyakshev_MA
+=====================================================
+/home/andrey/labs/302_OOP/302_OOP_Tenyakshev_MA
+Из github.com-mrsu:andpop-mrsu/302_OOP_Tenyakshev_MA
+Из github.com-mrsu:andpop-mrsu/302_OOP_Tenyakshev_MA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/Erefef/302_OOP_Tenyakshev_MA
+Из https://github.com/Erefef/302_OOP_Tenyakshev_MA
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 49fe1e6..ea3f7ed
+Fast-forward (no commit created; -m option ignored)
+ Task01/hello.php | 5 +++++
+ Task01/start.bat | 2 ++
+ 2 files changed, 7 insertions(+)
+ create mode 100644 Task01/hello.php
+ create mode 100644 Task01/start.bat
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/302_OOP_Tenyakshev_MA/Task01
+--------------------------------------------------
+Check path: hello.php
+--------------------------------------------------
+Check path: start.bat
+--------------------------------------------------
+Run: ./start.bat
+PS>TerminatingError(): "Cannot run a document in the middle of a pipeline: /home/andrey/labs/302_OOP/302_OOP_Tenyakshev_MA/Task01/start.bat."
+
+InvalidOperation: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/checks_for_task.ps1:32
+Line |
+  32 |      $str = (& $command $params | Out-String)
+     |              ~~~~~~~~~~~~~~~~~~
+     | Cannot run a document in the middle of a pipeline: /home/andrey/labs/302_OOP/302_OOP_Tenyakshev_MA/Task01/start.bat.
+
+InvalidOperation: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/checks_for_task.ps1:32
+Line |
+  32 |      $str = (& $command $params | Out-String)
+     |              ~~~~~~~~~~~~~~~~~~
+     | Cannot run a document in the middle of a pipeline: /home/andrey/labs/302_OOP/302_OOP_Tenyakshev_MA/Task01/start.bat.
+
+
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/302_OOP/302_OOP_Tenyakshev_MA
+first commit
+Task from branch: Task01
+Creation date: 02/09/2024 10:13:25
+To github.com-mrsu:andpop-mrsu/302_OOP_Tenyakshev_MA.git
+To github.com-mrsu:andpop-mrsu/302_OOP_Tenyakshev_MA.git
+   49fe1e6..ea3f7ed  master -> master
+   49fe1e6..ea3f7ed  master -> master
+302_OOP_Zaglumonina_AI
+=====================================================
+/home/andrey/labs/302_OOP/302_OOP_Zaglumonina_AI
+Из github.com-mrsu:andpop-mrsu/302_OOP_Zaglumonina_AI
+Из github.com-mrsu:andpop-mrsu/302_OOP_Zaglumonina_AI
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/Zaglumosha/302_OOP_Zaglumonina_AI
+Из https://github.com/Zaglumosha/302_OOP_Zaglumonina_AI
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task_01    -> student/Task_01
+ * [новая ветка]     Task_01    -> student/Task_01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление a41c13c..f0d7da8
+Fast-forward (no commit created; -m option ignored)
+ Task_01/hello.php | 5 +++++
+ Task_01/start.bat | 2 ++
+ 2 files changed, 7 insertions(+)
+ create mode 100644 Task_01/hello.php
+ create mode 100644 Task_01/start.bat
+There are no folder /home/andrey/labs/302_OOP/302_OOP_Zaglumonina_AI/Task01
+/home/andrey/labs/302_OOP/302_OOP_Zaglumonina_AI
+Task_01 ready
+Task from branch: Task01
+Creation date: 02/09/2024 11:56:18
+To github.com-mrsu:andpop-mrsu/302_OOP_Zaglumonina_AI.git
+To github.com-mrsu:andpop-mrsu/302_OOP_Zaglumonina_AI.git
+   a41c13c..f0d7da8  master -> master
+   a41c13c..f0d7da8  master -> master
+302_OOP_Zaharova_EA
+302_OOP_Zharkov_KS
 **********************
 PowerShell transcript end
-End time: 20230616141939
+End time: 20240209160218
 **********************

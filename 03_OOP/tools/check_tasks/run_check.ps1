@@ -4,7 +4,7 @@
 $studentDirsPath = "/home/andrey/labs/302_OOP"
 $teacherRepo = "https://api.github.com/repos/andpop-mrsu" 
 $headers = @{}
-$token = ''
+$token = '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'
 if (Test-Path ./token.txt) { $token = (Get-Content ./token.txt) }
 $headers.Add("Authorization", "Token $token")
 
