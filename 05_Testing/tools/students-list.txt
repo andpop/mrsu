@@ -1,13 +1,1 @@
-Abrashin_PI
-Antonova_SI
-Bikmaev_RR
-Buzin_VA
-Veshkin_II
-Deganova_DV
-Egranov_DA
-Krasavceva_KV
-Loginov_AD
-Lomaykin_AS
-Marochkin_DA
-Radynov_AS
-Tavtorkin_NO
+Antonov_KYu

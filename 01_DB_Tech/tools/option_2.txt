@@ -1,5 +1,6 @@
-Ezhikov_NA
-Zhukov_DE
-Konyshev_AE
-Kosolapov_DA
-Kruchinkin_AA
+Kolotuhin_DV
+Krasulin_NI
+Kuzmin_NA
+Kuchin_RS
+Malkin_DA
+

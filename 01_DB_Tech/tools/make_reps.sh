@@ -1,6 +1,6 @@
 #!/bin/bash
 
-token=11111
+token=11l
 rm ./reps.txt
 for student in $(cat students-list.txt); do
    echo "402_DBTech_$student" >> reps.txt

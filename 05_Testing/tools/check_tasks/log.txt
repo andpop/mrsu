@@ -1,33 +1,22 @@
 **********************
 PowerShell transcript start
-Start time: 20230320214855
+Start time: 20240322160658
 **********************
 Transcript started, output file is log.txt
-202M_Testing_Aleksandrov_KV
-202M_Testing_Antonov_KJu
-202M_Testing_Arjanov_VA
-202M_Testing_Egorov_OA
-=====================================================
-/home/andrey/labs/202M_Testing/202M_Testing_Egorov_OA
-Из github.com-mrsu:andpop-mrsu/202M_Testing_Egorov_OA
-Из github.com-mrsu:andpop-mrsu/202M_Testing_Egorov_OA
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Уже актуально.
-Task from branch: Tasks-1-3
-Creation date: 03/19/2023 13:20:21
-Checking script check_Tasks-1-3.ps1 not found
-202M_Testing_Karpushkin_AS
-202M_Testing_Krasavtsev_VV
-202M_Testing_Lihoradov_II
-202M_Testing_Makshev_NI
-202M_Testing_Plaksin_DV
-202M_Testing_Shabarin_IA
-202M_Testing_Trostin_SA
+202M_Testing_Abrashin_PI
+202M_Testing_Antonova_SI
+202M_Testing_Bikmaev_RR
+202M_Testing_Buzin_VA
+202M_Testing_Deganova_DV
+202M_Testing_Egranov_DA
+202M_Testing_Krasavceva_KV
+202M_Testing_Loginov_AD
+202M_Testing_Lomaykin_AS
+202M_Testing_Marochkin_DA
+202M_Testing_Radynov_AS
+202M_Testing_Tavtorkin_NO
+202M_Testing_Veshkin_II
 **********************
 PowerShell transcript end
-End time: 20230320214902
+End time: 20240322160706
 **********************

@@ -1,13 +1,1 @@
-202M_Testing_Abrashin_PI
-202M_Testing_Antonova_SI
-202M_Testing_Bikmaev_RR
-202M_Testing_Buzin_VA
-202M_Testing_Veshkin_II
-202M_Testing_Deganova_DV
-202M_Testing_Egranov_DA
-202M_Testing_Krasavceva_KV
-202M_Testing_Loginov_AD
-202M_Testing_Lomaykin_AS
-202M_Testing_Marochkin_DA
-202M_Testing_Radynov_AS
-202M_Testing_Tavtorkin_NO
+202M_Testing_Antonov_KYu
