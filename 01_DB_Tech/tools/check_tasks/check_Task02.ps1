@@ -4,7 +4,7 @@ param(
 )
 
 function Get-GameDir {
-    $gameDirs = 'tic-tac-toe', 'guess-number', 'hangman', 'cold-hot', 'guess_number'
+    $gameDirs = 'tic-tac-toe', 'guess-number', 'hangman', 'cold-hot', 'guess_number', 'minesweeper'
 
     foreach ($gameDir in $gameDirs) {
         if (Test-Path -Path $gameDir -PathType container) {
