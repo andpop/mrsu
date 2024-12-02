@@ -2,7 +2,7 @@
 
 token=g
 rm ./reps.txt
-for student in $(cat students-list_1.txt); do
+for student in $(cat students-list.txt); do
    echo "302_OOP_$student" >> reps.txt
 done
 

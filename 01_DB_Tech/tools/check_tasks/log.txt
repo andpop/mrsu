@@ -1,163 +1,17 @@
 **********************
 PowerShell transcript start
-Start time: 20241202111719
+Start time: 20241202172420
 **********************
 Transcript started, output file is log.txt
 402_DBTech_Abramov_AI
-=====================================================
-/home/andrey/labs/402_DBTech/402_DBTech_Abramov_AI
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Abramov_AI
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Abramov_AI
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Из https://github.com/Antonizsar13/402_DBTech_Abramov_AI
-Из https://github.com/Antonizsar13/402_DBTech_Abramov_AI
- * [новая ветка]     Task06     -> student/Task06
- * [новая ветка]     Task06     -> student/Task06
-   c723512..977abe8  master     -> student/master
-   c723512..977abe8  master     -> student/master
-Обновление 977abe8..97343d8
-Fast-forward (no commit created; -m option ignored)
- Task06/minesweeper/README.md        |  96 ++++++++++++++
- Task06/minesweeper/index.html       |  36 ++++++
- Task06/minesweeper/scripts/main.js  | 250 ++++++++++++++++++++++++++++++++++++
- Task06/minesweeper/styles/style.css | 118 +++++++++++++++++
- 4 files changed, 500 insertions(+)
- create mode 100644 Task06/minesweeper/README.md
- create mode 100644 Task06/minesweeper/index.html
- create mode 100644 Task06/minesweeper/scripts/main.js
- create mode 100644 Task06/minesweeper/styles/style.css
---------------------------------------------------
-Task:  /home/andrey/labs/402_DBTech/402_DBTech_Abramov_AI/Task06
---------------------------------------------------
-Check path: README.md
-README.md not found
---------------------------------------------------
-Total ok: 0
-Total error: 1
---------------------------------------------------
-LAB-6
-task from branch: Task06
-creation date: 11/29/2024 07:50:50
-To github.com-mrsu:andpop-mrsu/402_DBTech_Abramov_AI.git
-To github.com-mrsu:andpop-mrsu/402_DBTech_Abramov_AI.git
-   977abe8..97343d8  master -> master
-   977abe8..97343d8  master -> master
 402_DBTech_Biushkin_DV
 402_DBTech_Chernomorskiy_MM
 402_DBTech_Cybisov_IE
 402_DBTech_Fedoseev_AS
-=====================================================
-/home/andrey/labs/402_DBTech/402_DBTech_Fedoseev_AS
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Fedoseev_AS
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Fedoseev_AS
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Из https://github.com/kabyfed/402_DBTech_Fedoseev_AS
-Из https://github.com/kabyfed/402_DBTech_Fedoseev_AS
- * [новая ветка]     Task06     -> student/Task06
- * [новая ветка]     Task06     -> student/Task06
-   6204c53..c904034  master     -> student/master
-   6204c53..c904034  master     -> student/master
-Обновление c904034..00b29a8
-Fast-forward (no commit created; -m option ignored)
- Task06/minesweeper/Readme.md        |  96 +++++++++++
- Task06/minesweeper/index.html       |  54 +++++++
- Task06/minesweeper/scripts/main.js  | 307 ++++++++++++++++++++++++++++++++++++
- Task06/minesweeper/styles/style.css | 162 +++++++++++++++++++
- 4 files changed, 619 insertions(+)
- create mode 100644 Task06/minesweeper/Readme.md
- create mode 100644 Task06/minesweeper/index.html
- create mode 100644 Task06/minesweeper/scripts/main.js
- create mode 100644 Task06/minesweeper/styles/style.css
---------------------------------------------------
-Task:  /home/andrey/labs/402_DBTech/402_DBTech_Fedoseev_AS/Task06
---------------------------------------------------
-Check path: README.md
-README.md not found
---------------------------------------------------
-Total ok: 0
-Total error: 1
---------------------------------------------------
-Task06
-task from branch: Task06
-creation date: 11/30/2024 15:16:14
-To github.com-mrsu:andpop-mrsu/402_DBTech_Fedoseev_AS.git
-To github.com-mrsu:andpop-mrsu/402_DBTech_Fedoseev_AS.git
-   c904034..00b29a8  master -> master
-   c904034..00b29a8  master -> master
 402_DBTech_Grigoreva_LV
 402_DBTech_Kaymakova_EV
 402_DBTech_Kolotuhin_DV
 402_DBTech_Krasulin_NI
-=====================================================
-/home/andrey/labs/402_DBTech/402_DBTech_Krasulin_NI
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Krasulin_NI
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Krasulin_NI
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Из https://github.com/KrasulinN/402_DBTech_Krasulin_NI
-Из https://github.com/KrasulinN/402_DBTech_Krasulin_NI
- * [новая ветка]     Task07     -> student/Task07
- * [новая ветка]     Task07     -> student/Task07
-   aea896e..6c74b00  master     -> student/master
-   aea896e..6c74b00  master     -> student/master
-Обновление 144b1af..3693c43
-Fast-forward (no commit created; -m option ignored)
- Task07/guess-number/README.md           |  93 ++++++++++
- Task07/guess-number/allGames.html       |  38 ++++
- Task07/guess-number/allLosses.html      |  38 ++++
- Task07/guess-number/allWins.html        |  38 ++++
- Task07/guess-number/db.js               |  59 ++++++
- Task07/guess-number/game.html           |  82 +++++++++
- Task07/guess-number/gameSetup.html      |  42 +++++
- Task07/guess-number/help.html           |  34 ++++
- Task07/guess-number/index.html          |  53 ++++++
- Task07/guess-number/libs/idb.js         | 305 ++++++++++++++++++++++++++++++++
- Task07/guess-number/script.js           |  65 +++++++
- Task07/guess-number/statistics.html     |  55 ++++++
- Task07/guess-number/styles.css          |  35 ++++
- Task07/guess-number/viewGameRecord.html |  68 +++++++
- 14 files changed, 1005 insertions(+)
- create mode 100644 Task07/guess-number/README.md
- create mode 100644 Task07/guess-number/allGames.html
- create mode 100644 Task07/guess-number/allLosses.html
- create mode 100644 Task07/guess-number/allWins.html
- create mode 100644 Task07/guess-number/db.js
- create mode 100644 Task07/guess-number/game.html
- create mode 100644 Task07/guess-number/gameSetup.html
- create mode 100644 Task07/guess-number/help.html
- create mode 100644 Task07/guess-number/index.html
- create mode 100644 Task07/guess-number/libs/idb.js
- create mode 100644 Task07/guess-number/script.js
- create mode 100644 Task07/guess-number/statistics.html
- create mode 100644 Task07/guess-number/styles.css
- create mode 100644 Task07/guess-number/viewGameRecord.html
---------------------------------------------------
-Task:  /home/andrey/labs/402_DBTech/402_DBTech_Krasulin_NI/Task07
---------------------------------------------------
-Check path: README.md
-README.md not found
---------------------------------------------------
-Total ok: 0
-Total error: 1
---------------------------------------------------
-Task07
-task from branch: Task07
-creation date: 11/30/2024 16:29:58
-To github.com-mrsu:andpop-mrsu/402_DBTech_Krasulin_NI.git
-To github.com-mrsu:andpop-mrsu/402_DBTech_Krasulin_NI.git
-   144b1af..3693c43  master -> master
-   144b1af..3693c43  master -> master
 402_DBTech_Kuchin_RS
 402_DBTech_Kuzmin_NA
 402_DBTech_Malkin_DA
@@ -176,39 +30,14 @@ fatal: внешний репозиторий student уже существует
 fatal: внешний репозиторий student уже существует
 Из https://github.com/shindasayonara/402_DBTech_Puchkin_IYu
 Из https://github.com/shindasayonara/402_DBTech_Puchkin_IYu
- * [новая ветка]     Task07     -> student/Task07
- * [новая ветка]     Task07     -> student/Task07
-   af28a6a..2e22290  master     -> student/master
-   af28a6a..2e22290  master     -> student/master
-Обновление 1dadef5..2e22290
-Fast-forward (no commit created; -m option ignored)
-Merge pull request #8 from andpop-mrsu/master
-task from branch: master
-creation date: 12/01/2024 13:12:35
-Checking script check_master.ps1 not found
-=====================================================
-/home/andrey/labs/402_DBTech/402_DBTech_Puchkin_IYu
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Puchkin_IYu
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Puchkin_IYu
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
+   688f0f3..957a3f4  Task07     -> student/Task07
+   688f0f3..957a3f4  Task07     -> student/Task07
+   2e22290..c6a8446  master     -> student/master
+   2e22290..c6a8446  master     -> student/master
 Merge made by the 'recursive' strategy.
- Task06/minesweeper-game/game.js     | 132 ++++++----------
- Task06/minesweeper-game/index.html  |  13 +-
- Task07/minesweeper-game/db.js       |  38 +++++
- Task07/minesweeper-game/game.js     | 203 ++++++++++++++++++++++++
- Task07/minesweeper-game/index.html  |  76 +++++++++
- Task07/minesweeper-game/libs/idb.js | 305 ++++++++++++++++++++++++++++++++++++
- Task07/minesweeper-game/style.css   |  81 ++++++++++
- 7 files changed, 765 insertions(+), 83 deletions(-)
- create mode 100644 Task07/minesweeper-game/db.js
- create mode 100644 Task07/minesweeper-game/game.js
- create mode 100644 Task07/minesweeper-game/index.html
- create mode 100644 Task07/minesweeper-game/libs/idb.js
- create mode 100644 Task07/minesweeper-game/style.css
+ Task07/minesweeper-game/README.md | 119 ++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 119 insertions(+)
+ create mode 100644 Task07/minesweeper-game/README.md
 --------------------------------------------------
 Task:  /home/andrey/labs/402_DBTech/402_DBTech_Puchkin_IYu/Task07
 --------------------------------------------------
@@ -218,274 +47,23 @@ README.md not found
 Total ok: 0
 Total error: 1
 --------------------------------------------------
-Task07
+ReadMe add
 task from branch: Task07
-creation date: 11/30/2024 16:19:24
+creation date: 12/02/2024 13:06:32
 To github.com-mrsu:andpop-mrsu/402_DBTech_Puchkin_IYu.git
 To github.com-mrsu:andpop-mrsu/402_DBTech_Puchkin_IYu.git
-   1dadef5..ece4ef5  master -> master
-   1dadef5..ece4ef5  master -> master
+   ece4ef5..129fa8c  master -> master
+   ece4ef5..129fa8c  master -> master
 402_DBTech_Sherstnev_KI
-=====================================================
-/home/andrey/labs/402_DBTech/402_DBTech_Sherstnev_KI
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Sherstnev_KI
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Sherstnev_KI
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Из https://github.com/KirillSher/402_DBTech_Sherstnev_KI
-Из https://github.com/KirillSher/402_DBTech_Sherstnev_KI
- * [новая ветка]     Task06     -> student/Task06
- * [новая ветка]     Task06     -> student/Task06
-   deb71a3..626bf12  master     -> student/master
-   deb71a3..626bf12  master     -> student/master
-Обновление 626bf12..ca7268a
-Fast-forward (no commit created; -m option ignored)
- Task06/cold-hot-web/README.md         |  40 ++++++++
- Task06/cold-hot-web/css/style.css     |  61 +++++++++++
- Task06/cold-hot-web/index.html        |  45 +++++++++
- Task06/cold-hot-web/js/db.js          |  91 +++++++++++++++++
- Task06/cold-hot-web/js/format_data.js |  11 ++
- Task06/cold-hot-web/js/game.js        |  63 ++++++++++++
- Task06/cold-hot-web/js/index.js       |  46 +++++++++
- Task06/cold-hot-web/js/ui.js          | 184 ++++++++++++++++++++++++++++++++++
- 8 files changed, 541 insertions(+)
- create mode 100644 Task06/cold-hot-web/README.md
- create mode 100644 Task06/cold-hot-web/css/style.css
- create mode 100644 Task06/cold-hot-web/index.html
- create mode 100644 Task06/cold-hot-web/js/db.js
- create mode 100644 Task06/cold-hot-web/js/format_data.js
- create mode 100644 Task06/cold-hot-web/js/game.js
- create mode 100644 Task06/cold-hot-web/js/index.js
- create mode 100644 Task06/cold-hot-web/js/ui.js
---------------------------------------------------
-Task:  /home/andrey/labs/402_DBTech/402_DBTech_Sherstnev_KI/Task06
---------------------------------------------------
-Check path: README.md
-README.md not found
---------------------------------------------------
-Total ok: 0
-Total error: 1
---------------------------------------------------
-Task06
-task from branch: Task06
-creation date: 11/30/2024 21:47:07
-To github.com-mrsu:andpop-mrsu/402_DBTech_Sherstnev_KI.git
-To github.com-mrsu:andpop-mrsu/402_DBTech_Sherstnev_KI.git
-   626bf12..ca7268a  master -> master
-   626bf12..ca7268a  master -> master
 402_DBTech_Shokov_DR
 402_DBTech_Shurygina_KN
-=====================================================
-/home/andrey/labs/402_DBTech/402_DBTech_Shurygina_KN
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Shurygina_KN
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Shurygina_KN
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Из https://github.com/shuryginaKN/402_DBTech_Shurygina_KN
-Из https://github.com/shuryginaKN/402_DBTech_Shurygina_KN
- * [новая ветка]     Task06     -> student/Task06
- * [новая ветка]     Task06     -> student/Task06
-   0a66afd..f10aea8  master     -> student/master
-   0a66afd..f10aea8  master     -> student/master
-Merge made by the 'recursive' strategy.
- Task06/cold-hot/README.md               |  88 ++++++++++++
- Task06/cold-hot/index.html              |  48 +++++++
- Task06/cold-hot/resources/css/index.css | 194 ++++++++++++++++++++++++++
- Task06/cold-hot/src/Controller.js       | 237 ++++++++++++++++++++++++++++++++
- Task06/cold-hot/src/Database.js         |  69 ++++++++++
- Task06/cold-hot/src/View.js             |  26 ++++
- Task06/cold-hot/src/index.js            |  11 ++
- 7 files changed, 673 insertions(+)
- create mode 100644 Task06/cold-hot/README.md
- create mode 100644 Task06/cold-hot/index.html
- create mode 100644 Task06/cold-hot/resources/css/index.css
- create mode 100644 Task06/cold-hot/src/Controller.js
- create mode 100644 Task06/cold-hot/src/Database.js
- create mode 100644 Task06/cold-hot/src/View.js
- create mode 100644 Task06/cold-hot/src/index.js
---------------------------------------------------
-Task:  /home/andrey/labs/402_DBTech/402_DBTech_Shurygina_KN/Task06
---------------------------------------------------
-Check path: README.md
-README.md not found
---------------------------------------------------
-Total ok: 0
-Total error: 1
---------------------------------------------------
-Task06
-task from branch: Task06
-creation date: 11/30/2024 18:39:00
-To github.com-mrsu:andpop-mrsu/402_DBTech_Shurygina_KN.git
-To github.com-mrsu:andpop-mrsu/402_DBTech_Shurygina_KN.git
-   f10aea8..38e06d7  master -> master
-   f10aea8..38e06d7  master -> master
 402_DBTech_Slushkin_DV
-=====================================================
-/home/andrey/labs/402_DBTech/402_DBTech_Slushkin_DV
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Slushkin_DV
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Slushkin_DV
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Из https://github.com/FunSkrip/402_DBTech_Slushkin_DV
-Из https://github.com/FunSkrip/402_DBTech_Slushkin_DV
- * [новая ветка]     Task06     -> student/Task06
- * [новая ветка]     Task06     -> student/Task06
-   45ac3a6..8b7968d  master     -> student/master
-   45ac3a6..8b7968d  master     -> student/master
-Обновление 8b7968d..8c7fa18
-Fast-forward (no commit created; -m option ignored)
- Task06/hangman/README.md  |  74 +++++++++++++
- Task06/hangman/index.html |  82 ++++++++++++++
- Task06/hangman/script.js  | 272 ++++++++++++++++++++++++++++++++++++++++++++++
- Task06/hangman/styles.css | 181 ++++++++++++++++++++++++++++++
- 4 files changed, 609 insertions(+)
- create mode 100644 Task06/hangman/README.md
- create mode 100644 Task06/hangman/index.html
- create mode 100644 Task06/hangman/script.js
- create mode 100644 Task06/hangman/styles.css
---------------------------------------------------
-Task:  /home/andrey/labs/402_DBTech/402_DBTech_Slushkin_DV/Task06
---------------------------------------------------
-Check path: README.md
-README.md not found
---------------------------------------------------
-Total ok: 0
-Total error: 1
---------------------------------------------------
-Task06
-task from branch: Task06
-creation date: 11/30/2024 20:01:22
-To github.com-mrsu:andpop-mrsu/402_DBTech_Slushkin_DV.git
-To github.com-mrsu:andpop-mrsu/402_DBTech_Slushkin_DV.git
-   8b7968d..8c7fa18  master -> master
-   8b7968d..8c7fa18  master -> master
 402_DBTech_Tazin_AN
-=====================================================
-/home/andrey/labs/402_DBTech/402_DBTech_Tazin_AN
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Tazin_AN
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Tazin_AN
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Из https://github.com/Oldsool/402_DBTech_Tazin_AN
-Из https://github.com/Oldsool/402_DBTech_Tazin_AN
- * [новая ветка]     Task06     -> student/Task06
- * [новая ветка]     Task06     -> student/Task06
-Merge made by the 'recursive' strategy.
- Task06/README.md  |  74 +++++++++++++++
- Task06/index.html |  86 +++++++++++++++++
- Task06/script.js  | 272 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
- Task06/styles.css | 178 +++++++++++++++++++++++++++++++++++
- 4 files changed, 610 insertions(+)
- create mode 100644 Task06/README.md
- create mode 100644 Task06/index.html
- create mode 100644 Task06/script.js
- create mode 100644 Task06/styles.css
---------------------------------------------------
-Task:  /home/andrey/labs/402_DBTech/402_DBTech_Tazin_AN/Task06
---------------------------------------------------
-Check path: README.md
-# Проект "Виселица" (Hangman)
-
-## Описание проекта
-
-Это веб-версия игры  "Виселица" (hangman), реализованная на JavaScript с использованием базы данных **IndexedDB** для сохранения данных игры. Пользователям предоставляется возможность просматривать историю игр и воспроизводить ранее сыгранные партии.
-
-Цель игры - угадать загаданное компьютером слово из шести букв. Игрок пытается угадать буквы, а затем и все слово целиком. Если игрок правильно угадывает букву, компьютер вписывает ее в соответствующую клетку. Если ошибается, то рисует одну из частей тела повешенного человека (используется псевдографика). Чтобы победить, игрок должен угадать все буквы в слове до того, как повешенный человечек будет полностью нарисован.
-
-### Правила игры
-
-- Компьютер загадывает слово из шести букв.
-- Игрок пытается угадать буквы, вводя их по одной.
-- Если буква угадана верно, она отображается в соответствующей клетке.
-- Если буква не угадана, рисуется одна из частей тела повешенного человека.
-- Игра заканчивается победой, если игрок угадывает все буквы в слове до того, как повешенный человечек будет полностью нарисован.
-- Игра заканчивается поражением, если повешенный человечек будет полностью нарисован до угадывания всех букв.
-
-### Требования
-
-- **Список слов**: Заранее сгенерированный список слов из шести букв, сохраненный в базе данных.
-- **Сохранение данных**: Вся информация об играх и ходах сохраняется в базе данных IndexedDB.
-- **Хранение данных**:
-  - Дата игры
-  - Имя игрока
-  - Загаданное компьютером слово
-  - Исход игры
-  - Запись ходов в формате: `номер попытки | предложенная буква | результат (угадал/не угадал)`
-- **Режимы игры**:
-  - Новая игра
-  - Просмотр списка сохраненных игр
-  - Просмотр статистику игр
-  - Повтор сохраненной партии (воспроизведение ходов)
-
----
-
-## Окружение и требования для запуска
-
-1. **Браузер**:
-   - Совместимость с современными браузерами, поддерживающими JavaScript и IndexedDB (Chrome, Firefox, Edge и другие).
-2. **IndexedDB**:
-   - Поддержка IndexedDB для хранения данных игры локально в браузере.
-
----
-
-## Установка и запуск проекта
-
-1. **Склонируйте репозиторий**:
-   ```bash
-   git clone https://github.com/Oldsool/Hangman-Web
-   ```
-
-2. **Перейдите в каталог проекта**:
-   ```bash
-   cd C:\...\hangman
-   ```
-
-3. **Откройте файл index.html в вашем браузере**: 
-    Для начала игры откройте файл index.html в вашем любимом браузере. Игра будет загружена и готова к началу.
-
-4. **Запуск через GitHub Pages**:
-
-    Если вы не хотите загружать проект на свой локальный компьютер, вы можете запустить игру прямо из браузера, воспользовавшись [GitHub Pages](https://oldsool.github.io/Hangman-Web/). Для этого:
-
-    - Перейдите на страницу игры на GitHub Pages.
-        - Игра автоматически загрузится и будет готова к началу.
-
-## Примечания
-- Сохранение игры: 
-Все игры сохраняются локально в IndexedDB вашего браузера. Убедитесь, что ваш браузер поддерживает эту технологию.
-- Обновления: Для обновления локальной версии игры просто склонируйте последний вариант репозитория и откройте файл index.html.
-
-## Ссылки
-- [GitHub репозиторий](https://github.com/Oldsool/Hangman-Web)
-- [GitHub Pages](https://oldsool.github.io/Hangman-Web/)
---------------------------------------------------
-Total ok: 1
-Total error: 0
---------------------------------------------------
- Lab06
-task from branch: Task06
-creation date: 12/02/2024 08:30:08
-To github.com-mrsu:andpop-mrsu/402_DBTech_Tazin_AN.git
-To github.com-mrsu:andpop-mrsu/402_DBTech_Tazin_AN.git
-   a21dc3b..2f3baf7  master -> master
-   a21dc3b..2f3baf7  master -> master
 402_DBTech_Tenyakshev_MA
 402_DBTech_Zaglumonina_AI
 402_DBTech_Zaharova_EA
 402_DBTech_Zharkov_KS
 **********************
 PowerShell transcript end
-End time: 20241202114300
+End time: 20241202172634
 **********************
