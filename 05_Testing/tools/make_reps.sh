@@ -1,6 +1,6 @@
 #!/bin/bash
 
-token=g
+token=123
 rm ./reps.txt
 for student in $(cat students-list.txt); do
    echo "202M_Testing_$student" >> reps.txt

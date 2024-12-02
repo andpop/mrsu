@@ -1,17 +1,163 @@
 **********************
 PowerShell transcript start
-Start time: 20241129101922
+Start time: 20241202111719
 **********************
 Transcript started, output file is log.txt
 402_DBTech_Abramov_AI
+=====================================================
+/home/andrey/labs/402_DBTech/402_DBTech_Abramov_AI
+Из github.com-mrsu:andpop-mrsu/402_DBTech_Abramov_AI
+Из github.com-mrsu:andpop-mrsu/402_DBTech_Abramov_AI
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/Antonizsar13/402_DBTech_Abramov_AI
+Из https://github.com/Antonizsar13/402_DBTech_Abramov_AI
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task06     -> student/Task06
+   c723512..977abe8  master     -> student/master
+   c723512..977abe8  master     -> student/master
+Обновление 977abe8..97343d8
+Fast-forward (no commit created; -m option ignored)
+ Task06/minesweeper/README.md        |  96 ++++++++++++++
+ Task06/minesweeper/index.html       |  36 ++++++
+ Task06/minesweeper/scripts/main.js  | 250 ++++++++++++++++++++++++++++++++++++
+ Task06/minesweeper/styles/style.css | 118 +++++++++++++++++
+ 4 files changed, 500 insertions(+)
+ create mode 100644 Task06/minesweeper/README.md
+ create mode 100644 Task06/minesweeper/index.html
+ create mode 100644 Task06/minesweeper/scripts/main.js
+ create mode 100644 Task06/minesweeper/styles/style.css
+--------------------------------------------------
+Task:  /home/andrey/labs/402_DBTech/402_DBTech_Abramov_AI/Task06
+--------------------------------------------------
+Check path: README.md
+README.md not found
+--------------------------------------------------
+Total ok: 0
+Total error: 1
+--------------------------------------------------
+LAB-6
+task from branch: Task06
+creation date: 11/29/2024 07:50:50
+To github.com-mrsu:andpop-mrsu/402_DBTech_Abramov_AI.git
+To github.com-mrsu:andpop-mrsu/402_DBTech_Abramov_AI.git
+   977abe8..97343d8  master -> master
+   977abe8..97343d8  master -> master
 402_DBTech_Biushkin_DV
 402_DBTech_Chernomorskiy_MM
 402_DBTech_Cybisov_IE
 402_DBTech_Fedoseev_AS
+=====================================================
+/home/andrey/labs/402_DBTech/402_DBTech_Fedoseev_AS
+Из github.com-mrsu:andpop-mrsu/402_DBTech_Fedoseev_AS
+Из github.com-mrsu:andpop-mrsu/402_DBTech_Fedoseev_AS
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/kabyfed/402_DBTech_Fedoseev_AS
+Из https://github.com/kabyfed/402_DBTech_Fedoseev_AS
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task06     -> student/Task06
+   6204c53..c904034  master     -> student/master
+   6204c53..c904034  master     -> student/master
+Обновление c904034..00b29a8
+Fast-forward (no commit created; -m option ignored)
+ Task06/minesweeper/Readme.md        |  96 +++++++++++
+ Task06/minesweeper/index.html       |  54 +++++++
+ Task06/minesweeper/scripts/main.js  | 307 ++++++++++++++++++++++++++++++++++++
+ Task06/minesweeper/styles/style.css | 162 +++++++++++++++++++
+ 4 files changed, 619 insertions(+)
+ create mode 100644 Task06/minesweeper/Readme.md
+ create mode 100644 Task06/minesweeper/index.html
+ create mode 100644 Task06/minesweeper/scripts/main.js
+ create mode 100644 Task06/minesweeper/styles/style.css
+--------------------------------------------------
+Task:  /home/andrey/labs/402_DBTech/402_DBTech_Fedoseev_AS/Task06
+--------------------------------------------------
+Check path: README.md
+README.md not found
+--------------------------------------------------
+Total ok: 0
+Total error: 1
+--------------------------------------------------
+Task06
+task from branch: Task06
+creation date: 11/30/2024 15:16:14
+To github.com-mrsu:andpop-mrsu/402_DBTech_Fedoseev_AS.git
+To github.com-mrsu:andpop-mrsu/402_DBTech_Fedoseev_AS.git
+   c904034..00b29a8  master -> master
+   c904034..00b29a8  master -> master
 402_DBTech_Grigoreva_LV
 402_DBTech_Kaymakova_EV
 402_DBTech_Kolotuhin_DV
 402_DBTech_Krasulin_NI
+=====================================================
+/home/andrey/labs/402_DBTech/402_DBTech_Krasulin_NI
+Из github.com-mrsu:andpop-mrsu/402_DBTech_Krasulin_NI
+Из github.com-mrsu:andpop-mrsu/402_DBTech_Krasulin_NI
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/KrasulinN/402_DBTech_Krasulin_NI
+Из https://github.com/KrasulinN/402_DBTech_Krasulin_NI
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     Task07     -> student/Task07
+   aea896e..6c74b00  master     -> student/master
+   aea896e..6c74b00  master     -> student/master
+Обновление 144b1af..3693c43
+Fast-forward (no commit created; -m option ignored)
+ Task07/guess-number/README.md           |  93 ++++++++++
+ Task07/guess-number/allGames.html       |  38 ++++
+ Task07/guess-number/allLosses.html      |  38 ++++
+ Task07/guess-number/allWins.html        |  38 ++++
+ Task07/guess-number/db.js               |  59 ++++++
+ Task07/guess-number/game.html           |  82 +++++++++
+ Task07/guess-number/gameSetup.html      |  42 +++++
+ Task07/guess-number/help.html           |  34 ++++
+ Task07/guess-number/index.html          |  53 ++++++
+ Task07/guess-number/libs/idb.js         | 305 ++++++++++++++++++++++++++++++++
+ Task07/guess-number/script.js           |  65 +++++++
+ Task07/guess-number/statistics.html     |  55 ++++++
+ Task07/guess-number/styles.css          |  35 ++++
+ Task07/guess-number/viewGameRecord.html |  68 +++++++
+ 14 files changed, 1005 insertions(+)
+ create mode 100644 Task07/guess-number/README.md
+ create mode 100644 Task07/guess-number/allGames.html
+ create mode 100644 Task07/guess-number/allLosses.html
+ create mode 100644 Task07/guess-number/allWins.html
+ create mode 100644 Task07/guess-number/db.js
+ create mode 100644 Task07/guess-number/game.html
+ create mode 100644 Task07/guess-number/gameSetup.html
+ create mode 100644 Task07/guess-number/help.html
+ create mode 100644 Task07/guess-number/index.html
+ create mode 100644 Task07/guess-number/libs/idb.js
+ create mode 100644 Task07/guess-number/script.js
+ create mode 100644 Task07/guess-number/statistics.html
+ create mode 100644 Task07/guess-number/styles.css
+ create mode 100644 Task07/guess-number/viewGameRecord.html
+--------------------------------------------------
+Task:  /home/andrey/labs/402_DBTech/402_DBTech_Krasulin_NI/Task07
+--------------------------------------------------
+Check path: README.md
+README.md not found
+--------------------------------------------------
+Total ok: 0
+Total error: 1
+--------------------------------------------------
+Task07
+task from branch: Task07
+creation date: 11/30/2024 16:29:58
+To github.com-mrsu:andpop-mrsu/402_DBTech_Krasulin_NI.git
+To github.com-mrsu:andpop-mrsu/402_DBTech_Krasulin_NI.git
+   144b1af..3693c43  master -> master
+   144b1af..3693c43  master -> master
 402_DBTech_Kuchin_RS
 402_DBTech_Kuzmin_NA
 402_DBTech_Malkin_DA
@@ -19,741 +165,327 @@ Transcript started, output file is log.txt
 402_DBTech_Orifov_MA
 402_DBTech_Polushatov_AS
 402_DBTech_Puchkin_IYu
+=====================================================
+/home/andrey/labs/402_DBTech/402_DBTech_Puchkin_IYu
+Из github.com-mrsu:andpop-mrsu/402_DBTech_Puchkin_IYu
+Из github.com-mrsu:andpop-mrsu/402_DBTech_Puchkin_IYu
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/shindasayonara/402_DBTech_Puchkin_IYu
+Из https://github.com/shindasayonara/402_DBTech_Puchkin_IYu
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     Task07     -> student/Task07
+   af28a6a..2e22290  master     -> student/master
+   af28a6a..2e22290  master     -> student/master
+Обновление 1dadef5..2e22290
+Fast-forward (no commit created; -m option ignored)
+Merge pull request #8 from andpop-mrsu/master
+task from branch: master
+creation date: 12/01/2024 13:12:35
+Checking script check_master.ps1 not found
+=====================================================
+/home/andrey/labs/402_DBTech/402_DBTech_Puchkin_IYu
+Из github.com-mrsu:andpop-mrsu/402_DBTech_Puchkin_IYu
+Из github.com-mrsu:andpop-mrsu/402_DBTech_Puchkin_IYu
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Merge made by the 'recursive' strategy.
+ Task06/minesweeper-game/game.js     | 132 ++++++----------
+ Task06/minesweeper-game/index.html  |  13 +-
+ Task07/minesweeper-game/db.js       |  38 +++++
+ Task07/minesweeper-game/game.js     | 203 ++++++++++++++++++++++++
+ Task07/minesweeper-game/index.html  |  76 +++++++++
+ Task07/minesweeper-game/libs/idb.js | 305 ++++++++++++++++++++++++++++++++++++
+ Task07/minesweeper-game/style.css   |  81 ++++++++++
+ 7 files changed, 765 insertions(+), 83 deletions(-)
+ create mode 100644 Task07/minesweeper-game/db.js
+ create mode 100644 Task07/minesweeper-game/game.js
+ create mode 100644 Task07/minesweeper-game/index.html
+ create mode 100644 Task07/minesweeper-game/libs/idb.js
+ create mode 100644 Task07/minesweeper-game/style.css
+--------------------------------------------------
+Task:  /home/andrey/labs/402_DBTech/402_DBTech_Puchkin_IYu/Task07
+--------------------------------------------------
+Check path: README.md
+README.md not found
+--------------------------------------------------
+Total ok: 0
+Total error: 1
+--------------------------------------------------
+Task07
+task from branch: Task07
+creation date: 11/30/2024 16:19:24
+To github.com-mrsu:andpop-mrsu/402_DBTech_Puchkin_IYu.git
+To github.com-mrsu:andpop-mrsu/402_DBTech_Puchkin_IYu.git
+   1dadef5..ece4ef5  master -> master
+   1dadef5..ece4ef5  master -> master
 402_DBTech_Sherstnev_KI
+=====================================================
+/home/andrey/labs/402_DBTech/402_DBTech_Sherstnev_KI
+Из github.com-mrsu:andpop-mrsu/402_DBTech_Sherstnev_KI
+Из github.com-mrsu:andpop-mrsu/402_DBTech_Sherstnev_KI
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/KirillSher/402_DBTech_Sherstnev_KI
+Из https://github.com/KirillSher/402_DBTech_Sherstnev_KI
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task06     -> student/Task06
+   deb71a3..626bf12  master     -> student/master
+   deb71a3..626bf12  master     -> student/master
+Обновление 626bf12..ca7268a
+Fast-forward (no commit created; -m option ignored)
+ Task06/cold-hot-web/README.md         |  40 ++++++++
+ Task06/cold-hot-web/css/style.css     |  61 +++++++++++
+ Task06/cold-hot-web/index.html        |  45 +++++++++
+ Task06/cold-hot-web/js/db.js          |  91 +++++++++++++++++
+ Task06/cold-hot-web/js/format_data.js |  11 ++
+ Task06/cold-hot-web/js/game.js        |  63 ++++++++++++
+ Task06/cold-hot-web/js/index.js       |  46 +++++++++
+ Task06/cold-hot-web/js/ui.js          | 184 ++++++++++++++++++++++++++++++++++
+ 8 files changed, 541 insertions(+)
+ create mode 100644 Task06/cold-hot-web/README.md
+ create mode 100644 Task06/cold-hot-web/css/style.css
+ create mode 100644 Task06/cold-hot-web/index.html
+ create mode 100644 Task06/cold-hot-web/js/db.js
+ create mode 100644 Task06/cold-hot-web/js/format_data.js
+ create mode 100644 Task06/cold-hot-web/js/game.js
+ create mode 100644 Task06/cold-hot-web/js/index.js
+ create mode 100644 Task06/cold-hot-web/js/ui.js
+--------------------------------------------------
+Task:  /home/andrey/labs/402_DBTech/402_DBTech_Sherstnev_KI/Task06
+--------------------------------------------------
+Check path: README.md
+README.md not found
+--------------------------------------------------
+Total ok: 0
+Total error: 1
+--------------------------------------------------
+Task06
+task from branch: Task06
+creation date: 11/30/2024 21:47:07
+To github.com-mrsu:andpop-mrsu/402_DBTech_Sherstnev_KI.git
+To github.com-mrsu:andpop-mrsu/402_DBTech_Sherstnev_KI.git
+   626bf12..ca7268a  master -> master
+   626bf12..ca7268a  master -> master
 402_DBTech_Shokov_DR
 402_DBTech_Shurygina_KN
+=====================================================
+/home/andrey/labs/402_DBTech/402_DBTech_Shurygina_KN
+Из github.com-mrsu:andpop-mrsu/402_DBTech_Shurygina_KN
+Из github.com-mrsu:andpop-mrsu/402_DBTech_Shurygina_KN
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/shuryginaKN/402_DBTech_Shurygina_KN
+Из https://github.com/shuryginaKN/402_DBTech_Shurygina_KN
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task06     -> student/Task06
+   0a66afd..f10aea8  master     -> student/master
+   0a66afd..f10aea8  master     -> student/master
+Merge made by the 'recursive' strategy.
+ Task06/cold-hot/README.md               |  88 ++++++++++++
+ Task06/cold-hot/index.html              |  48 +++++++
+ Task06/cold-hot/resources/css/index.css | 194 ++++++++++++++++++++++++++
+ Task06/cold-hot/src/Controller.js       | 237 ++++++++++++++++++++++++++++++++
+ Task06/cold-hot/src/Database.js         |  69 ++++++++++
+ Task06/cold-hot/src/View.js             |  26 ++++
+ Task06/cold-hot/src/index.js            |  11 ++
+ 7 files changed, 673 insertions(+)
+ create mode 100644 Task06/cold-hot/README.md
+ create mode 100644 Task06/cold-hot/index.html
+ create mode 100644 Task06/cold-hot/resources/css/index.css
+ create mode 100644 Task06/cold-hot/src/Controller.js
+ create mode 100644 Task06/cold-hot/src/Database.js
+ create mode 100644 Task06/cold-hot/src/View.js
+ create mode 100644 Task06/cold-hot/src/index.js
+--------------------------------------------------
+Task:  /home/andrey/labs/402_DBTech/402_DBTech_Shurygina_KN/Task06
+--------------------------------------------------
+Check path: README.md
+README.md not found
+--------------------------------------------------
+Total ok: 0
+Total error: 1
+--------------------------------------------------
+Task06
+task from branch: Task06
+creation date: 11/30/2024 18:39:00
+To github.com-mrsu:andpop-mrsu/402_DBTech_Shurygina_KN.git
+To github.com-mrsu:andpop-mrsu/402_DBTech_Shurygina_KN.git
+   f10aea8..38e06d7  master -> master
+   f10aea8..38e06d7  master -> master
 402_DBTech_Slushkin_DV
-402_DBTech_Tazin_AN
-402_DBTech_Tenyakshev_MA
-402_DBTech_Zaglumonina_AI
 =====================================================
-/home/andrey/labs/402_DBTech/402_DBTech_Zaglumonina_AI
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Zaglumonina_AI
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Zaglumonina_AI
+/home/andrey/labs/402_DBTech/402_DBTech_Slushkin_DV
+Из github.com-mrsu:andpop-mrsu/402_DBTech_Slushkin_DV
+Из github.com-mrsu:andpop-mrsu/402_DBTech_Slushkin_DV
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
 Уже актуально.
 fatal: внешний репозиторий student уже существует
 fatal: внешний репозиторий student уже существует
-Из https://github.com/Zaglumosha/402_DBTech_Zaglumonina_AI
-Из https://github.com/Zaglumosha/402_DBTech_Zaglumonina_AI
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task04     -> student/Task04
- * [новая ветка]     Task04     -> student/Task04
- * [новая ветка]     Task05     -> student/Task05
- * [новая ветка]     Task05     -> student/Task05
-   8786a91..e664d46  master     -> student/master
-   8786a91..e664d46  master     -> student/master
-Обновление a8816ed..ed11fae
+Из https://github.com/FunSkrip/402_DBTech_Slushkin_DV
+Из https://github.com/FunSkrip/402_DBTech_Slushkin_DV
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task06     -> student/Task06
+   45ac3a6..8b7968d  master     -> student/master
+   45ac3a6..8b7968d  master     -> student/master
+Обновление 8b7968d..8c7fa18
 Fast-forward (no commit created; -m option ignored)
- Task02/tic-tac-toe/.gitignore          |   1 +
- Task02/tic-tac-toe/README.md           |  96 +++++++++++++
- Task02/tic-tac-toe/bin/tic-tac-toe.php |  10 ++
- Task02/tic-tac-toe/composer.json       |  13 ++
- Task02/tic-tac-toe/composer.lock       |  82 +++++++++++
- Task02/tic-tac-toe/src/Controller.php  |  18 +++
- Task02/tic-tac-toe/src/View.php        |  13 ++
- Task03/tic-tac-toe/.gitignore          |   1 +
- Task03/tic-tac-toe/README.md           |  96 +++++++++++++
- Task03/tic-tac-toe/bin/tic-tac-toe.php |  10 ++
- Task03/tic-tac-toe/composer.json       |  13 ++
- Task03/tic-tac-toe/composer.lock       |  82 +++++++++++
- Task03/tic-tac-toe/src/Controller.php  | 172 ++++++++++++++++++++++
- Task03/tic-tac-toe/src/View.php        |  69 +++++++++
- Task04/tic-tac-toe/.gitignore          |   2 +
- Task04/tic-tac-toe/README.md           | 103 ++++++++++++++
- Task04/tic-tac-toe/bin/tic-tac-toe.php |  10 ++
- Task04/tic-tac-toe/composer.json       |  14 ++
- Task04/tic-tac-toe/composer.lock       |  82 +++++++++++
- Task04/tic-tac-toe/src/Controller.php  | 253 +++++++++++++++++++++++++++++++++
- Task04/tic-tac-toe/src/Model.php       | 109 ++++++++++++++
- Task04/tic-tac-toe/src/View.php        | 105 ++++++++++++++
- Task05/tic-tac-toe/.gitignore          |   2 +
- Task05/tic-tac-toe/README.md           | 103 ++++++++++++++
- Task05/tic-tac-toe/bin/tic-tac-toe.php |  10 ++
- Task05/tic-tac-toe/composer.json       |  15 ++
- Task05/tic-tac-toe/composer.lock       | 127 +++++++++++++++++
- Task05/tic-tac-toe/src/Controller.php  | 253 +++++++++++++++++++++++++++++++++
- Task05/tic-tac-toe/src/Model.php       |  88 ++++++++++++
- Task05/tic-tac-toe/src/View.php        | 105 ++++++++++++++
- 30 files changed, 2057 insertions(+)
- create mode 100644 Task02/tic-tac-toe/.gitignore
- create mode 100644 Task02/tic-tac-toe/README.md
- create mode 100644 Task02/tic-tac-toe/bin/tic-tac-toe.php
- create mode 100644 Task02/tic-tac-toe/composer.json
- create mode 100644 Task02/tic-tac-toe/composer.lock
- create mode 100644 Task02/tic-tac-toe/src/Controller.php
- create mode 100644 Task02/tic-tac-toe/src/View.php
- create mode 100644 Task03/tic-tac-toe/.gitignore
- create mode 100644 Task03/tic-tac-toe/README.md
- create mode 100644 Task03/tic-tac-toe/bin/tic-tac-toe.php
- create mode 100644 Task03/tic-tac-toe/composer.json
- create mode 100644 Task03/tic-tac-toe/composer.lock
- create mode 100644 Task03/tic-tac-toe/src/Controller.php
- create mode 100644 Task03/tic-tac-toe/src/View.php
- create mode 100644 Task04/tic-tac-toe/.gitignore
- create mode 100644 Task04/tic-tac-toe/README.md
- create mode 100644 Task04/tic-tac-toe/bin/tic-tac-toe.php
- create mode 100644 Task04/tic-tac-toe/composer.json
- create mode 100644 Task04/tic-tac-toe/composer.lock
- create mode 100644 Task04/tic-tac-toe/src/Controller.php
- create mode 100644 Task04/tic-tac-toe/src/Model.php
- create mode 100644 Task04/tic-tac-toe/src/View.php
- create mode 100644 Task05/tic-tac-toe/.gitignore
- create mode 100644 Task05/tic-tac-toe/README.md
- create mode 100644 Task05/tic-tac-toe/bin/tic-tac-toe.php
- create mode 100644 Task05/tic-tac-toe/composer.json
- create mode 100644 Task05/tic-tac-toe/composer.lock
- create mode 100644 Task05/tic-tac-toe/src/Controller.php
- create mode 100644 Task05/tic-tac-toe/src/Model.php
- create mode 100644 Task05/tic-tac-toe/src/View.php
+ Task06/hangman/README.md  |  74 +++++++++++++
+ Task06/hangman/index.html |  82 ++++++++++++++
+ Task06/hangman/script.js  | 272 ++++++++++++++++++++++++++++++++++++++++++++++
+ Task06/hangman/styles.css | 181 ++++++++++++++++++++++++++++++
+ 4 files changed, 609 insertions(+)
+ create mode 100644 Task06/hangman/README.md
+ create mode 100644 Task06/hangman/index.html
+ create mode 100644 Task06/hangman/script.js
+ create mode 100644 Task06/hangman/styles.css
 --------------------------------------------------
-Task:  /home/andrey/labs/402_DBTech/402_DBTech_Zaglumonina_AI/Task05
+Task:  /home/andrey/labs/402_DBTech/402_DBTech_Slushkin_DV/Task06
 --------------------------------------------------
 Check path: README.md
-# Проект "Крестики-нолики" (Tic-Tac-Toe)
-
-## Описание проекта
-
-Проект включает разработку игры "Крестики-нолики" (Tic-Tac-Toe) с использованием реляционной базы данных для сохранения результатов игр. Игра реализована на языке PHP с использованием базы данных SQLite. Пользователям предоставляется возможность просматривать историю игр и воспроизводить ранее сыгранные партии.
-
-### Правила игры
-
-- Начинают ходить всегда крестики, кем играет человек определяется случайным образом.
-- Информация о датах и исходах всех партий, а также о всех ходах, сделанных во время игры, должна сохраняться в базе данных.
-- Для каждой партии в базе должна храниться следующая информация:
-  - Размер поля
-  - Дата игры
-  - Имя игрока
-  - Какой фигурой играл человек
-  - Какая фигура выиграла в партии
-  - Запись ходов в формате:
-    `номер хода | координата X | координата O`
-- В программе должны быть реализованы три режима:
-  - Новая игра.
-  - Вывод списка всех сохраненных партий.
-  - Повтор любой сохраненной партии (то есть повтор всех ходов из этой партии).
-
-## Сохранение 
-
-* При первом запуске автоматически создаются 2 таблицы: `result_games` и `tries`
-* Игра сохраняется в базе данных автоматически
-* Можно выводить список сохраненных партий
-* Можно повторить сохраненную партию
-
-## Требования
-
-Минимальная версия PHP: 8._
-Минимальная версия Composer: 2._
-
-## Окружение и требования для запуска
-
-1. **PHP**:
-
-   - Версия: 7.4 или выше.
-   - Настройки в `php.ini`:
-     - Включите SQLite (`extension=sqlite3`).
-     - Убедитесь, что настройки отображения ошибок (`display_errors`) включены в режиме разработки.
-
-2. **SQLite**:
-
-   - Версия: 3.x.
-   - Проверьте наличие прав записи в каталоге, где находятся файлы баз данных.
-
-3. **Composer**:
-   - Composer должен быть установлен глобально.
-   - Используйте команду `composer` для управления зависимостями.
-   - Для установки Composer следуйте [официальной документации](https://getcomposer.org/doc/00-intro.md).
-
----
-
-## Установка и запуск проекта
-
-1. **Склонируйте репозиторий**:
-
-   ```bash
-   git clone https://github.com/DenisBiushkin/tic-tac-toe.git
-   ```
-
-2. **Перейдите в каталог проекта**:
-
-   ```bash
-   cd C:\...\tic-tac-toe
-   ```
-
-3. **Установите зависимости через Composer**:
-
-   ```bash
-   composer install
-   ```
-
-4. **Запуск игры: Выполните команду для запуска игры**:
-
-   ```bash
-   php bin/tic-tac-toe.php
-   ```
-
-   - Или если ваш пакет опубликован на Packagist, установите его глобально:
-
-   ```bash
-   composer global require DenisBiushkin/tic-tac-toe
-   ```
-
-   - И затем выполните команду:
-
-   ```bash
-   tic-tac-toe
-   ```
-
-## Примечания
-
-- Проверьте права на запись в каталог с базой данных SQLite.
-
-- Дополнительную информацию можно найти в документации PHP, SQLite и Composer:
-
-- [SQLite Documentation](https://www.sqlite.org/docs.html)
-- [PHP Documentation](https://www.php.net/docs.php)
-- [Composer Documentation](https://getcomposer.org/doc/)
+README.md not found
 --------------------------------------------------
-Check path: composer.json
-{
-    "name": "alenazaglumonina/tic-tac-toe",
-    "autoload": {
-        "files": [
-            "src/Controller.php",
-            "src/View.php",
-            "src/Model.php"
-        ]
-    },
-    "require": {
-        "wp-cli/php-cli-tools": "^0.11.21",
-        "gabordemooij/redbean": "^5.6"
-    },
-    "bin": ["bin/tic-tac-toe.php"]
-}
---------------------------------------------------
-Run: phpcs --standard=PSR12 ./src/*
-
-FILE: /home/andrey/labs/402_DBTech/402_DBTech_Zaglumonina_AI/Task05/tic-tac-toe/src/Controller.php
---------------------------------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------------------------
- 72 | ERROR | Method name "Controller::isСrosses" is not in camel caps format
---------------------------------------------------------------------------------------------------
-
-
-FILE: /home/andrey/labs/402_DBTech/402_DBTech_Zaglumonina_AI/Task05/tic-tac-toe/src/View.php
---------------------------------------------------------------------------------------------
-FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
---------------------------------------------------------------------------------------------
- 77 | WARNING | Line exceeds 120 characters; contains 129 characters
---------------------------------------------------------------------------------------------
-
-Time: 112ms; Memory: 8MB
-Execution fails
---------------------------------------------------
-Total ok: 2
+Total ok: 0
 Total error: 1
 --------------------------------------------------
-Task05
-task from branch: Task05
-creation date: 11/28/2024 14:33:14
-To github.com-mrsu:andpop-mrsu/402_DBTech_Zaglumonina_AI.git
-To github.com-mrsu:andpop-mrsu/402_DBTech_Zaglumonina_AI.git
-   a8816ed..ed11fae  master -> master
-   a8816ed..ed11fae  master -> master
+Task06
+task from branch: Task06
+creation date: 11/30/2024 20:01:22
+To github.com-mrsu:andpop-mrsu/402_DBTech_Slushkin_DV.git
+To github.com-mrsu:andpop-mrsu/402_DBTech_Slushkin_DV.git
+   8b7968d..8c7fa18  master -> master
+   8b7968d..8c7fa18  master -> master
+402_DBTech_Tazin_AN
 =====================================================
-/home/andrey/labs/402_DBTech/402_DBTech_Zaglumonina_AI
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Zaglumonina_AI
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Zaglumonina_AI
+/home/andrey/labs/402_DBTech/402_DBTech_Tazin_AN
+Из github.com-mrsu:andpop-mrsu/402_DBTech_Tazin_AN
+Из github.com-mrsu:andpop-mrsu/402_DBTech_Tazin_AN
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
 Уже актуально.
 fatal: внешний репозиторий student уже существует
 fatal: внешний репозиторий student уже существует
-Уже актуально.
+Из https://github.com/Oldsool/402_DBTech_Tazin_AN
+Из https://github.com/Oldsool/402_DBTech_Tazin_AN
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task06     -> student/Task06
+Merge made by the 'recursive' strategy.
+ Task06/README.md  |  74 +++++++++++++++
+ Task06/index.html |  86 +++++++++++++++++
+ Task06/script.js  | 272 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Task06/styles.css | 178 +++++++++++++++++++++++++++++++++++
+ 4 files changed, 610 insertions(+)
+ create mode 100644 Task06/README.md
+ create mode 100644 Task06/index.html
+ create mode 100644 Task06/script.js
+ create mode 100644 Task06/styles.css
 --------------------------------------------------
-Task:  /home/andrey/labs/402_DBTech/402_DBTech_Zaglumonina_AI/Task04
+Task:  /home/andrey/labs/402_DBTech/402_DBTech_Tazin_AN/Task06
 --------------------------------------------------
 Check path: README.md
-# Проект "Крестики-нолики" (Tic-Tac-Toe)
+# Проект "Виселица" (Hangman)
 
 ## Описание проекта
 
-Проект включает разработку игры "Крестики-нолики" (Tic-Tac-Toe) с использованием реляционной базы данных для сохранения результатов игр. Игра реализована на языке PHP с использованием базы данных SQLite. Пользователям предоставляется возможность просматривать историю игр и воспроизводить ранее сыгранные партии.
+Это веб-версия игры  "Виселица" (hangman), реализованная на JavaScript с использованием базы данных **IndexedDB** для сохранения данных игры. Пользователям предоставляется возможность просматривать историю игр и воспроизводить ранее сыгранные партии.
+
+Цель игры - угадать загаданное компьютером слово из шести букв. Игрок пытается угадать буквы, а затем и все слово целиком. Если игрок правильно угадывает букву, компьютер вписывает ее в соответствующую клетку. Если ошибается, то рисует одну из частей тела повешенного человека (используется псевдографика). Чтобы победить, игрок должен угадать все буквы в слове до того, как повешенный человечек будет полностью нарисован.
 
 ### Правила игры
 
-- Начинают ходить всегда крестики, кем играет человек определяется случайным образом.
-- Информация о датах и исходах всех партий, а также о всех ходах, сделанных во время игры, должна сохраняться в базе данных.
-- Для каждой партии в базе должна храниться следующая информация:
-  - Размер поля
+- Компьютер загадывает слово из шести букв.
+- Игрок пытается угадать буквы, вводя их по одной.
+- Если буква угадана верно, она отображается в соответствующей клетке.
+- Если буква не угадана, рисуется одна из частей тела повешенного человека.
+- Игра заканчивается победой, если игрок угадывает все буквы в слове до того, как повешенный человечек будет полностью нарисован.
+- Игра заканчивается поражением, если повешенный человечек будет полностью нарисован до угадывания всех букв.
+
+### Требования
+
+- **Список слов**: Заранее сгенерированный список слов из шести букв, сохраненный в базе данных.
+- **Сохранение данных**: Вся информация об играх и ходах сохраняется в базе данных IndexedDB.
+- **Хранение данных**:
   - Дата игры
   - Имя игрока
-  - Какой фигурой играл человек
-  - Какая фигура выиграла в партии
-  - Запись ходов в формате:
-    `номер хода | координата X | координата O`
-- В программе должны быть реализованы три режима:
-  - Новая игра.
-  - Вывод списка всех сохраненных партий.
-  - Повтор любой сохраненной партии (то есть повтор всех ходов из этой партии).
+  - Загаданное компьютером слово
+  - Исход игры
+  - Запись ходов в формате: `номер попытки | предложенная буква | результат (угадал/не угадал)`
+- **Режимы игры**:
+  - Новая игра
+  - Просмотр списка сохраненных игр
+  - Просмотр статистику игр
+  - Повтор сохраненной партии (воспроизведение ходов)
 
-## Сохранение 
-
-* При первом запуске автоматически создаются 2 таблицы: `result_games` и `tries`
-* Игра сохраняется в базе данных автоматически
-* Можно выводить список сохраненных партий
-* Можно повторить сохраненную партию
-
-## Требования
-
-Минимальная версия PHP: 8._
-Минимальная версия Composer: 2._
+---
 
 ## Окружение и требования для запуска
 
-1. **PHP**:
-
-   - Версия: 7.4 или выше.
-   - Настройки в `php.ini`:
-     - Включите SQLite (`extension=sqlite3`).
-     - Убедитесь, что настройки отображения ошибок (`display_errors`) включены в режиме разработки.
-
-2. **SQLite**:
-
-   - Версия: 3.x.
-   - Проверьте наличие прав записи в каталоге, где находятся файлы баз данных.
-
-3. **Composer**:
-   - Composer должен быть установлен глобально.
-   - Используйте команду `composer` для управления зависимостями.
-   - Для установки Composer следуйте [официальной документации](https://getcomposer.org/doc/00-intro.md).
+1. **Браузер**:
+   - Совместимость с современными браузерами, поддерживающими JavaScript и IndexedDB (Chrome, Firefox, Edge и другие).
+2. **IndexedDB**:
+   - Поддержка IndexedDB для хранения данных игры локально в браузере.
 
 ---
 
 ## Установка и запуск проекта
 
 1. **Склонируйте репозиторий**:
-
    ```bash
-   git clone https://github.com/DenisBiushkin/tic-tac-toe.git
+   git clone https://github.com/Oldsool/Hangman-Web
    ```
 
 2. **Перейдите в каталог проекта**:
-
    ```bash
-   cd C:\...\tic-tac-toe
+   cd C:\...\hangman
    ```
 
-3. **Установите зависимости через Composer**:
+3. **Откройте файл index.html в вашем браузере**: 
+    Для начала игры откройте файл index.html в вашем любимом браузере. Игра будет загружена и готова к началу.
 
-   ```bash
-   composer install
-   ```
+4. **Запуск через GitHub Pages**:
 
-4. **Запуск игры: Выполните команду для запуска игры**:
+    Если вы не хотите загружать проект на свой локальный компьютер, вы можете запустить игру прямо из браузера, воспользовавшись [GitHub Pages](https://oldsool.github.io/Hangman-Web/). Для этого:
 
-   ```bash
-   php bin/tic-tac-toe.php
-   ```
-
-   - Или если ваш пакет опубликован на Packagist, установите его глобально:
-
-   ```bash
-   composer global require DenisBiushkin/tic-tac-toe
-   ```
-
-   - И затем выполните команду:
-
-   ```bash
-   tic-tac-toe
-   ```
+    - Перейдите на страницу игры на GitHub Pages.
+        - Игра автоматически загрузится и будет готова к началу.
 
 ## Примечания
+- Сохранение игры: 
+Все игры сохраняются локально в IndexedDB вашего браузера. Убедитесь, что ваш браузер поддерживает эту технологию.
+- Обновления: Для обновления локальной версии игры просто склонируйте последний вариант репозитория и откройте файл index.html.
 
-- Проверьте права на запись в каталог с базой данных SQLite.
-
-- Дополнительную информацию можно найти в документации PHP, SQLite и Composer:
-
-- [SQLite Documentation](https://www.sqlite.org/docs.html)
-- [PHP Documentation](https://www.php.net/docs.php)
-- [Composer Documentation](https://getcomposer.org/doc/)
+## Ссылки
+- [GitHub репозиторий](https://github.com/Oldsool/Hangman-Web)
+- [GitHub Pages](https://oldsool.github.io/Hangman-Web/)
 --------------------------------------------------
-Check path: composer.json
-{
-    "name": "alenazaglumonina/tic-tac-toe",
-    "autoload": {
-        "files": [
-            "src/Controller.php",
-            "src/View.php",
-            "src/Model.php"
-        ]
-    },
-    "require": {
-        "wp-cli/php-cli-tools": "^0.11.21"
-    },
-    "bin": ["bin/tic-tac-toe.php"]
-}
---------------------------------------------------
-Run: phpcs --standard=PSR12 ./src/*
-
-FILE: /home/andrey/labs/402_DBTech/402_DBTech_Zaglumonina_AI/Task04/tic-tac-toe/src/Controller.php
---------------------------------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------------------------
- 72 | ERROR | Method name "Controller::isСrosses" is not in camel caps format
---------------------------------------------------------------------------------------------------
-
-
-FILE: /home/andrey/labs/402_DBTech/402_DBTech_Zaglumonina_AI/Task04/tic-tac-toe/src/Model.php
----------------------------------------------------------------------------------------------
-FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
----------------------------------------------------------------------------------------------
- 68 | WARNING | Line exceeds 120 characters; contains 193 characters
- 75 | WARNING | Line exceeds 120 characters; contains 152 characters
----------------------------------------------------------------------------------------------
-
-
-FILE: /home/andrey/labs/402_DBTech/402_DBTech_Zaglumonina_AI/Task04/tic-tac-toe/src/View.php
---------------------------------------------------------------------------------------------
-FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
---------------------------------------------------------------------------------------------
- 77 | WARNING | Line exceeds 120 characters; contains 129 characters
---------------------------------------------------------------------------------------------
-
-Time: 57ms; Memory: 8MB
-Execution fails
---------------------------------------------------
-Total ok: 2
-Total error: 1
---------------------------------------------------
-Task04
-task from branch: Task04
-creation date: 11/28/2024 14:27:37
-Everything up-to-date
-Everything up-to-date
-=====================================================
-/home/andrey/labs/402_DBTech/402_DBTech_Zaglumonina_AI
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Zaglumonina_AI
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Zaglumonina_AI
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Уже актуально.
---------------------------------------------------
-Task:  /home/andrey/labs/402_DBTech/402_DBTech_Zaglumonina_AI/Task03
---------------------------------------------------
-Check path: README.md
-# Проект "Крестики-нолики" (Tic-Tac-Toe)
-
-## Описание проекта
-
-Проект включает разработку игры "Крестики-нолики" (Tic-Tac-Toe) с использованием реляционной базы данных для сохранения результатов игр. Игра реализована на языке PHP с использованием базы данных SQLite. Пользователям предоставляется возможность просматривать историю игр и воспроизводить ранее сыгранные партии.
-
-### Правила игры
-
-- Начинают ходить всегда крестики, кем играет человек определяется случайным образом.
-- Информация о датах и исходах всех партий, а также о всех ходах, сделанных во время игры, должна сохраняться в базе данных.
-- Для каждой партии в базе должна храниться следующая информация:
-  - Размер поля
-  - Дата игры
-  - Имя игрока
-  - Какой фигурой играл человек
-  - Какая фигура выиграла в партии
-  - Запись ходов в формате:
-    `номер хода | координата X | координата O`
-- В программе должны быть реализованы три режима:
-  - Новая игра.
-  - Вывод списка всех сохраненных партий.
-  - Повтор любой сохраненной партии (то есть повтор всех ходов из этой партии).
-
-## Требования
-
-Минимальная версия PHP: 8._
-Минимальная версия Composer: 2._
-
-## Окружение и требования для запуска
-
-1. **PHP**:
-
-   - Версия: 7.4 или выше.
-   - Настройки в `php.ini`:
-     - Включите SQLite (`extension=sqlite3`).
-     - Убедитесь, что настройки отображения ошибок (`display_errors`) включены в режиме разработки.
-
-2. **SQLite**:
-
-   - Версия: 3.x.
-   - Проверьте наличие прав записи в каталоге, где находятся файлы баз данных.
-
-3. **Composer**:
-   - Composer должен быть установлен глобально.
-   - Используйте команду `composer` для управления зависимостями.
-   - Для установки Composer следуйте [официальной документации](https://getcomposer.org/doc/00-intro.md).
-
----
-
-## Установка и запуск проекта
-
-1. **Склонируйте репозиторий**:
-
-   ```bash
-   git clone https://github.com/DenisBiushkin/tic-tac-toe.git
-   ```
-
-2. **Перейдите в каталог проекта**:
-
-   ```bash
-   cd C:\...\tic-tac-toe
-   ```
-
-3. **Установите зависимости через Composer**:
-
-   ```bash
-   composer install
-   ```
-
-4. **Запуск игры: Выполните команду для запуска игры**:
-
-   ```bash
-   php bin/tic-tac-toe.php
-   ```
-
-   - Или если ваш пакет опубликован на Packagist, установите его глобально:
-
-   ```bash
-   composer global require DenisBiushkin/tic-tac-toe
-   ```
-
-   - И затем выполните команду:
-
-   ```bash
-   tic-tac-toe
-   ```
-
-## Примечания
-
-- Проверьте права на запись в каталог с базой данных SQLite.
-
-- Дополнительную информацию можно найти в документации PHP, SQLite и Composer:
-
-- [SQLite Documentation](https://www.sqlite.org/docs.html)
-- [PHP Documentation](https://www.php.net/docs.php)
-- [Composer Documentation](https://getcomposer.org/doc/)
---------------------------------------------------
-Check path: composer.json
-{
-    "name": "alenazaglumonina/tic-tac-toe",
-    "autoload": {
-        "files": [
-            "src/Controller.php",
-            "src/View.php"
-        ]
-    },
-    "require": {
-        "wp-cli/php-cli-tools": "^0.11.21"
-    },
-    "bin": ["bin/tic-tac-toe.php"]
-}
---------------------------------------------------
-Run: phpcs --standard=PSR12 ./src/*
-
-FILE: /home/andrey/labs/402_DBTech/402_DBTech_Zaglumonina_AI/Task03/tic-tac-toe/src/Controller.php
---------------------------------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------------------------
- 37 | ERROR | Method name "Controller::isСrosses" is not in camel caps format
---------------------------------------------------------------------------------------------------
-
-Time: 45ms; Memory: 8MB
-Execution fails
---------------------------------------------------
-Total ok: 2
-Total error: 1
---------------------------------------------------
-Task03
-task from branch: Task03
-creation date: 11/28/2024 14:20:16
-Everything up-to-date
-Everything up-to-date
-=====================================================
-/home/andrey/labs/402_DBTech/402_DBTech_Zaglumonina_AI
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Zaglumonina_AI
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Zaglumonina_AI
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Уже актуально.
---------------------------------------------------
-Task:  /home/andrey/labs/402_DBTech/402_DBTech_Zaglumonina_AI/Task02
---------------------------------------------------
-Check path: README.md
-# Проект "Крестики-нолики" (Tic-Tac-Toe)
-
-## Описание проекта
-
-Проект включает разработку игры "Крестики-нолики" (Tic-Tac-Toe) с использованием реляционной базы данных для сохранения результатов игр. Игра реализована на языке PHP с использованием базы данных SQLite. Пользователям предоставляется возможность просматривать историю игр и воспроизводить ранее сыгранные партии.
-
-### Правила игры
-
-- Начинают ходить всегда крестики, кем играет человек определяется случайным образом.
-- Информация о датах и исходах всех партий, а также о всех ходах, сделанных во время игры, должна сохраняться в базе данных.
-- Для каждой партии в базе должна храниться следующая информация:
-  - Размер поля
-  - Дата игры
-  - Имя игрока
-  - Какой фигурой играл человек
-  - Какая фигура выиграла в партии
-  - Запись ходов в формате:
-    `номер хода | координата X | координата O`
-- В программе должны быть реализованы три режима:
-  - Новая игра.
-  - Вывод списка всех сохраненных партий.
-  - Повтор любой сохраненной партии (то есть повтор всех ходов из этой партии).
-
-## Требования
-
-Минимальная версия PHP: 8._
-Минимальная версия Composer: 2._
-
-## Окружение и требования для запуска
-
-1. **PHP**:
-
-   - Версия: 7.4 или выше.
-   - Настройки в `php.ini`:
-     - Включите SQLite (`extension=sqlite3`).
-     - Убедитесь, что настройки отображения ошибок (`display_errors`) включены в режиме разработки.
-
-2. **SQLite**:
-
-   - Версия: 3.x.
-   - Проверьте наличие прав записи в каталоге, где находятся файлы баз данных.
-
-3. **Composer**:
-   - Composer должен быть установлен глобально.
-   - Используйте команду `composer` для управления зависимостями.
-   - Для установки Composer следуйте [официальной документации](https://getcomposer.org/doc/00-intro.md).
-
----
-
-## Установка и запуск проекта
-
-1. **Склонируйте репозиторий**:
-
-   ```bash
-   git clone https://github.com/DenisBiushkin/tic-tac-toe.git
-   ```
-
-2. **Перейдите в каталог проекта**:
-
-   ```bash
-   cd C:\...\tic-tac-toe
-   ```
-
-3. **Установите зависимости через Composer**:
-
-   ```bash
-   composer install
-   ```
-
-4. **Запуск игры: Выполните команду для запуска игры**:
-
-   ```bash
-   php bin/tic-tac-toe.php
-   ```
-
-   - Или если ваш пакет опубликован на Packagist, установите его глобально:
-
-   ```bash
-   composer global require AlenaZaglumonina/tic-tac-toe
-   ```
-
-   - И затем выполните команду:
-
-   ```bash
-   tic-tac-toe
-   ```
-
-## Примечания
-
-- Проверьте права на запись в каталог с базой данных SQLite.
-
-- Дополнительную информацию можно найти в документации PHP, SQLite и Composer:
-
-- [SQLite Documentation](https://www.sqlite.org/docs.html)
-- [PHP Documentation](https://www.php.net/docs.php)
-- [Composer Documentation](https://getcomposer.org/doc/)
---------------------------------------------------
-Check path: composer.json
-{
-    "name": "alenazaglumonina/tic-tac-toe",
-    "autoload": {
-        "files": [
-            "src/Controller.php",
-            "src/View.php"
-        ]
-    },
-    "require": {
-        "wp-cli/php-cli-tools": "^0.11.21"
-    },
-    "bin": ["bin/tic-tac-toe.php"]
-}
---------------------------------------------------
-Check path: src/Controller.php
-<?php
-
-namespace AlenaZaglumonina\TicTacToe\Controller;
-
-use AlenaZaglumonina\TicTacToe\View\View;
-use function cli\line;
-
-class Controller
-{
-    public function startGame()
-    {
-        line("Start the game!");
-
-        $view = new View();
-        $view->showGame();        
-    }
-
-}
---------------------------------------------------
-Check path: src/View.php
-<?php
-
-namespace AlenaZaglumonina\TicTacToe\View;
-
-use function cli\line;
-
-class View
-{
-    public function showGame()
-    {
-        line("This is the game!");
-    }
-}
---------------------------------------------------
-Total ok: 4
+Total ok: 1
 Total error: 0
 --------------------------------------------------
-Task02
-task from branch: Task02
-creation date: 11/28/2024 12:33:03
-Everything up-to-date
-Everything up-to-date
+ Lab06
+task from branch: Task06
+creation date: 12/02/2024 08:30:08
+To github.com-mrsu:andpop-mrsu/402_DBTech_Tazin_AN.git
+To github.com-mrsu:andpop-mrsu/402_DBTech_Tazin_AN.git
+   a21dc3b..2f3baf7  master -> master
+   a21dc3b..2f3baf7  master -> master
+402_DBTech_Tenyakshev_MA
+402_DBTech_Zaglumonina_AI
 402_DBTech_Zaharova_EA
 402_DBTech_Zharkov_KS
 **********************
 PowerShell transcript end
-End time: 20241129102236
+End time: 20241202114300
 **********************
