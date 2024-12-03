@@ -1,9 +1,9 @@
 #!/bin/bash
 
-STREAM="302_OOP"
+STREAM="301_OOP"
 BASE_DIR="/home/andrey/labs/302_OOP"
 # REPS_FILE="reps.txt"
-STUDENTS_FILE="./students-list.txt"
+STUDENTS_FILE="./301.txt"
 
 # TEACHER_PROFILE="https://github.com/andpop-mrsu"
 # Привязку к удаленному репозиторию делаем по SSH, а не по HTTPS

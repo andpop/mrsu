@@ -1,8 +1,8 @@
 #!/bin/bash
 
-token=g
+token=123
 rm ./reps.txt
-for student in $(cat students-list.txt); do
+for student in $(cat 302.txt); do
    echo "302_OOP_$student" >> reps.txt
 done
 
