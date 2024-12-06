@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20241202172420
+Start time: 20241205111758
 **********************
 Transcript started, output file is log.txt
 402_DBTech_Abramov_AI
@@ -19,41 +19,6 @@ Transcript started, output file is log.txt
 402_DBTech_Orifov_MA
 402_DBTech_Polushatov_AS
 402_DBTech_Puchkin_IYu
-=====================================================
-/home/andrey/labs/402_DBTech/402_DBTech_Puchkin_IYu
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Puchkin_IYu
-Из github.com-mrsu:andpop-mrsu/402_DBTech_Puchkin_IYu
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Из https://github.com/shindasayonara/402_DBTech_Puchkin_IYu
-Из https://github.com/shindasayonara/402_DBTech_Puchkin_IYu
-   688f0f3..957a3f4  Task07     -> student/Task07
-   688f0f3..957a3f4  Task07     -> student/Task07
-   2e22290..c6a8446  master     -> student/master
-   2e22290..c6a8446  master     -> student/master
-Merge made by the 'recursive' strategy.
- Task07/minesweeper-game/README.md | 119 ++++++++++++++++++++++++++++++++++++++
- 1 file changed, 119 insertions(+)
- create mode 100644 Task07/minesweeper-game/README.md
---------------------------------------------------
-Task:  /home/andrey/labs/402_DBTech/402_DBTech_Puchkin_IYu/Task07
---------------------------------------------------
-Check path: README.md
-README.md not found
---------------------------------------------------
-Total ok: 0
-Total error: 1
---------------------------------------------------
-ReadMe add
-task from branch: Task07
-creation date: 12/02/2024 13:06:32
-To github.com-mrsu:andpop-mrsu/402_DBTech_Puchkin_IYu.git
-To github.com-mrsu:andpop-mrsu/402_DBTech_Puchkin_IYu.git
-   ece4ef5..129fa8c  master -> master
-   ece4ef5..129fa8c  master -> master
 402_DBTech_Sherstnev_KI
 402_DBTech_Shokov_DR
 402_DBTech_Shurygina_KN
@@ -65,5 +30,5 @@ To github.com-mrsu:andpop-mrsu/402_DBTech_Puchkin_IYu.git
 402_DBTech_Zharkov_KS
 **********************
 PowerShell transcript end
-End time: 20241202172634
+End time: 20241205111815
 **********************
