@@ -1,72 +1,57 @@
 **********************
 PowerShell transcript start
-Start time: 20241003100920
+Start time: 20250203141648
 **********************
 Transcript started, output file is log.txt
-302_OOP_Abramov_AI
-PS>TerminatingError(Invoke-RestMethod): "{"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}"
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/pull_requests.ps1:58
-Line |
-  58 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/pull_requests.ps1:58
-Line |
-  58 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
-
-302_OOP_Biushkin_DV
-PS>TerminatingError(Invoke-RestMethod): "{"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}"
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/pull_requests.ps1:58
-Line |
-  58 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/pull_requests.ps1:58
-Line |
-  58 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
-
-302_OOP_Chernomorskiy_MM
-PS>TerminatingError(Invoke-RestMethod): "{"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}"
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/pull_requests.ps1:58
-Line |
-  58 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/pull_requests.ps1:58
-Line |
-  58 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
-
-302_OOP_Cybisov_IE
-PS>TerminatingError(Invoke-RestMethod): "{"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}"
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/pull_requests.ps1:58
-Line |
-  58 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/pull_requests.ps1:58
-Line |
-  58 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
-
-302_OOP_Fedoseev_AS
-PS>TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> $global:?
-True
+301_OOP_Abdrashitov_SA
+301_OOP_Balyaev_DS
+301_OOP_Belokosov_MD
+301_OOP_Bikchurin_ESH
+301_OOP_Fajzullin_IR
+301_OOP_Frolov_AV
+301_OOP_Kelmyashkin_DV
+301_OOP_Klimentev_AA
+301_OOP_Klyuchkina_EV
+301_OOP_Korpachan_NV
+=====================================================
+/home/andrey/labs/302_OOP/301_OOP_Korpachan_NV
+Из github.com-mrsu:andpop-mrsu/301_OOP_Korpachan_NV
+Из github.com-mrsu:andpop-mrsu/301_OOP_Korpachan_NV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+Task from branch: task01
+Creation date: 02/01/2025 07:52:30
+Checking script check_task01.ps1 not found
+301_OOP_Kudashkina_OS
+301_OOP_Ponomarev_MA
+301_OOP_Savickaya_MV
+301_OOP_Savina_YUV
+301_OOP_Tyurin_MS
+301_OOP_Yunusov_AR
+302_OOP_Baranov_EA
+302_OOP_Borcov_ID
+302_OOP_Chumakov_VA
+302_OOP_Egorov_AS
+302_OOP_Ganchenkov_AA
+302_OOP_Grachev_AV
+302_OOP_Klinov_AV
+302_OOP_Korotkevich_DA
+302_OOP_Krestyanskova_MA
+302_OOP_Novikov_ME
+302_OOP_Pyanzina_VD
+302_OOP_Sergeev_SA
+302_OOP_Shestakov_VA
+302_OOP_Sheyanov_AV
+302_OOP_Simonov_AP
+302_OOP_Sokolov_RV
+302_OOP_Tenishev_RR
+302_OOP_Urenkov_YUYU
+302_OOP_Votyakov_MA
+**********************
+PowerShell transcript end
+End time: 20250203141711
+**********************

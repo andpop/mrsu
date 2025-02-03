@@ -1,22 +1,36 @@
 **********************
 PowerShell transcript start
-Start time: 20240322160658
+Start time: 20250203144446
 **********************
 Transcript started, output file is log.txt
-202M_Testing_Abrashin_PI
-202M_Testing_Antonova_SI
-202M_Testing_Bikmaev_RR
-202M_Testing_Buzin_VA
-202M_Testing_Deganova_DV
-202M_Testing_Egranov_DA
-202M_Testing_Krasavceva_KV
-202M_Testing_Loginov_AD
-202M_Testing_Lomaykin_AS
-202M_Testing_Marochkin_DA
-202M_Testing_Radynov_AS
-202M_Testing_Tavtorkin_NO
-202M_Testing_Veshkin_II
+202M_Testing_Adepa_IV
+202M_Testing_Antoshechkin_AYU
+202M_Testing_Arhipov_KA
+202M_Testing_Bikmurzin_DR
+202M_Testing_Bujnov_EA
+202M_Testing_Demidov_VA
+202M_Testing_Guryanov_MA
+202M_Testing_Kiryuhin_AA
+202M_Testing_Krasavcev_DO
+202M_Testing_Magicheva_KS
+202M_Testing_Makarov_NA
+202M_Testing_Malcev_NB
+202M_Testing_Nagaev_DG
+202M_Testing_Nikishova_AA
+202M_Testing_Perepelkin_DS
+202M_Testing_Pozharskij_VS
+202M_Testing_Pyatkin_KA
+202M_Testing_Razov_KA
+202M_Testing_Razumov_DS
+202M_Testing_Rodyushkin_VE
+202M_Testing_Ryazin_VA
+202M_Testing_SHikin_IE
+202M_Testing_Slavkin_AS
+202M_Testing_Turchaeva_VN
+202M_Testing_Tutukov_ME
+202M_Testing_Uvarov_AV
+202M_Testing_ZHivaev_VD
 **********************
 PowerShell transcript end
-End time: 20240322160706
+End time: 20250203144500
 **********************
