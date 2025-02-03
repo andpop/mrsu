@@ -1,0 +1,63 @@
+**********************
+PowerShell transcript start
+Start time: 20250203153242
+**********************
+Transcript started, output file is log.txt
+PHP_Abramov_AI
+PHP_Artyushin_DO
+PHP_Asrorov_SZ
+PHP_Biushkin_DV
+PHP_Biushkina_EI
+PHP_Borcajkin_IA
+PHP_CHadova_AA
+PHP_Cybisov_IE
+PHP_Fedin_D
+PHP_Fedoseev_AS
+PHP_Grigoreva_LV
+PHP_Ilyushkin_YAV
+PHP_Isaev_AA
+PHP_Kajmakova_EV
+PHP_Kolotuhin_DV
+PHP_Kuchin_RS
+PHP_Kuzmin_NA
+PHP_Malkin_DA
+PHP_Masharin_DV
+PHP_Mezin_RV
+PHP_Moiseev_AA
+PHP_Nadkin_IS
+PHP_Nechiporuk_NA
+PHP_Pashkov_EYU
+PHP_Polevshchikov_DP
+PHP_Polushatov_AS
+PHP_Polushkin_SP
+PHP_Puchkin_IYU
+=====================================================
+/home/andrey/labs/PHP/PHP_Puchkin_IYU
+Из github.com-mrsu:andpop-mrsu/PHP_Puchkin_IYU
+Из github.com-mrsu:andpop-mrsu/PHP_Puchkin_IYU
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+Add Task01
+task from branch: Task01
+creation date: 02/03/2025 08:14:49
+Checking script check_Task01.ps1 not found
+PHP_Repnikov_MA
+PHP_Rybina_EA
+PHP_SHerstnyov_KI
+PHP_SHokov_DR
+PHP_SHurygina_KN
+PHP_Slushkin_DV
+PHP_Tazin_AN
+PHP_Tenyakshev_MA
+PHP_YUdakov_SA
+PHP_Zaglumonina_AI
+PHP_Zaharova_EA
+PHP_ZHarkov_KS
+**********************
+PowerShell transcript end
+End time: 20250203153307
+**********************
