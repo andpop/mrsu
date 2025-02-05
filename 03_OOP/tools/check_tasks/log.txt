@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20250203141648
+Start time: 20250205152746
 **********************
 Transcript started, output file is log.txt
 301_OOP_Abdrashitov_SA
@@ -9,28 +9,153 @@ Transcript started, output file is log.txt
 301_OOP_Bikchurin_ESH
 301_OOP_Fajzullin_IR
 301_OOP_Frolov_AV
+=====================================================
+/home/andrey/labs/302_OOP/301_OOP_Frolov_AV
+Из github.com-mrsu:andpop-mrsu/301_OOP_Frolov_AV
+Из github.com-mrsu:andpop-mrsu/301_OOP_Frolov_AV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/frlvz/301_OOP_Frolov_AV
+Из https://github.com/frlvz/301_OOP_Frolov_AV
+   bec654c..ce541fb  Task01     -> student/Task01
+   bec654c..ce541fb  Task01     -> student/Task01
+Обновление bec654c..ce541fb
+Fast-forward (no commit created; -m option ignored)
+ Task01/start.bat | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/301_OOP_Frolov_AV/Task01
+--------------------------------------------------
+Check path: hello.php
+--------------------------------------------------
+Check path: start.bat
+--------------------------------------------------
+Run: ./start.bat
+Текущая дата и время: 05.02.2025 15:27:54
+Фамилия и имя: Фролов Андрей
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/302_OOP/301_OOP_Frolov_AV
+Edit start.bat
+Task from branch: Task01
+Creation date: 02/03/2025 20:30:00
+To github.com-mrsu:andpop-mrsu/301_OOP_Frolov_AV.git
+To github.com-mrsu:andpop-mrsu/301_OOP_Frolov_AV.git
+   bec654c..ce541fb  master -> master
+   bec654c..ce541fb  master -> master
 301_OOP_Kelmyashkin_DV
 301_OOP_Klimentev_AA
 301_OOP_Klyuchkina_EV
-301_OOP_Korpachan_NV
 =====================================================
-/home/andrey/labs/302_OOP/301_OOP_Korpachan_NV
-Из github.com-mrsu:andpop-mrsu/301_OOP_Korpachan_NV
-Из github.com-mrsu:andpop-mrsu/301_OOP_Korpachan_NV
+/home/andrey/labs/302_OOP/301_OOP_Klyuchkina_EV
+Из github.com-mrsu:andpop-mrsu/301_OOP_Klyuchkina_EV
+Из github.com-mrsu:andpop-mrsu/301_OOP_Klyuchkina_EV
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
 Уже актуально.
 fatal: внешний репозиторий student уже существует
 fatal: внешний репозиторий student уже существует
-Уже актуально.
-Task from branch: task01
-Creation date: 02/01/2025 07:52:30
-Checking script check_task01.ps1 not found
+Из https://github.com/kljuchkinaev/301_OOP_Klyuchkina_EV
+Из https://github.com/kljuchkinaev/301_OOP_Klyuchkina_EV
+   ede4962..e97c782  Task01     -> student/Task01
+   ede4962..e97c782  Task01     -> student/Task01
+Обновление ede4962..e97c782
+Fast-forward (no commit created; -m option ignored)
+ Task01/hello.php | 6 ++++++
+ Task01/start.bat | 2 ++
+ 2 files changed, 8 insertions(+)
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/301_OOP_Klyuchkina_EV/Task01
+--------------------------------------------------
+Check path: hello.php
+--------------------------------------------------
+Check path: start.bat
+--------------------------------------------------
+Run: ./start.bat
+PS>TerminatingError(): "Cannot run a document in the middle of a pipeline: /home/andrey/labs/302_OOP/301_OOP_Klyuchkina_EV/Task01/start.bat."
+
+InvalidOperation: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/checks_for_task.ps1:32
+Line |
+  32 |      $str = (& $command $params | Out-String)
+     |              ~~~~~~~~~~~~~~~~~~
+     | Cannot run a document in the middle of a pipeline: /home/andrey/labs/302_OOP/301_OOP_Klyuchkina_EV/Task01/start.bat.
+
+InvalidOperation: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/checks_for_task.ps1:32
+Line |
+  32 |      $str = (& $command $params | Out-String)
+     |              ~~~~~~~~~~~~~~~~~~
+     | Cannot run a document in the middle of a pipeline: /home/andrey/labs/302_OOP/301_OOP_Klyuchkina_EV/Task01/start.bat.
+
+
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/302_OOP/301_OOP_Klyuchkina_EV
+Task01
+Task from branch: Task01
+Creation date: 02/03/2025 14:21:47
+To github.com-mrsu:andpop-mrsu/301_OOP_Klyuchkina_EV.git
+To github.com-mrsu:andpop-mrsu/301_OOP_Klyuchkina_EV.git
+   ede4962..e97c782  master -> master
+   ede4962..e97c782  master -> master
+301_OOP_Korpachan_NV
 301_OOP_Kudashkina_OS
 301_OOP_Ponomarev_MA
 301_OOP_Savickaya_MV
 301_OOP_Savina_YUV
 301_OOP_Tyurin_MS
+=====================================================
+/home/andrey/labs/302_OOP/301_OOP_Tyurin_MS
+Из github.com-mrsu:andpop-mrsu/301_OOP_Tyurin_MS
+Из github.com-mrsu:andpop-mrsu/301_OOP_Tyurin_MS
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/fhj7438ht/301_OOP_Tyurin_MS
+Из https://github.com/fhj7438ht/301_OOP_Tyurin_MS
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление a292727..9d04b2e
+Fast-forward (no commit created; -m option ignored)
+ Task01/hello.php | 7 +++++++
+ Task01/start.bat | 3 +++
+ 2 files changed, 10 insertions(+)
+ create mode 100644 Task01/hello.php
+ create mode 100755 Task01/start.bat
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/301_OOP_Tyurin_MS/Task01
+--------------------------------------------------
+Check path: hello.php
+--------------------------------------------------
+Check path: start.bat
+--------------------------------------------------
+Run: ./start.bat
+Дата: 2025-02-05 
+Время: 12:29:49 
+Фамилия: Тюрин Имя: Максим
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/302_OOP/301_OOP_Tyurin_MS
+Task01
+Task from branch: Task01
+Creation date: 02/03/2025 18:06:26
+To github.com-mrsu:andpop-mrsu/301_OOP_Tyurin_MS.git
+To github.com-mrsu:andpop-mrsu/301_OOP_Tyurin_MS.git
+   a292727..9d04b2e  master -> master
+   a292727..9d04b2e  master -> master
 301_OOP_Yunusov_AR
 302_OOP_Baranov_EA
 302_OOP_Borcov_ID
@@ -43,15 +168,141 @@ Checking script check_task01.ps1 not found
 302_OOP_Krestyanskova_MA
 302_OOP_Novikov_ME
 302_OOP_Pyanzina_VD
+=====================================================
+/home/andrey/labs/302_OOP/302_OOP_Pyanzina_VD
+Из github.com-mrsu:andpop-mrsu/302_OOP_Pyanzina_VD
+Из github.com-mrsu:andpop-mrsu/302_OOP_Pyanzina_VD
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/iambadatnicknames/302_OOP_Pyanzina_VD
+Из https://github.com/iambadatnicknames/302_OOP_Pyanzina_VD
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление aec70e5..ad0a715
+Fast-forward (no commit created; -m option ignored)
+ Task01/hello.php | 6 ++++++
+ Task01/start.bat | 2 ++
+ 2 files changed, 8 insertions(+)
+ create mode 100644 Task01/hello.php
+ create mode 100755 Task01/start.bat
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/302_OOP_Pyanzina_VD/Task01
+--------------------------------------------------
+Check path: hello.php
+--------------------------------------------------
+Check path: start.bat
+--------------------------------------------------
+Run: ./start.bat
+Текущая дата и время: 05.02.2025 17:11:03
+Фамилия и имя: Пьянзина Виктория
+--------------------------------------------------
+Total ok: 3
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/302_OOP/302_OOP_Pyanzina_VD
+Task01
+Task from branch: Task01
+Creation date: 02/04/2025 11:55:27
+To github.com-mrsu:andpop-mrsu/302_OOP_Pyanzina_VD.git
+To github.com-mrsu:andpop-mrsu/302_OOP_Pyanzina_VD.git
+   aec70e5..ad0a715  master -> master
+   aec70e5..ad0a715  master -> master
 302_OOP_Sergeev_SA
 302_OOP_Shestakov_VA
 302_OOP_Sheyanov_AV
+=====================================================
+/home/andrey/labs/302_OOP/302_OOP_Sheyanov_AV
+Из github.com-mrsu:andpop-mrsu/302_OOP_Sheyanov_AV
+Из github.com-mrsu:andpop-mrsu/302_OOP_Sheyanov_AV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/openeeer/302_OOP_Sheyanov_AV
+Из https://github.com/openeeer/302_OOP_Sheyanov_AV
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 3af43ad..46eab52
+Fast-forward (no commit created; -m option ignored)
+ Task01/hello.php | 6 ++++++
+ Task01/start.bat | 2 ++
+ 2 files changed, 8 insertions(+)
+ create mode 100644 Task01/hello.php
+ create mode 100755 Task01/start.bat
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/302_OOP_Sheyanov_AV/Task01
+--------------------------------------------------
+Check path: hello.php
+--------------------------------------------------
+Check path: start.bat
+--------------------------------------------------
+Run: ./start.bat
+Текущая дата и время: 05.02.2025 17:12:00
+Фамилия и имя: Шеянов Александр
+--------------------------------------------------
+Total ok: 3
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/302_OOP/302_OOP_Sheyanov_AV
+Task01
+Task from branch: Task01
+Creation date: 02/04/2025 11:52:52
+To github.com-mrsu:andpop-mrsu/302_OOP_Sheyanov_AV.git
+To github.com-mrsu:andpop-mrsu/302_OOP_Sheyanov_AV.git
+   3af43ad..46eab52  master -> master
+   3af43ad..46eab52  master -> master
 302_OOP_Simonov_AP
 302_OOP_Sokolov_RV
 302_OOP_Tenishev_RR
 302_OOP_Urenkov_YUYU
 302_OOP_Votyakov_MA
+=====================================================
+/home/andrey/labs/302_OOP/302_OOP_Votyakov_MA
+Из github.com-mrsu:andpop-mrsu/302_OOP_Votyakov_MA
+Из github.com-mrsu:andpop-mrsu/302_OOP_Votyakov_MA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/Mih-gif/302_OOP_Votyakov_MA
+Из https://github.com/Mih-gif/302_OOP_Votyakov_MA
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление c5bb2fd..4c2227c
+Fast-forward (no commit created; -m option ignored)
+ Task01/hello.php | 9 +++++++++
+ Task01/start.bat | 2 ++
+ 2 files changed, 11 insertions(+)
+ create mode 100644 Task01/hello.php
+ create mode 100755 Task01/start.bat
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/302_OOP_Votyakov_MA/Task01
+--------------------------------------------------
+Check path: hello.php
+--------------------------------------------------
+Check path: start.bat
+--------------------------------------------------
+Run: ./start.bat
+Текущая дата и время: 2025-02-05 17:12:41
+Фамилия и имя: Вотяков Михаил
+--------------------------------------------------
+Total ok: 3
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/302_OOP/302_OOP_Votyakov_MA
+Task01
+Task from branch: Task01
+Creation date: 02/04/2025 20:19:48
+To github.com-mrsu:andpop-mrsu/302_OOP_Votyakov_MA.git
+To github.com-mrsu:andpop-mrsu/302_OOP_Votyakov_MA.git
+   c5bb2fd..4c2227c  master -> master
+   c5bb2fd..4c2227c  master -> master
 **********************
 PowerShell transcript end
-End time: 20250203141711
+End time: 20250205171311
 **********************
