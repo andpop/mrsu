@@ -19,17 +19,26 @@ function Check-Task {
     Write-Host "--------------------------------------------------" -ForegroundColor blue
     Write-Host "Task: ", (Get-Location).Path -ForegroundColor blue
 
+    $gameDir = Get-GameDir
+    if ($gameDir -eq 'No game found') {
+        Write-Host "There are no game folder" -ForegroundColor red
+        return
+    }
+
+    Push-Location "$gameDir"
     $doneChecks = $failureChecks = 0
 
-    if (Check-Path -Path task1.php -ShowContent) { $doneChecks++ } else { $failureChecks++ }
     if (Check-Path -Path README.md -ShowContent) { $doneChecks++ } else { $failureChecks++ }
     if (Check-Path -Path composer.json -ShowContent) { $doneChecks++ } else { $failureChecks++ }
+    if (Check-Path -Path bin/$gameDir -ShowContent) { $doneChecks++ } else { $failureChecks++ }
 
     if (Check-Command -Command phpcs -Params @("--standard=PSR12", "./src/*")) { $doneChecks++ } else  { $failureChecks++ }
 
     Write-DelimiterString
     Write-Host "Total ok: $doneChecks" -ForegroundColor green
     Write-Host "Total error: $failureChecks" -ForegroundColor red
+    
+    Pop-Location
 }
 
 
