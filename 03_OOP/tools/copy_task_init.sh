@@ -7,7 +7,7 @@ echo $pwd
 
 task_number=$1
 
-for student in $(cat "${pwd}/302_prefix.txt"); do
+for student in $(cat "${pwd}/students_2.txt"); do
     echo "----------------------------------------------------------------------------------"
     echo $student
     student_dir="${BASE_DIR}/${student}"
@@ -16,11 +16,11 @@ for student in $(cat "${pwd}/302_prefix.txt"); do
     git fetch teacher master
     git merge teacher/master -m "Merging master from teacher repo"
 
-    cp "${pwd}/../tasks/README.md" "${student_dir}/"
-    cp "${pwd}/../tasks/Git_instruction.md" "${student_dir}/"
-    cp "${pwd}/../tasks/PHP_instruction.md" "${student_dir}/"
-    cp "${pwd}/../tasks/Pull_Request_flow.pdf" "${student_dir}/"
-    cp "${pwd}/../tasks/task01.md" "${student_dir}/task01.md"
+    # cp "${pwd}/../tasks/README.md" "${student_dir}/"
+    # cp "${pwd}/../tasks/Git_instruction.md" "${student_dir}/"
+    # cp "${pwd}/../tasks/PHP_instruction.md" "${student_dir}/"
+    # cp "${pwd}/../tasks/Pull_Request_flow.pdf" "${student_dir}/"
+    cp "${pwd}/../tasks/task02_2.md" "${student_dir}/task02.md"
     # cp "${pwd}/../tasks/task08.md" "${student_dir}/task08.md"
     # mkdir -p "${student_dir}/Task06/"
     # cp -R "${pwd}/../tasks/Task06_2" "${student_dir}/Task06/Task06_1"
@@ -28,7 +28,7 @@ for student in $(cat "${pwd}/302_prefix.txt"); do
     # cp -R "${pwd}/../tasks/PHPUnit_example" "${student_dir}/"
 
     git add -A
-    git commit -m "Add task01"
+    git commit -m "Add task02"
     git push teacher master
     cd "${pwd}"
 done
