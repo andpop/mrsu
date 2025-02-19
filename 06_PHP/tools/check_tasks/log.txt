@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20250219111759
+Start time: 20250219141653
 **********************
 Transcript started, output file is log.txt
 PHP_Abramov_AI
@@ -8,71 +8,42 @@ PHP_Artyushin_DO
 PHP_Asrorov_SZ
 PHP_Biushkin_DV
 PHP_Biushkina_EI
-=====================================================
-/home/andrey/labs/PHP/PHP_Biushkina_EI
-Из github.com-mrsu:andpop-mrsu/PHP_Biushkina_EI
-Из github.com-mrsu:andpop-mrsu/PHP_Biushkina_EI
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Уже актуально.
---------------------------------------------------
-Task:  /home/andrey/labs/PHP/PHP_Biushkina_EI/Task02
---------------------------------------------------
-Check path: README.md
-## Игра "Арифметическая прогрессия"
-
-## Спецификация
-
-Игроку показывается ряд из 10 чисел, образующий арифметическую прогрессию со случайным шагом. Одно из чисел (позиция определяется случайным образом) заменено точками. Игрок должен определить это число. Нужно вывести соответствующее сообщение и в случае ошибки показать всю прогрессию с правильным числом.
-При подключении базы данных в ней должна сохраняться информация об именах игроков, датах и результатах всех игр, а также о предлагавшихся прогрессиях и пропущенных числах.
-
-## Процесс запуска приложения
-
-1. Запуск локального веб-сервера командой php -S localhost:3000 -t public
-2. Открытие в браузере страницы http://localhost:3000/
-3. Нажатие на ссылку "Начать игру"
-4. Ввод имени и пропущенного числа в соответствующие поля
-5. Нажатие на кнопку "Ответить"
---------------------------------------------------
-Check path: composer.json
-composer.json not found
---------------------------------------------------
-Check path: public/index.php
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Добро пожаловать в игру</title>
-</head>
-<body>
-    <h1>Игра "Арифметическая Прогрессия"</h1>
-    <p><a href="game.php">Начать игру</a></p>
-</body>
-</html>
---------------------------------------------------
-Run: phpcs --standard=PSR12 ./src/*
-ERROR: The file "./src/*" does not exist.
-
-Run "phpcs --help" for usage information
-Execution fails
---------------------------------------------------
-Total ok: 2
-Total error: 2
---------------------------------------------------
-/home/andrey/labs/PHP/PHP_Biushkina_EI
-Task02
-task from branch: Task02
-creation date: 02/18/2025 16:02:52
-PS>TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> $global:?
-True
+PHP_Borcajkin_IA
+PHP_CHadova_AA
+PHP_Cybisov_IE
+PHP_Fedin_D
+PHP_Fedoseev_AS
+PHP_Grigoreva_LV
+PHP_Ilyushkin_YAV
+PHP_Isaev_AA
+PHP_Kajmakova_EV
+PHP_Kolotuhin_DV
+PHP_Kuchin_RS
+PHP_Kuzmin_NA
+PHP_Malkin_DA
+PHP_Masharin_DV
+PHP_Mezin_RV
+PHP_Moiseev_AA
+PHP_Nadkin_IS
+PHP_Nechiporuk_NA
+PHP_Pashkov_EYU
+PHP_Polevshchikov_DP
+PHP_Polushatov_AS
+PHP_Polushkin_SP
+PHP_Puchkin_IYU
+PHP_Repnikov_MA
+PHP_Rybina_EA
+PHP_SHerstnyov_KI
+PHP_SHokov_DR
+PHP_SHurygina_KN
+PHP_Slushkin_DV
+PHP_Tazin_AN
+PHP_Tenyakshev_MA
+PHP_YUdakov_SA
+PHP_Zaglumonina_AI
+PHP_Zaharova_EA
+PHP_ZHarkov_KS
 **********************
 PowerShell transcript end
-End time: 20250219111835
+End time: 20250219141715
 **********************
