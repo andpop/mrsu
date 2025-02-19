@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20250207141951
+Start time: 20250219101400
 **********************
 Transcript started, output file is log.txt
 301_OOP_Abdrashitov_SA
@@ -14,380 +14,31 @@ Transcript started, output file is log.txt
 301_OOP_Klyuchkina_EV
 301_OOP_Korpachan_NV
 301_OOP_Kudashkina_OS
-=====================================================
-/home/andrey/labs/302_OOP/301_OOP_Kudashkina_OS
-Из github.com-mrsu:andpop-mrsu/301_OOP_Kudashkina_OS
-Из github.com-mrsu:andpop-mrsu/301_OOP_Kudashkina_OS
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Из https://github.com/Olya2004/301_OOP_Kudashkina_OS
-Из https://github.com/Olya2004/301_OOP_Kudashkina_OS
-   912f99b..6550708  Task01     -> student/Task01
-   912f99b..6550708  Task01     -> student/Task01
-Обновление 912f99b..6550708
-Fast-forward (no commit created; -m option ignored)
- Task01/hello.php | 2 +-
- Task01/start.bat | 2 +-
- 2 files changed, 2 insertions(+), 2 deletions(-)
---------------------------------------------------
-Task:  /home/andrey/labs/302_OOP/301_OOP_Kudashkina_OS/Task01
---------------------------------------------------
-Check path: hello.php
---------------------------------------------------
-Check path: start.bat
---------------------------------------------------
-Run: ./start.bat
-PS>TerminatingError(): "Cannot run a document in the middle of a pipeline: /home/andrey/labs/302_OOP/301_OOP_Kudashkina_OS/Task01/start.bat."
-
-InvalidOperation: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/checks_for_task.ps1:32
-Line |
-  32 |      $str = (& $command $params | Out-String)
-     |              ~~~~~~~~~~~~~~~~~~
-     | Cannot run a document in the middle of a pipeline: /home/andrey/labs/302_OOP/301_OOP_Kudashkina_OS/Task01/start.bat.
-
-InvalidOperation: /home/andrey/projects/mrsu/03_OOP/tools/check_tasks/checks_for_task.ps1:32
-Line |
-  32 |      $str = (& $command $params | Out-String)
-     |              ~~~~~~~~~~~~~~~~~~
-     | Cannot run a document in the middle of a pipeline: /home/andrey/labs/302_OOP/301_OOP_Kudashkina_OS/Task01/start.bat.
-
-
-Execution fails
---------------------------------------------------
-Total ok: 2
-Total error: 1
---------------------------------------------------
-/home/andrey/labs/302_OOP/301_OOP_Kudashkina_OS
-Edit start.bat
-Task from branch: Task01
-Creation date: 02/06/2025 06:06:08
-To github.com-mrsu:andpop-mrsu/301_OOP_Kudashkina_OS.git
-To github.com-mrsu:andpop-mrsu/301_OOP_Kudashkina_OS.git
-   912f99b..6550708  master -> master
-   912f99b..6550708  master -> master
 301_OOP_Ponomarev_MA
 301_OOP_Savickaya_MV
 301_OOP_Savina_YUV
 301_OOP_Tyurin_MS
 301_OOP_Yunusov_AR
-=====================================================
-/home/andrey/labs/302_OOP/301_OOP_Yunusov_AR
-Из github.com-mrsu:andpop-mrsu/301_OOP_Yunusov_AR
-Из github.com-mrsu:andpop-mrsu/301_OOP_Yunusov_AR
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-Из https://github.com/Aidar-555/301_OOP_Yunusov_AR
-Из https://github.com/Aidar-555/301_OOP_Yunusov_AR
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Обновление 2edea77..b04ce97
-Fast-forward (no commit created; -m option ignored)
- Task01/hello.php | 8 ++++++++
- Task01/start.bat | 2 ++
- 2 files changed, 10 insertions(+)
- create mode 100644 Task01/hello.php
- create mode 100755 Task01/start.bat
---------------------------------------------------
-Task:  /home/andrey/labs/302_OOP/301_OOP_Yunusov_AR/Task01
---------------------------------------------------
-Check path: hello.php
---------------------------------------------------
-Check path: start.bat
---------------------------------------------------
-Run: ./start.bat
-Дата и время: 2025-02-07 14:21:52Фамилия: ЮнусовИмя: Айдар
---------------------------------------------------
-Total ok: 3
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/302_OOP/301_OOP_Yunusov_AR
-Добавлен кроссплатформенный скрипт для запуска hello.php
-Task from branch: Task01
-Creation date: 02/07/2025 09:49:26
-To github.com-mrsu:andpop-mrsu/301_OOP_Yunusov_AR.git
-To github.com-mrsu:andpop-mrsu/301_OOP_Yunusov_AR.git
-   2edea77..b04ce97  master -> master
-   2edea77..b04ce97  master -> master
 302_OOP_Baranov_EA
 302_OOP_Borcov_ID
 302_OOP_Chumakov_VA
-=====================================================
-/home/andrey/labs/302_OOP/302_OOP_Chumakov_VA
-Из github.com-mrsu:andpop-mrsu/302_OOP_Chumakov_VA
-Из github.com-mrsu:andpop-mrsu/302_OOP_Chumakov_VA
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-Из https://github.com/SakatoGin/302_OOP_Chumakov_VA
-Из https://github.com/SakatoGin/302_OOP_Chumakov_VA
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Обновление 1712ad3..408573b
-Fast-forward (no commit created; -m option ignored)
- Task01/hello.php | 6 ++++++
- Task01/start.bat | 2 ++
- 2 files changed, 8 insertions(+)
- create mode 100644 Task01/hello.php
- create mode 100755 Task01/start.bat
---------------------------------------------------
-Task:  /home/andrey/labs/302_OOP/302_OOP_Chumakov_VA/Task01
---------------------------------------------------
-Check path: hello.php
---------------------------------------------------
-Check path: start.bat
---------------------------------------------------
-Run: ./start.bat
-Текущая дата и время: 2025-02-07 14:22:31
-Фамилия и имя: Чумаков Валерий
---------------------------------------------------
-Total ok: 3
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/302_OOP/302_OOP_Chumakov_VA
-Task01
-Task from branch: Task01
-Creation date: 02/06/2025 17:28:03
-To github.com-mrsu:andpop-mrsu/302_OOP_Chumakov_VA.git
-To github.com-mrsu:andpop-mrsu/302_OOP_Chumakov_VA.git
-   1712ad3..408573b  master -> master
-   1712ad3..408573b  master -> master
 302_OOP_Egorov_AS
 302_OOP_Ganchenkov_AA
 302_OOP_Grachev_AV
-=====================================================
-/home/andrey/labs/302_OOP/302_OOP_Grachev_AV
-Из github.com-mrsu:andpop-mrsu/302_OOP_Grachev_AV
-Из github.com-mrsu:andpop-mrsu/302_OOP_Grachev_AV
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-Из https://github.com/artemaaaaaaaaaaaaaaaaaaa/302_OOP_Grachev_AV
-Из https://github.com/artemaaaaaaaaaaaaaaaaaaa/302_OOP_Grachev_AV
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Обновление 1c743c6..1444053
-Fast-forward (no commit created; -m option ignored)
- Task01/hello.php | 11 +++++++++++
- Task01/start.bat |  2 ++
- 2 files changed, 13 insertions(+)
- create mode 100644 Task01/hello.php
- create mode 100755 Task01/start.bat
---------------------------------------------------
-Task:  /home/andrey/labs/302_OOP/302_OOP_Grachev_AV/Task01
---------------------------------------------------
-Check path: hello.php
---------------------------------------------------
-Check path: start.bat
---------------------------------------------------
-Run: ./start.bat
-Текущая дата и время: 07.02.2025 14:23:18
-Фамилия и имя: Грачёв Артём
---------------------------------------------------
-Total ok: 3
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/302_OOP/302_OOP_Grachev_AV
-Task01
-Task from branch: Task01
-Creation date: 02/06/2025 19:36:22
-To github.com-mrsu:andpop-mrsu/302_OOP_Grachev_AV.git
-To github.com-mrsu:andpop-mrsu/302_OOP_Grachev_AV.git
-   1c743c6..1444053  master -> master
-   1c743c6..1444053  master -> master
 302_OOP_Klinov_AV
 302_OOP_Korotkevich_DA
 302_OOP_Krestyanskova_MA
 302_OOP_Novikov_ME
-=====================================================
-/home/andrey/labs/302_OOP/302_OOP_Novikov_ME
-Из github.com-mrsu:andpop-mrsu/302_OOP_Novikov_ME
-Из github.com-mrsu:andpop-mrsu/302_OOP_Novikov_ME
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-Из https://github.com/darkflade/302_OOP_Novikov_ME
-Из https://github.com/darkflade/302_OOP_Novikov_ME
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Обновление 4b7829d..aff2505
-Fast-forward (no commit created; -m option ignored)
- Task01/hello.php | 11 +++++++++++
- Task01/start.bat |  2 ++
- 2 files changed, 13 insertions(+)
- create mode 100644 Task01/hello.php
- create mode 100755 Task01/start.bat
---------------------------------------------------
-Task:  /home/andrey/labs/302_OOP/302_OOP_Novikov_ME/Task01
---------------------------------------------------
-Check path: hello.php
---------------------------------------------------
-Check path: start.bat
---------------------------------------------------
-Run: ./start.bat
-
-Execution fails
---------------------------------------------------
-Total ok: 2
-Total error: 1
---------------------------------------------------
-/home/andrey/labs/302_OOP/302_OOP_Novikov_ME
-Just added
-Task from branch: Task01
-Creation date: 02/06/2025 18:04:17
-To github.com-mrsu:andpop-mrsu/302_OOP_Novikov_ME.git
-To github.com-mrsu:andpop-mrsu/302_OOP_Novikov_ME.git
-   4b7829d..aff2505  master -> master
-   4b7829d..aff2505  master -> master
 302_OOP_Pyanzina_VD
 302_OOP_Sergeev_SA
-=====================================================
-/home/andrey/labs/302_OOP/302_OOP_Sergeev_SA
-Из github.com-mrsu:andpop-mrsu/302_OOP_Sergeev_SA
-Из github.com-mrsu:andpop-mrsu/302_OOP_Sergeev_SA
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-Из https://github.com/Kulebyaka1337/302_OOP_Sergeev_SA
-Из https://github.com/Kulebyaka1337/302_OOP_Sergeev_SA
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Обновление 8fa7d47..c36508e
-Fast-forward (no commit created; -m option ignored)
- Task01/hello.php | 8 ++++++++
- Task01/start.bat | 2 ++
- 2 files changed, 10 insertions(+)
- create mode 100755 Task01/hello.php
- create mode 100755 Task01/start.bat
---------------------------------------------------
-Task:  /home/andrey/labs/302_OOP/302_OOP_Sergeev_SA/Task01
---------------------------------------------------
-Check path: hello.php
---------------------------------------------------
-Check path: start.bat
---------------------------------------------------
-Run: ./start.bat
-Текущая дата и время: 2025-02-07 14:26:06
-Фамилия и имя: Сергеев Сергей
---------------------------------------------------
-Total ok: 3
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/302_OOP/302_OOP_Sergeev_SA
-Task01
-Task from branch: Task01
-Creation date: 02/06/2025 17:28:05
-To github.com-mrsu:andpop-mrsu/302_OOP_Sergeev_SA.git
-To github.com-mrsu:andpop-mrsu/302_OOP_Sergeev_SA.git
-   8fa7d47..c36508e  master -> master
-   8fa7d47..c36508e  master -> master
 302_OOP_Shestakov_VA
-=====================================================
-/home/andrey/labs/302_OOP/302_OOP_Shestakov_VA
-Из github.com-mrsu:andpop-mrsu/302_OOP_Shestakov_VA
-Из github.com-mrsu:andpop-mrsu/302_OOP_Shestakov_VA
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-Из https://github.com/Baklaniso/302_OOP_Shestakov_VA
-Из https://github.com/Baklaniso/302_OOP_Shestakov_VA
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Обновление 9303c71..68e4c89
-Fast-forward (no commit created; -m option ignored)
- Task01/hello.php | 6 ++++++
- Task01/start.bat | 2 ++
- 2 files changed, 8 insertions(+)
- create mode 100644 Task01/hello.php
- create mode 100755 Task01/start.bat
---------------------------------------------------
-Task:  /home/andrey/labs/302_OOP/302_OOP_Shestakov_VA/Task01
---------------------------------------------------
-Check path: hello.php
---------------------------------------------------
-Check path: start.bat
---------------------------------------------------
-Run: ./start.bat
-Текущая дата и время: 07.02.2025 14:26:47
-Фамилия и имя: Шестаков Вячеслав
---------------------------------------------------
-Total ok: 3
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/302_OOP/302_OOP_Shestakov_VA
-Task01
-Task from branch: Task01
-Creation date: 02/06/2025 16:59:53
-To github.com-mrsu:andpop-mrsu/302_OOP_Shestakov_VA.git
-To github.com-mrsu:andpop-mrsu/302_OOP_Shestakov_VA.git
-   9303c71..68e4c89  master -> master
-   9303c71..68e4c89  master -> master
 302_OOP_Sheyanov_AV
 302_OOP_Simonov_AP
 302_OOP_Sokolov_RV
-=====================================================
-/home/andrey/labs/302_OOP/302_OOP_Sokolov_RV
-Из github.com-mrsu:andpop-mrsu/302_OOP_Sokolov_RV
-Из github.com-mrsu:andpop-mrsu/302_OOP_Sokolov_RV
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-Из https://github.com/Nevall-von-Goodem/302_OOP_Sokolov_RV
-Из https://github.com/Nevall-von-Goodem/302_OOP_Sokolov_RV
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Обновление 10eee04..7f8c11f
-Fast-forward (no commit created; -m option ignored)
- Task01/hello.php | 8 ++++++++
- Task01/start.bat | 2 ++
- 2 files changed, 10 insertions(+)
- create mode 100644 Task01/hello.php
- create mode 100755 Task01/start.bat
---------------------------------------------------
-Task:  /home/andrey/labs/302_OOP/302_OOP_Sokolov_RV/Task01
---------------------------------------------------
-Check path: hello.php
---------------------------------------------------
-Check path: start.bat
---------------------------------------------------
-Run: ./start.bat
-Текущая дата: 07.02.2025
-Текушее время: 14:27:20
-Фамилия: Соколов
-Имя: Роман
---------------------------------------------------
-Total ok: 3
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/302_OOP/302_OOP_Sokolov_RV
-Task01
-Task from branch: Task01
-Creation date: 02/06/2025 17:00:46
-To github.com-mrsu:andpop-mrsu/302_OOP_Sokolov_RV.git
-To github.com-mrsu:andpop-mrsu/302_OOP_Sokolov_RV.git
-   10eee04..7f8c11f  master -> master
-   10eee04..7f8c11f  master -> master
 302_OOP_Tenishev_RR
 302_OOP_Urenkov_YUYU
 302_OOP_Votyakov_MA
 **********************
 PowerShell transcript end
-End time: 20250207142758
+End time: 20250219101420
 **********************

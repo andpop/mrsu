@@ -1,24 +1,695 @@
 **********************
 PowerShell transcript start
-Start time: 20250203144446
+Start time: 20250218175956
 **********************
 Transcript started, output file is log.txt
 202M_Testing_Adepa_IV
 202M_Testing_Antoshechkin_AYU
 202M_Testing_Arhipov_KA
 202M_Testing_Bikmurzin_DR
+=====================================================
+/home/andrey/labs/202M_Testing/202M_Testing_Bikmurzin_DR
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Bikmurzin_DR
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Bikmurzin_DR
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs/202M_Testing/202M_Testing_Bikmurzin_DR/Task02
+--------------------------------------------------
+Total ok: 0
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/202M_Testing/202M_Testing_Bikmurzin_DR
+Task02_complete
+Task from branch: Task02
+Creation date: 02/16/2025 16:19:10
 202M_Testing_Bujnov_EA
 202M_Testing_Demidov_VA
 202M_Testing_Guryanov_MA
 202M_Testing_Kiryuhin_AA
 202M_Testing_Krasavcev_DO
+=====================================================
+/home/andrey/labs/202M_Testing/202M_Testing_Krasavcev_DO
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Krasavcev_DO
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Krasavcev_DO
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/danilkot45/202M_Testing_Krasavcev_DO
+Из https://github.com/danilkot45/202M_Testing_Krasavcev_DO
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление be23769..07ccf83
+Fast-forward (no commit created; -m option ignored)
+ Task01/check.txt              | 29 ++++++++++++++++++++++
+ Task01/equation.txt           | 42 ++++++++++++++++++++++++++++++++
+ Task01/find_equation_roots.py | 21 ++++++++++++++++
+ Task01/test_class.py          | 50 ++++++++++++++++++++++++++++++++++++++
+ Task01/test_func.py           | 30 +++++++++++++++++++++++
+ Task01/triangle_class.py      | 22 +++++++++++++++++
+ Task01/triangle_func.py       | 56 +++++++++++++++++++++++++++++++++++++++++++
+ 7 files changed, 250 insertions(+)
+ create mode 100644 Task01/check.txt
+ create mode 100644 Task01/equation.txt
+ create mode 100644 Task01/find_equation_roots.py
+ create mode 100644 Task01/test_class.py
+ create mode 100644 Task01/test_func.py
+ create mode 100644 Task01/triangle_class.py
+ create mode 100644 Task01/triangle_func.py
+--------------------------------------------------
+Task:  /home/andrey/labs/202M_Testing/202M_Testing_Krasavcev_DO/Task01
+--------------------------------------------------
+Check path: check.txt
+Чек-лист для тестирования функции определения типа треугольника
+
+Позитивное тестирование:
+
+1. Кейс: Равносторонний треугольник
+   Стороны: 10, 10, 10
+   Ожидаемый результат: "equilateral"
+
+2. Кейс: Равнобедренный треугольник
+   Стороны: 5, 8, 5
+   Ожидаемый результат: "isosceles"
+
+3. Кейс: Разносторонний треугольник
+   Стороны: 12, 9, 6
+   Ожидаемый результат: "nonequilateral"
+
+Негативное тестирование:
+
+4. Кейс: Отрицательное значение стороны
+   Стороны: 5, -4, 5
+   Ожидаемый результат: Ошибка: IncorrectTriangleSides
+
+5. Кейс: Невозможность построения треугольника (сумма двух сторон меньше третьей)
+   Стороны: 2, 2, 10
+   Ожидаемый результат: Ошибка: IncorrectTriangleSides
+
+6. Кейс: Нулевое значение стороны
+   Стороны: 0, 9, 9
+   Ожидаемый результат: Ошибка: IncorrectTriangleSides
+--------------------------------------------------
+Check path: triangle_func.py
+--------------------------------------------------
+Check path: triangle_class.py
+--------------------------------------------------
+Check path: test_func.py
+--------------------------------------------------
+Check path: test_class.py
+--------------------------------------------------
+Run: python3 triangle_func.py -v
+Trying:
+    get_triangle_type(10, 10, 10)
+Expecting:
+    'equilateral'
+ok
+Trying:
+    get_triangle_type(5, 8, 5)
+Expecting:
+    'isosceles'
+ok
+Trying:
+    get_triangle_type(12, 9, 6)
+Expecting:
+    'nonequilateral'
+ok
+Trying:
+    get_triangle_type(5, -4, 5)
+Expecting:
+    Traceback (most recent call last):
+    ...
+    IncorrectTriangleSides: Incorrect side lengths of a triangle
+ok
+Trying:
+    get_triangle_type(2, 2, 10)
+Expecting:
+    Traceback (most recent call last):
+    ...
+    IncorrectTriangleSides: Incorrect side lengths of a triangle
+ok
+Trying:
+    get_triangle_type(0, 9, 9)
+Expecting:
+    Traceback (most recent call last):
+    ...
+    IncorrectTriangleSides: Incorrect side lengths of a triangle
+ok
+2 items had no tests:
+    __main__
+    __main__.IncorrectTriangleSides
+1 items passed all tests:
+   6 tests in __main__.get_triangle_type
+6 tests in 3 items.
+6 passed and 0 failed.
+Test passed.
+--------------------------------------------------
+Run: python3 test_func.py -v
+
+--------------------------------------------------
+Run: pytest -v
+============================= test session starts ==============================
+platform linux -- Python 3.8.10, pytest-7.2.1, pluggy-1.0.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/andrey/labs/202M_Testing/202M_Testing_Krasavcev_DO/Task01
+collecting ... collected 15 items
+
+test_class.py::test_triangle_creation PASSED                             [  6%]
+test_class.py::test_triangle_type_equilateral PASSED                     [ 13%]
+test_class.py::test_triangle_type_isosceles PASSED                       [ 20%]
+test_class.py::test_triangle_type_nonequilateral PASSED                  [ 26%]
+test_class.py::test_triangle_creation_negative_side PASSED               [ 33%]
+test_class.py::test_triangle_creation_impossible_triangle PASSED         [ 40%]
+test_class.py::test_triangle_creation_zero_side PASSED                   [ 46%]
+test_class.py::test_triangle_perimeter FAILED                            [ 53%]
+test_class.py::test_triangle_perimeter_equilateral PASSED                [ 60%]
+test_func.py::TestGetTriangleType::test_equilateral_triangle PASSED      [ 66%]
+test_func.py::TestGetTriangleType::test_impossible_triangle PASSED       [ 73%]
+test_func.py::TestGetTriangleType::test_isosceles_triangle PASSED        [ 80%]
+test_func.py::TestGetTriangleType::test_negative_side_length PASSED      [ 86%]
+test_func.py::TestGetTriangleType::test_nonequilateral_triangle PASSED   [ 93%]
+test_func.py::TestGetTriangleType::test_zero_side_length PASSED          [100%]
+
+=================================== FAILURES ===================================
+___________________________ test_triangle_perimeter ____________________________
+
+    def test_triangle_perimeter():
+        triangle = Triangle(12, 9, 6)
+>       assert triangle.perimeter() == 23
+E       assert 27 == 23
+E        +  where 27 = <bound method Triangle.perimeter of <triangle_class.Triangle object at 0x7f8c94a3aee0>>()
+E        +    where <bound method Triangle.perimeter of <triangle_class.Triangle object at 0x7f8c94a3aee0>> = <triangle_class.Triangle object at 0x7f8c94a3aee0>.perimeter
+
+test_class.py:45: AssertionError
+=========================== short test summary info ============================
+FAILED test_class.py::test_triangle_perimeter - assert 27 == 23
+========================= 1 failed, 14 passed in 0.05s =========================
+Execution fails
+--------------------------------------------------
+Total ok: 7
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/202M_Testing/202M_Testing_Krasavcev_DO
+Task01
+Task from branch: Task01
+Creation date: 02/18/2025 11:04:51
+To github.com-mrsu:andpop-mrsu/202M_Testing_Krasavcev_DO.git
+To github.com-mrsu:andpop-mrsu/202M_Testing_Krasavcev_DO.git
+   be23769..07ccf83  master -> master
+   be23769..07ccf83  master -> master
 202M_Testing_Magicheva_KS
 202M_Testing_Makarov_NA
+=====================================================
+/home/andrey/labs/202M_Testing/202M_Testing_Makarov_NA
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Makarov_NA
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Makarov_NA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/ma-karov/202M_Testing_Makarov_NA
+Из https://github.com/ma-karov/202M_Testing_Makarov_NA
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 2bc739f..43aa1ac
+Fast-forward (no commit created; -m option ignored)
+ Task01/check.txt         | 35 +++++++++++++++++++++++++++++++++++
+ Task01/equation.py       | 18 ++++++++++++++++++
+ Task01/equation.txt      | 33 +++++++++++++++++++++++++++++++++
+ Task01/test_class.py     | 33 +++++++++++++++++++++++++++++++++
+ Task01/test_func.py      | 30 ++++++++++++++++++++++++++++++
+ Task01/triangle_class.py | 23 +++++++++++++++++++++++
+ Task01/triangle_func.py  | 43 +++++++++++++++++++++++++++++++++++++++++++
+ 7 files changed, 215 insertions(+)
+ create mode 100644 Task01/check.txt
+ create mode 100644 Task01/equation.py
+ create mode 100644 Task01/equation.txt
+ create mode 100644 Task01/test_class.py
+ create mode 100644 Task01/test_func.py
+ create mode 100644 Task01/triangle_class.py
+ create mode 100644 Task01/triangle_func.py
+--------------------------------------------------
+Task:  /home/andrey/labs/202M_Testing/202M_Testing_Makarov_NA/Task01
+--------------------------------------------------
+Check path: check.txt
+Чек-лист для функции get_triangle_type
+========================================
+
+### Позитивные тест-кейсы:
+1. **Равносторонний треугольник**
+   - Входные данные: a = 1, b = 1, c = 1
+   - Ожидаемый результат: 'equilateral'
+   - Описание: Все стороны равны.
+
+2. **IРавнобедренный треугольник**
+   - Входные данные: a = 7, b = 7, c = 5
+   - Ожидаемый результат: 'isosceles'
+   - Описание: Две стороны равны.
+
+3. **Разносторонний треугольник**
+   - Входные данные: a = 3, b = 4, c = 5
+   - Ожидаемый результат: 'nonequilateral'
+   - Описание: Все стороны разные, валидный треугольник.
+
+### Негативные тест-кейсы:
+4. **Недопустимый треугольник (сумма двух сторон <= третьей стороны)**
+   - Входные данные: a = 1, b = 2, c = 3
+   - Ожидаемый результат: Исключение (IncorrectTriangleSides)
+   - Описание: Нарушается неравенство треугольника.
+
+5. **Сторона с нулевой длиной**
+   - Входные данные: a = 1, b = 5, c = 0
+   - Ожидаемый результат: Исключение (IncorrectTriangleSides)
+   - Описание: Одна из сторон равна нулю, недопустимый треугольник.
+
+6. **Отрицательная длина стороны**
+   - Входные данные: a = 3, b = 4, c = -5
+   - Ожидаемый результат: Исключение (IncorrectTriangleSides)
+   - Описание: Длина стороны не может быть отрицательной.
+--------------------------------------------------
+Check path: triangle_func.py
+--------------------------------------------------
+Check path: triangle_class.py
+--------------------------------------------------
+Check path: test_func.py
+--------------------------------------------------
+Check path: test_class.py
+--------------------------------------------------
+Run: python3 triangle_func.py -v
+
+--------------------------------------------------
+Run: python3 test_func.py -v
+
+--------------------------------------------------
+Run: pytest -v
+============================= test session starts ==============================
+platform linux -- Python 3.8.10, pytest-7.2.1, pluggy-1.0.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/andrey/labs/202M_Testing/202M_Testing_Makarov_NA/Task01
+collecting ... collected 12 items
+
+test_class.py::test_equilateral_triangle PASSED                          [  8%]
+test_class.py::test_isosceles_triangle PASSED                            [ 16%]
+test_class.py::test_scalene_triangle PASSED                              [ 25%]
+test_class.py::test_invalid_triangle PASSED                              [ 33%]
+test_class.py::test_zero_side PASSED                                     [ 41%]
+test_class.py::test_negative_side PASSED                                 [ 50%]
+test_func.py::TestTriangleFunction::test_equilateral PASSED              [ 58%]
+test_func.py::TestTriangleFunction::test_invalid_triangle PASSED         [ 66%]
+test_func.py::TestTriangleFunction::test_isosceles PASSED                [ 75%]
+test_func.py::TestTriangleFunction::test_negative_side PASSED            [ 83%]
+test_func.py::TestTriangleFunction::test_scalene PASSED                  [ 91%]
+test_func.py::TestTriangleFunction::test_zero_side PASSED                [100%]
+
+============================== 12 passed in 0.03s ==============================
+--------------------------------------------------
+Total ok: 8
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/202M_Testing/202M_Testing_Makarov_NA
+Task01
+Task from branch: Task01
+Creation date: 02/17/2025 20:12:36
+To github.com-mrsu:andpop-mrsu/202M_Testing_Makarov_NA.git
+To github.com-mrsu:andpop-mrsu/202M_Testing_Makarov_NA.git
+   2bc739f..43aa1ac  master -> master
+   2bc739f..43aa1ac  master -> master
 202M_Testing_Malcev_NB
+=====================================================
+/home/andrey/labs/202M_Testing/202M_Testing_Malcev_NB
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Malcev_NB
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Malcev_NB
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/nikitasvi/202M_Testing_Malcev_NB
+Из https://github.com/nikitasvi/202M_Testing_Malcev_NB
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 8440fdd..73e3783
+Fast-forward (no commit created; -m option ignored)
+ Task01/check.txt                | 10 ++++++++
+ Task01/equation.py              | 28 +++++++++++++++++++++
+ Task01/equation.txt             | 33 +++++++++++++++++++++++++
+ Task01/solve_quadratic.py       | 23 ++++++++++++++++++
+ Task01/test_class.py            | 45 ++++++++++++++++++++++++++++++++++
+ Task01/test_func.py             | 10 ++++++++
+ Task01/test_func_doctest.py     |  6 +++++
+ Task01/test_func_unittest.py    | 37 ++++++++++++++++++++++++++++
+ Task01/triangle_class.py        | 32 ++++++++++++++++++++++++
+ Task01/triangle_func.py         | 24 ++++++++++++++++++
+ Task01/triangle_func_doctest.py | 54 +++++++++++++++++++++++++++++++++++++++++
+ 11 files changed, 302 insertions(+)
+ create mode 100644 Task01/check.txt
+ create mode 100644 Task01/equation.py
+ create mode 100644 Task01/equation.txt
+ create mode 100644 Task01/solve_quadratic.py
+ create mode 100644 Task01/test_class.py
+ create mode 100644 Task01/test_func.py
+ create mode 100644 Task01/test_func_doctest.py
+ create mode 100644 Task01/test_func_unittest.py
+ create mode 100644 Task01/triangle_class.py
+ create mode 100644 Task01/triangle_func.py
+ create mode 100644 Task01/triangle_func_doctest.py
+--------------------------------------------------
+Task:  /home/andrey/labs/202M_Testing/202M_Testing_Malcev_NB/Task01
+--------------------------------------------------
+Check path: check.txt
+# Позитивное тестирование:
+(3, 3, 3) -> "equilateral"
+(4, 4, 6) -> "isosceles"
+(5, 7, 9) -> "nonequilateral"
+
+# Негативное тестирование:
+(0, 3, 3) -> IncorrectTriangleSides
+(-1, 3, 3) -> IncorrectTriangleSides
+(3, 3, 7) -> IncorrectTriangleSides
+(1, 2, 3) -> IncorrectTriangleSides
+--------------------------------------------------
+Check path: triangle_func.py
+--------------------------------------------------
+Check path: triangle_class.py
+--------------------------------------------------
+Check path: test_func.py
+--------------------------------------------------
+Check path: test_class.py
+--------------------------------------------------
+Run: python3 triangle_func.py -v
+
+--------------------------------------------------
+Run: python3 test_func.py -v
+equilateral
+isosceles
+nonequilateral
+Ошибка: Треугольник с такими сторонами невозможен.
+--------------------------------------------------
+Run: pytest -v
+============================= test session starts ==============================
+platform linux -- Python 3.8.10, pytest-7.2.1, pluggy-1.0.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/andrey/labs/202M_Testing/202M_Testing_Malcev_NB/Task01
+collecting ... collected 12 items
+
+test_class.py::test_triangle_creation PASSED                             [  8%]
+test_class.py::test_equilateral_triangle PASSED                          [ 16%]
+test_class.py::test_isosceles_triangle PASSED                            [ 25%]
+test_class.py::test_nonequilateral_triangle PASSED                       [ 33%]
+test_class.py::test_perimeter PASSED                                     [ 41%]
+test_class.py::test_invalid_sides_zero_or_negative PASSED                [ 50%]
+test_class.py::test_invalid_triangle_inequality PASSED                   [ 58%]
+test_func_unittest.py::TestTriangleType::test_equilateral_triangle PASSED [ 66%]
+test_func_unittest.py::TestTriangleType::test_invalid_sides_zero_or_negative PASSED [ 75%]
+test_func_unittest.py::TestTriangleType::test_invalid_triangle_inequality PASSED [ 83%]
+test_func_unittest.py::TestTriangleType::test_isosceles_triangle PASSED  [ 91%]
+test_func_unittest.py::TestTriangleType::test_nonequilateral_triangle PASSED [100%]
+
+============================== 12 passed in 0.03s ==============================
+--------------------------------------------------
+Total ok: 8
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/202M_Testing/202M_Testing_Malcev_NB
+Resolve Task01
+Task from branch: Task01
+Creation date: 02/18/2025 06:38:22
+To github.com-mrsu:andpop-mrsu/202M_Testing_Malcev_NB.git
+To github.com-mrsu:andpop-mrsu/202M_Testing_Malcev_NB.git
+   8440fdd..73e3783  master -> master
+   8440fdd..73e3783  master -> master
 202M_Testing_Nagaev_DG
 202M_Testing_Nikishova_AA
 202M_Testing_Perepelkin_DS
 202M_Testing_Pozharskij_VS
+=====================================================
+/home/andrey/labs/202M_Testing/202M_Testing_Pozharskij_VS
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Pozharskij_VS
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Pozharskij_VS
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/ANVIORY/202M_Testing_Pozharskij_VS
+Из https://github.com/ANVIORY/202M_Testing_Pozharskij_VS
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление ea0e6e4..c7ce378
+Fast-forward (no commit created; -m option ignored)
+ .../test_class.cpython-311-pytest-8.3.4.pyc        | Bin 0 -> 13276 bytes
+ Task01/__pycache__/triangle_class.cpython-311.pyc  | Bin 0 -> 1957 bytes
+ Task01/__pycache__/triangle_func.cpython-311.pyc   | Bin 0 -> 2798 bytes
+ Task01/check.txt                                   |  13 +++++
+ Task01/equation.py                                 |  17 ++++++
+ Task01/equation.txt                                |   7 +++
+ Task01/test_class.py                               |  64 +++++++++++++++++++++
+ Task01/test_func.py                                |  41 +++++++++++++
+ Task01/triangle_class.py                           |  23 ++++++++
+ Task01/triangle_func.py                            |  58 +++++++++++++++++++
+ 10 files changed, 223 insertions(+)
+ create mode 100644 Task01/__pycache__/test_class.cpython-311-pytest-8.3.4.pyc
+ create mode 100644 Task01/__pycache__/triangle_class.cpython-311.pyc
+ create mode 100644 Task01/__pycache__/triangle_func.cpython-311.pyc
+ create mode 100644 Task01/check.txt
+ create mode 100644 Task01/equation.py
+ create mode 100644 Task01/equation.txt
+ create mode 100644 Task01/test_class.py
+ create mode 100644 Task01/test_func.py
+ create mode 100644 Task01/triangle_class.py
+ create mode 100644 Task01/triangle_func.py
+--------------------------------------------------
+Task:  /home/andrey/labs/202M_Testing/202M_Testing_Pozharskij_VS/Task01
+--------------------------------------------------
+Check path: check.txt
+Позитивные тесты:
+1 a=3, b=4, c=5 - "nonequilateral" (Разносторонний треугольник)
+2 a=5, b=5, c=5 - "equilateral" (Равносторонний треугольник)
+3 a=5, b=5, c=3 - "isosceles" (Равнобедренный треугольник)
+4 a=1.5, b=2.5, c=3.5 - "nonequilateral" (Треугольник с дробными сторонами)
+5 a=10, b=10, c=10 - "equilateral" (Большой равносторонний треугольник)
+
+Негативные тесты:
+6 a=0, b=4, c=5 - Exception (Некорректная сторона)
+7 a=1, b=2, c=3 - Exception (Нарушение неравенства треугольника)
+8 a=-1, b=2, c=3 - Exception (Отрицательная сторона)
+9 a=1e-10, b=2, c=3 - Exception (Малая сторона, нарушение неравенства треугольника)
+10 a=1, b=1, c=2 - Exception (Вырожденный треугольник)
+--------------------------------------------------
+Check path: triangle_func.py
+--------------------------------------------------
+Check path: triangle_class.py
+--------------------------------------------------
+Check path: test_func.py
+--------------------------------------------------
+Check path: test_class.py
+--------------------------------------------------
+Run: python3 triangle_func.py -v
+Trying:
+    get_triangle_type(3, 4, 5)
+Expecting:
+    'nonequilateral'
+ok
+Trying:
+    get_triangle_type(5, 5, 5)
+Expecting:
+    'equilateral'
+ok
+Trying:
+    get_triangle_type(5, 5, 3)
+Expecting:
+    'isosceles'
+ok
+Trying:
+    get_triangle_type(1.5, 2.5, 3.5)
+Expecting:
+    'nonequilateral'
+ok
+Trying:
+    get_triangle_type(10, 10, 10)
+Expecting:
+    'equilateral'
+ok
+Trying:
+    get_triangle_type(0, 4, 5)
+Expecting:
+    Traceback (most recent call last):
+        ...
+    IncorrectTriangleSides: Стороны треугольника должны быть положительными числами.
+**********************************************************************
+File "triangle_func.py", line 23, in __main__.get_triangle_type
+Failed example:
+    get_triangle_type(0, 4, 5)
+Expected:
+    Traceback (most recent call last):
+        ...
+    IncorrectTriangleSides: Стороны треугольника должны быть положительными числами.
+Got:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest __main__.get_triangle_type[5]>", line 1, in <module>
+        get_triangle_type(0, 4, 5)
+      File "triangle_func.py", line 45, in get_triangle_type
+        raise IncorrectTriangleSides("Стороны треугольника должны быть положительными")
+    IncorrectTriangleSides: Стороны треугольника должны быть положительными
+Trying:
+    get_triangle_type(1, 2, 3)
+Expecting:
+    Traceback (most recent call last):
+        ...
+    IncorrectTriangleSides: Нарушено неравенство треугольника.
+**********************************************************************
+File "triangle_func.py", line 27, in __main__.get_triangle_type
+Failed example:
+    get_triangle_type(1, 2, 3)
+Expected:
+    Traceback (most recent call last):
+        ...
+    IncorrectTriangleSides: Нарушено неравенство треугольника.
+Got:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest __main__.get_triangle_type[6]>", line 1, in <module>
+        get_triangle_type(1, 2, 3)
+      File "triangle_func.py", line 47, in get_triangle_type
+        raise IncorrectTriangleSides("Нарушено неравенство треугольника")
+    IncorrectTriangleSides: Нарушено неравенство треугольника
+Trying:
+    get_triangle_type(-1, 2, 3)
+Expecting:
+    Traceback (most recent call last):
+        ...
+    IncorrectTriangleSides: Стороны треугольника должны быть положительными числами.
+**********************************************************************
+File "triangle_func.py", line 31, in __main__.get_triangle_type
+Failed example:
+    get_triangle_type(-1, 2, 3)
+Expected:
+    Traceback (most recent call last):
+        ...
+    IncorrectTriangleSides: Стороны треугольника должны быть положительными числами.
+Got:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest __main__.get_triangle_type[7]>", line 1, in <module>
+        get_triangle_type(-1, 2, 3)
+      File "triangle_func.py", line 45, in get_triangle_type
+        raise IncorrectTriangleSides("Стороны треугольника должны быть положительными")
+    IncorrectTriangleSides: Стороны треугольника должны быть положительными
+Trying:
+    get_triangle_type(1e-10, 2, 3)
+Expecting:
+    Traceback (most recent call last):
+        ...
+    IncorrectTriangleSides: Нарушено неравенство треугольника.
+**********************************************************************
+File "triangle_func.py", line 35, in __main__.get_triangle_type
+Failed example:
+    get_triangle_type(1e-10, 2, 3)
+Expected:
+    Traceback (most recent call last):
+        ...
+    IncorrectTriangleSides: Нарушено неравенство треугольника.
+Got:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest __main__.get_triangle_type[8]>", line 1, in <module>
+        get_triangle_type(1e-10, 2, 3)
+      File "triangle_func.py", line 47, in get_triangle_type
+        raise IncorrectTriangleSides("Нарушено неравенство треугольника")
+    IncorrectTriangleSides: Нарушено неравенство треугольника
+Trying:
+    get_triangle_type(1, 1, 2)
+Expecting:
+    Traceback (most recent call last):
+        ...
+    IncorrectTriangleSides: Нарушено неравенство треугольника.
+**********************************************************************
+File "triangle_func.py", line 39, in __main__.get_triangle_type
+Failed example:
+    get_triangle_type(1, 1, 2)
+Expected:
+    Traceback (most recent call last):
+        ...
+    IncorrectTriangleSides: Нарушено неравенство треугольника.
+Got:
+    Traceback (most recent call last):
+      File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest __main__.get_triangle_type[9]>", line 1, in <module>
+        get_triangle_type(1, 1, 2)
+      File "triangle_func.py", line 47, in get_triangle_type
+        raise IncorrectTriangleSides("Нарушено неравенство треугольника")
+    IncorrectTriangleSides: Нарушено неравенство треугольника
+2 items had no tests:
+    __main__
+    __main__.IncorrectTriangleSides
+**********************************************************************
+1 items had failures:
+   5 of  10 in __main__.get_triangle_type
+10 tests in 3 items.
+5 passed and 5 failed.
+***Test Failed*** 5 failures.
+--------------------------------------------------
+Run: python3 test_func.py -v
+
+--------------------------------------------------
+Run: pytest -v
+============================= test session starts ==============================
+platform linux -- Python 3.8.10, pytest-7.2.1, pluggy-1.0.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/andrey/labs/202M_Testing/202M_Testing_Pozharskij_VS/Task01
+collecting ... collected 24 items
+
+test_class.py::test_equilateral_triangle PASSED                          [  4%]
+test_class.py::test_isosceles_triangle PASSED                            [  8%]
+test_class.py::test_nonequilateral_triangle PASSED                       [ 12%]
+test_class.py::test_fractional_sides PASSED                              [ 16%]
+test_class.py::test_large_triangle PASSED                                [ 20%]
+test_class.py::test_negative_side PASSED                                 [ 25%]
+test_class.py::test_zero_side PASSED                                     [ 29%]
+test_class.py::test_violation_of_triangle_inequality PASSED              [ 33%]
+test_class.py::test_small_side_violation PASSED                          [ 37%]
+test_class.py::test_degenerate_triangle PASSED                           [ 41%]
+test_class.py::test_all_negative_sides PASSED                            [ 45%]
+test_class.py::test_mixed_invalid_sides PASSED                           [ 50%]
+test_class.py::test_non_numeric_sides PASSED                             [ 54%]
+test_class.py::test_extremely_large_sides PASSED                         [ 58%]
+test_func.py::TestGetTriangleType::test_degenerate_triangle PASSED       [ 62%]
+test_func.py::TestGetTriangleType::test_equilateral PASSED               [ 66%]
+test_func.py::TestGetTriangleType::test_fractional_sides PASSED          [ 70%]
+test_func.py::TestGetTriangleType::test_invalid_negative_side PASSED     [ 75%]
+test_func.py::TestGetTriangleType::test_invalid_triangle_inequality PASSED [ 79%]
+test_func.py::TestGetTriangleType::test_invalid_zero_side PASSED         [ 83%]
+test_func.py::TestGetTriangleType::test_isosceles PASSED                 [ 87%]
+test_func.py::TestGetTriangleType::test_large_equilateral PASSED         [ 91%]
+test_func.py::TestGetTriangleType::test_nonequilateral PASSED            [ 95%]
+test_func.py::TestGetTriangleType::test_small_side_violation PASSED      [100%]
+
+============================== 24 passed in 0.05s ==============================
+--------------------------------------------------
+Total ok: 8
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/202M_Testing/202M_Testing_Pozharskij_VS
+task01
+Task from branch: Task01
+Creation date: 02/17/2025 21:09:55
+To github.com-mrsu:andpop-mrsu/202M_Testing_Pozharskij_VS.git
+To github.com-mrsu:andpop-mrsu/202M_Testing_Pozharskij_VS.git
+   ea0e6e4..c7ce378  master -> master
+   ea0e6e4..c7ce378  master -> master
 202M_Testing_Pyatkin_KA
 202M_Testing_Razov_KA
 202M_Testing_Razumov_DS
@@ -32,5 +703,5 @@ Transcript started, output file is log.txt
 202M_Testing_ZHivaev_VD
 **********************
 PowerShell transcript end
-End time: 20250203144500
+End time: 20250218180557
 **********************
