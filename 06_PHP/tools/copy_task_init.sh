@@ -8,7 +8,7 @@ echo $pwd
 task_number=$2
 
 # for student in $(cat "${pwd}/reps.txt"); do
-for student in $(cat "${pwd}/group1.txt"); do
+for student in $(cat "${pwd}/group2.txt"); do
     echo "----------------------------------------------------------------------------------"
     echo $student
     student_dir="${BASE_DIR}/${student}"
@@ -21,7 +21,7 @@ for student in $(cat "${pwd}/group1.txt"); do
     # cp "${pwd}/../tasks/task02.md" "${student_dir}/"
     # cp "${pwd}/../Git_instruction.md" "${student_dir}/"
     #
-    cp "${pwd}/../tasks/spec_1.md" "${student_dir}/specification.md"
+    cp "${pwd}/../tasks/spec_2.md" "${student_dir}/specification.md"
 
     git add -A
     git commit -m "Change game specification"
