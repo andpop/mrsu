@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20250219141653
+Start time: 20250306223537
 **********************
 Transcript started, output file is log.txt
 PHP_Abramov_AI
@@ -8,42 +8,151 @@ PHP_Artyushin_DO
 PHP_Asrorov_SZ
 PHP_Biushkin_DV
 PHP_Biushkina_EI
+=====================================================
+/home/andrey/labs/PHP/PHP_Biushkina_EI
+Из github.com-mrsu:andpop-mrsu/PHP_Biushkina_EI
+Из github.com-mrsu:andpop-mrsu/PHP_Biushkina_EI
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs/PHP/PHP_Biushkina_EI/Task03
+--------------------------------------------------
+Check path: README.md
+## Игра "Арифметическая прогрессия"
+
+## Спецификация
+
+Игроку показывается ряд из 10 чисел, образующий арифметическую прогрессию со случайным шагом. Одно из чисел (позиция определяется случайным образом) заменено точками. Игрок должен определить это число. Нужно вывести соответствующее сообщение и в случае ошибки показать всю прогрессию с правильным числом.
+При подключении базы данных в ней должна сохраняться информация об именах игроков, датах и результатах всех игр, а также о предлагавшихся прогрессиях и пропущенных числах.
+
+## Процесс запуска приложения
+
+1. Запуск локального веб-сервера командой php -S localhost:3000 -t public
+2. Открытие в браузере страницы http://localhost:3000/
+3. Отправить методом POST на URL http://localhost:3000/games , введя в теле запроса данные, например, {"name": "Игрок"}
+4. Отправить запрос
+5. Проверить наличие записи в БД
+6. Отправить методом POST на URL http://localhost:3000/games/check , введя в теле запроса данные, например,
+   {
+   "name": "Игрок1",
+   "answer": 5,
+   "progressionData": {
+   "missingNumber": 5,
+   "progression": [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+   }
+   }
+7. Отправить запрос
+8. Получить ответ, например,
+   {
+   "message": "Правильно!"
+   }
+--------------------------------------------------
+Check path: public
+--------------------------------------------------
+Total ok: 2
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/PHP/PHP_Biushkina_EI
+Задание Task03
+task from branch: Task03
+creation date: 03/01/2025 13:56:22
 PHP_Borcajkin_IA
 PHP_CHadova_AA
+PHP_CHernomorskij_MM
 PHP_Cybisov_IE
 PHP_Fedin_D
 PHP_Fedoseev_AS
+PHP_Fofonov_AV
 PHP_Grigoreva_LV
 PHP_Ilyushkin_YAV
 PHP_Isaev_AA
 PHP_Kajmakova_EV
+PHP_Kalachin_DA
+PHP_Kiryuhin_IO
 PHP_Kolotuhin_DV
+PHP_Kozlov_SI
+PHP_Krepyshev_NA
 PHP_Kuchin_RS
+PHP_Kulavskaya_YUE
 PHP_Kuzmin_NA
 PHP_Malkin_DA
 PHP_Masharin_DV
 PHP_Mezin_RV
 PHP_Moiseev_AA
+PHP_Mugrychyov_VD
 PHP_Nadkin_IS
 PHP_Nechiporuk_NA
+PHP_Nizhegorodov_YAN
 PHP_Pashkov_EYU
 PHP_Polevshchikov_DP
-PHP_Polushatov_AS
-PHP_Polushkin_SP
-PHP_Puchkin_IYU
-PHP_Repnikov_MA
-PHP_Rybina_EA
-PHP_SHerstnyov_KI
-PHP_SHokov_DR
-PHP_SHurygina_KN
-PHP_Slushkin_DV
-PHP_Tazin_AN
-PHP_Tenyakshev_MA
-PHP_YUdakov_SA
-PHP_Zaglumonina_AI
-PHP_Zaharova_EA
-PHP_ZHarkov_KS
-**********************
-PowerShell transcript end
-End time: 20250219141715
-**********************
+=====================================================
+/home/andrey/labs/PHP/PHP_Polevshchikov_DP
+Из github.com-mrsu:andpop-mrsu/PHP_Polevshchikov_DP
+Из github.com-mrsu:andpop-mrsu/PHP_Polevshchikov_DP
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs/PHP/PHP_Polevshchikov_DP/Task03
+--------------------------------------------------
+Check path: README.md
+# Игра "Наибольший общий делитель"
+
+
+## Установка через Github
+```sh
+git clone https://github.com/danilanomad/PHP_Polevshchikov_DP.git
+```
+## Требуемые библиотеки
+Для работы приложоения необходимо установить минифреймворк Slim
+Для этого нужно иметь установленный Composer и ввести в консоль следующие команды:
+- `composer require slim/slim "^4.0"`
+- `composer require slim/psr7`
+
+
+## Процесс запуска приложения
+
+1. Запуск локального веб-сервера командой:  
+   `php -S localhost:3000 -t public`
+
+2. Открытие в браузере страницы:  
+   [http://localhost:3000/](http://localhost:3000/)
+
+3. Введите имя в окно.
+
+4. Нажмите на кнопку "Начать игру".
+
+5. Введите ответ в соответствующее поле и нажмите "Ответить".
+
+6. Если хотите продолжить нажмите "Следующий ход" и затем введите следующий ответ
+
+7. Если в ходе использования приложения выводится ошибка базы данных, удалите оригинальный файл базы данных и начните игру заново.
+
+## Процесс запуска приложения
+Для работы приложения необходимо подключить SQLite3 и PDO
+
+Для этого в файле php.ini нужно добавить строчки `extension=sqlite3` и `extension=pdo_sqlite` без комментирования
+--------------------------------------------------
+Check path: public
+--------------------------------------------------
+Total ok: 2
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/PHP/PHP_Polevshchikov_DP
+Добавлено задание 3
+task from branch: Task03
+creation date: 03/06/2025 08:52:04
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> $global:?
+True
