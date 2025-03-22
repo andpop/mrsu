@@ -1,9 +1,32 @@
 **********************
 PowerShell transcript start
-Start time: 20250306223537
+Start time: 20250322200020
 **********************
 Transcript started, output file is log.txt
 PHP_Abramov_AI
+=====================================================
+/home/andrey/labs/PHP/PHP_Abramov_AI
+Из github.com-mrsu:andpop-mrsu/PHP_Abramov_AI
+Из github.com-mrsu:andpop-mrsu/PHP_Abramov_AI
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs/PHP/PHP_Abramov_AI/Task04
+--------------------------------------------------
+Check path: README.md
+README.md not found
+--------------------------------------------------
+Total ok: 0
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/PHP/PHP_Abramov_AI
+Task04
+task from branch: Task04
+creation date: 03/19/2025 11:49:53
 PHP_Artyushin_DO
 PHP_Asrorov_SZ
 PHP_Biushkin_DV
@@ -18,48 +41,10 @@ PHP_Biushkina_EI
 error: внешний репозиторий student уже существует
 error: внешний репозиторий student уже существует
 Уже актуально.
---------------------------------------------------
-Task:  /home/andrey/labs/PHP/PHP_Biushkina_EI/Task03
---------------------------------------------------
-Check path: README.md
-## Игра "Арифметическая прогрессия"
-
-## Спецификация
-
-Игроку показывается ряд из 10 чисел, образующий арифметическую прогрессию со случайным шагом. Одно из чисел (позиция определяется случайным образом) заменено точками. Игрок должен определить это число. Нужно вывести соответствующее сообщение и в случае ошибки показать всю прогрессию с правильным числом.
-При подключении базы данных в ней должна сохраняться информация об именах игроков, датах и результатах всех игр, а также о предлагавшихся прогрессиях и пропущенных числах.
-
-## Процесс запуска приложения
-
-1. Запуск локального веб-сервера командой php -S localhost:3000 -t public
-2. Открытие в браузере страницы http://localhost:3000/
-3. Отправить методом POST на URL http://localhost:3000/games , введя в теле запроса данные, например, {"name": "Игрок"}
-4. Отправить запрос
-5. Проверить наличие записи в БД
-6. Отправить методом POST на URL http://localhost:3000/games/check , введя в теле запроса данные, например,
-   {
-   "name": "Игрок1",
-   "answer": 5,
-   "progressionData": {
-   "missingNumber": 5,
-   "progression": [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
-   }
-   }
-7. Отправить запрос
-8. Получить ответ, например,
-   {
-   "message": "Правильно!"
-   }
---------------------------------------------------
-Check path: public
---------------------------------------------------
-Total ok: 2
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/PHP/PHP_Biushkina_EI
-Задание Task03
-task from branch: Task03
-creation date: 03/01/2025 13:56:22
+Задание4
+task from branch: master
+creation date: 03/17/2025 18:47:22
+Checking script check_master.ps1 not found
 PHP_Borcajkin_IA
 PHP_CHadova_AA
 PHP_CHernomorskij_MM
@@ -85,14 +70,105 @@ PHP_Mezin_RV
 PHP_Moiseev_AA
 PHP_Mugrychyov_VD
 PHP_Nadkin_IS
+=====================================================
+/home/andrey/labs/PHP/PHP_Nadkin_IS
+Из github.com-mrsu:andpop-mrsu/PHP_Nadkin_IS
+Из github.com-mrsu:andpop-mrsu/PHP_Nadkin_IS
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs/PHP/PHP_Nadkin_IS/Task04
+--------------------------------------------------
+Check path: README.md
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
+
+## About Laravel
+
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
+
+## Learning Laravel
+
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+
+## Laravel Sponsors
+
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+
+### Premium Partners
+
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[WebReinvent](https://webreinvent.com/)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Jump24](https://jump24.co.uk)**
+- **[Redberry](https://redberry.international/laravel/)**
+- **[Active Logic](https://activelogic.com)**
+- **[byte5](https://byte5.de)**
+- **[OP.GG](https://op.gg)**
+
+## Contributing
+
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+
+## Code of Conduct
+
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+--------------------------------------------------
+Total ok: 1
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/PHP/PHP_Nadkin_IS
+Task04
+task from branch: Task04
+creation date: 03/17/2025 13:49:02
 PHP_Nechiporuk_NA
 PHP_Nizhegorodov_YAN
 PHP_Pashkov_EYU
 PHP_Polevshchikov_DP
+PHP_Polushatov_AS
+PHP_Polushkin_SP
+PHP_Puchkin_IYU
 =====================================================
-/home/andrey/labs/PHP/PHP_Polevshchikov_DP
-Из github.com-mrsu:andpop-mrsu/PHP_Polevshchikov_DP
-Из github.com-mrsu:andpop-mrsu/PHP_Polevshchikov_DP
+/home/andrey/labs/PHP/PHP_Puchkin_IYU
+Из github.com-mrsu:andpop-mrsu/PHP_Puchkin_IYU
+Из github.com-mrsu:andpop-mrsu/PHP_Puchkin_IYU
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
 Уже актуально.
@@ -100,59 +176,135 @@ error: внешний репозиторий student уже существует
 error: внешний репозиторий student уже существует
 Уже актуально.
 --------------------------------------------------
-Task:  /home/andrey/labs/PHP/PHP_Polevshchikov_DP/Task03
+Task:  /home/andrey/labs/PHP/PHP_Puchkin_IYU/Task04
 --------------------------------------------------
 Check path: README.md
-# Игра "Наибольший общий делитель"
+# GCD Game (Laravel Edition)
+
+**GCD Game** — это веб-приложение, в котором игроку предлагается вычислить наибольший общий делитель (НОД) двух чисел. Новая версия игры разработана на PHP с использованием фреймворка Laravel, базы данных SQLite и REST API для взаимодействия с сервером. 
+
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+
+---
+
+## О проекте
+
+**GCD Game (Laravel Edition)** — это переработанная версия оригинальной игры "Наибольший общий делитель", теперь использующая мощь и элегантность фреймворка Laravel. Игра сохраняет свою суть: генерация случайных чисел, проверка ответа игрока и сохранение результатов, но теперь с улучшенной архитектурой и современным подходом к разработке.
+
+---
+
+## Установка и запуск
+
+### Требования
+- PHP 8.1 или выше
+- Composer
+- SQLite (встроен в PHP)
+
+### Локальная установка
+1. Клонируйте репозиторий:
+   ```bash
+   git clone https://github.com/shindasayonara/GCD_Game_Laravel.git
+   ```
+
+2. Установите зависимости через Composer:
+    ```bash
+    composer install
+    ```
+
+3. Запустите встроенный сервер Laravel:
+    ```bash
+    php artisan serve
+    ```
+
+4. Откройте в браузере:
+    ```bash
+    http://127.0.0.1:8000
+    ```
+
+### Используемые технологии
+- PHP — основной язык разработки.
+
+- Laravel — фреймворк для создания веб-приложения и REST API.
+
+- SQLite — легковесная база данных для хранения игроков и игр.
+
+- Eloquent ORM — для работы с базой данных.
+
+- Blade — шаблонизатор для фронтенда.
+
+- Composer — управление зависимостями.
+
+- HTML/CSS/JavaScript — стилизация и интерактивность веб-интерфейса.
 
 
-## Установка через Github
-```sh
-git clone https://github.com/danilanomad/PHP_Polevshchikov_DP.git
-```
-## Требуемые библиотеки
-Для работы приложоения необходимо установить минифреймворк Slim
-Для этого нужно иметь установленный Composer и ввести в консоль следующие команды:
-- `composer require slim/slim "^4.0"`
-- `composer require slim/psr7`
+### Функции игры
+- Генерация двух случайных чисел (от 10 до 100) и вычисление их НОД.
+
+- Веб-интерфейс с поддержкой ввода имени игрока и ответа.
+
+- Сохранение результатов игр в базу данных SQLite.
+
+- REST API для создания игры (POST /games), отправки ответа (POST /step/{id}) и очистки базы (POST /clear).
+
+- Просмотр истории всех игр в модальном окне.
+
+- Очистка базы данных через веб-интерфейс.
+
+### Как играть
+- Откройте http://localhost:8000 в браузере.
+
+- Введите своё имя (или оставьте "Player") и нажмите "Начать игру".
+
+- Введите НОД для предложенных чисел и нажмите "Проверить".
+
+- Увидите результат (верно или неверно) и правильный ответ.
+
+- Нажмите "Показать историю" для просмотра всех игр.
+
+- Используйте "Очистить базу данных" для удаления всех записей.
 
 
-## Процесс запуска приложения
-
-1. Запуск локального веб-сервера командой:  
-   `php -S localhost:3000 -t public`
-
-2. Открытие в браузере страницы:  
-   [http://localhost:3000/](http://localhost:3000/)
-
-3. Введите имя в окно.
-
-4. Нажмите на кнопку "Начать игру".
-
-5. Введите ответ в соответствующее поле и нажмите "Ответить".
-
-6. Если хотите продолжить нажмите "Следующий ход" и затем введите следующий ответ
-
-7. Если в ходе использования приложения выводится ошибка базы данных, удалите оригинальный файл базы данных и начните игру заново.
-
-## Процесс запуска приложения
-Для работы приложения необходимо подключить SQLite3 и PDO
-
-Для этого в файле php.ini нужно добавить строчки `extension=sqlite3` и `extension=pdo_sqlite` без комментирования
+## Ссылки
+- [Репозиторий на GitHub](https://github.com/shindasayonara/GCD_Game_Laravel)
+- Автор: **shindasayonara**
+- Лицензия: **MIT**
 --------------------------------------------------
-Check path: public
---------------------------------------------------
-Total ok: 2
+Total ok: 1
 Total error: 0
 --------------------------------------------------
-/home/andrey/labs/PHP/PHP_Polevshchikov_DP
-Добавлено задание 3
-task from branch: Task03
-creation date: 03/06/2025 08:52:04
-PS>TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> $global:?
-True
+/home/andrey/labs/PHP/PHP_Puchkin_IYU
+Task04
+task from branch: Task04
+creation date: 03/20/2025 21:16:49
+=====================================================
+/home/andrey/labs/PHP/PHP_Puchkin_IYU
+Из github.com-mrsu:andpop-mrsu/PHP_Puchkin_IYU
+Из github.com-mrsu:andpop-mrsu/PHP_Puchkin_IYU
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Уже актуально.
+1
+task from branch: master
+creation date: 03/20/2025 20:55:21
+Checking script check_master.ps1 not found
+PHP_Repnikov_MA
+PHP_Rybina_EA
+PHP_Savelev_AI
+PHP_SHegurov_AM
+PHP_SHerstnyov_KI
+PHP_SHokov_DR
+PHP_SHurygina_KN
+PHP_Slushkin_DV
+PHP_Tazin_AN
+PHP_Tenyakshev_MA
+PHP_YUdakov_SA
+PHP_Zaglumonina_AI
+PHP_Zaharova_EA
+PHP_ZHarkov_KS
+**********************
+PowerShell transcript end
+End time: 20250322200130
+**********************

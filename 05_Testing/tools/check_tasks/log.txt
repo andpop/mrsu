@@ -1,58 +1,163 @@
 **********************
 PowerShell transcript start
-Start time: 20250306202623
+Start time: 20250322062847
 **********************
 Transcript started, output file is log.txt
 202M_Testing_Adepa_IV
 202M_Testing_Antoshechkin_AYU
 202M_Testing_Arhipov_KA
 202M_Testing_Bikmurzin_DR
-=====================================================
-/home/andrey/labs/202M_Testing/202M_Testing_Bikmurzin_DR
-Из github.com-mrsu:andpop-mrsu/202M_Testing_Bikmurzin_DR
-Из github.com-mrsu:andpop-mrsu/202M_Testing_Bikmurzin_DR
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Уже актуально.
---------------------------------------------------
-Task:  /home/andrey/labs/202M_Testing/202M_Testing_Bikmurzin_DR/Task03
---------------------------------------------------
-Total ok: 0
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/202M_Testing/202M_Testing_Bikmurzin_DR
-Task03_complete
-Task from branch: Task03
-Creation date: 02/22/2025 17:56:52
 202M_Testing_Bujnov_EA
 202M_Testing_Buzin_VA
 202M_Testing_Demidov_VA
 202M_Testing_Guryanov_MA
-202M_Testing_Kiryuhin_AA
-202M_Testing_Krasavcev_DO
 =====================================================
-/home/andrey/labs/202M_Testing/202M_Testing_Krasavcev_DO
-Из github.com-mrsu:andpop-mrsu/202M_Testing_Krasavcev_DO
-Из github.com-mrsu:andpop-mrsu/202M_Testing_Krasavcev_DO
+/home/andrey/labs/202M_Testing/202M_Testing_Guryanov_MA
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Guryanov_MA
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Guryanov_MA
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
 Уже актуально.
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Уже актуально.
+Из https://github.com/RayOneMan/202M_Testing_Guryanov_MA
+Из https://github.com/RayOneMan/202M_Testing_Guryanov_MA
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 169a331..aa2a18e
+Fast-forward (no commit created; -m option ignored)
+ Task03/report 03.pdf | Bin 0 -> 782011 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Task03/report 03.pdf
 --------------------------------------------------
-Task:  /home/andrey/labs/202M_Testing/202M_Testing_Krasavcev_DO/Task03
+Task:  /home/andrey/labs/202M_Testing/202M_Testing_Guryanov_MA/Task03
 --------------------------------------------------
 Total ok: 0
 Total error: 0
 --------------------------------------------------
-/home/andrey/labs/202M_Testing/202M_Testing_Krasavcev_DO
-Task03
+/home/andrey/labs/202M_Testing/202M_Testing_Guryanov_MA
+feat: Отчёт тестирования Ozon
 Task from branch: Task03
-Creation date: 03/03/2025 06:57:48
+Creation date: 03/21/2025 18:31:56
+To github.com-mrsu:andpop-mrsu/202M_Testing_Guryanov_MA.git
+To github.com-mrsu:andpop-mrsu/202M_Testing_Guryanov_MA.git
+   169a331..aa2a18e  master -> master
+   169a331..aa2a18e  master -> master
+=====================================================
+/home/andrey/labs/202M_Testing/202M_Testing_Guryanov_MA
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Guryanov_MA
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Guryanov_MA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Merge made by the 'ort' strategy.
+ Task02/report.pdf | Bin 0 -> 935742 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Task02/report.pdf
+--------------------------------------------------
+Task:  /home/andrey/labs/202M_Testing/202M_Testing_Guryanov_MA/Task02
+--------------------------------------------------
+Total ok: 0
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/202M_Testing/202M_Testing_Guryanov_MA
+feat: Отчёт тестирования FreeRoll
+Task from branch: Task02
+Creation date: 03/21/2025 18:02:27
+To github.com-mrsu:andpop-mrsu/202M_Testing_Guryanov_MA.git
+To github.com-mrsu:andpop-mrsu/202M_Testing_Guryanov_MA.git
+   aa2a18e..bcd9fd7  master -> master
+   aa2a18e..bcd9fd7  master -> master
+=====================================================
+/home/andrey/labs/202M_Testing/202M_Testing_Guryanov_MA
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Guryanov_MA
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Guryanov_MA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Merge made by the 'ort' strategy.
+ Task01/equation/equation.py            | 18 ++++++++++++++++++
+ Task01/equation/equation.txt           |  7 +++++++
+ Task01/test_class.py                   | 29 +++++++++++++++++++++++++++++
+ Task01/triangle_class.py               | 25 +++++++++++++++++++++++++
+ Task01/triangle_func/test_func.py      | 27 +++++++++++++++++++++++++++
+ Task01/triangle_func/triangle_func.py  | 30 ++++++++++++++++++++++++++++++
+ Task01/triangle_func/triangle_func.txt |  9 +++++++++
+ 7 files changed, 145 insertions(+)
+ create mode 100644 Task01/equation/equation.py
+ create mode 100644 Task01/equation/equation.txt
+ create mode 100644 Task01/test_class.py
+ create mode 100644 Task01/triangle_class.py
+ create mode 100644 Task01/triangle_func/test_func.py
+ create mode 100644 Task01/triangle_func/triangle_func.py
+ create mode 100644 Task01/triangle_func/triangle_func.txt
+--------------------------------------------------
+Task:  /home/andrey/labs/202M_Testing/202M_Testing_Guryanov_MA/Task01
+--------------------------------------------------
+Check path: check.txt
+check.txt not found
+--------------------------------------------------
+Check path: triangle_func.py
+triangle_func.py not found
+--------------------------------------------------
+Check path: triangle_class.py
+--------------------------------------------------
+Check path: test_func.py
+test_func.py not found
+--------------------------------------------------
+Check path: test_class.py
+--------------------------------------------------
+Run: python3 triangle_func.py -v
+
+Execution fails
+--------------------------------------------------
+Run: python3 test_func.py -v
+
+Execution fails
+--------------------------------------------------
+Run: pytest -v
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/andrey/labs/202M_Testing/202M_Testing_Guryanov_MA/Task01
+collecting ... collected 12 items
+
+test_class.py::test_triangle_creation PASSED                             [  8%]
+test_class.py::test_invalid_triangle PASSED                              [ 16%]
+test_class.py::test_negative_sides PASSED                                [ 25%]
+test_class.py::test_zero_side PASSED                                     [ 33%]
+test_class.py::test_equilateral PASSED                                   [ 41%]
+test_class.py::test_isosceles PASSED                                     [ 50%]
+triangle_func/test_func.py::TestTriangleType::test_equilateral PASSED    [ 58%]
+triangle_func/test_func.py::TestTriangleType::test_invalid_triangle PASSED [ 66%]
+triangle_func/test_func.py::TestTriangleType::test_isosceles PASSED      [ 75%]
+triangle_func/test_func.py::TestTriangleType::test_negative_sides PASSED [ 83%]
+triangle_func/test_func.py::TestTriangleType::test_nonequilateral PASSED [ 91%]
+triangle_func/test_func.py::TestTriangleType::test_zero_side PASSED      [100%]
+
+============================== 12 passed in 0.04s ==============================
+--------------------------------------------------
+Total ok: 3
+Total error: 5
+--------------------------------------------------
+/home/andrey/labs/202M_Testing/202M_Testing_Guryanov_MA
+feat: Реализованны тест кейсы
+Task from branch: Task01
+Creation date: 03/21/2025 17:27:55
+To github.com-mrsu:andpop-mrsu/202M_Testing_Guryanov_MA.git
+To github.com-mrsu:andpop-mrsu/202M_Testing_Guryanov_MA.git
+   bcd9fd7..96d8d22  master -> master
+   bcd9fd7..96d8d22  master -> master
+202M_Testing_Kiryuhin_AA
+202M_Testing_Krasavcev_DO
 202M_Testing_Magicheva_KS
 202M_Testing_Makarov_NA
 202M_Testing_Malcev_NB
@@ -65,7 +170,125 @@ Creation date: 03/03/2025 06:57:48
 202M_Testing_Razumov_DS
 202M_Testing_Rodyushkin_VE
 202M_Testing_Ryazin_VA
+=====================================================
+/home/andrey/labs/202M_Testing/202M_Testing_Ryazin_VA
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Ryazin_VA
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Ryazin_VA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   82b4213..e390316  master     -> teacher/master
+   82b4213..e390316  master     -> teacher/master
+Обновление 82b4213..e390316
+Fast-forward
+ Task01/check.txt         |  35 +++++++++++++++++++++++++++++++++++
+ Task01/equation.py       |  18 ++++++++++++++++++
+ Task01/equation.txt      |  33 +++++++++++++++++++++++++++++++++
+ Task01/test_class.py     |  33 +++++++++++++++++++++++++++++++++
+ Task01/test_func.py      |  30 ++++++++++++++++++++++++++++++
+ Task01/triangle_class.py |  23 +++++++++++++++++++++++
+ Task01/triangle_func.py  |  43 +++++++++++++++++++++++++++++++++++++++++++
+ Task02/Task02.pdf        | Bin 0 -> 2291050 bytes
+ 8 files changed, 215 insertions(+)
+ create mode 100644 Task01/check.txt
+ create mode 100644 Task01/equation.py
+ create mode 100644 Task01/equation.txt
+ create mode 100644 Task01/test_class.py
+ create mode 100644 Task01/test_func.py
+ create mode 100644 Task01/triangle_class.py
+ create mode 100644 Task01/triangle_func.py
+ create mode 100644 Task02/Task02.pdf
+Из https://github.com/Vitaliy-Ryazin/202M_Testing_Ryazin_VA
+Из https://github.com/Vitaliy-Ryazin/202M_Testing_Ryazin_VA
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление e390316..d3301a2
+Fast-forward (no commit created; -m option ignored)
+ Task03/Task03.pdf | Bin 0 -> 2567988 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Task03/Task03.pdf
+--------------------------------------------------
+Task:  /home/andrey/labs/202M_Testing/202M_Testing_Ryazin_VA/Task03
+--------------------------------------------------
+Total ok: 0
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/202M_Testing/202M_Testing_Ryazin_VA
+Добавлено решение для Task03
+Task from branch: Task03
+Creation date: 03/21/2025 20:21:18
+To github.com-mrsu:andpop-mrsu/202M_Testing_Ryazin_VA.git
+To github.com-mrsu:andpop-mrsu/202M_Testing_Ryazin_VA.git
+   e390316..d3301a2  master -> master
+   e390316..d3301a2  master -> master
 202M_Testing_SHikin_IE
+=====================================================
+/home/andrey/labs/202M_Testing/202M_Testing_SHikin_IE
+Из github.com-mrsu:andpop-mrsu/202M_Testing_SHikin_IE
+Из github.com-mrsu:andpop-mrsu/202M_Testing_SHikin_IE
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   81f27eb..8340c59  master     -> teacher/master
+   81f27eb..8340c59  master     -> teacher/master
+Обновление 81f27eb..8340c59
+Fast-forward
+ .../test_class.cpython-311-pytest-8.3.4.pyc        | Bin 0 -> 13276 bytes
+ Task01/__pycache__/triangle_class.cpython-311.pyc  | Bin 0 -> 1957 bytes
+ Task01/__pycache__/triangle_func.cpython-311.pyc   | Bin 0 -> 2798 bytes
+ Task01/check.txt                                   |  13 +++++
+ Task01/equation.py                                 |  17 ++++++
+ Task01/equation.txt                                |   7 +++
+ Task01/test_class.py                               |  64 +++++++++++++++++++++
+ Task01/test_func.py                                |  41 +++++++++++++
+ Task01/triangle_class.py                           |  23 ++++++++
+ Task01/triangle_func.py                            |  58 +++++++++++++++++++
+ Task02/Task02.pdf                                  | Bin 0 -> 1494970 bytes
+ 11 files changed, 223 insertions(+)
+ create mode 100644 Task01/__pycache__/test_class.cpython-311-pytest-8.3.4.pyc
+ create mode 100644 Task01/__pycache__/triangle_class.cpython-311.pyc
+ create mode 100644 Task01/__pycache__/triangle_func.cpython-311.pyc
+ create mode 100644 Task01/check.txt
+ create mode 100644 Task01/equation.py
+ create mode 100644 Task01/equation.txt
+ create mode 100644 Task01/test_class.py
+ create mode 100644 Task01/test_func.py
+ create mode 100644 Task01/triangle_class.py
+ create mode 100644 Task01/triangle_func.py
+ create mode 100644 Task02/Task02.pdf
+Из https://github.com/luxepace/202M_Testing_SHikin_IE
+Из https://github.com/luxepace/202M_Testing_SHikin_IE
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 8340c59..0d9d467
+Fast-forward (no commit created; -m option ignored)
+ Task03/Task03.pdf | Bin 0 -> 1397282 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Task03/Task03.pdf
+--------------------------------------------------
+Task:  /home/andrey/labs/202M_Testing/202M_Testing_SHikin_IE/Task03
+--------------------------------------------------
+Total ok: 0
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/202M_Testing/202M_Testing_SHikin_IE
+Task03
+Task from branch: Task03
+Creation date: 03/21/2025 16:05:44
+To github.com-mrsu:andpop-mrsu/202M_Testing_SHikin_IE.git
+To github.com-mrsu:andpop-mrsu/202M_Testing_SHikin_IE.git
+   8340c59..0d9d467  master -> master
+   8340c59..0d9d467  master -> master
 202M_Testing_Slavkin_AS
 202M_Testing_Turchaeva_VN
 202M_Testing_Tutukov_ME
@@ -73,5 +296,5 @@ Creation date: 03/03/2025 06:57:48
 202M_Testing_ZHivaev_VD
 **********************
 PowerShell transcript end
-End time: 20250306202645
+End time: 20250322063549
 **********************

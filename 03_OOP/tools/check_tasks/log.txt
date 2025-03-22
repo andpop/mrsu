@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20250306202738
+Start time: 20250322063602
 **********************
 Transcript started, output file is log.txt
 301_OOP_Abdrashitov_SA
@@ -12,208 +12,6 @@ Transcript started, output file is log.txt
 301_OOP_Kelmyashkin_DV
 301_OOP_Klimentev_AA
 301_OOP_Klyuchkina_EV
-=====================================================
-/home/andrey/labs/302_OOP/301_OOP_Klyuchkina_EV
-Из github.com-mrsu:andpop-mrsu/301_OOP_Klyuchkina_EV
-Из github.com-mrsu:andpop-mrsu/301_OOP_Klyuchkina_EV
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-Из https://github.com/kljuchkinaev/301_OOP_Klyuchkina_EV
-Из https://github.com/kljuchkinaev/301_OOP_Klyuchkina_EV
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Обновление 784bf7a..e474968
-Fast-forward (no commit created; -m option ignored)
- Task03/Student.php     |  85 ++++++++++++++++++++++++
- Task03/StudentList.php |  36 +++++++++++
- Task03/Students.txt    |   1 +
- Task03/Test.php        | 171 +++++++++++++++++++++++++++++++++++++++++++++++++
- Task03/run_test.php    |   7 ++
- 5 files changed, 300 insertions(+)
- create mode 100644 Task03/Student.php
- create mode 100644 Task03/StudentList.php
- create mode 100644 Task03/Students.txt
- create mode 100644 Task03/Test.php
- create mode 100644 Task03/run_test.php
---------------------------------------------------
-Task:  /home/andrey/labs/302_OOP/301_OOP_Klyuchkina_EV/Task03
---------------------------------------------------
-Check path: Book.php
-Book.php not found
---------------------------------------------------
-Check path: BooksList.php
-BooksList.php not found
---------------------------------------------------
-Check path: Test.php
---------------------------------------------------
-Check path: run_test.php
-<?php
-
-require_once('Student.php');
-require_once('StudentList.php');
-require_once('Test.php');
-
-runTest();
---------------------------------------------------
-Run: php run_test.php
-
-TEST1 (Тест toString)
-Ожидается: 
-Id: 1
-Фамилия: Belokosov
-Имя: Maxim
-Факультет: FMIIT
-Группа: 301
-
-Получено: 
-Id: 1
-Фамилия: Belokosov
-Имя: Maxim
-Факультет: FMIIT
-Группа: 301
-
-Тест пройден
-
-TEST2 (тест Интерфейса)
-Ожидается: 
-Id: 1
-Фамилия: Ivanov
-Имя: Maxim
-Факультет: IES
-Группа: 301
-
-Получено: 
-Id: 1
-Фамилия: Ivanov
-Имя: Maxim
-Факультет: IES
-Группа: 301
-
-Тест пройден
-
-TEST3 (тест геттеров)
-Ожидается: 3
-Получено: 3
-Тест пройден
-Ожидается: Ivanov
-Получено: Ivanov
-Тест пройден
-Ожидается: Maxim
-Получено: Maxim
-Тест пройден
-Ожидается: 301
-Получено: 301
-Тест пройден
-Ожидается: IES
-Получено: IES
-Тест пройден
-
-TEST4 (авто-инкремент)
-Ожидается: 1
-Получено: 1
-Тест пройден
-Ожидается: 2
-Получено: 2
-Тест пройден
-Ожидается: 3
-Получено: 3
-Тест пройден
-
-TEST5 (тестирование add/get StudentList)
-Ожидается: 
-Id: 1
-Фамилия: Ivanov
-Имя: Maxim
-Факультет: IES
-Группа: 301
-
-Получено: 
-Id: 1
-Фамилия: Ivanov
-Имя: Maxim
-Факультет: IES
-Группа: 301
-
-Тест пройден
-
-TEST6 (тест count StudentList)
-Ожидается: 
-3
-Получено: 
-3
-Тест пройден
-
-TEST7 (тест get запрос несуществующего элемента)
-Тест пройден
-
-TEST8 store
-Тест пройден
-
-TEST9 load
-Тест пройден
---------------------------------------------------
-Run: phpcs --standard=PSR12 ./*
-
-FILE: /home/andrey/labs/302_OOP/301_OOP_Klyuchkina_EV/Task03/run_test.php
--------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------
- 7 | ERROR | [x] Expected 1 newline at end of file; 0 found
--------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------
-
-
-FILE: /home/andrey/labs/302_OOP/301_OOP_Klyuchkina_EV/Task03/Student.php
-------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-------------------------------------------------------------------------
- 85 | ERROR | [x] Expected 1 newline at end of file; 0 found
-------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-------------------------------------------------------------------------
-
-
-FILE: /home/andrey/labs/302_OOP/301_OOP_Klyuchkina_EV/Task03/StudentList.php
-----------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------------
- 36 | ERROR | [x] Expected 1 newline at end of file; 0 found
-----------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-----------------------------------------------------------------------------
-
-
-FILE: /home/andrey/labs/302_OOP/301_OOP_Klyuchkina_EV/Task03/Test.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------
- 171 | ERROR | [x] Expected 1 newline at end of file; 0 found
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-----------------------------------------------------------------------
-
-Time: 189ms; Memory: 8MB
-Execution fails
---------------------------------------------------
-Total ok: 3
-Total error: 3
---------------------------------------------------
-/home/andrey/labs/302_OOP/301_OOP_Klyuchkina_EV
-Task03
-Task from branch: Task03
-Creation date: 03/06/2025 08:44:40
-To github.com-mrsu:andpop-mrsu/301_OOP_Klyuchkina_EV.git
-To github.com-mrsu:andpop-mrsu/301_OOP_Klyuchkina_EV.git
-   784bf7a..e474968  master -> master
-   784bf7a..e474968  master -> master
 301_OOP_Korpachan_NV
 301_OOP_Kudashkina_OS
 301_OOP_Ponomarev_MA
@@ -223,721 +21,258 @@ To github.com-mrsu:andpop-mrsu/301_OOP_Klyuchkina_EV.git
 301_OOP_Yunusov_AR
 302_OOP_Baranov_EA
 302_OOP_Borcov_ID
-=====================================================
-/home/andrey/labs/302_OOP/302_OOP_Borcov_ID
-Из github.com-mrsu:andpop-mrsu/302_OOP_Borcov_ID
-Из github.com-mrsu:andpop-mrsu/302_OOP_Borcov_ID
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-Из https://github.com/ZerolLka/302_OOP_Borcov_ID
-Из https://github.com/ZerolLka/302_OOP_Borcov_ID
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Merge made by the 'ort' strategy.
- Task03/StudentsList.dat     | Bin 0 -> 483 bytes
- Task03/run_test.php         |   7 ++
- Task03/src/Student.php      |  88 +++++++++++++++++++++++
- Task03/src/StudentsList.php |  37 ++++++++++
- Task03/students.dat         | Bin 0 -> 484 bytes
- Task03/tests/Test.php       | 170 ++++++++++++++++++++++++++++++++++++++++++++
- 6 files changed, 302 insertions(+)
- create mode 100644 Task03/StudentsList.dat
- create mode 100644 Task03/run_test.php
- create mode 100644 Task03/src/Student.php
- create mode 100644 Task03/src/StudentsList.php
- create mode 100644 Task03/students.dat
- create mode 100644 Task03/tests/Test.php
---------------------------------------------------
-Task:  /home/andrey/labs/302_OOP/302_OOP_Borcov_ID/Task03
---------------------------------------------------
-Check path: Book.php
-Book.php not found
---------------------------------------------------
-Check path: BooksList.php
-BooksList.php not found
---------------------------------------------------
-Check path: Test.php
-Test.php not found
---------------------------------------------------
-Check path: run_test.php
-<?php
-
-require_once 'src/Student.php';
-require_once 'src/StudentsList.php';
-require_once 'tests/Test.php';
-
-runTest();
---------------------------------------------------
-Run: php run_test.php
-Ожидается:
-Id: 1
-Фамилия: Иванов
-Имя: Сергей
-Факультет: ФМиИТ
-Курс: 3
-Группа: 303
-
-Получено:
-Id: 1
-Фамилия: Иванов
-Имя: Сергей
-Факультет: ФМиИТ
-Курс: 3
-Группа: 303
-
-Тест пройден
-
-
-Ожидается:
-Id: 1
-Фамилия: Иванов
-Имя: Иван
-Факультет: ФМиИТ
-Курс: 4
-Группа: 401
-
-Получено:
-Id: 1
-Фамилия: Иванов
-Имя: Иван
-Факультет: ФМиИТ
-Курс: 4
-Группа: 401
-
-Тест пройден
-
-
-Ожидается:
-1
-
-Получено:
-1
-
-Тест пройден
-
-
-Ожидается:
-Иванов
-
-Получено:
-Иванов
-
-Тест пройден
-
-
-Ожидается:
-Иван
-
-Получено:
-Иван
-
-Тест пройден
-
-
-Ожидается:
-ФМиИТ
-
-Получено:
-ФМиИТ
-
-Тест пройден
-
-
-Ожидается:
-4
-
-Получено:
-4
-
-Тест пройден
-
-
-Ожидается:
-401
-
-Получено:
-401
-
-Тест пройден
-
-
-Ожидается:
-Id: 1
-Фамилия: Иванов
-Имя: Иван
-Факультет: ФМиИТ
-Курс: 4
-Группа: 401
-
-Получено:
-Id: 1
-Фамилия: Иванов
-Имя: Иван
-Факультет: ФМиИТ
-Курс: 4
-Группа: 401
-
-Тест пройден
-
-
-Ожидается:
-Id: 2
-Фамилия: Сидоров
-Имя: Александр
-Факультет: ФМиИТ
-Курс: 1
-Группа: 104
-
-Получено:
-Id: 2
-Фамилия: Сидоров
-Имя: Александр
-Факультет: ФМиИТ
-Курс: 1
-Группа: 104
-
-Тест пройден
-
-
-Ожидается:
-2
-
-Получено:
-2
-
-Тест пройден
-
-
-Ожидается:
-Id: 1
-Фамилия: Иванов
-Имя: Иван
-Факультет: ФМиИТ
-Курс: 4
-Группа: 401
-
-Получено:
-Id: 1
-Фамилия: Иванов
-Имя: Иван
-Факультет: ФМиИТ
-Курс: 4
-Группа: 401
-
-Тест пройден
-
-
-Ожидается:
-Id: 2
-Фамилия: Сидоров
-Имя: Александр
-Факультет: ФМиИТ
-Курс: 1
-Группа: 104
-
-Получено:
-Id: 2
-Фамилия: Сидоров
-Имя: Александр
-Факультет: ФМиИТ
-Курс: 1
-Группа: 104
-
-Тест пройден
---------------------------------------------------
-Run: phpcs --standard=PSR12 ./*
-
-FILE: /home/andrey/labs/302_OOP/302_OOP_Borcov_ID/Task03/src/StudentsList.php
-----------------------------------------------------------------------------------------------------
-FOUND 2 ERRORS AFFECTING 2 LINES
-----------------------------------------------------------------------------------------------------
-  3 | ERROR | [ ] Each class must be in a namespace of at least one level (a top-level vendor name)
- 37 | ERROR | [x] Expected 1 newline at end of file; 0 found
-----------------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-----------------------------------------------------------------------------------------------------
-
-
-FILE: /home/andrey/labs/302_OOP/302_OOP_Borcov_ID/Task03/src/Student.php
-----------------------------------------------------------------------------------------------------
-FOUND 2 ERRORS AFFECTING 2 LINES
-----------------------------------------------------------------------------------------------------
-  3 | ERROR | [ ] Each class must be in a namespace of at least one level (a top-level vendor name)
- 88 | ERROR | [x] Expected 1 newline at end of file; 0 found
-----------------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-----------------------------------------------------------------------------------------------------
-
-
-FILE: /home/andrey/labs/302_OOP/302_OOP_Borcov_ID/Task03/tests/Test.php
------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
------------------------------------------------------------------------
- 170 | ERROR | [x] Expected 1 newline at end of file; 0 found
------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
------------------------------------------------------------------------
-
-
-FILE: /home/andrey/labs/302_OOP/302_OOP_Borcov_ID/Task03/run_test.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------
- 7 | ERROR | [x] Expected 1 newline at end of file; 0 found
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-----------------------------------------------------------------------
-
-Time: 129ms; Memory: 8MB
-Execution fails
---------------------------------------------------
-Total ok: 2
-Total error: 4
---------------------------------------------------
-/home/andrey/labs/302_OOP/302_OOP_Borcov_ID
-Задание Task03
-Task from branch: Task03
-Creation date: 03/06/2025 09:42:04
-To github.com-mrsu:andpop-mrsu/302_OOP_Borcov_ID.git
-To github.com-mrsu:andpop-mrsu/302_OOP_Borcov_ID.git
-   afc956e..aaf9a42  master -> master
-   afc956e..aaf9a42  master -> master
 302_OOP_Chumakov_VA
 302_OOP_Egorov_AS
-=====================================================
-/home/andrey/labs/302_OOP/302_OOP_Egorov_AS
-Из github.com-mrsu:andpop-mrsu/302_OOP_Egorov_AS
-Из github.com-mrsu:andpop-mrsu/302_OOP_Egorov_AS
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-Из https://github.com/Eario13/302_OOP_Egorov_AS
-Из https://github.com/Eario13/302_OOP_Egorov_AS
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Merge made by the 'ort' strategy.
- Task03/StudentsList         | Bin 0 -> 534 bytes
- Task03/run_test.php         |   9 +++
- Task03/src/Student.php      |  42 ++++++++++++
- Task03/src/StudentsList.php |  36 ++++++++++
- Task03/tests/Test.php       | 158 ++++++++++++++++++++++++++++++++++++++++++++
- 5 files changed, 245 insertions(+)
- create mode 100644 Task03/StudentsList
- create mode 100644 Task03/run_test.php
- create mode 100644 Task03/src/Student.php
- create mode 100644 Task03/src/StudentsList.php
- create mode 100644 Task03/tests/Test.php
---------------------------------------------------
-Task:  /home/andrey/labs/302_OOP/302_OOP_Egorov_AS/Task03
---------------------------------------------------
-Check path: Book.php
-Book.php not found
---------------------------------------------------
-Check path: BooksList.php
-BooksList.php not found
---------------------------------------------------
-Check path: Test.php
-Test.php not found
---------------------------------------------------
-Check path: run_test.php
-<?php
-
-require_once 'src/Student.php';
-require_once 'src/StudentsList.php';
-require_once 'tests/Test.php';
-
-use function App\runTest; 
-
-runTest(); // Теперь функция найдена
---------------------------------------------------
-Run: php run_test.php
-Ожидается:
-Id: 1
-Фамилия: Петров
-Имя: Сергей
-Факультет: ФМиИТ
-Курс: 3
-Группа: 303
-
-
-Получено:
-Id: 1
-Фамилия: Петров
-Имя: Сергей
-Факультет: ФМиИТ
-Курс: 3
-Группа: 303
-
-
-Тест пройден
-
-
-Ожидается:
-Id: 1
-Фамилия: Иванов
-Имя: Алексей
-Факультет: ФМиИТ
-Курс: 4
-Группа: 405
-
-
-Получено:
-Id: 1
-Фамилия: Иванов
-Имя: Алексей
-Факультет: ФМиИТ
-Курс: 4
-Группа: 405
-
-
-Тест пройден
-
-
-Ожидается:
-1
-
-Получено:
-1
-
-Тест пройден
-
-
-Ожидается:
-Иванов
-
-Получено:
-Иванов
-
-Тест пройден
-
-
-Ожидается:
-Алексей
-
-Получено:
-Алексей
-
-Тест пройден
-
-
-Ожидается:
-ФМиИТ
-
-Получено:
-ФМиИТ
-
-Тест пройден
-
-
-Ожидается:
-4
-
-Получено:
-4
-
-Тест пройден
-
-
-Ожидается:
-405
-
-Получено:
-405
-
-Тест пройден
-
-
-Ожидается:
-Id: 1
-Фамилия: Иванов
-Имя: Алексей
-Факультет: ФМиИТ
-Курс: 4
-Группа: 405
-
-
-Получено:
-Id: 1
-Фамилия: Иванов
-Имя: Алексей
-Факультет: ФМиИТ
-Курс: 4
-Группа: 405
-
-
-Тест пройден
-
-
-Ожидается:
-Id: 2
-Фамилия: Смирнов
-Имя: Дмитрий
-Факультет: ФМиИТ
-Курс: 1
-Группа: 104
-
-
-Получено:
-Id: 2
-Фамилия: Смирнов
-Имя: Дмитрий
-Факультет: ФМиИТ
-Курс: 1
-Группа: 104
-
-
-Тест пройден
-
-
-Ожидается:
-2
-
-Получено:
-2
-
-Тест пройден
-
-
-Ожидается:
-Id: 1
-Фамилия: Иванов
-Имя: Алексей
-Факультет: ФМиИТ
-Курс: 4
-Группа: 405
-
-
-Получено:
-Id: 1
-Фамилия: Иванов
-Имя: Алексей
-Факультет: ФМиИТ
-Курс: 4
-Группа: 405
-
-
-Тест пройден
-
-
-Ожидается:
-Id: 2
-Фамилия: Смирнов
-Имя: Дмитрий
-Факультет: ФМиИТ
-Курс: 1
-Группа: 104
-
-
-Получено:
-Id: 2
-Фамилия: Смирнов
-Имя: Дмитрий
-Факультет: ФМиИТ
-Курс: 1
-Группа: 104
-
-
-Тест пройден
---------------------------------------------------
-Run: phpcs --standard=PSR12 ./*
-
-FILE: /home/andrey/labs/302_OOP/302_OOP_Egorov_AS/Task03/src/Student.php
--------------------------------------------------------------------------
-FOUND 38 ERRORS AND 1 WARNING AFFECTING 12 LINES
--------------------------------------------------------------------------
- 25 | ERROR   | [x] Opening brace should be on a new line
- 25 | ERROR   | [x] Opening brace must be the last content on the line
- 25 | ERROR   | [x] Closing brace must be on a line by itself
- 26 | ERROR   | [x] Opening brace should be on a new line
- 26 | ERROR   | [x] Opening brace must be the last content on the line
- 26 | ERROR   | [x] Closing brace must be on a line by itself
- 27 | ERROR   | [x] Opening brace should be on a new line
- 27 | ERROR   | [x] Opening brace must be the last content on the line
- 27 | ERROR   | [x] Closing brace must be on a line by itself
- 28 | ERROR   | [x] Opening brace should be on a new line
- 28 | ERROR   | [x] Opening brace must be the last content on the line
- 28 | ERROR   | [x] Closing brace must be on a line by itself
- 29 | ERROR   | [x] Opening brace should be on a new line
- 29 | ERROR   | [x] Opening brace must be the last content on the line
- 29 | ERROR   | [x] Closing brace must be on a line by itself
- 30 | ERROR   | [x] Opening brace should be on a new line
- 30 | ERROR   | [x] Opening brace must be the last content on the line
- 30 | ERROR   | [x] Closing brace must be on a line by itself
- 32 | ERROR   | [x] Opening brace should be on a new line
- 32 | ERROR   | [x] Opening brace must be the last content on the line
- 32 | ERROR   | [x] Each PHP statement must be on a line by itself
- 32 | ERROR   | [x] Closing brace must be on a line by itself
- 33 | ERROR   | [x] Opening brace should be on a new line
- 33 | ERROR   | [x] Opening brace must be the last content on the line
- 33 | ERROR   | [x] Each PHP statement must be on a line by itself
- 33 | ERROR   | [x] Closing brace must be on a line by itself
- 34 | ERROR   | [x] Opening brace should be on a new line
- 34 | ERROR   | [x] Opening brace must be the last content on the line
- 34 | ERROR   | [x] Each PHP statement must be on a line by itself
- 34 | ERROR   | [x] Closing brace must be on a line by itself
- 35 | ERROR   | [x] Opening brace should be on a new line
- 35 | ERROR   | [x] Opening brace must be the last content on the line
- 35 | ERROR   | [x] Each PHP statement must be on a line by itself
- 35 | ERROR   | [x] Closing brace must be on a line by itself
- 36 | ERROR   | [x] Opening brace should be on a new line
- 36 | ERROR   | [x] Opening brace must be the last content on the line
- 36 | ERROR   | [x] Each PHP statement must be on a line by itself
- 36 | ERROR   | [x] Closing brace must be on a line by itself
- 40 | WARNING | [ ] Line exceeds 120 characters; contains 159 characters
--------------------------------------------------------------------------
-PHPCBF CAN FIX THE 38 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------
-
-
-FILE: /home/andrey/labs/302_OOP/302_OOP_Egorov_AS/Task03/run_test.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------
- 7 | ERROR | [x] Whitespace found at end of line
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-----------------------------------------------------------------------
-
-Time: 138ms; Memory: 8MB
-Execution fails
---------------------------------------------------
-Total ok: 2
-Total error: 4
---------------------------------------------------
-/home/andrey/labs/302_OOP/302_OOP_Egorov_AS
-Выполненная ЛР3 Task03
-Task from branch: Task03
-Creation date: 03/06/2025 08:41:11
-To github.com-mrsu:andpop-mrsu/302_OOP_Egorov_AS.git
-To github.com-mrsu:andpop-mrsu/302_OOP_Egorov_AS.git
-   21995ed..b4e11be  master -> master
-   21995ed..b4e11be  master -> master
 302_OOP_Ganchenkov_AA
 302_OOP_Grachev_AV
+=====================================================
+/home/andrey/labs/302_OOP/302_OOP_Grachev_AV
+Из github.com-mrsu:andpop-mrsu/302_OOP_Grachev_AV
+Из github.com-mrsu:andpop-mrsu/302_OOP_Grachev_AV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   c2a528b..e7d6bd9  master     -> teacher/master
+   c2a528b..e7d6bd9  master     -> teacher/master
+Обновление c2a528b..e7d6bd9
+Fast-forward
+ task05.md | 64 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 64 insertions(+)
+ create mode 100644 task05.md
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Из https://github.com/artemaaaaaaaaaaaaaaaaaaa/302_OOP_Grachev_AV
+Из https://github.com/artemaaaaaaaaaaaaaaaaaaa/302_OOP_Grachev_AV
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task04     -> student/Task04
+   b16ee19..e7d6bd9  master     -> student/master
+   b16ee19..e7d6bd9  master     -> student/master
+Merge made by the 'ort' strategy.
+ Task04/composer.json                           |  10 +
+ Task04/src/Functions.php                       |  28 ++
+ Task04/src/Stack.php                           |  45 ++
+ Task04/src/StackInterface.php                  |  13 +
+ Task04/src/Test.php                            |  57 +++
+ Task04/src/run_test.php                        |   5 +
+ Task04/vendor/autoload.php                     |  25 ++
+ Task04/vendor/composer/ClassLoader.php         | 579 +++++++++++++++++++++++++
+ Task04/vendor/composer/InstalledVersions.php   | 378 ++++++++++++++++
+ Task04/vendor/composer/LICENSE                 |  21 +
+ Task04/vendor/composer/autoload_classmap.php   |  10 +
+ Task04/vendor/composer/autoload_files.php      |  10 +
+ Task04/vendor/composer/autoload_namespaces.php |   9 +
+ Task04/vendor/composer/autoload_psr4.php       |  10 +
+ Task04/vendor/composer/autoload_real.php       |  48 ++
+ Task04/vendor/composer/autoload_static.php     |  40 ++
+ Task04/vendor/composer/installed.json          |   5 +
+ Task04/vendor/composer/installed.php           |  23 +
+ 18 files changed, 1316 insertions(+)
+ create mode 100644 Task04/composer.json
+ create mode 100644 Task04/src/Functions.php
+ create mode 100644 Task04/src/Stack.php
+ create mode 100644 Task04/src/StackInterface.php
+ create mode 100644 Task04/src/Test.php
+ create mode 100644 Task04/src/run_test.php
+ create mode 100644 Task04/vendor/autoload.php
+ create mode 100644 Task04/vendor/composer/ClassLoader.php
+ create mode 100644 Task04/vendor/composer/InstalledVersions.php
+ create mode 100644 Task04/vendor/composer/LICENSE
+ create mode 100644 Task04/vendor/composer/autoload_classmap.php
+ create mode 100644 Task04/vendor/composer/autoload_files.php
+ create mode 100644 Task04/vendor/composer/autoload_namespaces.php
+ create mode 100644 Task04/vendor/composer/autoload_psr4.php
+ create mode 100644 Task04/vendor/composer/autoload_real.php
+ create mode 100644 Task04/vendor/composer/autoload_static.php
+ create mode 100644 Task04/vendor/composer/installed.json
+ create mode 100644 Task04/vendor/composer/installed.php
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/302_OOP_Grachev_AV/Task04
+No composer.lock file present. Updating dependencies to latest instead of installing from lock file. See https://getcomposer.org/install for more information.
+No composer.lock file present. Updating dependencies to latest instead of installing from lock file. See https://getcomposer.org/install for more information.
+Loading composer repositories with package information
+Loading composer repositories with package information
+Updating dependencies
+Updating dependencies
+Nothing to modify in lock file
+Nothing to modify in lock file
+Writing lock file
+Writing lock file
+Installing dependencies from lock file (including require-dev)
+Installing dependencies from lock file (including require-dev)
+Nothing to install, update or remove
+Nothing to install, update or remove
+Generating autoload files
+Generating autoload files
+--------------------------------------------------
+Check path: composer.json
+{
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        },
+        "files": [
+            "src/Test.php"
+        ]
+    }
+}
+--------------------------------------------------
+Check path: src/Stack.php
+<?php
+
+namespace App;
+
+class Stack implements StackInterface
+{
+    private array $stack = [];
+
+    public function __construct(...$elements)
+    {
+        $this->push(...$elements);
+    }
+
+    public function push(...$elements): void
+    {
+        foreach ($elements as $element) {
+            $this->stack[] = $element;
+        }
+    }
+
+    public function pop()
+    {
+        return array_pop($this->stack) ?? null;
+    }
+
+    public function top()
+    {
+        return $this->stack[count($this->stack) - 1] ?? null;
+    }
+
+    public function isEmpty(): bool
+    {
+        return empty($this->stack);
+    }
+
+    public function copy(): Stack
+    {
+        return new Stack(...$this->stack);
+    }
+
+    public function __toString(): string
+    {
+        return "[" . implode("->", array_reverse($this->stack)) . "]";
+    }
+}
+--------------------------------------------------
+Check path: src/Test.php
+--------------------------------------------------
+Check path: src/run_test.php
+<?php
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+\App\runTest();
+--------------------------------------------------
+Run: php src/run_test.php
+Тестирование методов стека:
+Изначальный стек: [3->2->1]
+После вызова pop(), снятый элемент: 3
+Стек после pop(): [2->1]
+Элемент на вершине стека (top): 2
+Стек пуст? Нет
+Стек после push(4, 5): [5->4->2->1]
+Копия стека: [5->4->2->1]
+
+Тестирование функции проверки сбалансированности скобок:
+Строка '(ab[cd{}])' - Сбалансировано
+Строка '(ab[cd{})' - Не сбалансировано
+Строка '(ab[cd{]})' - Не сбалансировано
+
+Тестирование завершено.
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+FILE: /home/andrey/labs/302_OOP/302_OOP_Grachev_AV/Task04/src/run_test.php
+--------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+--------------------------------------------------------------------------
+ 5 | ERROR | [x] Expected 1 newline at end of file; 0 found
+--------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------
+
+
+FILE: /home/andrey/labs/302_OOP/302_OOP_Grachev_AV/Task04/src/Stack.php
+-----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-----------------------------------------------------------------------
+ 45 | ERROR | [x] Expected 1 newline at end of file; 0 found
+-----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-----------------------------------------------------------------------
+
+
+FILE: /home/andrey/labs/302_OOP/302_OOP_Grachev_AV/Task04/src/StackInterface.php
+--------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 13 | ERROR | [x] Expected 1 newline at end of file; 0 found
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /home/andrey/labs/302_OOP/302_OOP_Grachev_AV/Task04/src/Test.php
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 24 ERRORS AND 1 WARNING AFFECTING 24 LINES
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  1 | WARNING | [ ] A file should declare new symbols (classes, functions, constants, etc.) and cause no other side effects, or it should execute logic with
+    |         |     side effects, but should not do both. The first symbol is defined on line 8 and the first side effect is on line 6.
+  1 | ERROR   | [x] Header blocks must be separated by a single blank line
+ 10 | ERROR   | [x] Whitespace found at end of line
+ 12 | ERROR   | [x] Whitespace found at end of line
+ 13 | ERROR   | [x] Whitespace found at end of line
+ 15 | ERROR   | [x] Whitespace found at end of line
+ 17 | ERROR   | [x] Whitespace found at end of line
+ 19 | ERROR   | [x] Whitespace found at end of line
+ 20 | ERROR   | [x] Whitespace found at end of line
+ 22 | ERROR   | [x] Whitespace found at end of line
+ 24 | ERROR   | [x] Whitespace found at end of line
+ 26 | ERROR   | [x] Whitespace found at end of line
+ 28 | ERROR   | [x] Whitespace found at end of line
+ 30 | ERROR   | [x] Whitespace found at end of line
+ 32 | ERROR   | [x] Whitespace found at end of line
+ 34 | ERROR   | [x] Whitespace found at end of line
+ 36 | ERROR   | [x] Whitespace found at end of line
+ 38 | ERROR   | [x] Whitespace found at end of line
+ 40 | ERROR   | [x] Whitespace found at end of line
+ 41 | ERROR   | [x] Whitespace found at end of line
+ 44 | ERROR   | [x] Whitespace found at end of line
+ 46 | ERROR   | [x] Whitespace found at end of line
+ 49 | ERROR   | [x] Whitespace found at end of line
+ 51 | ERROR   | [x] Whitespace found at end of line
+ 54 | ERROR   | [x] Whitespace found at end of line
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 24 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Time: 139ms; Memory: 6MB
+Execution fails
+--------------------------------------------------
+Total ok: 5
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/302_OOP/302_OOP_Grachev_AV
+Task04
+Task from branch: Task04
+Creation date: 03/21/2025 18:15:52
+To github.com-mrsu:andpop-mrsu/302_OOP_Grachev_AV.git
+To github.com-mrsu:andpop-mrsu/302_OOP_Grachev_AV.git
+   e7d6bd9..cdd7c19  master -> master
+   e7d6bd9..cdd7c19  master -> master
 302_OOP_Klinov_AV
 302_OOP_Korotkevich_DA
 302_OOP_Krestyanskova_MA
 302_OOP_Novikov_ME
 302_OOP_Pyanzina_VD
-=====================================================
-/home/andrey/labs/302_OOP/302_OOP_Pyanzina_VD
-Из github.com-mrsu:andpop-mrsu/302_OOP_Pyanzina_VD
-Из github.com-mrsu:andpop-mrsu/302_OOP_Pyanzina_VD
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-Из https://github.com/iambadatnicknames/302_OOP_Pyanzina_VD
-Из https://github.com/iambadatnicknames/302_OOP_Pyanzina_VD
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Обновление 6eb588d..dcf336f
-Fast-forward (no commit created; -m option ignored)
- Task03/Book.php     |  85 ++++++++++++++++++++++++++++++++
- Task03/BookList.php |  36 ++++++++++++++
- Task03/Test.php     | 137 ++++++++++++++++++++++++++++++++++++++++++++++++++++
- Task03/run_test.php |   7 +++
- 4 files changed, 265 insertions(+)
- create mode 100644 Task03/Book.php
- create mode 100644 Task03/BookList.php
- create mode 100644 Task03/Test.php
- create mode 100644 Task03/run_test.php
---------------------------------------------------
-Task:  /home/andrey/labs/302_OOP/302_OOP_Pyanzina_VD/Task03
---------------------------------------------------
-Check path: Book.php
---------------------------------------------------
-Check path: BooksList.php
-BooksList.php not found
---------------------------------------------------
-Check path: Test.php
---------------------------------------------------
-Check path: run_test.php
-<?php
-
-require_once 'Book.php';
-require_once 'BooksList.php';
-require_once 'Test.php';
-
-runTest();
---------------------------------------------------
-Run: php run_test.php
-
-Execution fails
---------------------------------------------------
-Run: phpcs --standard=PSR12 ./*
-
-FILE: /home/andrey/labs/302_OOP/302_OOP_Pyanzina_VD/Task03/Book.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------
- 85 | ERROR | [x] Expected 1 newline at end of file; 0 found
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-----------------------------------------------------------------------
-
-
-FILE: /home/andrey/labs/302_OOP/302_OOP_Pyanzina_VD/Task03/BookList.php
------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
------------------------------------------------------------------------
- 36 | ERROR | [x] Expected 1 newline at end of file; 0 found
------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
------------------------------------------------------------------------
-
-
-FILE: /home/andrey/labs/302_OOP/302_OOP_Pyanzina_VD/Task03/run_test.php
------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
------------------------------------------------------------------------
- 7 | ERROR | [x] Expected 1 newline at end of file; 0 found
------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
------------------------------------------------------------------------
-
-
-FILE: /home/andrey/labs/302_OOP/302_OOP_Pyanzina_VD/Task03/Test.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------
- 137 | ERROR | [x] Expected 1 newline at end of file; 0 found
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-----------------------------------------------------------------------
-
-Time: 114ms; Memory: 8MB
-Execution fails
---------------------------------------------------
-Total ok: 3
-Total error: 3
---------------------------------------------------
-/home/andrey/labs/302_OOP/302_OOP_Pyanzina_VD
-Task03
-Task from branch: Task03
-Creation date: 03/06/2025 07:25:21
-To github.com-mrsu:andpop-mrsu/302_OOP_Pyanzina_VD.git
-To github.com-mrsu:andpop-mrsu/302_OOP_Pyanzina_VD.git
-   6eb588d..dcf336f  master -> master
-   6eb588d..dcf336f  master -> master
 302_OOP_Sergeev_SA
 302_OOP_Shestakov_VA
 302_OOP_Sheyanov_AV
@@ -946,7 +281,248 @@ To github.com-mrsu:andpop-mrsu/302_OOP_Pyanzina_VD.git
 302_OOP_Tenishev_RR
 302_OOP_Urenkov_YUYU
 302_OOP_Votyakov_MA
+=====================================================
+/home/andrey/labs/302_OOP/302_OOP_Votyakov_MA
+Из github.com-mrsu:andpop-mrsu/302_OOP_Votyakov_MA
+Из github.com-mrsu:andpop-mrsu/302_OOP_Votyakov_MA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   3ca79e6..95d9a94  master     -> teacher/master
+   3ca79e6..95d9a94  master     -> teacher/master
+Обновление 3ca79e6..95d9a94
+Fast-forward
+ task05.md | 64 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 64 insertions(+)
+ create mode 100644 task05.md
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Из https://github.com/Mih-gif/302_OOP_Votyakov_MA
+Из https://github.com/Mih-gif/302_OOP_Votyakov_MA
+   3ca79e6..c7deee3  Task04     -> student/Task04
+   3ca79e6..c7deee3  Task04     -> student/Task04
+error: Ваши локальные изменения в указанных файлах будут перезаписаны при слиянии:
+error: Ваши локальные изменения в указанных файлах будут перезаписаны при слиянии:
+	Task04/vendor/composer/autoload_real.php
+	Task04/vendor/composer/autoload_real.php
+	Task04/vendor/composer/autoload_static.php
+	Task04/vendor/composer/autoload_static.php
+Сделайте коммит или спрячьте ваши изменения перед слиянием веток.
+Сделайте коммит или спрячьте ваши изменения перед слиянием веток.
+error: Указанные неотслеживаемые файлы в рабочем каталоге будут перезаписаны при слиянии:
+error: Указанные неотслеживаемые файлы в рабочем каталоге будут перезаписаны при слиянии:
+	Task04/composer.lock
+	Task04/composer.lock
+	Task04/vendor/composer/InstalledVersions.php
+	Task04/vendor/composer/InstalledVersions.php
+	Task04/vendor/composer/autoload_files.php
+	Task04/vendor/composer/autoload_files.php
+	Task04/vendor/composer/installed.json
+	Task04/vendor/composer/installed.json
+	Task04/vendor/composer/installed.php
+	Task04/vendor/composer/installed.php
+Переместите эти файлы или удалите их перед переключением веток.
+Переместите эти файлы или удалите их перед переключением веток.
+Прерываю
+Прерываю
+Сбой при слиянии с помощью стратегии ort.
+Сбой при слиянии с помощью стратегии ort.
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/302_OOP_Votyakov_MA/Task04
+Installing dependencies from lock file (including require-dev)
+Installing dependencies from lock file (including require-dev)
+Verifying lock file contents can be installed on current platform.
+Verifying lock file contents can be installed on current platform.
+Nothing to install, update or remove
+Nothing to install, update or remove
+Generating autoload files
+Generating autoload files
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "mih-gif/task03",
+    "description": "task03",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        },
+        "files": [
+            "src/Test.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Mih-gif",
+            "email": "mihailgoo7@yandex.ru"
+        }
+    ],
+    "require": {}
+}
+--------------------------------------------------
+Check path: src/Stack.php
+<?php
+
+namespace App;
+
+interface StackInterface {
+    public function push(...$elements): void;
+    public function pop(): mixed;
+    public function top(): mixed;
+    public function isEmpty(): bool;
+    public function copy(): Stack;
+    public function __toString(): string;
+}
+
+class Stack implements StackInterface {
+    private $stack;
+
+    public function __construct(...$elements) {
+        $this->stack = [];
+        if (!empty($elements)) {
+            $this->push(...$elements);
+        }
+    }
+
+    public function push(...$elements): void {
+        foreach ($elements as $element) {
+            array_unshift($this->stack, $element);
+        }
+    }
+
+    public function pop(): mixed {
+        if ($this->isEmpty()) {
+            return null;
+        }
+        return array_shift($this->stack);
+    }
+
+    public function top(): mixed {
+        if ($this->isEmpty()) {
+            return null;
+        }
+        return $this->stack[0];
+    }
+
+    public function isEmpty(): bool {
+        return empty($this->stack);
+    }
+
+    public function copy(): Stack {
+        $newStack = new Stack();
+        $newStack->stack = $this->stack;
+        return $newStack;
+    }
+
+    public function __toString(): string {
+        return '[' . implode('->', $this->stack) . ']';
+    }
+}
+--------------------------------------------------
+Check path: src/Test.php
+--------------------------------------------------
+Check path: src/run_test.php
+<?php
+
+require_once '../vendor\autoload.php';
+require_once 'Test.php';
+runTest();
+--------------------------------------------------
+Run: php src/run_test.php
+
+Execution fails
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+FILE: /home/andrey/labs/302_OOP/302_OOP_Votyakov_MA/Task04/src/checkIfBalanced.php
+----------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------------------
+ 3 | ERROR | [x] Opening brace should be on a new line
+----------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------------------
+
+
+FILE: /home/andrey/labs/302_OOP/302_OOP_Votyakov_MA/Task04/src/run_test.php
+---------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+---------------------------------------------------------------------------
+ 5 | ERROR | [x] Expected 1 newline at end of file; 0 found
+---------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+---------------------------------------------------------------------------
+
+
+FILE: /home/andrey/labs/302_OOP/302_OOP_Votyakov_MA/Task04/src/Stack.php
+----------------------------------------------------------------------------------------
+FOUND 11 ERRORS AFFECTING 10 LINES
+----------------------------------------------------------------------------------------
+  5 | ERROR | [x] Opening brace of a interface must be on the line after the definition
+ 14 | ERROR | [ ] Each interface must be in a file by itself
+ 14 | ERROR | [x] Opening brace of a class must be on the line after the definition
+ 17 | ERROR | [x] Opening brace should be on a new line
+ 24 | ERROR | [x] Opening brace should be on a new line
+ 30 | ERROR | [x] Opening brace should be on a new line
+ 37 | ERROR | [x] Opening brace should be on a new line
+ 44 | ERROR | [x] Opening brace should be on a new line
+ 48 | ERROR | [x] Opening brace should be on a new line
+ 54 | ERROR | [x] Opening brace should be on a new line
+ 57 | ERROR | [x] Expected 1 newline at end of file; 0 found
+----------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 10 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------------------------
+
+
+FILE: /home/andrey/labs/302_OOP/302_OOP_Votyakov_MA/Task04/src/Test.php
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 26 ERRORS AND 1 WARNING AFFECTING 27 LINES
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+   1 | WARNING | [ ] A file should declare new symbols (classes, functions, constants, etc.) and cause no other side effects, or it should execute logic with
+     |         |     side effects, but should not do both. The first symbol is defined on line 5 and the first side effect is on line 3.
+  14 | ERROR   | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+  16 | ERROR   | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+  27 | ERROR   | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+  29 | ERROR   | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+  40 | ERROR   | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+  42 | ERROR   | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+  52 | ERROR   | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+  54 | ERROR   | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+  64 | ERROR   | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+  66 | ERROR   | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+  77 | ERROR   | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+  79 | ERROR   | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+  92 | ERROR   | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+  94 | ERROR   | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+  98 | ERROR   | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+ 100 | ERROR   | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+ 102 | ERROR   | [x] Whitespace found at end of line
+ 105 | ERROR   | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+ 107 | ERROR   | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+ 111 | ERROR   | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+ 113 | ERROR   | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+ 118 | ERROR   | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+ 120 | ERROR   | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+ 124 | ERROR   | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+ 126 | ERROR   | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+ 128 | ERROR   | [x] Expected 1 newline at end of file; 0 found
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 26 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Time: 97ms; Memory: 6MB
+Execution fails
+--------------------------------------------------
+Total ok: 4
+Total error: 2
+--------------------------------------------------
+/home/andrey/labs/302_OOP/302_OOP_Votyakov_MA
+Исправил запуск run_test.php и добавил стандарт PSR12
+Task from branch: Task04
+Creation date: 03/21/2025 19:38:57
+Everything up-to-date
+Everything up-to-date
 **********************
 PowerShell transcript end
-End time: 20250306204410
+End time: 20250322064128
 **********************
