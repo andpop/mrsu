@@ -25,7 +25,7 @@
 Например:
 ```
 compareStrings("ab#c", "ade##c");  // true
-compareStrings("a#c", "c");  // false
+compareStrings("a#c", "c");  // true
 compareStrings("abc###", "a#b#");  // true
 ```
 При решении воспользоваться абстрактным типом данных "стек". 
