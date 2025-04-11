@@ -1,322 +1,10 @@
 **********************
 PowerShell transcript start
-Start time: 20250328193544
+Start time: 20250411114315
 **********************
 Transcript started, output file is log.txt
 301_OOP_Abdrashitov_SA
 301_OOP_Balyaev_DS
-=====================================================
-/home/andrey/labs/302_OOP/301_OOP_Balyaev_DS
-Из github.com-mrsu:andpop-mrsu/301_OOP_Balyaev_DS
-Из github.com-mrsu:andpop-mrsu/301_OOP_Balyaev_DS
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-   9b4303a..ecb3347  master     -> teacher/master
-   9b4303a..ecb3347  master     -> teacher/master
-Обновление 9b4303a..ecb3347
-Fast-forward
- Task03/Students.txt | Bin 0 -> 804 bytes
- task05.md           |  64 ++++++++++++++++++++++++++++++++++++++++++++++++++++
- 2 files changed, 64 insertions(+)
- create mode 100644 Task03/Students.txt
- create mode 100644 task05.md
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Из https://github.com/godneverforget/301_OOP_Balyaev_DS
-Из https://github.com/godneverforget/301_OOP_Balyaev_DS
- * [новая ветка]     Task05     -> student/Task05
- * [новая ветка]     Task05     -> student/Task05
-Обновление ecb3347..dfe25c7
-Fast-forward (no commit created; -m option ignored)
- Task05/.gitignore                         |    1 +
- Task05/Task05_1/composer.json             |   13 +
- Task05/Task05_1/composer.lock             | 1589 +++++++++++++++++++++++++++++
- Task05/Task05_1/src/Student.php           |   85 ++
- Task05/Task05_1/src/StudentList.php       |   59 ++
- Task05/Task05_1/tests/StudentListTest.php |  131 +++
- Task05/Task05_2/composer.json             |   13 +
- Task05/Task05_2/composer.lock             | 1589 +++++++++++++++++++++++++++++
- Task05/Task05_2/src/Truncater.php         |   31 +
- Task05/Task05_2/tests/TruncaterTest.php   |   96 ++
- 10 files changed, 3607 insertions(+)
- create mode 100644 Task05/.gitignore
- create mode 100644 Task05/Task05_1/composer.json
- create mode 100644 Task05/Task05_1/composer.lock
- create mode 100644 Task05/Task05_1/src/Student.php
- create mode 100644 Task05/Task05_1/src/StudentList.php
- create mode 100644 Task05/Task05_1/tests/StudentListTest.php
- create mode 100644 Task05/Task05_2/composer.json
- create mode 100644 Task05/Task05_2/composer.lock
- create mode 100644 Task05/Task05_2/src/Truncater.php
- create mode 100644 Task05/Task05_2/tests/TruncaterTest.php
---------------------------------------------------
-Task:  /home/andrey/labs/302_OOP/301_OOP_Balyaev_DS/Task05/Task05_1
-Installing dependencies from lock file (including require-dev)
-Installing dependencies from lock file (including require-dev)
-Verifying lock file contents can be installed on current platform.
-Verifying lock file contents can be installed on current platform.
-Package operations: 25 installs, 0 updates, 0 removals
-Package operations: 25 installs, 0 updates, 0 removals
-    0 [>---------------------------]    0 [->--------------------------]
-    0 [>---------------------------]    0 [->--------------------------]
-  - Installing staabm/side-effects-detector (1.0.5): Extracting archive
-  - Installing staabm/side-effects-detector (1.0.5): Extracting archive
-  - Installing sebastian/version (6.0.0): Extracting archive
-  - Installing sebastian/version (6.0.0): Extracting archive
-  - Installing sebastian/type (6.0.2): Extracting archive
-  - Installing sebastian/type (6.0.2): Extracting archive
-  - Installing sebastian/recursion-context (7.0.0): Extracting archive
-  - Installing sebastian/recursion-context (7.0.0): Extracting archive
-  - Installing sebastian/object-reflector (5.0.0): Extracting archive
-  - Installing sebastian/object-reflector (5.0.0): Extracting archive
-  - Installing sebastian/object-enumerator (7.0.0): Extracting archive
-  - Installing sebastian/object-enumerator (7.0.0): Extracting archive
-  - Installing sebastian/global-state (8.0.0): Extracting archive
-  - Installing sebastian/global-state (8.0.0): Extracting archive
-  - Installing sebastian/exporter (7.0.0): Extracting archive
-  - Installing sebastian/exporter (7.0.0): Extracting archive
-  - Installing sebastian/environment (8.0.0): Extracting archive
-  - Installing sebastian/environment (8.0.0): Extracting archive
-  - Installing sebastian/diff (7.0.0): Extracting archive
-  - Installing sebastian/diff (7.0.0): Extracting archive
-  - Installing sebastian/comparator (7.0.1): Extracting archive
-  - Installing sebastian/comparator (7.0.1): Extracting archive
-  - Installing sebastian/cli-parser (4.0.0): Extracting archive
-  - Installing sebastian/cli-parser (4.0.0): Extracting archive
-  - Installing phpunit/php-timer (8.0.0): Extracting archive
-  - Installing phpunit/php-timer (8.0.0): Extracting archive
-  - Installing phpunit/php-text-template (5.0.0): Extracting archive
-  - Installing phpunit/php-text-template (5.0.0): Extracting archive
-  - Installing phpunit/php-invoker (6.0.0): Extracting archive
-  - Installing phpunit/php-invoker (6.0.0): Extracting archive
-  - Installing phpunit/php-file-iterator (6.0.0): Extracting archive
-  - Installing phpunit/php-file-iterator (6.0.0): Extracting archive
-  - Installing theseer/tokenizer (1.2.3): Extracting archive
-  - Installing theseer/tokenizer (1.2.3): Extracting archive
-  - Installing nikic/php-parser (v5.4.0): Extracting archive
-  - Installing nikic/php-parser (v5.4.0): Extracting archive
-  - Installing sebastian/lines-of-code (4.0.0): Extracting archive
-  - Installing sebastian/lines-of-code (4.0.0): Extracting archive
-  - Installing sebastian/complexity (5.0.0): Extracting archive
-  - Installing sebastian/complexity (5.0.0): Extracting archive
-  - Installing phpunit/php-code-coverage (12.1.0): Extracting archive
-  - Installing phpunit/php-code-coverage (12.1.0): Extracting archive
-  - Installing phar-io/version (3.2.1): Extracting archive
-  - Installing phar-io/version (3.2.1): Extracting archive
-  - Installing phar-io/manifest (2.0.4): Extracting archive
-  - Installing phar-io/manifest (2.0.4): Extracting archive
-  - Installing myclabs/deep-copy (1.13.0): Extracting archive
-  - Installing myclabs/deep-copy (1.13.0): Extracting archive
-  - Installing phpunit/phpunit (12.0.10): Extracting archive
-  - Installing phpunit/phpunit (12.0.10): Extracting archive
-  0/25 [>---------------------------]   0%
-  0/25 [>---------------------------]   0%
- 20/25 [======================>-----]  80%
- 20/25 [======================>-----]  80%
- 24/25 [==========================>-]  96%
- 24/25 [==========================>-]  96%
- 25/25 [============================] 100%
- 25/25 [============================] 100%
-Generating autoload files
-Generating autoload files
-23 packages you are using are looking for funding.
-23 packages you are using are looking for funding.
-Use the `composer fund` command to find out more!
-Use the `composer fund` command to find out more!
---------------------------------------------------
-Check path: composer.json
-{
-    "name": "godneverforget/task05_1",
-    "autoload": {
-        "psr-4": {
-            "App\\": "src/",
-            "Tests\\": "tests/"
-        },
-        "files": [ "src/Student.php" , "src/StudentList.php"]
-    }, 
-    "require-dev": {
-        "phpunit/phpunit": "^12.0"
-    }
-}
---------------------------------------------------
-Check path: src/StudentsList.php
-src/StudentsList.php not found
---------------------------------------------------
-Check path: src/BooksList.php
-src/BooksList.php not found
---------------------------------------------------
-Check path: tests/StudentsListTest.php
-tests/StudentsListTest.php not found
---------------------------------------------------
-Check path: tests/BooksListTest.php
-tests/BooksListTest.php not found
---------------------------------------------------
-Run: ./vendor/bin/phpunit --color tests
-PHPUnit 12.0.10 by Sebastian Bergmann and contributors.
-
-Runtime:       PHP 8.4.4
-
-........                                                            8 / 8 (100%)
-
-Time: 00:00.007, Memory: 6.00 MB
-
-OK (8 tests, 21 assertions)
---------------------------------------------------
-Run: phpcs --standard=PSR12 ./src/*
-
---------------------------------------------------
-Total ok: 3
-Total error: 2
---------------------------------------------------
-Task:  /home/andrey/labs/302_OOP/301_OOP_Balyaev_DS/Task05/Task05_2
-Installing dependencies from lock file (including require-dev)
-Installing dependencies from lock file (including require-dev)
-Verifying lock file contents can be installed on current platform.
-Verifying lock file contents can be installed on current platform.
-Package operations: 25 installs, 0 updates, 0 removals
-Package operations: 25 installs, 0 updates, 0 removals
-    0 [>---------------------------]    0 [->--------------------------]
-    0 [>---------------------------]    0 [->--------------------------]
-  - Installing staabm/side-effects-detector (1.0.5): Extracting archive
-  - Installing staabm/side-effects-detector (1.0.5): Extracting archive
-  - Installing sebastian/version (6.0.0): Extracting archive
-  - Installing sebastian/version (6.0.0): Extracting archive
-  - Installing sebastian/type (6.0.2): Extracting archive
-  - Installing sebastian/type (6.0.2): Extracting archive
-  - Installing sebastian/recursion-context (7.0.0): Extracting archive
-  - Installing sebastian/recursion-context (7.0.0): Extracting archive
-  - Installing sebastian/object-reflector (5.0.0): Extracting archive
-  - Installing sebastian/object-reflector (5.0.0): Extracting archive
-  - Installing sebastian/object-enumerator (7.0.0): Extracting archive
-  - Installing sebastian/object-enumerator (7.0.0): Extracting archive
-  - Installing sebastian/global-state (8.0.0): Extracting archive
-  - Installing sebastian/global-state (8.0.0): Extracting archive
-  - Installing sebastian/exporter (7.0.0): Extracting archive
-  - Installing sebastian/exporter (7.0.0): Extracting archive
-  - Installing sebastian/environment (8.0.0): Extracting archive
-  - Installing sebastian/environment (8.0.0): Extracting archive
-  - Installing sebastian/diff (7.0.0): Extracting archive
-  - Installing sebastian/diff (7.0.0): Extracting archive
-  - Installing sebastian/comparator (7.0.1): Extracting archive
-  - Installing sebastian/comparator (7.0.1): Extracting archive
-  - Installing sebastian/cli-parser (4.0.0): Extracting archive
-  - Installing sebastian/cli-parser (4.0.0): Extracting archive
-  - Installing phpunit/php-timer (8.0.0): Extracting archive
-  - Installing phpunit/php-timer (8.0.0): Extracting archive
-  - Installing phpunit/php-text-template (5.0.0): Extracting archive
-  - Installing phpunit/php-text-template (5.0.0): Extracting archive
-  - Installing phpunit/php-invoker (6.0.0): Extracting archive
-  - Installing phpunit/php-invoker (6.0.0): Extracting archive
-  - Installing phpunit/php-file-iterator (6.0.0): Extracting archive
-  - Installing phpunit/php-file-iterator (6.0.0): Extracting archive
-  - Installing theseer/tokenizer (1.2.3): Extracting archive
-  - Installing theseer/tokenizer (1.2.3): Extracting archive
-  - Installing nikic/php-parser (v5.4.0): Extracting archive
-  - Installing nikic/php-parser (v5.4.0): Extracting archive
-  - Installing sebastian/lines-of-code (4.0.0): Extracting archive
-  - Installing sebastian/lines-of-code (4.0.0): Extracting archive
-  - Installing sebastian/complexity (5.0.0): Extracting archive
-  - Installing sebastian/complexity (5.0.0): Extracting archive
-  - Installing phpunit/php-code-coverage (12.1.0): Extracting archive
-  - Installing phpunit/php-code-coverage (12.1.0): Extracting archive
-  - Installing phar-io/version (3.2.1): Extracting archive
-  - Installing phar-io/version (3.2.1): Extracting archive
-  - Installing phar-io/manifest (2.0.4): Extracting archive
-  - Installing phar-io/manifest (2.0.4): Extracting archive
-  - Installing myclabs/deep-copy (1.13.0): Extracting archive
-  - Installing myclabs/deep-copy (1.13.0): Extracting archive
-  - Installing phpunit/phpunit (12.0.10): Extracting archive
-  - Installing phpunit/phpunit (12.0.10): Extracting archive
-  0/25 [>---------------------------]   0%
-  0/25 [>---------------------------]   0%
- 20/25 [======================>-----]  80%
- 20/25 [======================>-----]  80%
- 24/25 [==========================>-]  96%
- 24/25 [==========================>-]  96%
- 25/25 [============================] 100%
- 25/25 [============================] 100%
-Generating autoload files
-Generating autoload files
-23 packages you are using are looking for funding.
-23 packages you are using are looking for funding.
-Use the `composer fund` command to find out more!
-Use the `composer fund` command to find out more!
---------------------------------------------------
-Check path: composer.json
-{
-    "name": "godneverforget/task05_2",
-    "autoload": {
-        "psr-4": {
-            "App\\": "src/",
-            "Tests\\": "tests/"
-        },
-        "files": [ "src/Truncater.php"]
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^12.0"
-    }
-}
---------------------------------------------------
-Check path: src/Truncater.php
-<?php
-
-namespace App;
-
-class Truncater
-{
-    private $options;
-
-    public static $defaultOptions = [
-        'separator' => '...',
-        'length' => 50,
-    ];
-
-    public function __construct(array $options = [])
-    {
-        $this->options = array_merge(self::$defaultOptions, $options);
-    }
-
-    public function truncate($string, $options = [])
-    {
-        $options = array_merge($this->options, $options);
-
-        if (strlen($string) > $options['length']) {
-            $newMessage = mb_substr($string, 0, $options['length']);
-            $newMessage .= $options['separator'];
-            return $newMessage;
-        } else {
-            return $string;
-        }
-    }
-}
---------------------------------------------------
-Check path: tests/TruncaterTest.php
---------------------------------------------------
-Run: ./vendor/bin/phpunit --color tests
-PHPUnit 12.0.10 by Sebastian Bergmann and contributors.
-
-Runtime:       PHP 8.4.4
-
-.........                                                           9 / 9 (100%)
-
-Time: 00:00.007, Memory: 6.00 MB
-
-OK (9 tests, 9 assertions)
---------------------------------------------------
-Run: phpcs --standard=PSR12 ./src/*
-
---------------------------------------------------
-Total ok: 5
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/302_OOP/301_OOP_Balyaev_DS
-Task05
-Task from branch: Task05
-Creation date: 03/28/2025 12:26:49
-To github.com-mrsu:andpop-mrsu/301_OOP_Balyaev_DS.git
-To github.com-mrsu:andpop-mrsu/301_OOP_Balyaev_DS.git
-   ecb3347..dfe25c7  master -> master
-   ecb3347..dfe25c7  master -> master
 301_OOP_Belokosov_MD
 301_OOP_Bikchurin_ESH
 301_OOP_Fajzullin_IR
@@ -324,129 +12,201 @@ To github.com-mrsu:andpop-mrsu/301_OOP_Balyaev_DS.git
 301_OOP_Kelmyashkin_DV
 301_OOP_Klimentev_AA
 301_OOP_Klyuchkina_EV
+301_OOP_Korpachan_NV
+301_OOP_Kudashkina_OS
+301_OOP_Ponomarev_MA
+301_OOP_Savickaya_MV
+301_OOP_Savina_YUV
 =====================================================
-/home/andrey/labs/302_OOP/301_OOP_Klyuchkina_EV
-Из github.com-mrsu:andpop-mrsu/301_OOP_Klyuchkina_EV
-Из github.com-mrsu:andpop-mrsu/301_OOP_Klyuchkina_EV
+/home/andrey/labs/302_OOP/301_OOP_Savina_YUV
+Из github.com-mrsu:andpop-mrsu/301_OOP_Savina_YUV
+Из github.com-mrsu:andpop-mrsu/301_OOP_Savina_YUV
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-Уже актуально.
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Из https://github.com/kljuchkinaev/301_OOP_Klyuchkina_EV
-Из https://github.com/kljuchkinaev/301_OOP_Klyuchkina_EV
+   62d3400..5ea2791  master     -> teacher/master
+   62d3400..5ea2791  master     -> teacher/master
+Обновление 62d3400..5ea2791
+Fast-forward
+ Task04/composer.json          | 13 ++++++++
+ Task04/src/Stack.php          | 37 +++++++++++++++++++++
+ Task04/src/StackInterface.php | 12 +++++++
+ Task04/src/Test.php           | 77 +++++++++++++++++++++++++++++++++++++++++++
+ Task04/src/compareStrings.php | 21 ++++++++++++
+ Task04/src/run_test.php       |  5 +++
+ 6 files changed, 165 insertions(+)
+ create mode 100644 Task04/composer.json
+ create mode 100644 Task04/src/Stack.php
+ create mode 100644 Task04/src/StackInterface.php
+ create mode 100644 Task04/src/Test.php
+ create mode 100644 Task04/src/compareStrings.php
+ create mode 100644 Task04/src/run_test.php
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/JulySept/301_OOP_Savina_YUV
+Из https://github.com/JulySept/301_OOP_Savina_YUV
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task04     -> student/Task04
  * [новая ветка]     Task05     -> student/Task05
  * [новая ветка]     Task05     -> student/Task05
-Обновление 567ceea..8d1039c
-Fast-forward (no commit created; -m option ignored)
- Task05/.gitignore                         |    1 +
- Task05/Task05_1/composer.json             |   13 +
- Task05/Task05_1/composer.lock             | 1589 +++++++++++++++++++++++++++++
- Task05/Task05_1/src/Student.php           |   85 ++
- Task05/Task05_1/src/StudentList.php       |   59 ++
- Task05/Task05_1/tests/StudentListTest.php |  130 +++
- Task05/Task05_2/composer.json             |   13 +
- Task05/Task05_2/composer.lock             | 1589 +++++++++++++++++++++++++++++
- Task05/Task05_2/src/Truncater.php         |   31 +
- Task05/Task05_2/tests/TruncaterTest.php   |   96 ++
- 10 files changed, 3606 insertions(+)
- create mode 100644 Task05/.gitignore
+   04db0d6..62d3400  master     -> student/master
+   04db0d6..62d3400  master     -> student/master
+Merge made by the 'recursive' strategy.
+ Task05/Task05_1/composer.json                     |   11 +
+ Task05/Task05_1/composer.lock                     | 1643 +++++++++++++++++++++
+ Task05/Task05_1/src/Book.php                      |   83 ++
+ Task05/Task05_1/src/BooksList.php                 |   63 +
+ Task05/Task05_1/tests/BooksListTest.php           |  100 ++
+ Task05/Task05_2/composer.json                     |   11 +
+ Task05/Task05_2/composer.lock                     | 1643 +++++++++++++++++++++
+ Task05/Task05_2/src/Truncater.php                 |   36 +
+ Task05/Task05_2/tests/App/Tests/TruncaterTest.php |  177 +++
+ 9 files changed, 3767 insertions(+)
  create mode 100644 Task05/Task05_1/composer.json
  create mode 100644 Task05/Task05_1/composer.lock
- create mode 100644 Task05/Task05_1/src/Student.php
- create mode 100644 Task05/Task05_1/src/StudentList.php
- create mode 100644 Task05/Task05_1/tests/StudentListTest.php
+ create mode 100644 Task05/Task05_1/src/Book.php
+ create mode 100644 Task05/Task05_1/src/BooksList.php
+ create mode 100644 Task05/Task05_1/tests/BooksListTest.php
  create mode 100644 Task05/Task05_2/composer.json
  create mode 100644 Task05/Task05_2/composer.lock
  create mode 100644 Task05/Task05_2/src/Truncater.php
- create mode 100644 Task05/Task05_2/tests/TruncaterTest.php
+ create mode 100644 Task05/Task05_2/tests/App/Tests/TruncaterTest.php
 --------------------------------------------------
-Task:  /home/andrey/labs/302_OOP/301_OOP_Klyuchkina_EV/Task05/Task05_1
+Task:  /home/andrey/labs/302_OOP/301_OOP_Savina_YUV/Task05/Task05_1
 Installing dependencies from lock file (including require-dev)
 Installing dependencies from lock file (including require-dev)
 Verifying lock file contents can be installed on current platform.
 Verifying lock file contents can be installed on current platform.
-Package operations: 25 installs, 0 updates, 0 removals
-Package operations: 25 installs, 0 updates, 0 removals
-    0 [>---------------------------]    0 [->--------------------------]
-    0 [>---------------------------]    0 [->--------------------------]
-  - Installing staabm/side-effects-detector (1.0.5): Extracting archive
-  - Installing staabm/side-effects-detector (1.0.5): Extracting archive
-  - Installing sebastian/version (6.0.0): Extracting archive
-  - Installing sebastian/version (6.0.0): Extracting archive
-  - Installing sebastian/type (6.0.2): Extracting archive
-  - Installing sebastian/type (6.0.2): Extracting archive
-  - Installing sebastian/recursion-context (7.0.0): Extracting archive
-  - Installing sebastian/recursion-context (7.0.0): Extracting archive
-  - Installing sebastian/object-reflector (5.0.0): Extracting archive
-  - Installing sebastian/object-reflector (5.0.0): Extracting archive
-  - Installing sebastian/object-enumerator (7.0.0): Extracting archive
-  - Installing sebastian/object-enumerator (7.0.0): Extracting archive
-  - Installing sebastian/global-state (8.0.0): Extracting archive
-  - Installing sebastian/global-state (8.0.0): Extracting archive
-  - Installing sebastian/exporter (7.0.0): Extracting archive
-  - Installing sebastian/exporter (7.0.0): Extracting archive
-  - Installing sebastian/environment (8.0.0): Extracting archive
-  - Installing sebastian/environment (8.0.0): Extracting archive
-  - Installing sebastian/diff (7.0.0): Extracting archive
-  - Installing sebastian/diff (7.0.0): Extracting archive
-  - Installing sebastian/comparator (7.0.1): Extracting archive
-  - Installing sebastian/comparator (7.0.1): Extracting archive
-  - Installing sebastian/cli-parser (4.0.0): Extracting archive
-  - Installing sebastian/cli-parser (4.0.0): Extracting archive
-  - Installing phpunit/php-timer (8.0.0): Extracting archive
-  - Installing phpunit/php-timer (8.0.0): Extracting archive
-  - Installing phpunit/php-text-template (5.0.0): Extracting archive
-  - Installing phpunit/php-text-template (5.0.0): Extracting archive
-  - Installing phpunit/php-invoker (6.0.0): Extracting archive
-  - Installing phpunit/php-invoker (6.0.0): Extracting archive
-  - Installing phpunit/php-file-iterator (6.0.0): Extracting archive
-  - Installing phpunit/php-file-iterator (6.0.0): Extracting archive
+Package operations: 26 installs, 0 updates, 0 removals
+Package operations: 26 installs, 0 updates, 0 removals
+  - Downloading sebastian/version (4.0.1)
+  - Downloading sebastian/version (4.0.1)
+  - Downloading sebastian/type (4.0.0)
+  - Downloading sebastian/type (4.0.0)
+  - Downloading sebastian/recursion-context (5.0.0)
+  - Downloading sebastian/recursion-context (5.0.0)
+  - Downloading sebastian/object-reflector (3.0.0)
+  - Downloading sebastian/object-reflector (3.0.0)
+  - Downloading sebastian/object-enumerator (5.0.0)
+  - Downloading sebastian/object-enumerator (5.0.0)
+  - Downloading sebastian/global-state (6.0.2)
+  - Downloading sebastian/global-state (6.0.2)
+  - Downloading sebastian/exporter (5.1.2)
+  - Downloading sebastian/exporter (5.1.2)
+  - Downloading sebastian/environment (6.1.0)
+  - Downloading sebastian/environment (6.1.0)
+  - Downloading sebastian/diff (5.1.1)
+  - Downloading sebastian/diff (5.1.1)
+  - Downloading sebastian/comparator (5.0.3)
+  - Downloading sebastian/comparator (5.0.3)
+  - Downloading sebastian/code-unit (2.0.0)
+  - Downloading sebastian/code-unit (2.0.0)
+  - Downloading sebastian/cli-parser (2.0.1)
+  - Downloading sebastian/cli-parser (2.0.1)
+  - Downloading phpunit/php-timer (6.0.0)
+  - Downloading phpunit/php-timer (6.0.0)
+  - Downloading phpunit/php-text-template (3.0.1)
+  - Downloading phpunit/php-text-template (3.0.1)
+  - Downloading phpunit/php-invoker (4.0.0)
+  - Downloading phpunit/php-invoker (4.0.0)
+  - Downloading phpunit/php-file-iterator (4.1.0)
+  - Downloading phpunit/php-file-iterator (4.1.0)
+  - Downloading sebastian/lines-of-code (2.0.2)
+  - Downloading sebastian/lines-of-code (2.0.2)
+  - Downloading sebastian/complexity (3.2.0)
+  - Downloading sebastian/complexity (3.2.0)
+  - Downloading sebastian/code-unit-reverse-lookup (3.0.0)
+  - Downloading sebastian/code-unit-reverse-lookup (3.0.0)
+  - Downloading phpunit/php-code-coverage (10.1.16)
+  - Downloading phpunit/php-code-coverage (10.1.16)
+  - Downloading phpunit/phpunit (10.5.45)
+  - Downloading phpunit/phpunit (10.5.45)
+  0/21 [>---------------------------]   0%
+  0/21 [>---------------------------]   0%
+ 11/21 [==============>-------------]  52%
+ 11/21 [==============>-------------]  52%
+ 18/21 [========================>---]  85%
+ 18/21 [========================>---]  85%
+ 19/21 [=========================>--]  90%
+ 19/21 [=========================>--]  90%
+ 21/21 [============================] 100%
+ 21/21 [============================] 100%
+  - Installing sebastian/version (4.0.1): Extracting archive
+  - Installing sebastian/version (4.0.1): Extracting archive
+  - Installing sebastian/type (4.0.0): Extracting archive
+  - Installing sebastian/type (4.0.0): Extracting archive
+  - Installing sebastian/recursion-context (5.0.0): Extracting archive
+  - Installing sebastian/recursion-context (5.0.0): Extracting archive
+  - Installing sebastian/object-reflector (3.0.0): Extracting archive
+  - Installing sebastian/object-reflector (3.0.0): Extracting archive
+  - Installing sebastian/object-enumerator (5.0.0): Extracting archive
+  - Installing sebastian/object-enumerator (5.0.0): Extracting archive
+  - Installing sebastian/global-state (6.0.2): Extracting archive
+  - Installing sebastian/global-state (6.0.2): Extracting archive
+  - Installing sebastian/exporter (5.1.2): Extracting archive
+  - Installing sebastian/exporter (5.1.2): Extracting archive
+  - Installing sebastian/environment (6.1.0): Extracting archive
+  - Installing sebastian/environment (6.1.0): Extracting archive
+  - Installing sebastian/diff (5.1.1): Extracting archive
+  - Installing sebastian/diff (5.1.1): Extracting archive
+  - Installing sebastian/comparator (5.0.3): Extracting archive
+  - Installing sebastian/comparator (5.0.3): Extracting archive
+  - Installing sebastian/code-unit (2.0.0): Extracting archive
+  - Installing sebastian/code-unit (2.0.0): Extracting archive
+  - Installing sebastian/cli-parser (2.0.1): Extracting archive
+  - Installing sebastian/cli-parser (2.0.1): Extracting archive
+  - Installing phpunit/php-timer (6.0.0): Extracting archive
+  - Installing phpunit/php-timer (6.0.0): Extracting archive
+  - Installing phpunit/php-text-template (3.0.1): Extracting archive
+  - Installing phpunit/php-text-template (3.0.1): Extracting archive
+  - Installing phpunit/php-invoker (4.0.0): Extracting archive
+  - Installing phpunit/php-invoker (4.0.0): Extracting archive
+  - Installing phpunit/php-file-iterator (4.1.0): Extracting archive
+  - Installing phpunit/php-file-iterator (4.1.0): Extracting archive
   - Installing theseer/tokenizer (1.2.3): Extracting archive
   - Installing theseer/tokenizer (1.2.3): Extracting archive
   - Installing nikic/php-parser (v5.4.0): Extracting archive
   - Installing nikic/php-parser (v5.4.0): Extracting archive
-  - Installing sebastian/lines-of-code (4.0.0): Extracting archive
-  - Installing sebastian/lines-of-code (4.0.0): Extracting archive
-  - Installing sebastian/complexity (5.0.0): Extracting archive
-  - Installing sebastian/complexity (5.0.0): Extracting archive
-  - Installing phpunit/php-code-coverage (12.1.0): Extracting archive
-  - Installing phpunit/php-code-coverage (12.1.0): Extracting archive
+  - Installing sebastian/lines-of-code (2.0.2): Extracting archive
+  - Installing sebastian/lines-of-code (2.0.2): Extracting archive
+  - Installing sebastian/complexity (3.2.0): Extracting archive
+  - Installing sebastian/complexity (3.2.0): Extracting archive
+  - Installing sebastian/code-unit-reverse-lookup (3.0.0): Extracting archive
+  - Installing sebastian/code-unit-reverse-lookup (3.0.0): Extracting archive
+  - Installing phpunit/php-code-coverage (10.1.16): Extracting archive
+  - Installing phpunit/php-code-coverage (10.1.16): Extracting archive
   - Installing phar-io/version (3.2.1): Extracting archive
   - Installing phar-io/version (3.2.1): Extracting archive
   - Installing phar-io/manifest (2.0.4): Extracting archive
   - Installing phar-io/manifest (2.0.4): Extracting archive
   - Installing myclabs/deep-copy (1.13.0): Extracting archive
   - Installing myclabs/deep-copy (1.13.0): Extracting archive
-  - Installing phpunit/phpunit (12.0.10): Extracting archive
-  - Installing phpunit/phpunit (12.0.10): Extracting archive
-  0/25 [>---------------------------]   0%
-  0/25 [>---------------------------]   0%
- 20/25 [======================>-----]  80%
- 20/25 [======================>-----]  80%
- 24/25 [==========================>-]  96%
- 24/25 [==========================>-]  96%
- 25/25 [============================] 100%
- 25/25 [============================] 100%
+  - Installing phpunit/phpunit (10.5.45): Extracting archive
+  - Installing phpunit/phpunit (10.5.45): Extracting archive
+  0/26 [>---------------------------]   0%
+  0/26 [>---------------------------]   0%
+ 25/26 [==========================>-]  96%
+ 25/26 [==========================>-]  96%
+ 26/26 [============================] 100%
+ 26/26 [============================] 100%
 Generating autoload files
 Generating autoload files
-23 packages you are using are looking for funding.
-23 packages you are using are looking for funding.
+24 packages you are using are looking for funding.
+24 packages you are using are looking for funding.
 Use the `composer fund` command to find out more!
 Use the `composer fund` command to find out more!
 --------------------------------------------------
 Check path: composer.json
 {
-    "name": "klyuchkina/task05_1",
+    "name": "yuliya/task05_1",
     "autoload": {
         "psr-4": {
-            "App\\": "src/",
-            "Tests\\": "tests/"
-        },
-        "files": [ "src/Student.php" , "src/StudentList.php"]
-    }, 
+            "App\\": "src/"
+        }
+    },
     "require-dev": {
-        "phpunit/phpunit": "^12.0"
+        "phpunit/phpunit": "^10.5"
     }
 }
 --------------------------------------------------
@@ -454,117 +214,176 @@ Check path: src/StudentsList.php
 src/StudentsList.php not found
 --------------------------------------------------
 Check path: src/BooksList.php
-src/BooksList.php not found
+<?php
+
+namespace App;
+
+use Iterator;
+
+class BooksList implements Iterator
+{
+    private array $books = [];
+
+    public function add(Book $book): void
+    {
+        $this->books[] = $book;
+    }
+
+    public function count(): int
+    {
+        return count($this->books);
+    }
+
+    public function get(int $n): ?Book
+    {
+        return $this->books[$n] ?? null;
+    }
+
+    public function store(string $fileName): void
+    {
+        file_put_contents($fileName, serialize($this->books));
+    }
+
+    public function load(string $fileName): void
+    {
+        if (file_exists($fileName)) {
+            $data = file_get_contents($fileName);
+            $this->books = unserialize($data) ?: [];
+        }
+    }
+
+    public function rewind(): void
+    {
+        reset($this->books);
+    }
+
+    public function current(): Book
+    {
+        return current($this->books);
+    }
+
+    public function key(): int
+    {
+        return $this->current()->getId();
+    }
+
+    public function next(): void
+    {
+        next($this->books);
+    }
+
+    public function valid(): bool
+    {
+        return current($this->books) !== false;
+    }
+}
 --------------------------------------------------
 Check path: tests/StudentsListTest.php
 tests/StudentsListTest.php not found
 --------------------------------------------------
 Check path: tests/BooksListTest.php
-tests/BooksListTest.php not found
 --------------------------------------------------
 Run: ./vendor/bin/phpunit --color tests
-PHPUnit 12.0.10 by Sebastian Bergmann and contributors.
+PHPUnit 10.5.45 by Sebastian Bergmann and contributors.
 
-Runtime:       PHP 8.4.4
+Runtime:       PHP 8.4.5
 
 ........                                                            8 / 8 (100%)
 
-Time: 00:00.007, Memory: 6.00 MB
+Time: 00:00.004, Memory: 6.00 MB
 
-OK (8 tests, 21 assertions)
+OK (8 tests, 12 assertions)
 --------------------------------------------------
 Run: phpcs --standard=PSR12 ./src/*
 
 --------------------------------------------------
-Total ok: 3
-Total error: 2
+Total ok: 5
+Total error: 0
 --------------------------------------------------
-Task:  /home/andrey/labs/302_OOP/301_OOP_Klyuchkina_EV/Task05/Task05_2
+Task:  /home/andrey/labs/302_OOP/301_OOP_Savina_YUV/Task05/Task05_2
 Installing dependencies from lock file (including require-dev)
 Installing dependencies from lock file (including require-dev)
 Verifying lock file contents can be installed on current platform.
 Verifying lock file contents can be installed on current platform.
-Package operations: 25 installs, 0 updates, 0 removals
-Package operations: 25 installs, 0 updates, 0 removals
+Package operations: 26 installs, 0 updates, 0 removals
+Package operations: 26 installs, 0 updates, 0 removals
     0 [>---------------------------]    0 [->--------------------------]
     0 [>---------------------------]    0 [->--------------------------]
-  - Installing staabm/side-effects-detector (1.0.5): Extracting archive
-  - Installing staabm/side-effects-detector (1.0.5): Extracting archive
-  - Installing sebastian/version (6.0.0): Extracting archive
-  - Installing sebastian/version (6.0.0): Extracting archive
-  - Installing sebastian/type (6.0.2): Extracting archive
-  - Installing sebastian/type (6.0.2): Extracting archive
-  - Installing sebastian/recursion-context (7.0.0): Extracting archive
-  - Installing sebastian/recursion-context (7.0.0): Extracting archive
-  - Installing sebastian/object-reflector (5.0.0): Extracting archive
-  - Installing sebastian/object-reflector (5.0.0): Extracting archive
-  - Installing sebastian/object-enumerator (7.0.0): Extracting archive
-  - Installing sebastian/object-enumerator (7.0.0): Extracting archive
-  - Installing sebastian/global-state (8.0.0): Extracting archive
-  - Installing sebastian/global-state (8.0.0): Extracting archive
-  - Installing sebastian/exporter (7.0.0): Extracting archive
-  - Installing sebastian/exporter (7.0.0): Extracting archive
-  - Installing sebastian/environment (8.0.0): Extracting archive
-  - Installing sebastian/environment (8.0.0): Extracting archive
-  - Installing sebastian/diff (7.0.0): Extracting archive
-  - Installing sebastian/diff (7.0.0): Extracting archive
-  - Installing sebastian/comparator (7.0.1): Extracting archive
-  - Installing sebastian/comparator (7.0.1): Extracting archive
-  - Installing sebastian/cli-parser (4.0.0): Extracting archive
-  - Installing sebastian/cli-parser (4.0.0): Extracting archive
-  - Installing phpunit/php-timer (8.0.0): Extracting archive
-  - Installing phpunit/php-timer (8.0.0): Extracting archive
-  - Installing phpunit/php-text-template (5.0.0): Extracting archive
-  - Installing phpunit/php-text-template (5.0.0): Extracting archive
-  - Installing phpunit/php-invoker (6.0.0): Extracting archive
-  - Installing phpunit/php-invoker (6.0.0): Extracting archive
-  - Installing phpunit/php-file-iterator (6.0.0): Extracting archive
-  - Installing phpunit/php-file-iterator (6.0.0): Extracting archive
+  - Installing sebastian/version (4.0.1): Extracting archive
+  - Installing sebastian/version (4.0.1): Extracting archive
+  - Installing sebastian/type (4.0.0): Extracting archive
+  - Installing sebastian/type (4.0.0): Extracting archive
+  - Installing sebastian/recursion-context (5.0.0): Extracting archive
+  - Installing sebastian/recursion-context (5.0.0): Extracting archive
+  - Installing sebastian/object-reflector (3.0.0): Extracting archive
+  - Installing sebastian/object-reflector (3.0.0): Extracting archive
+  - Installing sebastian/object-enumerator (5.0.0): Extracting archive
+  - Installing sebastian/object-enumerator (5.0.0): Extracting archive
+  - Installing sebastian/global-state (6.0.2): Extracting archive
+  - Installing sebastian/global-state (6.0.2): Extracting archive
+  - Installing sebastian/exporter (5.1.2): Extracting archive
+  - Installing sebastian/exporter (5.1.2): Extracting archive
+  - Installing sebastian/environment (6.1.0): Extracting archive
+  - Installing sebastian/environment (6.1.0): Extracting archive
+  - Installing sebastian/diff (5.1.1): Extracting archive
+  - Installing sebastian/diff (5.1.1): Extracting archive
+  - Installing sebastian/comparator (5.0.3): Extracting archive
+  - Installing sebastian/comparator (5.0.3): Extracting archive
+  - Installing sebastian/code-unit (2.0.0): Extracting archive
+  - Installing sebastian/code-unit (2.0.0): Extracting archive
+  - Installing sebastian/cli-parser (2.0.1): Extracting archive
+  - Installing sebastian/cli-parser (2.0.1): Extracting archive
+  - Installing phpunit/php-timer (6.0.0): Extracting archive
+  - Installing phpunit/php-timer (6.0.0): Extracting archive
+  - Installing phpunit/php-text-template (3.0.1): Extracting archive
+  - Installing phpunit/php-text-template (3.0.1): Extracting archive
+  - Installing phpunit/php-invoker (4.0.0): Extracting archive
+  - Installing phpunit/php-invoker (4.0.0): Extracting archive
+  - Installing phpunit/php-file-iterator (4.1.0): Extracting archive
+  - Installing phpunit/php-file-iterator (4.1.0): Extracting archive
   - Installing theseer/tokenizer (1.2.3): Extracting archive
   - Installing theseer/tokenizer (1.2.3): Extracting archive
   - Installing nikic/php-parser (v5.4.0): Extracting archive
   - Installing nikic/php-parser (v5.4.0): Extracting archive
-  - Installing sebastian/lines-of-code (4.0.0): Extracting archive
-  - Installing sebastian/lines-of-code (4.0.0): Extracting archive
-  - Installing sebastian/complexity (5.0.0): Extracting archive
-  - Installing sebastian/complexity (5.0.0): Extracting archive
-  - Installing phpunit/php-code-coverage (12.1.0): Extracting archive
-  - Installing phpunit/php-code-coverage (12.1.0): Extracting archive
+  - Installing sebastian/lines-of-code (2.0.2): Extracting archive
+  - Installing sebastian/lines-of-code (2.0.2): Extracting archive
+  - Installing sebastian/complexity (3.2.0): Extracting archive
+  - Installing sebastian/complexity (3.2.0): Extracting archive
+  - Installing sebastian/code-unit-reverse-lookup (3.0.0): Extracting archive
+  - Installing sebastian/code-unit-reverse-lookup (3.0.0): Extracting archive
+  - Installing phpunit/php-code-coverage (10.1.16): Extracting archive
+  - Installing phpunit/php-code-coverage (10.1.16): Extracting archive
   - Installing phar-io/version (3.2.1): Extracting archive
   - Installing phar-io/version (3.2.1): Extracting archive
   - Installing phar-io/manifest (2.0.4): Extracting archive
   - Installing phar-io/manifest (2.0.4): Extracting archive
   - Installing myclabs/deep-copy (1.13.0): Extracting archive
   - Installing myclabs/deep-copy (1.13.0): Extracting archive
-  - Installing phpunit/phpunit (12.0.10): Extracting archive
-  - Installing phpunit/phpunit (12.0.10): Extracting archive
-  0/25 [>---------------------------]   0%
-  0/25 [>---------------------------]   0%
- 20/25 [======================>-----]  80%
- 20/25 [======================>-----]  80%
- 24/25 [==========================>-]  96%
- 24/25 [==========================>-]  96%
- 25/25 [============================] 100%
- 25/25 [============================] 100%
+  - Installing phpunit/phpunit (10.5.45): Extracting archive
+  - Installing phpunit/phpunit (10.5.45): Extracting archive
+  0/26 [>---------------------------]   0%
+  0/26 [>---------------------------]   0%
+ 25/26 [==========================>-]  96%
+ 25/26 [==========================>-]  96%
+ 26/26 [============================] 100%
+ 26/26 [============================] 100%
 Generating autoload files
 Generating autoload files
-23 packages you are using are looking for funding.
-23 packages you are using are looking for funding.
+24 packages you are using are looking for funding.
+24 packages you are using are looking for funding.
 Use the `composer fund` command to find out more!
 Use the `composer fund` command to find out more!
 --------------------------------------------------
 Check path: composer.json
 {
-    "name": "klyuchkina/task05_2",
+    "name": "yuliya/task05_2",
     "autoload": {
         "psr-4": {
-            "App\\": "src/",
-            "Tests\\": "tests/"
-        },
-        "files": [ "src/Truncater.php"]
+            "App\\": "src/"
+        }
     },
     "require-dev": {
-        "phpunit/phpunit": "^12.0"
+        "phpunit/phpunit": "^10.5"
     }
 }
 --------------------------------------------------
@@ -575,9 +394,9 @@ namespace App;
 
 class Truncater
 {
-    private $options;
+    private array $options;
 
-    public static $defaultOptions = [
+    public static array $defaultOptions = [
         'separator' => '...',
         'length' => 50,
     ];
@@ -587,52 +406,53 @@ class Truncater
         $this->options = array_merge(self::$defaultOptions, $options);
     }
 
-    public function truncate($string, $options = [])
+    public function truncate(string $string, array $options = []): string
     {
         $options = array_merge($this->options, $options);
 
-        if (strlen($string) > $options['length']) {
-            $newMessage = mb_substr($string, 0, $options['length']);
-            $newMessage .= $options['separator'];
-            return $newMessage;
-        } else {
-            return $string;
+        $length = (int) $options['length'];
+        if ($length <= 0) {
+            throw new \InvalidArgumentException('Length must be a positive integer.');
         }
+
+        if (mb_strlen($string) > $length) {
+            $truncated = mb_substr($string, 0, $length);
+            $truncated .= $options['separator'];
+            return $truncated;
+        }
+
+        return $string;
     }
 }
 --------------------------------------------------
 Check path: tests/TruncaterTest.php
+tests/TruncaterTest.php not found
 --------------------------------------------------
 Run: ./vendor/bin/phpunit --color tests
-PHPUnit 12.0.10 by Sebastian Bergmann and contributors.
+PHPUnit 10.5.45 by Sebastian Bergmann and contributors.
 
-Runtime:       PHP 8.4.4
+Runtime:       PHP 8.4.5
 
 .........                                                           9 / 9 (100%)
 
-Time: 00:00.007, Memory: 6.00 MB
+Time: 00:00.005, Memory: 6.00 MB
 
-OK (9 tests, 9 assertions)
+OK (9 tests, 15 assertions)
 --------------------------------------------------
 Run: phpcs --standard=PSR12 ./src/*
 
 --------------------------------------------------
-Total ok: 5
-Total error: 0
+Total ok: 4
+Total error: 1
 --------------------------------------------------
-/home/andrey/labs/302_OOP/301_OOP_Klyuchkina_EV
+/home/andrey/labs/302_OOP/301_OOP_Savina_YUV
 Task05
 Task from branch: Task05
-Creation date: 03/28/2025 12:12:14
-To github.com-mrsu:andpop-mrsu/301_OOP_Klyuchkina_EV.git
-To github.com-mrsu:andpop-mrsu/301_OOP_Klyuchkina_EV.git
-   567ceea..8d1039c  master -> master
-   567ceea..8d1039c  master -> master
-301_OOP_Korpachan_NV
-301_OOP_Kudashkina_OS
-301_OOP_Ponomarev_MA
-301_OOP_Savickaya_MV
-301_OOP_Savina_YUV
+Creation date: 04/07/2025 10:38:56
+To github.com-mrsu:andpop-mrsu/301_OOP_Savina_YUV.git
+To github.com-mrsu:andpop-mrsu/301_OOP_Savina_YUV.git
+   5ea2791..91dfb23  master -> master
+   5ea2791..91dfb23  master -> master
 301_OOP_Tyurin_MS
 301_OOP_Yunusov_AR
 302_OOP_Baranov_EA
@@ -647,6 +467,388 @@ To github.com-mrsu:andpop-mrsu/301_OOP_Klyuchkina_EV.git
 302_OOP_Novikov_ME
 302_OOP_Pyanzina_VD
 302_OOP_Sergeev_SA
+=====================================================
+/home/andrey/labs/302_OOP/302_OOP_Sergeev_SA
+Из github.com-mrsu:andpop-mrsu/302_OOP_Sergeev_SA
+Из github.com-mrsu:andpop-mrsu/302_OOP_Sergeev_SA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   fed359a..fdf0f2b  master     -> teacher/master
+   fed359a..fdf0f2b  master     -> teacher/master
+Обновление fed359a..fdf0f2b
+Fast-forward
+ Task04/composer.json                           |  14 +
+ Task04/composer.lock                           |  18 +
+ Task04/src/Stack.php                           |  49 +++
+ Task04/src/StackInterface.php                  |  13 +
+ Task04/src/Test.php                            |  59 +++
+ Task04/src/compareStrings.php                  |  23 +
+ Task04/src/run_test.php                        |   5 +
+ Task04/vendor/autoload.php                     |  25 ++
+ Task04/vendor/composer/ClassLoader.php         | 579 +++++++++++++++++++++++++
+ Task04/vendor/composer/LICENSE.txt             |  20 +
+ Task04/vendor/composer/autoload_classmap.php   |  10 +
+ Task04/vendor/composer/autoload_files.php      |  11 +
+ Task04/vendor/composer/autoload_namespaces.php |   9 +
+ Task04/vendor/composer/autoload_psr4.php       |  10 +
+ Task04/vendor/composer/autoload_real.php       |  48 ++
+ Task04/vendor/composer/autoload_static.php     |  41 ++
+ 16 files changed, 934 insertions(+)
+ create mode 100644 Task04/composer.json
+ create mode 100644 Task04/composer.lock
+ create mode 100644 Task04/src/Stack.php
+ create mode 100644 Task04/src/StackInterface.php
+ create mode 100644 Task04/src/Test.php
+ create mode 100644 Task04/src/compareStrings.php
+ create mode 100644 Task04/src/run_test.php
+ create mode 100644 Task04/vendor/autoload.php
+ create mode 100644 Task04/vendor/composer/ClassLoader.php
+ create mode 100644 Task04/vendor/composer/LICENSE.txt
+ create mode 100644 Task04/vendor/composer/autoload_classmap.php
+ create mode 100644 Task04/vendor/composer/autoload_files.php
+ create mode 100644 Task04/vendor/composer/autoload_namespaces.php
+ create mode 100644 Task04/vendor/composer/autoload_psr4.php
+ create mode 100644 Task04/vendor/composer/autoload_real.php
+ create mode 100644 Task04/vendor/composer/autoload_static.php
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/Kulebyaka1337/302_OOP_Sergeev_SA
+Из https://github.com/Kulebyaka1337/302_OOP_Sergeev_SA
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task05     -> student/Task05
+   4227ed9..fdf0f2b  master     -> student/master
+   4227ed9..fdf0f2b  master     -> student/master
+Merge made by the 'recursive' strategy.
+ Task04/composer.json                           |    2 +-
+ Task05/Task05_1/composer.json                  |   13 +
+ Task05/Task05_1/composer.lock                  | 1589 ++++++++++++++++++++++++
+ Task05/Task05_1/src/Book.php                   |   27 +
+ Task05/Task05_1/src/BookList.php               |   66 +
+ Task05/Task05_1/tests/BookListIteratorTest.php |   34 +
+ Task05/Task05_2/composer.json                  |   13 +
+ Task05/Task05_2/composer.lock                  | 1589 ++++++++++++++++++++++++
+ Task05/Task05_2/src/Truncater.php              |   42 +
+ Task05/Task05_2/tests/TruncaterTest.php        |   74 ++
+ 10 files changed, 3448 insertions(+), 1 deletion(-)
+ create mode 100644 Task05/Task05_1/composer.json
+ create mode 100644 Task05/Task05_1/composer.lock
+ create mode 100644 Task05/Task05_1/src/Book.php
+ create mode 100644 Task05/Task05_1/src/BookList.php
+ create mode 100644 Task05/Task05_1/tests/BookListIteratorTest.php
+ create mode 100644 Task05/Task05_2/composer.json
+ create mode 100644 Task05/Task05_2/composer.lock
+ create mode 100644 Task05/Task05_2/src/Truncater.php
+ create mode 100644 Task05/Task05_2/tests/TruncaterTest.php
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/302_OOP_Sergeev_SA/Task05/Task05_1
+Installing dependencies from lock file (including require-dev)
+Installing dependencies from lock file (including require-dev)
+Verifying lock file contents can be installed on current platform.
+Verifying lock file contents can be installed on current platform.
+Warning: The lock file is not up to date with the latest changes in composer.json. You may be getting outdated dependencies. It is recommended that you run `composer update` or `composer update <package name>`.
+Warning: The lock file is not up to date with the latest changes in composer.json. You may be getting outdated dependencies. It is recommended that you run `composer update` or `composer update <package name>`.
+Package operations: 25 installs, 0 updates, 0 removals
+Package operations: 25 installs, 0 updates, 0 removals
+    0 [>---------------------------]    0 [->--------------------------]
+    0 [>---------------------------]    0 [->--------------------------]
+  - Installing staabm/side-effects-detector (1.0.5): Extracting archive
+  - Installing staabm/side-effects-detector (1.0.5): Extracting archive
+  - Installing sebastian/version (6.0.0): Extracting archive
+  - Installing sebastian/version (6.0.0): Extracting archive
+  - Installing sebastian/type (6.0.2): Extracting archive
+  - Installing sebastian/type (6.0.2): Extracting archive
+  - Installing sebastian/recursion-context (7.0.0): Extracting archive
+  - Installing sebastian/recursion-context (7.0.0): Extracting archive
+  - Installing sebastian/object-reflector (5.0.0): Extracting archive
+  - Installing sebastian/object-reflector (5.0.0): Extracting archive
+  - Installing sebastian/object-enumerator (7.0.0): Extracting archive
+  - Installing sebastian/object-enumerator (7.0.0): Extracting archive
+  - Installing sebastian/global-state (8.0.0): Extracting archive
+  - Installing sebastian/global-state (8.0.0): Extracting archive
+  - Installing sebastian/exporter (7.0.0): Extracting archive
+  - Installing sebastian/exporter (7.0.0): Extracting archive
+  - Installing sebastian/environment (8.0.0): Extracting archive
+  - Installing sebastian/environment (8.0.0): Extracting archive
+  - Installing sebastian/diff (7.0.0): Extracting archive
+  - Installing sebastian/diff (7.0.0): Extracting archive
+  - Installing sebastian/comparator (7.0.1): Extracting archive
+  - Installing sebastian/comparator (7.0.1): Extracting archive
+  - Installing sebastian/cli-parser (4.0.0): Extracting archive
+  - Installing sebastian/cli-parser (4.0.0): Extracting archive
+  - Installing phpunit/php-timer (8.0.0): Extracting archive
+  - Installing phpunit/php-timer (8.0.0): Extracting archive
+  - Installing phpunit/php-text-template (5.0.0): Extracting archive
+  - Installing phpunit/php-text-template (5.0.0): Extracting archive
+  - Installing phpunit/php-invoker (6.0.0): Extracting archive
+  - Installing phpunit/php-invoker (6.0.0): Extracting archive
+  - Installing phpunit/php-file-iterator (6.0.0): Extracting archive
+  - Installing phpunit/php-file-iterator (6.0.0): Extracting archive
+  - Installing theseer/tokenizer (1.2.3): Extracting archive
+  - Installing theseer/tokenizer (1.2.3): Extracting archive
+  - Installing nikic/php-parser (v5.4.0): Extracting archive
+  - Installing nikic/php-parser (v5.4.0): Extracting archive
+  - Installing sebastian/lines-of-code (4.0.0): Extracting archive
+  - Installing sebastian/lines-of-code (4.0.0): Extracting archive
+  - Installing sebastian/complexity (5.0.0): Extracting archive
+  - Installing sebastian/complexity (5.0.0): Extracting archive
+  - Installing phpunit/php-code-coverage (12.1.0): Extracting archive
+  - Installing phpunit/php-code-coverage (12.1.0): Extracting archive
+  - Installing phar-io/version (3.2.1): Extracting archive
+  - Installing phar-io/version (3.2.1): Extracting archive
+  - Installing phar-io/manifest (2.0.4): Extracting archive
+  - Installing phar-io/manifest (2.0.4): Extracting archive
+  - Installing myclabs/deep-copy (1.13.0): Extracting archive
+  - Installing myclabs/deep-copy (1.13.0): Extracting archive
+  - Installing phpunit/phpunit (12.0.10): Extracting archive
+  - Installing phpunit/phpunit (12.0.10): Extracting archive
+  0/25 [>---------------------------]   0%
+  0/25 [>---------------------------]   0%
+ 24/25 [==========================>-]  96%
+ 24/25 [==========================>-]  96%
+ 25/25 [============================] 100%
+ 25/25 [============================] 100%
+Generating autoload files
+Generating autoload files
+23 packages you are using are looking for funding.
+23 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+Use the `composer fund` command to find out more!
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "mr-wo/task05_2",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "Tests\\": "tests/"
+        },
+        "files": [ "src/Book.php" , "src/BooksList.php"]
+    }, 
+    "require-dev": {
+        "phpunit/phpunit": "^12.0"
+    }
+}
+--------------------------------------------------
+Check path: src/StudentsList.php
+src/StudentsList.php not found
+--------------------------------------------------
+Check path: src/BooksList.php
+src/BooksList.php not found
+--------------------------------------------------
+Check path: tests/StudentsListTest.php
+tests/StudentsListTest.php not found
+--------------------------------------------------
+Check path: tests/BooksListTest.php
+tests/BooksListTest.php not found
+--------------------------------------------------
+Run: ./vendor/bin/phpunit --color tests
+
+Execution fails
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+FILE: /home/andrey/labs/302_OOP/302_OOP_Sergeev_SA/Task05/Task05_1/src/Book.php
+-------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-------------------------------------------------------------------------------
+ 27 | ERROR | [x] Expected 1 newline at end of file; 0 found
+-------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------
+
+
+FILE: /home/andrey/labs/302_OOP/302_OOP_Sergeev_SA/Task05/Task05_1/src/BookList.php
+-----------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-----------------------------------------------------------------------------------
+ 66 | ERROR | [x] Expected 1 newline at end of file; 0 found
+-----------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-----------------------------------------------------------------------------------
+
+Time: 34ms; Memory: 6MB
+Execution fails
+--------------------------------------------------
+Total ok: 1
+Total error: 4
+--------------------------------------------------
+Task:  /home/andrey/labs/302_OOP/302_OOP_Sergeev_SA/Task05/Task05_2
+Installing dependencies from lock file (including require-dev)
+Installing dependencies from lock file (including require-dev)
+Verifying lock file contents can be installed on current platform.
+Verifying lock file contents can be installed on current platform.
+Warning: The lock file is not up to date with the latest changes in composer.json. You may be getting outdated dependencies. It is recommended that you run `composer update` or `composer update <package name>`.
+Warning: The lock file is not up to date with the latest changes in composer.json. You may be getting outdated dependencies. It is recommended that you run `composer update` or `composer update <package name>`.
+Package operations: 25 installs, 0 updates, 0 removals
+Package operations: 25 installs, 0 updates, 0 removals
+    0 [>---------------------------]    0 [->--------------------------]
+    0 [>---------------------------]    0 [->--------------------------]
+  - Installing staabm/side-effects-detector (1.0.5): Extracting archive
+  - Installing staabm/side-effects-detector (1.0.5): Extracting archive
+  - Installing sebastian/version (6.0.0): Extracting archive
+  - Installing sebastian/version (6.0.0): Extracting archive
+  - Installing sebastian/type (6.0.2): Extracting archive
+  - Installing sebastian/type (6.0.2): Extracting archive
+  - Installing sebastian/recursion-context (7.0.0): Extracting archive
+  - Installing sebastian/recursion-context (7.0.0): Extracting archive
+  - Installing sebastian/object-reflector (5.0.0): Extracting archive
+  - Installing sebastian/object-reflector (5.0.0): Extracting archive
+  - Installing sebastian/object-enumerator (7.0.0): Extracting archive
+  - Installing sebastian/object-enumerator (7.0.0): Extracting archive
+  - Installing sebastian/global-state (8.0.0): Extracting archive
+  - Installing sebastian/global-state (8.0.0): Extracting archive
+  - Installing sebastian/exporter (7.0.0): Extracting archive
+  - Installing sebastian/exporter (7.0.0): Extracting archive
+  - Installing sebastian/environment (8.0.0): Extracting archive
+  - Installing sebastian/environment (8.0.0): Extracting archive
+  - Installing sebastian/diff (7.0.0): Extracting archive
+  - Installing sebastian/diff (7.0.0): Extracting archive
+  - Installing sebastian/comparator (7.0.1): Extracting archive
+  - Installing sebastian/comparator (7.0.1): Extracting archive
+  - Installing sebastian/cli-parser (4.0.0): Extracting archive
+  - Installing sebastian/cli-parser (4.0.0): Extracting archive
+  - Installing phpunit/php-timer (8.0.0): Extracting archive
+  - Installing phpunit/php-timer (8.0.0): Extracting archive
+  - Installing phpunit/php-text-template (5.0.0): Extracting archive
+  - Installing phpunit/php-text-template (5.0.0): Extracting archive
+  - Installing phpunit/php-invoker (6.0.0): Extracting archive
+  - Installing phpunit/php-invoker (6.0.0): Extracting archive
+  - Installing phpunit/php-file-iterator (6.0.0): Extracting archive
+  - Installing phpunit/php-file-iterator (6.0.0): Extracting archive
+  - Installing theseer/tokenizer (1.2.3): Extracting archive
+  - Installing theseer/tokenizer (1.2.3): Extracting archive
+  - Installing nikic/php-parser (v5.4.0): Extracting archive
+  - Installing nikic/php-parser (v5.4.0): Extracting archive
+  - Installing sebastian/lines-of-code (4.0.0): Extracting archive
+  - Installing sebastian/lines-of-code (4.0.0): Extracting archive
+  - Installing sebastian/complexity (5.0.0): Extracting archive
+  - Installing sebastian/complexity (5.0.0): Extracting archive
+  - Installing phpunit/php-code-coverage (12.1.0): Extracting archive
+  - Installing phpunit/php-code-coverage (12.1.0): Extracting archive
+  - Installing phar-io/version (3.2.1): Extracting archive
+  - Installing phar-io/version (3.2.1): Extracting archive
+  - Installing phar-io/manifest (2.0.4): Extracting archive
+  - Installing phar-io/manifest (2.0.4): Extracting archive
+  - Installing myclabs/deep-copy (1.13.0): Extracting archive
+  - Installing myclabs/deep-copy (1.13.0): Extracting archive
+  - Installing phpunit/phpunit (12.0.10): Extracting archive
+  - Installing phpunit/phpunit (12.0.10): Extracting archive
+  0/25 [>---------------------------]   0%
+  0/25 [>---------------------------]   0%
+ 24/25 [==========================>-]  96%
+ 24/25 [==========================>-]  96%
+ 25/25 [============================] 100%
+ 25/25 [============================] 100%
+Generating autoload files
+Generating autoload files
+23 packages you are using are looking for funding.
+23 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+Use the `composer fund` command to find out more!
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "mr-wo/task05_2",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "Tests\\": "tests/"
+        },
+        "files": [ "src/Truncater.php"]
+    }, 
+    "require-dev": {
+        "phpunit/phpunit": "^12.0"
+    }
+}
+--------------------------------------------------
+Check path: src/Truncater.php
+<?php
+
+namespace App;
+
+class Truncater
+{
+    public static $defaultOptions = [
+        'length' => 50,
+        'sep' => '...',
+    ];
+
+    private array $config;
+
+    public function __construct(array $config = [])
+    {
+        $this->config = array_merge(self::$defaultOptions, $config);
+    }
+
+    public function truncate(string $text, array $options = []): string
+    {
+        $config = array_merge($this->config, $options);
+        $length = $config['length'];
+        $sep = $config['sep'];
+
+        
+        if ($length < 0) {
+            return $sep;
+        }
+
+        
+        if (mb_strlen($text, 'UTF-8') <= $length) {
+            return $text;
+        }
+
+        $sepLength = mb_strlen($sep, 'UTF-8');
+        $substringLength = $length - $sepLength;
+
+        $truncated = mb_substr($text, 0, $substringLength, 'UTF-8');
+
+        return $truncated . $sep;
+    }
+}
+--------------------------------------------------
+Check path: tests/TruncaterTest.php
+--------------------------------------------------
+Run: ./vendor/bin/phpunit --color tests
+PHPUnit 12.0.10 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.4.5
+
+.........                                                           9 / 9 (100%)
+
+Time: 00:00.004, Memory: 8.00 MB
+
+OK (9 tests, 9 assertions)
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+FILE: /home/andrey/labs/302_OOP/302_OOP_Sergeev_SA/Task05/Task05_2/src/Truncater.php
+------------------------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+------------------------------------------------------------------------------------
+ 25 | ERROR | [x] Whitespace found at end of line
+ 30 | ERROR | [x] Whitespace found at end of line
+ 42 | ERROR | [x] Expected 1 newline at end of file; 0 found
+------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------
+
+Time: 31ms; Memory: 6MB
+Execution fails
+--------------------------------------------------
+Total ok: 4
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/302_OOP/302_OOP_Sergeev_SA
+Task05
+Task from branch: Task05
+Creation date: 04/09/2025 17:47:46
+To github.com-mrsu:andpop-mrsu/302_OOP_Sergeev_SA.git
+To github.com-mrsu:andpop-mrsu/302_OOP_Sergeev_SA.git
+   fdf0f2b..5fa4ed5  master -> master
+   fdf0f2b..5fa4ed5  master -> master
 302_OOP_Shestakov_VA
 302_OOP_Sheyanov_AV
 302_OOP_Simonov_AP
@@ -656,5 +858,5 @@ To github.com-mrsu:andpop-mrsu/301_OOP_Klyuchkina_EV.git
 302_OOP_Votyakov_MA
 **********************
 PowerShell transcript end
-End time: 20250328193919
+End time: 20250411115112
 **********************

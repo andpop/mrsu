@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20250402233706
+Start time: 20250408154100
 **********************
 Transcript started, output file is log.txt
 PHP_Abramov_AI
@@ -10,87 +10,22 @@ PHP_Biushkin_DV
 PHP_Biushkina_EI
 PHP_Borcajkin_IA
 PHP_CHadova_AA
-=====================================================
-/home/andrey/labs/PHP/PHP_CHadova_AA
-Из github.com-mrsu:andpop-mrsu/PHP_CHadova_AA
-Из github.com-mrsu:andpop-mrsu/PHP_CHadova_AA
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Уже актуально.
-Task04
-task from branch: task04
-creation date: 04/02/2025 18:28:37
-Checking script check_task04.ps1 not found
-=====================================================
-/home/andrey/labs/PHP/PHP_CHadova_AA
-Из github.com-mrsu:andpop-mrsu/PHP_CHadova_AA
-Из github.com-mrsu:andpop-mrsu/PHP_CHadova_AA
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Уже актуально.
-Task03
-task from branch: task03
-creation date: 04/02/2025 18:28:18
-Checking script check_task03.ps1 not found
-=====================================================
-/home/andrey/labs/PHP/PHP_CHadova_AA
-Из github.com-mrsu:andpop-mrsu/PHP_CHadova_AA
-Из github.com-mrsu:andpop-mrsu/PHP_CHadova_AA
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Уже актуально.
-add solution for task1
-task from branch: task01
-creation date: 04/02/2025 18:27:55
-Checking script check_task01.ps1 not found
-=====================================================
-/home/andrey/labs/PHP/PHP_CHadova_AA
-Из github.com-mrsu:andpop-mrsu/PHP_CHadova_AA
-Из github.com-mrsu:andpop-mrsu/PHP_CHadova_AA
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Уже актуально.
-Task02
-task from branch: task02
-creation date: 04/02/2025 18:27:34
-Checking script check_task02.ps1 not found
-PHP_CHernomorskij_MM
 PHP_Cybisov_IE
 PHP_Fedin_D
 PHP_Fedoseev_AS
-PHP_Fofonov_AV
 PHP_Grigoreva_LV
 PHP_Ilyushkin_YAV
 PHP_Isaev_AA
 PHP_Kajmakova_EV
-PHP_Kalachin_DA
-PHP_Kiryuhin_IO
 PHP_Kolotuhin_DV
-PHP_Kozlov_SI
-PHP_Krepyshev_NA
 PHP_Kuchin_RS
-PHP_Kulavskaya_YUE
 PHP_Kuzmin_NA
 PHP_Malkin_DA
 PHP_Masharin_DV
 PHP_Mezin_RV
 PHP_Moiseev_AA
-PHP_Mugrychyov_VD
 PHP_Nadkin_IS
 PHP_Nechiporuk_NA
-PHP_Nizhegorodov_YAN
 PHP_Pashkov_EYU
 PHP_Polevshchikov_DP
 PHP_Polushatov_AS
@@ -98,8 +33,6 @@ PHP_Polushkin_SP
 PHP_Puchkin_IYU
 PHP_Repnikov_MA
 PHP_Rybina_EA
-PHP_Savelev_AI
-PHP_SHegurov_AM
 PHP_SHerstnyov_KI
 PHP_SHokov_DR
 PHP_SHurygina_KN
@@ -112,5 +45,5 @@ PHP_Zaharova_EA
 PHP_ZHarkov_KS
 **********************
 PowerShell transcript end
-End time: 20250402233736
+End time: 20250408154123
 **********************
