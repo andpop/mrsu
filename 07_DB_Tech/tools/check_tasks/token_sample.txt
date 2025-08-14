@@ -1,0 +1,2 @@
+# Real personal access token for GitHub teacher repositor should be in token.txt
+12345678
