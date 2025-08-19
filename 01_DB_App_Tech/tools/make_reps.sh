@@ -1,9 +1,9 @@
 #!/bin/bash
 
-token=11l
+token=12345678
 rm ./reps.txt
-for student in $(cat students-list.txt); do
-   echo "402_DBTech_$student" >> reps.txt
+for student in $(cat students_401.txt); do
+   echo "401_DBAppTech_$student" >> reps.txt
 done
 
 for repo in $(cat reps.txt) ; do

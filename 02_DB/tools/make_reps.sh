@@ -2,7 +2,7 @@
 token=12345678
 rm ./reps.txt
 for student in $(cat students-list.txt); do
-   echo "303_$student" >> reps.txt
+   echo "304_DB_$student" >> reps.txt
 done
 
 for repo in $(cat reps.txt) ; do
