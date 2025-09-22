@@ -1,6 +1,7 @@
-Mezin_RV
-Orifov_MA
-Polushatov_AS
-Slushkin_DV
-Tazin_AN
-
+401_DBAppTech_Dubrovskaya_YUV
+401_DBAppTech_Kudashkina_OS
+401_DBAppTech_Yunusov_AR
+402_DBAppTech_Votyakov_MA
+402_DBAppTech_Korotkevich_DA
+402_DBAppTech_Simonov_AP
+402_DBAppTech_CHumakov_VA

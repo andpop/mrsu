@@ -1,22 +1,372 @@
 **********************
 PowerShell transcript start
-Start time: 20231004105038
+Start time: 20250922094757
 **********************
 Transcript started, output file is log.txt
+304_DB_Afonkin_DE
+304_DB_Aksenov_RM
+304_DB_Artemev_DA
+304_DB_Dolya_OA
+304_DB_Geraskin_RG
+304_DB_Isakov_VV
+304_DB_Kiselev_NS
+304_DB_Kizhaev_RP
+304_DB_Kochetov_VA
+304_DB_Kurmakaev_RA
+=====================================================
+/home/andrey/labs/DB/304_DB_Kurmakaev_RA
+Из github.com-mrsu:andpop-mrsu/304_DB_Kurmakaev_RA
+Из github.com-mrsu:andpop-mrsu/304_DB_Kurmakaev_RA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/th000mas/304_DB_Kurmakaev_RA
+Из https://github.com/th000mas/304_DB_Kurmakaev_RA
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 452221d..a4faf02
+Fast-forward (no commit created; -m option ignored)
+ Task01/README.md         |     3 +
+ Task01/genres.txt        |    18 +
+ Task01/movies.csv        |  9743 +++++++++++++++++++++++
+ Task01/occupation.txt    |    21 +
+ Task01/ratings.csv       | 18774 +++++++++++++++++++++++++++++++++++++++++++++
+ Task01/ratings_count.txt |     2 +
+ Task01/sqlite.txt        |     2 +
+ Task01/tags.csv          |  3684 +++++++++
+ Task01/users.txt         |   943 +++
+ 9 files changed, 33190 insertions(+)
+ create mode 100644 Task01/README.md
+ create mode 100644 Task01/genres.txt
+ create mode 100644 Task01/movies.csv
+ create mode 100644 Task01/occupation.txt
+ create mode 100644 Task01/ratings.csv
+ create mode 100644 Task01/ratings_count.txt
+ create mode 100644 Task01/sqlite.txt
+ create mode 100644 Task01/tags.csv
+ create mode 100644 Task01/users.txt
+--------------------------------------------------
+Task:  /home/andrey/labs/DB/304_DB_Kurmakaev_RA/Task01
+--------------------------------------------------
+Check path: genres.txt
+--------------------------------------------------
+Check path: movies.csv
+--------------------------------------------------
+Check path: occupation.txt
+--------------------------------------------------
+Check path: ratings.csv
+--------------------------------------------------
+Check path: tags.csv
+--------------------------------------------------
+Check path: users.txt
+--------------------------------------------------
+Check path: ratings_count.txt
+1 232
+120 22
+--------------------------------------------------
+Check path: README.md
+movies - movieId, title, genres
+tags - userId, movieId, tag, timestamp
+ratings - userId, movieId, rating, timestamp
+--------------------------------------------------
+Check path: sqlite.txt
+3.50.4
+list, column, csv, json, line, qbox, quote, table, ascii, tabs, tcl, markdown, html, column, insert
+--------------------------------------------------
+Total ok: 9
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/DB/304_DB_Kurmakaev_RA
+Task01
+Task from branch: Task01
+Creation date: 09/19/2025 14:42:11
+To github.com-mrsu:andpop-mrsu/304_DB_Kurmakaev_RA.git
+To github.com-mrsu:andpop-mrsu/304_DB_Kurmakaev_RA.git
+   452221d..a4faf02  master -> master
+   452221d..a4faf02  master -> master
+304_DB_Kuvakin_RA
+304_DB_Lukovataya_KV
+304_DB_Migachev_IP
+304_DB_Moiseev_OM
+304_DB_Nepyanova_AP
+304_DB_Pazuhina_AK
+304_DB_Piganov_DM
+304_DB_Savin_RV
+304_DB_Sergeeva_OD
+304_DB_Shagilov_KD
+304_DB_Shevolaev_IV
+=====================================================
+/home/andrey/labs/DB/304_DB_Shevolaev_IV
+Из github.com-mrsu:andpop-mrsu/304_DB_Shevolaev_IV
+Из github.com-mrsu:andpop-mrsu/304_DB_Shevolaev_IV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/IliyaShevolaev/304_DB_Shevolaev_IV
+Из https://github.com/IliyaShevolaev/304_DB_Shevolaev_IV
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 836bcb6..59f8702
+Fast-forward (no commit created; -m option ignored)
+ Task01/README.md              |    58 +
+ Task01/dataset/genres.txt     |    18 +
+ Task01/dataset/movies.csv     |  9743 +++++++++++++++++++++
+ Task01/dataset/occupation.txt |    21 +
+ Task01/dataset/ratings.csv    | 18774 ++++++++++++++++++++++++++++++++++++++++
+ Task01/dataset/tags.csv       |  3684 ++++++++
+ Task01/dataset/users.txt      |   943 ++
+ Task01/ratings_count.txt      |     4 +
+ Task01/sqlite.txt             |    18 +
+ 9 files changed, 33263 insertions(+)
+ create mode 100644 Task01/README.md
+ create mode 100644 Task01/dataset/genres.txt
+ create mode 100644 Task01/dataset/movies.csv
+ create mode 100644 Task01/dataset/occupation.txt
+ create mode 100644 Task01/dataset/ratings.csv
+ create mode 100644 Task01/dataset/tags.csv
+ create mode 100644 Task01/dataset/users.txt
+ create mode 100644 Task01/ratings_count.txt
+ create mode 100644 Task01/sqlite.txt
+--------------------------------------------------
+Task:  /home/andrey/labs/DB/304_DB_Shevolaev_IV/Task01
+--------------------------------------------------
+Check path: genres.txt
+genres.txt not found
+--------------------------------------------------
+Check path: movies.csv
+movies.csv not found
+--------------------------------------------------
+Check path: occupation.txt
+occupation.txt not found
+--------------------------------------------------
+Check path: ratings.csv
+ratings.csv not found
+--------------------------------------------------
+Check path: tags.csv
+tags.csv not found
+--------------------------------------------------
+Check path: users.txt
+users.txt not found
+--------------------------------------------------
+Check path: ratings_count.txt
+Значение минимального идентификатора пользователя из файла ratings.csv — 1. Количество строк с этим идентификатором — 232.
 
-Get-ChildItem: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/run_check.ps1:17
-Line |
-  17 |  $studentDirs = (Get-ChildItem $studentDirsPath -Attributes Directory)
-     |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot find path '/home/andrey/labs/303' because it does not exist.
+Значение максимального идентификатора пользователя из файла ratings.csv — 120. 
+Количество строк с этим идентификатором — 22.
+--------------------------------------------------
+Check path: README.md
+# Структура файлов данных из dataset
 
-Get-ChildItem: /home/andrey/projects/mrsu/02_DB/tools/check_tasks/run_check.ps1:17
-Line |
-  17 |  $studentDirs = (Get-ChildItem $studentDirsPath -Attributes Directory)
-     |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot find path '/home/andrey/labs/303' because it does not exist.
+#### movies.csv
 
+* `movieId` — ID
+
+* `title` — название
+
+* `genres` — жанры
+
+#### ratings.csv
+
+* `userId` — ID пользователя
+
+* `movieId` — ID фильма
+
+* `rating` — оценка
+
+* `timestamp` — временная метка
+
+#### users.txt
+
+* ID
+
+* имя
+
+* почта
+
+* пол
+
+* дата регистрации
+
+* профессия
+
+Без строки заголовков
+
+#### genres.txt
+
+* жанр
+
+Без строки заголовков
+
+#### occupation.txt
+
+* профессия
+
+Без строки заголовков
+
+### tags.csv
+
+— `userId` — ID пользователя
+
+— `movieId` — ID фильма  
+
+— `tag` — тег
+
+— `timestamp` — временная метка
+--------------------------------------------------
+Check path: sqlite.txt
+Установленная версия SQLite — SQLite version 3.50.4 от 2025-07-30 19:33:53.
+
+Режимы ввода данных:
+ascii
+box
+csv
+column
+html
+insert
+json
+line
+list
+markdown
+qbox
+quote
+table
+tabs
+tcl
+--------------------------------------------------
+Total ok: 3
+Total error: 6
+--------------------------------------------------
+/home/andrey/labs/DB/304_DB_Shevolaev_IV
+Task01
+Task from branch: Task01
+Creation date: 09/19/2025 18:01:59
+To github.com-mrsu:andpop-mrsu/304_DB_Shevolaev_IV.git
+To github.com-mrsu:andpop-mrsu/304_DB_Shevolaev_IV.git
+   836bcb6..59f8702  master -> master
+   836bcb6..59f8702  master -> master
+304_DB_Sveshnikov_IK
+304_DB_Tumajkina_DA
+304_DB_Yambaev_KN
+=====================================================
+/home/andrey/labs/DB/304_DB_Yambaev_KN
+Из github.com-mrsu:andpop-mrsu/304_DB_Yambaev_KN
+Из github.com-mrsu:andpop-mrsu/304_DB_Yambaev_KN
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/Kostrakoff/304_DB_Yambaev_KN
+Из https://github.com/Kostrakoff/304_DB_Yambaev_KN
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 530ee4e..92e7419
+Fast-forward (no commit created; -m option ignored)
+ Task01/Git_instruction.md     |    17 +
+ Task01/README (2).md          |    69 +
+ Task01/README.md              |    13 +
+ Task01/dataset/genres.txt     |    18 +
+ Task01/dataset/movies.csv     |  9743 +++++++++++++++++++++
+ Task01/dataset/occupation.txt |    21 +
+ Task01/dataset/ratings.csv    | 18774 ++++++++++++++++++++++++++++++++++++++++
+ Task01/dataset/tags.csv       |  3684 ++++++++
+ Task01/dataset/users.txt      |   943 ++
+ Task01/ratings_count.txt      |     2 +
+ Task01/sqlite.txt             |    21 +
+ Task01/task01.md              |    45 +
+ 12 files changed, 33350 insertions(+)
+ create mode 100644 Task01/Git_instruction.md
+ create mode 100644 Task01/README (2).md
+ create mode 100644 Task01/README.md
+ create mode 100644 Task01/dataset/genres.txt
+ create mode 100644 Task01/dataset/movies.csv
+ create mode 100644 Task01/dataset/occupation.txt
+ create mode 100644 Task01/dataset/ratings.csv
+ create mode 100644 Task01/dataset/tags.csv
+ create mode 100644 Task01/dataset/users.txt
+ create mode 100644 Task01/ratings_count.txt
+ create mode 100644 Task01/sqlite.txt
+ create mode 100644 Task01/task01.md
+--------------------------------------------------
+Task:  /home/andrey/labs/DB/304_DB_Yambaev_KN/Task01
+--------------------------------------------------
+Check path: genres.txt
+genres.txt not found
+--------------------------------------------------
+Check path: movies.csv
+movies.csv not found
+--------------------------------------------------
+Check path: occupation.txt
+occupation.txt not found
+--------------------------------------------------
+Check path: ratings.csv
+ratings.csv not found
+--------------------------------------------------
+Check path: tags.csv
+tags.csv not found
+--------------------------------------------------
+Check path: users.txt
+users.txt not found
+--------------------------------------------------
+Check path: ratings_count.txt
+1 232
+120 22
+--------------------------------------------------
+Check path: README.md
+# Лабораторные работы для курса "Базы данных"
+### Мордовский госуниверситет, ПИ, 304 группа
+
+### Темы
+1. **Интерактивная работа с реляционными базами данных.** Проектирование базы данных. Создание и изменение таблиц. Вставка, выборка, изменение и удаление данных. 
+2. **Программная работа с реляционной базой данных.** Создание PHP-приложения для работы с базой данных через PDO и ORM.
+
+### Задания и решения
+* Задания для выполнения размещаются в файлах task01.md, task02.md, ...
+* Проекты для решения заданий размещаются в каталогах Task01, Task02, Task03, ...
+* Прав на запись (коммиты) в данный репозиторий у студентов нет, файлы с решениями должны передаваться из личных репозиториев через механизм Pull Requests.
+* Задание будет считаться принятым после закрытия соответствующего Pull Request в этом репозитории.
+--------------------------------------------------
+Check path: sqlite.txt
+SQLite version 3.50.4 2025-07-30 19:33:53
+
+
+sqlite> .help mode
+.mode ?MODE? ?OPTIONS?   Set output mode
+   MODE is one of:
+     ascii       Columns/rows delimited by 0x1F and 0x1E
+     box         Tables using unicode box-drawing characters
+     csv         Comma-separated values
+     column      Output in columns.  (See .width)
+     html        HTML <table> code
+     insert      SQL insert statements for TABLE
+     json        Results in a JSON array
+     line        One value per line
+     list        Values delimited by "|"
+     markdown    Markdown table format
+     qbox        Shorthand for "box --wrap 60 --quote"
+     quote       Escape answers as for SQL
+     table       ASCII-art table
+     tabs        Tab-separated values
+     tcl         TCL list elements
+--------------------------------------------------
+Total ok: 3
+Total error: 6
+--------------------------------------------------
+/home/andrey/labs/DB/304_DB_Yambaev_KN
+Выполнение задания Task01: добавлены ratings_count.txt, sqlite.txt, R…
+Task from branch: Task01
+Creation date: 09/20/2025 19:10:38
+To github.com-mrsu:andpop-mrsu/304_DB_Yambaev_KN.git
+To github.com-mrsu:andpop-mrsu/304_DB_Yambaev_KN.git
+   530ee4e..92e7419  master -> master
+   530ee4e..92e7419  master -> master
+304_DB_Yastrebcev_DN
+304_DB_Zabnenkov_MA
 **********************
 PowerShell transcript end
-End time: 20231004105039
+End time: 20250922100655
 **********************

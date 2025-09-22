@@ -1,19 +1,10 @@
-**********************
-PowerShell transcript start
-Start time: 20250922094636
-**********************
-Transcript started, output file is log.txt
 301_DBTech_Andronov_NA
 301_DBTech_Babin_DO
 301_DBTech_Buyankina_AS
-301_DBTech_CHernov_MM
-301_DBTech_Eremin_VS
-301_DBTech_Fomin_SO
 301_DBTech_Golikov_PA
 301_DBTech_Goncharov_KD
-301_DBTech_Haritonov_DV
-301_DBTech_Hopov_NA
-301_DBTech_Hripchenko_YuV
+301_DBTech_Eremin_VS
+301_DBTech_ZHurin_IA
 301_DBTech_Karmyshev_IR
 301_DBTech_Kuchina_AS
 301_DBTech_Larkin_MS
@@ -26,10 +17,14 @@ Transcript started, output file is log.txt
 301_DBTech_Samylkin_ME
 301_DBTech_Sarajkin_ME
 301_DBTech_Senichev_AS
-301_DBTech_ZHurin_IA
+301_DBTech_Fomin_SO
+301_DBTech_Haritonov_DV
+301_DBTech_Hopov_NA
+301_DBTech_Hripchenko_YuV
+301_DBTech_CHernov_MM
+302_DBTech_Grishukov_EV
 302_DBTech_Dankin_I
 302_DBTech_Ermakov_EA
-302_DBTech_Grishukov_EV
 302_DBTech_Karmazov_NA
 302_DBTech_Kitaev_EV
 302_DBTech_Kopein_AS
@@ -37,13 +32,9 @@ Transcript started, output file is log.txt
 302_DBTech_Lukyanov_RA
 302_DBTech_Markin_KR
 302_DBTech_Romanov_DA
-302_DBTech_Shaposhnikov_AA
-302_DBTech_Shilyaeva_OI
 302_DBTech_Sosnina_IV
 302_DBTech_Tiossa_MN
 302_DBTech_Tuzhin_DO
 302_DBTech_Uchuvatkin_NS
-**********************
-PowerShell transcript end
-End time: 20250922094659
-**********************
+302_DBTech_Shaposhnikov_AA
+302_DBTech_Shilyaeva_OI

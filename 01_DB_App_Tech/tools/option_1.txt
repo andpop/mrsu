@@ -1,6 +1,7 @@
-Biushkin_DV
-Grigoreva_LV
-Zharkov_KS
-Zaglumonina_AI
-Zaharova_EA
-
+401_DBAppTech_Abdrashitov_SA
+401_DBAppTech_Klimentev_AA
+401_DBAppTech_Savickaya_MV
+402_DBAppTech_Baranov_EA
+402_DBAppTech_Egorov_AS
+402_DBAppTech_Novikov_ME
+402_DBAppTech_Tenishev_RR

@@ -1,34 +1,1807 @@
 **********************
 PowerShell transcript start
-Start time: 20241227142555
+Start time: 20250918135326
 **********************
 Transcript started, output file is log.txt
-402_DBTech_Abramov_AI
-402_DBTech_Biushkin_DV
-402_DBTech_Chernomorskiy_MM
-402_DBTech_Cybisov_IE
-402_DBTech_Fedoseev_AS
-402_DBTech_Grigoreva_LV
-402_DBTech_Kaymakova_EV
-402_DBTech_Kolotuhin_DV
-402_DBTech_Krasulin_NI
-402_DBTech_Kuchin_RS
-402_DBTech_Kuzmin_NA
-402_DBTech_Malkin_DA
-402_DBTech_Mezin_RV
-402_DBTech_Orifov_MA
-402_DBTech_Polushatov_AS
-402_DBTech_Puchkin_IYu
-402_DBTech_Sherstnev_KI
-402_DBTech_Shokov_DR
-402_DBTech_Shurygina_KN
-402_DBTech_Slushkin_DV
-402_DBTech_Tazin_AN
-402_DBTech_Tenyakshev_MA
-402_DBTech_Zaglumonina_AI
-402_DBTech_Zaharova_EA
-402_DBTech_Zharkov_KS
+401_DBAppTech_Abdrashitov_SA
+401_DBAppTech_Balyaev_DS
+401_DBAppTech_Belokosov_MD
+401_DBAppTech_Bikchurin_ESH
+401_DBAppTech_Dubrovskaya_YUV
+401_DBAppTech_Fajzullin_IR
+=====================================================
+/home/andrey/labs/DBAppTech/401_DBAppTech_Fajzullin_IR
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Fajzullin_IR
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Fajzullin_IR
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/GoodLixe/401_DBAppTech_Fajzullin_IR
+Из https://github.com/GoodLixe/401_DBAppTech_Fajzullin_IR
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление ad905dc..81d4fa6
+Fast-forward (no commit created; -m option ignored)
+ Task01/README_logger.md |  11 +++++++++++
+ Task01/self-logger.sh   |  48 ++++++++++++++++++++++++++++++++++++++++++++++++
+ Task01/self_logger.db   | Bin 0 -> 12288 bytes
+ Task01/task1.php        |   7 +++++++
+ 4 files changed, 66 insertions(+)
+ create mode 100644 Task01/README_logger.md
+ create mode 100755 Task01/self-logger.sh
+ create mode 100644 Task01/self_logger.db
+ create mode 100644 Task01/task1.php
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/401_DBAppTech_Fajzullin_IR/Task01
+--------------------------------------------------
+Check path: self-logger.bat
+self-logger.bat not found
+--------------------------------------------------
+Check path: task1.php
+<?php
+echo "================================\n";
+echo "Инструкция к игре\n";
+echo "================================\n";
+echo "Описание игры будет добавлено в следующих лабораторных работах.\n";
+echo "На данном этапе реализована система логирования запусков скриптов.\n";
+?>
+--------------------------------------------------
+Check path: README.md
+README.md not found
+--------------------------------------------------
+Check path: README_logger.md
+# Инструкция по запуску self-logger.sh
+
+## Требования:
+- Установленный SQLite3 (обычно предустановлен на macOS)
+- Терминал
+
+## Запуск:
+1. Откройте Терминал
+2. Перейдите в папку со скриптом:
+   ```bash
+   cd path/to/Task01
+--------------------------------------------------
+Total ok: 2
+Total error: 2
+--------------------------------------------------
+Task01
+task from branch: Task01
+creation date: 09/17/2025 18:04:07
+To github.com-mrsu:andpop-mrsu/401_DBAppTech_Fajzullin_IR.git
+To github.com-mrsu:andpop-mrsu/401_DBAppTech_Fajzullin_IR.git
+   ad905dc..81d4fa6  master -> master
+   ad905dc..81d4fa6  master -> master
+401_DBAppTech_Frolov_AV
+401_DBAppTech_Kelmyashkin_DV
+401_DBAppTech_Klimentev_AA
+401_DBAppTech_Klyuchkina_EV
+401_DBAppTech_Korpachan_NV
+401_DBAppTech_Kudashkina_OS
+401_DBAppTech_Ponomarev_MA
+401_DBAppTech_Savickaya_MV
+401_DBAppTech_Tyurin_MS
+401_DBAppTech_Yunusov_AR
+=====================================================
+/home/andrey/labs/DBAppTech/401_DBAppTech_Yunusov_AR
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Yunusov_AR
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Yunusov_AR
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/Aidar-555/401_DBAppTech_Yunusov_AR
+Из https://github.com/Aidar-555/401_DBAppTech_Yunusov_AR
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     main       -> student/main
+ * [новая ветка]     main       -> student/main
+Merge made by the 'recursive' strategy.
+ Task02/hangman/.gitignore         |  4 +++
+ Task02/hangman/README.md          | 59 +++++++++++++++++++++++++++++++++++++++
+ Task02/hangman/bin/hangman        |  7 +++++
+ Task02/hangman/composer.json      | 21 ++++++++++++++
+ Task02/hangman/src/Controller.php |  8 ++++++
+ Task02/hangman/src/View.php       |  6 ++++
+ 6 files changed, 105 insertions(+)
+ create mode 100644 Task02/hangman/.gitignore
+ create mode 100644 Task02/hangman/README.md
+ create mode 100644 Task02/hangman/bin/hangman
+ create mode 100644 Task02/hangman/composer.json
+ create mode 100644 Task02/hangman/src/Controller.php
+ create mode 100644 Task02/hangman/src/View.php
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/401_DBAppTech_Yunusov_AR/Task02
+--------------------------------------------------
+Check path: README.md
+Написать программу для игры "Виселица" (hangman). Компьютер загадывает слово из шести букв (список возможных слов нужно заранее сгенерировать и сохранить в базе данных) и рисует на странице отдельные пустые клетки для каждой буквы. Игрок пытается угадать буквы, а затем и все слово целиком. Если игрок правильно угадывает букву, компьютер вписывает ее в клетку. Если ошибается, то рисует одну из частей тела повешенного человека (использовать псевдографику). Чтобы победить, игрок должен угадать все буквы в слове до того, как повешенный человечек будет полностью нарисован.
+
+Информация о датах и исходах всех партий, а также о всех попытках, сделанных во время игры, должна сохраняться в базе данных.
+Для каждой игры в базе должна храниться следующая информация:
+Дата игры
+Имя игрока
+Загаданное компьютером слово
+Исход игры (угадал/не угадал)
+Запись попыток в формате: номер попытки | предложенная буква | результат
+В программе должны быть реализованы три режима:
+Новая игра.
+Вывод списка всех сохраненных в базе партий.
+Повтор любой сохраненной партии (то есть повтор всех ходов из этой партии).
+Окружение и требования для запуска
+PHP:
+
+Версия: 7.4 или выше.
+Настройки в php.ini:
+Включите SQLite (extension=sqlite3).
+Убедитесь, что настройки отображения ошибок (display_errors) включены в режиме разработки.
+SQLite:
+
+Версия: 3.x.
+Проверьте наличие прав записи в каталоге, где находятся файлы баз данных.
+Composer:
+
+Composer должен быть установлен глобально.
+Используйте команду composer для управления зависимостями.
+Для установки Composer следуйте официальной документации.
+Установка и запуск проекта
+Склонируйте репозиторий:
+
+git clone https://github.com/aidar555/hangman
+Перейдите в каталог проекта:
+
+cd \..\hangman
+Установите зависимости через Composer:
+
+composer install
+Запуск игры: Выполните команду для запуска игры:
+
+php bin/hangman
+Или если ваш пакет опубликован на Packagist, установите его глобально:
+composer global require aidar555/hangman
+И затем выполните команду:
+hangman
+Примечания
+Проверьте права на запись в каталог с базой данных SQLite.
+
+Дополнительную информацию можно найти в документации PHP, SQLite и Composer:
+
+SQLite Documentation
+
+PHP Documentation
+
+Composer Documentation
+
+Ссылки на пакеты
+Packagist пакет Minesweeper
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "aidar555/hangman",
+    "authors": [
+        {
+            "name": "Aidar Yunusov",
+            "email": "rinatka70@mail.ru"
+        }
+    ],
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.6"
+    },
+    "bin": [
+        "bin/hangman"
+    ],
+    "autoload": {
+        "files": [
+            "src/Controller.php",
+            "src/View.php"
+        ]
+    }
+}
+--------------------------------------------------
+Check path: src/Controller.php
+<?php
+namespace aidar555\hangman\Controller;
+
+use aidar555\hangman\View;
+
+function startGame() {
+    View\showStartScreen();
+}
+--------------------------------------------------
+Check path: src/View.php
+<?php
+namespace aidar555\hangman\View;
+
+function showStartScreen() {
+    echo "Добро пожаловать в игру hangman!\n";
+}
+--------------------------------------------------
+Total ok: 4
+Total error: 0
+--------------------------------------------------
+Complete Hangman game implementation with Composer setup
+task from branch: Task02
+creation date: 09/16/2025 17:10:32
+To github.com-mrsu:andpop-mrsu/401_DBAppTech_Yunusov_AR.git
+To github.com-mrsu:andpop-mrsu/401_DBAppTech_Yunusov_AR.git
+   88f7856..0d4135b  master -> master
+   88f7856..0d4135b  master -> master
+402_DBAppTech_Baranov_EA
+402_DBAppTech_Borcov_ID
+402_DBAppTech_CHumakov_VA
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_CHumakov_VA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_CHumakov_VA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_CHumakov_VA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/SakatoGin/402_DBAppTech_CHumakov_VA
+Из https://github.com/SakatoGin/402_DBAppTech_CHumakov_VA
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+   8a973aa..e759c53  master     -> student/master
+   8a973aa..e759c53  master     -> student/master
+Обновление e759c53..87949f4
+Fast-forward (no commit created; -m option ignored)
+ Task02/hangman/.gitignore         | 14 ++++++++
+ Task02/hangman/README.md          | 69 +++++++++++++++++++++++++++++++++++++++
+ Task02/hangman/bin/hangman.php    |  5 +++
+ Task02/hangman/composer.json      | 26 +++++++++++++++
+ Task02/hangman/src/Controller.php |  8 +++++
+ Task02/hangman/src/View.php       | 21 ++++++++++++
+ 6 files changed, 143 insertions(+)
+ create mode 100644 Task02/hangman/.gitignore
+ create mode 100644 Task02/hangman/README.md
+ create mode 100644 Task02/hangman/bin/hangman.php
+ create mode 100644 Task02/hangman/composer.json
+ create mode 100644 Task02/hangman/src/Controller.php
+ create mode 100644 Task02/hangman/src/View.php
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_CHumakov_VA/Task02
+--------------------------------------------------
+Check path: README.md
+# Task02 — Игра "Виселица"
+
+## Описание проекта
+Программа для консольной игры **"Виселица"**.  
+Игрок должен угадать загаданное компьютером слово, открывая буквы по одной и стараясь не допустить полного «повешения».
+
+---
+
+### Правила игры
+- Компьютер случайным образом загадывает слово из словаря. 
+- Игрок вводит букву. 
+- Если буква есть в слове — она открывается на всех соответствующих позициях.
+- Если буквы нет — игроку начисляется ошибка (добавляется часть виселицы).
+- Игра продолжается до тех пор, пока:
+  - слово не будет угадано целиком (победа);
+  - или количество ошибок не достигнет максимального (проигрыш).
+
+---
+
+### Сохраняемая информация
+Информация о каждой игре сохраняется в базе данных SQLite:
+- дата игры;
+- имя игрока;
+- загаданное слово;
+- исход игры (победа / поражение);
+- количество допущенных ошибок;
+- список всех попыток (номер, введённая буква, результат).
+
+---
+
+### Режимы работы программы
+1. Начать новую игру.  
+2. Правила игры.  
+3. Выход.  
+
+---
+
+## Требования
+- **PHP** >= 8.0 (CLI-режим)  
+- **Composer** (глобально установленный)  
+- **SQLite** (для хранения данных игры)  
+
+---
+
+## Установка и запуск
+
+### 1. Клонировать репозиторий:
+```bash
+git clone https://github.com/SakatoGin/hangman.git
+cd hangman
+```
+
+### 2. Установить зависимости:
+```bash
+composer install
+```
+
+### 3. Сгенерировать автозагрузку:
+```bash
+composer dump-autoload -o
+```
+
+### 4. Запустить игру:
+```bash
+
+### Проект на Packagist
+https://packagist.org/packages/tanner/hangman
+./bin/hangman
+```
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "tanner/hangman",
+    "description": "Game Hangman",
+    "type": "project",
+    "bin": [
+        "bin/hangman"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Tanner\\Hangman\\": "src/"
+        },
+    "files": [
+        "src/Controller.php",
+        "src/View.php"
+    ]
+    },
+    "authors": [
+        {
+            "name": "SakatoGin",
+            "email": "vachumak0v@yandex.ru"
+        }
+    ],
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.6"
+    }
+}
+--------------------------------------------------
+Check path: src/Controller.php
+<?php
+namespace Tanner\Hangman\Controller;
+
+use Tanner\Hangman\View\View;
+
+function startGame() {
+    View::renderStartScreen();
+}
+--------------------------------------------------
+Check path: src/View.php
+<?php
+namespace Tanner\Hangman\View;
+
+class View {
+    public static function renderStartScreen() {
+        if (function_exists('\cli\line')) {
+            \cli\line("=== Игра 'Виселица' ===");
+            \cli\line("Меню:");
+            \cli\line("1) Начать новую игру");
+            \cli\line("2) Правила игры");
+            \cli\line("3) Выход");
+            \cli\line("");
+        } else {
+            echo "=== Игра 'Виселица' ===\n";
+            echo "Меню:\n";
+            echo "1) Начать новую игру\n";
+            echo "2) Правила игры\n";
+            echo "3) Выход\n\n";
+        }
+    }
+}
+--------------------------------------------------
+Total ok: 4
+Total error: 0
+--------------------------------------------------
+Task02
+task from branch: Task02
+creation date: 09/16/2025 18:15:12
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_CHumakov_VA.git
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_CHumakov_VA.git
+   e759c53..87949f4  master -> master
+   e759c53..87949f4  master -> master
+402_DBAppTech_Egorov_AS
+402_DBAppTech_Ganchenkov_AA
+402_DBAppTech_Grachev_AV
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Grachev_AV
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Grachev_AV
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Grachev_AV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/artemaaaaaaaaaaaaaaaaaaa/402_DBAppTech_Grachev_AV
+Из https://github.com/artemaaaaaaaaaaaaaaaaaaa/402_DBAppTech_Grachev_AV
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+   8067b1d..bffe35c  master     -> student/master
+   8067b1d..bffe35c  master     -> student/master
+Merge made by the 'recursive' strategy.
+ README.md                                          | 102 +++-
+ Task02/minesweeper/README.md                       |  94 ++++
+ Task02/minesweeper/bin/minesweeper                 |  15 +
+ Task02/minesweeper/composer.json                   |  20 +
+ Task02/minesweeper/composer.lock                   |  82 +++
+ Task02/minesweeper/src/Controller.php              |   7 +
+ Task02/minesweeper/src/View.php                    |   6 +
+ Task02/minesweeper/vendor/autoload.php             |  22 +
+ Task02/minesweeper/vendor/composer/ClassLoader.php | 579 +++++++++++++++++++++
+ .../vendor/composer/InstalledVersions.php          | 396 ++++++++++++++
+ Task02/minesweeper/vendor/composer/LICENSE         |  21 +
+ .../vendor/composer/autoload_classmap.php          |  32 ++
+ .../minesweeper/vendor/composer/autoload_files.php |  12 +
+ .../vendor/composer/autoload_namespaces.php        |  10 +
+ .../minesweeper/vendor/composer/autoload_psr4.php  |  10 +
+ .../minesweeper/vendor/composer/autoload_real.php  |  50 ++
+ .../vendor/composer/autoload_static.php            |  75 +++
+ Task02/minesweeper/vendor/composer/installed.json  |  72 +++
+ Task02/minesweeper/vendor/composer/installed.php   |  32 ++
+ .../minesweeper/vendor/composer/platform_check.php |  25 +
+ Task02/minesweeper/vendor/wp-cli/php-cli-tools     |   1 +
+ 21 files changed, 1652 insertions(+), 11 deletions(-)
+ create mode 100644 Task02/minesweeper/README.md
+ create mode 100644 Task02/minesweeper/bin/minesweeper
+ create mode 100644 Task02/minesweeper/composer.json
+ create mode 100644 Task02/minesweeper/composer.lock
+ create mode 100644 Task02/minesweeper/src/Controller.php
+ create mode 100644 Task02/minesweeper/src/View.php
+ create mode 100644 Task02/minesweeper/vendor/autoload.php
+ create mode 100644 Task02/minesweeper/vendor/composer/ClassLoader.php
+ create mode 100644 Task02/minesweeper/vendor/composer/InstalledVersions.php
+ create mode 100644 Task02/minesweeper/vendor/composer/LICENSE
+ create mode 100644 Task02/minesweeper/vendor/composer/autoload_classmap.php
+ create mode 100644 Task02/minesweeper/vendor/composer/autoload_files.php
+ create mode 100644 Task02/minesweeper/vendor/composer/autoload_namespaces.php
+ create mode 100644 Task02/minesweeper/vendor/composer/autoload_psr4.php
+ create mode 100644 Task02/minesweeper/vendor/composer/autoload_real.php
+ create mode 100644 Task02/minesweeper/vendor/composer/autoload_static.php
+ create mode 100644 Task02/minesweeper/vendor/composer/installed.json
+ create mode 100644 Task02/minesweeper/vendor/composer/installed.php
+ create mode 100644 Task02/minesweeper/vendor/composer/platform_check.php
+ create mode 160000 Task02/minesweeper/vendor/wp-cli/php-cli-tools
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Grachev_AV/Task02
+--------------------------------------------------
+Check path: README.md
+# Игра "Сапер" (Minesweeper)
+
+## О проекте
+
+Это консольная игра "Сапер", реализованная на PHP с использованием SQLite для хранения данных о партиях. Игрокам предоставляется возможность вести историю игр и повторно просматривать уже сыгранные ходы.
+
+Цель игры — открыть все клетки на поле, которые не содержат мин. Если игрок случайно открывает клетку с миной, игра заканчивается проигрышем. Клетки без мин показывают количество соседних мин.
+
+### Как играть
+
+- Открывайте клетки, стараясь не попасть на мину.
+- Если клетка безопасна, на ней отображается число соседних мин.
+- Если рядом с открытой клеткой нет мин, автоматически откроется область соседних безопасных клеток.
+
+### Основные возможности
+
+- **Настройка поля**: Пользователь задаёт размеры поля и количество мин перед началом игры.
+- **Сохранение прогресса**: Все партии и ходы сохраняются в базе данных SQLite.
+- **Информация о партиях**:
+  - Дата и время игры
+  - Имя игрока
+  - Размер поля и число мин
+  - Расположение мин
+  - Результат игры (выигрыш/проигрыш)
+  - Лог ходов: `номер хода | координаты клетки | результат (мимо/взорвалась/выиграл)`
+- **Режимы игры**:
+  - Новая игра
+  - Просмотр сохранённых игр
+  - Повтор предыдущих партий (воспроизведение ходов)
+
+---
+
+## Требования к окружению
+
+1. **PHP**:
+   - Версия 7.4 или выше.
+   - Включена поддержка SQLite (`extension=sqlite3`).
+   - Включён вывод ошибок (`display_errors`) в режиме разработки.
+
+2. **SQLite**:
+   - Версия 3.x.
+   - Каталог для базы данных должен быть доступен для записи.
+
+3. **Composer**:
+   - Установлен глобально.
+   - Используется для управления зависимостями проекта.
+   - [Документация Composer](https://getcomposer.org/doc/00-intro.md)
+
+---
+
+## Установка и запуск
+
+1. **Склонируйте репозиторий**:
+   ```bash
+   git clone https://github.com/artemaaaaaaaaaaaaaaaaaaa/minesweeper.git
+   ```
+   2. **Перейдите в каталог проекта**:
+   ```bash
+   cd \..\minesweeper
+   ```
+
+3. **Установите зависимости через Composer**:
+   ```bash
+   composer install
+   ```
+
+4. **Запуск игры: Выполните команду для запуска игры**:
+   ```bash
+   php bin/minesweeper
+   ```
+
+   - Или если ваш пакет опубликован на Packagist, установите его глобально:
+
+   ```bash
+   composer global require artyo/minesweeper
+   ```
+
+   - И затем выполните команду:
+   ```bash
+   minesweeper
+   ```
+
+## Примечания
+
+- Проверьте права на запись в каталог с базой данных SQLite.
+
+- Дополнительную информацию можно найти в документации PHP, SQLite и Composer:
+
+- [SQLite Documentation](https://www.sqlite.org/docs.html)
+- [PHP Documentation](https://www.php.net/docs.php)
+- [Composer Documentation](https://getcomposer.org/doc/)
+
+## Ссылки на пакеты
+- [Packagist пакет Minesweeper](https://packagist.org/packages/artyo/minesweeper)
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "artyo/minesweeper",
+    "version": "1.0.2",
+    "license": "MIT",
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Artyo\\Minesweeper\\": "src/"
+        },
+        "files": [
+            "src/Controller.php",
+            "src/View.php"
+        ]
+    },
+    "bin": [
+        "bin/minesweeper"
+    ]
+}
+--------------------------------------------------
+Check path: src/Controller.php
+<?php
+namespace Artyo\Minesweeper\Controller;
+
+function startGame() {
+    echo "Игра запускается!\n";
+    \Artyo\Minesweeper\View\showWelcome();
+}
+--------------------------------------------------
+Check path: src/View.php
+<?php
+namespace Artyo\Minesweeper\View;
+
+function showWelcome() {
+    echo "Добро пожаловать в игру Сапёр!\n";
+}
+--------------------------------------------------
+Total ok: 4
+Total error: 0
+--------------------------------------------------
+Task02
+task from branch: Task02
+creation date: 09/16/2025 14:44:15
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Grachev_AV.git
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Grachev_AV.git
+   bffe35c..a04db90  master -> master
+   bffe35c..a04db90  master -> master
+402_DBAppTech_Klinov_AV
+402_DBAppTech_Korotkevich_DA
+402_DBAppTech_Krestyanskova_MA
+402_DBAppTech_Novikov_ME
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Novikov_ME
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Novikov_ME
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Novikov_ME
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/darkflade/402_DBAppTech_Novikov_ME
+Из https://github.com/darkflade/402_DBAppTech_Novikov_ME
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+   39b2679..b9f7351  master     -> student/master
+   39b2679..b9f7351  master     -> student/master
+Обновление b9f7351..e33d0c7
+Fast-forward (no commit created; -m option ignored)
+ .gitignore                            |  3 ++
+ Task02/tic-tac-toe/README.md          | 67 +++++++++++++++++++++++++++++++++++
+ Task02/tic-tac-toe/bin/tic-tac-toe    | 25 +++++++++++++
+ Task02/tic-tac-toe/composer.json      | 18 ++++++++++
+ Task02/tic-tac-toe/src/Controller.php |  8 +++++
+ Task02/tic-tac-toe/src/View.php       |  9 +++++
+ 6 files changed, 130 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Task02/tic-tac-toe/README.md
+ create mode 100644 Task02/tic-tac-toe/bin/tic-tac-toe
+ create mode 100644 Task02/tic-tac-toe/composer.json
+ create mode 100644 Task02/tic-tac-toe/src/Controller.php
+ create mode 100644 Task02/tic-tac-toe/src/View.php
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Novikov_ME/Task02
+--------------------------------------------------
+Check path: README.md
+# Tic-Tac-Toe
+
+Консольная игра «Крестики-нолики» на PHP.
+ - работает через командную строку;
+   - использует символы "X" и "O" для отображения фигур;
+   - координаты ячеек вводятся через два числа, разделённых пробелом (номер строки и номер столбца);
+   - режимы работы приложения определяются через аргументы командной строки:
+     - `--new` (`-n`) — новая игра (режим по умолчанию);
+     - `--list` (`-l`) — вывод списка всех сохранённых партий;
+     - `--replay id` (`-r id`) — воспроизведение игры с указанным идентификатором;
+     - `--help` (`-h`) — краткая справка о формате ввода и доступных ключах.
+
+Все ходы и результаты партий сохраняются в базу данных SQLite, что позволяет просматривать историю игр и воспроизводить их.
+
+---
+
+## Требования окружения
+
+- **PHP** ≥ 8.4  
+  Проверено на версии:
+  PHP 8.4.12 (cli) (ZTS Visual C++ 2022 x64)
+  Zend Engine v4.4.12
+
+- **Composer** ≥ 2.8  
+  Проверено на версии:
+  Composer - Dependency Manager for PHP - version 2.8.11
+
+---
+
+## Установка и запуск
+
+1. Клонировать репозиторий:
+ ```bash
+ git clone https://github.com/darkflade/tic-tac-toe.git
+ cd tic-tac-toe
+ ```
+
+2. Установить зависимости:
+```bash
+composer install
+```
+3. Сгенерировать автозагрузку:
+```bash
+composer dump-autoload -o
+```
+4. Запустить игру:
+```bash
+php bin/tic-tac-toe
+```
+5. Возможен запуск напрямую через Packagist:
+ * Локально c директорию
+```bash
+composer composer create-project darkflade/tic-tac-toe
+```
+ * Глобально в путь composer
+```bash
+composer global require wp-cli/wp-cli
+composer global dump-autoload -o
+```
+
+## Используемые библиотеки
+
+wp-cli/php-cli-tools
+
+## Ссылка на packagit
+
+https://packagist.org/packages/darkflade/tic-tac-toe
+--------------------------------------------------
+Check path: composer.json
+
+{
+    "name": "darkflade/tic-tac-toe",
+    "description": "game",
+    "type": "project",
+    "bin": [
+        "bin/tic-tac-toe"
+    ],
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.6"
+    },
+    "autoload": {
+        "files": [
+            "src/Controller.php",
+            "src/View.php"
+        ] 
+    }
+}
+--------------------------------------------------
+Check path: src/Controller.php
+<?php
+namespace Darkflade\Tic_tac_toe\Controller;
+
+use Darkflade\Tic_tac_toe\View;
+
+function startGame() {
+    View\showStartScreen();
+}
+--------------------------------------------------
+Check path: src/View.php
+<?php
+namespace Darkflade\Tic_tac_toe\View;
+
+use function cli\line;
+
+function showStartScreen() {
+    $helloMessage = "Добро пожаловать в игру Tic-Tac-Toe!\n";
+    line($helloMessage);
+}
+--------------------------------------------------
+Total ok: 4
+Total error: 0
+--------------------------------------------------
+Task02
+task from branch: Task02
+creation date: 09/17/2025 11:35:24
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Novikov_ME.git
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Novikov_ME.git
+   b9f7351..e33d0c7  master -> master
+   b9f7351..e33d0c7  master -> master
+402_DBAppTech_Pyanzina_VD
+402_DBAppTech_Sergeev_SA
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Sergeev_SA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Sergeev_SA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Sergeev_SA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/Kulebyaka1337/402_DBAppTech_Sergeev_SA
+Из https://github.com/Kulebyaka1337/402_DBAppTech_Sergeev_SA
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+   729ea8d..a0699b3  master     -> student/master
+   729ea8d..a0699b3  master     -> student/master
+Merge made by the 'recursive' strategy.
+ Task02/guess-number/.gitignore           | 14 ++++++
+ Task02/guess-number/README.md            | 77 ++++++++++++++++++++++++++++++++
+ Task02/guess-number/bin/guess-number.php |  5 +++
+ Task02/guess-number/composer.json        | 24 ++++++++++
+ Task02/guess-number/src/Controller.php   |  8 ++++
+ Task02/guess-number/src/View.php         | 26 +++++++++++
+ 6 files changed, 154 insertions(+)
+ create mode 100644 Task02/guess-number/.gitignore
+ create mode 100644 Task02/guess-number/README.md
+ create mode 100644 Task02/guess-number/bin/guess-number.php
+ create mode 100644 Task02/guess-number/composer.json
+ create mode 100644 Task02/guess-number/src/Controller.php
+ create mode 100644 Task02/guess-number/src/View.php
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Sergeev_SA/Task02
+--------------------------------------------------
+Check path: README.md
+# Task02 - Игра "Угадай число"
+
+## Описание проекта
+Программа для консольной игры "Угадай число".
+
+### Правила игры
+
+Компьютер загадывает число в диапазоне от 1 до максимального числа, указанного в настройках.
+Игрок должен угадать число за несколько попыток (максимальное количество также задаётся в настройках).
+
+После каждой попытки программа сообщает:
+* если число игрока больше загаданного — выводит "меньше";
+* если число игрока меньше загаданного — выводит "больше".
+
+#### Сохраняемая информация
+
+Информация о каждой игре сохраняется в базе данных SQLite:
+* дата игры;
+* имя игрока;
+* максимально возможное число;
+* загаданное число;
+* исход игры (угадал/не угадал);
+* список всех попыток (номер, введённое число, ответ компьютера).
+
+##### Режимы работы программы
+1. Новая игра.
+2. Список сохранённых игр.
+3. Список игр, в которых игрок победил.
+4. Список игр, в которых игрок проиграл.
+5. Статистика по игрокам (кол-во побед и поражений, сортировка по победам).
+6. Повтор любой сохранённой партии (показ всех ходов).
+
+###### Требования для запуска проекта
+* PHP >= 8.0 (CLI-режим)
+* Composer (Глобально установленный)
+* SQLite (Для хранения данных проекта)
+
+###### Установка и запуск
+
+## 1. Клонировать репозиторий:
+`git clone https://github.com/Kulebyaka1337/guess-number.git`
+`cd guess-number`
+
+## 2. Установка зависимости:
+`composer install`
+
+## 3. Сгенерировать автозагрузку:
+`composer dump-autoload -o`
+
+## 4. Запустить проект:
+`./bin/guess-number`
+
+## Структура проекта
+Task02/
+ └─ guess-number/
+     ├─ bin/
+     │  └─ guess-number         # Запускной скрипт
+     ├─ src/
+     │  ├─ Controller.php       # Логика игры
+     │  └─ View.php             # Отображение
+     ├─ vendor/
+     │  ├─ composer
+     │  │   ├─ autoload_classmap.php
+     │  │   ├─ autoload_namespaces.php
+     │  │   ├─ autoload_psr4.php
+     │  │   ├─ autoload_real.php
+     │  │   ├─ autoload_static.php
+     │  │   ├─ ClassLoader.php
+     │  │   └─ LICENSE
+     │  └─ autoload.php
+     ├─ .gitignore
+     ├─ composer.json           # Настройки Composer
+     ├─ composer.lock           
+     └─ README.md               # Документация
+	 
+Автор
+SergeevSergey (Kulebyaka1337)
+--------------------------------------------------
+Check path: composer.json
+{
+  "name": "mr-wo/guess-number",
+  "description": "Console Guess-number game (variant 2)",
+  "type": "project",
+  "bin": [
+    "bin/guess-number"
+  ],
+  "require": {
+    "php": ">=8.0",
+    "wp-cli/php-cli-tools": "^v0.12.6"
+  },
+  "autoload": {
+    "files": [
+      "src/Controller.php",
+      "src/View.php"
+    ]
+  },
+  "authors": [
+        {
+            "name": "Kulebyaka1337",
+            "email": "sergeevserg032@gmail.com"
+        }
+    ]
+}
+--------------------------------------------------
+Check path: src/Controller.php
+<?php
+namespace Kulebyaka1337\GuessNumber\Controller;
+
+use Kulebyaka1337\GuessNumber\View\View;
+
+function startGame() {
+    View::renderStartScreen();
+}
+--------------------------------------------------
+Check path: src/View.php
+<?php
+namespace Kulebyaka1337\GuessNumber\View;
+
+class View {
+    public static function renderStartScreen() {
+        if (function_exists('\cli\line')) {
+            \cli\line("=== Угадай число (GuessNumber) ===");
+            \cli\line("Режимы:");
+            \cli\line("1) Новая игра");
+            \cli\line("2) Список всех игр");
+            \cli\line("3) Победные игры");
+            \cli\line("4) Проигранные игры");
+            \cli\line("5) Статистика по игрокам");
+            \cli\line("6) Повтор партии");
+            \cli\line("");
+        } else {
+            echo "=== Угадай число (GuessNumber) ===\n";
+            echo "1) Новая игра\n";
+            echo "2) Список всех игр\n";
+            echo "3) Победные игры\n";
+            echo "4) Проигранные игры\n";
+            echo "5) Статистика по игрокам\n";
+            echo "6) Повтор партии\n\n";
+        }
+    }
+}
+--------------------------------------------------
+Total ok: 4
+Total error: 0
+--------------------------------------------------
+Task02
+task from branch: Task02
+creation date: 09/16/2025 16:05:07
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Sergeev_SA.git
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Sergeev_SA.git
+   a0699b3..9512d62  master -> master
+   a0699b3..9512d62  master -> master
+402_DBAppTech_SHestakov_VA
+402_DBAppTech_SHeyanov_AV
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_SHeyanov_AV
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_SHeyanov_AV
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_SHeyanov_AV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/openeeer/402_DBAppTech_SHeyanov_AV
+Из https://github.com/openeeer/402_DBAppTech_SHeyanov_AV
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Merge made by the 'recursive' strategy.
+ Task02/minesweeper/.gitignore         |  6 +++
+ Task02/minesweeper/README.md          | 53 ++++++++++++++++++++++
+ Task02/minesweeper/bin/minesweeper    | 16 +++++++
+ Task02/minesweeper/composer.json      | 25 +++++++++++
+ Task02/minesweeper/composer.lock      | 84 +++++++++++++++++++++++++++++++++++
+ Task02/minesweeper/src/Controller.php | 12 +++++
+ Task02/minesweeper/src/View.php       | 10 +++++
+ 7 files changed, 206 insertions(+)
+ create mode 100644 Task02/minesweeper/.gitignore
+ create mode 100644 Task02/minesweeper/README.md
+ create mode 100644 Task02/minesweeper/bin/minesweeper
+ create mode 100644 Task02/minesweeper/composer.json
+ create mode 100644 Task02/minesweeper/composer.lock
+ create mode 100644 Task02/minesweeper/src/Controller.php
+ create mode 100644 Task02/minesweeper/src/View.php
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_SHeyanov_AV/Task02
+--------------------------------------------------
+Check path: README.md
+
+# Minesweeper (Сапёр)
+
+**Packagist:** [https://packagist.org/packages/openeeer/minesweeper](https://packagist.org/packages/openeeer/minesweeper)
+
+## Описание
+
+Консольная реализация игры "Сапёр" на PHP. Проект структурирован с использованием автозагрузки Composer (PSR-4) и разделён на контроллер и представление.
+
+## Требования к окружению
+
+- **PHP**: версия 7.4 или выше  
+  - Включённые расширения: `mbstring`, `json`
+  - В файле `php.ini` должны быть активированы:
+    - `extension=mbstring`
+    - `extension=json`
+  - Рекомендуется установить и настроить переменную окружения `PATH` для запуска php из любой директории.
+- **Composer**: последняя стабильная версия  
+  - Для установки зависимостей и автозагрузки классов.
+- **ОС**: Windows, Linux или macOS (проект кроссплатформенный)
+
+## Установка
+
+1. Перейдите в папку проекта:
+   ```sh
+   cd Task02/minesweeper
+   ```
+2. Установите зависимости:
+   ```sh
+   composer install
+   ```
+
+## Запуск
+
+Выполните в терминале:
+```sh
+php bin/minesweeper
+```
+
+## Структура проекта
+
+- `src/Controller.php` — контроллер игры
+- `src/View.php` — представление (отображение)
+- `bin/minesweeper` — точка входа (CLI-скрипт)
+- `composer.json` — описание зависимостей и автозагрузки
+
+## Примечания
+
+- Если после изменения структуры файлов или классов возникают ошибки автозагрузки, выполните:
+  ```sh
+  composer dump-autoload
+  ```
+- Для расширения функционала используйте PSR-4 и следуйте принятой структуре.
+--------------------------------------------------
+Check path: composer.json
+{
+  "name": "openeeer/minesweeper",
+  "description": "Minesweeper Game",
+  "version": "1.0.1",
+  "type": "project",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "openeeer",
+      "email": "openeeer@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "wp-cli/php-cli-tools": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "openeeer\\Minesweeper\\": "src/"
+    }
+  },
+  "bin": [
+    "bin/minesweeper"
+  ]
+}
+--------------------------------------------------
+Check path: src/Controller.php
+<?php
+namespace openeeer\Minesweeper;
+
+use openeeer\Minesweeper\View;
+
+class Controller
+{
+    public static function startGame()
+    {
+        View::startScreen();
+    }
+}
+--------------------------------------------------
+Check path: src/View.php
+<?php
+namespace openeeer\Minesweeper;
+
+class View
+{
+    public static function startScreen()
+    {
+        echo "=== Minesweeper ===" . PHP_EOL;
+    }
+}
+--------------------------------------------------
+Total ok: 4
+Total error: 0
+--------------------------------------------------
+Task02
+task from branch: Task02
+creation date: 09/16/2025 14:24:44
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_SHeyanov_AV.git
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_SHeyanov_AV.git
+   62ad616..086aead  master -> master
+   62ad616..086aead  master -> master
+402_DBAppTech_Simonov_AP
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Simonov_AP
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Simonov_AP
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Simonov_AP
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/AlexSimonovGit/402_DBAppTech_Simonov_AP
+Из https://github.com/AlexSimonovGit/402_DBAppTech_Simonov_AP
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+Merge made by the 'recursive' strategy.
+ .gitignore                                   | 16 ++++++++
+ Task02/hangman/.gitignore                    | 11 ++++++
+ Task02/hangman/README.md                     | 13 +++++++
+ Task02/hangman/bin/hangman                   |  7 ++++
+ Task02/hangman/composer.json                 | 20 ++++++++++
+ Task02/hangman/src/Controller/Controller.php | 58 ++++++++++++++++++++++++++++
+ Task02/hangman/src/View/View.php             | 39 +++++++++++++++++++
+ 7 files changed, 164 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Task02/hangman/.gitignore
+ create mode 100644 Task02/hangman/README.md
+ create mode 100644 Task02/hangman/bin/hangman
+ create mode 100644 Task02/hangman/composer.json
+ create mode 100644 Task02/hangman/src/Controller/Controller.php
+ create mode 100644 Task02/hangman/src/View/View.php
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Simonov_AP/Task02
+--------------------------------------------------
+Check path: README.md
+# Hangman
+
+Консольная игра "Виселица".
+
+## Требования
+- PHP >= 8.0
+- Composer
+
+## Установка
+composer install
+
+## Запуск
+php bin/hangman
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "alex/hangman",
+    "authors": [
+        {
+            "name": "AlexSimonovGit",
+            "email": "zerollkashow@gmail.com"
+        }
+    ],
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.6"
+    },
+    "bin": [
+        "bin/hangman"
+    ],
+    "autoload": {
+        "psr-4": {
+            "AlexSimonovGit\\Hangman\\": "src/"
+        }
+    }
+}
+--------------------------------------------------
+Check path: src/Controller.php
+src/Controller.php not found
+--------------------------------------------------
+Check path: src/View.php
+src/View.php not found
+--------------------------------------------------
+Total ok: 2
+Total error: 2
+--------------------------------------------------
+Task02: Hangman
+task from branch: Task02
+creation date: 09/16/2025 13:48:48
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Simonov_AP.git
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Simonov_AP.git
+   f4f726a..5f711f5  master -> master
+   f4f726a..5f711f5  master -> master
+402_DBAppTech_Sokolov_RV
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Sokolov_RV
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Sokolov_RV
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Sokolov_RV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/Nevall-von-Goodem/402_DBAppTech_Sokolov_RV
+Из https://github.com/Nevall-von-Goodem/402_DBAppTech_Sokolov_RV
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление e272f61..1c83b25
+Fast-forward (no commit created; -m option ignored)
+ Task02/cold-hot/.gitignore         | 14 ++++++++++++++
+ Task02/cold-hot/README.md          | 15 +++++++++++++++
+ Task02/cold-hot/bin/cold-hot.php   |  5 +++++
+ Task02/cold-hot/composer.json      | 26 ++++++++++++++++++++++++++
+ Task02/cold-hot/src/Controller.php |  8 ++++++++
+ Task02/cold-hot/src/View.php       | 25 +++++++++++++++++++++++++
+ 6 files changed, 93 insertions(+)
+ create mode 100644 Task02/cold-hot/.gitignore
+ create mode 100644 Task02/cold-hot/README.md
+ create mode 100644 Task02/cold-hot/bin/cold-hot.php
+ create mode 100644 Task02/cold-hot/composer.json
+ create mode 100644 Task02/cold-hot/src/Controller.php
+ create mode 100644 Task02/cold-hot/src/View.php
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Sokolov_RV/Task02
+--------------------------------------------------
+Check path: README.md
+# Лабораторные работы для курса "Технологии создания приложений баз данных"
+### Мордовский госуниверситет, ФМиИТ, 401-402 группы
+
+### Темы
+1. **Встраиваемая реляционная СУБД, консольное приложение**. Написать консольную игру на языке PHP с сохранением результатов в базе данных SQLite. Описание задачи в файле specification_01_nn.md, где nn - номер варианта (описания большинства игр взяты из книги Эла Свейгарта "Учим Python, делая крутые игры").
+2. **NoSQL СУБД, клиентское веб-приложение**. Написать веб-приложение на языке JavaScript, работающее в браузере с базой данных IndexedDB (формат "ключ-значение").
+3. **Реляционная СУБД, клиент-серверное веб-приложение**. Написать веб-приложение, использующее ORM и работающее с СУБД MySQL.
+
+### Задания и решения
+* Задания для выполнения размещаются в файлах task01.md, task02.md, ...
+* Проекты для решения заданий размещаются в каталогах Task01, Task02, Task03, ...
+* Прав на запись (коммиты) в данный репозиторий у студентов нет, файлы с решениями должны передаваться из личных репозиториев через механизм Pull Requests.
+* Задание будет считаться принятым после закрытия соответствующего Pull Request в этом репозитории.
+
+Ссылка нв проект на сайте Packagist: https://packagist.org/packages/sokol/cold-hot
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "sokol/cold-hot",
+    "description": "Game cold-hot",
+    "type": "project",
+    "bin": [
+        "bin/cold-hot"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Sokol\\ColdHot\\": "src/"
+        },
+    "files": [
+        "src/Controller.php",
+        "src/View.php"
+    ]
+    },
+    "authors": [
+        {
+            "name": "Nevall von Goodem",
+            "email": "sokoloff.roman.ru@mail.ru"
+        }
+    ],
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.6"
+    }
+}
+--------------------------------------------------
+Check path: src/Controller.php
+<?php
+namespace sokol\ColdHot\Controller;
+
+use sokol\ColdHot\View\View;
+
+function startGame() {
+    View::renderStartScreen();
+}
+--------------------------------------------------
+Check path: src/View.php
+<?php
+namespace sokol\ColdHot\View;
+
+class View {
+    public static function renderStartScreen() {
+        if (function_exists('\cli\line')) {
+            \cli\line("=== Игра 'Холодно-Горячо' ===");
+            \cli\line("Меню:");
+            \cli\line("1) Начать новую игру");
+            \cli\line("2) Таблица рекордов");
+            \cli\line("3) Настройки сложности");
+            \cli\line("4) Правила игры");
+            \cli\line("5) Выход");
+            \cli\line("");
+        } else {
+            echo "=== Игра 'Холодно-Горячо' ===\n";
+            echo "Меню:\n";
+            echo "1) Начать новую игру\n";
+            echo "2) Таблица рекордов\n";
+            echo "3) Настройки сложности\n";
+            echo "4) Правила игры\n";
+            echo "5) Выход\n\n";
+        }
+    }
+}
+--------------------------------------------------
+Total ok: 4
+Total error: 0
+--------------------------------------------------
+Task02
+task from branch: Task02
+creation date: 09/16/2025 15:36:45
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Sokolov_RV.git
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Sokolov_RV.git
+   e272f61..1c83b25  master -> master
+   e272f61..1c83b25  master -> master
+402_DBAppTech_Tenishev_RR
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Tenishev_RR
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Tenishev_RR
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Tenishev_RR
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/tenishevR/402_DBAppTech_Tenishev_RR
+Из https://github.com/tenishevR/402_DBAppTech_Tenishev_RR
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 91b0006..7d3f372
+Fast-forward (no commit created; -m option ignored)
+ Task02/tic-tac-toe/.gitignore          | 14 ++++++++
+ Task02/tic-tac-toe/README.md           | 62 ++++++++++++++++++++++++++++++++++
+ Task02/tic-tac-toe/bin/tic-tac-toe.php |  5 +++
+ Task02/tic-tac-toe/composer.json       | 26 ++++++++++++++
+ Task02/tic-tac-toe/src/Controller.php  |  8 +++++
+ Task02/tic-tac-toe/src/View.php        | 23 +++++++++++++
+ 6 files changed, 138 insertions(+)
+ create mode 100644 Task02/tic-tac-toe/.gitignore
+ create mode 100644 Task02/tic-tac-toe/README.md
+ create mode 100644 Task02/tic-tac-toe/bin/tic-tac-toe.php
+ create mode 100644 Task02/tic-tac-toe/composer.json
+ create mode 100644 Task02/tic-tac-toe/src/Controller.php
+ create mode 100644 Task02/tic-tac-toe/src/View.php
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Tenishev_RR/Task02
+--------------------------------------------------
+Check path: README.md
+# Task02 — Игра "Крестики-нолики"
+
+## Описание проекта
+Программа для консольной игры **Крестики-нолики** (tic-tac-toe) с компьютером. Размер поля можно выбрать от 3x3 до 10x10.
+
+---
+
+### Правила игры
+- Всегда начинают крестики.  
+- Кем играет человек — определяется случайным образом. 
+- Игрок и компьютер по очереди делают ходы, пока не появится победитель или не заполнится всё поле.
+- После окончания игры результат сохраняется в базе данных SQLite.  
+- Для каждой партии сохраняется:
+  - размер поля;
+  - дата игры;
+  - имя игрока;
+  - фигура, которой играет человек (крестики или нолики);
+  - победитель;
+  - запись всех ходов (номер хода | координата X | координата O). 
+- Игра продолжается, пока число не будет угадано.  
+
+---
+
+### Режимы работы программы
+1. Начать новую игру.  
+2. Список всех сохранённых партий. 
+3. Повтор любой сохранённой партии (показ всех ходов). 
+4. Выход.  
+
+---
+
+## Требования
+- **PHP** >= 8.0 (CLI-режим)  
+- **Composer** (глобально установленный)  
+- **SQLite** (для хранения данных игры)  
+
+---
+
+## Установка и запуск
+
+### 1. Клонировать репозиторий:
+```bash
+git clone https://github.com/YourLogin/cold-hot.git
+cd cold-hot
+```
+
+### 2. Установить зависимости:
+```bash
+composer install
+```
+
+### 3. Сгенерировать автозагрузку:
+```bash
+composer dump-autoload -o
+```
+
+### 4. Запустить игру:
+```bash
+
+### Проект на Packagist
+https://packagist.org/packages/tenis/tic-tac-toe
+```
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "tenis/tic-tac-toe",
+    "description": "TicTacToe",
+    "type": "project",
+    "bin": [
+        "bin/tic-tac-toe"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Tenis\\TicTacToe\\": "src/"
+        },
+        "files": [
+        "src/Controller.php",
+        "src/View.php"
+    ]
+    },
+    "authors": [
+        {
+            "name": "tenishevR",
+            "email": "tenishev.brrrrrain@gmail.com"
+        }
+    ],
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.6"
+    }
+}
+--------------------------------------------------
+Check path: src/Controller.php
+<?php
+namespace tenishevR\TicTacToe\Controller;
+
+use tenishevR\TicTacToe\View\View;
+
+function startGame() {
+    View::renderStartScreen();
+}
+--------------------------------------------------
+Check path: src/View.php
+<?php
+namespace tenishevR\TicTacToe\View;
+
+class View {
+    public static function renderStartScreen() {
+        if (function_exists('\cli\line')) {
+            \cli\line("=== Игра 'Крестики-нолики' ===");
+            \cli\line("Меню:");
+            \cli\line("1) Начать новую игру");
+            \cli\line("2) Список сохранённых партий");
+            \cli\line("3) Повтор партии");
+            \cli\line("4) Выход");
+            \cli\line("");
+        } else {
+            echo "=== Игра 'Крестики-нолики' ===\n";
+            echo "Меню:\n";
+            echo "1) Начать новую игру\n";
+            echo "2) Список сохранённых партий\n";
+            echo "3) Повтор партии\n";
+            echo "4) Выход\n\n";
+        }
+    }
+}
+--------------------------------------------------
+Total ok: 4
+Total error: 0
+--------------------------------------------------
+Task02
+task from branch: Task02
+creation date: 09/16/2025 16:59:23
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Tenishev_RR.git
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Tenishev_RR.git
+   91b0006..7d3f372  master -> master
+   91b0006..7d3f372  master -> master
+402_DBAppTech_Urenkov_YuYu
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Urenkov_YuYu
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Urenkov_YuYu
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Urenkov_YuYu
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/werrys3021/402_DBAppTech_Urenkov_YuYu
+Из https://github.com/werrys3021/402_DBAppTech_Urenkov_YuYu
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+   e3681c4..c09cd72  master     -> student/master
+   e3681c4..c09cd72  master     -> student/master
+Обновление c09cd72..da7b96a
+Fast-forward (no commit created; -m option ignored)
+ Task01/selflogger.db                   | Bin 0 -> 12288 bytes
+ Task02/guess-number/.gitignore         |  14 +++++++
+ Task02/guess-number/README.md          |  72 +++++++++++++++++++++++++++++++++
+ Task02/guess-number/bin/guess-number   |   5 +++
+ Task02/guess-number/composer.json      |  25 ++++++++++++
+ Task02/guess-number/src/Controller.php |   8 ++++
+ Task02/guess-number/src/View.php       |  26 ++++++++++++
+ 7 files changed, 150 insertions(+)
+ create mode 100644 Task01/selflogger.db
+ create mode 100644 Task02/guess-number/.gitignore
+ create mode 100644 Task02/guess-number/README.md
+ create mode 100644 Task02/guess-number/bin/guess-number
+ create mode 100644 Task02/guess-number/composer.json
+ create mode 100644 Task02/guess-number/src/Controller.php
+ create mode 100644 Task02/guess-number/src/View.php
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Urenkov_YuYu/Task02
+--------------------------------------------------
+Check path: README.md
+# Task02 — Игра "Угадай число"
+
+## Описание проекта
+
+Программа для консольной игры "Угадай число".
+
+### Правила игры
+
+Компьютер загадывает число в диапазоне от **1** до максимального числа, указанного в настройках.
+Игрок должен угадать число за несколько попыток (максимальное количество также задаётся в настройках).
+
+После каждой попытки программа сообщает:
+
+- если число игрока больше загаданного — выводит "меньше";
+- если число игрока меньше загаданного — выводит "больше".
+
+### Сохраняемая информация
+
+Информация о каждой игре сохраняется в базе данных SQLite:
+
+- дата игры;
+- имя игрока;
+- максимально возможное число;
+- загаданное число;
+- исход игры (угадал / не угадал);
+- список всех попыток (номер, введённое число, ответ компьютера).
+
+### Режимы работы программы
+
+1. Новая игра.
+2. Список всех сохранённых игр.
+3. Список игр, в которых игрок победил.
+4. Список игр, в которых игрок проиграл.
+5. Статистика по игрокам (кол-во побед и поражений, сортировка по победам).
+6. Повтор любой сохранённой партии (показ всех ходов).
+
+## Требования
+
+- **PHP** >= 8.0 (CLI-режим)
+- **Composer** (глобально установленный)
+- **SQLite** (для хранения данных игры)
+
+## Установка и запуск
+
+## 1. Клонировать репозиторий:
+
+   git clone https://github.com/werrys3021/guess-number.git
+   cd guess-number
+
+## 2. Установить зависимости:
+
+    composer install
+
+## 3. Сгенерировать автозагрузку:
+
+    composer dump-autoload -o
+
+## 4. Запустить игру:
+
+    ./bin/guess-number
+
+## Структура проекта
+
+Task02/
+ └─ guess-number/
+     ├─ bin/
+     │  └─ guess-number         # Запускной скрипт
+     ├─ src/
+     │  ├─ Controller.php       # Логика игры
+     │  └─ View.php             # Отображение
+     ├─ composer.json           # Настройки Composer
+     └─ README.md               # Документация
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "werrys3021/guess-number",
+    "description": "Guess Number game",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.6"
+    },
+    "autoload": {
+        "files": [
+            "src/Controller.php",
+            "src/View.php"
+        ]
+    },
+    "bin": [
+        "bin/guess-number"
+    ],
+    "authors": [
+        {
+            "name": "Yury Urenkov",
+            "email": "your.email@example.com"
+        }
+    ]
+}
+--------------------------------------------------
+Check path: src/Controller.php
+<?php
+namespace Werrys3021\GuessNumber\Controller;
+
+use Werrys3021\GuessNumber\View\View;
+
+function startGame() {
+    View::renderStartScreen();
+}
+--------------------------------------------------
+Check path: src/View.php
+<?php
+namespace Werrys3021\GuessNumber\View;
+
+class View {
+    public static function renderStartScreen() {
+        if (function_exists('\cli\line')) {
+            \cli\line("=== Угадай число (GuessNumber) ===");
+            \cli\line("Режимы:");
+            \cli\line("1) Новая игра");
+            \cli\line("2) Список всех игр");
+            \cli\line("3) Победные игры");
+            \cli\line("4) Проигранные игры");
+            \cli\line("5) Статистика по игрокам");
+            \cli\line("6) Повтор партии");
+            \cli\line("");
+        } else {
+            echo "=== Угадай число (GuessNumber) ===\n";
+            echo "1) Новая игра\n";
+            echo "2) Список всех игр\n";
+            echo "3) Победные игры\n";
+            echo "4) Проигранные игры\n";
+            echo "5) Статистика по игрокам\n";
+            echo "6) Повтор партии\n\n";
+        }
+    }
+}
+--------------------------------------------------
+Total ok: 4
+Total error: 0
+--------------------------------------------------
+Task02
+task from branch: Task02
+creation date: 09/16/2025 18:43:17
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Urenkov_YuYu.git
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Urenkov_YuYu.git
+   c09cd72..da7b96a  master -> master
+   c09cd72..da7b96a  master -> master
+402_DBAppTech_Votyakov_MA
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Votyakov_MA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Votyakov_MA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Votyakov_MA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/Mih-gif/402_DBAppTech_Votyakov_MA
+Из https://github.com/Mih-gif/402_DBAppTech_Votyakov_MA
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая метка]     v1.0       -> v1.0
+ * [новая метка]     v1.0       -> v1.0
+Merge made by the 'recursive' strategy.
+ Task02/hangman/.gitignore         |  4 ++++
+ Task02/hangman/README.md          | 32 ++++++++++++++++++++++++++++++++
+ Task02/hangman/bin/hangman.php    |  7 +++++++
+ Task02/hangman/composer.json      | 23 +++++++++++++++++++++++
+ Task02/hangman/src/Controller.php |  8 ++++++++
+ Task02/hangman/src/View.php       |  6 ++++++
+ 6 files changed, 80 insertions(+)
+ create mode 100644 Task02/hangman/.gitignore
+ create mode 100644 Task02/hangman/README.md
+ create mode 100644 Task02/hangman/bin/hangman.php
+ create mode 100644 Task02/hangman/composer.json
+ create mode 100644 Task02/hangman/src/Controller.php
+ create mode 100644 Task02/hangman/src/View.php
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Votyakov_MA/Task02
+--------------------------------------------------
+Check path: README.md
+# Hangman
+
+Консольная игра "Виселица". Игрок должен отгадать слово, вводя буквы по одной.
+
+## Требования
+
+PHP версии не ниже 7.4
+
+Composer версии не ниже 2.0
+
+В php.ini должны быть включены:
+ extension=mbstring
+
+## Установка и запуск
+### Вариант 1. Локально (через git clone)
+
+1. Клонировать репозиторий: git clone https://github.com/Mih-gif/hangman.git
+
+2. Перейти в каталог проекта: cd hangman
+
+3. Установить зависимости: composer install
+
+4. Запустить игру: php bin/hangman
+
+### Вариант 2. Через Packagist (глобально)
+
+1. Установить пакет: composer global require Mih-gif/hangman
+
+2. Запустить игру командой: hangman
+
+## Ссылки на пакеты
+https://packagist.org/packages/honor/hangman
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "honor/hangman",
+    "description": "hangman game in PHP",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mih-gif",
+            "email": "mihailgoo7@yandex.ru"
+        }
+    ],
+    "minimum-stability": "stable",
+    "bin": ["bin/hangman.php"],
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.6"
+    },
+    "autoload": {
+        "files": [
+            "src/Controller.php",
+            "src/View.php"
+        ]
+    }
+}
+--------------------------------------------------
+Check path: src/Controller.php
+<?php
+namespace Mih_gif\hangman\Controller;
+
+use Mih_gif\hangman\View;
+
+function startGame() {
+    View\showStartScreen();
+}
+--------------------------------------------------
+Check path: src/View.php
+<?php
+namespace Mih_gif\hangman\View;
+
+function showStartScreen() {
+    echo "Welcome to the Hangman!\n";
+}
+--------------------------------------------------
+Total ok: 4
+Total error: 0
+--------------------------------------------------
+Add Task02 - Hangman game
+task from branch: Task02
+creation date: 09/16/2025 21:00:11
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Votyakov_MA.git
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Votyakov_MA.git
+   8b669bf..079f0d1  master -> master
+   8b669bf..079f0d1  master -> master
 **********************
 PowerShell transcript end
-End time: 20241227142608
+End time: 20250918144258
 **********************

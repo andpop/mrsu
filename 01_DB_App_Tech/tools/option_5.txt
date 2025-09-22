@@ -1,6 +1,8 @@
-Abramov_AI
-Kaymakova_EV
-Puchkin_IYu
-Tenyakshev_MA
-Fedoseev_AS
-
+401_DBAppTech_Balyaev_DS
+401_DBAppTech_Belokosov_MD
+401_DBAppTech_Klyuchkina_EV
+401_DBAppTech_Tyurin_MS
+401_DBAppTech_Frolov_AV
+402_DBAppTech_Grachev_AV
+402_DBAppTech_Pyanzina_VD
+402_DBAppTech_SHeyanov_AV

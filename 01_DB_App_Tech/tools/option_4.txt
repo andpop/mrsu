@@ -1,6 +1,6 @@
-Cybisov_IE
-Chernomorskiy_MM
-Sherstnev_KI
-Shokov_DR
-Shurygina_KN
-
+401_DBAppTech_Kelmyashkin_DV
+401_DBAppTech_Ponomarev_MA
+402_DBAppTech_Ganchenkov_AA
+402_DBAppTech_Krestyanskova_MA
+402_DBAppTech_Sokolov_RV
+402_DBAppTech_SHestakov_VA
