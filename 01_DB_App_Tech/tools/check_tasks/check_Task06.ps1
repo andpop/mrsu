@@ -4,7 +4,7 @@ param(
 )
 
 function Get-GameDir {
-    $gameDirs = 'tic-tac-toe', 'guess-number', 'hangman', 'cold-hot', 'guess_number'
+    $gameDirs = 'tic-tac-toe', 'guess-number', 'hangman', 'cold-hot', 'guess_number', 'minesweeper'
 
     foreach ($gameDir in $gameDirs) {
         if (Test-Path -Path $gameDir -PathType container) {
@@ -19,13 +19,13 @@ function Check-Task {
     Write-Host "--------------------------------------------------" -ForegroundColor blue
     Write-Host "Task: ", (Get-Location).Path -ForegroundColor blue
 
-    # $gameDir = Get-GameDir
-    # if ($gameDir -eq 'No game found') {
-    #     Write-Host "There are no game folder" -ForegroundColor red
-    #     return
-    # }
+    $gameDir = Get-GameDir
+    if ($gameDir -eq 'No game found') {
+        Write-Host "There are no game folder" -ForegroundColor red
+        return
+    }
 
-    # Push-Location "$gameDir"
+    Push-Location "$gameDir"
     $doneChecks = $failureChecks = 0
 
     if (Check-Path -Path README.md -ShowContent) { $doneChecks++ } else { $failureChecks++ }
@@ -34,7 +34,7 @@ function Check-Task {
     Write-Host "Total ok: $doneChecks" -ForegroundColor green
     Write-Host "Total error: $failureChecks" -ForegroundColor red
 
-    # Pop-Location
+    Pop-Location
 }
 
 

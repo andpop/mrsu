@@ -31,9 +31,10 @@ function Check-PullRequest {
         }
         & .\$checkScript -studentDir $studentDir -task $task
 
+        Write-Host $studentDir -ForegroundColor yellow 
         write-host $title -foregroundcolor yellow 
-        write-host "task from branch: $branch" -foregroundcolor yellow
-        write-host "creation date: $datepr" -foregroundcolor yellow
+        write-host "Task from branch: $branch" -foregroundcolor yellow
+        write-host "Creation date: $datepr" -foregroundcolor yellow
 
         do {
             $yesNo = Read-Host "Push task on GitHub (y/n)?"

@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20251027102127
+Start time: 20251027115908
 **********************
 Transcript started, output file is log.txt
 401_DBAppTech_Abdrashitov_SA
@@ -20,82 +20,54 @@ fatal: внешний репозиторий student уже существует
 Task:  /home/andrey/labs/DBAppTech/401_DBAppTech_Belokosov_MD/Task06
 --------------------------------------------------
 Check path: README.md
-README.md not found
+# Игра "Сапер"
+
+Веб-версия классической игры "Сапер", реализованная на JavaScript с использованием IndexedDB для хранения данных.
+
+## Описание
+
+Игра представляет собой поле с ячейками, некоторые из которых содержат мины. Цель игры - открыть все ячейки, не содержащие мины. При открытии ячейки с миной игрок проигрывает.
+
+## Функциональность
+
+- **Новая игра**: Начало новой игры с настраиваемыми параметрами (размер поля, количество мин)
+- **Список игр**: Просмотр всех сохраненных партий
+- **Повтор игры**: Воспроизведение ходов из любой сохраненной партии
+
+## Как играть
+
+1. Введите имя игрока, размер поля и количество мин
+2. Нажмите "Начать игру"
+3. Кликните левой кнопкой мыши по ячейке, чтобы открыть ее
+4. Кликните правой кнопкой мыши по ячейке, чтобы поставить/убрать флажок
+5. Старайтесь открыть все ячейки без мин
+
+## Сохранение данных
+
+Все партии и ходы автоматически сохраняются в локальной базе данных IndexedDB браузера.
+
+## Технологии
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- IndexedDB
+
+## Запуск игры
+
+Откройте файл `index.html` в веб-браузере или разместите файлы на веб-сервере.
+
+## GitHub Pages
+
+Игра размещена на GitHub Pages по [адресу](https://belokosoff.github.io): (https://belokosoff.github.io)
 --------------------------------------------------
-Total ok: 0
-Total error: 1
+Total ok: 1
+Total error: 0
 --------------------------------------------------
+/home/andrey/labs/DBAppTech/401_DBAppTech_Belokosov_MD
 Completing Task06
-task from branch: Task06
-creation date: 10/24/2025 19:02:18
-401_DBAppTech_Bikchurin_ESH
-401_DBAppTech_Dubrovskaya_YUV
-401_DBAppTech_Fajzullin_IR
-401_DBAppTech_Frolov_AV
-401_DBAppTech_Kelmyashkin_DV
-401_DBAppTech_Klimentev_AA
-401_DBAppTech_Klyuchkina_EV
-401_DBAppTech_Korpachan_NV
-401_DBAppTech_Kudashkina_OS
-=====================================================
-/home/andrey/labs/DBAppTech/401_DBAppTech_Kudashkina_OS
-Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Kudashkina_OS
-Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Kudashkina_OS
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Уже актуально.
---------------------------------------------------
-Task:  /home/andrey/labs/DBAppTech/401_DBAppTech_Kudashkina_OS/Task06
---------------------------------------------------
-Check path: README.md
-README.md not found
---------------------------------------------------
-Total ok: 0
-Total error: 1
---------------------------------------------------
-Task06
-task from branch: Task06
-creation date: 10/26/2025 08:43:53
-401_DBAppTech_Ponomarev_MA
-401_DBAppTech_Savickaya_MV
-401_DBAppTech_Tyurin_MS
-401_DBAppTech_Yunusov_AR
-402_DBAppTech_Baranov_EA
-402_DBAppTech_Borcov_ID
-402_DBAppTech_CHumakov_VA
-402_DBAppTech_Egorov_AS
-402_DBAppTech_Ganchenkov_AA
-402_DBAppTech_Grachev_AV
-402_DBAppTech_Klinov_AV
-402_DBAppTech_Korotkevich_DA
-402_DBAppTech_Krestyanskova_MA
-402_DBAppTech_Novikov_ME
-402_DBAppTech_Pyanzina_VD
-=====================================================
-/home/andrey/labs/DBAppTech/402_DBAppTech_Pyanzina_VD
-Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Pyanzina_VD
-Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Pyanzina_VD
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Уже актуально.
---------------------------------------------------
-Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Pyanzina_VD/Task06
---------------------------------------------------
-Check path: README.md
-README.md not found
---------------------------------------------------
-Total ok: 0
-Total error: 1
---------------------------------------------------
-Task06
-task from branch: Task06
-creation date: 10/26/2025 09:27:43
+Task from branch: Task06
+Creation date: 10/24/2025 19:02:18
 PS>TerminatingError(): "The pipeline has been stopped."
 >> TerminatingError(): "The pipeline has been stopped."
 >> TerminatingError(): "The pipeline has been stopped."
