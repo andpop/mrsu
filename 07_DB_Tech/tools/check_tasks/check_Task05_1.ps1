@@ -10,10 +10,11 @@ function Check-Task {
     $doneChecks = $failureChecks = 0
 
     if (Check-Path -Path db_init.sql) { $doneChecks++ } else { $failureChecks++ }
-    if (Check-Path -Path task5.bat -ShowContent) { $doneChecks++ } else { $failureChecks++ }
+    if (Check-Path -Path data_add.sql -ShowContent) { $doneChecks++ } else { $failureChecks++ }
+    if (Check-Path -Path db_schema.jpg) { $doneChecks++ } else { $failureChecks++ }
 
-    if (Check-Command -Command ./task5.bat ) { $doneChecks++ } else  { $failureChecks++ }
-    # Check-Command -Command ./db_init.bat
+    if (Check-Command -Command sqlite3 -Params @("test.db", ".read db_init.sql") ) { $doneChecks++ } else  { $failureChecks++ }
+    if (Check-Command -Command sqlite3 -Params @("test.db", "select count(*) from users") ) { $doneChecks++ } else  { $failureChecks++ }
 
 
     Write-DelimiterString
