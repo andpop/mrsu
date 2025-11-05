@@ -1,1759 +1,241 @@
 **********************
 PowerShell transcript start
-Start time: 20251030141949
+Start time: 20251105094143
 **********************
 Transcript started, output file is log.txt
 301_DBTech_Andronov_NA
 301_DBTech_Babin_DO
 301_DBTech_Buyankina_AS
-301_DBTech_CHernov_MM
-301_DBTech_Eremin_VS
-301_DBTech_Fomin_SO
-301_DBTech_Golikov_PA
-301_DBTech_Goncharov_KD
-301_DBTech_Haritonov_DV
-301_DBTech_Hopov_NA
-301_DBTech_Hripchenko_YuV
-301_DBTech_Karmyshev_IR
-301_DBTech_Kuchina_AS
-301_DBTech_Larkin_MS
-301_DBTech_Lemyasev_RN
-301_DBTech_Luzin_MD
 =====================================================
-/home/andrey/labs/DBTech/301_DBTech_Luzin_MD
-Из github.com-mrsu:andpop-mrsu/301_DBTech_Luzin_MD
-Из github.com-mrsu:andpop-mrsu/301_DBTech_Luzin_MD
+/home/andrey/labs/DBTech/301_DBTech_Buyankina_AS
+Из github.com-mrsu:andpop-mrsu/301_DBTech_Buyankina_AS
+Из github.com-mrsu:andpop-mrsu/301_DBTech_Buyankina_AS
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
 Уже актуально.
 fatal: внешний репозиторий student уже существует
 fatal: внешний репозиторий student уже существует
-Уже актуально.
---------------------------------------------------
-Task:  /home/andrey/labs/DBTech/301_DBTech_Luzin_MD/Task05
---------------------------------------------------
-Check path: db_init.sql
---------------------------------------------------
-Check path: task5.bat
-task5.bat not found
---------------------------------------------------
-Run: ./task5.bat
-
-&: /home/andrey/projects/mrsu/07_DB_Tech/tools/check_tasks/checks_for_task.ps1:32
-Line |
-  32 |      $str = (& $command $params | Out-String)
-     |                ~~~~~~~~
-     | The term './task5.bat' is not recognized as a name of a cmdlet, function, script file, or executable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
-
-&: /home/andrey/projects/mrsu/07_DB_Tech/tools/check_tasks/checks_for_task.ps1:32
-Line |
-  32 |      $str = (& $command $params | Out-String)
-     |                ~~~~~~~~
-     | The term './task5.bat' is not recognized as a name of a cmdlet, function, script file, or
-     | executable program. Check the spelling of the name, or if a path was included, verify that the
-     | path is correct and try again.
-
-
-Execution fails
---------------------------------------------------
-Total ok: 1
-Total error: 2
---------------------------------------------------
-/home/andrey/labs/DBTech/301_DBTech_Luzin_MD
-Task05
-Task from branch: Task05
-Creation date: 10/28/2025 20:10:52
-To github.com-mrsu:andpop-mrsu/301_DBTech_Luzin_MD.git
-To github.com-mrsu:andpop-mrsu/301_DBTech_Luzin_MD.git
-   e6267f0..f38dc57  master -> master
-   e6267f0..f38dc57  master -> master
-301_DBTech_Marin_MV
-301_DBTech_Orlov_VD
-301_DBTech_Pyanov_RV
-301_DBTech_Rodionov_MN
-301_DBTech_Samylkin_ME
-301_DBTech_Sarajkin_ME
-301_DBTech_Senichev_AS
-301_DBTech_ZHurin_IA
-302_DBTech_Dankin_I
-302_DBTech_Ermakov_EA
-302_DBTech_Grishukov_EV
-=====================================================
-/home/andrey/labs/DBTech/302_DBTech_Grishukov_EV
-Из github.com-mrsu:andpop-mrsu/302_DBTech_Grishukov_EV
-Из github.com-mrsu:andpop-mrsu/302_DBTech_Grishukov_EV
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Из https://github.com/DllevEgor/302_DBTech_Grishukov_EV
-Из https://github.com/DllevEgor/302_DBTech_Grishukov_EV
+Из https://github.com/AlinaBuyankina22/301_DBTech_Buyankina_AS
+Из https://github.com/AlinaBuyankina22/301_DBTech_Buyankina_AS
  * [новая ветка]     Task04     -> student/Task04
  * [новая ветка]     Task04     -> student/Task04
-Обновление 834d063..7dd2575
-Fast-forward (no commit created; -m option ignored)
- Task04/db_init.sql | 33187 +++++++++++++++++++++++++++++++++++++++++++++++++++
- Task04/task4.bat   |   164 +
- 2 files changed, 33351 insertions(+)
+Merge made by the 'recursive' strategy.
+ Task04/db_init.sql | 33181 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ Task04/task4.bat   |   174 +
+ 2 files changed, 33355 insertions(+)
  create mode 100644 Task04/db_init.sql
- create mode 100755 Task04/task4.bat
+ create mode 100644 Task04/task4.bat
 --------------------------------------------------
-Task:  /home/andrey/labs/DBTech/302_DBTech_Grishukov_EV/Task04
+Task:  /home/andrey/labs/DBTech/301_DBTech_Buyankina_AS/Task04
 --------------------------------------------------
 Check path: db_init.sql
 --------------------------------------------------
 Check path: task4.bat
 #!/bin/bash
+
 chcp 65001
 
 sqlite3 movies_rating.db < db_init.sql
 
-echo "1. Найти все пары пользователей, оценивших один и тот же фильм. Устранить дубликаты, проверить отсутствие пар с самим собой. Для каждой пары должны быть указаны имена пользователей и название фильма, который они ценили. В списке оставить первые 100 записей."
+echo "1. Найти все пары пользователей, оценивших один и тот же фильм. Устранить дубликаты, проверить отсутствие пар с самим собой. Для каждой пары должны быть указаны имена пользователей и название фильма, который они оценили. В списке оставить первые 100 записей."
 echo --------------------------------------------------
-sqlite3 movies_rating.db -box -echo \
-"SELECT
-  u1.name AS user1,
-  u2.name AS user2,
-  m.title AS movie
-FROM ratings AS r1
-JOIN ratings AS r2 ON r1.movie_id = r2.movie_id AND r1.user_id < r2.user_id
-JOIN users AS u1 ON r1.user_id = u1.id
-JOIN users AS u2 ON r2.user_id = u2.id
-JOIN movies AS m ON r1.movie_id = m.id
+sqlite3 movies_rating.db -box -echo "SELECT DISTINCT 
+    CASE WHEN u1.name < u2.name THEN u1.name ELSE u2.name END AS user1,
+    CASE WHEN u1.name < u2.name THEN u2.name ELSE u1.name END AS user2,
+    m.title AS movie_title
+FROM ratings r1
+JOIN ratings r2 ON r1.movie_id = r2.movie_id AND r1.user_id < r2.user_id
+JOIN users u1 ON r1.user_id = u1.id
+JOIN users u2 ON r2.user_id = u2.id
+JOIN movies m ON r1.movie_id = m.id
+ORDER BY user1, user2, movie_title
 LIMIT 100;"
+
+echo " "
 
 echo "2. Найти 10 самых свежих оценок от разных пользователей, вывести названия фильмов, имена пользователей, оценку, дату отзыва в формате ГГГГ-ММ-ДД."
 echo --------------------------------------------------
-sqlite3 movies_rating.db -box -echo \
-"SELECT
-  m.title,
-  u.name,
-  rr.rating,
-  date(rr.timestamp, 'unixepoch') AS review_date
-FROM
-(
-  SELECT
-    r.user_id,
-    r.movie_id,
-    r.rating,
-    r.timestamp,
-    ROW_NUMBER() OVER(PARTITION BY r.user_id ORDER BY r.timestamp DESC) as rn
-  FROM ratings r
-) AS rr
+sqlite3 movies_rating.db -box -echo "WITH ranked_ratings AS (
+    SELECT 
+        r.id,
+        r.user_id,
+        r.movie_id,
+        r.rating,
+        r.timestamp,
+        ROW_NUMBER() OVER (PARTITION BY r.user_id ORDER BY r.timestamp DESC) AS rn
+    FROM ratings r
+)
+SELECT
+    m.title AS movie_title,
+    u.name AS user_name,
+    rr.rating,
+    date(datetime(CAST(rr.timestamp AS INTEGER), 'unixepoch')) AS review_date
+FROM ranked_ratings rr
 JOIN movies m ON rr.movie_id = m.id
 JOIN users u ON rr.user_id = u.id
 WHERE rr.rn = 1
 ORDER BY rr.timestamp DESC
 LIMIT 10;"
 
-echo "3. Вывести в одном списке все фильмы с максимальным средним рейтингом и все фильмы с минимальным средним рейтингом. Общий список отсортировать по году выпуска и названию фильма. В зависимости от рейтинга в колонке Рекомендуем для фильмов должно быть написано Да или Нет"
+echo " "
+
+echo "3. Вывести в одном списке все фильмы с максимальным средним рейтингом и все фильмы с минимальным средним рейтингом. Общий список отсортировать по году выпуска и названию фильма. В зависимости от рейтинга в колонке \"Рекомендуем\" для фильмов должно быть написано \"Да\" или \"Нет\"."
 echo --------------------------------------------------
-sqlite3 movies_rating.db -box -echo \
-"WITH movie_ratings AS (
-  SELECT
-    m.title,
-    AVG(r.rating) AS rating
-  FROM movies AS m
-  JOIN ratings AS r
-    ON r.movie_id = m.id
-  GROUP BY
-    m.id
-  ORDER BY m.year, m.title
+sqlite3 movies_rating.db -box -echo "WITH avg_ratings AS (
+    SELECT 
+        m.id,
+        m.title,
+        m.year,
+        AVG(r.rating) AS avg_rating
+    FROM movies m
+    JOIN ratings r ON m.id = r.movie_id
+    GROUP BY m.id, m.title, m.year
 ),
-ratings_with_overall_stats AS (
-  SELECT
-    title,
-    rating,
-    MAX(rating) OVER () AS max_overall_rating,
-    MIN(rating) OVER () AS min_overall_rating
-  FROM movie_ratings
+min_max_ratings AS (
+    SELECT 
+        MIN(avg_rating) AS min_rating,
+        MAX(avg_rating) AS max_rating
+    FROM avg_ratings
 )
-SELECT
-  title,
-  CASE
-    WHEN rating = max_overall_rating
-    THEN 'Да️'
-    ELSE 'Нет'
-  END AS 'Рекомендуем'
-FROM ratings_with_overall_stats
-WHERE rating = max_overall_rating OR rating = min_overall_rating
-ORDER BY rating DESC;"
+SELECT 
+    ar.title,
+    ar.year,
+    ar.avg_rating,
+    CASE 
+        WHEN ar.avg_rating = mmr.max_rating THEN 'Да'
+        ELSE 'Нет'
+    END AS Рекомендуем
+FROM avg_ratings ar
+CROSS JOIN min_max_ratings mmr
+WHERE ar.avg_rating = mmr.min_rating OR ar.avg_rating = mmr.max_rating
+ORDER BY ar.year, ar.title;"
+
+echo " "
 
 echo "4. Вычислить количество оценок и среднюю оценку, которую дали фильмам пользователи-женщины в период с 2010 по 2012 год."
 echo --------------------------------------------------
-sqlite3 movies_rating.db -box -echo \
-"SELECT
-  m.title,
-  count(r.rating) as rating_count,
-  avg(r.rating) as avg_rating
-FROM ratings AS r
-JOIN users AS u ON r.user_id = u.id
-JOIN movies AS m ON r.movie_id = m.id
-WHERE
-  u.gender = 'female' AND
-  strftime('%Y', r.timestamp, 'unixepoch') BETWEEN '2010' AND '2012'
-GROUP BY m.id, m.title;"
+sqlite3 movies_rating.db -box -echo "SELECT 
+    COUNT(*) AS количество_оценок,
+    AVG(r.rating) AS средняя_оценка
+FROM ratings r
+JOIN users u ON r.user_id = u.id
+WHERE u.gender = 'F'
+AND CAST(strftime('%Y', datetime(CAST(r.timestamp AS INTEGER), 'unixepoch')) AS INTEGER) BETWEEN 2010 AND 2012;"
 
-echo "5. Составить список фильмов с указанием их средней оценки и места в рейтинге по средней оценке. Полученный список отсортировать по году выпуска и названию фильмов. В списке оставить первые 20 записей."
-echo --------------------------------------------------
-sqlite3 movies_rating.db -box -echo \
-"SELECT
-  m.title AS 'Название',
-  t.avg_rating AS 'Средняя оценка',
-  ROW_NUMBER() OVER (ORDER BY t.avg_rating DESC) AS 'Место'
-FROM (
-  SELECT
-    r.movie_id,
-    AVG(r.rating) AS avg_rating
-  FROM ratings r
-  GROUP BY r.movie_id
-) t
-JOIN movies m ON m.id = t.movie_id
-ORDER BY m.year, m.title
-LIMIT 20;
-"
+echo " "
 
-echo "6. Вывести список из 10 последних зарегистрированных пользователей в формате Фамилия Имя|Дата регистрации (сначала фамилия, потом имя)."
+echo "5. Составить список фильмов с указанием их средней оценки и места в рейтинге по средней оценке. Полученный список отсортировать по году выпуска и названиям фильмов. В списке оставить первые 20 записей."
 echo --------------------------------------------------
-sqlite3 movies_rating.db -box -echo \
-"SELECT
-TRIM(SUBSTR(name, INSTR(name, ' ') + 1))
-|| ' '
-|| TRIM(SUBSTR(name, 1, INSTR(name, ' ') - 1)) AS full_name
-, register_date
+sqlite3 movies_rating.db -box -echo "WITH movie_ratings AS (
+    SELECT 
+        m.id,
+        m.title,
+        m.year,
+        AVG(r.rating) AS avg_rating,
+        ROW_NUMBER() OVER (ORDER BY AVG(r.rating) DESC) AS rating_place
+    FROM movies m
+    JOIN ratings r ON m.id = r.movie_id
+    GROUP BY m.id, m.title, m.year
+)
+SELECT 
+    title,
+    year,
+    avg_rating,
+    rating_place
+FROM movie_ratings
+ORDER BY year, title
+LIMIT 20;"
+
+echo " "
+
+echo "6. Вывести список из 10 последних зарегистрированных пользователей в формате \"Фамилия Имя|Дата регистрации\" (сначала фамилия, потом имя)."
+echo --------------------------------------------------
+sqlite3 movies_rating.db -box -echo "SELECT 
+    CASE 
+        WHEN INSTR(name, ' ') > 0 THEN
+            SUBSTR(name, INSTR(name, ' ') + 1) || ' ' || SUBSTR(name, 1, INSTR(name, ' ') - 1)
+        ELSE name
+    END || '|' || register_date AS user_info
 FROM users
 ORDER BY register_date DESC
 LIMIT 10;"
 
-echo "7.  С помощью рекурсивного CTE составить таблицу умножения для чисел от 1 до 10."
-echo --------------------------------------------------
-sqlite3 movies_rating.db -box -echo \
-"WITH RECURSIVE multiplication_table(a, b) AS (
-  SELECT 1, 1
-  UNION ALL
-  SELECT
-    a,
-    b + 1
-  FROM multiplication_table
-  WHERE b < 10
-  UNION ALL
-  SELECT
-    a + 1,
-    1
-  FROM multiplication_table
-  WHERE b = 10 AND a < 10
-)
-SELECT a, b, (a * b)
-FROM multiplication_table;"
+echo " "
 
-echo "8. С помощью рекурсивного CTE выделить все жанры фильмов, имеющиеся в таблице movies (каждый жанр в отдельной строке)"
+echo "7. С помощью рекурсивного CTE составить таблицу умножения для чисел от 1 до 10. Должен получиться один столбец следующего вида: 1x1=1, 1x2=2, ..., 1x10=10, 2x1=2, 2x2=4, ..., 10x9=90, 10x10=100."
 echo --------------------------------------------------
-sqlite3 movies_rating.db -box -echo \
-"WITH RECURSIVE genres_cte(movie_id, genre, remaining_genres) AS (
-  SELECT
-    id,
-    '',
-    genres || '|'
-  FROM movies
-  UNION ALL
-  SELECT
-    movie_id,
-    SUBSTR(remaining_genres, 1, INSTR(remaining_genres, '|') - 1),
-    SUBSTR(remaining_genres, INSTR(remaining_genres, '|') + 1)
-  FROM genres_cte
-  WHERE remaining_genres != ''
+sqlite3 movies_rating.db -box -echo "WITH RECURSIVE multiplication_table AS (
+    SELECT 1 AS a, 1 AS b
+    UNION ALL
+    SELECT 
+        CASE WHEN b >= 10 THEN a + 1 ELSE a END,
+        CASE WHEN b >= 10 THEN 1 ELSE b + 1 END
+    FROM multiplication_table
+    WHERE a <= 10 AND (a < 10 OR b < 10)
 )
-SELECT DISTINCT genre
-FROM genres_cte
-WHERE genre != '' AND genre != '(no genres listed)'
+SELECT CAST(a AS TEXT) || 'x' || CAST(b AS TEXT) || '=' || CAST(a * b AS TEXT) AS expression
+FROM multiplication_table
+WHERE a <= 10 AND b <= 10
+ORDER BY a, b;"
+
+echo " "
+
+echo "8. С помощью рекурсивного CTE выделить все жанры фильмов, имеющиеся в таблице movies (каждый жанр в отдельной строке)."
+echo --------------------------------------------------
+sqlite3 movies_rating.db -box -echo "WITH RECURSIVE split_genres(id, remaining, genre) AS (
+    SELECT 
+        id,
+        genres || '|',
+        ''
+    FROM movies
+    WHERE genres IS NOT NULL AND genres != ''
+    UNION ALL
+    SELECT 
+        id,
+        SUBSTR(remaining, INSTR(remaining, '|') + 1),
+        SUBSTR(remaining, 1, CASE WHEN INSTR(remaining, '|') > 0 THEN INSTR(remaining, '|') - 1 ELSE LENGTH(remaining) END)
+    FROM split_genres
+    WHERE remaining != ''
+),
+all_genres AS (
+    SELECT DISTINCT genre
+    FROM split_genres
+    WHERE genre != ''
+)
+SELECT genre
+FROM all_genres
 ORDER BY genre;"
 --------------------------------------------------
 Run: ./task4.bat
-1. Найти все пары пользователей, оценивших один и тот же фильм. Устранить дубликаты, проверить отсутствие пар с самим собой. Для каждой пары должны быть указаны имена пользователей и название фильма, который они ценили. В списке оставить первые 100 записей.
---------------------------------------------------
-SELECT
-  u1.name AS user1,
-  u2.name AS user2,
-  m.title AS movie
-FROM ratings AS r1
-JOIN ratings AS r2 ON r1.movie_id = r2.movie_id AND r1.user_id < r2.user_id
-JOIN users AS u1 ON r1.user_id = u1.id
-JOIN users AS u2 ON r2.user_id = u2.id
-JOIN movies AS m ON r1.movie_id = m.id
-LIMIT 100;
-┌───────────────┬─────────────────────┬──────────────────────┐
-│     user1     │        user2        │        movie         │
-├───────────────┼─────────────────────┼──────────────────────┤
-│ Devonte Stamm │ Immanuel Bode       │ Toy Story            │
-│ Devonte Stamm │ Holden Lueilwitz    │ Toy Story            │
-│ Devonte Stamm │ Geovany Ratke       │ Toy Story            │
-│ Devonte Stamm │ Dina Lindgren       │ Toy Story            │
-│ Devonte Stamm │ Taya Rath           │ Toy Story            │
-│ Devonte Stamm │ Eda Steuber         │ Toy Story            │
-│ Devonte Stamm │ Charlene Medhurst   │ Toy Story            │
-│ Devonte Stamm │ Estell Dicki        │ Toy Story            │
-│ Devonte Stamm │ Cora DuBuque        │ Toy Story            │
-│ Devonte Stamm │ Iliana Lowe         │ Toy Story            │
-│ Devonte Stamm │ Mario Dibbert       │ Toy Story            │
-│ Devonte Stamm │ Aiyana Jenkins      │ Toy Story            │
-│ Devonte Stamm │ Ottilie Hudson      │ Toy Story            │
-│ Devonte Stamm │ Deonte Hane         │ Toy Story            │
-│ Devonte Stamm │ Leila Kassulke      │ Toy Story            │
-│ Devonte Stamm │ Moriah Mohr         │ Toy Story            │
-│ Devonte Stamm │ Cassandra Powlowski │ Toy Story            │
-│ Devonte Stamm │ Watson Mohr         │ Toy Story            │
-│ Devonte Stamm │ Marcus Rau          │ Toy Story            │
-│ Devonte Stamm │ Ocie Nikolaus       │ Toy Story            │
-│ Devonte Stamm │ Zachariah Nolan     │ Toy Story            │
-│ Devonte Stamm │ Enid Stanton        │ Toy Story            │
-│ Devonte Stamm │ Alaina Beatty       │ Toy Story            │
-│ Devonte Stamm │ Ed Gislason         │ Toy Story            │
-│ Devonte Stamm │ Albertha Littel     │ Toy Story            │
-│ Devonte Stamm │ Neoma Lowe          │ Toy Story            │
-│ Devonte Stamm │ Davin Lubowitz      │ Toy Story            │
-│ Devonte Stamm │ Paolo Dooley        │ Toy Story            │
-│ Devonte Stamm │ Ona Nader           │ Toy Story            │
-│ Devonte Stamm │ Zechariah Kuphal    │ Toy Story            │
-│ Devonte Stamm │ Constance Reynolds  │ Toy Story            │
-│ Devonte Stamm │ Justus Fadel        │ Toy Story            │
-│ Devonte Stamm │ Fritz Graham        │ Toy Story            │
-│ Devonte Stamm │ Francis Deckow      │ Toy Story            │
-│ Devonte Stamm │ Octavia Mayert      │ Toy Story            │
-│ Devonte Stamm │ Brigitte Johnston   │ Toy Story            │
-│ Devonte Stamm │ Wanda Kub           │ Toy Story            │
-│ Devonte Stamm │ Earlene Marks       │ Toy Story            │
-│ Devonte Stamm │ Heaven Volkman      │ Toy Story            │
-│ Devonte Stamm │ Dwight Reichel      │ Grumpier Old Men     │
-│ Devonte Stamm │ Eda Steuber         │ Grumpier Old Men     │
-│ Devonte Stamm │ Iliana Lowe         │ Grumpier Old Men     │
-│ Devonte Stamm │ America Mante       │ Grumpier Old Men     │
-│ Devonte Stamm │ Ottilie Hudson      │ Grumpier Old Men     │
-│ Devonte Stamm │ Deonte Hane         │ Grumpier Old Men     │
-│ Devonte Stamm │ Gabe Bashirian      │ Grumpier Old Men     │
-│ Devonte Stamm │ Lizzie Murphy       │ Grumpier Old Men     │
-│ Devonte Stamm │ Zachariah Nolan     │ Grumpier Old Men     │
-│ Devonte Stamm │ Alaina Beatty       │ Grumpier Old Men     │
-│ Devonte Stamm │ Justus Fadel        │ Grumpier Old Men     │
-│ Devonte Stamm │ Hyman Gleichner     │ Grumpier Old Men     │
-│ Devonte Stamm │ Elwin Turcotte      │ Grumpier Old Men     │
-│ Devonte Stamm │ Celestino Bergnaum  │ Grumpier Old Men     │
-│ Devonte Stamm │ Patience Metz       │ Grumpier Old Men     │
-│ Devonte Stamm │ Dwight Reichel      │ Heat                 │
-│ Devonte Stamm │ Martina Kertzmann   │ Heat                 │
-│ Devonte Stamm │ Taya Rath           │ Heat                 │
-│ Devonte Stamm │ Dayana Wiegand      │ Heat                 │
-│ Devonte Stamm │ Gail Hintz          │ Heat                 │
-│ Devonte Stamm │ Savion Upton        │ Heat                 │
-│ Devonte Stamm │ Iliana Lowe         │ Heat                 │
-│ Devonte Stamm │ Deonte Hane         │ Heat                 │
-│ Devonte Stamm │ Leila Kassulke      │ Heat                 │
-│ Devonte Stamm │ Marcus Rau          │ Heat                 │
-│ Devonte Stamm │ Edmund Mueller      │ Heat                 │
-│ Devonte Stamm │ Zachariah Nolan     │ Heat                 │
-│ Devonte Stamm │ Alaina Beatty       │ Heat                 │
-│ Devonte Stamm │ Myrtie Gutkowski    │ Heat                 │
-│ Devonte Stamm │ Paolo Dooley        │ Heat                 │
-│ Devonte Stamm │ Jamarcus Bailey     │ Heat                 │
-│ Devonte Stamm │ Justus Fadel        │ Heat                 │
-│ Devonte Stamm │ Elwin Turcotte      │ Heat                 │
-│ Devonte Stamm │ Adell Gusikowski    │ Heat                 │
-│ Devonte Stamm │ Destinee Wolf       │ Heat                 │
-│ Devonte Stamm │ Earlene Marks       │ Heat                 │
-│ Devonte Stamm │ Patience Metz       │ Heat                 │
-│ Devonte Stamm │ Jamel Nader         │ Seven (a.k.a. Se7en) │
-│ Devonte Stamm │ Dwight Reichel      │ Seven (a.k.a. Se7en) │
-│ Devonte Stamm │ Pablo Kuhlman       │ Seven (a.k.a. Se7en) │
-│ Devonte Stamm │ Chester Price       │ Seven (a.k.a. Se7en) │
-│ Devonte Stamm │ Westley Wisoky      │ Seven (a.k.a. Se7en) │
-│ Devonte Stamm │ Geovany Ratke       │ Seven (a.k.a. Se7en) │
-│ Devonte Stamm │ Zella Schamberger   │ Seven (a.k.a. Se7en) │
-│ Devonte Stamm │ Dina Lindgren       │ Seven (a.k.a. Se7en) │
-│ Devonte Stamm │ Taya Rath           │ Seven (a.k.a. Se7en) │
-│ Devonte Stamm │ Eda Steuber         │ Seven (a.k.a. Se7en) │
-│ Devonte Stamm │ Lyda Friesen        │ Seven (a.k.a. Se7en) │
-│ Devonte Stamm │ Savion Upton        │ Seven (a.k.a. Se7en) │
-│ Devonte Stamm │ Madelynn Abshire    │ Seven (a.k.a. Se7en) │
-│ Devonte Stamm │ Stone Greenholt     │ Seven (a.k.a. Se7en) │
-│ Devonte Stamm │ America Mante       │ Seven (a.k.a. Se7en) │
-│ Devonte Stamm │ Ottilie Hudson      │ Seven (a.k.a. Se7en) │
-│ Devonte Stamm │ Louisa Orn          │ Seven (a.k.a. Se7en) │
-│ Devonte Stamm │ Watson Mohr         │ Seven (a.k.a. Se7en) │
-│ Devonte Stamm │ Valentina Turner    │ Seven (a.k.a. Se7en) │
-│ Devonte Stamm │ Lizzie Murphy       │ Seven (a.k.a. Se7en) │
-│ Devonte Stamm │ Edmund Mueller      │ Seven (a.k.a. Se7en) │
-│ Devonte Stamm │ Ocie Nikolaus       │ Seven (a.k.a. Se7en) │
-│ Devonte Stamm │ Zachariah Nolan     │ Seven (a.k.a. Se7en) │
-│ Devonte Stamm │ Enid Stanton        │ Seven (a.k.a. Se7en) │
-└───────────────┴─────────────────────┴──────────────────────┘
-2. Найти 10 самых свежих оценок от разных пользователей, вывести названия фильмов, имена пользователей, оценку, дату отзыва в формате ГГГГ-ММ-ДД.
---------------------------------------------------
-SELECT
-  m.title,
-  u.name,
-  rr.rating,
-  date(rr.timestamp, 'unixepoch') AS review_date
-FROM
-(
-  SELECT
-    r.user_id,
-    r.movie_id,
-    r.rating,
-    r.timestamp,
-    ROW_NUMBER() OVER(PARTITION BY r.user_id ORDER BY r.timestamp DESC) as rn
-  FROM ratings r
-) AS rr
-JOIN movies m ON rr.movie_id = m.id
-JOIN users u ON rr.user_id = u.id
-WHERE rr.rn = 1
-ORDER BY rr.timestamp DESC
-LIMIT 10;
-┌────────────────────────────────────────────────────────────────────┬─────────────────────┬────────┬─────────────┐
-│                               title                                │        name         │ rating │ review_date │
-├────────────────────────────────────────────────────────────────────┼─────────────────────┼────────┼─────────────┤
-│ Blood Diamond                                                      │ Edmund Mueller      │ 4.5    │ 2018-09-13  │
-│ Good, the Bad and the Ugly, The (Buono, il brutto, il cattivo, Il) │ Cassandra Powlowski │ 4.0    │ 2018-09-13  │
-│ Deadpool 2                                                         │ Gaston Rippin       │ 5.0    │ 2018-08-28  │
-│ Bourne Ultimatum, The                                              │ Ardella Lockman     │ 3.0    │ 2018-08-24  │
-│ The African Doctor                                                 │ Taya Rath           │ 3.5    │ 2018-08-20  │
-│ Muppets, The                                                       │ Alaina Beatty       │ 3.0    │ 2018-07-29  │
-│ 10 Cloverfield Lane                                                │ Octavia Mayert      │ 4.5    │ 2018-07-24  │
-│ George Carlin: You Are All Diseased                                │ Adell Gusikowski    │ 5.0    │ 2018-05-13  │
-│ Bambi                                                              │ Brigitte Johnston   │ 3.5    │ 2018-03-27  │
-│ Frankenstein 90                                                    │ Zechariah Kuphal    │ 4.0    │ 2018-03-07  │
-└────────────────────────────────────────────────────────────────────┴─────────────────────┴────────┴─────────────┘
-3. Вывести в одном списке все фильмы с максимальным средним рейтингом и все фильмы с минимальным средним рейтингом. Общий список отсортировать по году выпуска и названию фильма. В зависимости от рейтинга в колонке Рекомендуем для фильмов должно быть написано Да или Нет
---------------------------------------------------
-WITH movie_ratings AS (
-  SELECT
-    m.title,
-    AVG(r.rating) AS rating
-  FROM movies AS m
-  JOIN ratings AS r
-    ON r.movie_id = m.id
-  GROUP BY
-    m.id
-  ORDER BY m.year, m.title
-),
-ratings_with_overall_stats AS (
-  SELECT
-    title,
-    rating,
-    MAX(rating) OVER () AS max_overall_rating,
-    MIN(rating) OVER () AS min_overall_rating
-  FROM movie_ratings
-)
-SELECT
-  title,
-  CASE
-    WHEN rating = max_overall_rating
-    THEN 'Да️'
-    ELSE 'Нет'
-  END AS 'Рекомендуем'
-FROM ratings_with_overall_stats
-WHERE rating = max_overall_rating OR rating = min_overall_rating
-ORDER BY rating DESC;
-┌───────────────────────────────────────────────────────────────────────────────────────────┬─────────────┐
-│                                           title                                           │ Рекомендуем │
-├───────────────────────────────────────────────────────────────────────────────────────────┼─────────────┤
-│ Black Mirror                                                                              │ Да️          │
-│ Death Note: Desu nôto (2006–2007)                                                         │ Да️          │
-│ Runaway Brain (1995)                                                                      │ Да️          │
-│ The Adventures of Sherlock Holmes and Doctor Watson                                       │ Да️          │
-│ Man with the Movie Camera, The (Chelovek s kino-apparatom)                                │ Да️          │
-│ All Quiet on the Western Front                                                            │ Да️          │
-│ Girls About Town                                                                          │ Да️          │
-│ Gulliver's Travels                                                                        │ Да️          │
-│ Chump at Oxford, A                                                                        │ Да️          │
-│ Down Argentine Way                                                                        │ Да️          │
-│ Saboteur                                                                                  │ Да️          │
-│ Tales of Manhattan                                                                        │ Да️          │
-│ Lifeboat                                                                                  │ Да️          │
-│ Big Sleep, The                                                                            │ Да️          │
-│ Key Largo                                                                                 │ Да️          │
-│ All the King's Men                                                                        │ Да️          │
-│ High Noon                                                                                 │ Да️          │
-│ Strada, La                                                                                │ Да️          │
-│ Man Who Knew Too Much, The                                                                │ Да️          │
-│ Searchers, The                                                                            │ Да️          │
-│ The Girls                                                                                 │ Да️          │
-│ Ivan's Childhood (a.k.a. My Name is Ivan) (Ivanovo detstvo)                               │ Да️          │
-│ Trial, The (Procès, Le)                                                                   │ Да️          │
-│ What Ever Happened to Baby Jane?                                                          │ Да️          │
-│ Goodbye Charlie                                                                           │ Да️          │
-│ Obsession                                                                                 │ Да️          │
-│ Repulsion                                                                                 │ Да️          │
-│ Vovka in the Kingdom of Far Far Away                                                      │ Да️          │
-│ It's the Great Pumpkin, Charlie Brown                                                     │ Да️          │
-│ Man and a Woman, A (Un homme et une femme)                                                │ Да️          │
-│ Who's Afraid of Virginia Woolf?                                                           │ Да️          │
-│ Doctor Dolittle                                                                           │ Да️          │
-│ Guess Who's Coming to Dinner                                                              │ Да️          │
-│ Oscar                                                                                     │ Да️          │
-│ Play Time (a.k.a. Playtime)                                                               │ Да️          │
-│ To Sir with Love                                                                          │ Да️          │
-│ Junior and Karlson                                                                        │ Да️          │
-│ Thomas Crown Affair, The                                                                  │ Да️          │
-│ Gena the Crocodile                                                                        │ Да️          │
-│ The Bremen Town Musicians                                                                 │ Да️          │
-│ True Grit                                                                                 │ Да️          │
-│ Winnie Pooh                                                                               │ Да️          │
-│ Karlson Returns                                                                           │ Да️          │
-│ Cheburashka                                                                               │ Да️          │
-│ Little Murders                                                                            │ Да️          │
-│ Shaft                                                                                     │ Да️          │
-│ Winnie the Pooh Goes Visiting                                                             │ Да️          │
-│ Jeremiah Johnson                                                                          │ Да️          │
-│ Trinity and Sartana Are Coming                                                            │ Да️          │
-│ Winnie the Pooh and the Day of Concern                                                    │ Да️          │
-│ Fantastic Planet, The (Planète sauvage, La)                                               │ Да️          │
-│ Harder They Come, The                                                                     │ Да️          │
-│ On the Trail of the Bremen Town Musicians                                                 │ Да️          │
-│ Alice Doesn't Live Here Anymore                                                           │ Да️          │
-│ Odessa File, The                                                                          │ Да️          │
-│ Death Race 2000                                                                           │ Да️          │
-│ Love and Death                                                                            │ Да️          │
-│ Passenger, The (Professione: reporter)                                                    │ Да️          │
-│ Shampoo                                                                                   │ Да️          │
-│ 12 Chairs                                                                                 │ Да️          │
-│ Bobik Visiting Barbos                                                                     │ Да️          │
-│ Suspiria                                                                                  │ Да️          │
-│ Autumn Sonata (Höstsonaten)                                                               │ Да️          │
-│ Three from Prostokvashino                                                                 │ Да️          │
-│ Marriage of Maria Braun, The (Ehe der Maria Braun, Die)                                   │ Да️          │
-│ Moscow Does Not Believe in Tears (Moskva slezam ne verit)                                 │ Да️          │
-│ Priklyucheniya Kapitana Vrungelya                                                         │ Да️          │
-│ Scooby-Doo Goes Hollywood                                                                 │ Да️          │
-│ Sherlock Holmes and Dr. Watson: Acquaintance                                              │ Да️          │
-│ The Adventures of Sherlock Holmes and Dr. Watson: Bloody Signature                        │ Да️          │
-│ Alien Contamination                                                                       │ Да️          │
-│ Altered States                                                                            │ Да️          │
-│ Hangar 18                                                                                 │ Да️          │
-│ Ordinary People                                                                           │ Да️          │
-│ Saturn 3                                                                                  │ Да️          │
-│ The Adventures of Sherlock Holmes and Doctor Watson: King of Blackmailers                 │ Да️          │
-│ Vacations in Prostokvashino                                                               │ Да️          │
-│ A Plasticine Crow                                                                         │ Да️          │
-│ Galaxy of Terror (Quest)                                                                  │ Да️          │
-│ Mephisto                                                                                  │ Да️          │
-│ Mystery of the Third Planet, The (Tayna tretey planety)                                   │ Да️          │
-│ Android                                                                                   │ Да️          │
-│ Monty Python Live at the Hollywood Bowl                                                   │ Да️          │
-│ Sophie's Choice                                                                           │ Да️          │
-│ There Once Was a Dog                                                                      │ Да️          │
-│ Last Year's Snow Was Falling                                                              │ Да️          │
-│ Never Say Never Again                                                                     │ Да️          │
-│ Terms of Endearment                                                                       │ Да️          │
-│ The Adventures of Sherlock Holmes and Doctor Watson: The Treasures of Agra                │ Да️          │
-│ Travels of an Ant                                                                         │ Да️          │
-│ Wow! A Talking Fish!                                                                      │ Да️          │
-│ Broadway Danny Rose                                                                       │ Да️          │
-│ Cruel Romance, A (Zhestokij Romans)                                                       │ Да️          │
-│ Formula of Love                                                                           │ Да️          │
-│ In the blue sea, in the white foam.                                                       │ Да️          │
-│ Meantime                                                                                  │ Да️          │
-│ Night of the Comet                                                                        │ Да️          │
-│ Winter in Prostokvashino                                                                  │ Да️          │
-│ Chorus Line, A                                                                            │ Да️          │
-│ Love and Pigeons                                                                          │ Да️          │
-│ 52 Pick-Up                                                                                │ Да️          │
-│ Adventures Of Sherlock Holmes And Dr. Watson: The Twentieth Century Approaches            │ Да️          │
-│ Fugitives                                                                                 │ Да️          │
-│ Investigation Held by Kolobki                                                             │ Да️          │
-│ Jean de Florette                                                                          │ Да️          │
-│ Willy/Milly                                                                               │ Да️          │
-│ Wings, Legs and Tails                                                                     │ Да️          │
-│ Babette's Feast (Babettes gæstebud)                                                       │ Да️          │
-│ Eddie Murphy Raw                                                                          │ Да️          │
-│ Harry and the Hendersons                                                                  │ Да️          │
-│ Bright Lights, Big City                                                                   │ Да️          │
-│ Grave of the Fireflies (Hotaru no haka)                                                   │ Да️          │
-│ Great Outdoors, The                                                                       │ Да️          │
-│ Hellbound: Hellraiser II                                                                  │ Да️          │
-│ Hollywood Chainsaw Hookers                                                                │ Да️          │
-│ Light Years (Gandahar)                                                                    │ Да️          │
-│ Return to Treasure Island                                                                 │ Да️          │
-│ Story of Women (Affaire de femmes, Une)                                                   │ Да️          │
-│ Unbearable Lightness of Being, The                                                        │ Да️          │
-│ Always                                                                                    │ Да️          │
-│ Decalogue, The (Dekalog)                                                                  │ Да️          │
-│ UHF                                                                                       │ Да️          │
-│ Akira Kurosawa's Dreams (Dreams)                                                          │ Да️          │
-│ Europa Europa (Hitlerjunge Salomon)                                                       │ Да️          │
-│ Joe Versus the Volcano                                                                    │ Да️          │
-│ Paris Is Burning                                                                          │ Да️          │
-│ Troll 2                                                                                   │ Да️          │
-│ World of Glory                                                                            │ Да️          │
-│ George Carlin: Jammin' in New York                                                        │ Да️          │
-│ Indochine                                                                                 │ Да️          │
-│ Man Bites Dog (C'est arrivé près de chez vous)                                            │ Да️          │
-│ The Godfather Trilogy: 1972-1990                                                          │ Да️          │
-│ Bill Hicks: Revelations                                                                   │ Да️          │
-│ Farewell My Concubine (Ba wang bie ji)                                                    │ Да️          │
-│ My Life                                                                                   │ Да️          │
-│ RoboCop 3                                                                                 │ Да️          │
-│ A Flintstones Christmas Carol                                                             │ Да️          │
-│ Lamerica                                                                                  │ Да️          │
-│ Lassie                                                                                    │ Да️          │
-│ Lesson Faust                                                                              │ Да️          │
-│ Lightning Jack                                                                            │ Да️          │
-│ Stand, The                                                                                │ Да️          │
-│ Angels and Insects                                                                        │ Да️          │
-│ Anne Frank Remembered                                                                     │ Да️          │
-│ Antonia's Line (Antonia)                                                                  │ Да️          │
-│ Canadian Bacon                                                                            │ Да️          │
-│ Children of the Corn IV: The Gathering                                                    │ Да️          │
-│ Entertaining Angels: The Dorothy Day Story                                                │ Да️          │
-│ Flirting With Disaster                                                                    │ Да️          │
-│ Freeway                                                                                   │ Да️          │
-│ George Carlin: Back in Town                                                               │ Да️          │
-│ Hamlet                                                                                    │ Да️          │
-│ Hard Core Logo                                                                            │ Да️          │
-│ Jane Eyre                                                                                 │ Да️          │
-│ Ponette                                                                                   │ Да️          │
-│ Preacher's Wife, The                                                                      │ Да️          │
-│ Secrets & Lies                                                                            │ Да️          │
-│ Tenchi Muyô! In Love                                                                      │ Да️          │
-│ Assignment, The                                                                           │ Да️          │
-│ Brother (Brat)                                                                            │ Да️          │
-│ Geri's Game                                                                               │ Да️          │
-│ Mrs. Dalloway                                                                             │ Да️          │
-│ The Love Bug                                                                              │ Да️          │
-│ Black Cat, White Cat (Crna macka, beli macor)                                             │ Да️          │
-│ Central Station (Central do Brasil)                                                       │ Да️          │
-│ Everest                                                                                   │ Да️          │
-│ Newton Boys, The                                                                          │ Да️          │
-│ SLC Punk!                                                                                 │ Да️          │
-│ Show Me Love (Fucking Åmål)                                                               │ Да️          │
-│ Taxi                                                                                      │ Да️          │
-│ All About My Mother (Todo sobre mi madre)                                                 │ Да️          │
-│ Cookie's Fortune                                                                          │ Да️          │
-│ Eddie Izzard: Dress to Kill                                                               │ Да️          │
-│ Five Senses, The                                                                          │ Да️          │
-│ Flawless                                                                                  │ Да️          │
-│ George Carlin: You Are All Diseased                                                       │ Да️          │
-│ Mickey's Once Upon a Christmas                                                            │ Да️          │
-│ Siam Sunset                                                                               │ Да️          │
-│ Sun Alley (Sonnenallee)                                                                   │ Да️          │
-│ Dune                                                                                      │ Да️          │
-│ Ginger Snaps                                                                              │ Да️          │
-│ I'm the One That I Want                                                                   │ Да️          │
-│ Princess and the Warrior, The (Krieger und die Kaiserin, Der)                             │ Да️          │
-│ Saving Grace                                                                              │ Да️          │
-│ Where the Money Is                                                                        │ Да️          │
-│ Iris                                                                                      │ Да️          │
-│ L.I.E.                                                                                    │ Да️          │
-│ Life as a House                                                                           │ Да️          │
-│ Lovely & Amazing                                                                          │ Да️          │
-│ Metropolis                                                                                │ Да️          │
-│ Mutant Aliens                                                                             │ Да️          │
-│ My Life as McDull (Mak dau goo si)                                                        │ Да️          │
-│ My Sassy Girl (Yeopgijeogin geunyeo)                                                      │ Да️          │
-│ No Man's Land                                                                             │ Да️          │
-│ Rivers and Tides                                                                          │ Да️          │
-│ Sisters (Syostry)                                                                         │ Да️          │
-│ Thirteen Conversations About One Thing (a.k.a. 13 Conversations)                          │ Да️          │
-│ Waking Life                                                                               │ Да️          │
-│ Magdalene Sisters, The                                                                    │ Да️          │
-│ My Left Eye Sees Ghosts (Ngo joh aan gin diy gwai)                                        │ Да️          │
-│ Solaris                                                                                   │ Да️          │
-│ Stuart Little 2                                                                           │ Да️          │
-│ Tuxedo, The                                                                               │ Да️          │
-│ Whale Rider                                                                               │ Да️          │
-│ Dogville                                                                                  │ Да️          │
-│ Duplex                                                                                    │ Да️          │
-│ Stitch! The Movie                                                                         │ Да️          │
-│ After the Sunset                                                                          │ Да️          │
-│ Alesha Popovich and Tugarin the Dragon                                                    │ Да️          │
-│ Calcium Kid, The                                                                          │ Да️          │
-│ Dylan Moran: Monster                                                                      │ Да️          │
-│ First Daughter                                                                            │ Да️          │
-│ Garfield: The Movie                                                                       │ Да️          │
-│ Go for Zucker! (Alles auf Zucker!)                                                        │ Да️          │
-│ Scooby-Doo! and the Loch Ness Monster                                                     │ Да️          │
-│ Aristocrats, The                                                                          │ Да️          │
-│ Boy Eats Girl                                                                             │ Да️          │
-│ George Carlin: Life Is Worth Losing                                                       │ Да️          │
-│ Guy X                                                                                     │ Да️          │
-│ Stuart Little 3: Call of the Wild                                                         │ Да️          │
-│ The Eye: Infinity                                                                         │ Да️          │
-│ Asterix and the Vikings (Astérix et les Vikings)                                          │ Да️          │
-│ Breed, The                                                                                │ Да️          │
-│ Deliver Us from Evil                                                                      │ Да️          │
-│ Jackass Number Two                                                                        │ Да️          │
-│ My Love                                                                                   │ Да️          │
-│ Once                                                                                      │ Да️          │
-│ The Fox and the Hound 2                                                                   │ Да️          │
-│ Tom and Jerry: Shiver Me Whiskers                                                         │ Да️          │
-│ Ugly Duckling and Me!, The                                                                │ Да️          │
-│ Valet, The (La doublure)                                                                  │ Да️          │
-│ Control                                                                                   │ Да️          │
-│ Empties                                                                                   │ Да️          │
-│ Hannibal Rising                                                                           │ Да️          │
-│ Heima                                                                                     │ Да️          │
-│ Jackass 2.5                                                                               │ Да️          │
-│ Jump In!                                                                                  │ Да️          │
-│ King of Kong, The                                                                         │ Да️          │
-│ Like Stars on Earth (Taare Zameen Par)                                                    │ Да️          │
-│ National Lampoon's Bag Boy                                                                │ Да️          │
-│ Reign Over Me                                                                             │ Да️          │
-│ Tom and Jerry: A Nutcracker Tale                                                          │ Да️          │
-│ Watching the Detectives                                                                   │ Да️          │
-│ What Love Is                                                                              │ Да️          │
-│ Berlin Calling                                                                            │ Да️          │
-│ Cottage, The                                                                              │ Да️          │
-│ Front of the Class                                                                        │ Да️          │
-│ George Carlin: It's Bad for Ya!                                                           │ Да️          │
-│ Presto                                                                                    │ Да️          │
-│ Radio Day                                                                                 │ Да️          │
-│ Strictly Sexual                                                                           │ Да️          │
-│ American: The Bill Hicks Story                                                            │ Да️          │
-│ Antichrist                                                                                │ Да️          │
-│ Fired Up                                                                                  │ Да️          │
-│ Garfield's Pet Force                                                                      │ Да️          │
-│ Get Low                                                                                   │ Да️          │
-│ Home                                                                                      │ Да️          │
-│ Scooby-Doo! and the Samurai Sword                                                         │ Да️          │
-│ Cop Out                                                                                   │ Да️          │
-│ Four Lions                                                                                │ Да️          │
-│ Get Him to the Greek                                                                      │ Да️          │
-│ Let Me In                                                                                 │ Да️          │
-│ Miss Nobody                                                                               │ Да️          │
-│ Scooby-Doo! Abracadabra-Doo                                                               │ Да️          │
-│ Scooby-Doo! Curse of the Lake Monster                                                     │ Да️          │
-│ The Man from Nowhere                                                                      │ Да️          │
-│ The Pacific                                                                               │ Да️          │
-│ What Men Talk About                                                                       │ Да️          │
-│ Happy Feet Two                                                                            │ Да️          │
-│ Jackass 3.5                                                                               │ Да️          │
-│ Just Go with It                                                                           │ Да️          │
-│ Melancholia                                                                               │ Да️          │
-│ Monsieur Lazhar                                                                           │ Да️          │
-│ Snowflake, the White Gorilla                                                              │ Да️          │
-│ Spellbound                                                                                │ Да️          │
-│ Terri                                                                                     │ Да️          │
-│ Your Highness                                                                             │ Да️          │
-│ Big Top Scooby-Doo!                                                                       │ Да️          │
-│ English Vinglish                                                                          │ Да️          │
-│ Fantastic Fear of Everything, A                                                           │ Да️          │
-│ Ghost Graduation                                                                          │ Да️          │
-│ Hellbenders                                                                               │ Да️          │
-│ On the Other Side of the Tracks (De l'autre côté du périph)                               │ Да️          │
-│ Unicorn City                                                                              │ Да️          │
-│ Chinese Puzzle (Casse-tête chinois)                                                       │ Да️          │
-│ Craig Ferguson: I'm Here To Help                                                          │ Да️          │
-│ Family, The                                                                               │ Да️          │
-│ Filth                                                                                     │ Да️          │
-│ Garden of Words, The (Koto no ha no niwa)                                                 │ Да️          │
-│ Great Beauty, The (Grande Bellezza, La)                                                   │ Да️          │
-│ Hunting Elephants                                                                         │ Да️          │
-│ Saving Santa                                                                              │ Да️          │
-│ Black Mirror: White Christmas                                                             │ Да️          │
-│ Love & Mercy                                                                              │ Да️          │
-│ Mr. Peabody & Sherman                                                                     │ Да️          │
-│ PK                                                                                        │ Да️          │
-│ Predestination                                                                            │ Да️          │
-│ The Raid 2: Berandal                                                                      │ Да️          │
-│ The Salt of the Earth                                                                     │ Да️          │
-│ Tom Segura: Completely Normal                                                             │ Да️          │
-│ A Perfect Day                                                                             │ Да️          │
-│ Bloodsucking Bastards                                                                     │ Да️          │
-│ Buzzard                                                                                   │ Да️          │
-│ Cosmic Scrat-tastrophe                                                                    │ Да️          │
-│ Deathgasm                                                                                 │ Да️          │
-│ Human                                                                                     │ Да️          │
-│ L.A. Slasher                                                                              │ Да️          │
-│ Lumberjack Man                                                                            │ Да️          │
-│ Ooops! Noah is Gone...                                                                    │ Да️          │
-│ The Editor                                                                                │ Да️          │
-│ The Jinx: The Life and Deaths of Robert Durst                                             │ Да️          │
-│ 13 Hours                                                                                  │ Да️          │
-│ All Yours                                                                                 │ Да️          │
-│ Central Intelligence                                                                      │ Да️          │
-│ Ice Age: The Great Egg-Scapade                                                            │ Да️          │
-│ Tom Segura: Mostly Stories                                                                │ Да️          │
-│ Loving Vincent                                                                            │ Да️          │
-│ To Be or Not to Be                                                                        │ Нет         │
-│ Gypsy                                                                                     │ Нет         │
-│ Follow Me, Boys!                                                                          │ Нет         │
-│ Christmas Carol, A                                                                        │ Нет         │
-│ Amityville II: The Possession                                                             │ Нет         │
-│ Claymation Christmas Celebration, A                                                       │ Нет         │
-│ Jerky Boys, The                                                                           │ Нет         │
-│ Operation Dumbo Drop                                                                      │ Нет         │
-│ Good Burger                                                                               │ Нет         │
-│ Spice World                                                                               │ Нет         │
-│ Pokémon the Movie 2000                                                                    │ Нет         │
-│ Rugrats in Paris: The Movie                                                               │ Нет         │
-│ Joy Ride                                                                                  │ Нет         │
-│ Pokémon 3: The Movie                                                                      │ Нет         │
-│ It's a Very Merry Muppet Christmas Movie                                                  │ Нет         │
-│ Pokemon 4 Ever (a.k.a. Pokémon 4: The Movie)                                              │ Нет         │
-│ Spy Kids 2: The Island of Lost Dreams                                                     │ Нет         │
-│ Pokémon Heroes                                                                            │ Нет         │
-│ Texas Chainsaw Massacre, The                                                              │ Нет         │
-│ Films to Keep You Awake: The Christmas Tale (Películas para no dormir: Cuento de navidad) │ Нет         │
-│ Mrs. Henderson Presents                                                                   │ Нет         │
-│ Lady in the Water                                                                         │ Нет         │
-│ Scary Movie 4                                                                             │ Нет         │
-│ Man on Wire                                                                               │ Нет         │
-│ Prom Night                                                                                │ Нет         │
-│ Zombie Strippers!                                                                         │ Нет         │
-│ Human Centipede, The (First Sequence)                                                     │ Нет         │
-│ Jennifer's Body                                                                           │ Нет         │
-│ Serious Man, A                                                                            │ Нет         │
-│ Yogi Bear                                                                                 │ Нет         │
-│ Maria Bamford: The Special Special Special!                                               │ Нет         │
-│ Rust and Bone (De rouille et d'os)                                                        │ Нет         │
-│ Drinking Buddies                                                                          │ Нет         │
-│ Haunted House 2, A                                                                        │ Нет         │
-│ 10 Cent Pistol                                                                            │ Нет         │
-│ Fifty Shades of Grey                                                                      │ Нет         │
-│ Sorrow                                                                                    │ Нет         │
-│ The Gracefield Incident                                                                   │ Нет         │
-│ Bad Santa 2                                                                               │ Нет         │
-│ Satanic                                                                                   │ Нет         │
-│ Death Note                                                                                │ Нет         │
-└───────────────────────────────────────────────────────────────────────────────────────────┴─────────────┘
-4. Вычислить количество оценок и среднюю оценку, которую дали фильмам пользователи-женщины в период с 2010 по 2012 год.
---------------------------------------------------
-SELECT
-  m.title,
-  count(r.rating) as rating_count,
-  avg(r.rating) as avg_rating
-FROM ratings AS r
-JOIN users AS u ON r.user_id = u.id
-JOIN movies AS m ON r.movie_id = m.id
-WHERE
-  u.gender = 'female' AND
-  strftime('%Y', r.timestamp, 'unixepoch') BETWEEN '2010' AND '2012'
-GROUP BY m.id, m.title;
-┌───────────────────────────────────────────────────────────────────────────────────┬──────────────┬──────────────────┐
-│                                       title                                       │ rating_count │    avg_rating    │
-├───────────────────────────────────────────────────────────────────────────────────┼──────────────┼──────────────────┤
-│ Toy Story                                                                         │ 2            │ 4.25             │
-│ Dangerous Minds                                                                   │ 1            │ 0.5              │
-│ Mortal Kombat                                                                     │ 1            │ 3.5              │
-│ Seven (a.k.a. Se7en)                                                              │ 1            │ 4.0              │
-│ Usual Suspects, The                                                               │ 2            │ 4.0              │
-│ Indian in the Cupboard, The                                                       │ 1            │ 3.0              │
-│ Bio-Dome                                                                          │ 1            │ 1.5              │
-│ Muppet Treasure Island                                                            │ 1            │ 5.0              │
-│ Braveheart                                                                        │ 2            │ 4.25             │
-│ Taxi Driver                                                                       │ 1            │ 4.0              │
-│ Up Close and Personal                                                             │ 1            │ 3.5              │
-│ Birdcage, The                                                                     │ 1            │ 3.0              │
-│ Apollo 13                                                                         │ 1            │ 3.5              │
-│ Crimson Tide                                                                      │ 1            │ 3.5              │
-│ Die Hard: With a Vengeance                                                        │ 1            │ 4.0              │
-│ Hackers                                                                           │ 1            │ 3.0              │
-│ Mallrats                                                                          │ 1            │ 2.5              │
-│ To Wong Foo, Thanks for Everything! Julie Newmar                                  │ 1            │ 3.0              │
-│ Walk in the Clouds, A                                                             │ 1            │ 4.0              │
-│ Star Wars: Episode IV - A New Hope                                                │ 2            │ 4.75             │
-│ Little Princess, A                                                                │ 1            │ 4.0              │
-│ Milk Money                                                                        │ 1            │ 3.5              │
-│ Léon: The Professional (a.k.a. The Professional) (Léon)                           │ 1            │ 3.5              │
-│ Pulp Fiction                                                                      │ 1            │ 5.0              │
-│ Shawshank Redemption, The                                                         │ 4            │ 4.75             │
-│ Tank Girl                                                                         │ 2            │ 3.5              │
-│ Adventures of Priscilla, Queen of the Desert, The                                 │ 1            │ 1.0              │
-│ Forrest Gump                                                                      │ 3            │ 4.5              │
-│ It Could Happen to You                                                            │ 1            │ 3.5              │
-│ Lion King, The                                                                    │ 1            │ 3.5              │
-│ Timecop                                                                           │ 1            │ 3.0              │
-│ Beverly Hillbillies, The                                                          │ 1            │ 3.5              │
-│ Fugitive, The                                                                     │ 1            │ 4.0              │
-│ Jurassic Park                                                                     │ 3            │ 3.5              │
-│ North                                                                             │ 1            │ 0.5              │
-│ Ref, The                                                                          │ 1            │ 2.5              │
-│ Schindler's List                                                                  │ 3            │ 3.0              │
-│ Secret Garden, The                                                                │ 2            │ 3.25             │
-│ Blade Runner                                                                      │ 2            │ 4.0              │
-│ Super Mario Bros.                                                                 │ 1            │ 2.0              │
-│ Brady Bunch Movie, The                                                            │ 1            │ 3.5              │
-│ Home Alone                                                                        │ 1            │ 1.5              │
-│ Aladdin                                                                           │ 1            │ 4.0              │
-│ Terminator 2: Judgment Day                                                        │ 1            │ 4.5              │
-│ Dances with Wolves                                                                │ 2            │ 4.25             │
-│ Batman                                                                            │ 1            │ 4.5              │
-│ Silence of the Lambs, The                                                         │ 1            │ 4.5              │
-│ Beauty and the Beast                                                              │ 2            │ 3.75             │
-│ Fargo                                                                             │ 1            │ 4.0              │
-│ Courage Under Fire                                                                │ 1            │ 0.5              │
-│ Mission: Impossible                                                               │ 1            │ 4.5              │
-│ Mystery Science Theater 3000: The Movie                                           │ 1            │ 4.5              │
-│ Operation Dumbo Drop                                                              │ 1            │ 0.5              │
-│ Oliver & Company                                                                  │ 1            │ 3.5              │
-│ Wallace & Gromit: The Best of Aardman Animation                                   │ 1            │ 0.5              │
-│ Barb Wire                                                                         │ 1            │ 2.0              │
-│ Spy Hard                                                                          │ 1            │ 2.5              │
-│ Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb              │ 3            │ 4.16666666666667 │
-│ Independence Day (a.k.a. ID4)                                                     │ 2            │ 3.75             │
-│ Matilda                                                                           │ 2            │ 4.0              │
-│ Escape from L.A.                                                                  │ 1            │ 5.0              │
-│ Godfather, The                                                                    │ 3            │ 4.5              │
-│ Singin' in the Rain                                                               │ 1            │ 3.5              │
-│ Rear Window                                                                       │ 2            │ 4.25             │
-│ Some Like It Hot                                                                  │ 2            │ 3.0              │
-│ My Fair Lady                                                                      │ 1            │ 0.5              │
-│ Roman Holiday                                                                     │ 1            │ 5.0              │
-│ Citizen Kane                                                                      │ 1            │ 3.5              │
-│ 2001: A Space Odyssey                                                             │ 2            │ 5.0              │
-│ It's a Wonderful Life                                                             │ 1            │ 5.0              │
-│ Homeward Bound: The Incredible Journey                                            │ 1            │ 4.0              │
-│ Swiss Family Robinson                                                             │ 1            │ 3.0              │
-│ Angels in the Outfield                                                            │ 1            │ 3.0              │
-│ Bedknobs and Broomsticks                                                          │ 1            │ 2.0              │
-│ Alice in Wonderland                                                               │ 1            │ 4.5              │
-│ Die Hard                                                                          │ 2            │ 3.25             │
-│ Ghost and the Darkness, The                                                       │ 1            │ 3.5              │
-│ Sleeper                                                                           │ 1            │ 4.0              │
-│ Reservoir Dogs                                                                    │ 1            │ 4.0              │
-│ Platoon                                                                           │ 2            │ 3.0              │
-│ Weekend at Bernie's                                                               │ 1            │ 3.5              │
-│ Doors, The                                                                        │ 2            │ 2.25             │
-│ E.T. the Extra-Terrestrial                                                        │ 1            │ 4.0              │
-│ Days of Thunder                                                                   │ 2            │ 3.5              │
-│ Rebel Without a Cause                                                             │ 1            │ 2.5              │
-│ People vs. Larry Flynt, The                                                       │ 1            │ 3.5              │
-│ On Golden Pond                                                                    │ 2            │ 1.25             │
-│ Monty Python and the Holy Grail                                                   │ 3            │ 4.5              │
-│ Cinema Paradiso (Nuovo cinema Paradiso)                                           │ 1            │ 4.0              │
-│ One Flew Over the Cuckoo's Nest                                                   │ 1            │ 4.5              │
-│ Star Wars: Episode V - The Empire Strikes Back                                    │ 2            │ 4.5              │
-│ Princess Bride, The                                                               │ 1            │ 3.5              │
-│ Raiders of the Lost Ark (Indiana Jones and the Raiders of the Lost Ark)           │ 2            │ 4.5              │
-│ Brazil                                                                            │ 1            │ 2.5              │
-│ Good, the Bad and the Ugly, The (Buono, il brutto, il cattivo, Il)                │ 2            │ 5.0              │
-│ Lawrence of Arabia                                                                │ 2            │ 3.75             │
-│ Clockwork Orange, A                                                               │ 2            │ 4.5              │
-│ Apocalypse Now                                                                    │ 1            │ 4.0              │
-│ Once Upon a Time in the West (C'era una volta il West)                            │ 2            │ 4.0              │
-│ Star Wars: Episode VI - Return of the Jedi                                        │ 2            │ 4.5              │
-│ Goodfellas                                                                        │ 2            │ 4.25             │
-│ Godfather: Part II, The                                                           │ 1            │ 4.5              │
-│ Full Metal Jacket                                                                 │ 3            │ 4.5              │
-│ Grand Day Out with Wallace and Gromit, A                                          │ 1            │ 0.5              │
-│ Henry V                                                                           │ 1            │ 4.0              │
-│ Amadeus                                                                           │ 1            │ 5.0              │
-│ Raging Bull                                                                       │ 1            │ 4.5              │
-│ Sting, The                                                                        │ 1            │ 4.0              │
-│ Terminator, The                                                                   │ 1            │ 5.0              │
-│ Glory                                                                             │ 1            │ 4.0              │
-│ Rosencrantz and Guildenstern Are Dead                                             │ 1            │ 1.0              │
-│ Dead Poets Society                                                                │ 1            │ 5.0              │
-│ Bridge on the River Kwai, The                                                     │ 2            │ 4.0              │
-│ Chinatown                                                                         │ 1            │ 4.0              │
-│ Shining, The                                                                      │ 2            │ 4.5              │
-│ Stand by Me                                                                       │ 1            │ 4.0              │
-│ Great Escape, The                                                                 │ 1            │ 4.5              │
-│ Deer Hunter, The                                                                  │ 2            │ 2.25             │
-│ Groundhog Day                                                                     │ 1            │ 4.0              │
-│ Back to the Future                                                                │ 4            │ 3.75             │
-│ Patton                                                                            │ 2            │ 2.75             │
-│ Highlander                                                                        │ 1            │ 3.5              │
-│ Raise the Red Lantern (Da hong deng long gao gao gua)                             │ 1            │ 3.5              │
-│ Fantasia                                                                          │ 1            │ 4.5              │
-│ Indiana Jones and the Last Crusade                                                │ 2            │ 2.5              │
-│ Being There                                                                       │ 1            │ 2.5              │
-│ Field of Dreams                                                                   │ 1            │ 0.5              │
-│ Man Who Would Be King, The                                                        │ 1            │ 4.5              │
-│ Dracula (Bram Stoker's Dracula)                                                   │ 1            │ 2.0              │
-│ Carrie                                                                            │ 1            │ 3.5              │
-│ Nosferatu (Nosferatu, eine Symphonie des Grauens)                                 │ 1            │ 3.0              │
-│ Sling Blade                                                                       │ 1            │ 3.0              │
-│ 101 Dalmatians                                                                    │ 1            │ 3.0              │
-│ Star Trek: The Motion Picture                                                     │ 1            │ 3.0              │
-│ Star Trek III: The Search for Spock                                               │ 1            │ 3.5              │
-│ Grease 2                                                                          │ 1            │ 2.5              │
-│ Under Siege                                                                       │ 2            │ 1.25             │
-│ Jerry Maguire                                                                     │ 1            │ 4.5              │
-│ Beavis and Butt-Head Do America                                                   │ 1            │ 4.0              │
-│ Beautician and the Beast, The                                                     │ 1            │ 3.0              │
-│ Fools Rush In                                                                     │ 1            │ 3.5              │
-│ Donnie Brasco                                                                     │ 2            │ 3.25             │
-│ Anaconda                                                                          │ 1            │ 2.5              │
-│ Volcano                                                                           │ 1            │ 3.0              │
-│ Shall We Dance? (Shall We Dansu?)                                                 │ 1            │ 2.0              │
-│ Contact                                                                           │ 1            │ 4.0              │
-│ Conan the Barbarian                                                               │ 2            │ 4.0              │
-│ George of the Jungle                                                              │ 1            │ 3.0              │
-│ In & Out                                                                          │ 1            │ 2.5              │
-│ L.A. Confidential                                                                 │ 1            │ 5.0              │
-│ Seven Years in Tibet                                                              │ 1            │ 4.0              │
-│ Gattaca                                                                           │ 1            │ 3.5              │
-│ Rainmaker, The                                                                    │ 1            │ 3.5              │
-│ Boogie Nights                                                                     │ 1            │ 3.0              │
-│ Starship Troopers                                                                 │ 1            │ 3.5              │
-│ Sliding Doors                                                                     │ 1            │ 4.5              │
-│ Truman Show, The                                                                  │ 1            │ 5.0              │
-│ Anastasia                                                                         │ 1            │ 3.0              │
-│ Alien: Resurrection                                                               │ 1            │ 2.5              │
-│ For Richer or Poorer                                                              │ 1            │ 3.5              │
-│ Titanic                                                                           │ 1            │ 3.5              │
-│ Postman, The                                                                      │ 1            │ 2.0              │
-│ Big Lebowski, The                                                                 │ 1            │ 5.0              │
-│ Blues Brothers 2000                                                               │ 1            │ 1.5              │
-│ U.S. Marshals                                                                     │ 2            │ 3.5              │
-│ Man in the Iron Mask, The                                                         │ 1            │ 3.0              │
-│ City of Angels                                                                    │ 1            │ 4.0              │
-│ Species II                                                                        │ 1            │ 0.5              │
-│ Big Hit, The                                                                      │ 1            │ 3.5              │
-│ Misérables, Les                                                                   │ 1            │ 3.5              │
-│ Opposite of Sex, The                                                              │ 1            │ 2.5              │
-│ Hope Floats                                                                       │ 1            │ 2.0              │
-│ Can't Hardly Wait                                                                 │ 1            │ 3.0              │
-│ On the Waterfront                                                                 │ 1            │ 4.5              │
-│ Last Emperor, The                                                                 │ 1            │ 3.5              │
-│ Rain Man                                                                          │ 1            │ 4.0              │
-│ Labyrinth                                                                         │ 2            │ 3.25             │
-│ Exorcist, The                                                                     │ 1            │ 1.5              │
-│ Goonies, The                                                                      │ 1            │ 4.0              │
-│ Soylent Green                                                                     │ 1            │ 4.0              │
-│ Bambi                                                                             │ 1            │ 0.5              │
-│ Seven Samurai (Shichinin no samurai)                                              │ 1            │ 3.5              │
-│ Saving Private Ryan                                                               │ 3            │ 4.33333333333333 │
-│ Doctor Zhivago                                                                    │ 1            │ 3.0              │
-│ Lady and the Tramp                                                                │ 2            │ 2.0              │
-│ 101 Dalmatians (One Hundred and One Dalmatians)                                   │ 1            │ 3.5              │
-│ Peter Pan                                                                         │ 1            │ 4.5              │
-│ Rescuers, The                                                                     │ 1            │ 0.5              │
-│ Tron                                                                              │ 1            │ 2.0              │
-│ Man with Two Brains, The                                                          │ 1            │ 3.5              │
-│ Outsiders, The                                                                    │ 1            │ 3.0              │
-│ Indiana Jones and the Temple of Doom                                              │ 2            │ 3.0              │
-│ Secret of NIMH, The                                                               │ 2            │ 3.5              │
-│ Untouchables, The                                                                 │ 1            │ 4.0              │
-│ My Blue Heaven                                                                    │ 1            │ 5.0              │
-│ Thing, The                                                                        │ 1            │ 4.0              │
-│ Producers, The                                                                    │ 1            │ 4.5              │
-│ History of the World: Part I                                                      │ 2            │ 3.75             │
-│ Life Is Beautiful (La Vita è bella)                                               │ 1            │ 3.5              │
-│ American History X                                                                │ 1            │ 4.5              │
-│ Siege, The                                                                        │ 1            │ 3.5              │
-│ I Still Know What You Did Last Summer                                             │ 1            │ 3.0              │
-│ Home Fries                                                                        │ 1            │ 2.0              │
-│ Psycho                                                                            │ 1            │ 1.5              │
-│ Miracle on 34th Street                                                            │ 1            │ 4.0              │
-│ Rocky II                                                                          │ 1            │ 3.0              │
-│ Rocky IV                                                                          │ 2            │ 3.25             │
-│ Clue                                                                              │ 1            │ 3.0              │
-│ Karate Kid, The                                                                   │ 1            │ 3.0              │
-│ Karate Kid, Part II, The                                                          │ 1            │ 4.0              │
-│ You've Got Mail                                                                   │ 1            │ 0.5              │
-│ Fly, The                                                                          │ 1            │ 4.0              │
-│ Simply Irresistible                                                               │ 1            │ 4.5              │
-│ Blast from the Past                                                               │ 1            │ 3.0              │
-│ October Sky                                                                       │ 1            │ 4.0              │
-│ Office Space                                                                      │ 1            │ 4.5              │
-│ Lock, Stock & Two Smoking Barrels                                                 │ 1            │ 1.0              │
-│ Ravenous                                                                          │ 1            │ 2.5              │
-│ EDtv                                                                              │ 1            │ 2.5              │
-│ Matrix, The                                                                       │ 2            │ 4.75             │
-│ 10 Things I Hate About You                                                        │ 1            │ 5.0              │
-│ Idle Hands                                                                        │ 1            │ 2.5              │
-│ Star Wars: Episode I - The Phantom Menace                                         │ 1            │ 3.5              │
-│ Superman III                                                                      │ 1            │ 3.5              │
-│ Rocky Horror Picture Show, The                                                    │ 1            │ 1.5              │
-│ Invasion of the Body Snatchers                                                    │ 1            │ 3.5              │
-│ Tarzan                                                                            │ 1            │ 4.0              │
-│ American Pie                                                                      │ 1            │ 4.0              │
-│ Lake Placid                                                                       │ 1            │ 3.0              │
-│ Ghostbusters II                                                                   │ 1            │ 3.5              │
-│ Spartacus                                                                         │ 2            │ 2.5              │
-│ Iron Giant, The                                                                   │ 1            │ 3.5              │
-│ Sixth Sense, The                                                                  │ 3            │ 4.0              │
-│ European Vacation (aka National Lampoon's European Vacation)                      │ 1            │ 3.0              │
-│ Pelican Brief, The                                                                │ 1            │ 3.0              │
-│ Mickey Blue Eyes                                                                  │ 1            │ 4.0              │
-│ Teaching Mrs. Tingle                                                              │ 1            │ 3.5              │
-│ Universal Soldier                                                                 │ 1            │ 3.5              │
-│ Saturn 3                                                                          │ 1            │ 5.0              │
-│ American Beauty                                                                   │ 3            │ 3.83333333333333 │
-│ Excalibur                                                                         │ 1            │ 4.5              │
-│ Drive Me Crazy                                                                    │ 1            │ 3.5              │
-│ Dirty Dozen, The                                                                  │ 1            │ 4.0              │
-│ Blue Lagoon, The                                                                  │ 2            │ 3.25             │
-│ Fistful of Dollars, A (Per un pugno di dollari)                                   │ 1            │ 4.5              │
-│ Fight Club                                                                        │ 2            │ 4.0              │
-│ House on Haunted Hill                                                             │ 1            │ 2.0              │
-│ Piranha                                                                           │ 1            │ 4.5              │
-│ Trading Places                                                                    │ 1            │ 4.5              │
-│ Toy Story 2                                                                       │ 1            │ 3.0              │
-│ Deuce Bigalow: Male Gigolo                                                        │ 1            │ 3.0              │
-│ Green Mile, The                                                                   │ 2            │ 4.0              │
-│ Anna and the King                                                                 │ 1            │ 3.5              │
-│ Fantasia 2000                                                                     │ 1            │ 5.0              │
-│ Easy Rider                                                                        │ 1            │ 4.5              │
-│ Fast Times at Ridgemont High                                                      │ 1            │ 0.5              │
-│ Far and Away                                                                      │ 1            │ 2.5              │
-│ White Men Can't Jump                                                              │ 1            │ 4.0              │
-│ Pitch Black                                                                       │ 1            │ 4.0              │
-│ Double Indemnity                                                                  │ 1            │ 3.5              │
-│ Red Dawn                                                                          │ 1            │ 3.5              │
-│ Bloodsport                                                                        │ 1            │ 4.0              │
-│ Romeo Must Die                                                                    │ 1            │ 2.5              │
-│ Modern Times                                                                      │ 1            │ 3.0              │
-│ Jacob's Ladder                                                                    │ 1            │ 2.0              │
-│ Empire Records                                                                    │ 1            │ 3.5              │
-│ Network                                                                           │ 1            │ 4.5              │
-│ Outlaw Josey Wales, The                                                           │ 1            │ 4.0              │
-│ Gossip                                                                            │ 1            │ 2.0              │
-│ Love and Basketball                                                               │ 1            │ 3.5              │
-│ U-571                                                                             │ 1            │ 3.5              │
-│ Gladiator                                                                         │ 2            │ 4.5              │
-│ Mr. Mom                                                                           │ 1            │ 3.0              │
-│ Battlefield Earth                                                                 │ 2            │ 1.25             │
-│ Shanghai Noon                                                                     │ 1            │ 0.5              │
-│ Endless Summer, The                                                               │ 1            │ 3.0              │
-│ Romeo and Juliet                                                                  │ 1            │ 3.5              │
-│ For a Few Dollars More (Per qualche dollaro in più)                               │ 2            │ 4.25             │
-│ Mad Max                                                                           │ 1            │ 3.5              │
-│ Road Warrior, The (Mad Max 2)                                                     │ 1            │ 5.0              │
-│ Mad Max Beyond Thunderdome                                                        │ 1            │ 3.5              │
-│ Butterfly (La lengua de las mariposas)                                            │ 1            │ 3.0              │
-│ Patriot, The                                                                      │ 1            │ 4.0              │
-│ But I'm a Cheerleader                                                             │ 1            │ 1.0              │
-│ Footloose                                                                         │ 1            │ 4.0              │
-│ X-Men                                                                             │ 1            │ 4.0              │
-│ Autumn in New York                                                                │ 1            │ 2.0              │
-│ Steel Magnolias                                                                   │ 1            │ 3.0              │
-│ Replacements, The                                                                 │ 1            │ 3.0              │
-│ Dancer in the Dark                                                                │ 1            │ 4.0              │
-│ Best in Show                                                                      │ 1            │ 3.0              │
-│ Requiem for a Dream                                                               │ 2            │ 2.5              │
-│ Billy Elliot                                                                      │ 1            │ 4.0              │
-│ Legend of Bagger Vance, The                                                       │ 1            │ 3.0              │
-│ Red Planet                                                                        │ 1            │ 2.5              │
-│ Crouching Tiger, Hidden Dragon (Wo hu cang long)                                  │ 1            │ 3.5              │
-│ Emperor's New Groove, The                                                         │ 1            │ 4.0              │
-│ Cast Away                                                                         │ 1            │ 3.0              │
-│ Family Man, The                                                                   │ 1            │ 3.5              │
-│ Annie                                                                             │ 1            │ 3.5              │
-│ Save the Last Dance                                                               │ 1            │ 3.5              │
-│ Sugar & Spice                                                                     │ 1            │ 2.0              │
-│ Head Over Heels                                                                   │ 1            │ 3.0              │
-│ Memento                                                                           │ 4            │ 4.25             │
-│ Shrek                                                                             │ 2            │ 3.5              │
-│ Pearl Harbor                                                                      │ 2            │ 3.5              │
-│ Magnificent Seven, The                                                            │ 1            │ 4.0              │
-│ A.I. Artificial Intelligence                                                      │ 1            │ 3.5              │
-│ Crazy/Beautiful                                                                   │ 1            │ 3.0              │
-│ Sexy Beast                                                                        │ 1            │ 2.0              │
-│ Kiss of the Dragon                                                                │ 1            │ 3.5              │
-│ Cocktail                                                                          │ 1            │ 4.0              │
-│ The Lair of the White Worm                                                        │ 1            │ 5.0              │
-│ Twins                                                                             │ 1            │ 2.5              │
-│ Bill & Ted's Excellent Adventure                                                  │ 2            │ 3.75             │
-│ Turner & Hooch                                                                    │ 1            │ 3.5              │
-│ War of the Roses, The                                                             │ 1            │ 3.0              │
-│ Princess Diaries, The                                                             │ 1            │ 2.5              │
-│ Others, The                                                                       │ 1            │ 0.5              │
-│ Thirteen Ghosts (a.k.a. Thir13en Ghosts)                                          │ 1            │ 2.5              │
-│ Better Than Sex                                                                   │ 1            │ 3.5              │
-│ Monsters, Inc.                                                                    │ 1            │ 4.0              │
-│ Spy Game                                                                          │ 1            │ 4.0              │
-│ Behind Enemy Lines                                                                │ 1            │ 3.0              │
-│ Ocean's Eleven                                                                    │ 2            │ 3.75             │
-│ And Then There Were None                                                          │ 1            │ 3.0              │
-│ Amelie (Fabuleux destin d'Amélie Poulain, Le)                                     │ 2            │ 5.0              │
-│ Vanilla Sky                                                                       │ 1            │ 4.0              │
-│ Bill & Ted's Bogus Journey                                                        │ 1            │ 2.0              │
-│ Lord of the Rings: The Fellowship of the Ring, The                                │ 3            │ 4.16666666666667 │
-│ Beautiful Mind, A                                                                 │ 1            │ 3.0              │
-│ Black Hawk Down                                                                   │ 1            │ 4.0              │
-│ Snow Dogs                                                                         │ 1            │ 0.5              │
-│ 40 Days and 40 Nights                                                             │ 1            │ 3.5              │
-│ Hangar 18                                                                         │ 1            │ 5.0              │
-│ Panic Room                                                                        │ 1            │ 3.5              │
-│ Rookie, The                                                                       │ 1            │ 2.0              │
-│ Rashomon (Rashômon)                                                               │ 1            │ 4.0              │
-│ Murder by Numbers                                                                 │ 1            │ 2.5              │
-│ The Scorpion King                                                                 │ 1            │ 4.0              │
-│ Salton Sea, The                                                                   │ 1            │ 3.0              │
-│ Spider-Man                                                                        │ 1            │ 2.5              │
-│ Bourne Identity, The                                                              │ 2            │ 2.5              │
-│ Scooby-Doo                                                                        │ 1            │ 4.5              │
-│ Minority Report                                                                   │ 1            │ 4.0              │
-│ Stakeout                                                                          │ 1            │ 3.0              │
-│ Transporter, The                                                                  │ 1            │ 4.0              │
-│ Captain Ron                                                                       │ 1            │ 4.0              │
-│ Secretary                                                                         │ 1            │ 3.5              │
-│ Spirited Away (Sen to Chihiro no kamikakushi)                                     │ 2            │ 5.0              │
-│ Galaxy of Terror (Quest)                                                          │ 1            │ 5.0              │
-│ Looker                                                                            │ 1            │ 4.5              │
-│ Professional, The (Le professionnel)                                              │ 1            │ 4.0              │
-│ Equilibrium                                                                       │ 1            │ 3.5              │
-│ Android                                                                           │ 1            │ 5.0              │
-│ Maid in Manhattan                                                                 │ 1            │ 3.5              │
-│ Lord of the Rings: The Two Towers, The                                            │ 3            │ 4.16666666666667 │
-│ My Neighbor Totoro (Tonari no Totoro)                                             │ 2            │ 4.5              │
-│ Pianist, The                                                                      │ 1            │ 5.0              │
-│ City of God (Cidade de Deus)                                                      │ 2            │ 4.75             │
-│ Old School                                                                        │ 1            │ 2.0              │
-│ Green Card                                                                        │ 1            │ 0.5              │
-│ What a Girl Wants                                                                 │ 1            │ 2.5              │
-│ Holes                                                                             │ 1            │ 3.5              │
-│ Laputa: Castle in the Sky (Tenkû no shiro Rapyuta)                                │ 1            │ 5.0              │
-│ Bruce Almighty                                                                    │ 1            │ 4.0              │
-│ Finding Nemo                                                                      │ 2            │ 4.5              │
-│ 2 Fast 2 Furious (Fast and the Furious 2, The)                                    │ 1            │ 3.0              │
-│ 28 Days Later                                                                     │ 1            │ 3.5              │
-│ Hulk                                                                              │ 1            │ 2.5              │
-│ Legally Blonde 2: Red, White & Blonde                                             │ 1            │ 2.5              │
-│ Pirates of the Caribbean: The Curse of the Black Pearl                            │ 2            │ 3.75             │
-│ Shaolin Soccer (Siu lam juk kau)                                                  │ 1            │ 3.0              │
-│ Cabin Fever                                                                       │ 1            │ 2.0              │
-│ Secondhand Lions                                                                  │ 1            │ 3.0              │
-│ Bubba Ho-tep                                                                      │ 1            │ 1.5              │
-│ Triplets of Belleville, The (Les triplettes de Belleville)                        │ 1            │ 3.5              │
-│ All the President's Men                                                           │ 1            │ 4.5              │
-│ Alien Contamination                                                               │ 1            │ 5.0              │
-│ Mystic River                                                                      │ 1            │ 3.5              │
-│ Intolerable Cruelty                                                               │ 1            │ 3.5              │
-│ Kill Bill: Vol. 1                                                                 │ 1            │ 0.5              │
-│ Scary Movie 3                                                                     │ 1            │ 1.0              │
-│ Gloomy Sunday (Ein Lied von Liebe und Tod)                                        │ 1            │ 4.0              │
-│ Love Actually                                                                     │ 1            │ 4.5              │
-│ Master and Commander: The Far Side of the World                                   │ 1            │ 3.5              │
-│ Lover, The (Amant, L')                                                            │ 1            │ 3.5              │
-│ Battle Royale (Batoru rowaiaru)                                                   │ 1            │ 3.5              │
-│ Witches of Eastwick, The                                                          │ 1            │ 2.0              │
-│ Follow the Fleet                                                                  │ 1            │ 4.0              │
-│ Nausicaä of the Valley of the Wind (Kaze no tani no Naushika)                     │ 2            │ 4.0              │
-│ Last Samurai, The                                                                 │ 1            │ 3.5              │
-│ Big Fish                                                                          │ 1            │ 4.0              │
-│ Girl with a Pearl Earring                                                         │ 1            │ 3.0              │
-│ Lord of the Rings: The Return of the King, The                                    │ 3            │ 4.33333333333333 │
-│ Mona Lisa Smile                                                                   │ 1            │ 2.5              │
-│ Fog of War: Eleven Lessons from the Life of Robert S. McNamara, The               │ 1            │ 4.5              │
-│ The Butterfly Effect                                                              │ 1            │ 3.5              │
-│ Touching the Void                                                                 │ 1            │ 4.0              │
-│ Dirty Dancing: Havana Nights                                                      │ 1            │ 3.0              │
-│ Good bye, Lenin!                                                                  │ 1            │ 5.0              │
-│ Eternal Sunshine of the Spotless Mind                                             │ 1            │ 4.5              │
-│ The Alamo                                                                         │ 1            │ 3.5              │
-│ Ella Enchanted                                                                    │ 1            │ 3.5              │
-│ Dawn of the Dead                                                                  │ 1            │ 2.0              │
-│ Kill Bill: Vol. 2                                                                 │ 1            │ 0.5              │
-│ Mean Girls                                                                        │ 1            │ 3.5              │
-│ Troy                                                                              │ 1            │ 3.0              │
-│ Enter the Dragon                                                                  │ 1            │ 4.0              │
-│ 100 Girls                                                                         │ 1            │ 3.5              │
-│ Pride and Prejudice                                                               │ 1            │ 4.0              │
-│ Master of the Flying Guillotine (Du bi quan wang da po xue di zi)                 │ 1            │ 4.5              │
-│ Death Race 2000                                                                   │ 1            │ 5.0              │
-│ Spring, Summer, Fall, Winter... and Spring (Bom yeoreum gaeul gyeoul geurigo bom) │ 1            │ 3.5              │
-│ Shrek 2                                                                           │ 1            │ 4.0              │
-│ Fahrenheit 9/11                                                                   │ 1            │ 2.0              │
-│ Roxanne                                                                           │ 1            │ 3.5              │
-│ Cinderella Story, A                                                               │ 1            │ 2.5              │
-│ Sky Captain and the World of Tomorrow                                             │ 1            │ 3.5              │
-│ Motorcycle Diaries, The (Diarios de motocicleta)                                  │ 1            │ 2.5              │
-│ Shaun of the Dead                                                                 │ 1            │ 3.0              │
-│ Murder on the Orient Express                                                      │ 1            │ 2.0              │
-│ Shark Tale                                                                        │ 1            │ 2.5              │
-│ Grudge, The                                                                       │ 1            │ 3.0              │
-│ After the Sunset                                                                  │ 1            │ 5.0              │
-│ Bridget Jones: The Edge of Reason                                                 │ 1            │ 3.0              │
-│ Alexander                                                                         │ 1            │ 3.5              │
-│ Blade: Trinity                                                                    │ 1            │ 3.5              │
-│ Clonus Horror, The                                                                │ 1            │ 4.5              │
-│ Quiet Earth, The                                                                  │ 1            │ 4.0              │
-│ Hearts of Darkness: A Filmmakers Apocalypse                                       │ 1            │ 4.0              │
-│ My Father the Hero                                                                │ 1            │ 2.5              │
-│ Joint Security Area (Gongdong gyeongbi guyeok JSA)                                │ 1            │ 4.0              │
-│ Undertaking Betty (Plots with a View)                                             │ 1            │ 2.5              │
-│ Old Boy                                                                           │ 2            │ 2.5              │
-│ Hotel Rwanda                                                                      │ 1            │ 3.5              │
-│ Phantom of the Opera, The                                                         │ 1            │ 3.0              │
-│ Howl's Moving Castle (Hauru no ugoku shiro)                                       │ 1            │ 4.5              │
-│ Kung Fu Hustle (Gong fu)                                                          │ 1            │ 0.5              │
-│ Robots                                                                            │ 1            │ 2.5              │
-│ Fever Pitch                                                                       │ 1            │ 4.0              │
-│ Hitchhiker's Guide to the Galaxy, The                                             │ 1            │ 4.0              │
-│ Unleashed (Danny the Dog)                                                         │ 1            │ 3.0              │
-│ Lords of Dogtown                                                                  │ 1            │ 1.5              │
-│ Mr. & Mrs. Smith                                                                  │ 1            │ 5.0              │
-│ Batman Begins                                                                     │ 2            │ 4.0              │
-│ Grizzly Man                                                                       │ 1            │ 4.0              │
-│ 40-Year-Old Virgin, The                                                           │ 1            │ 4.5              │
-│ Transporter 2                                                                     │ 1            │ 3.5              │
-│ Jarhead                                                                           │ 1            │ 3.0              │
-│ Pride & Prejudice                                                                 │ 1            │ 4.5              │
-│ Descent, The                                                                      │ 1            │ 3.5              │
-│ Ice Harvest, The                                                                  │ 1            │ 3.0              │
-│ Family Stone, The                                                                 │ 2            │ 3.25             │
-│ Mrs. Henderson Presents                                                           │ 1            │ 0.5              │
-│ Underworld: Evolution                                                             │ 1            │ 3.0              │
-│ Failure to Launch                                                                 │ 1            │ 3.0              │
-│ Ice Age 2: The Meltdown                                                           │ 1            │ 3.5              │
-│ V for Vendetta                                                                    │ 1            │ 4.0              │
-│ Break-Up, The                                                                     │ 1            │ 3.5              │
-│ Devil Wears Prada, The                                                            │ 1            │ 4.5              │
-│ Who Killed the Electric Car?                                                      │ 1            │ 4.0              │
-│ Little Miss Sunshine                                                              │ 1            │ 4.0              │
-│ Snakes on a Plane                                                                 │ 1            │ 3.5              │
-│ Crank                                                                             │ 1            │ 2.0              │
-│ The Queen                                                                         │ 1            │ 4.0              │
-│ Last Kiss, The                                                                    │ 1            │ 4.5              │
-│ SherryBaby                                                                        │ 1            │ 2.5              │
-│ Idiocracy                                                                         │ 1            │ 3.0              │
-│ Jesus Camp                                                                        │ 1            │ 4.5              │
-│ Conversations with Other Women                                                    │ 1            │ 3.0              │
-│ Pan's Labyrinth (Laberinto del fauno, El)                                         │ 2            │ 4.0              │
-│ Departed, The                                                                     │ 2            │ 4.25             │
-│ Little Children                                                                   │ 1            │ 4.0              │
-│ Children of Men                                                                   │ 2            │ 4.75             │
-│ Prestige, The                                                                     │ 1            │ 4.5              │
-│ Perfume: The Story of a Murderer                                                  │ 1            │ 3.0              │
-│ Happy Feet                                                                        │ 1            │ 3.0              │
-│ Holiday, The                                                                      │ 2            │ 4.0              │
-│ Painted Veil, The                                                                 │ 1            │ 2.5              │
-│ Notes on a Scandal                                                                │ 1            │ 4.0              │
-│ Waitress                                                                          │ 1            │ 4.5              │
-│ Seven Up!                                                                         │ 1            │ 3.5              │
-│ Norbit                                                                            │ 1            │ 1.0              │
-│ Zodiac                                                                            │ 1            │ 4.0              │
-│ 300                                                                               │ 3            │ 2.5              │
-│ Becoming Jane                                                                     │ 1            │ 3.0              │
-│ Namesake, The                                                                     │ 1            │ 3.0              │
-│ Shooter                                                                           │ 1            │ 3.5              │
-│ Meet the Robinsons                                                                │ 1            │ 4.0              │
-│ Disturbia                                                                         │ 1            │ 4.5              │
-│ Hairspray                                                                         │ 1            │ 3.5              │
-│ Shrek the Third                                                                   │ 1            │ 3.5              │
-│ Cashback                                                                          │ 2            │ 4.0              │
-│ Hostel: Part II                                                                   │ 1            │ 1.5              │
-│ Nancy Drew                                                                        │ 1            │ 3.0              │
-│ Evan Almighty                                                                     │ 1            │ 2.5              │
-│ First Snow                                                                        │ 1            │ 3.0              │
-│ Broken Arrow                                                                      │ 1            │ 3.0              │
-│ Across the Universe                                                               │ 1            │ 4.0              │
-│ Stardust                                                                          │ 2            │ 4.0              │
-│ King of Kong, The                                                                 │ 1            │ 5.0              │
-│ Planet Terror                                                                     │ 1            │ 3.5              │
-│ Shoot 'Em Up                                                                      │ 1            │ 3.5              │
-│ Dan in Real Life                                                                  │ 1            │ 3.0              │
-│ 30 Days of Night                                                                  │ 1            │ 4.0              │
-│ Persepolis                                                                        │ 1            │ 4.5              │
-│ For the Bible Tells Me So                                                         │ 1            │ 3.0              │
-│ No Country for Old Men                                                            │ 1            │ 4.0              │
-│ I Am Legend                                                                       │ 1            │ 4.0              │
-│ Juno                                                                              │ 1            │ 3.5              │
-│ Maxed Out: Hard Times, Easy Credit and the Era of Predatory Lenders               │ 1            │ 2.5              │
-│ National Treasure: Book of Secrets                                                │ 1            │ 3.0              │
-│ 27 Dresses                                                                        │ 1            │ 3.5              │
-│ Fool's Gold                                                                       │ 1            │ 3.0              │
-│ Run Fatboy Run                                                                    │ 1            │ 2.5              │
-│ 10,000 BC                                                                         │ 2            │ 3.25             │
-│ Counterfeiters, The (Die Fälscher)                                                │ 1            │ 1.5              │
-│ Dark Knight, The                                                                  │ 3            │ 4.66666666666667 │
-│ Outsourced                                                                        │ 1            │ 3.5              │
-│ Iron Man                                                                          │ 1            │ 4.0              │
-│ Made of Honor                                                                     │ 1            │ 2.5              │
-│ What Happens in Vegas...                                                          │ 1            │ 3.5              │
-│ Bella                                                                             │ 1            │ 3.5              │
-│ Indiana Jones and the Kingdom of the Crystal Skull                                │ 1            │ 2.0              │
-│ Sex and the City                                                                  │ 1            │ 2.5              │
-│ You Don't Mess with the Zohan                                                     │ 1            │ 1.0              │
-│ Incredible Hulk, The                                                              │ 1            │ 3.0              │
-│ WALL·E                                                                            │ 2            │ 3.25             │
-│ Journey to the Center of the Earth                                                │ 1            │ 3.0              │
-│ Step Brothers                                                                     │ 1            │ 2.5              │
-│ Pineapple Express                                                                 │ 1            │ 3.0              │
-│ Let the Right One In (Låt den rätte komma in)                                     │ 1            │ 2.5              │
-│ Nick and Norah's Infinite Playlist                                                │ 1            │ 3.0              │
-│ Duchess, The                                                                      │ 1            │ 3.0              │
-│ RocknRolla                                                                        │ 1            │ 3.5              │
-│ Doubt                                                                             │ 1            │ 3.5              │
-│ Frost/Nixon                                                                       │ 1            │ 4.5              │
-│ Reader, The                                                                       │ 1            │ 3.5              │
-│ Wrestler, The                                                                     │ 2            │ 3.75             │
-│ Valkyrie                                                                          │ 1            │ 4.0              │
-│ Dear Zachary: A Letter to a Son About His Father                                  │ 1            │ 4.5              │
-│ Defiance                                                                          │ 1            │ 4.0              │
-│ Coraline                                                                          │ 1            │ 4.5              │
-│ International, The                                                                │ 1            │ 3.0              │
-│ He's Just Not That Into You                                                       │ 1            │ 2.0              │
-│ Girl with the Dragon Tattoo, The (Män som hatar kvinnor)                          │ 1            │ 4.5              │
-│ Sunshine Cleaning                                                                 │ 1            │ 3.5              │
-│ Strictly Sexual                                                                   │ 1            │ 5.0              │
-│ Inglourious Basterds                                                              │ 1            │ 4.0              │
-│ Moon                                                                              │ 1            │ 5.0              │
-│ X-Men Origins: Wolverine                                                          │ 1            │ 3.5              │
-│ Star Trek                                                                         │ 1            │ 4.5              │
-│ Angels & Demons                                                                   │ 1            │ 3.0              │
-│ Fanboys                                                                           │ 1            │ 4.0              │
-│ Up                                                                                │ 1            │ 4.5              │
-│ Fired Up                                                                          │ 1            │ 5.0              │
-│ Stoning of Soraya M., The                                                         │ 1            │ 4.5              │
-│ Hurt Locker, The                                                                  │ 1            │ 4.0              │
-│ Raiders of the Lost Ark: The Adaptation                                           │ 1            │ 4.5              │
-│ Ice Age: Dawn of the Dinosaurs                                                    │ 1            │ 3.0              │
-│ (500) Days of Summer                                                              │ 2            │ 4.0              │
-│ Brüno (Bruno)                                                                     │ 1            │ 4.0              │
-│ Harry Potter and the Half-Blood Prince                                            │ 1            │ 3.5              │
-│ Imaginarium of Doctor Parnassus, The                                              │ 1            │ 4.5              │
-│ Humpday                                                                           │ 1            │ 2.5              │
-│ Ugly Truth, The                                                                   │ 1            │ 5.0              │
-│ District 9                                                                        │ 2            │ 3.75             │
-│ Julie & Julia                                                                     │ 1            │ 4.0              │
-│ Winds of the Wasteland                                                            │ 1            │ 3.5              │
-│ Lost in Austen                                                                    │ 1            │ 4.0              │
-│ Troll 2                                                                           │ 1            │ 5.0              │
-│ Cloudy with a Chance of Meatballs                                                 │ 1            │ 4.5              │
-│ Food, Inc.                                                                        │ 1            │ 4.5              │
-│ Zombieland                                                                        │ 2            │ 3.5              │
-│ Education, An                                                                     │ 1            │ 3.5              │
-│ Up in the Air                                                                     │ 1            │ 4.0              │
-│ Boondock Saints II: All Saints Day, The                                           │ 1            │ 1.0              │
-│ Partly Cloudy                                                                     │ 1            │ 4.5              │
-│ 2012                                                                              │ 1            │ 0.5              │
-│ Blind Side, The                                                                   │ 1            │ 4.5              │
-│ Princess and the Frog, The                                                        │ 1            │ 3.5              │
-│ Avatar                                                                            │ 2            │ 3.75             │
-│ Sherlock Holmes                                                                   │ 2            │ 3.25             │
-│ Crazy Heart                                                                       │ 1            │ 3.5              │
-│ When in Rome                                                                      │ 1            │ 1.0              │
-│ Shutter Island                                                                    │ 1            │ 3.0              │
-│ Persuasion                                                                        │ 1            │ 2.0              │
-│ Secret of Kells, The                                                              │ 1            │ 3.5              │
-│ District 13: Ultimatum (Banlieue 13 - Ultimatum)                                  │ 1            │ 4.0              │
-│ Alice in Wonderland                                                               │ 2            │ 3.5              │
-│ She's Out of My League                                                            │ 1            │ 5.0              │
-│ How to Train Your Dragon                                                          │ 2            │ 3.75             │
-│ Kick-Ass                                                                          │ 3            │ 3.83333333333333 │
-│ American Drug War: The Last White Hope                                            │ 1            │ 3.0              │
-│ Exit Through the Gift Shop                                                        │ 1            │ 3.5              │
-│ Iron Man 2                                                                        │ 1            │ 4.0              │
-│ Jonah Hex                                                                         │ 1            │ 2.0              │
-│ Toy Story 3                                                                       │ 2            │ 3.75             │
-│ TiMER                                                                             │ 1            │ 4.0              │
-│ Twilight Saga: Eclipse, The                                                       │ 1            │ 2.0              │
-│ Predators                                                                         │ 1            │ 3.5              │
-│ Despicable Me                                                                     │ 1            │ 3.0              │
-│ Inception                                                                         │ 4            │ 4.625            │
-│ Scott Pilgrim vs. the World                                                       │ 1            │ 4.0              │
-│ Social Network, The                                                               │ 2            │ 3.75             │
-│ Easy A                                                                            │ 2            │ 4.0              │
-│ Patrik Age 1.5 (Patrik 1,5)                                                       │ 1            │ 4.0              │
-│ Life as We Know It                                                                │ 1            │ 4.5              │
-│ Inside Job                                                                        │ 1            │ 4.0              │
-│ Megamind                                                                          │ 1            │ 4.5              │
-│ Black Swan                                                                        │ 1            │ 3.5              │
-│ Morning Glory                                                                     │ 1            │ 4.0              │
-│ Harry Potter and the Deathly Hallows: Part 1                                      │ 1            │ 5.0              │
-│ King's Speech, The                                                                │ 3            │ 4.0              │
-│ Tangled                                                                           │ 2            │ 4.0              │
-│ Art of the Steal, The                                                             │ 1            │ 4.0              │
-│ Fighter, The                                                                      │ 2            │ 3.75             │
-│ Love and Other Drugs                                                              │ 1            │ 2.0              │
-│ True Grit                                                                         │ 3            │ 4.16666666666667 │
-│ Day & Night                                                                       │ 1            │ 4.0              │
-│ Paul                                                                              │ 1            │ 4.5              │
-│ Super                                                                             │ 1            │ 2.5              │
-│ Family Guy Presents: It's a Trap                                                  │ 1            │ 2.5              │
-│ Hanna                                                                             │ 1            │ 3.0              │
-│ Arthur                                                                            │ 1            │ 2.0              │
-│ Thor                                                                              │ 1            │ 3.5              │
-│ Bridesmaids                                                                       │ 1            │ 3.5              │
-│ Midnight in Paris                                                                 │ 1            │ 2.0              │
-│ X-Men: First Class                                                                │ 2            │ 4.0              │
-│ Super 8                                                                           │ 2            │ 3.75             │
-│ Green Lantern                                                                     │ 1            │ 3.5              │
-│ Harry Potter and the Deathly Hallows: Part 2                                      │ 2            │ 3.75             │
-│ Drive                                                                             │ 1            │ 3.0              │
-│ Captain America: The First Avenger                                                │ 1            │ 3.5              │
-│ Rise of the Planet of the Apes                                                    │ 1            │ 4.0              │
-│ Help, The                                                                         │ 1            │ 4.5              │
-│ Colombiana                                                                        │ 1            │ 2.0              │
-│ Contagion                                                                         │ 1            │ 3.5              │
-│ Moneyball                                                                         │ 1            │ 4.5              │
-│ Avengers, The                                                                     │ 1            │ 4.5              │
-│ Tinker Tailor Soldier Spy                                                         │ 1            │ 4.5              │
-│ Warrior                                                                           │ 1            │ 3.0              │
-│ 50/50                                                                             │ 1            │ 3.5              │
-│ The Artist                                                                        │ 1            │ 4.0              │
-│ What's Your Number?                                                               │ 1            │ 4.5              │
-│ The Hunger Games                                                                  │ 2            │ 4.5              │
-│ Dark Knight Rises, The                                                            │ 1            │ 4.0              │
-│ Mission: Impossible - Ghost Protocol                                              │ 1            │ 3.0              │
-│ Chronicle                                                                         │ 1            │ 2.0              │
-│ Big Year, The                                                                     │ 1            │ 4.0              │
-│ This Means War                                                                    │ 1            │ 3.5              │
-│ 21 Jump Street                                                                    │ 1            │ 5.0              │
-│ Jiro Dreams of Sushi                                                              │ 1            │ 4.5              │
-│ Iron Sky                                                                          │ 1            │ 3.5              │
-│ Cabin in the Woods, The                                                           │ 1            │ 3.5              │
-│ Hysteria                                                                          │ 1            │ 4.0              │
-│ Pirates! Band of Misfits, The                                                     │ 1            │ 4.0              │
-│ Prometheus                                                                        │ 1            │ 3.0              │
-│ Magic Mike                                                                        │ 1            │ 3.5              │
-│ Amazing Spider-Man, The                                                           │ 1            │ 4.5              │
-│ Firm, The                                                                         │ 1            │ 3.0              │
-│ Total Recall                                                                      │ 1            │ 4.0              │
-│ Skyfall                                                                           │ 1            │ 4.5              │
-│ Campaign, The                                                                     │ 1            │ 3.0              │
-└───────────────────────────────────────────────────────────────────────────────────┴──────────────┴──────────────────┘
-5. Составить список фильмов с указанием их средней оценки и места в рейтинге по средней оценке. Полученный список отсортировать по году выпуска и названию фильмов. В списке оставить первые 20 записей.
---------------------------------------------------
-SELECT
-  m.title AS 'Название',
-  t.avg_rating AS 'Средняя оценка',
-  ROW_NUMBER() OVER (ORDER BY t.avg_rating DESC) AS 'Место'
-FROM (
-  SELECT
-    r.movie_id,
-    AVG(r.rating) AS avg_rating
-  FROM ratings r
-  GROUP BY r.movie_id
-) t
-JOIN movies m ON m.id = t.movie_id
-ORDER BY m.year, m.title
-LIMIT 20;
+PS>TerminatingError(): "Cannot run a document in the middle of a pipeline: /home/andrey/labs/DBTech/301_DBTech_Buyankina_AS/Task04/task4.bat."
 
-┌─────────────────────────────────────────────────────┬────────────────┬───────┐
-│                      Название                       │ Средняя оценка │ Место │
-├─────────────────────────────────────────────────────┼────────────────┼───────┤
-│ Black Mirror                                        │ 5.0            │ 316   │
-│ Death Note: Desu nôto (2006–2007)                   │ 5.0            │ 296   │
-│ Generation Iron 2                                   │ 3.5            │ 2818  │
-│ Maria Bamford: Old Baby                             │ 1.0            │ 4686  │
-│ Runaway Brain (1995)                                │ 5.0            │ 199   │
-│ The Adventures of Sherlock Holmes and Doctor Watson │ 5.0            │ 269   │
-│ Trip to the Moon, A (Voyage dans la lune, Le)       │ 4.0            │ 1443  │
-│ The Electric Hotel                                  │ 4.0            │ 1665  │
-│ 20,000 Leagues Under the Sea                        │ 4.0            │ 1502  │
-│ Rink, The                                           │ 3.5            │ 2752  │
-│ Immigrant, The                                      │ 4.5            │ 466   │
-│ One Week                                            │ 3.5            │ 2723  │
-│ Kid, The                                            │ 4.5            │ 409   │
-│ Nosferatu (Nosferatu, eine Symphonie des Grauens)   │ 3.8            │ 1927  │
-│ Safety Last!                                        │ 3.0            │ 3663  │
-│ Battleship Potemkin                                 │ 4.0            │ 1250  │
-│ Gold Rush, The                                      │ 4.25           │ 799   │
-│ General, The                                        │ 3.5            │ 2447  │
-│ Cat and the Canary, The                             │ 3.0            │ 3685  │
-│ Lodger: A Story of the London Fog, The              │ 3.0            │ 3487  │
-└─────────────────────────────────────────────────────┴────────────────┴───────┘
-6. Вывести список из 10 последних зарегистрированных пользователей в формате Фамилия Имя|Дата регистрации (сначала фамилия, потом имя).
+InvalidOperation: /home/andrey/projects/mrsu/07_DB_Tech/tools/check_tasks/checks_for_task.ps1:32
+Line |
+  32 |      $str = (& $command $params | Out-String)
+     |              ~~~~~~~~~~~~~~~~~~
+     | Cannot run a document in the middle of a pipeline: /home/andrey/labs/DBTech/301_DBTech_Buyankina_AS/Task04/task4.bat.
+
+InvalidOperation: /home/andrey/projects/mrsu/07_DB_Tech/tools/check_tasks/checks_for_task.ps1:32
+Line |
+  32 |      $str = (& $command $params | Out-String)
+     |              ~~~~~~~~~~~~~~~~~~
+     | Cannot run a document in the middle of a pipeline:
+     | /home/andrey/labs/DBTech/301_DBTech_Buyankina_AS/Task04/task4.bat.
+
+
+Execution fails
 --------------------------------------------------
-SELECT
-TRIM(SUBSTR(name, INSTR(name, ' ') + 1))
-|| ' '
-|| TRIM(SUBSTR(name, 1, INSTR(name, ' ') - 1)) AS full_name
-, register_date
-FROM users
-ORDER BY register_date DESC
-LIMIT 10;
-┌───────────────────┬───────────────┐
-│     full_name     │ register_date │
-├───────────────────┼───────────────┤
-│ Swaniawski Zula   │ 2021-01-13    │
-│ Reynolds Eda      │ 2021-01-08    │
-│ Herzog Filomena   │ 2021-01-06    │
-│ Spencer Meredith  │ 2021-01-01    │
-│ McCullough Lucius │ 2020-12-28    │
-│ Bins Ross         │ 2020-12-25    │
-│ Prosacco Anita    │ 2020-12-21    │
-│ Bahringer Donna   │ 2020-12-15    │
-│ Sipes Clara       │ 2020-12-14    │
-│ Mante Kennith     │ 2020-12-10    │
-└───────────────────┴───────────────┘
-7.  С помощью рекурсивного CTE составить таблицу умножения для чисел от 1 до 10.
+Total ok: 2
+Total error: 1
 --------------------------------------------------
-WITH RECURSIVE multiplication_table(a, b) AS (
-  SELECT 1, 1
-  UNION ALL
-  SELECT
-    a,
-    b + 1
-  FROM multiplication_table
-  WHERE b < 10
-  UNION ALL
-  SELECT
-    a + 1,
-    1
-  FROM multiplication_table
-  WHERE b = 10 AND a < 10
-)
-SELECT a, b, (a * b)
-FROM multiplication_table;
-┌────┬────┬─────────┐
-│ a  │ b  │ (a * b) │
-├────┼────┼─────────┤
-│ 1  │ 1  │ 1       │
-│ 1  │ 2  │ 2       │
-│ 1  │ 3  │ 3       │
-│ 1  │ 4  │ 4       │
-│ 1  │ 5  │ 5       │
-│ 1  │ 6  │ 6       │
-│ 1  │ 7  │ 7       │
-│ 1  │ 8  │ 8       │
-│ 1  │ 9  │ 9       │
-│ 1  │ 10 │ 10      │
-│ 2  │ 1  │ 2       │
-│ 2  │ 2  │ 4       │
-│ 2  │ 3  │ 6       │
-│ 2  │ 4  │ 8       │
-│ 2  │ 5  │ 10      │
-│ 2  │ 6  │ 12      │
-│ 2  │ 7  │ 14      │
-│ 2  │ 8  │ 16      │
-│ 2  │ 9  │ 18      │
-│ 2  │ 10 │ 20      │
-│ 3  │ 1  │ 3       │
-│ 3  │ 2  │ 6       │
-│ 3  │ 3  │ 9       │
-│ 3  │ 4  │ 12      │
-│ 3  │ 5  │ 15      │
-│ 3  │ 6  │ 18      │
-│ 3  │ 7  │ 21      │
-│ 3  │ 8  │ 24      │
-│ 3  │ 9  │ 27      │
-│ 3  │ 10 │ 30      │
-│ 4  │ 1  │ 4       │
-│ 4  │ 2  │ 8       │
-│ 4  │ 3  │ 12      │
-│ 4  │ 4  │ 16      │
-│ 4  │ 5  │ 20      │
-│ 4  │ 6  │ 24      │
-│ 4  │ 7  │ 28      │
-│ 4  │ 8  │ 32      │
-│ 4  │ 9  │ 36      │
-│ 4  │ 10 │ 40      │
-│ 5  │ 1  │ 5       │
-│ 5  │ 2  │ 10      │
-│ 5  │ 3  │ 15      │
-│ 5  │ 4  │ 20      │
-│ 5  │ 5  │ 25      │
-│ 5  │ 6  │ 30      │
-│ 5  │ 7  │ 35      │
-│ 5  │ 8  │ 40      │
-│ 5  │ 9  │ 45      │
-│ 5  │ 10 │ 50      │
-│ 6  │ 1  │ 6       │
-│ 6  │ 2  │ 12      │
-│ 6  │ 3  │ 18      │
-│ 6  │ 4  │ 24      │
-│ 6  │ 5  │ 30      │
-│ 6  │ 6  │ 36      │
-│ 6  │ 7  │ 42      │
-│ 6  │ 8  │ 48      │
-│ 6  │ 9  │ 54      │
-│ 6  │ 10 │ 60      │
-│ 7  │ 1  │ 7       │
-│ 7  │ 2  │ 14      │
-│ 7  │ 3  │ 21      │
-│ 7  │ 4  │ 28      │
-│ 7  │ 5  │ 35      │
-│ 7  │ 6  │ 42      │
-│ 7  │ 7  │ 49      │
-│ 7  │ 8  │ 56      │
-│ 7  │ 9  │ 63      │
-│ 7  │ 10 │ 70      │
-│ 8  │ 1  │ 8       │
-│ 8  │ 2  │ 16      │
-│ 8  │ 3  │ 24      │
-│ 8  │ 4  │ 32      │
-│ 8  │ 5  │ 40      │
-│ 8  │ 6  │ 48      │
-│ 8  │ 7  │ 56      │
-│ 8  │ 8  │ 64      │
-│ 8  │ 9  │ 72      │
-│ 8  │ 10 │ 80      │
-│ 9  │ 1  │ 9       │
-│ 9  │ 2  │ 18      │
-│ 9  │ 3  │ 27      │
-│ 9  │ 4  │ 36      │
-│ 9  │ 5  │ 45      │
-│ 9  │ 6  │ 54      │
-│ 9  │ 7  │ 63      │
-│ 9  │ 8  │ 72      │
-│ 9  │ 9  │ 81      │
-│ 9  │ 10 │ 90      │
-│ 10 │ 1  │ 10      │
-│ 10 │ 2  │ 20      │
-│ 10 │ 3  │ 30      │
-│ 10 │ 4  │ 40      │
-│ 10 │ 5  │ 50      │
-│ 10 │ 6  │ 60      │
-│ 10 │ 7  │ 70      │
-│ 10 │ 8  │ 80      │
-│ 10 │ 9  │ 90      │
-│ 10 │ 10 │ 100     │
-└────┴────┴─────────┘
-8. С помощью рекурсивного CTE выделить все жанры фильмов, имеющиеся в таблице movies (каждый жанр в отдельной строке)
---------------------------------------------------
-WITH RECURSIVE genres_cte(movie_id, genre, remaining_genres) AS (
-  SELECT
-    id,
-    '',
-    genres || '|'
-  FROM movies
-  UNION ALL
-  SELECT
-    movie_id,
-    SUBSTR(remaining_genres, 1, INSTR(remaining_genres, '|') - 1),
-    SUBSTR(remaining_genres, INSTR(remaining_genres, '|') + 1)
-  FROM genres_cte
-  WHERE remaining_genres != ''
-)
-SELECT DISTINCT genre
-FROM genres_cte
-WHERE genre != '' AND genre != '(no genres listed)'
-ORDER BY genre;
-┌─────────────┐
-│    genre    │
-├─────────────┤
-│ Action      │
-│ Adventure   │
-│ Animation   │
-│ Children    │
-│ Comedy      │
-│ Crime       │
-│ Documentary │
-│ Drama       │
-│ Fantasy     │
-│ Film-Noir   │
-│ Horror      │
-│ IMAX        │
-│ Musical     │
-│ Mystery     │
-│ Romance     │
-│ Sci-Fi      │
-│ Thriller    │
-│ War         │
-│ Western     │
-└─────────────┘
---------------------------------------------------
-Total ok: 3
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/DBTech/302_DBTech_Grishukov_EV
+/home/andrey/labs/DBTech/301_DBTech_Buyankina_AS
 Task04
 Task from branch: Task04
-Creation date: 10/29/2025 09:38:53
-To github.com-mrsu:andpop-mrsu/302_DBTech_Grishukov_EV.git
-To github.com-mrsu:andpop-mrsu/302_DBTech_Grishukov_EV.git
-   834d063..7dd2575  master -> master
-   834d063..7dd2575  master -> master
-302_DBTech_Karmazov_NA
-302_DBTech_Kitaev_EV
-302_DBTech_Kopein_AS
-302_DBTech_Lohanov_IV
-302_DBTech_Lukyanov_RA
-302_DBTech_Markin_KR
-302_DBTech_Romanov_DA
-302_DBTech_Shaposhnikov_AA
-302_DBTech_Shilyaeva_OI
-302_DBTech_Sosnina_IV
-302_DBTech_Tiossa_MN
-302_DBTech_Tuzhin_DO
-302_DBTech_Uchuvatkin_NS
-**********************
-PowerShell transcript end
-End time: 20251030142130
-**********************
+Creation date: 11/01/2025 18:41:31
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> $global:?
+True
