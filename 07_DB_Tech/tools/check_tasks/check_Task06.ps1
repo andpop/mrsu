@@ -14,6 +14,7 @@ function Check-Task {
     if (Check-Path -Path db_schema.jpg) { $doneChecks++ } else { $failureChecks++ }
 
     if (Check-Command -Command sqlite3 -Params @("test.db", ".read db_init.sql") ) { $doneChecks++ } else  { $failureChecks++ }
+    if (Check-Command -Command sqlite3 -Params @("test.db", ".read data_add.sql") ) { $doneChecks++ } else  { $failureChecks++ }
     if (Check-Command -Command sqlite3 -Params @("test.db", "select count(*) from users") ) { $doneChecks++ } else  { $failureChecks++ }
 
 
