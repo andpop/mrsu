@@ -1,7 +1,8 @@
 #!/bin/bash
 
 BASE_DIR="/home/andrey/labs/DBTech"
-REPS_FILE="reps_all.txt"
+# REPS_FILE="reps_all.txt"
+REPS_FILE="reps1.txt"
 
 pwd=$PWD
 echo $pwd
