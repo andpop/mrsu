@@ -1,4 +1,6 @@
-Rjabikin_KS
-Timovkin_AJ
-Turaev_DV
-Fedin_DA
+304_DB_Sergeeva_OD
+304_DB_Tumajkina_DA
+304_DB_Shagilov_KD
+304_DB_Shevolaev_IV
+304_DB_Yambaev_KN
+304_DB_Yastrebcev_DN
