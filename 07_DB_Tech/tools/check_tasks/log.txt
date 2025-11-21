@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20251114203727
+Start time: 20251114232528
 **********************
 Transcript started, output file is log.txt
 301_DBTech_Andronov_NA
@@ -12,256 +12,6 @@ Transcript started, output file is log.txt
 301_DBTech_Golikov_PA
 301_DBTech_Goncharov_KD
 301_DBTech_Haritonov_DV
-=====================================================
-/home/andrey/labs/DBTech/301_DBTech_Haritonov_DV
-Из github.com-mrsu:andpop-mrsu/301_DBTech_Haritonov_DV
-Из github.com-mrsu:andpop-mrsu/301_DBTech_Haritonov_DV
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-   00da69a..f80b13f  master     -> teacher/master
-   00da69a..f80b13f  master     -> teacher/master
-Обновление 00da69a..f80b13f
-Fast-forward
- Task04/db_init.sql | 33187 +++++++++++++++++++++++++++++++++++++++++++++++++++
- Task04/task4.bat   |   164 +
- task05.md          |    57 +
- task06.md          |    31 +
- 4 files changed, 33439 insertions(+)
- create mode 100644 Task04/db_init.sql
- create mode 100644 Task04/task4.bat
- create mode 100644 task05.md
- create mode 100644 task06.md
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Из https://github.com/RedWinssCoder/301_DBTech_Haritonov_DV
-Из https://github.com/RedWinssCoder/301_DBTech_Haritonov_DV
- * [новая ветка]     Task04     -> student/Task04
- * [новая ветка]     Task04     -> student/Task04
- * [новая ветка]     Task05     -> student/Task05
- * [новая ветка]     Task05     -> student/Task05
-Merge made by the 'ort' strategy.
- Task05/db_init.sql      | 33183 ++++++++++++++++++++++++++++++++++++++++++++++
- Task05/movies_rating.db |   Bin 0 -> 1069056 bytes
- Task05/task5.bat        |   181 +
- 3 files changed, 33364 insertions(+)
- create mode 100644 Task05/db_init.sql
- create mode 100644 Task05/movies_rating.db
- create mode 100644 Task05/task5.bat
---------------------------------------------------
-Task:  /home/andrey/labs/DBTech/301_DBTech_Haritonov_DV/Task05
---------------------------------------------------
-Check path: db_init.sql
---------------------------------------------------
-Check path: task5.bat
-#!/bin/bash
-chcp 65001
-
-sqlite3 movies_rating.db < db_init.sql
-
-echo "1. Для каждого фильма выведите его название, год выпуска и средний рейтинг. Дополнительно добавьте столбец rank_by_avg_rating, в котором укажите ранг фильма среди всех фильмов по убыванию среднего рейтинга (фильмы с одинаковым средним рейтингом должны получить одинаковый ранг). Используйте оконную функцию RANK() или DENSE_RANK(). В результирующем наборе данных оставить 10 фильмов с наибольшим рангом."
-echo -----------------
-sqlite3 movies_rating.db -box -echo \
-"SELECT
-  m.title,
-  m.year,
-  t.avg_rating,
-  DENSE_RANK() OVER (ORDER BY t.avg_rating DESC) AS rank_by_avg_rating
-FROM movies m
-JOIN (
-  SELECT movie_id, AVG(rating) AS avg_rating
-  FROM ratings
-  GROUP BY movie_id
-) t ON m.id = t.movie_id
-ORDER BY t.avg_rating DESC
-LIMIT 10;"
-
-echo "2. С помощью рекурсивного CTE выделить все жанры фильмов, имеющиеся в таблице movies. Для каждого жанра рассчитать средний рейтинг avg_rating фильмов в этом жанре. Выведите genre, avg_rating и ранг жанра по убыванию среднего рейтинга, используя оконную функцию RANK()."
-echo -----------------
-sqlite3 movies_rating.db -box -echo \
-"WITH RECURSIVE genres_cte (movie_id, genre, remaining_genres) AS (
-  SELECT
-    id,
-    SUBSTR(genres, 1, INSTR(genres || '|', '|') -1),
-    SUBSTR(genres, INSTR(genres || '|', '|') + 1)
-  FROM movies
-  UNION ALL
-  SELECT
-    movie_id,
-    SUBSTR(remaining_genres, 1, INSTR(remaining_genres || '|', '|') -1),
-    SUBSTR(remaining_genres, INSTR(remaining_genres || '|', '|') + 1)
-  FROM genres_cte
-  WHERE remaining_genres != '')
-SELECT
-  g.genre,
-  ROUND(AVG(r.rating), 2) AS avg_rating,
-  RANK() OVER (ORDER BY AVG(r.rating) DESC) as rating_rank
-FROM genres_cte g
-JOIN ratings r ON g.movie_id = r.movie_id
-WHERE g.genre != '' AND g.genre IS NOT NULL
-GROUP BY g.genre
-ORDER BY avg_rating DESC;"
-
-echo "3. Посчитайте количество фильмов в каждом жанре. Выведите два столбца: genre и movie_count, отсортировав результат по убыванию количества фильмов."
-echo -----------------
-sqlite3 movies_rating.db -box -echo \
-"WITH RECURSIVE genres_cte (movie_id, genre, remaining_genres) AS (
-  SELECT
-    id,
-    SUBSTR(genres, 1, INSTR(genres || '|', '|') -1),
-    SUBSTR(genres, INSTR(genres || '|', '|') + 1)
-  FROM movies
-  UNION ALL
-  SELECT
-    movie_id,
-    SUBSTR(remaining_genres, 1, INSTR(remaining_genres || '|', '|') -1),
-    SUBSTR(remaining_genres, INSTR(remaining_genres || '|', '|') + 1)
-  FROM genres_cte
-  WHERE remaining_genres != '')
-SELECT
-  g.genre,
-  COUNT(*) as movie_count
-FROM genres_cte g
-WHERE g.genre != ''
-GROUP BY g.genre
-ORDER BY movie_count DESC"
-
-echo "4. Найдите жанры, в которых чаще всего оставляют теги (комментарии). Для этого подсчитайте общее количество записей в таблице tags для фильмов каждого жанра. Выведите genre, tag_count и долю этого жанра в общем числе тегов (tag_share), выраженную в процентах."
-echo -----------------
-sqlite3 movies_rating.db -box -echo \
-"WITH RECURSIVE genres_cte (movie_id, genre, remaining_genres) AS (
-  SELECT
-    id,
-    SUBSTR(genres, 1, INSTR(genres || '|', '|') -1),
-    SUBSTR(genres, INSTR(genres || '|', '|') + 1)
-  FROM movies
-  UNION ALL
-  SELECT
-    movie_id,
-    SUBSTR(remaining_genres, 1, INSTR(remaining_genres || '|', '|') -1),
-    SUBSTR(remaining_genres, INSTR(remaining_genres || '|', '|') + 1)
-  FROM genres_cte
-  WHERE remaining_genres != ''
-),
-genre_tag_count AS (
-  SELECT
-    g.genre,
-    COUNT(t.id) AS tag_count
-  FROM genres_cte g
-  JOIN tags t ON g.movie_id = t.movie_id
-  WHERE g.genre != ''
-  GROUP BY g.genre
-)
-SELECT
-  gtc.genre,
-  gtc.tag_count,
-  ROUND(100 * gtc.tag_count / (SELECT COUNT(*) FROM tags),2)
-FROM genre_tag_count gtc
-ORDER BY gtc.tag_count DESC;
-"
-
-echo "5. Для каждого пользователя рассчитайте: общее количество выставленных оценок, средний выставленный рейтинг, дату первой и последней оценки (по полю timestamp в таблице ratings). Выведите user_id, rating_count, avg_rating, first_rating_date, last_rating_date. Отсортируйте результат по убыванию количества оценок и выведите только 10 первых строк."
-echo -----------------
-sqlite3 movies_rating.db -box -echo \
-"SELECT
-  user_id,
-  COUNT(*) AS rating_count,
-  AVG(rating) AS avg_rating,
-  STRFTIME('%d.%m.%Y  %H:%M:%S',MIN(timestamp), 'unixepoch') AS first_rating_date,
-  STRFTIME('%d.%m.%Y  %H:%M:%S',MAX(timestamp), 'unixepoch') AS last_rating_date
-FROM ratings
-GROUP BY user_id
-ORDER BY rating_count DESC
-LIMIT 10;
-"
-
-echo "6. Сегментируйте пользователей по типу поведения:
-* «Комментаторы» — пользователи, у которых количество тегов (tags) больше количества оценок (ratings),
-* «Оценщики» — наоборот, оценок больше, чем тегов,
-* «Активные» — и оценок, и тегов ≥ 10,
-* «Пассивные» — и оценок, и тегов < 5.
-Выведите user_id, общее число оценок, общее число тегов и категорию поведения. Используйте CASE."
-echo -----------------
-sqlite3 movies_rating.db -box -echo \
-"WITH ratings_user AS (
-  SELECT
-	user_id,
-	COUNT(*) AS rating_count
-  FROM ratings
-  GROUP BY user_id
-),
-tags_user AS (
-  SELECT
-    user_id,
-	COUNT(*) AS tag_count
-  FROM tags
-  GROUP BY user_id
-)
-SELECT
-  u.id,
-  COALESCE(ru.rating_count, 0) AS total_rating,
-  COALESCE(tu.tag_count, 0) AS total_tag,
-  CASE
-    WHEN COALESCE(ru.rating_count, 0) >= 10 AND COALESCE(tu.tag_count, 0) >= 10 THEN 'Активные'
-    WHEN COALESCE(ru.rating_count, 0) < 5 AND COALESCE(tu.tag_count, 0) < 5 THEN 'Пассивные'
-    WHEN COALESCE(tu.tag_count, 0) > COALESCE(ru.rating_count, 0) THEN 'Комментаторы'
-    WHEN COALESCE(ru.rating_count, 0) > COALESCE(tu.tag_count, 0) THEN 'Оценщики'
-    ELSE 'Не определено'
-  END AS category
-FROM users u
-LEFT JOIN ratings_user ru ON u.id = ru.user_id
-LEFT JOIN tags_user tu ON u.id = tu.user_id
-"
-
-echo "7. Для каждого пользователя выведите его имя и последний фильм, который он оценил (по времени из ratings.timestamp). Если пользователь не оценивал ни одного фильма, он всё равно должен быть в результате (с NULL в полях фильма).
-Результат: user_id, name, last_rated_movie_title, last_rating_timestamp."
-echo -----------------
-sqlite3 movies_rating.db -box -echo \
-"WITH ratings_u AS (
-  SELECT
-    user_id,
-    movie_id,
-    STRFTIME('%d.%m.%Y %H:%M:%S', timestamp, 'unixepoch') AS timestamp,
-    ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY timestamp DESC) AS rn
-  FROM ratings
-)
-SELECT
-  u.id AS user_id,
-  u.name,
-  m.title AS last_rated_movie_title,
-  r.timestamp AS last_rating_timestamp
-FROM users u
-LEFT JOIN ratings_u r ON u.id = r.user_id AND r.rn = 1
-LEFT JOIN movies m ON r.movie_id = m.id
-ORDER BY u.id;
-"
---------------------------------------------------
-Run: ./task5.bat
-PS>TerminatingError(): "Cannot run a document in the middle of a pipeline: /home/andrey/labs/DBTech/301_DBTech_Haritonov_DV/Task05/task5.bat."
-InvalidOperation: /home/andrey/projects/mrsu/07_DB_Tech/tools/check_tasks/checks_for_task.ps1:32
-Line |
-  32 |      $str = (& $command $params | Out-String)
-     |              ~~~~~~~~~~~~~~~~~~
-     | Cannot run a document in the middle of a pipeline: /home/andrey/labs/DBTech/301_DBTech_Haritonov_DV/Task05/task5.bat.
-InvalidOperation: /home/andrey/projects/mrsu/07_DB_Tech/tools/check_tasks/checks_for_task.ps1:32
-Line |
-  32 |      $str = (& $command $params | Out-String)
-     |              ~~~~~~~~~~~~~~~~~~
-     | Cannot run a document in the middle of a pipeline: /home/andrey/labs/DBTech/301_DBTech_Haritonov_DV/Task05/task5.bat.
-
-
-Execution fails
---------------------------------------------------
-Total ok: 2
-Total error: 1
---------------------------------------------------
-/home/andrey/labs/DBTech/301_DBTech_Haritonov_DV
-5
-Task from branch: Task05
-Creation date: 11/14/2025 17:35:20
-To github.com-mrsu:andpop-mrsu/301_DBTech_Haritonov_DV.git
-To github.com-mrsu:andpop-mrsu/301_DBTech_Haritonov_DV.git
-   f80b13f..9777473  master -> master
-   f80b13f..9777473  master -> master
 301_DBTech_Hopov_NA
 301_DBTech_Hripchenko_YuV
 301_DBTech_Karmyshev_IR
@@ -281,6 +31,206 @@ To github.com-mrsu:andpop-mrsu/301_DBTech_Haritonov_DV.git
 302_DBTech_Ermakov_EA
 302_DBTech_Grishukov_EV
 302_DBTech_Karmazov_NA
+=====================================================
+/home/andrey/labs/DBTech/302_DBTech_Karmazov_NA
+Из github.com-mrsu:andpop-mrsu/302_DBTech_Karmazov_NA
+Из github.com-mrsu:andpop-mrsu/302_DBTech_Karmazov_NA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Из https://github.com/svidetelsisek/302_DBTech_Karmazov_NA
+Из https://github.com/svidetelsisek/302_DBTech_Karmazov_NA
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task05     -> student/Task05
+Merge made by the 'ort' strategy.
+ Task05/db_init.sql | 33180 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ Task05/task5.bat   |    41 +
+ 2 files changed, 33221 insertions(+)
+ create mode 100644 Task05/db_init.sql
+ create mode 100755 Task05/task5.bat
+--------------------------------------------------
+Task:  /home/andrey/labs/DBTech/302_DBTech_Karmazov_NA/Task05
+--------------------------------------------------
+Check path: db_init.sql
+--------------------------------------------------
+Check path: task5.bat
+#!/bin/bash
+chcp 65001
+
+sqlite3 movies_rating.db < db_init.sql
+
+echo "1. Для каждого фильма выведите его название, год выпуска и средний рейтинг. Дополнительно добавьте столбец rank_by_avg_rating, в котором укажите ранг фильма среди всех фильмов по убыванию среднего рейтинга (фильмы с одинаковым средним рейтингом должны получить одинаковый ранг). Используйте оконную функцию RANK() или DENSE_RANK(). В результирующем наборе данных оставить 10 фильмов с наибольшим рангом.
+"
+echo --------------------------------------------------
+sqlite3 movies_rating.db -box -echo "WITH movie_avg AS (SELECT m.id, m.title, m.year, AVG(r.rating) AS avg_rating FROM movies m JOIN ratings r ON m.id = r.movie_id GROUP BY m.id, m.title, m.year) SELECT title, year, ROUND(avg_rating, 2) AS avg_rating, RANK() OVER (ORDER BY avg_rating DESC) AS rank_by_avg_rating FROM movie_avg ORDER BY rank_by_avg_rating LIMIT 10;"
+echo " "
+
+echo "2. С помощью рекурсивного CTE выделить все жанры фильмов, имеющиеся в таблице movies. Для каждого жанра рассчитать средний рейтинг avg_rating фильмов в этом жанре. Выведите genre, avg_rating и ранг жанра по убыванию среднего рейтинга, используя оконную функцию RANK()."
+echo --------------------------------------------------
+sqlite3 movies_rating.db -box -echo "WITH RECURSIVE split_genres(movie_id, genre, rest) AS (SELECT id, '', genres || '|' FROM movies UNION ALL SELECT movie_id, SUBSTR(rest, 0, INSTR(rest, '|')), SUBSTR(rest, INSTR(rest, '|') + 1) FROM split_genres WHERE rest <> '') SELECT genre, ROUND(AVG(r.rating), 2) AS avg_rating, RANK() OVER (ORDER BY AVG(r.rating) DESC) AS rank_by_avg_rating FROM split_genres sg JOIN movies m ON m.id = sg.movie_id JOIN ratings r ON r.movie_id = m.id WHERE genre <> '' GROUP BY genre ORDER BY avg_rating DESC;"
+echo " "
+
+echo "3. Посчитайте количество фильмов в каждом жанре. Выведите два столбца: genre и movie_count, отсортировав результат по убыванию количества фильмов."
+echo --------------------------------------------------
+sqlite3 movies_rating.db -box -echo "WITH RECURSIVE split_genres(movie_id, genre, rest) AS (SELECT id, '', genres || '|' FROM movies UNION ALL SELECT movie_id, SUBSTR(rest, 0, INSTR(rest, '|')), SUBSTR(rest, INSTR(rest, '|') + 1) FROM split_genres WHERE rest <> '') SELECT genre, COUNT(DISTINCT movie_id) AS movie_count FROM split_genres WHERE genre <> '' GROUP BY genre ORDER BY movie_count DESC;"
+echo " "
+
+echo "4. Найдите жанры, в которых чаще всего оставляют теги (комментарии). Для этого подсчитайте общее количество записей в таблице tags для фильмов каждого жанра. Выведите genre, tag_count и долю этого жанра в общем числе тегов (tag_share), выраженную в процентах."
+echo --------------------------------------------------
+sqlite3 movies_rating.db -box -echo "WITH RECURSIVE split_genres(movie_id, genre, rest) AS (SELECT id, '', genres || '|' FROM movies UNION ALL SELECT movie_id, SUBSTR(rest, 0, INSTR(rest, '|')), SUBSTR(rest, INSTR(rest, '|') + 1) FROM split_genres WHERE rest <> ''), genre_tags AS (SELECT sg.genre, COUNT(t.id) AS tag_count FROM split_genres sg JOIN tags t ON t.movie_id = sg.movie_id WHERE sg.genre <> '' GROUP BY sg.genre), total AS (SELECT SUM(tag_count) AS total_tags FROM genre_tags) SELECT genre, tag_count, ROUND(tag_count * 100.0 / total_tags, 2) AS tag_share FROM genre_tags, total ORDER BY tag_count DESC;"
+echo " "
+
+echo "5. Для каждого пользователя рассчитайте: общее количество выставленных оценок, средний выставленный рейтинг, дату первой и последней оценки (по полю timestamp в таблице ratings). Выведите user_id, rating_count, avg_rating, first_rating_date, last_rating_date. Отсортируйте результат по убыванию количества оценок и выведите только 10 первых строк."
+echo --------------------------------------------------
+sqlite3 movies_rating.db -box -echo "SELECT user_id, COUNT(rating) AS rating_count, ROUND(AVG(rating), 2) AS avg_rating, datetime(MIN(timestamp), 'unixepoch') AS first_rating_date, datetime(MAX(timestamp), 'unixepoch') AS last_rating_date FROM ratings GROUP BY user_id ORDER BY rating_count DESC LIMIT 10;"
+echo " "
+
+echo "6. Сегментируйте пользователей по типу поведения:
+echo --------------------------------------------------
+sqlite3 movies_rating.db -box -echo "WITH user_activity AS (SELECT u.id AS user_id, COUNT(DISTINCT r.id) AS rating_count, COUNT(DISTINCT t.id) AS tag_count FROM users u LEFT JOIN ratings r ON u.id = r.user_id LEFT JOIN tags t ON u.id = t.user_id GROUP BY u.id) SELECT user_id, rating_count, tag_count, CASE WHEN tag_count > rating_count THEN 'Комментатор' WHEN rating_count > tag_count THEN 'Оценщик' WHEN rating_count >= 10 AND tag_count >= 10 THEN 'Активный' WHEN rating_count < 5 AND tag_count < 5 THEN 'Пассивный' ELSE 'Неопределено' END AS category FROM user_activity ORDER BY user_id;"
+echo " "
+
+echo "7. Для каждого пользователя выведите его имя и последний фильм, который он оценил (по времени из ratings.timestamp). Если пользователь не оценивал ни одного фильма, он всё равно должен быть в результате (с NULL в полях фильма). Результат: user_id, name, last_rated_movie_title, last_rating_timestamp."
+echo --------------------------------------------------
+sqlite3 movies_rating.db -box -echo "WITH last_rating AS (SELECT user_id, MAX(timestamp) AS last_rating_timestamp FROM ratings GROUP BY user_id) SELECT u.id AS user_id, u.name, m.title AS last_rated_movie_title, datetime(r.timestamp, 'unixepoch') AS last_rating_timestamp FROM users u LEFT JOIN last_rating lr ON lr.user_id = u.id LEFT JOIN ratings r ON r.user_id = u.id AND r.timestamp = lr.last_rating_timestamp LEFT JOIN movies m ON m.id = r.movie_id ORDER BY u.id;"
+echo " "
+--------------------------------------------------
+Run: ./task5.bat
+1. Для каждого фильма выведите его название, год выпуска и средний рейтинг. Дополнительно добавьте столбец rank_by_avg_rating, в котором укажите ранг фильма среди всех фильмов по убыванию среднего рейтинга (фильмы с одинаковым средним рейтингом должны получить одинаковый ранг). Используйте оконную функцию RANK() или DENSE_RANK(). В результирующем наборе данных оставить 10 фильмов с наибольшим рангом.
+
+--------------------------------------------------
+WITH movie_avg AS (SELECT m.id, m.title, m.year, AVG(r.rating) AS avg_rating FROM movies m JOIN ratings r ON m.id = r.movie_id GROUP BY m.id, m.title, m.year) SELECT title, year, ROUND(avg_rating, 2) AS avg_rating, RANK() OVER (ORDER BY avg_rating DESC) AS rank_by_avg_rating FROM movie_avg ORDER BY rank_by_avg_rating LIMIT 10;
+┌───────────────────────────────────────────────┬──────┬────────────┬────────────────────┐
+│                     title                     │ year │ avg_rating │ rank_by_avg_rating │
+├───────────────────────────────────────────────┼──────┼────────────┼────────────────────┤
+│ Lamerica (1994)                               │ 1994 │ 5.0        │ 1                  │
+│ Antonia's Line (Antonia) (1995)               │ 1995 │ 5.0        │ 1                  │
+│ Angels and Insects (1995)                     │ 1995 │ 5.0        │ 1                  │
+│ Anne Frank Remembered (1995)                  │ 1995 │ 5.0        │ 1                  │
+│ Flirting With Disaster (1996)                 │ 1996 │ 5.0        │ 1                  │
+│ Canadian Bacon (1995)                         │ 1995 │ 5.0        │ 1                  │
+│ Farewell My Concubine (Ba wang bie ji) (1993) │ 1993 │ 5.0        │ 1                  │
+│ Lassie (1994)                                 │ 1994 │ 5.0        │ 1                  │
+│ Lightning Jack (1994)                         │ 1994 │ 5.0        │ 1                  │
+│ RoboCop 3 (1993)                              │ 1993 │ 5.0        │ 1                  │
+└───────────────────────────────────────────────┴──────┴────────────┴────────────────────┘
+ 
+2. С помощью рекурсивного CTE выделить все жанры фильмов, имеющиеся в таблице movies. Для каждого жанра рассчитать средний рейтинг avg_rating фильмов в этом жанре. Выведите genre, avg_rating и ранг жанра по убыванию среднего рейтинга, используя оконную функцию RANK().
+--------------------------------------------------
+WITH RECURSIVE split_genres(movie_id, genre, rest) AS (SELECT id, '', genres || '|' FROM movies UNION ALL SELECT movie_id, SUBSTR(rest, 0, INSTR(rest, '|')), SUBSTR(rest, INSTR(rest, '|') + 1) FROM split_genres WHERE rest <> '') SELECT genre, ROUND(AVG(r.rating), 2) AS avg_rating, RANK() OVER (ORDER BY AVG(r.rating) DESC) AS rank_by_avg_rating FROM split_genres sg JOIN movies m ON m.id = sg.movie_id JOIN ratings r ON r.movie_id = m.id WHERE genre <> '' GROUP BY genre ORDER BY avg_rating DESC;
+┌────────────────────┬────────────┬────────────────────┐
+│       genre        │ avg_rating │ rank_by_avg_rating │
+├────────────────────┼────────────┼────────────────────┤
+│ Film-Noir          │ 3.97       │ 1                  │
+│ Documentary        │ 3.9        │ 2                  │
+│ War                │ 3.83       │ 3                  │
+│ Western            │ 3.75       │ 4                  │
+│ Crime              │ 3.72       │ 5                  │
+│ IMAX               │ 3.72       │ 6                  │
+│ Mystery            │ 3.72       │ 7                  │
+│ Animation          │ 3.71       │ 8                  │
+│ (no genres listed) │ 3.7        │ 9                  │
+│ Drama              │ 3.7        │ 10                 │
+│ Musical            │ 3.68       │ 11                 │
+│ Adventure          │ 3.61       │ 12                 │
+│ Action             │ 3.58       │ 13                 │
+│ Thriller           │ 3.58       │ 14                 │
+│ Fantasy            │ 3.56       │ 15                 │
+│ Romance            │ 3.55       │ 16                 │
+│ Sci-Fi             │ 3.54       │ 17                 │
+│ Children           │ 3.52       │ 18                 │
+│ Comedy             │ 3.47       │ 19                 │
+│ Horror             │ 3.36       │ 20                 │
+└────────────────────┴────────────┴────────────────────┘
+ 
+3. Посчитайте количество фильмов в каждом жанре. Выведите два столбца: genre и movie_count, отсортировав результат по убыванию количества фильмов.
+--------------------------------------------------
+WITH RECURSIVE split_genres(movie_id, genre, rest) AS (SELECT id, '', genres || '|' FROM movies UNION ALL SELECT movie_id, SUBSTR(rest, 0, INSTR(rest, '|')), SUBSTR(rest, INSTR(rest, '|') + 1) FROM split_genres WHERE rest <> '') SELECT genre, COUNT(DISTINCT movie_id) AS movie_count FROM split_genres WHERE genre <> '' GROUP BY genre ORDER BY movie_count DESC;
+┌────────────────────┬─────────────┐
+│       genre        │ movie_count │
+├────────────────────┼─────────────┤
+│ Drama              │ 4361        │
+│ Comedy             │ 3756        │
+│ Thriller           │ 1894        │
+│ Action             │ 1828        │
+│ Romance            │ 1596        │
+│ Adventure          │ 1263        │
+│ Crime              │ 1199        │
+│ Sci-Fi             │ 980         │
+│ Horror             │ 978         │
+│ Fantasy            │ 779         │
+│ Children           │ 664         │
+│ Animation          │ 611         │
+│ Mystery            │ 573         │
+│ Documentary        │ 440         │
+│ War                │ 382         │
+│ Musical            │ 334         │
+│ Western            │ 167         │
+│ IMAX               │ 158         │
+│ Film-Noir          │ 87          │
+│ (no genres listed) │ 34          │
+└────────────────────┴─────────────┘
+ 
+4. Найдите жанры, в которых чаще всего оставляют теги (комментарии). Для этого подсчитайте общее количество записей в таблице tags для фильмов каждого жанра. Выведите genre, tag_count и долю этого жанра в общем числе тегов (tag_share), выраженную в процентах.
+--------------------------------------------------
+WITH RECURSIVE split_genres(movie_id, genre, rest) AS (SELECT id, '', genres || '|' FROM movies UNION ALL SELECT movie_id, SUBSTR(rest, 0, INSTR(rest, '|')), SUBSTR(rest, INSTR(rest, '|') + 1) FROM split_genres WHERE rest <> ''), genre_tags AS (SELECT sg.genre, COUNT(t.id) AS tag_count FROM split_genres sg JOIN tags t ON t.movie_id = sg.movie_id WHERE sg.genre <> '' GROUP BY sg.genre), total AS (SELECT SUM(tag_count) AS total_tags FROM genre_tags) SELECT genre, tag_count, ROUND(tag_count * 100.0 / total_tags, 2) AS tag_share FROM genre_tags, total ORDER BY tag_count DESC;
+┌────────────────────┬───────────┬───────────┐
+│       genre        │ tag_count │ tag_share │
+├────────────────────┼───────────┼───────────┤
+│ Drama              │ 2095      │ 21.08     │
+│ Comedy             │ 1154      │ 11.61     │
+│ Thriller           │ 1099      │ 11.06     │
+│ Action             │ 837       │ 8.42      │
+│ Crime              │ 800       │ 8.05      │
+│ Sci-Fi             │ 688       │ 6.92      │
+│ Adventure          │ 633       │ 6.37      │
+│ Romance            │ 615       │ 6.19      │
+│ Mystery            │ 396       │ 3.98      │
+│ Fantasy            │ 302       │ 3.04      │
+│ Animation          │ 236       │ 2.37      │
+│ Horror             │ 224       │ 2.25      │
+│ Children           │ 185       │ 1.86      │
+│ IMAX               │ 163       │ 1.64      │
+│ War                │ 163       │ 1.64      │
+│ Musical            │ 122       │ 1.23      │
+│ Documentary        │ 114       │ 1.15      │
+│ Western            │ 62        │ 0.62      │
+│ Film-Noir          │ 47        │ 0.47      │
+│ (no genres listed) │ 3         │ 0.03      │
+└────────────────────┴───────────┴───────────┘
+ 
+5. Для каждого пользователя рассчитайте: общее количество выставленных оценок, средний выставленный рейтинг, дату первой и последней оценки (по полю timestamp в таблице ratings). Выведите user_id, rating_count, avg_rating, first_rating_date, last_rating_date. Отсортируйте результат по убыванию количества оценок и выведите только 10 первых строк.
+--------------------------------------------------
+SELECT user_id, COUNT(rating) AS rating_count, ROUND(AVG(rating), 2) AS avg_rating, datetime(MIN(timestamp), 'unixepoch') AS first_rating_date, datetime(MAX(timestamp), 'unixepoch') AS last_rating_date FROM ratings GROUP BY user_id ORDER BY rating_count DESC LIMIT 10;
+┌─────────┬──────────────┬────────────┬─────────────────────┬─────────────────────┐
+│ user_id │ rating_count │ avg_rating │  first_rating_date  │  last_rating_date   │
+├─────────┼──────────────┼────────────┼─────────────────────┼─────────────────────┤
+│ 68      │ 1260         │ 3.23       │ 2006-09-17 22:09:59 │ 2018-07-29 20:49:32 │
+│ 105     │ 722          │ 4.12       │ 2015-11-03 17:25:34 │ 2018-05-13 10:45:32 │
+│ 19      │ 703          │ 2.61       │ 2000-08-08 02:18:27 │ 2000-08-08 05:34:42 │
+│ 111     │ 646          │ 3.34       │ 2018-01-16 21:52:51 │ 2018-02-23 19:48:27 │
+│ 91      │ 575          │ 3.4        │ 2005-04-05 14:20:47 │ 2005-04-05 16:23:06 │
+│ 28      │ 570          │ 3.02       │ 2009-02-11 06:48:22 │ 2010-06-20 03:00:28 │
+│ 89      │ 518          │ 3.47       │ 2018-03-07 07:37:45 │ 2018-03-07 08:00:58 │
+│ 64      │ 517          │ 3.77       │ 2006-10-22 12:20:28 │ 2006-10-23 16:25:18 │
+│ 18      │ 502          │ 3.73       │ 2016-02-09 20:22:08 │ 2018-08-20 17:34:08 │
+│ 57      │ 476          │ 3.39       │ 2000-08-09 04:33:09 │ 2000-10-22 00:51:31 │
+└─────────┴──────────────┴────────────┴─────────────────────┴─────────────────────┘
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/DBTech/302_DBTech_Karmazov_NA
+Добавлена лабораторная работа 5: нормализация БД
+Task from branch: Task05
+Creation date: 11/14/2025 20:12:42
+To github.com-mrsu:andpop-mrsu/302_DBTech_Karmazov_NA.git
+To github.com-mrsu:andpop-mrsu/302_DBTech_Karmazov_NA.git
+   dce2594..5e4f006  master -> master
+   dce2594..5e4f006  master -> master
 302_DBTech_Kitaev_EV
 302_DBTech_Kopein_AS
 302_DBTech_Lohanov_IV
@@ -295,5 +245,5 @@ To github.com-mrsu:andpop-mrsu/301_DBTech_Haritonov_DV.git
 302_DBTech_Uchuvatkin_NS
 **********************
 PowerShell transcript end
-End time: 20251114203948
+End time: 20251114232647
 **********************

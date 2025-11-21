@@ -1,173 +1,163 @@
 **********************
 PowerShell transcript start
-Start time: 20251114172453
+Start time: 20251120075000
 **********************
 Transcript started, output file is log.txt
 304_DB_Afonkin_DE
 304_DB_Aksenov_RM
 304_DB_Artemev_DA
+304_DB_Dolya_OA
+304_DB_Geraskin_RG
+304_DB_Isakov_VV
+304_DB_Kiselev_NS
+304_DB_Kizhaev_RP
+304_DB_Kochetov_VA
+304_DB_Kurmakaev_RA
+304_DB_Kuvakin_RA
+304_DB_Lukovataya_KV
+304_DB_Migachev_IP
+304_DB_Moiseev_OM
+304_DB_Nepyanova_AP
+304_DB_Pazuhina_AK
 =====================================================
-/home/andrey/labs/DB/304_DB_Artemev_DA
-Из github.com-mrsu:andpop-mrsu/304_DB_Artemev_DA
-Из github.com-mrsu:andpop-mrsu/304_DB_Artemev_DA
+/home/andrey/labs/DB/304_DB_Pazuhina_AK
+Из github.com-mrsu:andpop-mrsu/304_DB_Pazuhina_AK
+Из github.com-mrsu:andpop-mrsu/304_DB_Pazuhina_AK
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-   151d317..990f8b5  master     -> teacher/master
-   151d317..990f8b5  master     -> teacher/master
-Обновление 151d317..990f8b5
-Fast-forward
- Task02/README.md              |    23 +
- Task02/dataset/genres.txt     |    18 +
- Task02/dataset/movies.csv     |  9743 ++++++++++++
- Task02/dataset/occupation.txt |    21 +
- Task02/dataset/ratings.csv    | 18774 +++++++++++++++++++++++
- Task02/dataset/tags.csv       |  3684 +++++
- Task02/dataset/users.txt      |   943 ++
- Task02/db_init.bat            |     3 +
- Task02/db_init.sql            | 32238 ++++++++++++++++++++++++++++++++++++++
- Task02/make_db_init.py        |   126 +
- Task02/movies_rating.db       |   Bin 0 -> 1130496 bytes
- Task03/db_init.sql            | 33181 ++++++++++++++++++++++++++++++++++++++++
- Task03/task3.bat              |    93 +
- Task04/db_init.sql            | 33181 ++++++++++++++++++++++++++++++++++++++++
- Task04/task4.bat              |   133 +
- task04.md                     |    56 +
- task05.md                     |    31 +
- 17 files changed, 132248 insertions(+)
- create mode 100644 Task02/README.md
- create mode 100644 Task02/dataset/genres.txt
- create mode 100644 Task02/dataset/movies.csv
- create mode 100644 Task02/dataset/occupation.txt
- create mode 100644 Task02/dataset/ratings.csv
- create mode 100644 Task02/dataset/tags.csv
- create mode 100644 Task02/dataset/users.txt
- create mode 100644 Task02/db_init.bat
- create mode 100644 Task02/db_init.sql
- create mode 100644 Task02/make_db_init.py
- create mode 100644 Task02/movies_rating.db
- create mode 100644 Task03/db_init.sql
- create mode 100644 Task03/task3.bat
- create mode 100644 Task04/db_init.sql
- create mode 100644 Task04/task4.bat
- create mode 100644 task04.md
- create mode 100644 task05.md
-Из https://github.com/Dart1117/304_DB_Artemev_DA
-Из https://github.com/Dart1117/304_DB_Artemev_DA
+Уже актуально.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Из https://github.com/Palasy/304_DB_Pazuhina_AK
+Из https://github.com/Palasy/304_DB_Pazuhina_AK
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task06     -> student/Task06
+Автослияние .gitignore
+КОНФЛИКТ (добавление/добавление): Конфликт слияния в .gitignore
+Сбой автоматического слияния; исправьте конфликты, затем зафиксируйте результат.
+--------------------------------------------------
+Task:  /home/andrey/labs/DB/304_DB_Pazuhina_AK/Task06
+--------------------------------------------------
+Check path: db_init.sql
+--------------------------------------------------
+Check path: ER.jpg
+--------------------------------------------------
+Check path: db_schema.jpg
+db_schema.jpg not found
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/DB/304_DB_Pazuhina_AK
+Add Task06
+Task from branch: Task06
+Creation date: 11/14/2025 19:32:53
+304_DB_Piganov_DM
+304_DB_Savin_RV
+304_DB_Sergeeva_OD
+304_DB_Shagilov_KD
+304_DB_Shevolaev_IV
+304_DB_Sveshnikov_IK
+304_DB_Tumajkina_DA
+=====================================================
+/home/andrey/labs/DB/304_DB_Tumajkina_DA
+Из github.com-mrsu:andpop-mrsu/304_DB_Tumajkina_DA
+Из github.com-mrsu:andpop-mrsu/304_DB_Tumajkina_DA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/dtuma2005/304_DB_Tumajkina_DA
+Из https://github.com/dtuma2005/304_DB_Tumajkina_DA
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task04     -> student/Task04
  * [новая ветка]     Task05     -> student/Task05
  * [новая ветка]     Task05     -> student/Task05
  * [новая ветка]     master     -> student/master
  * [новая ветка]     master     -> student/master
-Обновление 990f8b5..73979dd
+Обновление 2093543..784b4e7
 Fast-forward (no commit created; -m option ignored)
- Task05/data_add.sql  |    97 +
- Task05/db_init.sql   | 53633 +++++++++++++++++++++++++++++++++++++++++++++++++
- Task05/db_schema.jpg |   Bin 0 -> 697056 bytes
- 3 files changed, 53730 insertions(+)
+ Task05/data_add.sql  |    63 +
+ Task05/db_init.sql   | 33178 +++++++++++++++++++++++++++++++++++++++++++++++++
+ Task05/db_schema.jpg |   Bin 0 -> 527630 bytes
+ 3 files changed, 33241 insertions(+)
  create mode 100644 Task05/data_add.sql
  create mode 100644 Task05/db_init.sql
  create mode 100644 Task05/db_schema.jpg
 --------------------------------------------------
-Task:  /home/andrey/labs/DB/304_DB_Artemev_DA/Task05
+Task:  /home/andrey/labs/DB/304_DB_Tumajkina_DA/Task05
 --------------------------------------------------
 Check path: db_init.sql
 --------------------------------------------------
 Check path: data_add.sql
-INSERT INTO users (first_name, last_name, email, gender, register_date, occupation_id)
-SELECT 
-    'Дмитрий',
-    'Артемьев',
-    'artemev@example.com',
-    'male',
-    datetime('now'),
-    (SELECT id FROM occupations WHERE name = 'student');
-
-INSERT INTO users (first_name, last_name, email, gender, register_date, occupation_id)
-SELECT 
-	'Роман',
-    'Аксенов',
-    'aksenov@example.com',
-    'male',
-    datetime('now'),
-    (SELECT id FROM occupations WHERE name = 'student');
-
-INSERT INTO users (first_name, last_name, email, gender, register_date, occupation_id)
-SELECT 
-    'Дмитрий',
-    'Афонькин',
-    'afon@example.com',
-    'female',
-    datetime('now'),
-    (SELECT id FROM occupations WHERE name = 'student');
+INSERT OR IGNORE INTO users (name, email, gender, register_date, occupation_id)
+VALUES
+('Сергеева Ольга Денисовна', 'sergeevan@gmail.com', 'female', date('now'),
+ (SELECT id FROM occupations ORDER BY id LIMIT 1)),
+('Тараканова Вероника Юрьевна', 'tarakanova@gmail.com', 'female', date('now'),
+ (SELECT id FROM occupations ORDER BY id LIMIT 1)),
+ ('Тумайкина Дарья Александровна', 'tumaykina@gmail.com', 'female', date('now'),
+ (SELECT id FROM occupations ORDER BY id LIMIT 1)),
+('Шагилов Кирилл Дмитриевич', 'shagilov@gmail.com', 'male', date('now'),
+ (SELECT id FROM occupations ORDER BY id LIMIT 1)),
+('Шеволаев Илья Вячеславович', 'Shevolaev@gmail.com', 'male', date('now'),
+ (SELECT id FROM occupations ORDER BY id LIMIT 1));
 
 
-INSERT INTO users (first_name, last_name, email, gender, register_date, occupation_id)
-SELECT 
-    'Роман',
-    'Гераськин',
-    'geraskin@example.com',
-    'male',
-    datetime('now'),
-    (SELECT id FROM occupations WHERE name = 'programmer');
 
-INSERT INTO users (first_name, last_name, email, gender, register_date, occupation_id)
-SELECT 
-    'Максим',
-    'Забненков',
-    'zabnenkov@example.com',
-    'female',
-    datetime('now'),
-    (SELECT id FROM occupations WHERE name = 'student');
+INSERT OR IGNORE INTO movies (title, year)
+VALUES
+('Бегущий по лезвию 2049 (2017)', 2017),
+('Форма голоса (2016)', 2016),
+('Милые кости (2009)', 2009);
 
-INSERT INTO movies (title, year)
-VALUES ('Interstellar', 2014);
+INSERT OR IGNORE INTO genres (name) VALUES ('Thriller');
+INSERT OR IGNORE INTO genres (name) VALUES ('Sci-Fi');
+INSERT OR IGNORE INTO genres (name) VALUES ('Action');
+INSERT OR IGNORE INTO genres (name) VALUES ('Anime');
+INSERT OR IGNORE INTO genres (name) VALUES ('Drama');
 
-INSERT INTO movie_genres (movie_id, genre_id)
-SELECT 
-    (SELECT id FROM movies WHERE title = 'Interstellar' AND year = 2014),
-    id
-FROM genres
-WHERE name IN ('Sci-Fi', 'Drama', 'Adventure');
+INSERT OR IGNORE INTO movie_genres (movie_id, genre_id)
+SELECT m.id, g.id FROM movies m JOIN genres g ON g.name = 'Sci-Fi'
+WHERE m.title = 'Бегущий по лезвию 2049 (2017)';
 
-INSERT INTO movies (title, year)
-VALUES ('The Grand Budapest Hotel', 2014);
+INSERT OR IGNORE INTO movie_genres (movie_id, genre_id)
+SELECT m.id, g.id FROM movies m JOIN genres g ON g.name = 'Anime'
+WHERE m.title = 'Форма голоса (2016)';
 
-INSERT INTO movie_genres (movie_id, genre_id)
-SELECT 
-    (SELECT id FROM movies WHERE title = 'The Grand Budapest Hotel' AND year = 2014),
-    id
-FROM genres
-WHERE name IN ('Comedy', 'Drama', 'Adventure');
+INSERT OR IGNORE INTO movie_genres (movie_id, genre_id)
+SELECT m.id, g.id FROM movies m JOIN genres g ON g.name = 'Drama'
+WHERE m.title = 'Милые кости (2009)';
 
-INSERT INTO movies (title, year)
-VALUES ('Inception', 2010);
-
-INSERT INTO movie_genres (movie_id, genre_id)
-SELECT 
-    (SELECT id FROM movies WHERE title = 'Inception' AND year = 2010),
-    id
-FROM genres
-WHERE name IN ('Action', 'Sci-Fi', 'Thriller');
 
 INSERT INTO ratings (user_id, movie_id, rating, timestamp)
-SELECT 
-    (SELECT id FROM users WHERE email = 'dmitry.artemev@example.com'),
-    (SELECT id FROM movies WHERE title = 'Interstellar' AND year = 2014),
-    5.0,
-    strftime('%s', 'now');
+SELECT u.id, m.id, 4.8, strftime('%s','now')
+FROM users u JOIN movies m ON m.title = 'Бегущий по лезвию 2049 (2017)'
+WHERE u.email = 'tumaykina@gmail.com'
+AND NOT EXISTS (
+    SELECT 1 FROM ratings r WHERE r.user_id = u.id AND r.movie_id = m.id
+);
 
 INSERT INTO ratings (user_id, movie_id, rating, timestamp)
-SELECT 
-    (SELECT id FROM users WHERE email = 'dmitry.artemev@example.com'),
-    (SELECT id FROM movies WHERE title = 'The Grand Budapest Hotel' AND year = 2014),
-    4.5,
-    strftime('%s', 'now');
+SELECT u.id, m.id, 5.0, strftime('%s','now')
+FROM users u JOIN movies m ON m.title = 'Форма голоса (2016)'
+WHERE u.email = 'tumaykina@gmail.com'
+AND NOT EXISTS (
+    SELECT 1 FROM ratings r WHERE r.user_id = u.id AND r.movie_id = m.id
+);
 
 INSERT INTO ratings (user_id, movie_id, rating, timestamp)
-SELECT 
-    (SELECT id FROM users WHERE email = 'dmitry.artemev@example.com'),
-    (SELECT id FROM movies WHERE title = 'Inception' AND year = 2010),
-    5.0,
-    strftime('%s', 'now');
+SELECT u.id, m.id, 4.9, strftime('%s','now')
+FROM users u JOIN movies m ON m.title = 'Милые кости (2009)'
+WHERE u.email = 'tumaykina@gmail.com'
+AND NOT EXISTS (
+    SELECT 1 FROM ratings r WHERE r.user_id = u.id AND r.movie_id = m.id
+);
 --------------------------------------------------
 Check path: db_schema.jpg
 --------------------------------------------------
@@ -175,115 +165,66 @@ Run: sqlite3 test.db .read db_init.sql
 
 --------------------------------------------------
 Run: sqlite3 test.db select count(*) from users
-935
+943
 --------------------------------------------------
 Total ok: 5
 Total error: 0
 --------------------------------------------------
-/home/andrey/labs/DB/304_DB_Artemev_DA
+/home/andrey/labs/DB/304_DB_Tumajkina_DA
 Task05
 Task from branch: Task05
-Creation date: 11/13/2025 16:46:59
-To github.com-mrsu:andpop-mrsu/304_DB_Artemev_DA.git
-To github.com-mrsu:andpop-mrsu/304_DB_Artemev_DA.git
-   990f8b5..73979dd  master -> master
-   990f8b5..73979dd  master -> master
-304_DB_Dolya_OA
+Creation date: 11/14/2025 19:18:50
+To github.com-mrsu:andpop-mrsu/304_DB_Tumajkina_DA.git
+To github.com-mrsu:andpop-mrsu/304_DB_Tumajkina_DA.git
+   2093543..784b4e7  master -> master
+   2093543..784b4e7  master -> master
+304_DB_Yambaev_KN
 =====================================================
-/home/andrey/labs/DB/304_DB_Dolya_OA
-Из github.com-mrsu:andpop-mrsu/304_DB_Dolya_OA
-Из github.com-mrsu:andpop-mrsu/304_DB_Dolya_OA
+/home/andrey/labs/DB/304_DB_Yambaev_KN
+Из github.com-mrsu:andpop-mrsu/304_DB_Yambaev_KN
+Из github.com-mrsu:andpop-mrsu/304_DB_Yambaev_KN
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-   a71a1ce..7c36412  master     -> teacher/master
-   a71a1ce..7c36412  master     -> teacher/master
-Обновление a71a1ce..7c36412
-Fast-forward
- Task02/README.md              |     8 +
- Task02/dataset/genres.txt     |    18 +
- Task02/dataset/movies.csv     |  9743 ++++++++++++
- Task02/dataset/occupation.txt |    21 +
- Task02/dataset/ratings.csv    | 18774 +++++++++++++++++++++++
- Task02/dataset/tags.csv       |  3684 +++++
- Task02/dataset/users.txt      |   943 ++
- Task02/db_init.bat            |     3 +
- Task02/db_init.sql            | 33178 ++++++++++++++++++++++++++++++++++++++++
- Task02/make_db_init.py        |   146 +
- Task02/movies_rating.db       |   Bin 0 -> 196608 bytes
- Task03/db_init.sql            | 33178 ++++++++++++++++++++++++++++++++++++++++
- Task03/movies_rating.db       |   Bin 0 -> 1069056 bytes
- Task03/task3.bat              |    63 +
- Task04/db_init.sql            | 33178 ++++++++++++++++++++++++++++++++++++++++
- Task04/task4.bat              |    43 +
- task04.md                     |    66 +
- task05.md                     |    31 +
- 18 files changed, 133077 insertions(+)
- create mode 100644 Task02/README.md
- create mode 100644 Task02/dataset/genres.txt
- create mode 100644 Task02/dataset/movies.csv
- create mode 100644 Task02/dataset/occupation.txt
- create mode 100644 Task02/dataset/ratings.csv
- create mode 100644 Task02/dataset/tags.csv
- create mode 100644 Task02/dataset/users.txt
- create mode 100755 Task02/db_init.bat
- create mode 100644 Task02/db_init.sql
- create mode 100644 Task02/make_db_init.py
- create mode 100644 Task02/movies_rating.db
- create mode 100644 Task03/db_init.sql
- create mode 100644 Task03/movies_rating.db
- create mode 100755 Task03/task3.bat
- create mode 100644 Task04/db_init.sql
- create mode 100755 Task04/task4.bat
- create mode 100644 task04.md
- create mode 100644 task05.md
-Из https://github.com/olegadd/304_DB_Dolya_OA
-Из https://github.com/olegadd/304_DB_Dolya_OA
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task04     -> student/Task04
- * [новая ветка]     Task04     -> student/Task04
+Уже актуально.
+Из https://github.com/Kostrakoff/304_DB_Yambaev_KN
+Из https://github.com/Kostrakoff/304_DB_Yambaev_KN
  * [новая ветка]     Task05     -> student/Task05
  * [новая ветка]     Task05     -> student/Task05
  * [новая ветка]     master     -> student/master
  * [новая ветка]     master     -> student/master
-Обновление 7c36412..66d57c2
+Обновление 55e9a25..5ad7335
 Fast-forward (no commit created; -m option ignored)
- Task05/data_add.sql  |    64 +
- Task05/db_init.sql   | 55338 +++++++++++++++++++++++++++++++++++++++++++++++++
- Task05/db_schema.jpg |   Bin 0 -> 135277 bytes
- 3 files changed, 55402 insertions(+)
+ Task05/data_add.sql  |    60 +
+ Task05/db_init.sql   | 33192 +++++++++++++++++++++++++++++++++++++++++++++++++
+ Task05/db_schema.jpg |   Bin 0 -> 40738 bytes
+ 3 files changed, 33252 insertions(+)
  create mode 100644 Task05/data_add.sql
  create mode 100644 Task05/db_init.sql
  create mode 100644 Task05/db_schema.jpg
 --------------------------------------------------
-Task:  /home/andrey/labs/DB/304_DB_Dolya_OA/Task05
+Task:  /home/andrey/labs/DB/304_DB_Yambaev_KN/Task05
 --------------------------------------------------
 Check path: db_init.sql
 --------------------------------------------------
 Check path: data_add.sql
 INSERT OR IGNORE INTO users (name, email, gender, register_date, occupation_id)
 VALUES
-('Афонькин Дмитрий Евгеньевич', 'afonkin@gmail.com', 'male', date('now'),
+('Ястребцев Денис Николаевич', 'yastreb@gmail.com', 'male', date('now'),
  (SELECT id FROM occupations ORDER BY id LIMIT 1)),
-('Гераськин Роман Геннадьевич', 'geraskin@gmail.com', 'male', date('now'),
+('Шеволаев Илья Вячеславович', 'shevolaev@gmail.com', 'male', date('now'),
  (SELECT id FROM occupations ORDER BY id LIMIT 1)),
- ('Доля Олег Альбертович', 'dolya@gmail.com', 'male', date('now'),
+('Шагилов Кирилл Дмитриевич', 'shagil4@gmail.com', 'male', date('now'),
  (SELECT id FROM occupations ORDER BY id LIMIT 1)),
-('Забненков Максим Алексеевич', 'zabnenkov@gmail.com', 'male', date('now'),
+('Ямбаев Константин Николаевич', 'yambalalay@gmail.com', 'male', date('now'),
  (SELECT id FROM occupations ORDER BY id LIMIT 1)),
-('Исаков Владимир Вадимович', 'isakov@gmail.com', 'male', date('now'),
+('Тумайкина Дарья Александровна', 'tymuch@gmail.com', 'female', date('now'),
  (SELECT id FROM occupations ORDER BY id LIMIT 1));
-
-
 
 INSERT OR IGNORE INTO movies (title, year)
 VALUES
 ('Джентльмены (2019)', 2019),
 ('Криминальное чтиво (1994)', 1994),
 ('Темный рыцарь (2008)', 2008);
-
 
 INSERT OR IGNORE INTO genres (name) VALUES ('Sci-Fi');
 INSERT OR IGNORE INTO genres (name) VALUES ('Action');
@@ -303,11 +244,10 @@ INSERT OR IGNORE INTO movie_genres (movie_id, genre_id)
 SELECT m.id, g.id FROM movies m JOIN genres g ON g.name = 'Action'
 WHERE m.title = 'Темный рыцарь (2008)';
 
-
 INSERT INTO ratings (user_id, movie_id, rating, timestamp)
 SELECT u.id, m.id, 4.8, strftime('%s','now')
 FROM users u JOIN movies m ON m.title = 'Джентльмены (2019)'
-WHERE u.email = 'dolya@gmail.com'
+WHERE u.email = 'shagil4@gmail.com'
 AND NOT EXISTS (
     SELECT 1 FROM ratings r WHERE r.user_id = u.id AND r.movie_id = m.id
 );
@@ -315,7 +255,7 @@ AND NOT EXISTS (
 INSERT INTO ratings (user_id, movie_id, rating, timestamp)
 SELECT u.id, m.id, 5.0, strftime('%s','now')
 FROM users u JOIN movies m ON m.title = 'Криминальное чтиво (1994)'
-WHERE u.email = 'dolya@gmail.com'
+WHERE u.email = 'shagil4@gmail.com'
 AND NOT EXISTS (
     SELECT 1 FROM ratings r WHERE r.user_id = u.id AND r.movie_id = m.id
 );
@@ -323,7 +263,7 @@ AND NOT EXISTS (
 INSERT INTO ratings (user_id, movie_id, rating, timestamp)
 SELECT u.id, m.id, 4.9, strftime('%s','now')
 FROM users u JOIN movies m ON m.title = 'Темный рыцарь (2008)'
-WHERE u.email = 'dolya@gmail.com'
+WHERE u.email = 'shagil4@gmail.com'
 AND NOT EXISTS (
     SELECT 1 FROM ratings r WHERE r.user_id = u.id AND r.movie_id = m.id
 );
@@ -339,350 +279,17 @@ Run: sqlite3 test.db select count(*) from users
 Total ok: 5
 Total error: 0
 --------------------------------------------------
-/home/andrey/labs/DB/304_DB_Dolya_OA
-Task05
+/home/andrey/labs/DB/304_DB_Yambaev_KN
+Выполнение Лабораторной Работы №5
 Task from branch: Task05
-Creation date: 11/14/2025 09:44:25
-To github.com-mrsu:andpop-mrsu/304_DB_Dolya_OA.git
-To github.com-mrsu:andpop-mrsu/304_DB_Dolya_OA.git
-   7c36412..66d57c2  master -> master
-   7c36412..66d57c2  master -> master
-304_DB_Geraskin_RG
-304_DB_Isakov_VV
-304_DB_Kiselev_NS
-304_DB_Kizhaev_RP
-304_DB_Kochetov_VA
-304_DB_Kurmakaev_RA
-304_DB_Kuvakin_RA
-304_DB_Lukovataya_KV
-304_DB_Migachev_IP
-304_DB_Moiseev_OM
-304_DB_Nepyanova_AP
-304_DB_Pazuhina_AK
-=====================================================
-/home/andrey/labs/DB/304_DB_Pazuhina_AK
-Из github.com-mrsu:andpop-mrsu/304_DB_Pazuhina_AK
-Из github.com-mrsu:andpop-mrsu/304_DB_Pazuhina_AK
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-   9018239..4681ca2  master     -> teacher/master
-   9018239..4681ca2  master     -> teacher/master
-Обновление 9018239..4681ca2
-Fast-forward
- .gitignore                    |     1 +
- Task02/README.md              |    18 +
- Task02/dataset/genres.txt     |    18 +
- Task02/dataset/movies.csv     |  9743 ++++++++++++
- Task02/dataset/occupation.txt |    21 +
- Task02/dataset/ratings.csv    | 18774 +++++++++++++++++++++++
- Task02/dataset/tags.csv       |  3684 +++++
- Task02/dataset/users.txt      |   943 ++
- Task02/db_init.bat            |     3 +
- Task02/db_init.sh             |     3 +
- Task02/db_init.sql            | 33177 ++++++++++++++++++++++++++++++++++++++++
- Task02/make_db_init.py        |   101 +
- Task02/movies_rating.db       |   Bin 0 -> 1142784 bytes
- Task03/db_init.sql            | 33177 ++++++++++++++++++++++++++++++++++++++++
- Task03/movies_rating.db       |   Bin 0 -> 1138688 bytes
- Task03/task3.bat              |    49 +
- Task04/db_init.sql            | 33177 ++++++++++++++++++++++++++++++++++++++++
- Task04/movies_rating.db       |   Bin 0 -> 1138688 bytes
- Task04/task4.bat              |    43 +
- task04.md                     |    66 +
- task05.md                     |    31 +
- 21 files changed, 133029 insertions(+)
- create mode 100644 .gitignore
- create mode 100644 Task02/README.md
- create mode 100644 Task02/dataset/genres.txt
- create mode 100644 Task02/dataset/movies.csv
- create mode 100644 Task02/dataset/occupation.txt
- create mode 100644 Task02/dataset/ratings.csv
- create mode 100644 Task02/dataset/tags.csv
- create mode 100644 Task02/dataset/users.txt
- create mode 100755 Task02/db_init.bat
- create mode 100644 Task02/db_init.sh
- create mode 100644 Task02/db_init.sql
- create mode 100644 Task02/make_db_init.py
- create mode 100644 Task02/movies_rating.db
- create mode 100644 Task03/db_init.sql
- create mode 100644 Task03/movies_rating.db
- create mode 100755 Task03/task3.bat
- create mode 100644 Task04/db_init.sql
- create mode 100644 Task04/movies_rating.db
- create mode 100755 Task04/task4.bat
- create mode 100644 task04.md
- create mode 100644 task05.md
-Из https://github.com/Palasy/304_DB_Pazuhina_AK
-Из https://github.com/Palasy/304_DB_Pazuhina_AK
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task04     -> student/Task04
- * [новая ветка]     Task04     -> student/Task04
- * [новая ветка]     Task05     -> student/Task05
- * [новая ветка]     Task05     -> student/Task05
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-CONFLICT (modify/delete): .DS_Store deleted in HEAD and modified in student/Task05.  Version student/Task05 of .DS_Store left in tree.
-warning: Cannot merge binary files: Task03/movies_rating.db (HEAD vs. student/Task05)
-Автослияние Task03/movies_rating.db
-КОНФЛИКТ (добавление/добавление): Конфликт слияния в Task03/movies_rating.db
-warning: Cannot merge binary files: Task04/movies_rating.db (HEAD vs. student/Task05)
-Автослияние Task04/movies_rating.db
-КОНФЛИКТ (добавление/добавление): Конфликт слияния в Task04/movies_rating.db
-Сбой автоматического слияния; исправьте конфликты, затем зафиксируйте результат.
---------------------------------------------------
-Task:  /home/andrey/labs/DB/304_DB_Pazuhina_AK/Task05
---------------------------------------------------
-Check path: db_init.sql
---------------------------------------------------
-Check path: data_add.sql
-INSERT OR IGNORE INTO users (name, email, gender, register_date, occupation_id)
-VALUES
-('Моисеев Олег Максимович', 'moiseevom@gmail.com', 'male', date('now'),
- (SELECT id FROM occupations ORDER BY id LIMIT 1)),
-('Непьянова Анна Павловна', 'nepianova@gmail.com', 'female', date('now'),
- (SELECT id FROM occupations ORDER BY id LIMIT 1)),
- ('Пазухина Анастасия Константиновна', 'pazuhina@gmail.com', 'female', date('now'),
- (SELECT id FROM occupations ORDER BY id LIMIT 1)),
-('Пиганов Дмитрий Максимович', 'piganov@gmail.com', 'male', date('now'),
- (SELECT id FROM occupations ORDER BY id LIMIT 1)),
-('Савин Руслан Вадимович', 'savin@gmail.com', 'male', date('now'),
- (SELECT id FROM occupations ORDER BY id LIMIT 1));
-
-
-
-INSERT OR IGNORE INTO movies (title, year)
-VALUES
-('Оппенгеймер (2023)', 2023),
-('Дюна (2021)', 2021),
-('Бойцовский клуб (1999)', 1999);
-
-
-INSERT OR IGNORE INTO genres (name) VALUES ('Sci-Fi');
-INSERT OR IGNORE INTO genres (name) VALUES ('Drama');
-INSERT OR IGNORE INTO genres (name) VALUES ('Action');
-INSERT OR IGNORE INTO genres (name) VALUES ('Thriller');
-INSERT OR IGNORE INTO genres (name) VALUES ('Adventure');
-
-INSERT OR IGNORE INTO movie_genres (movie_id, genre_id)
-SELECT m.id, g.id FROM movies m JOIN genres g ON g.name = 'Drama'
-WHERE m.title = 'Оппенгеймер (2023)';
-
-INSERT OR IGNORE INTO movie_genres (movie_id, genre_id)
-SELECT m.id, g.id FROM movies m JOIN genres g ON g.name = 'Sci-Fi'
-WHERE m.title = 'Дюна (2021)';
-
-INSERT OR IGNORE INTO movie_genres (movie_id, genre_id)
-SELECT m.id, g.id FROM movies m JOIN genres g ON g.name = 'Thriller'
-WHERE m.title = 'Бойцовский клуб (1999)';
-
-
-INSERT INTO ratings (user_id, movie_id, rating, timestamp)
-SELECT u.id, m.id, 5.0, strftime('%s','now')
-FROM users u JOIN movies m ON m.title = 'Оппенгеймер (2023)'
-WHERE u.email = 'pazuhina@gmail.com'
-AND NOT EXISTS (
-    SELECT 1 FROM ratings r WHERE r.user_id = u.id AND r.movie_id = m.id
-);
-
-INSERT INTO ratings (user_id, movie_id, rating, timestamp)
-SELECT u.id, m.id, 4.7, strftime('%s','now')
-FROM users u JOIN movies m ON m.title = 'Дюна (2021)'
-WHERE u.email = 'pazuhina@gmail.com'
-AND NOT EXISTS (
-    SELECT 1 FROM ratings r WHERE r.user_id = u.id AND r.movie_id = m.id
-);
-
-INSERT INTO ratings (user_id, movie_id, rating, timestamp)
-SELECT u.id, m.id, 4.9, strftime('%s','now')
-FROM users u JOIN movies m ON m.title = 'Бойцовский клуб (1999)'
-WHERE u.email = 'pazuhina@gmail.com'
-AND NOT EXISTS (
-    SELECT 1 FROM ratings r WHERE r.user_id = u.id AND r.movie_id = m.id
-);
---------------------------------------------------
-Check path: db_schema.jpg
---------------------------------------------------
-Run: sqlite3 test.db .read db_init.sql
-
---------------------------------------------------
-Run: sqlite3 test.db select count(*) from users
-943
---------------------------------------------------
-Total ok: 5
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/DB/304_DB_Pazuhina_AK
-Task05
-Task from branch: Task05
-Creation date: 11/13/2025 13:37:07
-Everything up-to-date
-Everything up-to-date
-304_DB_Piganov_DM
-304_DB_Savin_RV
-304_DB_Sergeeva_OD
-304_DB_Shagilov_KD
-304_DB_Shevolaev_IV
-304_DB_Sveshnikov_IK
-304_DB_Tumajkina_DA
-304_DB_Yambaev_KN
+Creation date: 11/14/2025 19:04:02
+To github.com-mrsu:andpop-mrsu/304_DB_Yambaev_KN.git
+To github.com-mrsu:andpop-mrsu/304_DB_Yambaev_KN.git
+   55e9a25..5ad7335  master -> master
+   55e9a25..5ad7335  master -> master
 304_DB_Yastrebcev_DN
 304_DB_Zabnenkov_MA
-=====================================================
-/home/andrey/labs/DB/304_DB_Zabnenkov_MA
-Из github.com-mrsu:andpop-mrsu/304_DB_Zabnenkov_MA
-Из github.com-mrsu:andpop-mrsu/304_DB_Zabnenkov_MA
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-   de23958..6928d9e  master     -> teacher/master
-   de23958..6928d9e  master     -> teacher/master
-Обновление de23958..6928d9e
-Fast-forward
- Task02/README.md        |   113 +
- Task02/db_init.bat      |     3 +
- Task02/genres.txt       |    18 +
- Task02/make_db_init.ps1 |   154 +
- Task02/movies.csv       |  9743 ++++++++++++++
- Task02/movies_rating.db |     0
- Task02/occupation.txt   |    21 +
- Task02/ratings.csv      | 18774 ++++++++++++++++++++++++++
- Task02/tags.csv         |  3684 +++++
- Task02/users.txt        |   943 ++
- Task03/db_init.sql      | 33177 ++++++++++++++++++++++++++++++++++++++++++++++
- Task03/task3.bat        |    46 +
- Task04/db_init.sql      | 33177 ++++++++++++++++++++++++++++++++++++++++++++++
- Task04/task4.bat        |   159 +
- task04.md               |    56 +
- task05.md               |    31 +
- 16 files changed, 100099 insertions(+)
- create mode 100644 Task02/README.md
- create mode 100644 Task02/db_init.bat
- create mode 100644 Task02/genres.txt
- create mode 100644 Task02/make_db_init.ps1
- create mode 100644 Task02/movies.csv
- create mode 100644 Task02/movies_rating.db
- create mode 100644 Task02/occupation.txt
- create mode 100644 Task02/ratings.csv
- create mode 100644 Task02/tags.csv
- create mode 100644 Task02/users.txt
- create mode 100644 Task03/db_init.sql
- create mode 100644 Task03/task3.bat
- create mode 100644 Task04/db_init.sql
- create mode 100644 Task04/task4.bat
- create mode 100644 task04.md
- create mode 100644 task05.md
-Из https://github.com/kocoumaksim/304_DB_Zabnenkov_MA
-Из https://github.com/kocoumaksim/304_DB_Zabnenkov_MA
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task04     -> student/Task04
- * [новая ветка]     Task04     -> student/Task04
- * [новая ветка]     Task05     -> student/Task05
- * [новая ветка]     Task05     -> student/Task05
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Merge made by the 'ort' strategy.
- Task05/data_add.sql  |    59 +
- Task05/db_init.sql   | 33177 +++++++++++++++++++++++++++++++++++++++++++++++++
- Task05/db_schema.jpg |   Bin 0 -> 81186 bytes
- 3 files changed, 33236 insertions(+)
- create mode 100644 Task05/data_add.sql
- create mode 100644 Task05/db_init.sql
- create mode 100644 Task05/db_schema.jpg
---------------------------------------------------
-Task:  /home/andrey/labs/DB/304_DB_Zabnenkov_MA/Task05
---------------------------------------------------
-Check path: db_init.sql
---------------------------------------------------
-Check path: data_add.sql
-INSERT INTO users (name, email, gender, register_date, occupation)
-VALUES ('Забненков Максим', 'maxim.zab@student.university.edu', 'male', date('now'), 'student');
-
-INSERT INTO users (name, email, gender, register_date, occupation)
-VALUES ('Исаков Владимир', 'vladimir.is@university.edu', 'male', date('now'), 'student');
-
-INSERT INTO users (name, email, gender, register_date, occupation)
-VALUES ('Кижаев Роман', 'rom.kij@university.edu', 'male', date('now'), 'student');
-
-INSERT INTO users (name, email, gender, register_date, occupation)
-VALUES ('Киселев Никита', 'nikit.kis@university.edu', 'male', date('now'), 'student');
-
-INSERT INTO users (name, email, gender, register_date, occupation)
-VALUES ('Кочетов Владислав', 'vladislav.koch@university.edu', 'male', date('now'), 'student');
-
-INSERT INTO movies (title, year)
-VALUES ('Крутой Боевик 2026', 2026);
-
-INSERT INTO movie_genres (movie_id, genre_id)
-SELECT m.id, g.id 
-FROM movies m, genres g 
-WHERE m.title = 'Крутой Боевик 2026' AND g.name = 'Action';
-
-INSERT INTO movies (title, year)
-VALUES ('Веселая Комедия 2026', 2026);
-
-INSERT INTO movie_genres (movie_id, genre_id)
-SELECT m.id, g.id 
-FROM movies m, genres g 
-WHERE m.title = 'Веселая Комедия 2026' AND g.name = 'Comedy';
-
-INSERT INTO movies (title, year)
-VALUES ('Фантастическое Будущее 2026', 2026);
-
-INSERT INTO movie_genres (movie_id, genre_id)
-SELECT m.id, g.id 
-FROM movies m, genres g 
-WHERE m.title = 'Фантастическое Будущее 2026' AND g.name = 'Sci-Fi';
-
-INSERT INTO ratings (user_id, movie_id, rating, timestamp)
-SELECT 
-    (SELECT id FROM users WHERE email = 'maxim.zab@student.university.edu'),
-    (SELECT id FROM movies WHERE title = 'Крутой Боевик 2026'),
-    4.5,
-    strftime('%s', 'now');
-
-INSERT INTO ratings (user_id, movie_id, rating, timestamp)
-SELECT 
-    (SELECT id FROM users WHERE email = 'maxim.zab@student.university.edu'),
-    (SELECT id FROM movies WHERE title = 'Веселая Комедия 2026'),
-    5.0,
-    strftime('%s', 'now');
-
-INSERT INTO ratings (user_id, movie_id, rating, timestamp)
-SELECT 
-    (SELECT id FROM users WHERE email = 'maxim.zab@student.university.edu'),
-    (SELECT id FROM movies WHERE title = 'Фантастическое Будущее 2026'),
-    4.0,
-    strftime('%s', 'now');
---------------------------------------------------
-Check path: db_schema.jpg
---------------------------------------------------
-Run: sqlite3 test.db .read db_init.sql
-
---------------------------------------------------
-Run: sqlite3 test.db select count(*) from users
-943
---------------------------------------------------
-Total ok: 5
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/DB/304_DB_Zabnenkov_MA
-Task05
-Task from branch: Task05
-Creation date: 11/14/2025 13:49:05
-To github.com-mrsu:andpop-mrsu/304_DB_Zabnenkov_MA.git
-To github.com-mrsu:andpop-mrsu/304_DB_Zabnenkov_MA.git
-   6928d9e..fc5c9d9  master -> master
-   6928d9e..fc5c9d9  master -> master
 **********************
 PowerShell transcript end
-End time: 20251114191143
+End time: 20251120080711
 **********************
