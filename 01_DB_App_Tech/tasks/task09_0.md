@@ -31,6 +31,42 @@ Frontend будет обмениваться с сервером данными 
 * Базу данных SQLite разместить в каталоге Task08/db.
 
 ### Создание backend-части приложения с помощью микрофреймворка Slim
+* В каталоге Task08 устанавливаем через Composer минимально необходимые пакеты для Slim:
+```
+composer require slim/slim slim/psr7 slim/http
+``` 
+В результате должны создаться файлы Task08/composer.json, Task08/composer.lock и каталог Task08/vendor.
+* Создаем точку входа Task08/public/index.php. Больше никаких PHP-файлов в Task08/public быть не должно.
+* Задаем в index.php маршруты запросов и их обработчики. Пример:
+```PHP
+<?php
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use Slim\Factory\AppFactory;
+
+$app = AppFactory::create();
+$app->addErrorMiddleware(true, true, true);
+
+$app->get('/', function ($request, $response) {
+    $response->write('Здесь должен открыться index.html');
+    return $response;
+});
+
+
+$app->get('/games', function ($request, $response) {
+    $response->write('Здесь должен вернуться JSON с данными о всех играх');
+    return $response;
+});
+
+$app->post('/games', function ($request, $response) {
+    $response->write('Здесь должен приняться JSON с данными о новой игре и записаться в БД');
+    return $response;
+});
+
+$app->run();
+
+```
 * В данной работе можно весь код разместить в одном файле index.php. Если же потребуется вынести код в отдельные файлы, то они должны размещаться в каталоге Task08/src и автоматически загружаться в index.php.
 * Приложение должно запускаться в браузере по адресам http://localhost:3000/index.html или просто http://localhost:3000, поэтому при получении GET-запроста на корневой адрес /, должна сработать переадресация на /index.html.
 
