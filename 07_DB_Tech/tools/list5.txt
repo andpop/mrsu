@@ -1,4 +1,7 @@
-Rjabikin_KS
-Timovkin_AJ
-Turaev_DV
-Fedin_DA
+301_DBTech_Haritonov_DV
+301_DBTech_Hopov_NA
+301_DBTech_Hripchenko_YuV
+301_DBTech_CHernov_MM
+302_DBTech_Uchuvatkin_NS
+302_DBTech_Shaposhnikov_AA
+302_DBTech_Shilyaeva_OI

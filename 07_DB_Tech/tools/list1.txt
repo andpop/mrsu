@@ -1,5 +1,9 @@
-Akajkin_SV
-Akimova_DA
-Artamonov_AV
-Bugreeva_AM
-Venediktova_JP
+301_DBTech_Andronov_NA
+301_DBTech_Babin_DO
+301_DBTech_Buyankina_AS
+301_DBTech_Golikov_PA
+301_DBTech_Goncharov_KD
+302_DBTech_Grishukov_EV
+302_DBTech_Dankin_I
+302_DBTech_Ermakov_EA
+

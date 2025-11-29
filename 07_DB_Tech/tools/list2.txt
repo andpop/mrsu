@@ -1,5 +1,8 @@
-Denisov_RV
-Zinkina_KV
-Kaderov_RO
-Katin_DA
-Kochetkov_PA
+301_DBTech_Eremin_VS
+301_DBTech_ZHurin_IA
+301_DBTech_Karmyshev_IR
+301_DBTech_Kuchina_AS
+301_DBTech_Larkin_MS
+302_DBTech_Karmazov_NA
+302_DBTech_Kitaev_EV
+302_DBTech_Kopein_AS

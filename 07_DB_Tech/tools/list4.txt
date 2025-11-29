@@ -1,5 +1,8 @@
-Nujanzin_MA
-Pomelova_AS
-Prokopenko_AS
-Prokopenko_DS
-Rodkin_AV
+301_DBTech_Rodionov_MN
+301_DBTech_Samylkin_ME
+301_DBTech_Sarajkin_ME
+301_DBTech_Senichev_AS
+301_DBTech_Fomin_SO
+302_DBTech_Sosnina_IV
+302_DBTech_Tiossa_MN
+302_DBTech_Tuzhin_DO
