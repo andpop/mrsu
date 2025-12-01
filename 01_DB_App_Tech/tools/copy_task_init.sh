@@ -22,15 +22,15 @@ for student in $(cat "${pwd}/reps_all.txt"); do
     # cp "${pwd}/../Git_instruction.md" "${student_dir}/"
     # cp "${pwd}/tasks/*.xls" "${student_dir}/"
     #
-    cp "${pwd}/../tasks/task07.md" "${student_dir}/task07.md"
     # cp "${pwd}/../tasks/task07.md" "${student_dir}/task07.md"
-    # cp "${pwd}/../tasks/task08.md" "${student_dir}/task08.md"
+    cp "${pwd}/../tasks/task09.md" "${student_dir}/task09.md"
+    cp "${pwd}/../tasks/task08.md" "${student_dir}/task08.md"
     # cp "${pwd}/../tasks/general_specification_05.md" "${student_dir}/general_specification.md"
     # cp "${pwd}/../tasks/specification_cli_05.md" "${student_dir}/specification_cli.md"
 
     git add -A
     # git commit -m "Add CLI specification"
-    git commit -m "Add task07"
+    git commit -m "Add task09"
     git push teacher master
     cd "${pwd}"
 done
