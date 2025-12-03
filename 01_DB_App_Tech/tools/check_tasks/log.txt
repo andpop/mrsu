@@ -1,11 +1,45 @@
 **********************
 PowerShell transcript start
-Start time: 20251111222233
+Start time: 20251202114127
 **********************
 Transcript started, output file is log.txt
 401_DBAppTech_Abdrashitov_SA
 401_DBAppTech_Balyaev_DS
 401_DBAppTech_Belokosov_MD
+=====================================================
+/home/andrey/labs/DBAppTech/401_DBAppTech_Belokosov_MD
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Belokosov_MD
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Belokosov_MD
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/belokosoff/401_DBAppTech_Belokosov_MD
+Из https://github.com/belokosoff/401_DBAppTech_Belokosov_MD
+ * [новая ветка]     Task09     -> student/Task09
+ * [новая ветка]     Task09     -> student/Task09
+Обновление 9b60bcc..421ede9
+Fast-forward (no commit created; -m option ignored)
+ Task09/minesweeper/.gitignore        |   7 +
+ Task09/minesweeper/README.md         | 105 ++++++++++++
+ Task09/minesweeper/composer.json     |   7 +
+ Task09/minesweeper/public/index.html |  75 +++++++++
+ Task09/minesweeper/public/index.php  | 163 ++++++++++++++++++
+ Task09/minesweeper/public/script.js  | 312 +++++++++++++++++++++++++++++++++++
+ Task09/minesweeper/public/style.css  | 201 ++++++++++++++++++++++
+ 7 files changed, 870 insertions(+)
+ create mode 100644 Task09/minesweeper/.gitignore
+ create mode 100644 Task09/minesweeper/README.md
+ create mode 100644 Task09/minesweeper/composer.json
+ create mode 100644 Task09/minesweeper/public/index.html
+ create mode 100644 Task09/minesweeper/public/index.php
+ create mode 100644 Task09/minesweeper/public/script.js
+ create mode 100644 Task09/minesweeper/public/style.css
+Task09
+task from branch: Task09
+creation date: 12/01/2025 17:47:12
+Checking script check_Task09.ps1 not found
 401_DBAppTech_Bikchurin_ESH
 401_DBAppTech_Dubrovskaya_YUV
 401_DBAppTech_Fajzullin_IR
@@ -18,6 +52,211 @@ Transcript started, output file is log.txt
 401_DBAppTech_Ponomarev_MA
 401_DBAppTech_Savickaya_MV
 401_DBAppTech_Tyurin_MS
+=====================================================
+/home/andrey/labs/DBAppTech/401_DBAppTech_Tyurin_MS
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Tyurin_MS
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Tyurin_MS
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/fhj7438ht/401_DBAppTech_Tyurin_MS
+Из https://github.com/fhj7438ht/401_DBAppTech_Tyurin_MS
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     Task07     -> student/Task07
+Обновление c018113..c73c35d
+Fast-forward (no commit created; -m option ignored)
+ Task07/minesweeper/README.md            | 155 +++++++++++
+ Task07/minesweeper/css/style.css        | 477 ++++++++++++++++++++++++++++++++
+ Task07/minesweeper/index.html           | 120 ++++++++
+ Task07/minesweeper/js/Controller.js     | 369 ++++++++++++++++++++++++
+ Task07/minesweeper/js/Database.js       | 180 ++++++++++++
+ Task07/minesweeper/js/Game.js           | 231 ++++++++++++++++
+ Task07/minesweeper/js/GameRepository.js | 161 +++++++++++
+ Task07/minesweeper/js/View.js           | 251 +++++++++++++++++
+ Task07/minesweeper/js/app.js            |   9 +
+ 9 files changed, 1953 insertions(+)
+ create mode 100644 Task07/minesweeper/README.md
+ create mode 100644 Task07/minesweeper/css/style.css
+ create mode 100644 Task07/minesweeper/index.html
+ create mode 100644 Task07/minesweeper/js/Controller.js
+ create mode 100644 Task07/minesweeper/js/Database.js
+ create mode 100644 Task07/minesweeper/js/Game.js
+ create mode 100644 Task07/minesweeper/js/GameRepository.js
+ create mode 100644 Task07/minesweeper/js/View.js
+ create mode 100644 Task07/minesweeper/js/app.js
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/401_DBAppTech_Tyurin_MS/Task07
+--------------------------------------------------
+Check path: README.md
+# Сапёр - Браузерная версия
+
+Браузерная версия игры "Сапёр", переписанная с PHP на JavaScript с использованием IndexedDB для хранения данных.
+
+### Демо-версия
+Браузерная версия игры доступна по адресу: [https://fhj7438ht.github.io/minesweeper_web/](https://fhj7438ht.github.io/minesweeper_web/)
+
+## Структура проекта
+
+```
+minesweeper/
+├── index.html          # Главная страница
+├── css/
+│   └── style.css      # Стили интерфейса
+└── js/
+    ├── app.js         # Точка входа приложения
+    ├── Game.js        # Игровая логика
+    ├── Database.js    # Работа с IndexedDB
+    ├── GameRepository.js  # Репозиторий для управления играми
+    ├── View.js        # Отображение интерфейса
+    └── Controller.js  # Контроллер для управления игрой
+```
+
+## Запуск
+
+1. Откройте файл `index.html` в браузере
+2. Игра автоматически инициализирует базу данных IndexedDB при первом запуске
+
+## Функциональность
+
+### Новая игра
+- Введите имя игрока (только английские буквы)
+- Установите параметры игры (строки, столбцы, количество мин)
+- Нажмите "Начать игру"
+
+### Игровой процесс
+- **Левый клик** - открыть ячейку
+- **Правый клик** - отметить/снять отметку с ячейки
+- Игра автоматически сохраняется после каждого хода
+- Можно сохранить игру вручную кнопкой "Сохранить"
+- На странице игры доступны ссылки для работы с базой данных:
+  - **Список игр** - просмотр всех сохраненных игр
+  - **Воспроизвести эту игру** - появляется после завершения игры (победа/проигрыш)
+
+### Список игр
+- Просмотр всех сохраненных игр с информацией:
+  - ID игры
+  - Имя игрока
+  - Размеры поля (строки × столбцы)
+  - Количество мин
+  - Статус игры (Активна, Победа, Проигрыш)
+  - Дата создания и последнего обновления
+- **Продолжить** - возобновление незавершенных игр
+- **Воспроизвести** - просмотр завершенных игр с историей ходов
+- **Удалить** - удаление игры из базы данных
+
+### Воспроизведение игры
+- Просмотр финального состояния игрового поля
+- Отображение полной истории всех ходов:
+  - Номер хода
+  - Координаты ячейки (строка, столбец)
+  - Действие (открыть/отметить)
+  - Результат хода (мины нет/взорвался/выиграл/отмечена)
+- Информация об игре:
+  - Имя игрока
+  - Размеры поля
+  - Количество мин
+  - Финальный статус (Победа/Проигрыш)
+
+## Сохранение и воспроизведение партий
+
+### Автоматическое сохранение
+
+Игра автоматически сохраняет состояние после каждого хода:
+
+1. **При создании новой игры** - игра сохраняется в IndexedDB с уникальным ID
+2. **После каждого хода** - состояние игры обновляется в базе данных:
+   - Состояние игрового поля (расположение мин и чисел)
+   - Состояние видимых ячеек (открытые, отмеченные, закрытые)
+   - Количество открытых ячеек
+   - Статус игры (активна, победа, проигрыш)
+3. **Каждый ход записывается отдельно** в таблицу `moves`:
+   - Номер хода в игре
+   - Координаты ячейки
+   - Тип действия (открыть/отметить)
+   - Результат хода
+
+### Структура данных в IndexedDB
+
+#### Таблица `games`
+Хранит информацию о каждой игре:
+- `id` - уникальный идентификатор игры (автоинкремент)
+- `player_name` - имя игрока
+- `rows`, `cols`, `mines` - параметры игрового поля
+- `board_state` - JSON-сериализованное состояние игрового поля (расположение мин и чисел)
+- `visible_state` - JSON-сериализованное состояние видимых ячеек
+- `game_over` - флаг окончания игры (проигрыш)
+- `game_won` - флаг победы
+- `opened_cells` - количество открытых ячеек
+- `created_at` - дата и время создания игры (ISO строка)
+- `updated_at` - дата и время последнего обновления (ISO строка)
+
+#### Таблица `moves`
+Хранит историю всех ходов:
+- `id` - уникальный идентификатор хода (автоинкремент)
+- `game_id` - ссылка на игру
+- `move_number` - порядковый номер хода в игре
+- `row`, `col` - координаты ячейки (начиная с 0)
+- `action` - тип действия: `'open'` (открыть) или `'flag'` (отметить)
+- `result` - результат хода: `'мины нет'`, `'взорвался'`, `'выиграл'`, `'отмечена'`
+- `created_at` - дата и время хода (ISO строка)
+
+### Воспроизведение партий
+
+Воспроизведение позволяет просмотреть любую завершенную или активную игру:
+
+1. **Доступ к воспроизведению**:
+   - Через ссылку "Список игр" на главной странице или в игровом экране
+   - Через ссылку "Воспроизвести эту игру" после завершения текущей игры
+   - Выбор игры из списка и нажатие кнопки "Воспроизвести"
+
+2. **Что показывается при воспроизведении**:
+   - Финальное состояние игрового поля (все открытые ячейки, мины, флаги)
+   - Полная история ходов в хронологическом порядке
+   - Информация об игре (игрок, размеры, статус)
+
+3. **Продолжение незавершенных игр**:
+   - Незавершенные игры можно продолжить через кнопку "Продолжить" в списке игр
+   - Игра загружается с сохраненным состоянием
+   - Можно продолжить играть с того места, где остановились
+
+### Разделение кода
+
+Проект следует принципу разделения ответственности:
+
+- **Database.js** - низкоуровневая работа с IndexedDB (получение, изменение, сохранение данных)
+- **GameRepository.js** - бизнес-логика работы с играми (сериализация/десериализация, работа с ходами)
+- **View.js** - визуализация данных (отображение интерфейса, форматирование)
+- **Controller.js** - координация между компонентами (обработка событий, управление потоком)
+
+Код для получения, изменения и сохранения данных полностью отделен от кода визуализации.
+
+## Технологии
+
+- **JavaScript (ES6)** - основной язык программирования
+- **IndexedDB** - локальная NoSQL база данных для хранения игр и ходов
+- **HTML5/CSS3** - интерфейс пользователя
+- **Модульная архитектура** - разделение на логические модули
+
+## Отличия от PHP версии
+
+- **Интерфейс**: графический интерфейс вместо консольного
+- **База данных**: IndexedDB вместо SQLite
+- **Взаимодействие**: клики мышью вместо ввода команд
+- **Среда**: браузер вместо командной строки
+--------------------------------------------------
+Total ok: 1
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/401_DBAppTech_Tyurin_MS
+Solution to the task07
+Task from branch: Task07
+Creation date: 12/01/2025 19:33:54
+To github.com-mrsu:andpop-mrsu/401_DBAppTech_Tyurin_MS.git
+To github.com-mrsu:andpop-mrsu/401_DBAppTech_Tyurin_MS.git
+   c018113..c73c35d  master -> master
+   c018113..c73c35d  master -> master
 401_DBAppTech_Yunusov_AR
 402_DBAppTech_Baranov_EA
 402_DBAppTech_Borcov_ID
@@ -36,9 +275,84 @@ Transcript started, output file is log.txt
 402_DBAppTech_Simonov_AP
 402_DBAppTech_Sokolov_RV
 402_DBAppTech_Tenishev_RR
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Tenishev_RR
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Tenishev_RR
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Tenishev_RR
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   f882d9d..25993be  master     -> teacher/master
+   f882d9d..25993be  master     -> teacher/master
+Обновление f882d9d..25993be
+Fast-forward
+ task08.md |  4 ----
+ task09.md | 62 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 62 insertions(+), 4 deletions(-)
+ create mode 100644 task09.md
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/tenishevR/402_DBAppTech_Tenishev_RR
+Из https://github.com/tenishevR/402_DBAppTech_Tenishev_RR
+ * [новая ветка]     Task08     -> student/Task08
+ * [новая ветка]     Task08     -> student/Task08
+   0e6bfdc..25993be  master     -> student/master
+   0e6bfdc..25993be  master     -> student/master
+Merge made by the 'recursive' strategy.
+ Task08/.gitignore                   |  14 ++
+ Task08/README.MD                    |  56 +++++
+ Task08/composer.json                |   6 +
+ Task08/db/games.db                  | Bin 0 -> 12288 bytes
+ Task08/public/api.php               | 119 +++++++++++
+ Task08/public/index.html            |  66 ++++++
+ Task08/public/src/app.js            | 299 ++++++++++++++++++++++++++
+ Task08/public/src/board.js          |  26 +++
+ Task08/public/src/computerPlayer.js |  12 ++
+ Task08/public/src/game.js           |  61 ++++++
+ Task08/public/src/humanPlayer.js    |   6 +
+ Task08/public/src/player.js         |   6 +
+ Task08/public/styles.css            | 411 ++++++++++++++++++++++++++++++++++++
+ 13 files changed, 1082 insertions(+)
+ create mode 100644 Task08/.gitignore
+ create mode 100644 Task08/README.MD
+ create mode 100644 Task08/composer.json
+ create mode 100644 Task08/db/games.db
+ create mode 100644 Task08/public/api.php
+ create mode 100644 Task08/public/index.html
+ create mode 100644 Task08/public/src/app.js
+ create mode 100644 Task08/public/src/board.js
+ create mode 100644 Task08/public/src/computerPlayer.js
+ create mode 100644 Task08/public/src/game.js
+ create mode 100644 Task08/public/src/humanPlayer.js
+ create mode 100644 Task08/public/src/player.js
+ create mode 100644 Task08/public/styles.css
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Tenishev_RR/Task08
+--------------------------------------------------
+Check path: composer.json
+{
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^4.0",
+        "friendsofphp/php-cs-fixer": "^3.91"
+    }
+}
+--------------------------------------------------
+Check path: README.md
+README.md not found
+--------------------------------------------------
+Total ok: 1
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/402_DBAppTech_Tenishev_RR
+Task08
+Task from branch: Task08
+Creation date: 12/01/2025 17:34:41
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Tenishev_RR.git
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Tenishev_RR.git
+   25993be..f02c591  master -> master
+   25993be..f02c591  master -> master
 402_DBAppTech_Urenkov_YuYu
 402_DBAppTech_Votyakov_MA
 **********************
 PowerShell transcript end
-End time: 20251111222245
+End time: 20251202114446
 **********************

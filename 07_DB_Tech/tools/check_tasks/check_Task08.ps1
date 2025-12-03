@@ -9,9 +9,8 @@ function Check-Task {
 
     $doneChecks = $failureChecks = 0
 
-    if (Check-Path -Path db_init.sql) { $doneChecks++ } else { $failureChecks++ }
-    if (Check-Path -Path ER.jpg) { $doneChecks++ } else { $failureChecks++ }
-    if (Check-Path -Path db_schema.jpg) { $doneChecks++ } else { $failureChecks++ }
+    if (Check-Path -Path task8_cli.php) { $doneChecks++ } else { $failureChecks++ }
+    if (Check-Path -Path index.php) { $doneChecks++ } else { $failureChecks++ }
 
     Write-DelimiterString
     Write-Host "Total ok: $doneChecks" -ForegroundColor green
