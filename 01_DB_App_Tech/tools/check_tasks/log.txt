@@ -1,22 +1,1631 @@
 **********************
 PowerShell transcript start
-Start time: 20251214111101
+Start time: 20251222101109
 **********************
 Transcript started, output file is log.txt
 401_DBAppTech_Abdrashitov_SA
-401_DBAppTech_Balyaev_DS
 =====================================================
-/home/andrey/labs/DBAppTech/401_DBAppTech_Balyaev_DS
-Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Balyaev_DS
-Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Balyaev_DS
+/home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-Уже актуально.
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Уже актуально.
+   663fd3d..84cccfa  master     -> teacher/master
+   663fd3d..84cccfa  master     -> teacher/master
+Обновление 663fd3d..84cccfa
+Fast-forward
+ task07.md | 27 +++++++++++++++++++++++++++
+ task08.md | 40 ++++++++++++++++++++++++++++++++++++++++
+ task09.md | 62 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 129 insertions(+)
+ create mode 100644 task07.md
+ create mode 100644 task08.md
+ create mode 100644 task09.md
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/Kitsu185/401_DBAppTech_Abdrashitov_SA
+Из https://github.com/Kitsu185/401_DBAppTech_Abdrashitov_SA
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     Task08     -> student/Task08
+ * [новая ветка]     Task08     -> student/Task08
+ * [новая ветка]     Task09     -> student/Task09
+ * [новая ветка]     Task09     -> student/Task09
+Merge made by the 'recursive' strategy.
+ Task09/.gitignore                   |  14 ++
+ Task09/README.MD                    |  67 ++++++
+ Task09/composer.json                |   7 +
+ Task09/db/games.db                  | Bin 0 -> 20480 bytes
+ Task09/public/index.html            |  59 ++++++
+ Task09/public/index.php             | 130 ++++++++++++
+ Task09/public/src/app.js            | 299 ++++++++++++++++++++++++++
+ Task09/public/src/board.js          |  26 +++
+ Task09/public/src/computerPlayer.js |  12 ++
+ Task09/public/src/game.js           |  61 ++++++
+ Task09/public/src/humanPlayer.js    |   6 +
+ Task09/public/src/player.js         |   6 +
+ Task09/public/styles.css            | 411 ++++++++++++++++++++++++++++++++++++
+ 13 files changed, 1098 insertions(+)
+ create mode 100644 Task09/.gitignore
+ create mode 100644 Task09/README.MD
+ create mode 100644 Task09/composer.json
+ create mode 100644 Task09/db/games.db
+ create mode 100644 Task09/public/index.html
+ create mode 100644 Task09/public/index.php
+ create mode 100644 Task09/public/src/app.js
+ create mode 100644 Task09/public/src/board.js
+ create mode 100644 Task09/public/src/computerPlayer.js
+ create mode 100644 Task09/public/src/game.js
+ create mode 100644 Task09/public/src/humanPlayer.js
+ create mode 100644 Task09/public/src/player.js
+ create mode 100644 Task09/public/styles.css
 --------------------------------------------------
-Task:  /home/andrey/labs/DBAppTech/401_DBAppTech_Balyaev_DS/Task09
+Task:  /home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA/Task09
+--------------------------------------------------
+Check path: composer.json
+{
+    "require": {
+        "slim/slim": "^4.15",
+        "slim/psr7": "^1.8",
+        "slim/http": "^0.4.0"
+    }
+}
+--------------------------------------------------
+Check path: README.md
+README.md not found
+--------------------------------------------------
+Total ok: 1
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA
+did Task09
+Task from branch: Task09
+Creation date: 12/21/2025 22:52:03
+To github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA.git
+To github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA.git
+   84cccfa..e7af389  master -> master
+   84cccfa..e7af389  master -> master
+=====================================================
+/home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Merge made by the 'recursive' strategy.
+ Task08/.gitignore                   |  14 ++
+ Task08/README.MD                    |  56 +++++
+ Task08/composer.json                |   6 +
+ Task08/db/games.db                  | Bin 0 -> 12288 bytes
+ Task08/public/api.php               | 119 +++++++++++
+ Task08/public/index.html            |  66 ++++++
+ Task08/public/src/app.js            | 299 ++++++++++++++++++++++++++
+ Task08/public/src/board.js          |  26 +++
+ Task08/public/src/computerPlayer.js |  12 ++
+ Task08/public/src/game.js           |  61 ++++++
+ Task08/public/src/humanPlayer.js    |   6 +
+ Task08/public/src/player.js         |   6 +
+ Task08/public/styles.css            | 411 ++++++++++++++++++++++++++++++++++++
+ 13 files changed, 1082 insertions(+)
+ create mode 100644 Task08/.gitignore
+ create mode 100644 Task08/README.MD
+ create mode 100644 Task08/composer.json
+ create mode 100644 Task08/db/games.db
+ create mode 100644 Task08/public/api.php
+ create mode 100644 Task08/public/index.html
+ create mode 100644 Task08/public/src/app.js
+ create mode 100644 Task08/public/src/board.js
+ create mode 100644 Task08/public/src/computerPlayer.js
+ create mode 100644 Task08/public/src/game.js
+ create mode 100644 Task08/public/src/humanPlayer.js
+ create mode 100644 Task08/public/src/player.js
+ create mode 100644 Task08/public/styles.css
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA/Task08
+--------------------------------------------------
+Check path: composer.json
+{
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^4.0",
+        "friendsofphp/php-cs-fixer": "^3.91"
+    }
+}
+--------------------------------------------------
+Check path: README.md
+README.md not found
+--------------------------------------------------
+Total ok: 1
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA
+did Task08
+Task from branch: Task08
+Creation date: 12/21/2025 22:51:33
+To github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA.git
+To github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA.git
+   e7af389..76a23ad  master -> master
+   e7af389..76a23ad  master -> master
+=====================================================
+/home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Merge made by the 'recursive' strategy.
+ Task07/README.md                             |  38 +++
+ Task07/tic-tac-toe-web/index.html            |  66 +++++
+ Task07/tic-tac-toe-web/src/app.js            | 267 +++++++++++++++++
+ Task07/tic-tac-toe-web/src/board.js          |  26 ++
+ Task07/tic-tac-toe-web/src/computerPlayer.js |  12 +
+ Task07/tic-tac-toe-web/src/db.js             |  60 ++++
+ Task07/tic-tac-toe-web/src/game.js           |  61 ++++
+ Task07/tic-tac-toe-web/src/humanPlayer.js    |   6 +
+ Task07/tic-tac-toe-web/src/player.js         |   6 +
+ Task07/tic-tac-toe-web/styles.css            | 411 +++++++++++++++++++++++++++
+ 10 files changed, 953 insertions(+)
+ create mode 100644 Task07/README.md
+ create mode 100644 Task07/tic-tac-toe-web/index.html
+ create mode 100644 Task07/tic-tac-toe-web/src/app.js
+ create mode 100644 Task07/tic-tac-toe-web/src/board.js
+ create mode 100644 Task07/tic-tac-toe-web/src/computerPlayer.js
+ create mode 100644 Task07/tic-tac-toe-web/src/db.js
+ create mode 100644 Task07/tic-tac-toe-web/src/game.js
+ create mode 100644 Task07/tic-tac-toe-web/src/humanPlayer.js
+ create mode 100644 Task07/tic-tac-toe-web/src/player.js
+ create mode 100644 Task07/tic-tac-toe-web/styles.css
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA/Task07
+There are no game folder
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA
+did Task07
+Task from branch: Task07
+Creation date: 12/21/2025 22:51:16
+To github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA.git
+To github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA.git
+   76a23ad..df37edf  master -> master
+   76a23ad..df37edf  master -> master
+=====================================================
+/home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Merge made by the 'recursive' strategy.
+ Task06/README.md                             |  38 +++++
+ Task06/tic-tac-toe-web/index.html            |  45 ++++++
+ Task06/tic-tac-toe-web/src/app.js            | 205 +++++++++++++++++++++++++++
+ Task06/tic-tac-toe-web/src/board.js          |  26 ++++
+ Task06/tic-tac-toe-web/src/computerPlayer.js |  12 ++
+ Task06/tic-tac-toe-web/src/db.js             |  60 ++++++++
+ Task06/tic-tac-toe-web/src/game.js           |  61 ++++++++
+ Task06/tic-tac-toe-web/src/humanPlayer.js    |   6 +
+ Task06/tic-tac-toe-web/src/player.js         |   6 +
+ Task06/tic-tac-toe-web/styles.css            |   9 ++
+ 10 files changed, 468 insertions(+)
+ create mode 100644 Task06/README.md
+ create mode 100644 Task06/tic-tac-toe-web/index.html
+ create mode 100644 Task06/tic-tac-toe-web/src/app.js
+ create mode 100644 Task06/tic-tac-toe-web/src/board.js
+ create mode 100644 Task06/tic-tac-toe-web/src/computerPlayer.js
+ create mode 100644 Task06/tic-tac-toe-web/src/db.js
+ create mode 100644 Task06/tic-tac-toe-web/src/game.js
+ create mode 100644 Task06/tic-tac-toe-web/src/humanPlayer.js
+ create mode 100644 Task06/tic-tac-toe-web/src/player.js
+ create mode 100644 Task06/tic-tac-toe-web/styles.css
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA/Task06
+There are no game folder
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA
+did Task06
+Task from branch: Task06
+Creation date: 12/21/2025 22:50:26
+To github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA.git
+To github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA.git
+   df37edf..835cd56  master -> master
+   df37edf..835cd56  master -> master
+=====================================================
+/home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Merge made by the 'recursive' strategy.
+ Task05/tic-tac-toe/.gitignore              |  14 +++
+ Task05/tic-tac-toe/README.md               | 104 ++++++++++++++++++
+ Task05/tic-tac-toe/bin/tic-tac-toe         |   6 +
+ Task05/tic-tac-toe/composer.json           |  24 ++++
+ Task05/tic-tac-toe/data/tic_tac_toe.sqlite | Bin 0 -> 20480 bytes
+ Task05/tic-tac-toe/src/Board.php           |  59 ++++++++++
+ Task05/tic-tac-toe/src/CliApp.php          | 170 +++++++++++++++++++++++++++++
+ Task05/tic-tac-toe/src/ComputerPlayer.php  |  21 ++++
+ Task05/tic-tac-toe/src/Database.php        |  90 +++++++++++++++
+ Task05/tic-tac-toe/src/Game.php            | 104 ++++++++++++++++++
+ Task05/tic-tac-toe/src/HumanPlayer.php     |  26 +++++
+ Task05/tic-tac-toe/src/Player.php          |  20 ++++
+ 12 files changed, 638 insertions(+)
+ create mode 100644 Task05/tic-tac-toe/.gitignore
+ create mode 100644 Task05/tic-tac-toe/README.md
+ create mode 100644 Task05/tic-tac-toe/bin/tic-tac-toe
+ create mode 100644 Task05/tic-tac-toe/composer.json
+ create mode 100644 Task05/tic-tac-toe/data/tic_tac_toe.sqlite
+ create mode 100644 Task05/tic-tac-toe/src/Board.php
+ create mode 100644 Task05/tic-tac-toe/src/CliApp.php
+ create mode 100644 Task05/tic-tac-toe/src/ComputerPlayer.php
+ create mode 100644 Task05/tic-tac-toe/src/Database.php
+ create mode 100644 Task05/tic-tac-toe/src/Game.php
+ create mode 100644 Task05/tic-tac-toe/src/HumanPlayer.php
+ create mode 100644 Task05/tic-tac-toe/src/Player.php
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA/Task05
+--------------------------------------------------
+Check path: README.md
+# Task02 — Игра "Крестики-нолики"
+
+## Описание проекта
+Программа для консольной игры **Крестики-нолики** (tic-tac-toe) с компьютером. Размер поля можно выбрать от 3x3 до 10x10.
+
+---
+
+### Правила игры
+- Всегда начинают крестики.  
+- Кем играет человек — определяется случайным образом. 
+- Игрок и компьютер по очереди делают ходы, пока не появится победитель или не заполнится всё поле.
+- После окончания игры результат сохраняется в базе данных SQLite.  
+- Для каждой партии сохраняется:
+  - размер поля;
+  - дата игры;
+  - имя игрока;
+  - фигура, которой играет человек (крестики или нолики);
+  - победитель;
+  - запись всех ходов (номер хода | координата X | координата O). 
+- Игра продолжается, пока число не будет угадано.  
+
+---
+
+### Режимы работы программы
+1. Начать новую игру.  
+2. Список всех сохранённых партий. 
+3. Повтор любой сохранённой партии (показ всех ходов). 
+4. Выход.  
+
+#### Поддерживаются следующие параметры командной строки:
+- --new, -n — начать новую игру (режим по умолчанию).
+
+- --list, -l — список всех сохранённых партий (не реализовано, выводится сообщение).
+
+- --replay <id>, -r <id> — повтор сохранённой партии (не реализовано, выводится сообщение).
+
+- --help, -h — показать справку по командам.
+
+#### Параметры запуска
+Новая игра:
+```bash
+php bin/tic-tac-toe --new
+```
+
+или короче:
+```bash
+tic-tac-toe -n
+```
+
+Показать справку:
+```bash
+php bin/tic-tac-toe --help
+```
+
+Попробовать вывести список игр:
+```bash
+php bin/tic-tac-toe --list
+```
+
+#### Формат ввода координат
+Ход указывается в виде двух чисел:
+```bash
+строка столбец
+```
+Например, чтобы походить в центр на поле 3x3, нужно ввести:
+```bash
+2 2
+```
+
+Строки и столбцы нумеруются с 1.
+---
+
+
+## Требования
+- **PHP** >= 8.0 (CLI-режим)  
+- **Composer** (глобально установленный)  
+- **SQLite** (для хранения данных игры)  
+
+---
+
+## Установка и запуск
+
+### 1. Клонировать репозиторий:
+```bash
+git clone https://github.com/kitsu185/tic-tac-toe.git
+cd tic-tac-toe
+```
+
+### 2. Установить зависимости:
+```bash
+composer install
+```
+
+### 3. Сгенерировать автозагрузку:
+```bash
+composer dump-autoload -o
+```
+
+### 4. Запустить игру:
+```bash
+
+### Проект на Packagist
+https://packagist.org/packages/kitsu185/tic-tac-toe
+```
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "kitsu185/tic-tac-toe",
+    "description": "TicTacToe console game (Task03)",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "kitsu185\\TicTacToe\\": "src/"
+        },
+        "files": [
+            "vendor/gabordemooij/redbean/RedBeanPHP/R.php"
+        ]
+    },
+    "bin": [
+        "bin/tic-tac-toe"
+    ],
+    "require": {
+        "php": ">=8.0",
+        "wp-cli/php-cli-tools": "^0.12.6",
+        "gabordemooij/redbean": "^5.7"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^4.0"
+    }
+}
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+FILE: /home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA/Task05/tic-tac-toe/src/HumanPlayer.php
+-----------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+-----------------------------------------------------------------------------------------------------
+ 20 | WARNING | Line exceeds 120 characters; contains 132 characters
+-----------------------------------------------------------------------------------------------------
+
+Time: 110ms; Memory: 6MB
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA
+did Task05
+Task from branch: Task05
+Creation date: 12/21/2025 22:49:58
+To github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA.git
+To github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA.git
+   835cd56..664309c  master -> master
+   835cd56..664309c  master -> master
+=====================================================
+/home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Merge made by the 'recursive' strategy.
+ Task04/tic-tac-toe/.gitignore              |  14 +++
+ Task04/tic-tac-toe/README.md               | 104 ++++++++++++++++++
+ Task04/tic-tac-toe/bin/tic-tac-toe         |   6 +
+ Task04/tic-tac-toe/composer.json           |  20 ++++
+ Task04/tic-tac-toe/data/tic_tac_toe.sqlite | Bin 0 -> 16384 bytes
+ Task04/tic-tac-toe/src/Board.php           |  59 ++++++++++
+ Task04/tic-tac-toe/src/CliApp.php          | 170 +++++++++++++++++++++++++++++
+ Task04/tic-tac-toe/src/ComputerPlayer.php  |  21 ++++
+ Task04/tic-tac-toe/src/Database.php        |  74 +++++++++++++
+ Task04/tic-tac-toe/src/Game.php            | 104 ++++++++++++++++++
+ Task04/tic-tac-toe/src/HumanPlayer.php     |  26 +++++
+ Task04/tic-tac-toe/src/Player.php          |  20 ++++
+ 12 files changed, 618 insertions(+)
+ create mode 100644 Task04/tic-tac-toe/.gitignore
+ create mode 100644 Task04/tic-tac-toe/README.md
+ create mode 100644 Task04/tic-tac-toe/bin/tic-tac-toe
+ create mode 100644 Task04/tic-tac-toe/composer.json
+ create mode 100644 Task04/tic-tac-toe/data/tic_tac_toe.sqlite
+ create mode 100644 Task04/tic-tac-toe/src/Board.php
+ create mode 100644 Task04/tic-tac-toe/src/CliApp.php
+ create mode 100644 Task04/tic-tac-toe/src/ComputerPlayer.php
+ create mode 100644 Task04/tic-tac-toe/src/Database.php
+ create mode 100644 Task04/tic-tac-toe/src/Game.php
+ create mode 100644 Task04/tic-tac-toe/src/HumanPlayer.php
+ create mode 100644 Task04/tic-tac-toe/src/Player.php
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA/Task04
+--------------------------------------------------
+Check path: README.md
+# Task02 — Игра "Крестики-нолики"
+
+## Описание проекта
+Программа для консольной игры **Крестики-нолики** (tic-tac-toe) с компьютером. Размер поля можно выбрать от 3x3 до 10x10.
+
+---
+
+### Правила игры
+- Всегда начинают крестики.  
+- Кем играет человек — определяется случайным образом. 
+- Игрок и компьютер по очереди делают ходы, пока не появится победитель или не заполнится всё поле.
+- После окончания игры результат сохраняется в базе данных SQLite.  
+- Для каждой партии сохраняется:
+  - размер поля;
+  - дата игры;
+  - имя игрока;
+  - фигура, которой играет человек (крестики или нолики);
+  - победитель;
+  - запись всех ходов (номер хода | координата X | координата O). 
+- Игра продолжается, пока число не будет угадано.  
+
+---
+
+### Режимы работы программы
+1. Начать новую игру.  
+2. Список всех сохранённых партий. 
+3. Повтор любой сохранённой партии (показ всех ходов). 
+4. Выход.  
+
+#### Поддерживаются следующие параметры командной строки:
+- --new, -n — начать новую игру (режим по умолчанию).
+
+- --list, -l — список всех сохранённых партий (не реализовано, выводится сообщение).
+
+- --replay <id>, -r <id> — повтор сохранённой партии (не реализовано, выводится сообщение).
+
+- --help, -h — показать справку по командам.
+
+#### Параметры запуска
+Новая игра:
+```bash
+php bin/tic-tac-toe --new
+```
+
+или короче:
+```bash
+tic-tac-toe -n
+```
+
+Показать справку:
+```bash
+php bin/tic-tac-toe --help
+```
+
+Попробовать вывести список игр:
+```bash
+php bin/tic-tac-toe --list
+```
+
+#### Формат ввода координат
+Ход указывается в виде двух чисел:
+```bash
+строка столбец
+```
+Например, чтобы походить в центр на поле 3x3, нужно ввести:
+```bash
+2 2
+```
+
+Строки и столбцы нумеруются с 1.
+---
+
+
+## Требования
+- **PHP** >= 8.0 (CLI-режим)  
+- **Composer** (глобально установленный)  
+- **SQLite** (для хранения данных игры)  
+
+---
+
+## Установка и запуск
+
+### 1. Клонировать репозиторий:
+```bash
+git clone https://github.com/kitsu185/tic-tac-toe.git
+cd tic-tac-toe
+```
+
+### 2. Установить зависимости:
+```bash
+composer install
+```
+
+### 3. Сгенерировать автозагрузку:
+```bash
+composer dump-autoload -o
+```
+
+### 4. Запустить игру:
+```bash
+
+### Проект на Packagist
+https://packagist.org/packages/kitsu185/tic-tac-toe
+```
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "kitsu185/tic-tac-toe",
+    "description": "TicTacToe console game (Task03)",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "kitsu185\\TicTacToe\\": "src/"
+        }
+    },
+    "bin": [
+        "bin/tic-tac-toe"
+    ],
+    "require": {
+        "php": ">=8.0",
+        "wp-cli/php-cli-tools": "^0.12.6"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^4.0"
+    }
+}
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+FILE: /home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA/Task04/tic-tac-toe/src/HumanPlayer.php
+-----------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+-----------------------------------------------------------------------------------------------------
+ 20 | WARNING | Line exceeds 120 characters; contains 132 characters
+-----------------------------------------------------------------------------------------------------
+
+Time: 58ms; Memory: 6MB
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA
+did Task04
+Task from branch: Task04
+Creation date: 12/21/2025 22:49:20
+To github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA.git
+To github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA.git
+   664309c..be80bab  master -> master
+   664309c..be80bab  master -> master
+=====================================================
+/home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Merge made by the 'recursive' strategy.
+ Task03/tic-tac-toe/.gitignore             |  14 ++++
+ Task03/tic-tac-toe/README.md              | 104 ++++++++++++++++++++++++++++++
+ Task03/tic-tac-toe/bin/tic-tac-toe        |   6 ++
+ Task03/tic-tac-toe/composer.json          |  20 ++++++
+ Task03/tic-tac-toe/src/Board.php          |  58 +++++++++++++++++
+ Task03/tic-tac-toe/src/CliApp.php         |  57 ++++++++++++++++
+ Task03/tic-tac-toe/src/ComputerPlayer.php |  21 ++++++
+ Task03/tic-tac-toe/src/Game.php           |  92 ++++++++++++++++++++++++++
+ Task03/tic-tac-toe/src/HumanPlayer.php    |  26 ++++++++
+ Task03/tic-tac-toe/src/Player.php         |  20 ++++++
+ 10 files changed, 418 insertions(+)
+ create mode 100644 Task03/tic-tac-toe/.gitignore
+ create mode 100644 Task03/tic-tac-toe/README.md
+ create mode 100644 Task03/tic-tac-toe/bin/tic-tac-toe
+ create mode 100644 Task03/tic-tac-toe/composer.json
+ create mode 100644 Task03/tic-tac-toe/src/Board.php
+ create mode 100644 Task03/tic-tac-toe/src/CliApp.php
+ create mode 100644 Task03/tic-tac-toe/src/ComputerPlayer.php
+ create mode 100644 Task03/tic-tac-toe/src/Game.php
+ create mode 100644 Task03/tic-tac-toe/src/HumanPlayer.php
+ create mode 100644 Task03/tic-tac-toe/src/Player.php
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA/Task03
+--------------------------------------------------
+Check path: README.md
+# Task02 — Игра "Крестики-нолики"
+
+## Описание проекта
+Программа для консольной игры **Крестики-нолики** (tic-tac-toe) с компьютером. Размер поля можно выбрать от 3x3 до 10x10.
+
+---
+
+### Правила игры
+- Всегда начинают крестики.  
+- Кем играет человек — определяется случайным образом. 
+- Игрок и компьютер по очереди делают ходы, пока не появится победитель или не заполнится всё поле.
+- После окончания игры результат сохраняется в базе данных SQLite.  
+- Для каждой партии сохраняется:
+  - размер поля;
+  - дата игры;
+  - имя игрока;
+  - фигура, которой играет человек (крестики или нолики);
+  - победитель;
+  - запись всех ходов (номер хода | координата X | координата O). 
+- Игра продолжается, пока число не будет угадано.  
+
+---
+
+### Режимы работы программы
+1. Начать новую игру.  
+2. Список всех сохранённых партий. 
+3. Повтор любой сохранённой партии (показ всех ходов). 
+4. Выход.  
+
+#### Поддерживаются следующие параметры командной строки:
+- --new, -n — начать новую игру (режим по умолчанию).
+
+- --list, -l — список всех сохранённых партий (не реализовано, выводится сообщение).
+
+- --replay <id>, -r <id> — повтор сохранённой партии (не реализовано, выводится сообщение).
+
+- --help, -h — показать справку по командам.
+
+#### Параметры запуска
+Новая игра:
+```bash
+php bin/tic-tac-toe --new
+```
+
+или короче:
+```bash
+tic-tac-toe -n
+```
+
+Показать справку:
+```bash
+php bin/tic-tac-toe --help
+```
+
+Попробовать вывести список игр:
+```bash
+php bin/tic-tac-toe --list
+```
+
+#### Формат ввода координат
+Ход указывается в виде двух чисел:
+```bash
+строка столбец
+```
+Например, чтобы походить в центр на поле 3x3, нужно ввести:
+```bash
+2 2
+```
+
+Строки и столбцы нумеруются с 1.
+---
+
+
+## Требования
+- **PHP** >= 8.0 (CLI-режим)  
+- **Composer** (глобально установленный)  
+- **SQLite** (для хранения данных игры)  
+
+---
+
+## Установка и запуск
+
+### 1. Клонировать репозиторий:
+```bash
+git clone https://github.com/kitsu185/tic-tac-toe.git
+cd tic-tac-toe
+```
+
+### 2. Установить зависимости:
+```bash
+composer install
+```
+
+### 3. Сгенерировать автозагрузку:
+```bash
+composer dump-autoload -o
+```
+
+### 4. Запустить игру:
+```bash
+
+### Проект на Packagist
+https://packagist.org/packages/kitsu185/tic-tac-toe
+```
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "kitsu185/tic-tac-toe",
+    "description": "TicTacToe console game (Task03)",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "kitsu185\\TicTacToe\\": "src/"
+        }
+    },
+    "bin": [
+        "bin/tic-tac-toe"
+    ],
+    "require": {
+        "php": ">=8.0",
+        "wp-cli/php-cli-tools": "^0.12.6"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^4.0"
+    }
+}
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+FILE: /home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA/Task03/tic-tac-toe/src/HumanPlayer.php
+-----------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+-----------------------------------------------------------------------------------------------------
+ 20 | WARNING | Line exceeds 120 characters; contains 132 characters
+-----------------------------------------------------------------------------------------------------
+
+Time: 46ms; Memory: 6MB
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA
+did Task03
+Task from branch: Task03
+Creation date: 12/21/2025 22:48:49
+To github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA.git
+To github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA.git
+   be80bab..d7e8b27  master -> master
+   be80bab..d7e8b27  master -> master
+=====================================================
+/home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Merge made by the 'recursive' strategy.
+ Task02/tic-tac-toe/.gitignore          | 14 ++++++++
+ Task02/tic-tac-toe/README.md           | 62 ++++++++++++++++++++++++++++++++++
+ Task02/tic-tac-toe/bin/tic-tac-toe.php |  5 +++
+ Task02/tic-tac-toe/composer.json       | 25 ++++++++++++++
+ Task02/tic-tac-toe/src/Controller.php  |  8 +++++
+ Task02/tic-tac-toe/src/View.php        | 23 +++++++++++++
+ 6 files changed, 137 insertions(+)
+ create mode 100644 Task02/tic-tac-toe/.gitignore
+ create mode 100644 Task02/tic-tac-toe/README.md
+ create mode 100644 Task02/tic-tac-toe/bin/tic-tac-toe.php
+ create mode 100644 Task02/tic-tac-toe/composer.json
+ create mode 100644 Task02/tic-tac-toe/src/Controller.php
+ create mode 100644 Task02/tic-tac-toe/src/View.php
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA/Task02
+--------------------------------------------------
+Check path: README.md
+# Task02 — Игра "Крестики-нолики"
+
+## Описание проекта
+Программа для консольной игры **Крестики-нолики** (tic-tac-toe) с компьютером. Размер поля можно выбрать от 3x3 до 10x10.
+
+---
+
+### Правила игры
+- Всегда начинают крестики.  
+- Кем играет человек — определяется случайным образом. 
+- Игрок и компьютер по очереди делают ходы, пока не появится победитель или не заполнится всё поле.
+- После окончания игры результат сохраняется в базе данных SQLite.  
+- Для каждой партии сохраняется:
+  - размер поля;
+  - дата игры;
+  - имя игрока;
+  - фигура, которой играет человек (крестики или нолики);
+  - победитель;
+  - запись всех ходов (номер хода | координата X | координата O). 
+- Игра продолжается, пока число не будет угадано.  
+
+---
+
+### Режимы работы программы
+1. Начать новую игру.  
+2. Список всех сохранённых партий. 
+3. Повтор любой сохранённой партии (показ всех ходов). 
+4. Выход.  
+
+---
+
+## Требования
+- **PHP** >= 8.0 (CLI-режим)  
+- **Composer** (глобально установленный)  
+- **SQLite** (для хранения данных игры)  
+
+---
+
+## Установка и запуск
+
+### 1. Клонировать репозиторий:
+```bash
+git clone https://github.com/kitsu185/tic-tac-toe.git
+cd tic-tac-toe
+```
+
+### 2. Установить зависимости:
+```bash
+composer install
+```
+
+### 3. Сгенерировать автозагрузку:
+```bash
+composer dump-autoload -o
+```
+
+### 4. Запустить игру:
+```bash
+
+### Проект на Packagist
+https://packagist.org/packages/kitsu185/tic-tac-toe
+```
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "kitsu185/tic-tac-toe",
+    "description": "TicTacToe",
+    "type": "project",
+    "bin": [
+        "bin/tic-tac-toe"
+    ],
+    "autoload": {
+        "psr-4": {
+            "kitsu185\\TicTacToe\\": "src/"
+        },
+        "files": [
+        "src/Controller.php",
+        "src/View.php"
+    ]
+    },
+    "authors": [
+        {
+            "name": "kitsu185"
+        }
+    ],
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.6"
+    }
+}
+--------------------------------------------------
+Check path: src/Controller.php
+<?php
+namespace kitsu185\TicTacToe\Controller;
+
+use kitsu185\TicTacToe\View\View;
+
+function startGame() {
+    View::renderStartScreen();
+}
+--------------------------------------------------
+Check path: src/View.php
+<?php
+namespace kitsu185\TicTacToe\View;
+
+class View {
+    public static function renderStartScreen() {
+        if (function_exists('\cli\line')) {
+            \cli\line("=== Игра 'Крестики-нолики' ===");
+            \cli\line("Меню:");
+            \cli\line("1) Начать новую игру");
+            \cli\line("2) Список сохранённых партий");
+            \cli\line("3) Повтор партии");
+            \cli\line("4) Выход");
+            \cli\line("");
+        } else {
+            echo "=== Игра 'Крестики-нолики' ===\n";
+            echo "Меню:\n";
+            echo "1) Начать новую игру\n";
+            echo "2) Список сохранённых партий\n";
+            echo "3) Повтор партии\n";
+            echo "4) Выход\n\n";
+        }
+    }
+}
+--------------------------------------------------
+Total ok: 4
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/401_DBAppTech_Abdrashitov_SA
+did Task02
+Task from branch: Task02
+Creation date: 12/21/2025 22:46:35
+To github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA.git
+To github.com-mrsu:andpop-mrsu/401_DBAppTech_Abdrashitov_SA.git
+   d7e8b27..95bb5d4  master -> master
+   d7e8b27..95bb5d4  master -> master
+401_DBAppTech_Balyaev_DS
+401_DBAppTech_Belokosov_MD
+401_DBAppTech_Bikchurin_ESH
+401_DBAppTech_Dubrovskaya_YUV
+401_DBAppTech_Fajzullin_IR
+401_DBAppTech_Frolov_AV
+401_DBAppTech_Kelmyashkin_DV
+401_DBAppTech_Klimentev_AA
+401_DBAppTech_Klyuchkina_EV
+401_DBAppTech_Korpachan_NV
+=====================================================
+/home/andrey/labs/DBAppTech/401_DBAppTech_Korpachan_NV
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Korpachan_NV
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Korpachan_NV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   b94469d..cf80f72  master     -> teacher/master
+   b94469d..cf80f72  master     -> teacher/master
+Обновление b94469d..cf80f72
+Fast-forward
+ task08.md | 40 ++++++++++++++++++++++++++++++++++++++++
+ task09.md | 62 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 102 insertions(+)
+ create mode 100644 task08.md
+ create mode 100644 task09.md
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/Kornyshon/401_DBAppTech_Korpachan_NV_fork
+Из https://github.com/Kornyshon/401_DBAppTech_Korpachan_NV_fork
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     Task08     -> student/Task08
+ * [новая ветка]     Task08     -> student/Task08
+ * [новая ветка]     Task09     -> student/Task09
+ * [новая ветка]     Task09     -> student/Task09
+Merge made by the 'recursive' strategy.
+ Task07/guess-number/README.md                      |   69 +
+ Task07/guess-number/css/style.css                  |  628 ++++++
+ Task07/guess-number/index.html                     |  112 +
+ Task07/guess-number/js/app.js                      |  565 +++++
+ Task07/guess-number/js/database.js                 |  202 ++
+ Task07/guess-number/js/game.js                     |  152 ++
+ Task07/guess-number/js/test-data.js                |   66 +
+ Task07/guess-number/js/ui.js                       |  224 ++
+ Task08/guess-number/README.md                      |   23 +
+ Task08/guess-number/db/AttemptController.php       |   27 +
+ Task08/guess-number/db/GameController.php          |  105 +
+ Task08/guess-number/db/games.db                    |  Bin 0 -> 16384 bytes
+ Task08/guess-number/db/init.php                    |   29 +
+ Task08/guess-number/db/schema.sql                  |   28 +
+ Task08/guess-number/public/api/index.php           |  280 +++
+ Task08/guess-number/public/css/style.css           |  628 ++++++
+ Task08/guess-number/public/index.html              |  115 +
+ Task08/guess-number/public/js/api.js               |  175 ++
+ Task08/guess-number/public/js/app.js               |  665 ++++++
+ Task08/guess-number/public/js/game.js              |  261 +++
+ Task08/guess-number/public/js/ui.js                |  242 +++
+ Task09/guess-number/README.md                      |   25 +
+ Task09/guess-number/composer.json                  |    9 +
+ Task09/guess-number/composer.lock                  |  910 ++++++++
+ Task09/guess-number/db/games.db                    |  Bin 0 -> 16384 bytes
+ Task09/guess-number/public/.DS_Store               |  Bin 0 -> 6148 bytes
+ Task09/guess-number/public/api/.DS_Store           |  Bin 0 -> 6148 bytes
+ Task09/guess-number/public/api/index.php           |  154 ++
+ Task09/guess-number/public/css/.DS_Store           |  Bin 0 -> 6148 bytes
+ Task09/guess-number/public/css/style.css           |  628 ++++++
+ Task09/guess-number/public/games.db                |  Bin 0 -> 16384 bytes
+ Task09/guess-number/public/index.html              |  208 ++
+ Task09/guess-number/public/js/.DS_Store            |  Bin 0 -> 6148 bytes
+ Task09/guess-number/public/js/api.js               |  246 +++
+ Task09/guess-number/public/js/app.js               |  671 ++++++
+ Task09/guess-number/public/js/game.js              |  261 +++
+ Task09/guess-number/public/js/ui.js                |  242 +++
+ Task09/guess-number/vendor/autoload.php            |   22 +
+ .../guess-number/vendor/composer/ClassLoader.php   |  579 +++++
+ .../vendor/composer/InstalledVersions.php          |  396 ++++
+ Task09/guess-number/vendor/composer/LICENSE        |   21 +
+ .../vendor/composer/autoload_classmap.php          |   10 +
+ .../vendor/composer/autoload_files.php             |   11 +
+ .../vendor/composer/autoload_namespaces.php        |    9 +
+ .../guess-number/vendor/composer/autoload_psr4.php |   20 +
+ .../guess-number/vendor/composer/autoload_real.php |   50 +
+ .../vendor/composer/autoload_static.php            |  102 +
+ Task09/guess-number/vendor/composer/installed.json |  939 ++++++++
+ Task09/guess-number/vendor/composer/installed.php  |  169 ++
+ .../vendor/composer/platform_check.php             |   25 +
+ .../vendor/fig/http-message-util/.gitignore        |    1 +
+ .../vendor/fig/http-message-util/CHANGELOG.md      |  147 ++
+ .../vendor/fig/http-message-util/LICENSE           |   19 +
+ .../vendor/fig/http-message-util/README.md         |   17 +
+ .../vendor/fig/http-message-util/composer.json     |   28 +
+ .../src/RequestMethodInterface.php                 |   34 +
+ .../http-message-util/src/StatusCodeInterface.php  |  107 +
+ .../vendor/nikic/fast-route/.gitignore             |    5 +
+ .../guess-number/vendor/nikic/fast-route/.hhconfig |    1 +
+ .../vendor/nikic/fast-route/.travis.yml            |   20 +
+ .../vendor/nikic/fast-route/FastRoute.hhi          |  126 ++
+ .../guess-number/vendor/nikic/fast-route/LICENSE   |   31 +
+ .../guess-number/vendor/nikic/fast-route/README.md |  313 +++
+ .../vendor/nikic/fast-route/composer.json          |   24 +
+ .../vendor/nikic/fast-route/phpunit.xml            |   24 +
+ .../guess-number/vendor/nikic/fast-route/psalm.xml |   28 +
+ .../nikic/fast-route/src/BadRouteException.php     |    7 +
+ .../vendor/nikic/fast-route/src/DataGenerator.php  |   26 +
+ .../src/DataGenerator/CharCountBased.php           |   31 +
+ .../src/DataGenerator/GroupCountBased.php          |   30 +
+ .../fast-route/src/DataGenerator/GroupPosBased.php |   27 +
+ .../fast-route/src/DataGenerator/MarkBased.php     |   27 +
+ .../src/DataGenerator/RegexBasedAbstract.php       |  186 ++
+ .../vendor/nikic/fast-route/src/Dispatcher.php     |   26 +
+ .../fast-route/src/Dispatcher/CharCountBased.php   |   31 +
+ .../fast-route/src/Dispatcher/GroupCountBased.php  |   31 +
+ .../fast-route/src/Dispatcher/GroupPosBased.php    |   33 +
+ .../nikic/fast-route/src/Dispatcher/MarkBased.php  |   31 +
+ .../src/Dispatcher/RegexBasedAbstract.php          |   88 +
+ .../vendor/nikic/fast-route/src/Route.php          |   47 +
+ .../vendor/nikic/fast-route/src/RouteCollector.php |  152 ++
+ .../vendor/nikic/fast-route/src/RouteParser.php    |   37 +
+ .../nikic/fast-route/src/RouteParser/Std.php       |   87 +
+ .../vendor/nikic/fast-route/src/bootstrap.php      |   12 +
+ .../vendor/nikic/fast-route/src/functions.php      |   74 +
+ .../test/Dispatcher/CharCountBasedTest.php         |   16 +
+ .../fast-route/test/Dispatcher/DispatcherTest.php  |  581 +++++
+ .../test/Dispatcher/GroupCountBasedTest.php        |   16 +
+ .../test/Dispatcher/GroupPosBasedTest.php          |   16 +
+ .../fast-route/test/Dispatcher/MarkBasedTest.php   |   24 +
+ .../test/HackTypechecker/HackTypecheckerTest.php   |   44 +
+ .../test/HackTypechecker/fixtures/all_options.php  |   29 +
+ .../HackTypechecker/fixtures/empty_options.php     |   11 +
+ .../test/HackTypechecker/fixtures/no_options.php   |   11 +
+ .../nikic/fast-route/test/RouteCollectorTest.php   |  108 +
+ .../nikic/fast-route/test/RouteParser/StdTest.php  |  154 ++
+ .../vendor/nikic/fast-route/test/bootstrap.php     |   11 +
+ .../vendor/nyholm/psr7-server/.github/FUNDING.yml  |    3 +
+ .../vendor/nyholm/psr7-server/CHANGELOG.md         |   71 +
+ .../guess-number/vendor/nyholm/psr7-server/LICENSE |   21 +
+ .../vendor/nyholm/psr7-server/README.md            |   38 +
+ .../vendor/nyholm/psr7-server/composer.json        |   41 +
+ .../psr7-server/src/ServerRequestCreator.php       |  303 +++
+ .../src/ServerRequestCreatorInterface.php          |   56 +
+ .../guess-number/vendor/nyholm/psr7/CHANGELOG.md   |  172 ++
+ Task09/guess-number/vendor/nyholm/psr7/LICENSE     |   21 +
+ Task09/guess-number/vendor/nyholm/psr7/README.md   |  108 +
+ .../guess-number/vendor/nyholm/psr7/composer.json  |   49 +
+ .../nyholm/psr7/src/Factory/HttplugFactory.php     |   53 +
+ .../nyholm/psr7/src/Factory/Psr17Factory.php       |   78 +
+ .../vendor/nyholm/psr7/src/MessageTrait.php        |  235 ++
+ .../vendor/nyholm/psr7/src/Request.php             |   47 +
+ .../vendor/nyholm/psr7/src/RequestTrait.php        |  127 ++
+ .../vendor/nyholm/psr7/src/Response.php            |   93 +
+ .../vendor/nyholm/psr7/src/ServerRequest.php       |  201 ++
+ .../guess-number/vendor/nyholm/psr7/src/Stream.php |  399 ++++
+ .../vendor/nyholm/psr7/src/StreamTrait.php         |   57 +
+ .../vendor/nyholm/psr7/src/UploadedFile.php        |  179 ++
+ Task09/guess-number/vendor/nyholm/psr7/src/Uri.php |  356 +++
+ .../guess-number/vendor/psr/container/.gitignore   |    3 +
+ Task09/guess-number/vendor/psr/container/LICENSE   |   21 +
+ Task09/guess-number/vendor/psr/container/README.md |   13 +
+ .../vendor/psr/container/composer.json             |   27 +
+ .../container/src/ContainerExceptionInterface.php  |   12 +
+ .../psr/container/src/ContainerInterface.php       |   36 +
+ .../container/src/NotFoundExceptionInterface.php   |   10 +
+ .../guess-number/vendor/psr/http-factory/LICENSE   |   21 +
+ .../guess-number/vendor/psr/http-factory/README.md |   12 +
+ .../vendor/psr/http-factory/composer.json          |   38 +
+ .../http-factory/src/RequestFactoryInterface.php   |   18 +
+ .../http-factory/src/ResponseFactoryInterface.php  |   18 +
+ .../src/ServerRequestFactoryInterface.php          |   24 +
+ .../http-factory/src/StreamFactoryInterface.php    |   45 +
+ .../src/UploadedFileFactoryInterface.php           |   34 +
+ .../psr/http-factory/src/UriFactoryInterface.php   |   17 +
+ .../vendor/psr/http-message/CHANGELOG.md           |   36 +
+ .../guess-number/vendor/psr/http-message/LICENSE   |   19 +
+ .../guess-number/vendor/psr/http-message/README.md |   16 +
+ .../vendor/psr/http-message/composer.json          |   26 +
+ .../psr/http-message/docs/PSR7-Interfaces.md       |  130 ++
+ .../vendor/psr/http-message/docs/PSR7-Usage.md     |  159 ++
+ .../psr/http-message/src/MessageInterface.php      |  187 ++
+ .../psr/http-message/src/RequestInterface.php      |  130 ++
+ .../psr/http-message/src/ResponseInterface.php     |   68 +
+ .../http-message/src/ServerRequestInterface.php    |  261 +++
+ .../psr/http-message/src/StreamInterface.php       |  158 ++
+ .../psr/http-message/src/UploadedFileInterface.php |  123 ++
+ .../vendor/psr/http-message/src/UriInterface.php   |  324 +++
+ .../vendor/psr/http-server-handler/LICENSE         |   21 +
+ .../vendor/psr/http-server-handler/README.md       |   12 +
+ .../vendor/psr/http-server-handler/composer.json   |   36 +
+ .../src/RequestHandlerInterface.php                |   22 +
+ .../vendor/psr/http-server-middleware/LICENSE      |   21 +
+ .../vendor/psr/http-server-middleware/README.md    |   12 +
+ .../psr/http-server-middleware/composer.json       |   36 +
+ .../src/MiddlewareInterface.php                    |   25 +
+ Task09/guess-number/vendor/psr/log/LICENSE         |   19 +
+ Task09/guess-number/vendor/psr/log/README.md       |   58 +
+ Task09/guess-number/vendor/psr/log/composer.json   |   26 +
+ .../vendor/psr/log/src/AbstractLogger.php          |   15 +
+ .../psr/log/src/InvalidArgumentException.php       |    7 +
+ .../guess-number/vendor/psr/log/src/LogLevel.php   |   18 +
+ .../vendor/psr/log/src/LoggerAwareInterface.php    |   14 +
+ .../vendor/psr/log/src/LoggerAwareTrait.php        |   22 +
+ .../vendor/psr/log/src/LoggerInterface.php         |   98 +
+ .../vendor/psr/log/src/LoggerTrait.php             |   98 +
+ .../guess-number/vendor/psr/log/src/NullLogger.php |   26 +
+ .../vendor/ralouphie/getallheaders/LICENSE         |   21 +
+ .../vendor/ralouphie/getallheaders/README.md       |   27 +
+ .../vendor/ralouphie/getallheaders/composer.json   |   26 +
+ .../ralouphie/getallheaders/src/getallheaders.php  |   46 +
+ Task09/guess-number/vendor/slim/http/LICENSE.md    |   22 +
+ Task09/guess-number/vendor/slim/http/composer.json |   76 +
+ Task09/guess-number/vendor/slim/http/composer.lock | 2281 ++++++++++++++++++++
+ .../http/src/Factory/DecoratedResponseFactory.php  |   44 +
+ .../src/Factory/DecoratedServerRequestFactory.php  |   41 +
+ .../slim/http/src/Factory/DecoratedUriFactory.php  |   38 +
+ .../slim/http/src/Interfaces/ResponseInterface.php |  147 ++
+ .../guess-number/vendor/slim/http/src/Response.php |  505 +++++
+ .../vendor/slim/http/src/ServerRequest.php         |  782 +++++++
+ Task09/guess-number/vendor/slim/http/src/Uri.php   |  187 ++
+ Task09/guess-number/vendor/slim/psr7/LICENSE.md    |   22 +
+ Task09/guess-number/vendor/slim/psr7/composer.json |   73 +
+ .../guess-number/vendor/slim/psr7/phpunit.xml.dist |   23 +
+ .../guess-number/vendor/slim/psr7/src/Cookies.php  |  218 ++
+ .../vendor/slim/psr7/src/Environment.php           |   55 +
+ .../slim/psr7/src/Factory/RequestFactory.php       |   59 +
+ .../slim/psr7/src/Factory/ResponseFactory.php      |   35 +
+ .../slim/psr7/src/Factory/ServerRequestFactory.php |  111 +
+ .../vendor/slim/psr7/src/Factory/StreamFactory.php |   95 +
+ .../slim/psr7/src/Factory/UploadedFileFactory.php  |   47 +
+ .../vendor/slim/psr7/src/Factory/UriFactory.php    |  113 +
+ .../guess-number/vendor/slim/psr7/src/Header.php   |   63 +
+ .../guess-number/vendor/slim/psr7/src/Headers.php  |  318 +++
+ .../slim/psr7/src/Interfaces/HeadersInterface.php  |   90 +
+ .../guess-number/vendor/slim/psr7/src/Message.php  |  185 ++
+ .../vendor/slim/psr7/src/NonBufferedBody.php       |  153 ++
+ .../guess-number/vendor/slim/psr7/src/Request.php  |  382 ++++
+ .../guess-number/vendor/slim/psr7/src/Response.php |  216 ++
+ .../guess-number/vendor/slim/psr7/src/Stream.php   |  396 ++++
+ .../vendor/slim/psr7/src/UploadedFile.php          |  279 +++
+ Task09/guess-number/vendor/slim/psr7/src/Uri.php   |  505 +++++
+ .../vendor/slim/psr7/tests/Assets/HeaderStack.php  |   95 +
+ .../vendor/slim/psr7/tests/BodyTest.php            |  431 ++++
+ .../vendor/slim/psr7/tests/CookiesTest.php         |  293 +++
+ .../vendor/slim/psr7/tests/EnvironmentTest.php     |   48 +
+ .../slim/psr7/tests/Factory/RequestFactoryTest.php |   42 +
+ .../psr7/tests/Factory/ResponseFactoryTest.php     |   42 +
+ .../tests/Factory/ServerRequestFactoryTest.php     |  219 ++
+ .../slim/psr7/tests/Factory/StreamFactoryTest.php  |   66 +
+ .../psr7/tests/Factory/UploadedFileFactoryTest.php |   91 +
+ .../slim/psr7/tests/Factory/UriFactoryTest.php     |  243 +++
+ .../vendor/slim/psr7/tests/HeaderTest.php          |   61 +
+ .../vendor/slim/psr7/tests/HeadersTest.php         |  293 +++
+ .../psr7/tests/Integration/BaseTestFactories.php   |   57 +
+ .../slim/psr7/tests/Integration/RequestTest.php    |   36 +
+ .../slim/psr7/tests/Integration/ResponseTest.php   |   27 +
+ .../psr7/tests/Integration/ServerRequestTest.php   |   35 +
+ .../slim/psr7/tests/Integration/StreamTest.php     |   46 +
+ .../psr7/tests/Integration/UploadedFileTest.php    |   51 +
+ .../vendor/slim/psr7/tests/Integration/UriTest.php |   30 +
+ .../vendor/slim/psr7/tests/MessageTest.php         |  188 ++
+ .../vendor/slim/psr7/tests/Mocks/MessageStub.php   |   37 +
+ .../vendor/slim/psr7/tests/NonBufferedBodyTest.php |  159 ++
+ .../vendor/slim/psr7/tests/RequestTest.php         |  467 ++++
+ .../vendor/slim/psr7/tests/ResponseTest.php        |  200 ++
+ .../vendor/slim/psr7/tests/StreamTest.php          |  286 +++
+ .../slim/psr7/tests/StringableTestObject.php       |   23 +
+ .../vendor/slim/psr7/tests/UploadedFileTest.php    |  692 ++++++
+ .../vendor/slim/psr7/tests/UriTest.php             |  383 ++++
+ .../vendor/slim/psr7/tests/bootstrap.php           |   99 +
+ Task09/guess-number/vendor/slim/slim/CHANGELOG.md  |  351 +++
+ Task09/guess-number/vendor/slim/slim/LICENSE.md    |   19 +
+ Task09/guess-number/vendor/slim/slim/SECURITY.md   |   14 +
+ Task09/guess-number/vendor/slim/slim/Slim/App.php  |  226 ++
+ .../vendor/slim/slim/Slim/CallableResolver.php     |  200 ++
+ .../slim/slim/Slim/Error/AbstractErrorRenderer.php |   46 +
+ .../Slim/Error/Renderers/HtmlErrorRenderer.php     |   83 +
+ .../Slim/Error/Renderers/JsonErrorRenderer.php     |   55 +
+ .../Error/Renderers/PlainTextErrorRenderer.php     |   59 +
+ .../slim/Slim/Error/Renderers/XmlErrorRenderer.php |   54 +
+ .../Slim/Exception/HttpBadRequestException.php     |   29 +
+ .../slim/slim/Slim/Exception/HttpException.php     |   65 +
+ .../slim/Slim/Exception/HttpForbiddenException.php |   28 +
+ .../slim/slim/Slim/Exception/HttpGoneException.php |   28 +
+ .../Exception/HttpInternalServerErrorException.php |   28 +
+ .../Exception/HttpMethodNotAllowedException.php    |   52 +
+ .../slim/Slim/Exception/HttpNotFoundException.php  |   27 +
+ .../Slim/Exception/HttpNotImplementedException.php |   28 +
+ .../Slim/Exception/HttpSpecializedException.php    |   32 +
+ .../Exception/HttpTooManyRequestsException.php     |   29 +
+ .../Slim/Exception/HttpUnauthorizedException.php   |   28 +
+ .../vendor/slim/slim/Slim/Factory/AppFactory.php   |  217 ++
+ .../slim/Slim/Factory/Psr17/GuzzlePsr17Factory.php |   19 +
+ .../Slim/Factory/Psr17/HttpSoftPsr17Factory.php    |   19 +
+ .../Factory/Psr17/LaminasDiactorosPsr17Factory.php |   19 +
+ .../slim/Slim/Factory/Psr17/NyholmPsr17Factory.php |   36 +
+ .../slim/slim/Slim/Factory/Psr17/Psr17Factory.php  |  101 +
+ .../Slim/Factory/Psr17/Psr17FactoryProvider.php    |   53 +
+ .../Slim/Factory/Psr17/ServerRequestCreator.php    |   46 +
+ .../Slim/Factory/Psr17/SlimHttpPsr17Factory.php    |   39 +
+ .../Factory/Psr17/SlimHttpServerRequestCreator.php |   56 +
+ .../slim/Slim/Factory/Psr17/SlimPsr17Factory.php   |   19 +
+ .../Slim/Factory/ServerRequestCreatorFactory.php   |   88 +
+ .../slim/slim/Slim/Handlers/ErrorHandler.php       |  314 +++
+ .../Slim/Handlers/Strategies/RequestHandler.php    |   49 +
+ .../Slim/Handlers/Strategies/RequestResponse.php   |   41 +
+ .../Handlers/Strategies/RequestResponseArgs.php    |   40 +
+ .../Strategies/RequestResponseNamedArgs.php        |   39 +
+ .../AdvancedCallableResolverInterface.php          |   28 +
+ .../Slim/Interfaces/CallableResolverInterface.php  |   21 +
+ .../slim/Slim/Interfaces/DispatcherInterface.php   |   28 +
+ .../slim/Slim/Interfaces/ErrorHandlerInterface.php |   26 +
+ .../Slim/Interfaces/ErrorRendererInterface.php     |   18 +
+ .../Interfaces/InvocationStrategyInterface.php     |   37 +
+ .../Interfaces/MiddlewareDispatcherInterface.php   |   43 +
+ .../slim/Slim/Interfaces/Psr17FactoryInterface.php |   48 +
+ .../Interfaces/Psr17FactoryProviderInterface.php   |   27 +
+ .../RequestHandlerInvocationStrategyInterface.php  |   15 +
+ .../Slim/Interfaces/RouteCollectorInterface.php    |  103 +
+ .../Interfaces/RouteCollectorProxyInterface.php    |  126 ++
+ .../slim/Slim/Interfaces/RouteGroupInterface.php   |   43 +
+ .../slim/slim/Slim/Interfaces/RouteInterface.php   |  128 ++
+ .../slim/Slim/Interfaces/RouteParserInterface.php  |   53 +
+ .../Slim/Interfaces/RouteResolverInterface.php     |   17 +
+ .../Interfaces/ServerRequestCreatorInterface.php   |   18 +
+ .../guess-number/vendor/slim/slim/Slim/Logger.php  |   32 +
+ .../slim/Slim/Middleware/BodyParsingMiddleware.php |  201 ++
+ .../Slim/Middleware/ContentLengthMiddleware.php    |   33 +
+ .../slim/slim/Slim/Middleware/ErrorMiddleware.php  |  215 ++
+ .../Slim/Middleware/MethodOverrideMiddleware.php   |   44 +
+ .../Slim/Middleware/OutputBufferingMiddleware.php  |   75 +
+ .../slim/Slim/Middleware/RoutingMiddleware.php     |   98 +
+ .../vendor/slim/slim/Slim/MiddlewareDispatcher.php |  289 +++
+ .../vendor/slim/slim/Slim/ResponseEmitter.php      |  136 ++
+ .../vendor/slim/slim/Slim/Routing/Dispatcher.php   |   78 +
+ .../slim/slim/Slim/Routing/FastRouteDispatcher.php |  109 +
+ .../vendor/slim/slim/Slim/Routing/Route.php        |  364 ++++
+ .../slim/slim/Slim/Routing/RouteCollector.php      |  302 +++
+ .../slim/slim/Slim/Routing/RouteCollectorProxy.php |  196 ++
+ .../vendor/slim/slim/Slim/Routing/RouteContext.php |   89 +
+ .../vendor/slim/slim/Slim/Routing/RouteGroup.php   |  109 +
+ .../vendor/slim/slim/Slim/Routing/RouteParser.php  |  127 ++
+ .../slim/slim/Slim/Routing/RouteResolver.php       |   56 +
+ .../vendor/slim/slim/Slim/Routing/RouteRunner.php  |   76 +
+ .../slim/slim/Slim/Routing/RoutingResults.php      |  113 +
+ Task09/guess-number/vendor/slim/slim/composer.json |  105 +
+ 307 files changed, 37235 insertions(+)
+ create mode 100644 Task07/guess-number/README.md
+ create mode 100644 Task07/guess-number/css/style.css
+ create mode 100644 Task07/guess-number/index.html
+ create mode 100644 Task07/guess-number/js/app.js
+ create mode 100644 Task07/guess-number/js/database.js
+ create mode 100644 Task07/guess-number/js/game.js
+ create mode 100644 Task07/guess-number/js/test-data.js
+ create mode 100644 Task07/guess-number/js/ui.js
+ create mode 100644 Task08/guess-number/README.md
+ create mode 100644 Task08/guess-number/db/AttemptController.php
+ create mode 100644 Task08/guess-number/db/GameController.php
+ create mode 100644 Task08/guess-number/db/games.db
+ create mode 100644 Task08/guess-number/db/init.php
+ create mode 100644 Task08/guess-number/db/schema.sql
+ create mode 100644 Task08/guess-number/public/api/index.php
+ create mode 100644 Task08/guess-number/public/css/style.css
+ create mode 100644 Task08/guess-number/public/index.html
+ create mode 100644 Task08/guess-number/public/js/api.js
+ create mode 100644 Task08/guess-number/public/js/app.js
+ create mode 100644 Task08/guess-number/public/js/game.js
+ create mode 100644 Task08/guess-number/public/js/ui.js
+ create mode 100644 Task09/guess-number/README.md
+ create mode 100644 Task09/guess-number/composer.json
+ create mode 100644 Task09/guess-number/composer.lock
+ create mode 100644 Task09/guess-number/db/games.db
+ create mode 100644 Task09/guess-number/public/.DS_Store
+ create mode 100644 Task09/guess-number/public/api/.DS_Store
+ create mode 100644 Task09/guess-number/public/api/index.php
+ create mode 100644 Task09/guess-number/public/css/.DS_Store
+ create mode 100644 Task09/guess-number/public/css/style.css
+ create mode 100644 Task09/guess-number/public/games.db
+ create mode 100644 Task09/guess-number/public/index.html
+ create mode 100644 Task09/guess-number/public/js/.DS_Store
+ create mode 100644 Task09/guess-number/public/js/api.js
+ create mode 100644 Task09/guess-number/public/js/app.js
+ create mode 100644 Task09/guess-number/public/js/game.js
+ create mode 100644 Task09/guess-number/public/js/ui.js
+ create mode 100644 Task09/guess-number/vendor/autoload.php
+ create mode 100644 Task09/guess-number/vendor/composer/ClassLoader.php
+ create mode 100644 Task09/guess-number/vendor/composer/InstalledVersions.php
+ create mode 100644 Task09/guess-number/vendor/composer/LICENSE
+ create mode 100644 Task09/guess-number/vendor/composer/autoload_classmap.php
+ create mode 100644 Task09/guess-number/vendor/composer/autoload_files.php
+ create mode 100644 Task09/guess-number/vendor/composer/autoload_namespaces.php
+ create mode 100644 Task09/guess-number/vendor/composer/autoload_psr4.php
+ create mode 100644 Task09/guess-number/vendor/composer/autoload_real.php
+ create mode 100644 Task09/guess-number/vendor/composer/autoload_static.php
+ create mode 100644 Task09/guess-number/vendor/composer/installed.json
+ create mode 100644 Task09/guess-number/vendor/composer/installed.php
+ create mode 100644 Task09/guess-number/vendor/composer/platform_check.php
+ create mode 100644 Task09/guess-number/vendor/fig/http-message-util/.gitignore
+ create mode 100644 Task09/guess-number/vendor/fig/http-message-util/CHANGELOG.md
+ create mode 100644 Task09/guess-number/vendor/fig/http-message-util/LICENSE
+ create mode 100644 Task09/guess-number/vendor/fig/http-message-util/README.md
+ create mode 100644 Task09/guess-number/vendor/fig/http-message-util/composer.json
+ create mode 100644 Task09/guess-number/vendor/fig/http-message-util/src/RequestMethodInterface.php
+ create mode 100644 Task09/guess-number/vendor/fig/http-message-util/src/StatusCodeInterface.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/.gitignore
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/.hhconfig
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/.travis.yml
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/FastRoute.hhi
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/LICENSE
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/README.md
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/composer.json
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/phpunit.xml
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/psalm.xml
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/src/BadRouteException.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/src/DataGenerator.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/src/DataGenerator/CharCountBased.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/src/DataGenerator/GroupCountBased.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/src/DataGenerator/GroupPosBased.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/src/DataGenerator/MarkBased.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/src/DataGenerator/RegexBasedAbstract.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/src/Dispatcher.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/src/Dispatcher/CharCountBased.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/src/Dispatcher/GroupCountBased.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/src/Dispatcher/GroupPosBased.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/src/Dispatcher/MarkBased.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/src/Dispatcher/RegexBasedAbstract.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/src/Route.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/src/RouteCollector.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/src/RouteParser.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/src/RouteParser/Std.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/src/bootstrap.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/src/functions.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/test/Dispatcher/CharCountBasedTest.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/test/Dispatcher/DispatcherTest.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/test/Dispatcher/GroupCountBasedTest.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/test/Dispatcher/GroupPosBasedTest.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/test/Dispatcher/MarkBasedTest.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/test/HackTypechecker/HackTypecheckerTest.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/test/HackTypechecker/fixtures/all_options.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/test/HackTypechecker/fixtures/empty_options.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/test/HackTypechecker/fixtures/no_options.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/test/RouteCollectorTest.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/test/RouteParser/StdTest.php
+ create mode 100644 Task09/guess-number/vendor/nikic/fast-route/test/bootstrap.php
+ create mode 100644 Task09/guess-number/vendor/nyholm/psr7-server/.github/FUNDING.yml
+ create mode 100644 Task09/guess-number/vendor/nyholm/psr7-server/CHANGELOG.md
+ create mode 100644 Task09/guess-number/vendor/nyholm/psr7-server/LICENSE
+ create mode 100644 Task09/guess-number/vendor/nyholm/psr7-server/README.md
+ create mode 100644 Task09/guess-number/vendor/nyholm/psr7-server/composer.json
+ create mode 100644 Task09/guess-number/vendor/nyholm/psr7-server/src/ServerRequestCreator.php
+ create mode 100644 Task09/guess-number/vendor/nyholm/psr7-server/src/ServerRequestCreatorInterface.php
+ create mode 100644 Task09/guess-number/vendor/nyholm/psr7/CHANGELOG.md
+ create mode 100644 Task09/guess-number/vendor/nyholm/psr7/LICENSE
+ create mode 100644 Task09/guess-number/vendor/nyholm/psr7/README.md
+ create mode 100644 Task09/guess-number/vendor/nyholm/psr7/composer.json
+ create mode 100644 Task09/guess-number/vendor/nyholm/psr7/src/Factory/HttplugFactory.php
+ create mode 100644 Task09/guess-number/vendor/nyholm/psr7/src/Factory/Psr17Factory.php
+ create mode 100644 Task09/guess-number/vendor/nyholm/psr7/src/MessageTrait.php
+ create mode 100644 Task09/guess-number/vendor/nyholm/psr7/src/Request.php
+ create mode 100644 Task09/guess-number/vendor/nyholm/psr7/src/RequestTrait.php
+ create mode 100644 Task09/guess-number/vendor/nyholm/psr7/src/Response.php
+ create mode 100644 Task09/guess-number/vendor/nyholm/psr7/src/ServerRequest.php
+ create mode 100644 Task09/guess-number/vendor/nyholm/psr7/src/Stream.php
+ create mode 100644 Task09/guess-number/vendor/nyholm/psr7/src/StreamTrait.php
+ create mode 100644 Task09/guess-number/vendor/nyholm/psr7/src/UploadedFile.php
+ create mode 100644 Task09/guess-number/vendor/nyholm/psr7/src/Uri.php
+ create mode 100644 Task09/guess-number/vendor/psr/container/.gitignore
+ create mode 100644 Task09/guess-number/vendor/psr/container/LICENSE
+ create mode 100644 Task09/guess-number/vendor/psr/container/README.md
+ create mode 100644 Task09/guess-number/vendor/psr/container/composer.json
+ create mode 100644 Task09/guess-number/vendor/psr/container/src/ContainerExceptionInterface.php
+ create mode 100644 Task09/guess-number/vendor/psr/container/src/ContainerInterface.php
+ create mode 100644 Task09/guess-number/vendor/psr/container/src/NotFoundExceptionInterface.php
+ create mode 100644 Task09/guess-number/vendor/psr/http-factory/LICENSE
+ create mode 100644 Task09/guess-number/vendor/psr/http-factory/README.md
+ create mode 100644 Task09/guess-number/vendor/psr/http-factory/composer.json
+ create mode 100644 Task09/guess-number/vendor/psr/http-factory/src/RequestFactoryInterface.php
+ create mode 100644 Task09/guess-number/vendor/psr/http-factory/src/ResponseFactoryInterface.php
+ create mode 100644 Task09/guess-number/vendor/psr/http-factory/src/ServerRequestFactoryInterface.php
+ create mode 100644 Task09/guess-number/vendor/psr/http-factory/src/StreamFactoryInterface.php
+ create mode 100644 Task09/guess-number/vendor/psr/http-factory/src/UploadedFileFactoryInterface.php
+ create mode 100644 Task09/guess-number/vendor/psr/http-factory/src/UriFactoryInterface.php
+ create mode 100644 Task09/guess-number/vendor/psr/http-message/CHANGELOG.md
+ create mode 100644 Task09/guess-number/vendor/psr/http-message/LICENSE
+ create mode 100644 Task09/guess-number/vendor/psr/http-message/README.md
+ create mode 100644 Task09/guess-number/vendor/psr/http-message/composer.json
+ create mode 100644 Task09/guess-number/vendor/psr/http-message/docs/PSR7-Interfaces.md
+ create mode 100644 Task09/guess-number/vendor/psr/http-message/docs/PSR7-Usage.md
+ create mode 100644 Task09/guess-number/vendor/psr/http-message/src/MessageInterface.php
+ create mode 100644 Task09/guess-number/vendor/psr/http-message/src/RequestInterface.php
+ create mode 100644 Task09/guess-number/vendor/psr/http-message/src/ResponseInterface.php
+ create mode 100644 Task09/guess-number/vendor/psr/http-message/src/ServerRequestInterface.php
+ create mode 100644 Task09/guess-number/vendor/psr/http-message/src/StreamInterface.php
+ create mode 100644 Task09/guess-number/vendor/psr/http-message/src/UploadedFileInterface.php
+ create mode 100644 Task09/guess-number/vendor/psr/http-message/src/UriInterface.php
+ create mode 100644 Task09/guess-number/vendor/psr/http-server-handler/LICENSE
+ create mode 100644 Task09/guess-number/vendor/psr/http-server-handler/README.md
+ create mode 100644 Task09/guess-number/vendor/psr/http-server-handler/composer.json
+ create mode 100644 Task09/guess-number/vendor/psr/http-server-handler/src/RequestHandlerInterface.php
+ create mode 100644 Task09/guess-number/vendor/psr/http-server-middleware/LICENSE
+ create mode 100644 Task09/guess-number/vendor/psr/http-server-middleware/README.md
+ create mode 100644 Task09/guess-number/vendor/psr/http-server-middleware/composer.json
+ create mode 100644 Task09/guess-number/vendor/psr/http-server-middleware/src/MiddlewareInterface.php
+ create mode 100644 Task09/guess-number/vendor/psr/log/LICENSE
+ create mode 100644 Task09/guess-number/vendor/psr/log/README.md
+ create mode 100644 Task09/guess-number/vendor/psr/log/composer.json
+ create mode 100644 Task09/guess-number/vendor/psr/log/src/AbstractLogger.php
+ create mode 100644 Task09/guess-number/vendor/psr/log/src/InvalidArgumentException.php
+ create mode 100644 Task09/guess-number/vendor/psr/log/src/LogLevel.php
+ create mode 100644 Task09/guess-number/vendor/psr/log/src/LoggerAwareInterface.php
+ create mode 100644 Task09/guess-number/vendor/psr/log/src/LoggerAwareTrait.php
+ create mode 100644 Task09/guess-number/vendor/psr/log/src/LoggerInterface.php
+ create mode 100644 Task09/guess-number/vendor/psr/log/src/LoggerTrait.php
+ create mode 100644 Task09/guess-number/vendor/psr/log/src/NullLogger.php
+ create mode 100644 Task09/guess-number/vendor/ralouphie/getallheaders/LICENSE
+ create mode 100644 Task09/guess-number/vendor/ralouphie/getallheaders/README.md
+ create mode 100644 Task09/guess-number/vendor/ralouphie/getallheaders/composer.json
+ create mode 100644 Task09/guess-number/vendor/ralouphie/getallheaders/src/getallheaders.php
+ create mode 100644 Task09/guess-number/vendor/slim/http/LICENSE.md
+ create mode 100644 Task09/guess-number/vendor/slim/http/composer.json
+ create mode 100644 Task09/guess-number/vendor/slim/http/composer.lock
+ create mode 100644 Task09/guess-number/vendor/slim/http/src/Factory/DecoratedResponseFactory.php
+ create mode 100644 Task09/guess-number/vendor/slim/http/src/Factory/DecoratedServerRequestFactory.php
+ create mode 100644 Task09/guess-number/vendor/slim/http/src/Factory/DecoratedUriFactory.php
+ create mode 100644 Task09/guess-number/vendor/slim/http/src/Interfaces/ResponseInterface.php
+ create mode 100644 Task09/guess-number/vendor/slim/http/src/Response.php
+ create mode 100644 Task09/guess-number/vendor/slim/http/src/ServerRequest.php
+ create mode 100644 Task09/guess-number/vendor/slim/http/src/Uri.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/LICENSE.md
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/composer.json
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/phpunit.xml.dist
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/src/Cookies.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/src/Environment.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/src/Factory/RequestFactory.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/src/Factory/ResponseFactory.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/src/Factory/ServerRequestFactory.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/src/Factory/StreamFactory.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/src/Factory/UploadedFileFactory.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/src/Factory/UriFactory.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/src/Header.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/src/Headers.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/src/Interfaces/HeadersInterface.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/src/Message.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/src/NonBufferedBody.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/src/Request.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/src/Response.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/src/Stream.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/src/UploadedFile.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/src/Uri.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/Assets/HeaderStack.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/BodyTest.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/CookiesTest.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/EnvironmentTest.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/Factory/RequestFactoryTest.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/Factory/ResponseFactoryTest.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/Factory/ServerRequestFactoryTest.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/Factory/StreamFactoryTest.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/Factory/UploadedFileFactoryTest.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/Factory/UriFactoryTest.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/HeaderTest.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/HeadersTest.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/Integration/BaseTestFactories.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/Integration/RequestTest.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/Integration/ResponseTest.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/Integration/ServerRequestTest.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/Integration/StreamTest.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/Integration/UploadedFileTest.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/Integration/UriTest.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/MessageTest.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/Mocks/MessageStub.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/NonBufferedBodyTest.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/RequestTest.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/ResponseTest.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/StreamTest.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/StringableTestObject.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/UploadedFileTest.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/UriTest.php
+ create mode 100644 Task09/guess-number/vendor/slim/psr7/tests/bootstrap.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/CHANGELOG.md
+ create mode 100644 Task09/guess-number/vendor/slim/slim/LICENSE.md
+ create mode 100644 Task09/guess-number/vendor/slim/slim/SECURITY.md
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/App.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/CallableResolver.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Error/AbstractErrorRenderer.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Error/Renderers/HtmlErrorRenderer.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Error/Renderers/JsonErrorRenderer.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Error/Renderers/PlainTextErrorRenderer.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Error/Renderers/XmlErrorRenderer.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Exception/HttpBadRequestException.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Exception/HttpException.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Exception/HttpForbiddenException.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Exception/HttpGoneException.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Exception/HttpInternalServerErrorException.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Exception/HttpMethodNotAllowedException.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Exception/HttpNotFoundException.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Exception/HttpNotImplementedException.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Exception/HttpSpecializedException.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Exception/HttpTooManyRequestsException.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Exception/HttpUnauthorizedException.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Factory/AppFactory.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Factory/Psr17/GuzzlePsr17Factory.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Factory/Psr17/HttpSoftPsr17Factory.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Factory/Psr17/LaminasDiactorosPsr17Factory.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Factory/Psr17/NyholmPsr17Factory.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Factory/Psr17/Psr17Factory.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Factory/Psr17/Psr17FactoryProvider.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Factory/Psr17/ServerRequestCreator.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Factory/Psr17/SlimHttpPsr17Factory.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Factory/Psr17/SlimHttpServerRequestCreator.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Factory/Psr17/SlimPsr17Factory.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Factory/ServerRequestCreatorFactory.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Handlers/ErrorHandler.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Handlers/Strategies/RequestHandler.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponseArgs.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponseNamedArgs.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Interfaces/AdvancedCallableResolverInterface.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Interfaces/CallableResolverInterface.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Interfaces/DispatcherInterface.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Interfaces/ErrorHandlerInterface.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Interfaces/ErrorRendererInterface.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Interfaces/InvocationStrategyInterface.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Interfaces/MiddlewareDispatcherInterface.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Interfaces/Psr17FactoryInterface.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Interfaces/Psr17FactoryProviderInterface.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Interfaces/RequestHandlerInvocationStrategyInterface.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Interfaces/RouteCollectorInterface.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Interfaces/RouteCollectorProxyInterface.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Interfaces/RouteGroupInterface.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Interfaces/RouteInterface.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Interfaces/RouteParserInterface.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Interfaces/RouteResolverInterface.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Interfaces/ServerRequestCreatorInterface.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Logger.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Middleware/BodyParsingMiddleware.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Middleware/ContentLengthMiddleware.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Middleware/MethodOverrideMiddleware.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Middleware/OutputBufferingMiddleware.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Middleware/RoutingMiddleware.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/MiddlewareDispatcher.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/ResponseEmitter.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Routing/Dispatcher.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Routing/FastRouteDispatcher.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Routing/Route.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Routing/RouteCollector.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Routing/RouteCollectorProxy.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Routing/RouteContext.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Routing/RouteGroup.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Routing/RouteParser.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Routing/RouteResolver.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Routing/RouteRunner.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/Slim/Routing/RoutingResults.php
+ create mode 100644 Task09/guess-number/vendor/slim/slim/composer.json
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/401_DBAppTech_Korpachan_NV/Task09
 --------------------------------------------------
 Check path: composer.json
 composer.json not found
@@ -27,14 +1636,2609 @@ README.md not found
 Total ok: 0
 Total error: 2
 --------------------------------------------------
-/home/andrey/labs/DBAppTech/401_DBAppTech_Balyaev_DS
+/home/andrey/labs/DBAppTech/401_DBAppTech_Korpachan_NV
 Task09
 Task from branch: Task09
-Creation date: 12/12/2025 09:06:14
-PS>TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> $global:?
-True
+Creation date: 12/19/2025 11:34:34
+To github.com-mrsu:andpop-mrsu/401_DBAppTech_Korpachan_NV.git
+To github.com-mrsu:andpop-mrsu/401_DBAppTech_Korpachan_NV.git
+   cf80f72..c2152e3  master -> master
+   cf80f72..c2152e3  master -> master
+=====================================================
+/home/andrey/labs/DBAppTech/401_DBAppTech_Korpachan_NV
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Korpachan_NV
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Korpachan_NV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/401_DBAppTech_Korpachan_NV/Task08
+--------------------------------------------------
+Check path: composer.json
+composer.json not found
+--------------------------------------------------
+Check path: README.md
+README.md not found
+--------------------------------------------------
+Total ok: 0
+Total error: 2
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/401_DBAppTech_Korpachan_NV
+Task08
+Task from branch: Task08
+Creation date: 12/19/2025 11:32:38
+Everything up-to-date
+Everything up-to-date
+=====================================================
+/home/andrey/labs/DBAppTech/401_DBAppTech_Korpachan_NV
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Korpachan_NV
+Из github.com-mrsu:andpop-mrsu/401_DBAppTech_Korpachan_NV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/401_DBAppTech_Korpachan_NV/Task07
+--------------------------------------------------
+Check path: README.md
+🎯 Угадай Число
+
+Классическая игра "Угадай число" в современной веб-версии.
+
+🎮 Об игре
+
+Компьютер загадывает случайное число от 1 до 100. Ваша задача - угадать его за минимальное количество попыток.
+
+🚀 Запуск игры
+
+Локальный запуск:
+```bash
+# Просто откройте index.html в браузере
+open index.html
+Или играйте онлайн:
+👉 https://kornyshon.github.io/guess-number-web/
+
+✨ Возможности
+
+Простой и понятный интерфейс
+
+История попыток в реальном времени
+
+Статистика предыдущих игр
+
+Адаптивный дизайн
+
+Быстрый рестарт игры
+
+🎯 Правила
+
+Число от 1 до 100
+
+Максимум 10 попыток
+
+Подсказки "больше/меньше"
+
+Победа - угадать число!
+
+Удачи в игре! 🎉
+
+
+
+## 🗄️ Возможности IndexedDB
+
+### 📋 Сохранение игр
+- Каждая завершенная игра автоматически сохраняется в базу данных
+- Сохраняются все попытки, результат и дата игры
+
+### 🔄 Просмотр истории
+- Просмотр списка всех сыгранных партий
+- Сортировка по дате (сначала новые)
+
+### 🎮 Воспроизведение игр
+- Просмотр хода любой сохраненной игры
+- Отображение всех попыток с подсказками
+
+### 📊 Статистика
+- Общая статистика по всем играм
+- Статистика по каждому игроку
+- Процент побед, лучший результат
+
+### 📤 Экспорт данных
+- Экспорт всех игр в JSON файл
+- Возможность резервного копирования
+
+### 🗑️ Управление данными
+- Удаление отдельных игр
+- Очистка всей базы данных
+--------------------------------------------------
+Total ok: 1
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/401_DBAppTech_Korpachan_NV
+Task07
+Task from branch: Task07
+Creation date: 12/19/2025 11:31:04
+Everything up-to-date
+Everything up-to-date
+401_DBAppTech_Kudashkina_OS
+401_DBAppTech_Ponomarev_MA
+401_DBAppTech_Savickaya_MV
+401_DBAppTech_Tyurin_MS
+401_DBAppTech_Yunusov_AR
+402_DBAppTech_Baranov_EA
+402_DBAppTech_Borcov_ID
+402_DBAppTech_CHumakov_VA
+402_DBAppTech_Egorov_AS
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Egorov_AS
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Egorov_AS
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Egorov_AS
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/Eario13/402_DBAppTech_Egorov_AS
+Из https://github.com/Eario13/402_DBAppTech_Egorov_AS
+ * [новая ветка]     Task09     -> student/Task09
+ * [новая ветка]     Task09     -> student/Task09
+   eb250c5..323a370  master     -> student/master
+   eb250c5..323a370  master     -> student/master
+Обновление 323a370..dd99a40
+Fast-forward (no commit created; -m option ignored)
+ Task09/.gitignore           |  21 ++
+ Task09/README.md            |  33 +++
+ Task09/composer.json        |  13 +
+ Task09/composer.lock        | 690 ++++++++++++++++++++++++++++++++++++++++++++
+ Task09/db/.gitkeep          |   0
+ Task09/public/css/style.css |  91 ++++++
+ Task09/public/index.html    |  59 ++++
+ Task09/public/index.php     | 143 +++++++++
+ Task09/public/js/api.js     |  60 ++++
+ Task09/public/js/app.js     | 214 ++++++++++++++
+ Task09/public/js/board.js   |  40 +++
+ Task09/public/js/game.js    |  76 +++++
+ Task09/public/js/player.js  |  27 ++
+ Task09/src/Database.php     | 120 ++++++++
+ 14 files changed, 1587 insertions(+)
+ create mode 100644 Task09/.gitignore
+ create mode 100644 Task09/README.md
+ create mode 100644 Task09/composer.json
+ create mode 100644 Task09/composer.lock
+ create mode 100644 Task09/db/.gitkeep
+ create mode 100644 Task09/public/css/style.css
+ create mode 100644 Task09/public/index.html
+ create mode 100644 Task09/public/index.php
+ create mode 100644 Task09/public/js/api.js
+ create mode 100644 Task09/public/js/app.js
+ create mode 100644 Task09/public/js/board.js
+ create mode 100644 Task09/public/js/game.js
+ create mode 100644 Task09/public/js/player.js
+ create mode 100644 Task09/src/Database.php
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Egorov_AS/Task09
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "task09/tic-tac-toe",
+    "description": "Tic-tac-toe SPA with Slim framework",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "slim/slim": "^4.0",
+        "slim/psr7": "^1.0"
+    },
+    "autoload": {
+        "classmap": ["src/"]
+    }
+}
+--------------------------------------------------
+Check path: README.md
+# Tic-Tac-Toe SPA (Slim Framework)
+
+Веб-приложение "Крестики-нолики" с REST API на микрофреймворке Slim.
+
+## Требования
+
+- PHP 8.0+
+- Composer
+
+## Установка
+
+```bash
+cd Task09
+composer install
+```
+
+## Запуск
+
+```bash
+php -S localhost:3000 -t public
+```
+
+Откройте в браузере: http://localhost:3000
+
+## API
+
+| Метод | Путь | Описание |
+|-------|------|----------|
+| GET | /games | Получить список всех игр |
+| GET | /games/{id} | Получить ходы игры |
+| POST | /games | Создать новую игру |
+| POST | /step/{id} | Добавить ход в игру |
+| PUT | /games/{id} | Обновить статус игры |
+--------------------------------------------------
+Total ok: 2
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/402_DBAppTech_Egorov_AS
+Task09
+Task from branch: Task09
+Creation date: 12/21/2025 18:07:57
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Egorov_AS.git
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Egorov_AS.git
+   323a370..dd99a40  master -> master
+   323a370..dd99a40  master -> master
+402_DBAppTech_Ganchenkov_AA
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Ganchenkov_AA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Ganchenkov_AA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Ganchenkov_AA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/Relflly/402_DBAppTech_Ganchenkov_AA
+Из https://github.com/Relflly/402_DBAppTech_Ganchenkov_AA
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     Task08     -> student/Task08
+ * [новая ветка]     Task08     -> student/Task08
+ * [новая ветка]     Task09     -> student/Task09
+ * [новая ветка]     Task09     -> student/Task09
+Merge made by the 'recursive' strategy.
+ Task05/cold-hot/.gitignore         |  15 +
+ Task05/cold-hot/README.md          |  53 +++
+ Task05/cold-hot/bin/cold-hot       |  10 +
+ Task05/cold-hot/composer.json      |  36 ++
+ Task05/cold-hot/composer.lock      | 211 ++++++++++
+ Task05/cold-hot/src/Controller.php | 209 ++++++++++
+ Task05/cold-hot/src/Database.php   | 159 ++++++++
+ Task05/cold-hot/src/Model.php      |  91 +++++
+ Task05/cold-hot/src/View.php       | 211 ++++++++++
+ Task06/cold-hot/README.md          |  60 +++
+ Task06/cold-hot/css/style.css      | 322 ++++++++++++++++
+ Task06/cold-hot/index.html         |  80 ++++
+ Task06/cold-hot/js/app.js          |  82 ++++
+ Task06/cold-hot/js/controller.js   | 156 ++++++++
+ Task06/cold-hot/js/database.js     |  69 ++++
+ Task06/cold-hot/js/model.js        |  83 ++++
+ Task06/cold-hot/js/view.js         | 102 +++++
+ Task07/cold-hot/README.md          |  75 ++++
+ Task07/cold-hot/css/style.css      | 405 +++++++++++++++++++
+ Task07/cold-hot/index.html         |  89 +++++
+ Task07/cold-hot/js/app.js          |  82 ++++
+ Task07/cold-hot/js/controller.js   | 188 +++++++++
+ Task07/cold-hot/js/database.js     | 140 +++++++
+ Task07/cold-hot/js/model.js        |  83 ++++
+ Task07/cold-hot/js/view.js         | 102 +++++
+ Task07/cold-hot/style.css          | 322 ++++++++++++++++
+ Task08/.gitignore                  |   2 +
+ Task08/README.md                   |  67 ++++
+ Task08/db/.gitkeep                 |   0
+ Task08/public/css/style.css        | 405 +++++++++++++++++++
+ Task08/public/game.html            |  88 +++++
+ Task08/public/index.php            | 109 ++++++
+ Task08/public/js/app.js            | 308 +++++++++++++++
+ Task08/src/Database.php            | 134 +++++++
+ Task09/.gitignore                  |   5 +
+ Task09/README.md                   |  87 +++++
+ Task09/composer.json               |  16 +
+ Task09/composer.lock               | 768 +++++++++++++++++++++++++++++++++++++
+ Task09/db/.gitkeep                 |   0
+ Task09/public/css/style.css        | 403 +++++++++++++++++++
+ Task09/public/game.html            |  88 +++++
+ Task09/public/index.php            | 127 ++++++
+ Task09/public/js/app.js            | 307 +++++++++++++++
+ Task09/src/Database.php            | 111 ++++++
+ 44 files changed, 6460 insertions(+)
+ create mode 100644 Task05/cold-hot/.gitignore
+ create mode 100644 Task05/cold-hot/README.md
+ create mode 100644 Task05/cold-hot/bin/cold-hot
+ create mode 100644 Task05/cold-hot/composer.json
+ create mode 100644 Task05/cold-hot/composer.lock
+ create mode 100644 Task05/cold-hot/src/Controller.php
+ create mode 100644 Task05/cold-hot/src/Database.php
+ create mode 100644 Task05/cold-hot/src/Model.php
+ create mode 100644 Task05/cold-hot/src/View.php
+ create mode 100644 Task06/cold-hot/README.md
+ create mode 100644 Task06/cold-hot/css/style.css
+ create mode 100644 Task06/cold-hot/index.html
+ create mode 100644 Task06/cold-hot/js/app.js
+ create mode 100644 Task06/cold-hot/js/controller.js
+ create mode 100644 Task06/cold-hot/js/database.js
+ create mode 100644 Task06/cold-hot/js/model.js
+ create mode 100644 Task06/cold-hot/js/view.js
+ create mode 100644 Task07/cold-hot/README.md
+ create mode 100644 Task07/cold-hot/css/style.css
+ create mode 100644 Task07/cold-hot/index.html
+ create mode 100644 Task07/cold-hot/js/app.js
+ create mode 100644 Task07/cold-hot/js/controller.js
+ create mode 100644 Task07/cold-hot/js/database.js
+ create mode 100644 Task07/cold-hot/js/model.js
+ create mode 100644 Task07/cold-hot/js/view.js
+ create mode 100644 Task07/cold-hot/style.css
+ create mode 100644 Task08/.gitignore
+ create mode 100644 Task08/README.md
+ create mode 100644 Task08/db/.gitkeep
+ create mode 100644 Task08/public/css/style.css
+ create mode 100644 Task08/public/game.html
+ create mode 100644 Task08/public/index.php
+ create mode 100644 Task08/public/js/app.js
+ create mode 100644 Task08/src/Database.php
+ create mode 100644 Task09/.gitignore
+ create mode 100644 Task09/README.md
+ create mode 100644 Task09/composer.json
+ create mode 100644 Task09/composer.lock
+ create mode 100644 Task09/db/.gitkeep
+ create mode 100644 Task09/public/css/style.css
+ create mode 100644 Task09/public/game.html
+ create mode 100644 Task09/public/index.php
+ create mode 100644 Task09/public/js/app.js
+ create mode 100644 Task09/src/Database.php
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Ganchenkov_AA/Task09
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "ganchenkov/cold-hot-slim",
+    "description": "Cold-Hot game with Slim Framework",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "slim/slim": "^4.0",
+        "slim/psr7": "^1.0",
+        "slim/http": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
+--------------------------------------------------
+Check path: README.md
+# Игра "Холодно-горячо" (Slim Framework)
+
+Single Page Application с PHP backend на микрофреймворке Slim и SQLite базой данных.
+
+## 🚀 Запуск приложения
+
+1. Перейдите в каталог Task09:
+   ```bash
+   cd Task09
+   ```
+
+2. Установите зависимости через Composer:
+   ```bash
+   composer install
+   ```
+
+3. Запустите встроенный PHP-сервер:
+   ```bash
+   php -S localhost:3000 -t public
+   ```
+
+4. Откройте в браузере:
+   ```
+   http://localhost:3000
+   ```
+   или
+   ```
+   http://localhost:3000/index.html
+   ```
+
+## 📁 Структура проекта
+
+```
+Task09/
+├── public/              # Корень веб-сервера
+│   ├── index.php        # Front Controller (Slim)
+│   ├── game.html        # HTML страница игры
+│   ├── css/
+│   │   └── style.css    # Стили
+│   └── js/
+│       └── app.js       # JavaScript (SPA логика)
+├── src/
+│   └── Database.php     # Работа с SQLite
+├── db/
+│   └── cold-hot.db      # База данных (создаётся автоматически)
+├── vendor/              # Зависимости Composer
+├── composer.json
+├── composer.lock
+└── README.md
+```
+
+## 🔌 REST API (Slim Framework)
+
+| Метод | Путь | Описание |
+|-------|------|----------|
+| GET | / | Редирект на /index.html |
+| GET | /index.html | HTML страница игры |
+| GET | /games | Список всех игр |
+| GET | /games/{id} | Данные игры с ходами |
+| POST | /games | Создать новую игру |
+| POST | /step/{id} | Сохранить ход |
+
+## 📋 Правила игры
+
+1. Компьютер загадывает трёхзначное число без повторяющихся цифр
+2. Первая цифра не может быть нулём
+3. После каждой попытки вы получаете подсказки:
+   - 🔥 **Горячо** — цифра на своём месте
+   - 🌡️ **Тепло** — цифра есть, но не на своём месте
+   - ❄️ **Холодно** — такой цифры нет в числе
+
+## 🛠 Технологии
+
+- Frontend: HTML5, CSS3, JavaScript (ES6)
+- Backend: PHP 8.0+ с Slim Framework 4
+- База данных: SQLite
+- Архитектура: SPA + REST API
+
+## 📦 Зависимости
+
+- slim/slim ^4.0
+- slim/psr7 ^1.0
+- slim/http ^1.0
+
+## 👤 Автор
+
+Ganchenkov AA
+--------------------------------------------------
+Total ok: 2
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/402_DBAppTech_Ganchenkov_AA
+Task09
+Task from branch: Task09
+Creation date: 12/21/2025 22:40:40
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Ganchenkov_AA.git
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Ganchenkov_AA.git
+   e70fd78..1285749  master -> master
+   e70fd78..1285749  master -> master
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Ganchenkov_AA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Ganchenkov_AA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Ganchenkov_AA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Ganchenkov_AA/Task08
+--------------------------------------------------
+Check path: composer.json
+composer.json not found
+--------------------------------------------------
+Check path: README.md
+# Игра "Холодно-горячо" (SPA + REST API)
+
+Single Page Application с PHP backend и SQLite базой данных.
+
+## 🚀 Запуск приложения
+
+1. Перейдите в каталог Task08:
+   ```bash
+   cd Task08
+   ```
+
+2. Запустите встроенный PHP-сервер:
+   ```bash
+   php -S localhost:3000 -t public
+   ```
+
+3. Откройте в браузере:
+   ```
+   http://localhost:3000
+   ```
+
+## 📁 Структура проекта
+
+```
+Task08/
+├── public/              # Корень веб-сервера
+│   ├── index.php        # Front Controller (REST API)
+│   ├── game.html        # HTML страница игры
+│   ├── css/
+│   │   └── style.css    # Стили
+│   └── js/
+│       └── app.js       # JavaScript (SPA логика)
+├── src/
+│   └── Database.php     # Работа с SQLite
+├── db/
+│   └── cold-hot.db      # База данных (создаётся автоматически)
+└── README.md
+```
+
+## 🔌 REST API
+
+| Метод | Путь | Описание |
+|-------|------|----------|
+| GET | /games | Список всех игр |
+| GET | /games/{id} | Данные игры с ходами |
+| POST | /games | Создать новую игру |
+| POST | /step/{id} | Сохранить ход |
+
+## 📋 Правила игры
+
+1. Компьютер загадывает трёхзначное число без повторяющихся цифр
+2. Первая цифра не может быть нулём
+3. После каждой попытки вы получаете подсказки:
+   - 🔥 **Горячо** — цифра на своём месте
+   - 🌡️ **Тепло** — цифра есть, но не на своём месте
+   - ❄️ **Холодно** — такой цифры нет в числе
+
+## 🛠 Технологии
+
+- Frontend: HTML5, CSS3, JavaScript (ES6)
+- Backend: PHP 8.0+
+- База данных: SQLite
+- Архитектура: SPA + REST API
+
+## 👤 Автор
+
+Ganchenkov AA
+--------------------------------------------------
+Total ok: 1
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/402_DBAppTech_Ganchenkov_AA
+Task08
+Task from branch: Task08
+Creation date: 12/21/2025 22:34:09
+Everything up-to-date
+Everything up-to-date
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Ganchenkov_AA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Ganchenkov_AA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Ganchenkov_AA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Ganchenkov_AA/Task07
+--------------------------------------------------
+Check path: README.md
+# Игра "Холодно-горячо" (Web-версия с IndexedDB)
+
+Браузерная версия игры, в которой нужно угадать трёхзначное число без повторяющихся цифр.
+
+## 🎮 Демо
+
+**Играть онлайн:** [https://relflly.github.io/cold-hot-web/](https://relflly.github.io/cold-hot-web/)
+
+## 📋 Правила игры
+
+1. Компьютер загадывает трёхзначное число без повторяющихся цифр
+2. Первая цифра не может быть нулём
+3. После каждой попытки вы получаете подсказки:
+   - 🔥 **Горячо** — цифра на своём месте
+   - 🌡️ **Тепло** — цифра есть в числе, но не на своём месте
+   - ❄️ **Холодно** — такой цифры нет в числе
+4. Подсказки выводятся в алфавитном порядке, чтобы не раскрывать позиции цифр
+
+## 💾 Работа с базой данных
+
+Игра использует **IndexedDB** для хранения данных в браузере:
+
+- **Сохранение партий** — каждая игра автоматически сохраняется
+- **История попыток** — все ходы записываются в базу данных
+- **Просмотр истории** — вкладка "История" показывает все сыгранные партии
+- **Воспроизведение** — можно посмотреть ход любой партии
+- **Удаление** — ненужные партии можно удалить
+
+### Структура базы данных
+
+- **games** — хранилище игровых сессий (id, player_name, secret_number, outcome, created_at)
+- **attempts** — хранилище попыток (id, game_id, attempt_number, guess, hints)
+
+## 🚀 Запуск локально
+
+Просто откройте файл `index.html` в браузере.
+
+Или запустите локальный сервер:
+
+```bash
+# Python 3
+python -m http.server 8000
+
+# Node.js (npx)
+npx serve
+```
+
+Затем откройте http://localhost:8000
+
+## 🛠 Технологии
+
+- HTML5
+- CSS3 (Flexbox, Gradients)
+- JavaScript ES6 (Modules, async/await)
+- IndexedDB (через библиотеку idb)
+
+## 📁 Структура проекта
+
+```
+cold-hot/
+├── index.html          # Главная страница
+├── css/
+│   └── style.css       # Стили
+├── js/
+│   ├── app.js          # Точка входа
+│   ├── controller.js   # Контроллер игры
+│   ├── model.js        # Игровая логика
+│   ├── view.js         # Отображение
+│   └── database.js     # Работа с IndexedDB
+└── README.md           # Документация
+```
+
+## 👤 Автор
+
+Ganchenkov AA
+--------------------------------------------------
+Total ok: 1
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/402_DBAppTech_Ganchenkov_AA
+Task07
+Task from branch: Task07
+Creation date: 12/21/2025 22:18:48
+Everything up-to-date
+Everything up-to-date
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Ganchenkov_AA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Ganchenkov_AA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Ganchenkov_AA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Ganchenkov_AA/Task06
+--------------------------------------------------
+Check path: README.md
+# Игра "Холодно-горячо" (Web-версия)
+
+Браузерная версия игры, в которой нужно угадать трёхзначное число без повторяющихся цифр.
+
+## 🎮 Демо
+
+**Играть онлайн:** [https://relflly.github.io/cold-hot-web/](https://relflly.github.io/cold-hot-web/)
+
+## 📋 Правила игры
+
+1. Компьютер загадывает трёхзначное число без повторяющихся цифр
+2. Первая цифра не может быть нулём
+3. После каждой попытки вы получаете подсказки:
+   - 🔥 **Горячо** — цифра на своём месте
+   - 🌡️ **Тепло** — цифра есть в числе, но не на своём месте
+   - ❄️ **Холодно** — такой цифры нет в числе
+4. Подсказки выводятся в алфавитном порядке, чтобы не раскрывать позиции цифр
+
+## 🚀 Запуск локально
+
+Просто откройте файл `index.html` в браузере.
+
+Или запустите локальный сервер:
+
+```bash
+# Python 3
+python -m http.server 8000
+
+# Node.js (npx)
+npx serve
+```
+
+Затем откройте http://localhost:8000
+
+## 🛠 Технологии
+
+- HTML5
+- CSS3 (Flexbox, Gradients)
+- JavaScript ES6 (Modules)
+- LocalStorage для сохранения данных
+
+## 📁 Структура проекта
+
+```
+cold-hot/
+├── index.html          # Главная страница
+├── css/
+│   └── style.css       # Стили
+├── js/
+│   ├── app.js          # Точка входа
+│   ├── controller.js   # Контроллер игры
+│   ├── model.js        # Игровая логика
+│   ├── view.js         # Отображение
+│   └── database.js     # Работа с данными
+└── README.md           # Документация
+```
+
+## 👤 Автор
+
+Ganchenkov AA
+--------------------------------------------------
+Total ok: 1
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/402_DBAppTech_Ganchenkov_AA
+Task06
+Task from branch: Task06
+Creation date: 12/21/2025 22:08:05
+Everything up-to-date
+Everything up-to-date
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Ganchenkov_AA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Ganchenkov_AA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Ganchenkov_AA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Ganchenkov_AA/Task05
+--------------------------------------------------
+Check path: README.md
+# Игра "Холодно-горячо" (cold-hot)
+
+Консольная игра, в которой нужно угадать трехзначное число без повторяющихся цифр.
+
+## Требования
+
+- PHP 8.0 или выше
+- Composer
+- Расширения: ext-pdo, ext-pdo_sqlite
+
+## Установка
+
+```bash
+composer install
+```
+
+## Запуск
+
+```bash
+# Начать новую игру
+./bin/cold-hot --new
+./bin/cold-hot -n
+
+# Показать список сохраненных партий
+./bin/cold-hot --list
+./bin/cold-hot -l
+
+# Воспроизвести партию по ID
+./bin/cold-hot --replay 1
+./bin/cold-hot -r 1
+
+# Показать справку
+./bin/cold-hot --help
+./bin/cold-hot -h
+```
+
+## Правила игры
+
+1. Компьютер загадывает трехзначное число без повторяющихся цифр
+2. Первая цифра не может быть нулем
+3. После каждой попытки выводятся подсказки:
+   - **Горячо** - цифра на своем месте
+   - **Тепло** - цифра есть в числе, но не на своем месте
+   - **Холодно** - такой цифры нет в числе
+4. Подсказки выводятся в алфавитном порядке
+
+## Особенности версии Task05
+
+В этой версии работа с базой данных реализована через ORM RedBeanPHP вместо прямых SQL-запросов.
+
+## Автор
+
+Ganchenkov AA
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "ganchenkov/cold-hot",
+    "description": "Console game Cold-Hot",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ganchenkov AA",
+            "email": "ganchenkov@example.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "ext-pdo": "*",
+        "ext-pdo_sqlite": "*",
+        "wp-cli/php-cli-tools": "^0.11",
+        "gabordemooij/redbean": "^5.7"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.7"
+    },
+    "autoload": {
+        "files": [
+            "src/Controller.php",
+            "src/View.php",
+            "src/Model.php",
+            "src/Database.php"
+        ]
+    },
+    "bin": [
+        "bin/cold-hot"
+    ],
+    "config": {
+        "sort-packages": true
+    }
+}
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+--------------------------------------------------
+Total ok: 3
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/402_DBAppTech_Ganchenkov_AA
+Task05
+Task from branch: Task05
+Creation date: 12/21/2025 21:41:50
+Everything up-to-date
+Everything up-to-date
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Ganchenkov_AA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Ganchenkov_AA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Ganchenkov_AA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Merge made by the 'recursive' strategy.
+ Task04/cold-hot/.gitignore         |   4 +
+ Task04/cold-hot/README.md          | 149 ++++++++++++++++++++++++++
+ Task04/cold-hot/bin/cold-hot       |  33 ++++++
+ Task04/cold-hot/composer.json      |  37 +++++++
+ Task04/cold-hot/composer.lock      | 166 +++++++++++++++++++++++++++++
+ Task04/cold-hot/src/Controller.php | 211 +++++++++++++++++++++++++++++++++++++
+ Task04/cold-hot/src/Database.php   | 164 ++++++++++++++++++++++++++++
+ Task04/cold-hot/src/Model.php      |  91 ++++++++++++++++
+ Task04/cold-hot/src/View.php       | 210 ++++++++++++++++++++++++++++++++++++
+ 9 files changed, 1065 insertions(+)
+ create mode 100644 Task04/cold-hot/.gitignore
+ create mode 100644 Task04/cold-hot/README.md
+ create mode 100644 Task04/cold-hot/bin/cold-hot
+ create mode 100644 Task04/cold-hot/composer.json
+ create mode 100644 Task04/cold-hot/composer.lock
+ create mode 100644 Task04/cold-hot/src/Controller.php
+ create mode 100644 Task04/cold-hot/src/Database.php
+ create mode 100644 Task04/cold-hot/src/Model.php
+ create mode 100644 Task04/cold-hot/src/View.php
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Ganchenkov_AA/Task04
+--------------------------------------------------
+Check path: README.md
+# Игра "Холодно-горячо" (Cold-Hot)
+
+Консольная игра, в которой нужно угадать трехзначное число без повторяющихся цифр.
+
+## Установка
+
+### Через Composer (глобально)
+
+```bash
+composer global require ganchenkov/cold-hot
+```
+
+### Через Composer (локально)
+
+```bash
+composer require ganchenkov/cold-hot
+```
+
+### Из исходников
+
+```bash
+git clone https://github.com/Relflly/cold-hot.git
+cd cold-hot
+composer install
+```
+
+## Запуск игры
+
+```bash
+# После глобальной установки
+cold-hot
+
+# После локальной установки
+./vendor/bin/cold-hot
+
+# Из исходников
+php bin/cold-hot
+```
+
+## Параметры командной строки
+
+| Параметр | Краткий | Описание |
+|----------|---------|----------|
+| `--new` | `-n` | Начать новую игру (по умолчанию) |
+| `--list` | `-l` | Показать список сохраненных партий |
+| `--replay <ID>` | `-r <ID>` | Воспроизвести партию по ID |
+| `--help` | `-h` | Показать справку |
+
+## Правила игры
+
+1. Компьютер загадывает трехзначное число без повторяющихся цифр
+2. Первая цифра не может быть нулем (число от 102 до 987)
+3. Игрок вводит свои предположения в формате трех цифр (например: `123`, `456`, `789`)
+4. После каждой попытки выводятся подсказки:
+   - **Горячо** — цифра угадана и находится на своем месте
+   - **Тепло** — цифра есть в числе, но не на своем месте
+   - **Холодно** — такой цифры нет в загаданном числе
+5. Подсказки выводятся в алфавитном порядке
+
+## Пример игры
+
+```
+===========================================
+   Добро пожаловать в игру "Холодно-горячо"!
+===========================================
+
+Введите ваше имя: Игрок
+Введите трехзначное число: 123
+Подсказки: Тепло Холодно Холодно
+Введите трехзначное число: 456
+Подсказки: Горячо Тепло Холодно
+Введите трехзначное число: 465
+
+Поздравляем! Вы угадали число за 3 попыток!
+```
+
+## Работа с базой данных
+
+Игра автоматически сохраняет все партии в базу данных SQLite.
+
+### Сохраняемая информация
+
+Для каждой игры сохраняется:
+- Дата и время игры
+- Имя игрока
+- Загаданное компьютером число
+- Результат игры (угадал/не угадал)
+- Все попытки с подсказками
+
+### Просмотр сохраненных партий
+
+```bash
+cold-hot --list
+```
+
+Пример вывода:
+```
+=== Список сохраненных партий ===
+
+ID   | Дата                 | Игрок           | Число  | Результат
+-----------------------------------------------------------------
+3    | 2025-12-21 23:45:00  | Игрок           | 465    | угадал
+2    | 2025-12-21 22:30:00  | Тест            | 123    | угадал
+1    | 2025-12-21 21:15:00  | Новичок         | 789    | угадал
+```
+
+### Воспроизведение партии
+
+```bash
+cold-hot --replay 3
+```
+
+Пример вывода:
+```
+=== Воспроизведение партии #3 ===
+
+Игрок: Игрок
+Дата: 2025-12-21 23:45:00
+Загаданное число: 465
+Результат: угадал
+
+Попытки:
+  1. 123 -> Тепло Холодно Холодно
+  2. 456 -> Горячо Тепло Холодно
+  3. 465 -> Горячо Горячо Горячо
+```
+
+### Расположение базы данных
+
+База данных хранится в файле:
+- Windows: `%USERPROFILE%\.cold-hot\cold-hot.db`
+- Linux/Mac: `~/.cold-hot/cold-hot.db`
+
+## Формат ввода
+
+- Вводите ровно 3 цифры без пробелов и других символов
+- Примеры корректного ввода: `123`, `456`, `789`, `102`
+- Примеры некорректного ввода: `12`, `1234`, `abc`, `1 2 3`
+
+## Требования
+
+- PHP >= 8.0
+- ext-pdo
+- ext-pdo_sqlite
+- Composer
+
+## Лицензия
+
+MIT
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "ganchenkov/cold-hot",
+    "description": "Консольная игра 'Холодно-горячо' - угадай трехзначное число",
+    "type": "project",
+    "keywords": ["game", "cli", "console", "cold-hot", "guess-number"],
+    "homepage": "https://github.com/Relflly/cold-hot",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ganchenkov AA",
+            "email": "ganchenkov@example.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "ext-pdo": "*",
+        "ext-pdo_sqlite": "*",
+        "wp-cli/php-cli-tools": "^0.11"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.7"
+    },
+    "autoload": {
+        "files": [
+            "src/Controller.php",
+            "src/View.php",
+            "src/Model.php",
+            "src/Database.php"
+        ]
+    },
+    "bin": [
+        "bin/cold-hot"
+    ],
+    "config": {
+        "sort-packages": true
+    }
+}
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+--------------------------------------------------
+Total ok: 3
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/402_DBAppTech_Ganchenkov_AA
+Task04
+Task from branch: Task04
+Creation date: 12/21/2025 21:08:40
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Ganchenkov_AA.git
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Ganchenkov_AA.git
+   1285749..6d63d7a  master -> master
+   1285749..6d63d7a  master -> master
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Ganchenkov_AA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Ganchenkov_AA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Ganchenkov_AA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Merge made by the 'recursive' strategy.
+ Task03/cold-hot/.gitignore         |   4 +
+ Task03/cold-hot/README.md          | 102 ++++++++++++++++++++++
+ Task03/cold-hot/bin/cold-hot       |  16 ++++
+ Task03/cold-hot/composer.json      |  38 +++++++++
+ Task03/cold-hot/composer.lock      | 164 +++++++++++++++++++++++++++++++++++
+ Task03/cold-hot/src/Controller.php | 169 +++++++++++++++++++++++++++++++++++++
+ Task03/cold-hot/src/Model.php      |  95 +++++++++++++++++++++
+ Task03/cold-hot/src/View.php       | 143 +++++++++++++++++++++++++++++++
+ 8 files changed, 731 insertions(+)
+ create mode 100644 Task03/cold-hot/.gitignore
+ create mode 100644 Task03/cold-hot/README.md
+ create mode 100644 Task03/cold-hot/bin/cold-hot
+ create mode 100644 Task03/cold-hot/composer.json
+ create mode 100644 Task03/cold-hot/composer.lock
+ create mode 100644 Task03/cold-hot/src/Controller.php
+ create mode 100644 Task03/cold-hot/src/Model.php
+ create mode 100644 Task03/cold-hot/src/View.php
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Ganchenkov_AA/Task03
+--------------------------------------------------
+Check path: README.md
+# Игра "Холодно-горячо" (Cold-Hot)
+
+Консольная игра, в которой нужно угадать трехзначное число без повторяющихся цифр.
+
+## Установка
+
+### Через Composer (глобально)
+
+```bash
+composer global require ganchenkov/cold-hot
+```
+
+### Через Composer (локально)
+
+```bash
+composer require ganchenkov/cold-hot
+```
+
+### Из исходников
+
+```bash
+git clone https://github.com/ganchenkov/cold-hot.git
+cd cold-hot
+composer install
+```
+
+## Запуск игры
+
+### После глобальной установки
+
+```bash
+cold-hot
+```
+
+### После локальной установки
+
+```bash
+./vendor/bin/cold-hot
+```
+
+### Из исходников
+
+```bash
+php bin/cold-hot
+```
+
+## Параметры командной строки
+
+| Параметр | Краткий | Описание |
+|----------|---------|----------|
+| `--new` | `-n` | Начать новую игру (по умолчанию) |
+| `--list` | `-l` | Показать список сохраненных партий |
+| `--replay <ID>` | `-r <ID>` | Воспроизвести партию по ID |
+| `--help` | `-h` | Показать справку |
+
+## Правила игры
+
+1. Компьютер загадывает трехзначное число без повторяющихся цифр
+2. Первая цифра не может быть нулем (число от 102 до 987)
+3. Игрок вводит свои предположения в формате трех цифр (например: `123`, `456`, `789`)
+4. После каждой попытки выводятся подсказки:
+   - **Горячо** — цифра угадана и находится на своем месте
+   - **Тепло** — цифра есть в числе, но не на своем месте
+   - **Холодно** — такой цифры нет в загаданном числе
+5. Подсказки выводятся в алфавитном порядке
+
+## Пример игры
+
+```
+===========================================
+   Добро пожаловать в игру "Холодно-горячо"!
+===========================================
+
+Введите ваше имя: Игрок
+Введите трехзначное число: 123
+Подсказки: Тепло Холодно Холодно
+Введите трехзначное число: 456
+Подсказки: Горячо Тепло Холодно
+Введите трехзначное число: 465
+Подсказки: Горячо Горячо Горячо
+
+Поздравляем! Вы угадали число за 3 попыток!
+```
+
+## Формат ввода
+
+- Вводите ровно 3 цифры без пробелов и других символов
+- Примеры корректного ввода: `123`, `456`, `789`, `102`
+- Примеры некорректного ввода: `12`, `1234`, `abc`, `1 2 3`
+
+## Примечание
+
+В текущей версии игра не сохраняется в базе данных. Параметры `--list` и `--replay` выведут соответствующее сообщение.
+
+## Требования
+
+- PHP >= 8.0
+- Composer
+
+## Лицензия
+
+MIT
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "ganchenkov/cold-hot",
+    "description": "Консольная игра 'Холодно-горячо' - угадай трехзначное число",
+    "type": "project",
+    "keywords": ["game", "cli", "console", "cold-hot", "guess-number"],
+    "homepage": "https://github.com/ganchenkov/cold-hot",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ganchenkov AA",
+            "email": "ganchenkov@example.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/ganchenkov/cold-hot/issues",
+        "source": "https://github.com/ganchenkov/cold-hot"
+    },
+    "require": {
+        "php": ">=8.0",
+        "wp-cli/php-cli-tools": "^0.11"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.7"
+    },
+    "autoload": {
+        "files": [
+            "src/Controller.php",
+            "src/View.php",
+            "src/Model.php"
+        ]
+    },
+    "bin": [
+        "bin/cold-hot"
+    ],
+    "config": {
+        "sort-packages": true
+    }
+}
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+--------------------------------------------------
+Total ok: 3
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/402_DBAppTech_Ganchenkov_AA
+Task03
+Task from branch: Task03
+Creation date: 12/21/2025 20:22:00
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Ganchenkov_AA.git
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Ganchenkov_AA.git
+   6d63d7a..156e0c2  master -> master
+   6d63d7a..156e0c2  master -> master
+402_DBAppTech_Grachev_AV
+402_DBAppTech_Klinov_AV
+402_DBAppTech_Korotkevich_DA
+402_DBAppTech_Krestyanskova_MA
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   4b14aff..a7124fb  master     -> teacher/master
+   4b14aff..a7124fb  master     -> teacher/master
+Обновление 4b14aff..a7124fb
+Fast-forward
+ task07.md | 27 +++++++++++++++++++++++++++
+ task08.md | 40 ++++++++++++++++++++++++++++++++++++++++
+ task09.md | 62 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 129 insertions(+)
+ create mode 100644 task07.md
+ create mode 100644 task08.md
+ create mode 100644 task09.md
+Из https://github.com/mikrestyanskova-beep/402_DBAppTech_Krestyanskova_MA
+Из https://github.com/mikrestyanskova-beep/402_DBAppTech_Krestyanskova_MA
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task06     -> student/Task06
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     Task07     -> student/Task07
+ * [новая ветка]     Task08     -> student/Task08
+ * [новая ветка]     Task08     -> student/Task08
+ * [новая ветка]     Task09     -> student/Task09
+ * [новая ветка]     Task09     -> student/Task09
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление a7124fb..2dd37a8
+Fast-forward (no commit created; -m option ignored)
+ Task09/cold-hot-web/.gitignore                  |   8 +
+ Task09/cold-hot-web/README.md                   |  51 ++++
+ Task09/cold-hot-web/composer.json               |   7 +
+ Task09/cold-hot-web/public/css/style.css        | 326 ++++++++++++++++++++++++
+ Task09/cold-hot-web/public/index.html           | 113 ++++++++
+ Task09/cold-hot-web/public/index.php            | 181 +++++++++++++
+ Task09/cold-hot-web/public/js/api.js            |  40 +++
+ Task09/cold-hot-web/public/js/app.js            |  11 +
+ Task09/cold-hot-web/public/js/database.js       | 122 +++++++++
+ Task09/cold-hot-web/public/js/gameController.js |  49 ++++
+ Task09/cold-hot-web/public/js/gameModel.js      |  51 ++++
+ Task09/cold-hot-web/public/js/gameView.js       | 207 +++++++++++++++
+ 12 files changed, 1166 insertions(+)
+ create mode 100644 Task09/cold-hot-web/.gitignore
+ create mode 100644 Task09/cold-hot-web/README.md
+ create mode 100644 Task09/cold-hot-web/composer.json
+ create mode 100644 Task09/cold-hot-web/public/css/style.css
+ create mode 100644 Task09/cold-hot-web/public/index.html
+ create mode 100644 Task09/cold-hot-web/public/index.php
+ create mode 100644 Task09/cold-hot-web/public/js/api.js
+ create mode 100644 Task09/cold-hot-web/public/js/app.js
+ create mode 100644 Task09/cold-hot-web/public/js/database.js
+ create mode 100644 Task09/cold-hot-web/public/js/gameController.js
+ create mode 100644 Task09/cold-hot-web/public/js/gameModel.js
+ create mode 100644 Task09/cold-hot-web/public/js/gameView.js
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA/Task09
+--------------------------------------------------
+Check path: composer.json
+composer.json not found
+--------------------------------------------------
+Check path: README.md
+README.md not found
+--------------------------------------------------
+Total ok: 0
+Total error: 2
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA
+Лабораторная работа 9
+Task from branch: Task09
+Creation date: 12/20/2025 11:26:59
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA.git
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA.git
+   a7124fb..2dd37a8  master -> master
+   a7124fb..2dd37a8  master -> master
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Merge made by the 'recursive' strategy.
+ Task08/cold-hot-web/README.md                   |  51 ++++
+ Task08/cold-hot-web/db/games.db                 | Bin 0 -> 12288 bytes
+ Task08/cold-hot-web/public/css/style.css        | 326 ++++++++++++++++++++++++
+ Task08/cold-hot-web/public/index.html           | 113 ++++++++
+ Task08/cold-hot-web/public/index.php            | 132 ++++++++++
+ Task08/cold-hot-web/public/js/api.js            |  40 +++
+ Task08/cold-hot-web/public/js/app.js            |  11 +
+ Task08/cold-hot-web/public/js/database.js       | 122 +++++++++
+ Task08/cold-hot-web/public/js/gameController.js |  49 ++++
+ Task08/cold-hot-web/public/js/gameModel.js      |  51 ++++
+ Task08/cold-hot-web/public/js/gameView.js       | 207 +++++++++++++++
+ 11 files changed, 1102 insertions(+)
+ create mode 100644 Task08/cold-hot-web/README.md
+ create mode 100644 Task08/cold-hot-web/db/games.db
+ create mode 100644 Task08/cold-hot-web/public/css/style.css
+ create mode 100644 Task08/cold-hot-web/public/index.html
+ create mode 100644 Task08/cold-hot-web/public/index.php
+ create mode 100644 Task08/cold-hot-web/public/js/api.js
+ create mode 100644 Task08/cold-hot-web/public/js/app.js
+ create mode 100644 Task08/cold-hot-web/public/js/database.js
+ create mode 100644 Task08/cold-hot-web/public/js/gameController.js
+ create mode 100644 Task08/cold-hot-web/public/js/gameModel.js
+ create mode 100644 Task08/cold-hot-web/public/js/gameView.js
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA/Task08
+--------------------------------------------------
+Check path: composer.json
+composer.json not found
+--------------------------------------------------
+Check path: README.md
+README.md not found
+--------------------------------------------------
+Total ok: 0
+Total error: 2
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA
+Лабораторная работа 8
+Task from branch: Task08
+Creation date: 12/20/2025 11:26:01
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA.git
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA.git
+   2dd37a8..a0eaa86  master -> master
+   2dd37a8..a0eaa86  master -> master
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Merge made by the 'recursive' strategy.
+ Task07/cold-hot-web/README.md            |  50 +++++
+ Task07/cold-hot-web/css/style.css        | 326 +++++++++++++++++++++++++++++++
+ Task07/cold-hot-web/index.html           | 120 ++++++++++++
+ Task07/cold-hot-web/js/app.js            |  19 ++
+ Task07/cold-hot-web/js/database.js       | 122 ++++++++++++
+ Task07/cold-hot-web/js/gameController.js |  64 ++++++
+ Task07/cold-hot-web/js/gameModel.js      | 132 +++++++++++++
+ Task07/cold-hot-web/js/gameView.js       | 286 +++++++++++++++++++++++++++
+ 8 files changed, 1119 insertions(+)
+ create mode 100644 Task07/cold-hot-web/README.md
+ create mode 100644 Task07/cold-hot-web/css/style.css
+ create mode 100644 Task07/cold-hot-web/index.html
+ create mode 100644 Task07/cold-hot-web/js/app.js
+ create mode 100644 Task07/cold-hot-web/js/database.js
+ create mode 100644 Task07/cold-hot-web/js/gameController.js
+ create mode 100644 Task07/cold-hot-web/js/gameModel.js
+ create mode 100644 Task07/cold-hot-web/js/gameView.js
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA/Task07
+There are no game folder
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA
+Лабораторная работа 7
+Task from branch: Task07
+Creation date: 12/20/2025 11:24:25
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA.git
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA.git
+   a0eaa86..ebc3d46  master -> master
+   a0eaa86..ebc3d46  master -> master
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Merge made by the 'recursive' strategy.
+ Task06/cold-hot-web/README.md            |  50 +++++
+ Task06/cold-hot-web/css/style.css        | 326 +++++++++++++++++++++++++++++++
+ Task06/cold-hot-web/index.html           | 120 ++++++++++++
+ Task06/cold-hot-web/js/app.js            |  19 ++
+ Task06/cold-hot-web/js/database.js       | 122 ++++++++++++
+ Task06/cold-hot-web/js/gameController.js |  64 ++++++
+ Task06/cold-hot-web/js/gameModel.js      | 132 +++++++++++++
+ Task06/cold-hot-web/js/gameView.js       | 286 +++++++++++++++++++++++++++
+ 8 files changed, 1119 insertions(+)
+ create mode 100644 Task06/cold-hot-web/README.md
+ create mode 100644 Task06/cold-hot-web/css/style.css
+ create mode 100644 Task06/cold-hot-web/index.html
+ create mode 100644 Task06/cold-hot-web/js/app.js
+ create mode 100644 Task06/cold-hot-web/js/database.js
+ create mode 100644 Task06/cold-hot-web/js/gameController.js
+ create mode 100644 Task06/cold-hot-web/js/gameModel.js
+ create mode 100644 Task06/cold-hot-web/js/gameView.js
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA/Task06
+There are no game folder
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA
+Лабораторная работа 6
+Task from branch: Task06
+Creation date: 12/20/2025 11:23:15
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA.git
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA.git
+   ebc3d46..677e690  master -> master
+   ebc3d46..677e690  master -> master
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Merge made by the 'recursive' strategy.
+ Task05/cold-hot/.gitignore                 |   7 ++
+ Task05/cold-hot/README.md                  |  78 +++++++++++++++
+ Task05/cold-hot/bin/cold-hot               |  15 +++
+ Task05/cold-hot/bin/cold-hot.db            | Bin 0 -> 12288 bytes
+ Task05/cold-hot/composer.json              |  22 +++++
+ Task05/cold-hot/src/ConsoleApplication.php |  80 +++++++++++++++
+ Task05/cold-hot/src/Database.php           |  52 ++++++++++
+ Task05/cold-hot/src/GameController.php     |  65 ++++++++++++
+ Task05/cold-hot/src/GameModel.php          | 153 +++++++++++++++++++++++++++++
+ Task05/cold-hot/src/GameView.php           | 116 ++++++++++++++++++++++
+ 10 files changed, 588 insertions(+)
+ create mode 100644 Task05/cold-hot/.gitignore
+ create mode 100644 Task05/cold-hot/README.md
+ create mode 100644 Task05/cold-hot/bin/cold-hot
+ create mode 100644 Task05/cold-hot/bin/cold-hot.db
+ create mode 100644 Task05/cold-hot/composer.json
+ create mode 100644 Task05/cold-hot/src/ConsoleApplication.php
+ create mode 100644 Task05/cold-hot/src/Database.php
+ create mode 100644 Task05/cold-hot/src/GameController.php
+ create mode 100644 Task05/cold-hot/src/GameModel.php
+ create mode 100644 Task05/cold-hot/src/GameView.php
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA/Task05
+--------------------------------------------------
+Check path: README.md
+# Игра "Холодно-Горячо"
+
+Программа для консольной игры **"Холодно-Горячо"**.  
+Игрок пытается угадать число, загаданное компьютером, получая текстовые подсказки о том, насколько близок его вариант к правильному.
+
+---
+### Правила игры
+
+- Игрок пытается угадать трехзначное число с уникальными цифрами.
+- После каждой попытки компьютер выдает подсказки трех типов:
+    - "Холодно" - ни одна цифра не отгадана
+    - "Тепло" - одна цифра отгадана, но не отгадана ее позиция
+    - "Горячо" - одна цифра и ее позиция отгадана
+- Подсказки сортируются в алфавитном порядке
+- Максимальное количество попыток: 10
+
+## Игровой процесс
+
+1. При запуске отображается главное меню
+2. Игрок вводит номер пункта меню и нажимает **Enter**.
+3. После старта игры программа сообщает что число 3-х значное число было загадано.
+4. Игрок на каждой попытке вводит целое число в указанном диапазоне и нажимает **Enter**.
+5. После каждой попытки программа выводит подсказку:
+   - `Горячо` — одна из цифр находится на правильном месте
+   - `Тепло` — одна из цифр правильна, но находится не на своей позиции
+   - `Холодно` — одно из цифр не входит в число
+6. Игра продолжается, пока число не будет угадано за 10 попыток.
+7. Все данные игры (дата, имя игрока, максимальное число, загаданное число, результат, список всех попыток с подсказками) автоматически сохраняются в локальную базу **SQLite**.
+
+---
+
+## Формат ввода
+
+- При угадывании числа: **целое число** из диапазона от `100` до выбранного максимального значения.  
+- Никаких специальных символов или координат поля не требуется — вводятся только числа.
+
+---
+
+## Режимы работы программы
+1. **Начать новую игру** — запустить игру с выбранными параметрами.  
+2. **Логи игр** — просмотр записей всех игр.  
+3. **Просмотр игры по ID** — просмотр записи игры по ID.  
+4. **Правила игры** — справка о правилах и подсказках.  
+5. **Выход** — завершение программы.
+
+---
+
+## Требования
+
+- **PHP** ≥ 8.0 (CLI-режим)  
+- **Composer** (установлен глобально)  
+- **SQLite** (для хранения статистики игр)
+
+---
+
+## Установка и запуск
+
+```bash
+# 1. Клонировать репозиторий
+git clone https://github.com/Baklaniso/cold-hot.git
+cd cold-hot
+
+# 2. Установить зависимости
+composer install
+
+# 3. Сгенерировать автозагрузку
+composer dump-autoload -o
+
+# 4. Запустить игру
+./bin/cold-hot
+```
+
+---
+
+## Проект на Packagist
+[https://packagist.org/packages/baklaniso/cold-hot](https://packagist.org/packages/baklaniso/cold-hot)
+
+---
+--------------------------------------------------
+Check path: composer.json
+{
+  "name": "baklaniso/cold-hot",
+  "require": {
+    "wp-cli/php-cli-tools": "^0.12.5",
+    "gabordemooij/redbean": "^5.7"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ColdHot\\": "src/"
+    }
+  },
+  "bin": [
+    "bin/cold-hot"
+  ],
+  "scripts": {
+    "phpcs": "vendor/bin/phpcs --standard=PSR12 src bin",
+    "phpcs-fix": "vendor/bin/phpcbf --standard=PSR12 src bin"
+  }
+}
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+FILE: ...Tech/402_DBAppTech_Krestyanskova_MA/Task05/cold-hot/src/ConsoleApplication.php
+------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+------------------------------------------------------------------------------------
+ 80 | ERROR | [x] Expected 1 newline at end of file; 0 found
+------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------
+
+
+FILE: ...labs/DBAppTech/402_DBAppTech_Krestyanskova_MA/Task05/cold-hot/src/Database.php
+------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+------------------------------------------------------------------------------------
+ 52 | ERROR | [x] Expected 1 newline at end of file; 0 found
+------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------
+
+
+FILE: ...BAppTech/402_DBAppTech_Krestyanskova_MA/Task05/cold-hot/src/GameController.php
+------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+------------------------------------------------------------------------------------
+ 65 | ERROR | [x] Expected 1 newline at end of file; 0 found
+------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------
+
+
+FILE: ...abs/DBAppTech/402_DBAppTech_Krestyanskova_MA/Task05/cold-hot/src/GameModel.php
+------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+------------------------------------------------------------------------------------
+ 153 | ERROR | [x] Expected 1 newline at end of file; 0 found
+------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------
+
+
+FILE: ...labs/DBAppTech/402_DBAppTech_Krestyanskova_MA/Task05/cold-hot/src/GameView.php
+------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+------------------------------------------------------------------------------------
+ 116 | ERROR | [x] Expected 1 newline at end of file; 0 found
+------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------
+
+Time: 55ms; Memory: 6MB
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA
+Лабораторная работа 5
+Task from branch: Task05
+Creation date: 12/20/2025 11:22:05
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA.git
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA.git
+   677e690..3bb760f  master -> master
+   677e690..3bb760f  master -> master
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Merge made by the 'recursive' strategy.
+ Task04/cold-hot/.gitignore                 |   4 +
+ Task04/cold-hot/README.md                  |  79 ++++++++++++++
+ Task04/cold-hot/bin/cold-hot.php           |  20 ++++
+ Task04/cold-hot/composer.json              |  21 ++++
+ Task04/cold-hot/composer.lock              | 162 +++++++++++++++++++++++++++++
+ Task04/cold-hot/src/ConsoleApplication.php |  87 ++++++++++++++++
+ Task04/cold-hot/src/Database.php           |  46 ++++++++
+ Task04/cold-hot/src/GameController.php     |  48 +++++++++
+ Task04/cold-hot/src/GameModel.php          | 126 ++++++++++++++++++++++
+ Task04/cold-hot/src/GameView.php           | 113 ++++++++++++++++++++
+ 10 files changed, 706 insertions(+)
+ create mode 100644 Task04/cold-hot/.gitignore
+ create mode 100644 Task04/cold-hot/README.md
+ create mode 100644 Task04/cold-hot/bin/cold-hot.php
+ create mode 100644 Task04/cold-hot/composer.json
+ create mode 100644 Task04/cold-hot/composer.lock
+ create mode 100644 Task04/cold-hot/src/ConsoleApplication.php
+ create mode 100644 Task04/cold-hot/src/Database.php
+ create mode 100644 Task04/cold-hot/src/GameController.php
+ create mode 100644 Task04/cold-hot/src/GameModel.php
+ create mode 100644 Task04/cold-hot/src/GameView.php
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA/Task04
+--------------------------------------------------
+Check path: README.md
+# Игра "Холодно-Горячо"
+
+Программа для консольной игры **"Холодно-Горячо"**.  
+Игрок пытается угадать число, загаданное компьютером, получая текстовые подсказки о том, насколько близок его вариант к правильному.
+
+---
+### Правила игры
+
+- Игрок пытается угадать трехзначное число с уникальными цифрами.
+- После каждой попытки компьютер выдает подсказки трех типов:
+    - "Холодно" - ни одна цифра не отгадана
+    - "Тепло" - одна цифра отгадана, но не отгадана ее позиция
+    - "Горячо" - одна цифра и ее позиция отгадана
+- Подсказки сортируются в алфавитном порядке
+- Максимальное количество попыток: 10
+
+## Игровой процесс
+
+1. При запуске отображается главное меню
+2. Игрок вводит номер пункта меню и нажимает **Enter**.
+3. После старта игры программа сообщает что число 3-х значное число было загадано.
+4. Игрок на каждой попытке вводит целое число в указанном диапазоне и нажимает **Enter**.
+5. После каждой попытки программа выводит подсказку:
+   - `Горячо` — одна из цифр находится на правильном месте
+   - `Тепло` — одна из цифр правильна, но находится не на своей позиции
+   - `Холодно` — одно из цифр не входит в число
+6. Игра продолжается, пока число не будет угадано за 10 попыток.
+7. Все данные игры (дата, имя игрока, максимальное число, загаданное число, результат, список всех попыток с подсказками) автоматически сохраняются в локальную базу **SQLite**.
+
+---
+
+## Формат ввода
+
+- В главном меню: введите **цифру от 1 до 5** и нажмите Enter.  
+- При угадывании числа: **целое число** из диапазона от `100` до выбранного максимального значения.  
+- Никаких специальных символов или координат поля не требуется — вводятся только числа.
+
+---
+
+## Режимы работы программы
+1. **Начать новую игру** — запустить игру с выбранными параметрами.  
+2. **Таблица рекордов** — просмотр сохранённых результатов прошлых игр.  
+3. **Настройки сложности** — выбор максимального числа для новых игр.  
+4. **Правила игры** — справка о правилах и подсказках.  
+5. **Выход** — завершение программы.
+
+---
+
+## Требования
+
+- **PHP** ≥ 8.0 (CLI-режим)  
+- **Composer** (установлен глобально)  
+- **SQLite** (для хранения статистики игр)
+
+---
+
+## Установка и запуск
+
+```bash
+# 1. Клонировать репозиторий
+git clone https://github.com/Baklaniso/cold-hot.git
+cd cold-hot
+
+# 2. Установить зависимости
+composer install
+
+# 3. Сгенерировать автозагрузку
+composer dump-autoload -o
+
+# 4. Запустить игру
+./bin/cold-hot
+```
+
+---
+
+## Проект на Packagist
+[https://packagist.org/packages/baklaniso/cold-hot](https://packagist.org/packages/baklaniso/cold-hot)
+
+---
+--------------------------------------------------
+Check path: composer.json
+{
+  "name": "slava/cold-hot",
+  "require": {
+    "wp-cli/php-cli-tools": "^0.12.5"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ColdHot\\": "src/"
+    }
+  },
+  "bin": [
+    "bin/cold-hot"
+  ],
+  "scripts": {
+    "phpcs": "vendor/bin/phpcs --standard=PSR12 src bin",
+    "phpcs-fix": "vendor/bin/phpcbf --standard=PSR12 src bin"
+  }
+}
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+FILE: ...Tech/402_DBAppTech_Krestyanskova_MA/Task04/cold-hot/src/ConsoleApplication.php
+------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+------------------------------------------------------------------------------------
+ 87 | ERROR | [x] Expected 1 newline at end of file; 0 found
+------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------
+
+
+FILE: ...labs/DBAppTech/402_DBAppTech_Krestyanskova_MA/Task04/cold-hot/src/Database.php
+------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+------------------------------------------------------------------------------------
+ 46 | ERROR | [x] Expected 1 newline at end of file; 0 found
+------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------
+
+
+FILE: ...BAppTech/402_DBAppTech_Krestyanskova_MA/Task04/cold-hot/src/GameController.php
+------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+------------------------------------------------------------------------------------
+ 48 | ERROR | [x] Expected 1 newline at end of file; 0 found
+------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------
+
+
+FILE: ...abs/DBAppTech/402_DBAppTech_Krestyanskova_MA/Task04/cold-hot/src/GameModel.php
+------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+------------------------------------------------------------------------------------
+ 126 | ERROR | [x] Expected 1 newline at end of file; 0 found
+------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------
+
+
+FILE: ...labs/DBAppTech/402_DBAppTech_Krestyanskova_MA/Task04/cold-hot/src/GameView.php
+------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+------------------------------------------------------------------------------------
+ 113 | ERROR | [x] Expected 1 newline at end of file; 0 found
+------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------
+
+Time: 50ms; Memory: 6MB
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA
+Лабораторная работа 4
+Task from branch: Task04
+Creation date: 12/20/2025 11:20:37
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA.git
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA.git
+   3bb760f..6bc3f90  master -> master
+   3bb760f..6bc3f90  master -> master
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Merge made by the 'recursive' strategy.
+ Task03/cold-hot/.gitignore         | 14 +++++++
+ Task03/cold-hot/README.md          | 79 ++++++++++++++++++++++++++++++++++++++
+ Task03/cold-hot/bin/cold-hot.php   |  5 +++
+ Task03/cold-hot/composer.json      | 22 +++++++++++
+ Task03/cold-hot/src/Controller.php | 72 ++++++++++++++++++++++++++++++++++
+ Task03/cold-hot/src/Game.php       | 50 ++++++++++++++++++++++++
+ Task03/cold-hot/src/View.php       | 76 ++++++++++++++++++++++++++++++++++++
+ 7 files changed, 318 insertions(+)
+ create mode 100644 Task03/cold-hot/.gitignore
+ create mode 100644 Task03/cold-hot/README.md
+ create mode 100644 Task03/cold-hot/bin/cold-hot.php
+ create mode 100644 Task03/cold-hot/composer.json
+ create mode 100644 Task03/cold-hot/src/Controller.php
+ create mode 100644 Task03/cold-hot/src/Game.php
+ create mode 100644 Task03/cold-hot/src/View.php
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA/Task03
+--------------------------------------------------
+Check path: README.md
+# Игра "Холодно-Горячо"
+
+Программа для консольной игры **"Холодно-Горячо"**.  
+Игрок пытается угадать число, загаданное компьютером, получая текстовые подсказки о том, насколько близок его вариант к правильному.
+
+---
+### Правила игры
+
+- Игрок пытается угадать трехзначное число с уникальными цифрами.
+- После каждой попытки компьютер выдает подсказки трех типов:
+    - "Холодно" - ни одна цифра не отгадана
+    - "Тепло" - одна цифра отгадана, но не отгадана ее позиция
+    - "Горячо" - одна цифра и ее позиция отгадана
+- Подсказки сортируются в алфавитном порядке
+- Максимальное количество попыток: 10
+
+## Игровой процесс
+
+1. При запуске отображается главное меню
+2. Игрок вводит номер пункта меню и нажимает **Enter**.
+3. После старта игры программа сообщает что число 3-х значное число было загадано.
+4. Игрок на каждой попытке вводит целое число в указанном диапазоне и нажимает **Enter**.
+5. После каждой попытки программа выводит подсказку:
+   - `Горячо` — одна из цифр находится на правильном месте
+   - `Тепло` — одна из цифр правильна, но находится не на своей позиции
+   - `Холодно` — одно из цифр не входит в число
+6. Игра продолжается, пока число не будет угадано за 10 попыток.
+7. Все данные игры (дата, имя игрока, максимальное число, загаданное число, результат, список всех попыток с подсказками) автоматически сохраняются в локальную базу **SQLite**.
+
+---
+
+## Формат ввода
+
+- В главном меню: введите **цифру от 1 до 5** и нажмите Enter.  
+- При угадывании числа: **целое число** из диапазона от `100` до выбранного максимального значения.  
+- Никаких специальных символов или координат поля не требуется — вводятся только числа.
+
+---
+
+## Режимы работы программы
+1. **Начать новую игру** — запустить игру с выбранными параметрами.  
+2. **Таблица рекордов** — просмотр сохранённых результатов прошлых игр.  
+3. **Настройки сложности** — выбор максимального числа для новых игр.  
+4. **Правила игры** — справка о правилах и подсказках.  
+5. **Выход** — завершение программы.
+
+---
+
+## Требования
+
+- **PHP** ≥ 8.0 (CLI-режим)  
+- **Composer** (установлен глобально)  
+- **SQLite** (для хранения статистики игр)
+
+---
+
+## Установка и запуск
+
+```bash
+# 1. Клонировать репозиторий
+git clone https://github.com/Baklaniso/cold-hot.git
+cd cold-hot
+
+# 2. Установить зависимости
+composer install
+
+# 3. Сгенерировать автозагрузку
+composer dump-autoload -o
+
+# 4. Запустить игру
+./bin/cold-hot
+```
+
+---
+
+## Проект на Packagist
+[https://packagist.org/packages/baklaniso/cold-hot](https://packagist.org/packages/baklaniso/cold-hot)
+
+---
+--------------------------------------------------
+Check path: composer.json
+{
+  "name": "slava/cold-hot",
+  "description": "game",
+  "type": "project",
+  "bin": [
+    "bin/cold-hot"
+  ],
+      "autoload": {
+        "psr-4": {
+            "ColdHot\\": "src/"
+    },
+          "files": [
+            "src/Controller.php",
+            "src/View.php",
+            "src/Game.php"
+        ]
+  },
+  "require": {
+    "php": ">=8.0",
+    "wp-cli/php-cli-tools": "^v0.12.6"
+  }
+}
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+FILE: ...bs/DBAppTech/402_DBAppTech_Krestyanskova_MA/Task03/cold-hot/src/Controller.php
+------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+------------------------------------------------------------------------------------
+ 1 | ERROR | [x] Header blocks must be separated by a single blank line
+------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------
+
+
+FILE: ...rey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA/Task03/cold-hot/src/Game.php
+------------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+------------------------------------------------------------------------------------
+ 1 | ERROR | [x] Header blocks must be separated by a single blank line
+ 2 | ERROR | [x] Header blocks must be separated by a single blank line
+------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------
+
+
+FILE: ...rey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA/Task03/cold-hot/src/View.php
+------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+------------------------------------------------------------------------------------
+ 1 | ERROR | [x] Header blocks must be separated by a single blank line
+------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------
+
+Time: 39ms; Memory: 6MB
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA
+Лабораторная работа 3
+Task from branch: Task03
+Creation date: 12/20/2025 11:19:31
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA.git
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA.git
+   6bc3f90..5ebb78c  master -> master
+   6bc3f90..5ebb78c  master -> master
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Merge made by the 'recursive' strategy.
+ Task02/cold-hot/.gitignore         | 14 ++++++++
+ Task02/cold-hot/README.md          | 73 ++++++++++++++++++++++++++++++++++++++
+ Task02/cold-hot/bin/cold-hot.php   |  5 +++
+ Task02/cold-hot/composer.json      | 18 ++++++++++
+ Task02/cold-hot/src/Controller.php |  8 +++++
+ Task02/cold-hot/src/View.php       | 25 +++++++++++++
+ 6 files changed, 143 insertions(+)
+ create mode 100644 Task02/cold-hot/.gitignore
+ create mode 100644 Task02/cold-hot/README.md
+ create mode 100644 Task02/cold-hot/bin/cold-hot.php
+ create mode 100644 Task02/cold-hot/composer.json
+ create mode 100644 Task02/cold-hot/src/Controller.php
+ create mode 100644 Task02/cold-hot/src/View.php
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA/Task02
+--------------------------------------------------
+Check path: README.md
+# Task02 — Игра "Холодно-Горячо"
+
+## Описание проекта
+Программа для консольной игры **"Холодно-Горячо"**.  
+Игрок должен угадать число, загаданное компьютером, получая подсказки о том, насколько близок его вариант к правильному.
+
+---
+
+### Правила игры
+- Компьютер загадывает число в диапазоне от **1** до максимального числа, указанного в настройках.  
+- Игрок вводит попытку.  
+- После каждой попытки программа сообщает, насколько ответ близок к загаданному числу:  
+  - «Очень горячо» — если разница до 5;  
+  - «Горячо» — если разница до 15;  
+  - «Тепло» — если разница до 30;  
+  - «Холодно» — если разница до 50;  
+  - «Очень холодно» — если больше 50.  
+- Игра продолжается, пока число не будет угадано.  
+
+---
+
+### Сохраняемая информация
+Информация о каждой игре сохраняется в базе данных SQLite:
+- дата игры;
+- имя игрока;
+- максимально возможное число;
+- загаданное число;
+- исход игры (угадал / не угадал);
+- список всех попыток (номер, введённое число, подсказка программы).
+
+---
+
+### Режимы работы программы
+1. Начать новую игру.  
+2. Таблица рекордов.  
+3. Настройки сложности.  
+4. Правила игры.  
+5. Выход.  
+
+---
+
+## Требования
+- **PHP** >= 8.0 (CLI-режим)  
+- **Composer** (глобально установленный)  
+- **SQLite** (для хранения данных игры)  
+
+---
+
+## Установка и запуск
+
+### 1. Клонировать репозиторий:
+```bash
+git clone https://github.com/YourLogin/cold-hot.git
+cd cold-hot
+```
+
+### 2. Установить зависимости:
+```bash
+composer install
+```
+
+### 3. Сгенерировать автозагрузку:
+```bash
+composer dump-autoload -o
+```
+
+### 4. Запустить игру:
+```bash
+
+### Проект на Packagist
+https://packagist.org/packages/baklaniso/cold-hot
+./bin/cold-hot
+```
+--------------------------------------------------
+Check path: composer.json
+{
+  "name": "slava/cold-hot",
+  "description": "game",
+  "type": "project",
+  "bin": [
+    "bin/cold-hot"
+  ],
+  "require": {
+    "php": ">=8.0",
+    "wp-cli/php-cli-tools": "^v0.12.6"
+  },
+  "autoload": {
+    "files": [
+      "src/Controller.php",
+      "src/View.php"
+    ]
+  }
+}
+--------------------------------------------------
+Check path: src/Controller.php
+<?php
+namespace Baklaniso\ColdHot\Controller;
+
+use Baklaniso\ColdHold\View\View;
+
+function startGame() {
+    View::renderStartScreen();
+}
+--------------------------------------------------
+Check path: src/View.php
+<?php
+namespace Baklaniso\ColdHot\View;
+
+class View {
+    public static function renderStartScreen() {
+        if (function_exists('\cli\line')) {
+            \cli\line("=== Игра 'Холодно-Горячо' ===");
+            \cli\line("Меню:");
+            \cli\line("1) Начать новую игру");
+            \cli\line("2) Таблица рекордов");
+            \cli\line("3) Настройки сложности");
+            \cli\line("4) Правила игры");
+            \cli\line("5) Выход");
+            \cli\line("");
+        } else {
+            echo "=== Игра 'Холодно-Горячо' ===\n";
+            echo "Меню:\n";
+            echo "1) Начать новую игру\n";
+            echo "2) Таблица рекордов\n";
+            echo "3) Настройки сложности\n";
+            echo "4) Правила игры\n";
+            echo "5) Выход\n\n";
+        }
+    }
+}
+--------------------------------------------------
+Total ok: 4
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA
+Лабораторная работа 2
+Task from branch: Task02
+Creation date: 12/20/2025 11:18:24
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA.git
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA.git
+   5ebb78c..509407c  master -> master
+   5ebb78c..509407c  master -> master
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Merge made by the 'recursive' strategy.
+ Task01/README.md        |  37 +++++++++++++++++++++++++++++++++++++
+ Task01/README_logger.md |  21 +++++++++++++++++++++
+ Task01/self-logger.bat  |  36 ++++++++++++++++++++++++++++++++++++
+ Task01/self_logger.db   | Bin 0 -> 8192 bytes
+ Task01/task1.php        |  11 +++++++++++
+ 5 files changed, 105 insertions(+)
+ create mode 100644 Task01/README.md
+ create mode 100644 Task01/README_logger.md
+ create mode 100644 Task01/self-logger.bat
+ create mode 100644 Task01/self_logger.db
+ create mode 100644 Task01/task1.php
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA/Task01
+--------------------------------------------------
+Check path: self-logger.bat
+@echo off
+setlocal
+
+set DB=self_logger.db
+set USER=%USERNAME%
+
+:: Формируем дату и время
+for /f "tokens=1-2 delims= " %%a in ('date /t') do set DATE=%%a
+for /f "tokens=1" %%a in ('time /t') do set TIME=%%a
+set DATETIME=%DATE% %TIME%
+
+:: Путь к sqlite3.exe (без кавычек в переменной!)
+set SQLITE=C:\sqlite\sqlite3.exe
+
+:: Если базы нет — создаём таблицу
+if not exist %DB% (
+    "%SQLITE%" %DB% "CREATE TABLE logs(user TEXT, run_date TEXT);"
+)
+
+:: Записываем запуск
+"%SQLITE%" %DB% "INSERT INTO logs(user, run_date) VALUES('%USER%', '%DATETIME%');"
+
+:: Считаем статистику
+for /f %%a in ('%SQLITE% %DB% "SELECT COUNT(*) FROM logs;"') do set COUNT=%%a
+for /f %%a in ('%SQLITE% %DB% "SELECT run_date FROM logs ORDER BY run_date ASC LIMIT 1;"') do set FIRST_RUN=%%a
+
+:: Вывод информации
+echo Имя программы: self-logger.bat
+echo Количество запусков: %COUNT%
+echo Первый запуск: %FIRST_RUN%
+echo ---------------------------------------------
+echo User      ^| Date
+echo ---------------------------------------------
+"%SQLITE%" -header -column %DB% "SELECT user, run_date FROM logs;"
+
+endlocal
+--------------------------------------------------
+Check path: task1.php
+<?php
+
+$readmeFile = 'README.md';
+
+if (!file_exists($readmeFile)) {
+    echo "Файл README.md не найден: $readmeFile\n";
+    exit(1);
+}
+
+$readmeContent = file_get_contents($readmeFile);
+echo $readmeContent;
+--------------------------------------------------
+Check path: README.md
+# Проект "Холодно-горячо"
+
+## Задача для первого блока
+### Вариант 4
+Написать программу для игры "Холодно-горячо"(cold-hot). Игрок пытается угадать случайное трехзначное число (без повторяющихся цифр), сгенерированное компьютером. После каждой попытки компьютер предоставляет игроку подсказки трех типов:
+* "Холодно". Ни одна цифра не отгадана.
+* "Тепло" Одна цифра отгадана, но не отгадана ее позиция. 
+* "Горячо". Одна цифра и ее позиция отгадана.
+На каждом ходе компьютер должен выдать три подсказки, отсортированные в алфавитном порядке. Если секретное число 456, а предположение игрока — 546, подсказки будут иметь вид «Горячо Тепло Тепло». Подсказка «Горячо» относится к 6, а «Тепло Тепло» — к 4 и 5.
+
+* * *
+
+* Информация о датах и исходах всех партий, а также о всех попытках, сделанных во время игры, должна сохраняться в базе данных.
+* Для каждой игры в базе должна храниться следующая информация:
+    * Дата игры
+    * Имя игрока
+    * Загаданное компьютером число
+    * Исход игры (угадал/не угадал)
+    * Запись попыток в формате: 
+      `номер попытки | предложенная буква | результат`
+* В программе должны быть реализованы три режима:
+    * Новая игра.
+    * Вывод списка всех сохраненных в базе партий.
+    * Повтор любой сохраненной партии (то есть повтор всех ходов из этой партии).
+
+
+
+
+## Инструкция по запуску
+
+1. **Настройка окружения**:
+    - Убедитесь, что у вас установлены PHP и SQLite.
+    - Для Windows: настройте переменные окружения для SQLite.
+    - Для Unix-подобных систем: установите SQLite и сделайте скрипты исполняемыми.
+
+2. **Запуск программы**:
+    - Запустите скрипт для запуска игры (например, через командную строку или терминал).
+--------------------------------------------------
+Check path: README_logger.md
+# Инструкция по запуску скрипта логирования
+
+Этот документ содержит инструкции по запуску командного файла `self-logger` для Windows и Unix-подобных систем.
+
+## Windows: self-logger.bat
+
+1. **Убедитесь, что SQLite установлен** и добавлен в переменную окружения PATH. Если SQLite не установлен, скачайте и установите его с [официального сайта SQLite](https://www.sqlite.org/download.html). После установки добавьте путь к `sqlite3.exe` в переменную окружения PATH:
+    - Откройте "Панель управления" → "Система" → "Дополнительные параметры системы" → "Переменные среды".
+    - Найдите переменную `Path` в списке системных переменных, выберите её и нажмите "Изменить".
+    - Нажмите "Создать" и добавьте путь к директории, где установлен `sqlite3.exe` (например, `C:\sqlite`).
+
+2. **Перейдите в директорию, содержащую файл `self-logger.bat`**. Для этого:
+    - Откройте командную строку (CMD). Можно сделать это, набрав `cmd` в поиске Windows и нажав Enter.
+    - В командной строке выполните команду, чтобы перейти в нужную директорию:
+      ```cmd
+      cd C:\путь\к\директории
+      ```
+      Замените `C:\путь\к\директории` на фактический путь к директории, где находится `self-logger.bat`.
+3. **Запустите командный файл**. Введите следующую команду в командной строке:
+   ```cmd
+   self-logger.bat
+--------------------------------------------------
+Total ok: 4
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/402_DBAppTech_Krestyanskova_MA
+Лабораторная работа 1
+Task from branch: Task01
+Creation date: 12/20/2025 11:16:15
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA.git
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Krestyanskova_MA.git
+   509407c..d209c19  master -> master
+   509407c..d209c19  master -> master
+402_DBAppTech_Novikov_ME
+402_DBAppTech_Pyanzina_VD
+402_DBAppTech_Sergeev_SA
+402_DBAppTech_SHestakov_VA
+402_DBAppTech_SHeyanov_AV
+402_DBAppTech_Simonov_AP
+402_DBAppTech_Sokolov_RV
+=====================================================
+/home/andrey/labs/DBAppTech/402_DBAppTech_Sokolov_RV
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Sokolov_RV
+Из github.com-mrsu:andpop-mrsu/402_DBAppTech_Sokolov_RV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/Nevall-von-Goodem/402_DBAppTech_Sokolov_RV
+Из https://github.com/Nevall-von-Goodem/402_DBAppTech_Sokolov_RV
+ * [новая ветка]     Task09     -> student/Task09
+ * [новая ветка]     Task09     -> student/Task09
+Merge made by the 'recursive' strategy.
+ Task09/README.md                               |  46 ++
+ Task09/composer.json                           |  14 +
+ Task09/composer.lock                           | 758 ++++++++++++++++++++++++
+ Task09/db/coldhot.sqlite                       | Bin 0 -> 16384 bytes
+ Task09/public/index.html                       | 113 ++++
+ Task09/public/index.php                        | 244 ++++++++
+ Task09/public/js/api.js                        |  35 ++
+ Task09/public/js/game.js                       |  66 +++
+ Task09/public/js/main.js                       | 274 +++++++++
+ Task09/public/styles/styles.css                |  83 +++
+ Task09/src/Api.php                             | 158 +++++
+ Task09/vendor/autoload.php                     |  25 +
+ Task09/vendor/composer/ClassLoader.php         | 579 ++++++++++++++++++
+ Task09/vendor/composer/InstalledVersions.php   | 378 ++++++++++++
+ Task09/vendor/composer/LICENSE                 |  21 +
+ Task09/vendor/composer/autoload_classmap.php   | 161 +++++
+ Task09/vendor/composer/autoload_files.php      |  11 +
+ Task09/vendor/composer/autoload_namespaces.php |   9 +
+ Task09/vendor/composer/autoload_psr4.php       |  19 +
+ Task09/vendor/composer/autoload_real.php       |  50 ++
+ Task09/vendor/composer/autoload_static.php     | 248 ++++++++
+ Task09/vendor/composer/installed.json          | 781 +++++++++++++++++++++++++
+ Task09/vendor/composer/installed.php           | 144 +++++
+ Task09/vendor/composer/platform_check.php      |  26 +
+ Task09/vendor/fig/http-message-util            |   1 +
+ Task09/vendor/nikic/fast-route                 |   1 +
+ Task09/vendor/psr/container                    |   1 +
+ Task09/vendor/psr/http-factory                 |   1 +
+ Task09/vendor/psr/http-message                 |   1 +
+ Task09/vendor/psr/http-server-handler          |   1 +
+ Task09/vendor/psr/http-server-middleware       |   1 +
+ Task09/vendor/psr/log                          |   1 +
+ Task09/vendor/ralouphie/getallheaders          |   1 +
+ Task09/vendor/slim/http                        |   1 +
+ Task09/vendor/slim/psr7                        |   1 +
+ Task09/vendor/slim/slim                        |   1 +
+ 36 files changed, 4255 insertions(+)
+ create mode 100644 Task09/README.md
+ create mode 100644 Task09/composer.json
+ create mode 100644 Task09/composer.lock
+ create mode 100644 Task09/db/coldhot.sqlite
+ create mode 100644 Task09/public/index.html
+ create mode 100644 Task09/public/index.php
+ create mode 100644 Task09/public/js/api.js
+ create mode 100644 Task09/public/js/game.js
+ create mode 100644 Task09/public/js/main.js
+ create mode 100644 Task09/public/styles/styles.css
+ create mode 100644 Task09/src/Api.php
+ create mode 100644 Task09/vendor/autoload.php
+ create mode 100644 Task09/vendor/composer/ClassLoader.php
+ create mode 100644 Task09/vendor/composer/InstalledVersions.php
+ create mode 100644 Task09/vendor/composer/LICENSE
+ create mode 100644 Task09/vendor/composer/autoload_classmap.php
+ create mode 100644 Task09/vendor/composer/autoload_files.php
+ create mode 100644 Task09/vendor/composer/autoload_namespaces.php
+ create mode 100644 Task09/vendor/composer/autoload_psr4.php
+ create mode 100644 Task09/vendor/composer/autoload_real.php
+ create mode 100644 Task09/vendor/composer/autoload_static.php
+ create mode 100644 Task09/vendor/composer/installed.json
+ create mode 100644 Task09/vendor/composer/installed.php
+ create mode 100644 Task09/vendor/composer/platform_check.php
+ create mode 160000 Task09/vendor/fig/http-message-util
+ create mode 160000 Task09/vendor/nikic/fast-route
+ create mode 160000 Task09/vendor/psr/container
+ create mode 160000 Task09/vendor/psr/http-factory
+ create mode 160000 Task09/vendor/psr/http-message
+ create mode 160000 Task09/vendor/psr/http-server-handler
+ create mode 160000 Task09/vendor/psr/http-server-middleware
+ create mode 160000 Task09/vendor/psr/log
+ create mode 160000 Task09/vendor/ralouphie/getallheaders
+ create mode 160000 Task09/vendor/slim/http
+ create mode 160000 Task09/vendor/slim/psr7
+ create mode 160000 Task09/vendor/slim/slim
+--------------------------------------------------
+Task:  /home/andrey/labs/DBAppTech/402_DBAppTech_Sokolov_RV/Task09
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "sokol/cold-hot-web-slim",
+    "type": "project",
+    "require": {
+        "slim/slim": "^4.15",
+        "slim/psr7": "^1.8",
+        "slim/http": "^0.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+        "App\\": "src/"
+        }
+    }
+}
+--------------------------------------------------
+Check path: README.md
+# Игра "Холодно-Горячо"
+
+Программа для консольной игры **"Холодно-Горячо"**.  
+Игрок пытается угадать число, загаданное компьютером, компьютер загадывает **трёхзначное число без повторяющихся цифр**, а игрок пытается его угадать.
+
+## [Играть](http://localhost:3000/)
+
+## Как играть (Slim)
+
+1. **Клонируйте или скачайте проект**
+2. В каталоге Task09:
+   1) Установить зависимости:
+      composer install
+   2) Обновить автозагрузку:
+      composer dump-autoload -o
+   3) Запустить встроенный сервер:
+      php -S localhost:3000 -t public public/index.php
+   4) Открыть: http://localhost:3000/
+   5) REST:
+   - GET  /games
+   - GET  /games/{id}
+   - POST /games       { "player_name": "...", "secret": "123" }
+   - POST /step/{id}   { "turn": 1, "guess": "123", "hints": ["..."], "outcome": "win|lose|in_progress" }
+
+3. Введите имя игрока и нажмите «Начать».
+4. Вводите трёхзначные числа без повторяющихся цифр (например, `123`).  
+   Некорректный ввод не засчитывается.
+5. Команда `exit` — досрочный выход (покажем секрет).
+6. После окончания партия сохраняется в **IndexedDB**. Раздел «История» позволяет:
+   - просмотреть список партий,
+   - повторить любую (пошаговые ходы и подсказки),
+   - очистить локальную БД.
+
+### Работа с базой (IndexedDB)
+– Список партий: раздел «История».  
+– Повтор партии: нажмите «Повтор» в таблице или введите ID и нажмите «Повтор по ID».  
+– Прямая ссылка: `#replay-<ID>` (например, `#replay-12`).  
+– Очистить локальную БД: кнопка «Очистить БД» в разделе «История».
+
+## Технологии
+- HTML5, CSS3, JavaScript, php
+- SQLite
+
+## Требуются расширения PHP
+- pdo_sqlite
+- sqlite3
+--------------------------------------------------
+Total ok: 2
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/DBAppTech/402_DBAppTech_Sokolov_RV
+Task09
+Task from branch: Task09
+Creation date: 12/21/2025 16:40:39
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Sokolov_RV.git
+To github.com-mrsu:andpop-mrsu/402_DBAppTech_Sokolov_RV.git
+   afffdc3..f764abb  master -> master
+   afffdc3..f764abb  master -> master
+402_DBAppTech_Tenishev_RR
+402_DBAppTech_Urenkov_YuYu
+402_DBAppTech_Votyakov_MA
+**********************
+PowerShell transcript end
+End time: 20251222151145
+**********************

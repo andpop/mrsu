@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20251203144841
+Start time: 20251222151640
 **********************
 Transcript started, output file is log.txt
 301_DBTech_Andronov_NA
@@ -19,36 +19,85 @@ Transcript started, output file is log.txt
 301_DBTech_Larkin_MS
 301_DBTech_Lemyasev_RN
 301_DBTech_Luzin_MD
+301_DBTech_Marin_MV
+301_DBTech_Orlov_VD
+301_DBTech_Pyanov_RV
+301_DBTech_Rodionov_MN
+301_DBTech_Samylkin_ME
+301_DBTech_Sarajkin_ME
+301_DBTech_Senichev_AS
+301_DBTech_ZHurin_IA
+302_DBTech_Dankin_I
+302_DBTech_Ermakov_EA
+302_DBTech_Grishukov_EV
+302_DBTech_Karmazov_NA
+302_DBTech_Kitaev_EV
 =====================================================
-/home/andrey/labs/DBTech/301_DBTech_Luzin_MD
-Из github.com-mrsu:andpop-mrsu/301_DBTech_Luzin_MD
-Из github.com-mrsu:andpop-mrsu/301_DBTech_Luzin_MD
+/home/andrey/labs/DBTech/302_DBTech_Kitaev_EV
+Из github.com-mrsu:andpop-mrsu/302_DBTech_Kitaev_EV
+Из github.com-mrsu:andpop-mrsu/302_DBTech_Kitaev_EV
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
 Уже актуально.
 fatal: внешний репозиторий student уже существует
 fatal: внешний репозиторий student уже существует
-Уже актуально.
+Из https://github.com/Oshlook/302_DBTech_Kitaev_EV
+Из https://github.com/Oshlook/302_DBTech_Kitaev_EV
+ * [новая ветка]     Task08     -> student/Task08
+ * [новая ветка]     Task08     -> student/Task08
+   bfa64ca..67820cf  master     -> student/master
+   bfa64ca..67820cf  master     -> student/master
+Обновление 67820cf..9a6c902
+Fast-forward (no commit created; -m option ignored)
+ Task08/data/.gitignore        |   4 +
+ Task08/db_init.sql            | 118 ++++++++++++
+ Task08/includes/db.php        | 430 ++++++++++++++++++++++++++++++++++++++++++
+ Task08/public/css/styles.css  | 225 ++++++++++++++++++++++
+ Task08/public/index.php       | 164 ++++++++++++++++
+ Task08/templates/masters.php  | 141 ++++++++++++++
+ Task08/templates/schedule.php | 101 ++++++++++
+ Task08/templates/servises.php | 186 ++++++++++++++++++
+ 8 files changed, 1369 insertions(+)
+ create mode 100644 Task08/data/.gitignore
+ create mode 100644 Task08/db_init.sql
+ create mode 100644 Task08/includes/db.php
+ create mode 100644 Task08/public/css/styles.css
+ create mode 100644 Task08/public/index.php
+ create mode 100644 Task08/templates/masters.php
+ create mode 100644 Task08/templates/schedule.php
+ create mode 100644 Task08/templates/servises.php
 --------------------------------------------------
-Task:  /home/andrey/labs/DBTech/301_DBTech_Luzin_MD/Task07
+Task:  /home/andrey/labs/DBTech/302_DBTech_Kitaev_EV/Task08
 --------------------------------------------------
-Check path: db_init.sql
+Check path: task8_cli.php
+task8_cli.php not found
 --------------------------------------------------
-Check path: ER.jpg
+Check path: index.php
+index.php not found
 --------------------------------------------------
-Check path: db_schema.jpg
+Total ok: 0
+Total error: 2
 --------------------------------------------------
-Total ok: 3
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/DBTech/301_DBTech_Luzin_MD
-Task07
-Task from branch: Task07
-Creation date: 11/30/2025 09:36:26
-PS>TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> $global:?
-True
+/home/andrey/labs/DBTech/302_DBTech_Kitaev_EV
+Task08
+Task from branch: Task08
+Creation date: 12/21/2025 15:16:11
+To github.com-mrsu:andpop-mrsu/302_DBTech_Kitaev_EV.git
+To github.com-mrsu:andpop-mrsu/302_DBTech_Kitaev_EV.git
+   67820cf..9a6c902  master -> master
+   67820cf..9a6c902  master -> master
+302_DBTech_Kopein_AS
+302_DBTech_Lohanov_IV
+302_DBTech_Lukyanov_RA
+302_DBTech_Markin_KR
+302_DBTech_Romanov_DA
+302_DBTech_Shaposhnikov_AA
+302_DBTech_Shilyaeva_OI
+302_DBTech_Sosnina_IV
+302_DBTech_Tiossa_MN
+302_DBTech_Tuzhin_DO
+302_DBTech_Uchuvatkin_NS
+**********************
+PowerShell transcript end
+End time: 20251222151835
+**********************
