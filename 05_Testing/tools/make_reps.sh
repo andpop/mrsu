@@ -2,8 +2,8 @@
 token=123
 
 rm ./reps.txt
-for student in $(cat students-list.txt); do
-   echo "202M_Testing_$student" >> reps.txt
+for student in $(cat students-list_103M.txt); do
+   echo "103M_Testing_$student" >> reps.txt
 done
 
 for repo in $(cat reps.txt) ; do

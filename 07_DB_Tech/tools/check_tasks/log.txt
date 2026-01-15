@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20251222151640
+Start time: 20260113133202
 **********************
 Transcript started, output file is log.txt
 301_DBTech_Andronov_NA
@@ -9,6 +9,42 @@ Transcript started, output file is log.txt
 301_DBTech_CHernov_MM
 301_DBTech_Eremin_VS
 301_DBTech_Fomin_SO
+=====================================================
+/home/andrey/labs/DBTech/301_DBTech_Fomin_SO
+error: Невозможно выполнить получение, так как у вас имеются не слитые файлы.
+error: Невозможно выполнить получение, так как у вас имеются не слитые файлы.
+подсказка: Исправьте их в рабочем каталоге, затем запустите «git add/rm <файл>»,
+подсказка: Исправьте их в рабочем каталоге, затем запустите «git add/rm <файл>»,
+подсказка: чтобы пометить исправление и сделайте коммит.
+подсказка: чтобы пометить исправление и сделайте коммит.
+fatal: Выход из-за неразрешенного конфликта.
+fatal: Выход из-за неразрешенного конфликта.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+error: Невозможно выполнить слияние, так как у вас имеются не слитые файлы.
+error: Невозможно выполнить слияние, так как у вас имеются не слитые файлы.
+подсказка: Исправьте их в рабочем каталоге, затем запустите «git add/rm <файл>»,
+подсказка: Исправьте их в рабочем каталоге, затем запустите «git add/rm <файл>»,
+подсказка: чтобы пометить исправление и сделайте коммит.
+подсказка: чтобы пометить исправление и сделайте коммит.
+fatal: Выход из-за неразрешенного конфликта.
+fatal: Выход из-за неразрешенного конфликта.
+--------------------------------------------------
+Task:  /home/andrey/labs/DBTech/301_DBTech_Fomin_SO/Task08
+--------------------------------------------------
+Check path: task8_cli.php
+task8_cli.php not found
+--------------------------------------------------
+Check path: index.php
+index.php not found
+--------------------------------------------------
+Total ok: 0
+Total error: 2
+--------------------------------------------------
+/home/andrey/labs/DBTech/301_DBTech_Fomin_SO
+Task08
+Task from branch: Task08
+Creation date: 12/27/2025 18:32:39
 301_DBTech_Golikov_PA
 301_DBTech_Goncharov_KD
 301_DBTech_Haritonov_DV
@@ -17,6 +53,42 @@ Transcript started, output file is log.txt
 301_DBTech_Karmyshev_IR
 301_DBTech_Kuchina_AS
 301_DBTech_Larkin_MS
+=====================================================
+/home/andrey/labs/DBTech/301_DBTech_Larkin_MS
+error: Невозможно выполнить получение, так как у вас имеются не слитые файлы.
+error: Невозможно выполнить получение, так как у вас имеются не слитые файлы.
+подсказка: Исправьте их в рабочем каталоге, затем запустите «git add/rm <файл>»,
+подсказка: Исправьте их в рабочем каталоге, затем запустите «git add/rm <файл>»,
+подсказка: чтобы пометить исправление и сделайте коммит.
+подсказка: чтобы пометить исправление и сделайте коммит.
+fatal: Выход из-за неразрешенного конфликта.
+fatal: Выход из-за неразрешенного конфликта.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+error: Невозможно выполнить слияние, так как у вас имеются не слитые файлы.
+error: Невозможно выполнить слияние, так как у вас имеются не слитые файлы.
+подсказка: Исправьте их в рабочем каталоге, затем запустите «git add/rm <файл>»,
+подсказка: Исправьте их в рабочем каталоге, затем запустите «git add/rm <файл>»,
+подсказка: чтобы пометить исправление и сделайте коммит.
+подсказка: чтобы пометить исправление и сделайте коммит.
+fatal: Выход из-за неразрешенного конфликта.
+fatal: Выход из-за неразрешенного конфликта.
+--------------------------------------------------
+Task:  /home/andrey/labs/DBTech/301_DBTech_Larkin_MS/Task08
+--------------------------------------------------
+Check path: task8_cli.php
+task8_cli.php not found
+--------------------------------------------------
+Check path: index.php
+index.php not found
+--------------------------------------------------
+Total ok: 0
+Total error: 2
+--------------------------------------------------
+/home/andrey/labs/DBTech/301_DBTech_Larkin_MS
+Test
+Task from branch: Task08
+Creation date: 12/26/2025 20:31:19
 301_DBTech_Lemyasev_RN
 301_DBTech_Luzin_MD
 301_DBTech_Marin_MV
@@ -32,60 +104,6 @@ Transcript started, output file is log.txt
 302_DBTech_Grishukov_EV
 302_DBTech_Karmazov_NA
 302_DBTech_Kitaev_EV
-=====================================================
-/home/andrey/labs/DBTech/302_DBTech_Kitaev_EV
-Из github.com-mrsu:andpop-mrsu/302_DBTech_Kitaev_EV
-Из github.com-mrsu:andpop-mrsu/302_DBTech_Kitaev_EV
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Из https://github.com/Oshlook/302_DBTech_Kitaev_EV
-Из https://github.com/Oshlook/302_DBTech_Kitaev_EV
- * [новая ветка]     Task08     -> student/Task08
- * [новая ветка]     Task08     -> student/Task08
-   bfa64ca..67820cf  master     -> student/master
-   bfa64ca..67820cf  master     -> student/master
-Обновление 67820cf..9a6c902
-Fast-forward (no commit created; -m option ignored)
- Task08/data/.gitignore        |   4 +
- Task08/db_init.sql            | 118 ++++++++++++
- Task08/includes/db.php        | 430 ++++++++++++++++++++++++++++++++++++++++++
- Task08/public/css/styles.css  | 225 ++++++++++++++++++++++
- Task08/public/index.php       | 164 ++++++++++++++++
- Task08/templates/masters.php  | 141 ++++++++++++++
- Task08/templates/schedule.php | 101 ++++++++++
- Task08/templates/servises.php | 186 ++++++++++++++++++
- 8 files changed, 1369 insertions(+)
- create mode 100644 Task08/data/.gitignore
- create mode 100644 Task08/db_init.sql
- create mode 100644 Task08/includes/db.php
- create mode 100644 Task08/public/css/styles.css
- create mode 100644 Task08/public/index.php
- create mode 100644 Task08/templates/masters.php
- create mode 100644 Task08/templates/schedule.php
- create mode 100644 Task08/templates/servises.php
---------------------------------------------------
-Task:  /home/andrey/labs/DBTech/302_DBTech_Kitaev_EV/Task08
---------------------------------------------------
-Check path: task8_cli.php
-task8_cli.php not found
---------------------------------------------------
-Check path: index.php
-index.php not found
---------------------------------------------------
-Total ok: 0
-Total error: 2
---------------------------------------------------
-/home/andrey/labs/DBTech/302_DBTech_Kitaev_EV
-Task08
-Task from branch: Task08
-Creation date: 12/21/2025 15:16:11
-To github.com-mrsu:andpop-mrsu/302_DBTech_Kitaev_EV.git
-To github.com-mrsu:andpop-mrsu/302_DBTech_Kitaev_EV.git
-   67820cf..9a6c902  master -> master
-   67820cf..9a6c902  master -> master
 302_DBTech_Kopein_AS
 302_DBTech_Lohanov_IV
 302_DBTech_Lukyanov_RA
@@ -99,5 +117,5 @@ To github.com-mrsu:andpop-mrsu/302_DBTech_Kitaev_EV.git
 302_DBTech_Uchuvatkin_NS
 **********************
 PowerShell transcript end
-End time: 20251222151835
+End time: 20260113133309
 **********************

@@ -1,14 +1,17 @@
 #!/bin/bash
 
+STREAM="405_PHP"
 BASE_DIR="/home/andrey/labs/PHP"
-REPS_FILE="reps.txt"
+# REPS_FILE="reps.txt"
+STUDENTS_FILE="./students-list_405.txt"
+
 # TEACHER_PROFILE="https://github.com/andpop-mrsu"
 # Привязку к удаленному репозиторию делаем по SSH, а не по HTTPS
 TEACHER_PROFILE="git@github.com-mrsu:andpop-mrsu"
 TEACHER_EMAIL="andrvpopov@gmail.com"
 
-for rep in $(cat $REPS_FILE) ; do
-    student_dir="${BASE_DIR}/$rep"
+for student in $(cat $STUDENTS_FILE) ; do
+    student_dir="${BASE_DIR}/${STREAM}_$student"
     if ! [ -d $student_dir ] ; then
         echo "Make directory: for ${student_dir}"
         mkdir $student_dir
@@ -16,7 +19,7 @@ for rep in $(cat $REPS_FILE) ; do
     cd $student_dir
     git init
     git config user.email $TEACHER_EMAIL
-    git remote add teacher "${TEACHER_PROFILE}/${rep}.git"
+    git remote add teacher "${TEACHER_PROFILE}/${STREAM}_${student}.git"
     git fetch teacher
     git checkout --track teacher/master
 done
