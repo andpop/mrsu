@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20260115175136
+Start time: 20260116095952
 **********************
 Transcript started, output file is log.txt
 304_DB_Afonkin_DE
@@ -23,6 +23,46 @@ Transcript started, output file is log.txt
 304_DB_Savin_RV
 304_DB_Sergeeva_OD
 304_DB_Shagilov_KD
+=====================================================
+/home/andrey/labs/DB/304_DB_Shagilov_KD
+Из github.com-mrsu:andpop-mrsu/304_DB_Shagilov_KD
+Из github.com-mrsu:andpop-mrsu/304_DB_Shagilov_KD
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/ShagilKirillov/304_DB_Shagilov_KD
+Из https://github.com/ShagilKirillov/304_DB_Shagilov_KD
+ * [новая ветка]     Task08     -> student/Task08
+ * [новая ветка]     Task08     -> student/Task08
+Обновление 21f9883..4308eba
+Fast-forward (no commit created; -m option ignored)
+ Task08/data/test.db             | Bin 0 -> 45056 bytes
+ Task08/db.php                   |   4 +++
+ Task08/public/add_doctor.php    |  52 ++++++++++++++++++++++++++++++++
+ Task08/public/delete_doctor.php |  16 ++++++++++
+ Task08/public/edit_doctor.php   |  65 ++++++++++++++++++++++++++++++++++++++++
+ Task08/public/index.php         |  52 ++++++++++++++++++++++++++++++++
+ 6 files changed, 189 insertions(+)
+ create mode 100644 Task08/data/test.db
+ create mode 100644 Task08/db.php
+ create mode 100644 Task08/public/add_doctor.php
+ create mode 100644 Task08/public/delete_doctor.php
+ create mode 100644 Task08/public/edit_doctor.php
+ create mode 100644 Task08/public/index.php
+--------------------------------------------------
+Task:  /home/andrey/labs/DB/304_DB_Shagilov_KD/Task08
+There are no game folder
+--------------------------------------------------
+/home/andrey/labs/DB/304_DB_Shagilov_KD
+Task08
+Task from branch: Task08
+Creation date: 01/15/2026 21:00:34
+To github.com-mrsu:andpop-mrsu/304_DB_Shagilov_KD.git
+To github.com-mrsu:andpop-mrsu/304_DB_Shagilov_KD.git
+   21f9883..4308eba  master -> master
+   21f9883..4308eba  master -> master
 304_DB_Shevolaev_IV
 304_DB_Sveshnikov_IK
 304_DB_Tumajkina_DA
@@ -31,5 +71,5 @@ Transcript started, output file is log.txt
 304_DB_Zabnenkov_MA
 **********************
 PowerShell transcript end
-End time: 20260115175151
+End time: 20260116100027
 **********************
