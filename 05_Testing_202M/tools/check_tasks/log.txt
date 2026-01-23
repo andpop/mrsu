@@ -1,0 +1,273 @@
+**********************
+PowerShell transcript start
+Start time: 20250325060517
+**********************
+Transcript started, output file is log.txt
+202M_Testing_Adepa_IV
+202M_Testing_Antoshechkin_AYU
+202M_Testing_Arhipov_KA
+202M_Testing_Bikmurzin_DR
+202M_Testing_Bujnov_EA
+=====================================================
+/home/andrey/labs/202M_Testing/202M_Testing_Bujnov_EA
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Bujnov_EA
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Bujnov_EA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   40d218e..ff86e87  master     -> teacher/master
+   40d218e..ff86e87  master     -> teacher/master
+подсказка: You have divergent branches and need to specify how to reconcile them.
+подсказка: You have divergent branches and need to specify how to reconcile them.
+подсказка: You can do so by running one of the following commands sometime before
+подсказка: You can do so by running one of the following commands sometime before
+подсказка: your next pull:
+подсказка: your next pull:
+подсказка:
+подсказка: 
+подсказка:   git config pull.rebase false  # merge
+подсказка:   git config pull.rebase false  # merge
+подсказка:   git config pull.rebase true   # rebase
+подсказка:   git config pull.rebase true   # rebase
+подсказка:   git config pull.ff only       # fast-forward only
+подсказка:   git config pull.ff only       # fast-forward only
+подсказка:
+подсказка: 
+подсказка: You can replace "git config" with "git config --global" to set a default
+подсказка: You can replace "git config" with "git config --global" to set a default
+подсказка: preference for all repositories. You can also pass --rebase, --no-rebase,
+подсказка: preference for all repositories. You can also pass --rebase, --no-rebase,
+подсказка: or --ff-only on the command line to override the configured default per
+подсказка: or --ff-only on the command line to override the configured default per
+подсказка: invocation.
+подсказка: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+fatal: Need to specify how to reconcile divergent branches.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Из https://github.com/Buinow/202M_Testing_Bujnov_EA
+Из https://github.com/Buinow/202M_Testing_Bujnov_EA
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+Merge made by the 'ort' strategy.
+ "Task03/\320\236\321\202\321\207\320\265\321\2023.pdf" | Bin 0 -> 461384 bytes
+ "\320\236\321\202\321\207\320\265\321\2023.pdf"        | Bin 0 -> 461384 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 "Task03/\320\236\321\202\321\207\320\265\321\2023.pdf"
+ create mode 100644 "\320\236\321\202\321\207\320\265\321\2023.pdf"
+--------------------------------------------------
+Task:  /home/andrey/labs/202M_Testing/202M_Testing_Bujnov_EA/Task03
+--------------------------------------------------
+Total ok: 0
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/202M_Testing/202M_Testing_Bujnov_EA
+Task03
+Task from branch: Task03
+Creation date: 03/24/2025 17:52:19
+To github.com-mrsu:andpop-mrsu/202M_Testing_Bujnov_EA.git
+To github.com-mrsu:andpop-mrsu/202M_Testing_Bujnov_EA.git
+ ! [rejected]        master -> master (non-fast-forward)
+ ! [rejected]        master -> master (non-fast-forward)
+error: не удалось отправить некоторые ссылки в «github.com-mrsu:andpop-mrsu/202M_Testing_Bujnov_EA.git»
+error: не удалось отправить некоторые ссылки в «github.com-mrsu:andpop-mrsu/202M_Testing_Bujnov_EA.git»
+подсказка: Updates were rejected because the tip of your current branch is behind
+подсказка: Updates were rejected because the tip of your current branch is behind
+подсказка: its remote counterpart. If you want to integrate the remote changes,
+подсказка: its remote counterpart. If you want to integrate the remote changes,
+подсказка: use 'git pull' before pushing again.
+подсказка: use 'git pull' before pushing again.
+подсказка: See the 'Note about fast-forwards' in 'git push --help' for details.
+подсказка: See the 'Note about fast-forwards' in 'git push --help' for details.
+202M_Testing_Buzin_VA
+=====================================================
+/home/andrey/labs/202M_Testing/202M_Testing_Buzin_VA
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Buzin_VA
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Buzin_VA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Из https://github.com/Ske1en/202M_Testing_Buzin_VA
+Из https://github.com/Ske1en/202M_Testing_Buzin_VA
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+Обновление b3e3b77..b78085d
+Fast-forward (no commit created; -m option ignored)
+ ...0\276\320\262\320\260\320\275\320\270\320\265.pdf" | Bin 1244278 -> 0 bytes
+ ...0\276\320\262\320\260\320\275\320\270\320\265.pdf" | Bin 0 -> 337235 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 "Task02/\320\240\321\203\321\207\320\275\320\276\320\265 \321\202\320\265\321\201\321\202\320\270\321\200\320\276\320\262\320\260\320\275\320\270\320\265.pdf"
+ create mode 100644 "Task03/\320\220\320\262\321\202\320\276 \321\202\320\265\321\201\321\202\320\270\321\200\320\276\320\262\320\260\320\275\320\270\320\265.pdf"
+--------------------------------------------------
+Task:  /home/andrey/labs/202M_Testing/202M_Testing_Buzin_VA/Task03
+--------------------------------------------------
+Total ok: 0
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/202M_Testing/202M_Testing_Buzin_VA
+Task03
+Task from branch: Task03
+Creation date: 03/23/2025 16:43:30
+To github.com-mrsu:andpop-mrsu/202M_Testing_Buzin_VA.git
+To github.com-mrsu:andpop-mrsu/202M_Testing_Buzin_VA.git
+   b3e3b77..b78085d  master -> master
+   b3e3b77..b78085d  master -> master
+202M_Testing_Demidov_VA
+202M_Testing_Guryanov_MA
+202M_Testing_Kiryuhin_AA
+202M_Testing_Krasavcev_DO
+202M_Testing_Magicheva_KS
+202M_Testing_Makarov_NA
+202M_Testing_Malcev_NB
+202M_Testing_Nagaev_DG
+=====================================================
+/home/andrey/labs/202M_Testing/202M_Testing_Nagaev_DG
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Nagaev_DG
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Nagaev_DG
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   cf1539f..8daae7e  master     -> teacher/master
+   cf1539f..8daae7e  master     -> teacher/master
+Обновление cf1539f..8daae7e
+Fast-forward
+ Task01/check.txt                |  10 ++++++++
+ Task01/equation.txt             |  33 ++++++++++++++++++++++++
+ Task01/solve_quadratic.py       |  23 +++++++++++++++++
+ Task01/test_class.py            |  45 +++++++++++++++++++++++++++++++++
+ Task01/test_func.py             |  10 ++++++++
+ Task01/test_func_doctest.py     |   6 +++++
+ Task01/test_func_unittest.py    |  37 +++++++++++++++++++++++++++
+ Task01/triangle_class.py        |  32 ++++++++++++++++++++++++
+ Task01/triangle_func.py         |  24 ++++++++++++++++++
+ Task01/triangle_func_doctest.py |  54 ++++++++++++++++++++++++++++++++++++++++
+ Task02/Task02.pdf               | Bin 0 -> 345604 bytes
+ 11 files changed, 274 insertions(+)
+ create mode 100644 Task01/check.txt
+ create mode 100644 Task01/equation.txt
+ create mode 100644 Task01/solve_quadratic.py
+ create mode 100644 Task01/test_class.py
+ create mode 100644 Task01/test_func.py
+ create mode 100644 Task01/test_func_doctest.py
+ create mode 100644 Task01/test_func_unittest.py
+ create mode 100644 Task01/triangle_class.py
+ create mode 100644 Task01/triangle_func.py
+ create mode 100644 Task01/triangle_func_doctest.py
+ create mode 100644 Task02/Task02.pdf
+Из https://github.com/sll0ne/202M_Testing_Nagaev_DG
+Из https://github.com/sll0ne/202M_Testing_Nagaev_DG
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 8daae7e..10ed105
+Fast-forward (no commit created; -m option ignored)
+ Task03/Task03.pdf | Bin 0 -> 314694 bytes
+ Task03/Task03.py  |  80 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 80 insertions(+)
+ create mode 100644 Task03/Task03.pdf
+ create mode 100644 Task03/Task03.py
+--------------------------------------------------
+Task:  /home/andrey/labs/202M_Testing/202M_Testing_Nagaev_DG/Task03
+--------------------------------------------------
+Total ok: 0
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/202M_Testing/202M_Testing_Nagaev_DG
+Task03
+Task from branch: Task03
+Creation date: 03/24/2025 18:55:50
+To github.com-mrsu:andpop-mrsu/202M_Testing_Nagaev_DG.git
+To github.com-mrsu:andpop-mrsu/202M_Testing_Nagaev_DG.git
+   8daae7e..10ed105  master -> master
+   8daae7e..10ed105  master -> master
+202M_Testing_Nikishova_AA
+=====================================================
+/home/andrey/labs/202M_Testing/202M_Testing_Nikishova_AA
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Nikishova_AA
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Nikishova_AA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Из https://github.com/sasha-ana/202M_Testing_Nikishova_AA
+Из https://github.com/sasha-ana/202M_Testing_Nikishova_AA
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+   4409505..c250598  master     -> student/master
+   4409505..c250598  master     -> student/master
+Обновление c250598..67e7f64
+Fast-forward (no commit created; -m option ignored)
+ ...1\210\320\276\320\262\320\260\320\220\320\220.pdf" | Bin 0 -> 1096976 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 "Task03/\320\236\321\202\321\207\320\265\321\202 \320\235\320\270\320\272\320\270\321\210\320\276\320\262\320\260\320\220\320\220.pdf"
+--------------------------------------------------
+Task:  /home/andrey/labs/202M_Testing/202M_Testing_Nikishova_AA/Task03
+--------------------------------------------------
+Total ok: 0
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/202M_Testing/202M_Testing_Nikishova_AA
+Task03 complete
+Task from branch: Task03
+Creation date: 03/24/2025 11:40:23
+To github.com-mrsu:andpop-mrsu/202M_Testing_Nikishova_AA.git
+To github.com-mrsu:andpop-mrsu/202M_Testing_Nikishova_AA.git
+   c250598..67e7f64  master -> master
+   c250598..67e7f64  master -> master
+202M_Testing_Perepelkin_DS
+=====================================================
+/home/andrey/labs/202M_Testing/202M_Testing_Perepelkin_DS
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Perepelkin_DS
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Perepelkin_DS
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Из https://github.com/dperepelkin/202M_Testing_Perepelkin_DS
+Из https://github.com/dperepelkin/202M_Testing_Perepelkin_DS
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+   a7e4443..49384fa  master     -> student/master
+   a7e4443..49384fa  master     -> student/master
+Обновление 49384fa..f61099d
+Fast-forward (no commit created; -m option ignored)
+ Task03/Task03.pdf | Bin 0 -> 2370228 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Task03/Task03.pdf
+--------------------------------------------------
+Task:  /home/andrey/labs/202M_Testing/202M_Testing_Perepelkin_DS/Task03
+--------------------------------------------------
+Total ok: 0
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/202M_Testing/202M_Testing_Perepelkin_DS
+Задание Task03
+Task from branch: Task03
+Creation date: 03/24/2025 20:18:47
+To github.com-mrsu:andpop-mrsu/202M_Testing_Perepelkin_DS.git
+To github.com-mrsu:andpop-mrsu/202M_Testing_Perepelkin_DS.git
+   49384fa..f61099d  master -> master
+   49384fa..f61099d  master -> master
+202M_Testing_Pozharskij_VS
+202M_Testing_Pyatkin_KA
+202M_Testing_Razov_KA
+202M_Testing_Razumov_DS
+202M_Testing_Rodyushkin_VE
+202M_Testing_Ryazin_VA
+202M_Testing_SHikin_IE
+202M_Testing_Slavkin_AS
+202M_Testing_Turchaeva_VN
+202M_Testing_Tutukov_ME
+202M_Testing_Uvarov_AV
+202M_Testing_ZHivaev_VD
+**********************
+PowerShell transcript end
+End time: 20250325061024
+**********************
