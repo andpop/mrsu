@@ -1,13 +1,12 @@
-# Лабораторные работы для курса "Базы данных"
-### Мордовский госуниверситет, ПИ, 304 группа
+# Lab Assignments for the "Databases" Course  
+### Mordovia State University, Faculty of Applied Informatics, Group 304
 
-### Темы
-1. **Интерактивная работа с реляционными базами данных.** Проектирование базы данных. Создание и изменение таблиц. Вставка, выборка, изменение и удаление данных. 
-2. **Программная работа с реляционной базой данных.** Создание PHP-приложения для работы с базой данных через PDO и ORM.
+### Topics  
+1. **Interactive Work with Relational Databases.** Database design. Creating and modifying tables. Inserting, querying, updating, and deleting data.  
+2. **Programmatic Interaction with Relational Databases.** Developing a PHP application to interact with a database using PDO and ORM.
 
-### Задания и решения
-* Задания для выполнения размещаются в файлах task01.md, task02.md, ...
-* Проекты для решения заданий размещаются в каталогах Task01, Task02, Task03, ...
-* Прав на запись (коммиты) в данный репозиторий у студентов нет, файлы с решениями должны передаваться из личных репозиториев через механизм Pull Requests.
-* Задание будет считаться принятым после закрытия соответствующего Pull Request в этом репозитории.
-
+### Assignments and Solutions  
+- Assignment descriptions are provided in files: **task01.md**, **task02.md**, etc.  
+- Student solutions should be placed in directories: **Task01**, **Task02**, **Task03**, etc.  
+- Students do **not** have write (commit) access to this repository. Solution files must be submitted from personal forks via **Pull Requests**.  
+- An assignment is considered accepted once the corresponding **Pull Request** is closed in this repository.

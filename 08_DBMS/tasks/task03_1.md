@@ -1,44 +1,55 @@
-## Лабораторная работа 3. Выборка данных SQL-командой SELECT
+## Lab Assignment 3. Data Retrieval Using the SQL SELECT Statement
 
-### Задание
-* Создать базу данных movies_rating.db с помощью SQL-скрипта db_init.sql, подготовленного в л/р 2. **Данный скрипт должен отрабатывать за не более чем 2 секунды!**
-* Составить SQL-запросы для выборки данных из movies_rating.db (выборка из одной или нескольких таблиц, сортировка, группировка, встроенные функции).
-1.  Составить список фильмов, имеющих хотя бы одну оценку. Список фильмов отсортировать по году выпуска и по названиям. В списке оставить первые 10 фильмов.
-2.  Вывести список всех пользователей, фамилии (не имена!) которых начинаются на букву 'A'. Полученный список отсортировать по дате регистрации. В списке оставить первых 5 пользователей.
-3.  Написать запрос, возвращающий информацию о рейтингах в более читаемом формате: имя и фамилия эксперта, название фильма, год выпуска, оценка и дата оценки в формате ГГГГ-ММ-ДД. Отсортировать данные по имени эксперта, затем названию фильма и оценке. В списке оставить первые 50 записей.
-4. Вывести список фильмов с указанием тегов, которые были им присвоены пользователями. Сортировать по году выпуска, затем по названию фильма, затем по тегу. В списке оставить первые 40 записей.
-5. Вывести список самых свежих фильмов. В список должны войти все фильмы последнего года выпуска, имеющиеся в базе данных. Запрос должен быть универсальным, не зависящим от исходных данных (нужный год выпуска должен определяться в запросе, а не жестко задаваться).
-6. Найти все комедии, выпущенные после 2000 года, которые понравились мужчинам (оценка не ниже 4.5). Для каждого фильма в этом списке вывести название, год выпуска и количество таких оценок. Результат отсортировать по году выпуска и названию фильма.
-7. Провести анализ занятий (профессий) пользователей - вывести количество пользователей для каждого рода занятий. Найти самую распространенную и самую редкую профессию посетитетей сайта.
+### Task
+- Create the **movies_rating.db** database using the **db_init.sql** script prepared in Lab Assignment 2. **This script must execute in no more than 2 seconds!**
+- Write SQL queries to retrieve data from **movies_rating.db** (queries may involve one or multiple tables, sorting, grouping, and built-in functions).
 
-* Создание базы данных movies_rating.db, заполнение её данными, описание каждого задания и выполнение запроса для его решения оформить в виде кроссплатформенного shell-скрипта task3.bat следующего вида:
-```
+1. **List all movies that have at least one rating.** Sort the list by release year and then by title. Keep only the first 10 movies.
+2. **List all users whose last names (not first names!) start with the letter 'A'.** Sort the resulting list by registration date. Keep only the first 5 users.
+3. **Write a query that returns rating information in a more readable format:** reviewer’s first and last name, movie title, release year, rating value, and rating date formatted as YYYY-MM-DD. Sort the results by reviewer’s first name, then by movie title, then by rating. Keep only the first 50 records.
+4. **List all movies along with the tags assigned to them by users.** Sort by release year, then by movie title, then by tag. Keep only the first 40 records.
+5. **List the most recent movies.** The result should include all movies released in the latest year present in the database. The query must be generic—it must determine the latest year dynamically rather than hardcoding it.
+6. **Find all comedies released after the year 2000 that were liked by male users (rating ≥ 4.5).** For each such movie, display its title, release year, and the number of qualifying ratings. Sort the results by release year and then by title.
+7. **Analyze user occupations:** display the number of users for each occupation. Identify both the most common and the rarest occupations among site users.
+
+- Prepare a cross-platform shell script named **task3.bat** that includes:
+  - Creation and population of the **movies_rating.db** database using **db_init.sql**,
+  - A description of each task,
+  - Execution of the corresponding SQL query for each task.
+
+The script should follow this structure:
+
+```bash
 #!/bin/bash
 chcp 65001
 
 sqlite3 movies_rating.db < db_init.sql
 
-echo "1. Составить список фильмов, имеющих хотя бы одну оценку. Список фильмов отсортировать по году выпуска и по названиям. В списке оставить первые 10 фильмов."
+echo "1. List all movies that have at least one rating. Sort the list by release year and then by title. Keep only the first 10 movies."
 echo --------------------------------------------------
 sqlite3 movies_rating.db -box -echo "SELECT ..."
 echo " "
 
-echo "2. Вывести список всех пользователей, фамилии (не имена!) которых начинаются на букву 'A'. Полученный список отсортировать по дате регистрации. В списке оставить первых 5 пользователей."
+echo "2. List all users whose last names (not first names!) start with the letter 'A'. Sort the resulting list by registration date. Keep only the first 5 users."
 echo --------------------------------------------------
 sqlite3 movies_rating.db -box -echo "SELECT ..."
 ```
-* Файл task3.bat должен быть в кодировке UTF-8.
-* Текст после команды `echo` должен быть заключен в двойные кавычки.
-* После добавления файла task3.bat в индекс локального репозитория Git (то есть после выполнения команды `git add ...`) нужно сделать этот файл исполняемым для Linux: `git update-index --chmod=+x task3.bat`.
 
+#### Additional Requirements:
+- The **task3.bat** file must be saved in **UTF-8 encoding**.
+- All text following the `echo` command must be enclosed in **double quotes**.
+- After adding **task3.bat** to the Git index (`git add ...`), mark it as executable for Linux systems:
+  ```bash
+  git update-index --chmod=+x task3.bat
+  ```
 
-* * *
-### Требования к оформлению и коду
-* Работать нужно в ветке Task03 Git-репозитория.
-* В каталоге Task03 должны быть два файла: db_init.sql и task3.bat.
+---
 
-* * *
+### Formatting and Code Requirements
+- Perform all work in the **Task03** branch of your Git repository.
+- The **Task03** directory must contain exactly two files: **db_init.sql** and **task3.bat**.
 
-### Отправка задания на проверку
-Процедура отправки задания на проверку и манипуляции с репозиториями после проверки описаны в файле [Git_instruction.md](Git_instruction.md).
+---
 
+### Submission Procedure
+The process for submitting the assignment for review and managing repositories after grading is described in the file **[Git_instruction.md](Git_instruction.md)**.

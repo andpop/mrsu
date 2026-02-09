@@ -1,66 +1,67 @@
-## Лабораторная работа 4. Выборка данных с помощью SQL
+## Lab Assignment 4. Data Retrieval Using SQL
 
-### Задание
-* Создать базу данных movies_rating.db с помощью SQL-скрипта db_init.sql, подготовленного в л/р 2. **Данный скрипт должен отрабатывать за не более чем 2 секунды!**
-* Составить SQL-запросы для выборки данных из movies_rating.db (группировка,  сортировка, встроенные функции, условная логика, подзапросы, оконные функции, CTE).
+### Task
+- Create the **movies_rating.db** database using the **db_init.sql** script prepared in Lab Assignment 2. **This script must execute in no more than 2 seconds!**
+- Write SQL queries to retrieve data from **movies_rating.db**, using grouping, sorting, built-in functions, conditional logic, subqueries, window functions, and Common Table Expressions (CTEs).
 
-1. Найти все пары пользователей, оценивших один и тот же фильм. Устранить
-   дубликаты, проверить отсутствие пар с самим собой. Для каждой пары должны
-   быть указаны имена пользователей и название фильма, который они ценили. В
-   списке оставить первые 100 записей.
+1. **Find all pairs of distinct users who rated the same movie.** Eliminate duplicates and ensure no user is paired with themselves. For each pair, display both users’ full names and the title of the movie they rated. Keep only the first 100 records.
+2. **Find the 10 most recent ratings given by different users.** Display the movie title, user’s full name, rating value, and rating date formatted as YYYY-MM-DD.
+3. **List all movies with the highest average rating and all movies with the lowest average rating in a single result set.** Sort the combined list by release year and then by title. Add a column named **"Recommended"** that contains **"Yes"** for top-rated movies and **"No"** for lowest-rated ones.
+4. **Calculate the total number of ratings and the average rating assigned by female users between 2010 and 2012 (inclusive).**
+5. **List movies along with their average rating and rank based on that average.** Sort the resulting list by release year and then by title. Keep only the first 20 records.
+6. **Display the 10 most recently registered users in the format "Lastname Firstname|Registration Date"** (last name first, then first name).
+7. **Using a recursive CTE, generate a multiplication table for numbers from 1 to 10.** The output should consist of a single column with entries like:
+   ```
+   1x1=1
+   1x2=2
+   ...
+   1x10=10
+   2x1=2
+   2x2=4
+   ...
+   10x9=90
+   10x10=100
+   ```
+8. **Using a recursive CTE, extract all movie genres from the *movies* table, listing each genre in a separate row** (genres in the source are stored as a pipe-separated string, e.g., "Action|Adventure|Sci-Fi").
 
-2. Найти 10 самых свежих оценок от разных пользователей, вывести названия фильмов, имена пользователей, оценку, дату отзыва в формате ГГГГ-ММ-ДД.
+- Prepare a cross-platform shell script named **task4.bat** that includes:
+  - Creation and population of the **movies_rating.db** database using **db_init.sql**,
+  - A description of each task,
+  - Execution of the corresponding SQL query for each task.
 
-3. Вывести в одном списке все фильмы с максимальным средним рейтингом и все фильмы с минимальным средним рейтингом. Общий список отсортировать по году выпуска и названию фильма. В зависимости от рейтинга в колонке "Рекомендуем" для фильмов должно быть написано "Да" или "Нет".
+The script should follow this structure:
 
-4. Вычислить количество оценок и среднюю оценку, которую дали фильмам пользователи-женщины в период с 2010 по 2012 год.
-
-5. Составить список фильмов с указанием их средней оценки и места в рейтинге по средней оценке. Полученный список отсортировать по году выпуска и названиям фильмов. В списке оставить первые 20 записей.
-
-6. Вывести список из 10 последних зарегистрированных пользователей в формате "Фамилия Имя|Дата регистрации" (сначала фамилия, потом имя).
-
-7. С помощью рекурсивного CTE составить таблицу умножения для чисел от 1 до 10. Должен получиться один столбец следующего вида:
-```
-1x1=1
-1x2=2
-. . .
-1x10=10
-2x1=2
-2x2=2
-. . .
-10x9=90
-10x10=100
-```
-8. С помощью рекурсивного CTE выделить все жанры фильмов, имеющиеся в таблице movies (каждый жанр в отдельной строке).
-
-* Создание базы данных movies_rating.db, заполнение её данными, описание каждого задания и выполнение запроса для его решения оформить в виде кроссплатформенного shell-скрипта task4.bat следующего вида:
-```
+```bash
 #!/bin/bash
 chcp 65001
 
 sqlite3 movies_rating.db < db_init.sql
 
-echo "1. Текст первого задания. Вывести список из 10 пользователей."
+echo "1. Find all pairs of distinct users who rated the same movie. Eliminate duplicates and ensure no user is paired with themselves. For each pair, display both users’ full names and the title of the movie they rated. Keep only the first 100 records."
 echo --------------------------------------------------
-sqlite3 movies_rating.db -box -echo "SELECT * FROM users LIMIT 10"
+sqlite3 movies_rating.db -box -echo "SELECT ..."
 echo " "
 
-echo "2. Вывести список из 5 пользователей."
+echo "2. Find the 10 most recent ratings given by different users. Display the movie title, user’s full name, rating value, and rating date formatted as YYYY-MM-DD."
 echo --------------------------------------------------
-sqlite3 movies_rating.db -box -echo "SELECT * FROM users LIMIT 5"
+sqlite3 movies_rating.db -box -echo "SELECT ..."
 ```
-* Файл task4.bat должен быть в кодировке UTF-8.
-* Текст после команды `echo` должен быть заключен в двойные кавычки.
-* После добавления файла task4.bat в индекс локального репозитория Git (то есть после выполнения команды `git add ...`) нужно сделать этот файл исполняемым для Linux: `git update-index --chmod=+x task4.bat`.
 
+#### Additional Requirements:
+- The **task4.bat** file must be saved in **UTF-8 encoding**.
+- All text following the `echo` command must be enclosed in **double quotes**.
+- After adding **task4.bat** to the Git index (`git add ...`), mark it as executable for Linux systems:
+  ```bash
+  git update-index --chmod=+x task4.bat
+  ```
 
-* * *
-### Требования к оформлению и коду
-* Работать нужно в ветке Task04 Git-репозитория.
-* В каталоге Task04 должны быть два файла: db_init.sql и task4.bat.
+---
 
-* * *
+### Formatting and Code Requirements
+- Perform all work in the **Task04** branch of your Git repository.
+- The **Task04** directory must contain exactly two files: **db_init.sql** and **task4.bat**.
 
-### Отправка задания на проверку
-Процедура отправки задания на проверку и манипуляции с репозиториями после проверки описаны в файле [Git_instruction.md](Git_instruction.md).
+---
 
+### Submission Procedure
+The process for submitting the assignment for review and managing repositories after grading is described in the file **[Git_instruction.md](Git_instruction.md)**.

@@ -8,7 +8,7 @@ echo $pwd
 task_number=$2
 
 for student in $(cat "${pwd}/reps_all.txt"); do
-# for student in $(cat "${pwd}/group4.txt"); do
+# for student in $(cat "${pwd}/group3.txt"); do
     echo "----------------------------------------------------------------------------------"
     echo $student
     student_dir="${BASE_DIR}/${student}"
@@ -18,14 +18,14 @@ for student in $(cat "${pwd}/reps_all.txt"); do
     git merge teacher/master -m "Merging master from teacher repo"
 
     # cp "${pwd}/../tasks/README.md" "${student_dir}/"
-    # cp "${pwd}/../tasks/task01.md" "${student_dir}/"
-    cp "${pwd}/../tasks/Git_instruction.md" "${student_dir}/"
+    cp "${pwd}/../tasks/task02.md" "${student_dir}/"
+    # cp "${pwd}/../tasks/Git_instruction.md" "${student_dir}/"
     #
-    # cp "${pwd}/../tasks/spec_4.md" "${student_dir}/specification.md"
+    # cp "${pwd}/../tasks/spec_3.md" "${student_dir}/specification.md"
 
     git add -A
     # git commit -m "Change game specification"
-    git commit -m "Add task01"
+    git commit -m "Add task02"
     git push teacher master
     cd "${pwd}"
 done
