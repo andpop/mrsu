@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20260210114703
+Start time: 20260210153511
 **********************
 Transcript started, output file is log.txt
 202M_Testing_Bochkov_NM
@@ -10,47 +10,131 @@ Transcript started, output file is log.txt
 202M_Testing_Holopov_DV
 202M_Testing_Ibu_GM
 202M_Testing_Kosolapov_DA
+=====================================================
+/home/andrey/labs/Testing_202M/202M_Testing_Kosolapov_DA
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Kosolapov_DA
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Kosolapov_DA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/1D4n3/202M_Testing_Kosolapov_DA
+Из https://github.com/1D4n3/202M_Testing_Kosolapov_DA
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 08e04f5..25519d7
+Fast-forward (no commit created; -m option ignored)
+ .../test_class.cpython-313-pytest-9.0.2.pyc        | Bin 0 -> 13971 bytes
+ Task01/__pycache__/triangle_class.cpython-313.pyc  | Bin 0 -> 1942 bytes
+ Task01/__pycache__/triangle_func.cpython-313.pyc   | Bin 0 -> 1711 bytes
+ Task01/check.txt                                   |  15 +++++
+ Task01/equation.txt                                |  10 ++++
+ Task01/equation_func.py                            |  38 ++++++++++++
+ Task01/test_class.py                               |  66 +++++++++++++++++++++
+ Task01/test_func.py                                |  37 ++++++++++++
+ Task01/triangle_class.py                           |  25 ++++++++
+ Task01/triangle_func.py                            |  38 ++++++++++++
+ 10 files changed, 229 insertions(+)
+ create mode 100644 Task01/__pycache__/test_class.cpython-313-pytest-9.0.2.pyc
+ create mode 100644 Task01/__pycache__/triangle_class.cpython-313.pyc
+ create mode 100644 Task01/__pycache__/triangle_func.cpython-313.pyc
+ create mode 100644 Task01/check.txt
+ create mode 100644 Task01/equation.txt
+ create mode 100644 Task01/equation_func.py
+ create mode 100644 Task01/test_class.py
+ create mode 100644 Task01/test_func.py
+ create mode 100644 Task01/triangle_class.py
+ create mode 100644 Task01/triangle_func.py
+--------------------------------------------------
+Task:  /home/andrey/labs/Testing_202M/202M_Testing_Kosolapov_DA/Task01
+--------------------------------------------------
+Check path: check.txt
+a       b       c       Ожидаемый результат     Описание
+### Позитивные тесты ###
+5       5       5       equilateral             Равносторонний треугольник
+7       7       10      isosceles               Равнобедренный треугольник
+7       10      7       isosceles               Равнобедренный треугольник
+10      7       7       isosceles               Равнобедренный треугольник
+3       4       5       nonequilateral          Разносторонний треугольник
+10.5    10.5    10.5    equilateral             Равносторонний треугольник, проверка рабоспособности с числами с плавающей точкой
+
+### Негативные тесты ###
+1       2       3       IncorrectTriangleSides  Неравенство треугольника не соблюдается
+10      2       1       IncorrectTriangleSides  Неравенство треугольника не соблюдается
+0       5       5       IncorrectTriangleSides  Одна из сторон равна нулю
+-2      4       4       IncorrectTriangleSides  Одна из сторон отрицательная
+0       0       0       IncorrectTriangleSides  Все стороны равны нулю
+--------------------------------------------------
+Check path: triangle_func.py
+--------------------------------------------------
+Check path: triangle_class.py
+--------------------------------------------------
+Check path: test_func.py
+--------------------------------------------------
+Check path: test_class.py
+--------------------------------------------------
+Run: python3 triangle_func.py -v
+
+--------------------------------------------------
+Run: python3 test_func.py -v
+Запуск doctest
+7 items had no tests:
+    __main__
+    __main__.TestTriangleType
+    __main__.TestTriangleType.test_equilateral
+    __main__.TestTriangleType.test_invalid_sum_of_sides
+    __main__.TestTriangleType.test_isosceles
+    __main__.TestTriangleType.test_nonequilateral
+    __main__.TestTriangleType.test_zero_or_negative_sides
+0 tests in 7 items.
+0 passed and 0 failed.
+Test passed.
+Запуск unittest
+--------------------------------------------------
+Run: pytest -v
+============================= test session starts ==============================
+platform linux -- Python 3.8.10, pytest-7.2.1, pluggy-1.0.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/andrey/labs/Testing_202M/202M_Testing_Kosolapov_DA/Task01
+collecting ... collected 13 items
+
+test_class.py::test_equilateral_triangle PASSED                          [  7%]
+test_class.py::test_isosceles_triangle PASSED                            [ 15%]
+test_class.py::test_nonequilateral_triangle PASSED                       [ 23%]
+test_class.py::test_float_sides PASSED                                   [ 30%]
+test_class.py::test_invalid_triangle_inequality PASSED                   [ 38%]
+test_class.py::test_zero_sides PASSED                                    [ 46%]
+test_class.py::test_negative_sides PASSED                                [ 53%]
+test_class.py::test_all_zeros PASSED                                     [ 61%]
+test_func.py::TestTriangleType::test_equilateral PASSED                  [ 69%]
+test_func.py::TestTriangleType::test_invalid_sum_of_sides PASSED         [ 76%]
+test_func.py::TestTriangleType::test_isosceles PASSED                    [ 84%]
+test_func.py::TestTriangleType::test_nonequilateral PASSED               [ 92%]
+test_func.py::TestTriangleType::test_zero_or_negative_sides PASSED       [100%]
+
+============================== 13 passed in 0.03s ==============================
+--------------------------------------------------
+Total ok: 8
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/Testing_202M/202M_Testing_Kosolapov_DA
+First commit to Task01
+Task from branch: Task01
+Creation date: 02/10/2026 09:43:26
+To github.com-mrsu:andpop-mrsu/202M_Testing_Kosolapov_DA.git
+To github.com-mrsu:andpop-mrsu/202M_Testing_Kosolapov_DA.git
+   08e04f5..25519d7  master -> master
+   08e04f5..25519d7  master -> master
 202M_Testing_Kudashkina_YUE
 202M_Testing_Maksimova_AO
-PS>TerminatingError(Invoke-RestMethod): "{"message": "No server is currently available to service your request. Sorry about that. Please try resubmitting your request and contact us if the problem persists."}
-"
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/05_Testing_202M/tools/check_tasks/pull_requests.ps1:58
-Line |
-  58 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message": "No server is currently available to service your request. Sorry about that. Please try resubmitting your request and contact us if the problem persists."}
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/05_Testing_202M/tools/check_tasks/pull_requests.ps1:58
-Line |
-  58 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message": "No server is currently available to service your request. Sorry about that. Please try resubmitting
-     | your request and contact us if the problem persists."}
-
 202M_Testing_Melkonyan_MA
 202M_Testing_Moskajkin_SO
 202M_Testing_Nazarov_KV
 202M_Testing_Tereshkina_ES
 202M_Testing_Tyurin_SA
-PS>TerminatingError(Invoke-RestMethod): "{"message": "No server is currently available to service your request. Sorry about that. Please try resubmitting your request and contact us if the problem persists."}
-"
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/05_Testing_202M/tools/check_tasks/pull_requests.ps1:58
-Line |
-  58 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message": "No server is currently available to service your request. Sorry about that. Please try resubmitting your request and contact us if the problem persists."}
-
-Invoke-RestMethod: /home/andrey/projects/mrsu/05_Testing_202M/tools/check_tasks/pull_requests.ps1:58
-Line |
-  58 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
-     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | {"message": "No server is currently available to service your request. Sorry about that. Please try resubmitting
-     | your request and contact us if the problem persists."}
-
 202M_Testing_YAkunchev_NS
 **********************
 PowerShell transcript end
-End time: 20260210114722
+End time: 20260210153759
 **********************
