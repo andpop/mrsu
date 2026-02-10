@@ -1,22 +1,56 @@
 **********************
 PowerShell transcript start
-Start time: 20260210114239
+Start time: 20260210114703
 **********************
 Transcript started, output file is log.txt
+202M_Testing_Bochkov_NM
+202M_Testing_Burlakova_TS
+202M_Testing_Egorova_OA
+202M_Testing_Harb_S
+202M_Testing_Holopov_DV
+202M_Testing_Ibu_GM
+202M_Testing_Kosolapov_DA
+202M_Testing_Kudashkina_YUE
+202M_Testing_Maksimova_AO
+PS>TerminatingError(Invoke-RestMethod): "{"message": "No server is currently available to service your request. Sorry about that. Please try resubmitting your request and contact us if the problem persists."}
+"
 
-Get-ChildItem: /home/andrey/projects/mrsu/05_Testing_202M/tools/check_tasks/run_check.ps1:16
+Invoke-RestMethod: /home/andrey/projects/mrsu/05_Testing_202M/tools/check_tasks/pull_requests.ps1:58
 Line |
-  16 |  $studentDirs = (Get-ChildItem $studentDirsPath -Attributes Directory)
-     |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot find path '/home/andrey/labs/202M_Testing' because it does not exist.
+  58 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message": "No server is currently available to service your request. Sorry about that. Please try resubmitting your request and contact us if the problem persists."}
 
-Get-ChildItem: /home/andrey/projects/mrsu/05_Testing_202M/tools/check_tasks/run_check.ps1:16
+Invoke-RestMethod: /home/andrey/projects/mrsu/05_Testing_202M/tools/check_tasks/pull_requests.ps1:58
 Line |
-  16 |  $studentDirs = (Get-ChildItem $studentDirsPath -Attributes Directory)
-     |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot find path '/home/andrey/labs/202M_Testing' because it does not exist.
+  58 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message": "No server is currently available to service your request. Sorry about that. Please try resubmitting
+     | your request and contact us if the problem persists."}
 
+202M_Testing_Melkonyan_MA
+202M_Testing_Moskajkin_SO
+202M_Testing_Nazarov_KV
+202M_Testing_Tereshkina_ES
+202M_Testing_Tyurin_SA
+PS>TerminatingError(Invoke-RestMethod): "{"message": "No server is currently available to service your request. Sorry about that. Please try resubmitting your request and contact us if the problem persists."}
+"
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/05_Testing_202M/tools/check_tasks/pull_requests.ps1:58
+Line |
+  58 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message": "No server is currently available to service your request. Sorry about that. Please try resubmitting your request and contact us if the problem persists."}
+
+Invoke-RestMethod: /home/andrey/projects/mrsu/05_Testing_202M/tools/check_tasks/pull_requests.ps1:58
+Line |
+  58 |  … $pullRequests = Invoke-RestMethod -Uri $studentRepo -Headers $headers
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | {"message": "No server is currently available to service your request. Sorry about that. Please try resubmitting
+     | your request and contact us if the problem persists."}
+
+202M_Testing_YAkunchev_NS
 **********************
 PowerShell transcript end
-End time: 20260210114240
+End time: 20260210114722
 **********************
