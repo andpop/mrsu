@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20260210114131
+Start time: 20260212160528
 **********************
 Transcript started, output file is log.txt
 401_PHP_Bikchurin_ESH
@@ -15,23 +15,423 @@ Transcript started, output file is log.txt
 402_PHP_Egorov_AS
 402_PHP_Ganchenkov_AA
 402_PHP_Grachev_AV
+=====================================================
+/home/andrey/labs/PHP/402_PHP_Grachev_AV
+Из github.com-mrsu:andpop-mrsu/402_PHP_Grachev_AV
+Из github.com-mrsu:andpop-mrsu/402_PHP_Grachev_AV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   88178c0..ca844ba  master     -> teacher/master
+   88178c0..ca844ba  master     -> teacher/master
+Обновление 88178c0..ca844ba
+Fast-forward
+ .gitignore                            |   4 +
+ Task01/README.md                      |  31 +++++++
+ Task01/progression/bin/progression    |  27 ++++++
+ Task01/progression/composer.json      |  30 ++++++
+ Task01/progression/composer.lock      | 166 ++++++++++++++++++++++++++++++++++
+ Task01/progression/src/Controller.php |  74 +++++++++++++++
+ Task01/progression/src/Model.php      |  97 ++++++++++++++++++++
+ Task01/progression/src/View.php       | 145 +++++++++++++++++++++++++++++
+ task02.md                             |  25 +++++
+ 9 files changed, 599 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Task01/README.md
+ create mode 100644 Task01/progression/bin/progression
+ create mode 100644 Task01/progression/composer.json
+ create mode 100644 Task01/progression/composer.lock
+ create mode 100644 Task01/progression/src/Controller.php
+ create mode 100644 Task01/progression/src/Model.php
+ create mode 100644 Task01/progression/src/View.php
+ create mode 100644 task02.md
+Из https://github.com/artemaaaaaaaaaaaaaaaaaaa/402_PHP_Grachev_AV
+Из https://github.com/artemaaaaaaaaaaaaaaaaaaa/402_PHP_Grachev_AV
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Merge made by the 'recursive' strategy.
+ .gitignore                   |   2 +
+ Task02/README.md             |  17 ++++
+ Task02/public/history.php    |  18 ++++
+ Task02/public/index.php      |  11 +++
+ Task02/public/play.php       |  70 ++++++++++++++
+ Task02/public/styles.css     | 216 +++++++++++++++++++++++++++++++++++++++++++
+ Task02/src/model.php         |  95 +++++++++++++++++++
+ Task02/templates/history.php |  27 ++++++
+ Task02/templates/home.php    |  19 ++++
+ Task02/templates/layout.php  |  34 +++++++
+ Task02/templates/play.php    |  49 ++++++++++
+ 11 files changed, 558 insertions(+)
+ create mode 100644 Task02/README.md
+ create mode 100644 Task02/public/history.php
+ create mode 100644 Task02/public/index.php
+ create mode 100644 Task02/public/play.php
+ create mode 100644 Task02/public/styles.css
+ create mode 100644 Task02/src/model.php
+ create mode 100644 Task02/templates/history.php
+ create mode 100644 Task02/templates/home.php
+ create mode 100644 Task02/templates/layout.php
+ create mode 100644 Task02/templates/play.php
+--------------------------------------------------
+Task:  /home/andrey/labs/PHP/402_PHP_Grachev_AV/Task02
+--------------------------------------------------
+Check path: README.md
+# Task02 — Арифметическая прогрессия
+
+Веб-приложение на PHP и SQLite. Игроку показывается арифметическая прогрессия из 10 чисел, в которой одно число заменено на `..`. Нужно определить пропущенное число. В случае ошибки показывается правильная прогрессия и верный ответ. История игр хранится в локальной SQLite-базе.
+
+## Запуск
+1. Перейдите в каталог `Task02`.
+2. Запустите локальный сервер: `php -S localhost:3000 -t public`.
+3. Откройте `http://localhost:3000/` в браузере.
+
+## Правила игры
+1. Вы видите прогрессию из 10 чисел.
+2. Одно число заменено на `..`.
+3. Введите пропущенное число.
+
+## История игр
+История сохраняется в файл базы данных:
+`db/progression.sqlite`
+--------------------------------------------------
+Check path: public
+--------------------------------------------------
+Total ok: 2
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/PHP/402_PHP_Grachev_AV
+Task02: web app with SQLite
+task from branch: Task02
+creation date: 02/10/2026 17:22:04
 402_PHP_Klinov_AV
 402_PHP_Korotkevich_DA
 402_PHP_Krestyanskova_MA
 402_PHP_Novikov_ME
 402_PHP_Pyanzina_VD
+=====================================================
+/home/andrey/labs/PHP/402_PHP_Pyanzina_VD
+Из github.com-mrsu:andpop-mrsu/402_PHP_Pyanzina_VD
+Из github.com-mrsu:andpop-mrsu/402_PHP_Pyanzina_VD
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   0bfe93c..2085c37  master     -> teacher/master
+   0bfe93c..2085c37  master     -> teacher/master
+Обновление 0bfe93c..2085c37
+Fast-forward
+ task02.md | 25 +++++++++++++++++++++++++
+ 1 file changed, 25 insertions(+)
+ create mode 100644 task02.md
+Из https://github.com/iambadatnicknames/402_PHP_Pyanzina_VD
+Из https://github.com/iambadatnicknames/402_PHP_Pyanzina_VD
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 2085c37..ed58db4
+Fast-forward (no commit created; -m option ignored)
+ Task01/GCD/.gitignore         |  2 ++
+ Task01/GCD/README.md          | 23 +++++++++++++++++++
+ Task01/GCD/bin/gcd            | 18 +++++++++++++++
+ Task01/GCD/composer.json      | 26 ++++++++++++++++++++++
+ Task01/GCD/src/Controller.php | 49 ++++++++++++++++++++++++++++++++++++++++
+ Task01/GCD/src/View.php       | 52 +++++++++++++++++++++++++++++++++++++++++++
+ 6 files changed, 170 insertions(+)
+ create mode 100644 Task01/GCD/.gitignore
+ create mode 100644 Task01/GCD/README.md
+ create mode 100755 Task01/GCD/bin/gcd
+ create mode 100644 Task01/GCD/composer.json
+ create mode 100644 Task01/GCD/src/Controller.php
+ create mode 100644 Task01/GCD/src/View.php
+--------------------------------------------------
+Task:  /home/andrey/labs/PHP/402_PHP_Pyanzina_VD/Task01
+--------------------------------------------------
+Check path: README.md
+# Brain Games: GCD (Greatest Common Divisor)
+
+[![Packagist Version](https://img.shields.io/packagist/v/iambadatnicknames/gcd)](https://packagist.org/packages/iambadatnicknames/gcd)
+
+https://packagist.org/packages/iambadatnicknames/gcd
+
+## Описание
+
+Консольная игра «Наибольший общий делитель» (GCD).
+
+Игроку показываются два случайных целых числа. Необходимо вычислить и ввести наибольший общий делитель этих чисел. Игра состоит из 3 раундов. Для победы нужно дать правильный ответ во всех раундах.
+
+## Требования
+
+- PHP >= 8.0
+- Composer
+
+## Установка
+
+### Глобальная установка (рекомендуется)
+
+```bash
+composer global require iambadatnicknames/gcd
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "iambadatnicknames/gcd",
+    "type": "project",
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.7"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^4.0"
+    },
+    "scripts": {
+        "lint": "phpcs --standard=PSR12 src/ bin/",
+        "lint-fix": "phpcbf --standard=PSR12 src/ bin/"
+    },
+    "autoload": {
+        "files": [
+            "src/Controller.php",
+            "src/View.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Victoria Pyanzina",
+            "email": "victoria_pianzina04@mail.ru"
+        }
+    ]
+}
+--------------------------------------------------
+Check path: bin/GCD
+bin/GCD not found
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+--------------------------------------------------
+Total ok: 3
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/PHP/402_PHP_Pyanzina_VD
+Complete Task01
+task from branch: Task01
+creation date: 02/10/2026 18:07:42
+To github.com-mrsu:andpop-mrsu/402_PHP_Pyanzina_VD.git
+To github.com-mrsu:andpop-mrsu/402_PHP_Pyanzina_VD.git
+   2085c37..ed58db4  master -> master
+   2085c37..ed58db4  master -> master
 402_PHP_Sergeev_SA
 402_PHP_SHestakov_VA
 402_PHP_SHeyanov_AV
+=====================================================
+/home/andrey/labs/PHP/402_PHP_SHeyanov_AV
+Из github.com-mrsu:andpop-mrsu/402_PHP_SHeyanov_AV
+Из github.com-mrsu:andpop-mrsu/402_PHP_SHeyanov_AV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   591a28f..b0592bc  master     -> teacher/master
+   591a28f..b0592bc  master     -> teacher/master
+Обновление 591a28f..b0592bc
+Fast-forward
+ Task01/README.md                     |  26 ++++++
+ Task01/calculator/bin/calculator     |  25 ++++++
+ Task01/calculator/composer.json      |  22 +++++
+ Task01/calculator/src/Controller.php | 108 ++++++++++++++++++++++++
+ Task01/calculator/src/View.php       | 156 +++++++++++++++++++++++++++++++++++
+ task02.md                            |  25 ++++++
+ 6 files changed, 362 insertions(+)
+ create mode 100644 Task01/README.md
+ create mode 100644 Task01/calculator/bin/calculator
+ create mode 100644 Task01/calculator/composer.json
+ create mode 100644 Task01/calculator/src/Controller.php
+ create mode 100644 Task01/calculator/src/View.php
+ create mode 100644 task02.md
+Из https://github.com/openeeer/402_PHP_SHeyanov_AV
+Из https://github.com/openeeer/402_PHP_SHeyanov_AV
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление b0592bc..1b7f7f6
+Fast-forward (no commit created; -m option ignored)
+ Task02/README.md               |  26 +++++
+ Task02/db/.gitkeep             |   1 +
+ Task02/db/calculator.sqlite    | Bin 0 -> 12288 bytes
+ Task02/public/history.php      |  55 +++++++++++
+ Task02/public/index.php        |  82 ++++++++++++++++
+ Task02/public/styles.css       | 218 +++++++++++++++++++++++++++++++++++++++++
+ Task02/src/bootstrap.php       |  60 ++++++++++++
+ Task02/src/game.php            |  68 +++++++++++++
+ Task02/src/game_repository.php |  43 ++++++++
+ Task02/src/view.php            |  12 +++
+ Task02/views/history.php       | 109 +++++++++++++++++++++
+ Task02/views/index.php         |  60 ++++++++++++
+ 12 files changed, 734 insertions(+)
+ create mode 100644 Task02/README.md
+ create mode 100644 Task02/db/.gitkeep
+ create mode 100644 Task02/db/calculator.sqlite
+ create mode 100644 Task02/public/history.php
+ create mode 100644 Task02/public/index.php
+ create mode 100644 Task02/public/styles.css
+ create mode 100644 Task02/src/bootstrap.php
+ create mode 100644 Task02/src/game.php
+ create mode 100644 Task02/src/game_repository.php
+ create mode 100644 Task02/src/view.php
+ create mode 100644 Task02/views/history.php
+ create mode 100644 Task02/views/index.php
+--------------------------------------------------
+Task:  /home/andrey/labs/PHP/402_PHP_SHeyanov_AV/Task02
+--------------------------------------------------
+Check path: README.md
+# Task02 — Веб-приложение «Калькулятор»
+
+Веб-версия игры из `Task01`, реализованная на стандартных возможностях PHP с использованием SQLite и паттерна Page Controller.
+
+## Структура
+
+- `Task02/public` — корень сайта (доступен из браузера)
+- `Task02/db` — файл базы данных SQLite (вне public)
+- `Task02/src` — логика приложения
+- `Task02/views` — PHP-шаблоны (используется альтернативный синтаксис)
+
+## Запуск
+
+1. Перейти в каталог `Task02`.
+2. Запустить встроенный веб-сервер PHP:
+
+   ```powershell
+   php -S localhost:3000 -t public
+   ```
+
+3. Открыть в браузере:
+   - `http://localhost:3000/` — игра
+   - `http://localhost:3000/history.php` — история партий
+
+База данных создается автоматически при первом обращении к приложению: `Task02/db/calculator.sqlite`.
+--------------------------------------------------
+Check path: public
+--------------------------------------------------
+Total ok: 2
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/PHP/402_PHP_SHeyanov_AV
+Task02
+task from branch: Task02
+creation date: 02/10/2026 18:16:17
 402_PHP_Simonov_AP
 402_PHP_Sokolov_RV
 402_PHP_Tenishev_RR
 402_PHP_Urenkov_YUYU
 402_PHP_Votyakov_MA
+=====================================================
+/home/andrey/labs/PHP/402_PHP_Votyakov_MA
+Из github.com-mrsu:andpop-mrsu/402_PHP_Votyakov_MA
+Из github.com-mrsu:andpop-mrsu/402_PHP_Votyakov_MA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   cdaf952..1e7c940  master     -> teacher/master
+   cdaf952..1e7c940  master     -> teacher/master
+Обновление cdaf952..1e7c940
+Fast-forward
+ Task01/progression/.gitignore          |  2 ++
+ Task01/progression/README.md           | 29 ++++++++++++++++++
+ Task01/progression/bin/progression.php |  8 +++++
+ Task01/progression/composer.json       | 22 +++++++++++++
+ Task01/progression/src/Controller.php  | 51 +++++++++++++++++++++++++++++++
+ Task01/progression/src/View.php        | 56 ++++++++++++++++++++++++++++++++++
+ task02.md                              | 25 +++++++++++++++
+ 7 files changed, 193 insertions(+)
+ create mode 100644 Task01/progression/.gitignore
+ create mode 100644 Task01/progression/README.md
+ create mode 100644 Task01/progression/bin/progression.php
+ create mode 100644 Task01/progression/composer.json
+ create mode 100644 Task01/progression/src/Controller.php
+ create mode 100644 Task01/progression/src/View.php
+ create mode 100644 task02.md
+Из https://github.com/Mih-gif/402_PHP_Votyakov_MA
+Из https://github.com/Mih-gif/402_PHP_Votyakov_MA
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 1e7c940..aa62bb4
+Fast-forward (no commit created; -m option ignored)
+ Task02/README.md                |  37 +++++
+ Task02/db/game.db               | Bin 0 -> 12288 bytes
+ Task02/public/clear_history.php |  10 ++
+ Task02/public/game.php          | 114 +++++++++++++
+ Task02/public/history.php       |  89 ++++++++++
+ Task02/public/index.php         |  30 ++++
+ Task02/public/style.css         | 360 ++++++++++++++++++++++++++++++++++++++++
+ Task02/src/Database.php         |  79 +++++++++
+ Task02/src/Game.php             |  45 +++++
+ 9 files changed, 764 insertions(+)
+ create mode 100644 Task02/README.md
+ create mode 100644 Task02/db/game.db
+ create mode 100644 Task02/public/clear_history.php
+ create mode 100644 Task02/public/game.php
+ create mode 100644 Task02/public/history.php
+ create mode 100644 Task02/public/index.php
+ create mode 100644 Task02/public/style.css
+ create mode 100644 Task02/src/Database.php
+ create mode 100644 Task02/src/Game.php
+--------------------------------------------------
+Task:  /home/andrey/labs/PHP/402_PHP_Votyakov_MA/Task02
+--------------------------------------------------
+Check path: README.md
+## Описание
+
+Веб-приложение игры "Арифметическая прогрессия" с сохранением истории игр в базе данных SQLite.
+
+## Установка и запуск
+
+1. Клонировать репозиторий:
+```
+git clone https://github.com/Mih-gif/402_PHP_Votyakov_MA.git
+cd Task02
+```
+
+2. Запустить веб-сервер:
+```
+php -S localhost:3000 -t public
+```
+
+3. Открыть в браузере:
+```
+http://localhost:3000/
+```
+
+4. Функционал:
+```
+Угадывание пропущенного числа в арифметической прогрессии
+Сохранение истории игр в базе данных
+Просмотр истории всех игр
+```
+
+5. Используемые технологии:
+```
+PHP 7.4+
+
+SQLite 3
+
+HTML5, CSS3
+```
+--------------------------------------------------
+Check path: public
+--------------------------------------------------
+Total ok: 2
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/PHP/402_PHP_Votyakov_MA
+Выполнил ЛР2
+task from branch: Task02
+creation date: 02/10/2026 20:34:11
 404_PHP_Gusejnov_SE
 405_PHP_Kalachin_DA
 405_PHP_Krepyshev_NA
 **********************
 PowerShell transcript end
-End time: 20260210114147
+End time: 20260212161436
 **********************
