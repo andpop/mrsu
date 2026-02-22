@@ -1,9 +1,9 @@
 #!/bin/bash
 
-STREAM="103M_Testing"
-BASE_DIR="/home/andrey/labs/Testing"
+STREAM="202M_Testing"
+BASE_DIR="/home/andrey/labs/Testing_202M"
 # REPS_FILE="reps.txt"
-STUDENTS_FILE="./students-list_103M.txt"
+STUDENTS_FILE="./students-list_202M.txt"
 
 # TEACHER_PROFILE="https://github.com/andpop-mrsu"
 # Привязку к удаленному репозиторию делаем по SSH, а не по HTTPS

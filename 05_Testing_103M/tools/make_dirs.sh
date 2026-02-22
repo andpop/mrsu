@@ -1,7 +1,7 @@
 #!/bin/bash
 
 STREAM="103M_Testing"
-BASE_DIR="/home/andrey/labs/Testing"
+BASE_DIR="/home/andrey/labs/Testing_103M"
 # REPS_FILE="reps.txt"
 STUDENTS_FILE="./students-list_103M.txt"
 

@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20260210151632
+Start time: 20260222160522
 **********************
 Transcript started, output file is log.txt
 103M_Testing_Abramov_AI
@@ -11,27 +11,30 @@ Transcript started, output file is log.txt
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
 Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Уже актуально.
---------------------------------------------------
-Task:  /home/andrey/labs/Testing_103M/103M_Testing_Abramov_AI/Task01
---------------------------------------------------
-Check path: questions.docx
---------------------------------------------------
-Check path: spec.docx
---------------------------------------------------
-Total ok: 2
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/Testing_103M/103M_Testing_Abramov_AI
-task01
-Task from branch: Task01
-Creation date: 02/08/2026 14:21:59
-To github.com-mrsu:andpop-mrsu/103M_Testing_Abramov_AI.git
-To github.com-mrsu:andpop-mrsu/103M_Testing_Abramov_AI.git
-   86a1d63..623e26c  master -> master
-   86a1d63..623e26c  master -> master
+Из https://github.com/Antonizsar13/103M_Testing_Abramov_AI
+Из https://github.com/Antonizsar13/103M_Testing_Abramov_AI
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 5894ad7..e928e5c
+Fast-forward (no commit created; -m option ignored)
+ Task02/functional.docx     | Bin 0 -> 18905 bytes
+ Task02/negative.docx       | Bin 0 -> 17987 bytes
+ Task02/non-functional.docx | Bin 0 -> 18499 bytes
+ Task02/positive.docx       | Bin 0 -> 18317 bytes
+ Task02/smoke_test.docx     | Bin 0 -> 16383 bytes
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Task02/functional.docx
+ create mode 100644 Task02/negative.docx
+ create mode 100644 Task02/non-functional.docx
+ create mode 100644 Task02/positive.docx
+ create mode 100644 Task02/smoke_test.docx
+Task from branch: Task02
+Creation date: 02/21/2026 15:30:14
+Checking script check_Task02.ps1 not found
 103M_Testing_Afonin_VI
 103M_Testing_Biushkin_DV
 103M_Testing_Cybisov_IE
@@ -41,89 +44,78 @@ To github.com-mrsu:andpop-mrsu/103M_Testing_Abramov_AI.git
 103M_Testing_Malkin_DA
 103M_Testing_Markova_IB
 103M_Testing_Puchkin_IYU
-103M_Testing_Repin_IA
-103M_Testing_Rybina_EA
-103M_Testing_Semushkin_GO
-103M_Testing_SHurygina_KN
 =====================================================
-/home/andrey/labs/Testing_103M/103M_Testing_SHurygina_KN
-Из github.com-mrsu:andpop-mrsu/103M_Testing_SHurygina_KN
-Из github.com-mrsu:andpop-mrsu/103M_Testing_SHurygina_KN
+/home/andrey/labs/Testing_103M/103M_Testing_Puchkin_IYU
+Из github.com-mrsu:andpop-mrsu/103M_Testing_Puchkin_IYU
+Из github.com-mrsu:andpop-mrsu/103M_Testing_Puchkin_IYU
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
 Уже актуально.
-Из https://github.com/shuryginaKN/103M_Testing_SHurygina_KN
-Из https://github.com/shuryginaKN/103M_Testing_SHurygina_KN
+Из https://github.com/shindasayonara/103M_Testing_Puchkin_IYU
+Из https://github.com/shindasayonara/103M_Testing_Puchkin_IYU
  * [новая ветка]     Task01     -> student/Task01
  * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
  * [новая ветка]     master     -> student/master
  * [новая ветка]     master     -> student/master
-Обновление d35db8a..faa940f
+Обновление 933ca08..e475145
 Fast-forward (no commit created; -m option ignored)
- Task01/questions.docx | Bin 0 -> 21650 bytes
- Task01/spec.docx      | Bin 0 -> 21622 bytes
- 2 files changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 Task01/questions.docx
- create mode 100644 Task01/spec.docx
---------------------------------------------------
-Task:  /home/andrey/labs/Testing_103M/103M_Testing_SHurygina_KN/Task01
---------------------------------------------------
-Check path: questions.docx
---------------------------------------------------
-Check path: spec.docx
---------------------------------------------------
-Total ok: 2
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/Testing_103M/103M_Testing_SHurygina_KN
-Task01
-Task from branch: Task01
-Creation date: 02/08/2026 18:04:09
-To github.com-mrsu:andpop-mrsu/103M_Testing_SHurygina_KN.git
-To github.com-mrsu:andpop-mrsu/103M_Testing_SHurygina_KN.git
-   d35db8a..faa940f  master -> master
-   d35db8a..faa940f  master -> master
+ Task02/functional.docx     | Bin 0 -> 27677 bytes
+ Task02/negative.docx       | Bin 0 -> 28007 bytes
+ Task02/non-functional.docx | Bin 0 -> 28364 bytes
+ Task02/positive.docx       | Bin 0 -> 28391 bytes
+ Task02/smoke_test.docx     | Bin 0 -> 27203 bytes
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Task02/functional.docx
+ create mode 100644 Task02/negative.docx
+ create mode 100644 Task02/non-functional.docx
+ create mode 100644 Task02/positive.docx
+ create mode 100644 Task02/smoke_test.docx
+Task from branch: Task02
+Creation date: 02/21/2026 07:59:13
+Checking script check_Task02.ps1 not found
+103M_Testing_Repin_IA
+103M_Testing_Rybina_EA
+=====================================================
+/home/andrey/labs/Testing_103M/103M_Testing_Rybina_EA
+Из github.com-mrsu:andpop-mrsu/103M_Testing_Rybina_EA
+Из github.com-mrsu:andpop-mrsu/103M_Testing_Rybina_EA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/elizaveta-rybina/103M_Testing_Rybina_EA
+Из https://github.com/elizaveta-rybina/103M_Testing_Rybina_EA
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 3607491..cb10b81
+Fast-forward (no commit created; -m option ignored)
+ .DS_Store                  | Bin 0 -> 6148 bytes
+ Task02/functional.docx     | Bin 0 -> 22913 bytes
+ Task02/negative.docx       | Bin 0 -> 22714 bytes
+ Task02/non-functional.docx | Bin 0 -> 22700 bytes
+ Task02/positive.docx       | Bin 0 -> 25452 bytes
+ Task02/smoke_test.docx     | Bin 0 -> 18674 bytes
+ 6 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .DS_Store
+ create mode 100644 Task02/functional.docx
+ create mode 100644 Task02/negative.docx
+ create mode 100644 Task02/non-functional.docx
+ create mode 100644 Task02/positive.docx
+ create mode 100644 Task02/smoke_test.docx
+Task from branch: Task02
+Creation date: 02/16/2026 06:23:54
+Checking script check_Task02.ps1 not found
+103M_Testing_Semushkin_GO
+103M_Testing_SHurygina_KN
 103M_Testing_Slushkin_DV
 103M_Testing_Tenyakshev_MA
 103M_Testing_YUdashkin_OA
-=====================================================
-/home/andrey/labs/Testing_103M/103M_Testing_YUdashkin_OA
-Из github.com-mrsu:andpop-mrsu/103M_Testing_YUdashkin_OA
-Из github.com-mrsu:andpop-mrsu/103M_Testing_YUdashkin_OA
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-Из https://github.com/tokKurumi/103M_Testing_YUdashkin_OA
-Из https://github.com/tokKurumi/103M_Testing_YUdashkin_OA
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Обновление 11b820c..57059ba
-Fast-forward (no commit created; -m option ignored)
- Task01/questions.md | 287 +++++++++++++++++++++++++++++++++++++++++++
- Task01/spec.md      | 341 ++++++++++++++++++++++++++++++++++++++++++++++++++++
- task01.md           |  30 ++---
- 3 files changed, 643 insertions(+), 15 deletions(-)
- create mode 100644 Task01/questions.md
- create mode 100644 Task01/spec.md
---------------------------------------------------
-Task:  /home/andrey/labs/Testing_103M/103M_Testing_YUdashkin_OA/Task01
---------------------------------------------------
-Check path: questions.docx
-questions.docx not found
---------------------------------------------------
-Check path: spec.docx
-spec.docx not found
---------------------------------------------------
-Total ok: 0
-Total error: 2
---------------------------------------------------
-/home/andrey/labs/Testing_103M/103M_Testing_YUdashkin_OA
-Task01 (draft)
-Task from branch: Task01
-Creation date: 02/09/2026 20:24:50
 **********************
 PowerShell transcript end
-End time: 20260210152730
+End time: 20260222160538
 **********************
