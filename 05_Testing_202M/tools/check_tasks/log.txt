@@ -1,17 +1,76 @@
 **********************
 PowerShell transcript start
-Start time: 20260212162834
-**********************
-Transcript started, output file is log.txt
-202M_Testing_Bochkov_NM
-202M_Testing_Burlakova_TS
-202M_Testing_Egorova_OA
-202M_Testing_Harb_S
-202M_Testing_Holopov_DV
-202M_Testing_Ibu_GM
-202M_Testing_Kosolapov_DA
+=======
+=====================================================
+/home/andrey/labs/Testing_202M/202M_Testing_Kosolapov_DA
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Kosolapov_DA
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Kosolapov_DA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/1D4n3/202M_Testing_Kosolapov_DA
+Из https://github.com/1D4n3/202M_Testing_Kosolapov_DA
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 25519d7..78a0b73
+Fast-forward (no commit created; -m option ignored)
+ ...1\201\320\260\320\271\321\202\320\276\320\262.pdf" | Bin 0 -> 1115276 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 "Task02/\320\240\321\203\321\207\320\275\320\276\320\265 \320\270\320\275\321\202\320\265\320\263\321\200\320\260\321\206\320\270\320\276\320\275\320\275\320\276\320\265 \321\202\320\265\321\201\321\202\320\270\321\200\320\276\320\262\320\260\320\275\320\270\320\265 \320\262\320\265\320\261-\321\201\320\260\320\271\321\202\320\276\320\262.pdf"
+--------------------------------------------------
+Task:  /home/andrey/labs/Testing_202M/202M_Testing_Kosolapov_DA/Task02
+--------------------------------------------------
+Total ok: 0
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/Testing_202M/202M_Testing_Kosolapov_DA
+First commit to Task02
+Task from branch: Task02
+Creation date: 02/13/2026 06:46:29
+>>>>>>> c387d859df7d708374ab271d2faad71292fb657f
 202M_Testing_Kudashkina_YUE
 202M_Testing_Maksimova_AO
+=====================================================
+/home/andrey/labs/Testing_202M/202M_Testing_Maksimova_AO
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Maksimova_AO
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Maksimova_AO
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/angelmaks/202M_Testing_Maksimova_AO
+Из https://github.com/angelmaks/202M_Testing_Maksimova_AO
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление ae9492a..88192f5
+Fast-forward (no commit created; -m option ignored)
+ Task01/.gitignore            | 22 +++++++++++++
+ Task01/check.txt             | 45 ++++++++++++++++++++++++++
+ Task01/equation.txt          | 29 +++++++++++++++++
+ Task01/quadratic_solver.py   | 28 ++++++++++++++++
+ Task01/test_class.py         | 76 ++++++++++++++++++++++++++++++++++++++++++++
+ Task01/test_doctest_issue.py | 15 +++++++++
+ Task01/test_func.py          | 62 ++++++++++++++++++++++++++++++++++++
+ Task01/triangle_class.py     | 27 ++++++++++++++++
+ Task01/triangle_func.py      | 45 ++++++++++++++++++++++++++
+ 9 files changed, 349 insertions(+)
+ create mode 100644 Task01/.gitignore
+ create mode 100644 Task01/check.txt
+ create mode 100644 Task01/equation.txt
+ create mode 100644 Task01/quadratic_solver.py
+ create mode 100644 Task01/test_class.py
+ create mode 100644 Task01/test_doctest_issue.py
+ create mode 100644 Task01/test_func.py
+ create mode 100644 Task01/triangle_class.py
+ create mode 100644 Task01/triangle_func.py
+Task from branch: master
+Creation date: 02/20/2026 02:15:35
+Checking script check_master.ps1 not found
 202M_Testing_Melkonyan_MA
 202M_Testing_Moskajkin_SO
 202M_Testing_Nazarov_KV
@@ -20,5 +79,4 @@ Transcript started, output file is log.txt
 202M_Testing_YAkunchev_NS
 **********************
 PowerShell transcript end
-End time: 20260212162842
 **********************
