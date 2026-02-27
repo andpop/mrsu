@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BASE_DIR="/home/andrey/labs/DB"
+BASE_DIR="/home/andrey/labs/DBMS"
 REPS_FILE="reps.txt"
 # TEACHER_PROFILE="https://github.com/andpop-mrsu"
 # Привязку к удаленному репозиторию делаем по SSH, а не по HTTPS

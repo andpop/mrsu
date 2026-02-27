@@ -1,0 +1,35 @@
+=== 402_PHP_Votyakov_MA ===
+[{"author":{"id":"U_kgDOC8fRrQ","is_bot":false,"login":"Mih-gif","name":"Sky Cloudlight"},"mergedAt":"2026-02-18T08:13:23Z","number":2,"title":"Выполнил ЛР2"},{"author":{"id":"U_kgDOC8fRrQ","is_bot":false,"login":"Mih-gif","name":"Sky Cloudlight"},"mergedAt":"2026-02-06T19:38:25Z","number":1,"title":"Выполнил ЛР1"}]
+
+=== 402_PHP_Grachev_AV ===
+[{"author":{"id":"U_kgDOB-ghtQ","is_bot":false,"login":"artemaaaaaaaaaaaaaaaaaaa","name":"kellanis"},"mergedAt":"2026-02-18T08:13:32Z","number":2,"title":"Task02: web app with SQLite"},{"author":{"id":"U_kgDOB-ghtQ","is_bot":false,"login":"artemaaaaaaaaaaaaaaaaaaa","name":"kellanis"},"mergedAt":"2026-02-06T19:10:52Z","number":1,"title":"Task01: progression game"}]
+
+=== 402_PHP_Egorov_AS ===
+[{"author":{"id":"U_kgDOCvJEZg","is_bot":false,"login":"Eario13","name":"EgorovAS"},"mergedAt":"2026-02-09T14:03:29Z","number":1,"title":"Task01"}]
+
+=== 402_PHP_Novikov_ME ===
+[{"author":{"id":"U_kgDOCvBTfQ","is_bot":false,"login":"darkflade","name":"Pazhiloy Zhmex"},"mergedAt":"2026-02-06T19:14:14Z","number":1,"title":"Task01"}]
+
+=== 402_PHP_Pyanzina_VD ===
+[{"author":{"id":"U_kgDOC8OVTQ","is_bot":false,"login":"iambadatnicknames","name":""},"mergedAt":"2026-02-18T08:14:29Z","number":2,"title":"Complete Task02"},{"author":{"id":"U_kgDOC8OVTQ","is_bot":false,"login":"iambadatnicknames","name":""},"mergedAt":"2026-02-12T13:14:12Z","number":1,"title":"Complete Task01"}]
+
+=== 402_PHP_Sergeev_SA ===
+[{"author":{"id":"U_kgDOC8OTKA","is_bot":false,"login":"Kulebyaka1337","name":"Sergeev_SA"},"mergedAt":"2026-02-18T08:14:34Z","number":3,"title":"Task02"},{"author":{"id":"U_kgDOC8OTKA","is_bot":false,"login":"Kulebyaka1337","name":"Sergeev_SA"},"mergedAt":"2026-02-09T14:15:07Z","number":2,"title":"Update README.md"},{"author":{"id":"U_kgDOC8OTKA","is_bot":false,"login":"Kulebyaka1337","name":"Sergeev_SA"},"mergedAt":"2026-02-06T19:20:33Z","number":1,"title":"Task01"}]
+
+=== 402_PHP_Sokolov_RV ===
+[{"author":{"id":"MDQ6VXNlcjUyODg4NTkz","is_bot":false,"login":"Nevall-von-Goodem","name":"Nevall von Goodem"},"mergedAt":"2026-02-09T14:06:03Z","number":1,"title":"Task01"}]
+
+=== 402_PHP_Tenishev_RR ===
+[{"author":{"id":"U_kgDOCzPl3w","is_bot":false,"login":"tenishevR","name":""},"mergedAt":"2026-02-06T19:33:11Z","number":2,"title":"Task01"}]
+
+=== 402_PHP_Urenkov_YUYU ===
+[{"author":{"id":"U_kgDOC9Dxsg","is_bot":false,"login":"werrys3021","name":""},"mergedAt":"2026-02-09T14:11:10Z","number":1,"title":"Task01"}]
+
+=== 402_PHP_SHestakov_VA ===
+[{"author":{"id":"U_kgDOCVrTLQ","is_bot":false,"login":"Baklaniso","name":"Baklaniso"},"mergedAt":"2026-02-06T19:26:45Z","number":2,"title":"Task01"}]
+
+=== 402_PHP_SHeyanov_AV ===
+[{"author":{"id":"U_kgDOC3UK4A","is_bot":false,"login":"openeeer","name":"Александр Шеянов"},"mergedAt":"2026-02-18T08:15:17Z","number":2,"title":"Task02"},{"author":{"id":"U_kgDOC3UK4A","is_bot":false,"login":"openeeer","name":"Александр Шеянов"},"mergedAt":"2026-02-06T19:29:48Z","number":1,"title":"Task01"}]
+
+=== 405_PHP_Krepyshev_NA ===
+[{"author":{"id":"U_kgDOCXtzNQ","is_bot":false,"login":"WitchBoy666","name":""},"mergedAt":"2026-02-16T08:22:39Z","number":1,"title":"Task01"}]

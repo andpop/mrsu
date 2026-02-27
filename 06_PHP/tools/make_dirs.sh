@@ -1,9 +1,9 @@
 #!/bin/bash
 
-STREAM="404_PHP"
+STREAM="405_PHP"
 BASE_DIR="/home/andrey/labs/PHP"
 # REPS_FILE="reps.txt"
-STUDENTS_FILE="./students-list_404.txt"
+STUDENTS_FILE="./students-list_405.txt"
 
 # TEACHER_PROFILE="https://github.com/andpop-mrsu"
 # Привязку к удаленному репозиторию делаем по SSH, а не по HTTPS
