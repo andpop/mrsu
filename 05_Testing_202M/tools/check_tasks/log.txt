@@ -1,44 +1,10 @@
 **********************
 PowerShell transcript start
-Start time: 20260303223038
+Start time: 20260309080116
 **********************
 Transcript started, output file is log.txt
 202M_Testing_Bochkov_NM
 202M_Testing_Burlakova_TS
-=====================================================
-/home/andrey/labs/Testing_202M/202M_Testing_Burlakova_TS
-Из github.com-mrsu:andpop-mrsu/202M_Testing_Burlakova_TS
-Из github.com-mrsu:andpop-mrsu/202M_Testing_Burlakova_TS
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-Из https://github.com/btat7/202M_Testing_Burlakova_TS
-Из https://github.com/btat7/202M_Testing_Burlakova_TS
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Обновление 3e12ffa..7ee92aa
-Fast-forward (no commit created; -m option ignored)
- Task02/Task02.pdf | Bin 0 -> 1829248 bytes
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 Task02/Task02.pdf
---------------------------------------------------
-Task:  /home/andrey/labs/Testing_202M/202M_Testing_Burlakova_TS/Task02
---------------------------------------------------
-Total ok: 0
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/Testing_202M/202M_Testing_Burlakova_TS
-Task02
-Task from branch: Task02
-Creation date: 03/03/2026 19:02:19
-To github.com-mrsu:andpop-mrsu/202M_Testing_Burlakova_TS.git
-To github.com-mrsu:andpop-mrsu/202M_Testing_Burlakova_TS.git
-   3e12ffa..7ee92aa  master -> master
-   3e12ffa..7ee92aa  master -> master
 202M_Testing_Egorova_OA
 202M_Testing_Harb_S
 202M_Testing_Holopov_DV
@@ -54,5 +20,5 @@ To github.com-mrsu:andpop-mrsu/202M_Testing_Burlakova_TS.git
 202M_Testing_YAkunchev_NS
 **********************
 PowerShell transcript end
-End time: 20260303223157
+End time: 20260309080122
 **********************
