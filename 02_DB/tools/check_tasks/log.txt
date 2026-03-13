@@ -1,75 +1,136 @@
 **********************
 PowerShell transcript start
-Start time: 20260116095952
+Start time: 20260304215627
 **********************
 Transcript started, output file is log.txt
-304_DB_Afonkin_DE
-304_DB_Aksenov_RM
-304_DB_Artemev_DA
-304_DB_Dolya_OA
-304_DB_Geraskin_RG
-304_DB_Isakov_VV
-304_DB_Kiselev_NS
-304_DB_Kizhaev_RP
-304_DB_Kochetov_VA
-304_DB_Kurmakaev_RA
-304_DB_Kuvakin_RA
 304_DB_Lukovataya_KV
-304_DB_Migachev_IP
-304_DB_Moiseev_OM
 304_DB_Nepyanova_AP
-304_DB_Pazuhina_AK
-304_DB_Piganov_DM
-304_DB_Savin_RV
-304_DB_Sergeeva_OD
-304_DB_Shagilov_KD
 =====================================================
-/home/andrey/labs/DB/304_DB_Shagilov_KD
-Из github.com-mrsu:andpop-mrsu/304_DB_Shagilov_KD
-Из github.com-mrsu:andpop-mrsu/304_DB_Shagilov_KD
+/home/andrey/labs/DB/304_DB_Nepyanova_AP
+Из github.com-mrsu:andpop-mrsu/304_DB_Nepyanova_AP
+Из github.com-mrsu:andpop-mrsu/304_DB_Nepyanova_AP
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-Уже актуально.
-fatal: внешний репозиторий student уже существует
-fatal: внешний репозиторий student уже существует
-Из https://github.com/ShagilKirillov/304_DB_Shagilov_KD
-Из https://github.com/ShagilKirillov/304_DB_Shagilov_KD
- * [новая ветка]     Task08     -> student/Task08
- * [новая ветка]     Task08     -> student/Task08
-Обновление 21f9883..4308eba
+   c452858..2a17410  master     -> teacher/master
+   c452858..2a17410  master     -> teacher/master
+Обновление c452858..2a17410
+Fast-forward
+ task07.md | 26 ++++++++++++++++++++++++++
+ task08.md | 37 +++++++++++++++++++++++++++++++++++++
+ 2 files changed, 63 insertions(+)
+ create mode 100644 task07.md
+ create mode 100644 task08.md
+Из https://github.com/Phosgene1/304_DB_Nepyanova_AP
+Из https://github.com/Phosgene1/304_DB_Nepyanova_AP
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 2a17410..542b133
 Fast-forward (no commit created; -m option ignored)
- Task08/data/test.db             | Bin 0 -> 45056 bytes
- Task08/db.php                   |   4 +++
- Task08/public/add_doctor.php    |  52 ++++++++++++++++++++++++++++++++
- Task08/public/delete_doctor.php |  16 ++++++++++
- Task08/public/edit_doctor.php   |  65 ++++++++++++++++++++++++++++++++++++++++
- Task08/public/index.php         |  52 ++++++++++++++++++++++++++++++++
- 6 files changed, 189 insertions(+)
- create mode 100644 Task08/data/test.db
- create mode 100644 Task08/db.php
- create mode 100644 Task08/public/add_doctor.php
- create mode 100644 Task08/public/delete_doctor.php
- create mode 100644 Task08/public/edit_doctor.php
+ Task01/README.md                  |   104 +
+ Task01/genres.txt                 |    18 +
+ Task01/movies.csv                 |  9743 +++++++++++
+ Task01/occupation.txt             |    21 +
+ Task01/ratings.csv                | 18774 ++++++++++++++++++++
+ Task01/ratings_count.txt          |     2 +
+ Task01/sqlite.txt                 |    29 +
+ Task01/tags.csv                   |  3684 ++++
+ Task01/users.txt                  |   943 +
+ Task02/README.md                  |   127 +
+ Task02/db_init.bat                |     3 +
+ Task02/db_init.sql                | 33183 ++++++++++++++++++++++++++++++++++++
+ Task02/genres.txt                 |    18 +
+ Task02/make_db_init.py            |   206 +
+ Task02/movies.csv                 |  9743 +++++++++++
+ Task02/movies_rating.db           |   Bin 0 -> 1069056 bytes
+ Task02/occupation.txt             |    21 +
+ Task02/ratings.csv                | 18774 ++++++++++++++++++++
+ Task02/tags.csv                   |  3684 ++++
+ Task02/users.txt                  |   943 +
+ Task03/db_init.sql                | 33183 ++++++++++++++++++++++++++++++++++++
+ Task03/movies_rating.db           |   Bin 0 -> 1069056 bytes
+ Task03/task3.bat                  |    44 +
+ Task04/db_init.sql                | 33183 ++++++++++++++++++++++++++++++++++++
+ Task04/movies_rating.db           |   Bin 0 -> 1069056 bytes
+ Task04/task4.bat                  |    43 +
+ Task05/data_add.sql               |    66 +
+ Task05/db_init.sql                |    81 +
+ Task05/db_schema.jpg              |   Bin 0 -> 150558 bytes
+ Task05/movies_rating.db           |   Bin 0 -> 81920 bytes
+ Task06/ER.jpg                     |   Bin 0 -> 226716 bytes
+ Task06/db_init.sql                |   163 +
+ Task06/db_schema.jpg              |   Bin 0 -> 217128 bytes
+ Task07/index.php                  |   188 +
+ Task07/task7_cli.php              |   186 +
+ Task08/data/init.sql              |    76 +
+ Task08/data/service_station.db    |   Bin 0 -> 32768 bytes
+ Task08/public/Database.php        |    14 +
+ Task08/public/employee_add.php    |    72 +
+ Task08/public/employee_delete.php |    73 +
+ Task08/public/employee_edit.php   |    87 +
+ Task08/public/index.php           |    81 +
+ Task08/public/schedule.php        |   106 +
+ Task08/public/schedule_add.php    |   105 +
+ Task08/public/schedule_delete.php |    75 +
+ Task08/public/schedule_edit.php   |   104 +
+ Task08/public/work_add.php        |    95 +
+ Task08/public/work_delete.php     |    73 +
+ Task08/public/work_edit.php       |    99 +
+ Task08/public/works.php           |   103 +
+ 50 files changed, 168320 insertions(+)
+ create mode 100644 Task01/README.md
+ create mode 100644 Task01/genres.txt
+ create mode 100644 Task01/movies.csv
+ create mode 100644 Task01/occupation.txt
+ create mode 100644 Task01/ratings.csv
+ create mode 100644 Task01/ratings_count.txt
+ create mode 100644 Task01/sqlite.txt
+ create mode 100644 Task01/tags.csv
+ create mode 100644 Task01/users.txt
+ create mode 100644 Task02/README.md
+ create mode 100644 Task02/db_init.bat
+ create mode 100644 Task02/db_init.sql
+ create mode 100644 Task02/genres.txt
+ create mode 100644 Task02/make_db_init.py
+ create mode 100644 Task02/movies.csv
+ create mode 100644 Task02/movies_rating.db
+ create mode 100644 Task02/occupation.txt
+ create mode 100644 Task02/ratings.csv
+ create mode 100644 Task02/tags.csv
+ create mode 100644 Task02/users.txt
+ create mode 100644 Task03/db_init.sql
+ create mode 100644 Task03/movies_rating.db
+ create mode 100644 Task03/task3.bat
+ create mode 100644 Task04/db_init.sql
+ create mode 100644 Task04/movies_rating.db
+ create mode 100644 Task04/task4.bat
+ create mode 100644 Task05/data_add.sql
+ create mode 100644 Task05/db_init.sql
+ create mode 100644 Task05/db_schema.jpg
+ create mode 100644 Task05/movies_rating.db
+ create mode 100644 Task06/ER.jpg
+ create mode 100644 Task06/db_init.sql
+ create mode 100644 Task06/db_schema.jpg
+ create mode 100644 Task07/index.php
+ create mode 100644 Task07/task7_cli.php
+ create mode 100644 Task08/data/init.sql
+ create mode 100644 Task08/data/service_station.db
+ create mode 100644 Task08/public/Database.php
+ create mode 100644 Task08/public/employee_add.php
+ create mode 100644 Task08/public/employee_delete.php
+ create mode 100644 Task08/public/employee_edit.php
  create mode 100644 Task08/public/index.php
---------------------------------------------------
-Task:  /home/andrey/labs/DB/304_DB_Shagilov_KD/Task08
-There are no game folder
---------------------------------------------------
-/home/andrey/labs/DB/304_DB_Shagilov_KD
-Task08
-Task from branch: Task08
-Creation date: 01/15/2026 21:00:34
-To github.com-mrsu:andpop-mrsu/304_DB_Shagilov_KD.git
-To github.com-mrsu:andpop-mrsu/304_DB_Shagilov_KD.git
-   21f9883..4308eba  master -> master
-   21f9883..4308eba  master -> master
-304_DB_Shevolaev_IV
-304_DB_Sveshnikov_IK
-304_DB_Tumajkina_DA
-304_DB_Yambaev_KN
-304_DB_Yastrebcev_DN
-304_DB_Zabnenkov_MA
+ create mode 100644 Task08/public/schedule.php
+ create mode 100644 Task08/public/schedule_add.php
+ create mode 100644 Task08/public/schedule_delete.php
+ create mode 100644 Task08/public/schedule_edit.php
+ create mode 100644 Task08/public/work_add.php
+ create mode 100644 Task08/public/work_delete.php
+ create mode 100644 Task08/public/work_edit.php
+ create mode 100644 Task08/public/works.php
+Task from branch: master
+Creation date: 03/03/2026 20:19:46
+Checking script check_master.ps1 not found
 **********************
 PowerShell transcript end
-End time: 20260116100027
+End time: 20260304215633
 **********************
