@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BASE_DIR="/home/andrey/labs/Testing"
+BASE_DIR="/home/andrey/labs/Testing_103M"
 
 pwd=$PWD
 echo $pwd

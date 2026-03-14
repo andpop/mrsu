@@ -1,10 +1,41 @@
 **********************
 PowerShell transcript start
-Start time: 20260309080116
+Start time: 20260310205107
 **********************
 Transcript started, output file is log.txt
 202M_Testing_Bochkov_NM
 202M_Testing_Burlakova_TS
+=====================================================
+/home/andrey/labs/Testing_202M/202M_Testing_Burlakova_TS
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Burlakova_TS
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Burlakova_TS
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Из https://github.com/btat7/202M_Testing_Burlakova_TS
+Из https://github.com/btat7/202M_Testing_Burlakova_TS
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+Merge made by the 'ort' strategy.
+ Task03/Task03.pdf | Bin 0 -> 1670686 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Task03/Task03.pdf
+--------------------------------------------------
+Task:  /home/andrey/labs/Testing_202M/202M_Testing_Burlakova_TS/Task03
+--------------------------------------------------
+Total ok: 0
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/Testing_202M/202M_Testing_Burlakova_TS
+Task03
+Task from branch: Task03
+Creation date: 03/09/2026 13:30:29
+To github.com-mrsu:andpop-mrsu/202M_Testing_Burlakova_TS.git
+To github.com-mrsu:andpop-mrsu/202M_Testing_Burlakova_TS.git
+   7ee92aa..be53712  master -> master
+   7ee92aa..be53712  master -> master
 202M_Testing_Egorova_OA
 202M_Testing_Harb_S
 202M_Testing_Holopov_DV
@@ -20,5 +51,5 @@ Transcript started, output file is log.txt
 202M_Testing_YAkunchev_NS
 **********************
 PowerShell transcript end
-End time: 20260309080122
+End time: 20260310205303
 **********************

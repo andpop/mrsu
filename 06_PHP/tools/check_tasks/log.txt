@@ -1,426 +1,102 @@
 **********************
 PowerShell transcript start
-Start time: 20260309080134
+Start time: 20260310205531
 **********************
 Transcript started, output file is log.txt
 401_PHP_Bikchurin_ESH
 401_PHP_Kelmyashkin_DV
+401_PHP_Klimentev_AA
+401_PHP_Korpachan_NV
+401_PHP_Ponomarev_MA
+401_PHP_YUnusov_AR
 =====================================================
-/home/andrey/labs/PHP/401_PHP_Kelmyashkin_DV
-Из github.com-mrsu:andpop-mrsu/401_PHP_Kelmyashkin_DV
-Из github.com-mrsu:andpop-mrsu/401_PHP_Kelmyashkin_DV
+/home/andrey/labs/PHP/401_PHP_YUnusov_AR
+Из github.com-mrsu:andpop-mrsu/401_PHP_YUnusov_AR
+Из github.com-mrsu:andpop-mrsu/401_PHP_YUnusov_AR
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-   ba3ae4b..762fb5e  master     -> teacher/master
-   ba3ae4b..762fb5e  master     -> teacher/master
-Обновление ba3ae4b..762fb5e
+   666f5ed..43c3172  master     -> teacher/master
+   666f5ed..43c3172  master     -> teacher/master
+Обновление 666f5ed..43c3172
 Fast-forward
  task04.md | 33 +++++++++++++++++++++++++++++++++
  1 file changed, 33 insertions(+)
  create mode 100644 task04.md
 error: внешний репозиторий student уже существует
 error: внешний репозиторий student уже существует
-Из https://github.com/DimaKelmyashkin/401_PHP_Kelmyashkin_DV
-Из https://github.com/DimaKelmyashkin/401_PHP_Kelmyashkin_DV
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
+Из https://github.com/Aidar-555/401_PHP_YUnusov_AR
+Из https://github.com/Aidar-555/401_PHP_YUnusov_AR
  * [новая ветка]     Task03     -> student/Task03
  * [новая ветка]     Task03     -> student/Task03
 Merge made by the 'ort' strategy.
- Task03/README.md                |  33 ++++
- Task03/composer.json            |   6 +
- Task03/db/.gitkeep              |   1 +
- Task03/public/assets/styles.css | 144 +++++++++++++++++
- Task03/public/index.html        | 284 ++++++++++++++++++++++++++++++++++
- Task03/public/index.php         | 103 +++++++++++++
- Task03/src/game.php             | 332 ++++++++++++++++++++++++++++++++++++++++
- 7 files changed, 903 insertions(+)
+ Task03/README.md               |  31 ++++
+ Task03/composer.json           |  11 ++
+ Task03/db/gitkeep.txt          |   1 +
+ Task03/public/assets/style.css | 122 +++++++++++++++
+ Task03/public/index.html       | 284 +++++++++++++++++++++++++++++++++++
+ Task03/public/index.php        | 117 +++++++++++++++
+ Task03/src/game.php            | 332 +++++++++++++++++++++++++++++++++++++++++
+ 7 files changed, 898 insertions(+)
  create mode 100644 Task03/README.md
  create mode 100644 Task03/composer.json
- create mode 100644 Task03/db/.gitkeep
- create mode 100644 Task03/public/assets/styles.css
+ create mode 100644 Task03/db/gitkeep.txt
+ create mode 100644 Task03/public/assets/style.css
  create mode 100644 Task03/public/index.html
  create mode 100644 Task03/public/index.php
  create mode 100644 Task03/src/game.php
 --------------------------------------------------
-Task:  /home/andrey/labs/PHP/401_PHP_Kelmyashkin_DV/Task03
+Task:  /home/andrey/labs/PHP/401_PHP_YUnusov_AR/Task03
 --------------------------------------------------
 Check path: README.md
-# Task03: Prime Game SPA (Slim 4.15.1)
+# Task03 — «Простое ли число?»
 
-Single Page Application for the game "Is the number prime?" with backend REST API on Slim and SQLite.
+Веб-приложение (SPA) — игра, в которой игроку предлагается случайное целое число, и он должен определить, является ли оно простым.
 
-## Requirements
-- PHP 8+
-- Composer
+## Запуск приложения
 
-## Install
-From `Task03` directory:
+### 1. Установить зависимости
 
 ```bash
+cd Task03
 composer install
 ```
 
-## Run
-From `Task03` directory:
+### 2. Запустить локальный веб-сервер
 
 ```bash
 php -S localhost:3000 -t public
 ```
 
-Open:
-- `http://localhost:3000/`
-- `http://localhost:3000/index.html`
+### 3. Открыть в браузере
 
-Database file is created in `Task03/db/game.sqlite`.
+```
+http://localhost:3000/
+```
 
-## API
-- `GET /games` - all games
-- `GET /games/{id}` - one game with steps
-- `POST /games` - create game, JSON body: `{"player_name":"Alex"}`
-- `POST /step/{id}` - add step, JSON body: `{"number":17,"user_answer":"yes"}`
---------------------------------------------------
-Check path: public
---------------------------------------------------
-Total ok: 2
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/PHP/401_PHP_Kelmyashkin_DV
-Task03
-task from branch: Task03
-creation date: 03/07/2026 18:49:29
-To github.com-mrsu:andpop-mrsu/401_PHP_Kelmyashkin_DV.git
-To github.com-mrsu:andpop-mrsu/401_PHP_Kelmyashkin_DV.git
-   762fb5e..06bc0bc  master -> master
-   762fb5e..06bc0bc  master -> master
-=====================================================
-/home/andrey/labs/PHP/401_PHP_Kelmyashkin_DV
-Из github.com-mrsu:andpop-mrsu/401_PHP_Kelmyashkin_DV
-Из github.com-mrsu:andpop-mrsu/401_PHP_Kelmyashkin_DV
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Merge made by the 'ort' strategy.
- Task02/README.md                |  25 ++++++++
- Task02/db/.gitkeep              |   1 +
- Task02/public/assets/styles.css |  93 +++++++++++++++++++++++++++++
- Task02/public/history.php       |  59 ++++++++++++++++++
- Task02/public/index.html        |  12 ++++
- Task02/public/index.php         |  22 +++++++
- Task02/public/play.php          | 111 ++++++++++++++++++++++++++++++++++
- Task02/src/game.php             | 128 ++++++++++++++++++++++++++++++++++++++++
- 8 files changed, 451 insertions(+)
- create mode 100644 Task02/README.md
- create mode 100644 Task02/db/.gitkeep
- create mode 100644 Task02/public/assets/styles.css
- create mode 100644 Task02/public/history.php
- create mode 100644 Task02/public/index.html
- create mode 100644 Task02/public/index.php
- create mode 100644 Task02/public/play.php
- create mode 100644 Task02/src/game.php
---------------------------------------------------
-Task:  /home/andrey/labs/PHP/401_PHP_Kelmyashkin_DV/Task02
---------------------------------------------------
-Check path: README.md
-# Optimus Prime Game
-
-Консольная PHP игра "Простое ли число?".
-Проект разработан в учебных целях.
-
-## Описание
-
-Игроку показывается случайное число. Задача игрока — определить, является ли это число простым (делится только на 1 и на само себя).
-Если ответ неверный, игра покажет нетривиальные делители числа.
-Ведется история игр с сохранением результатов в локальную базу данных SQLite.
+База данных `db/prime.db` создаётся автоматически при первом запросе.
 
 ## Требования
 
-* PHP >= 8.4.12
-Мб и на пажилых версиях стартанет хз
-* Composer
-* SQLite3
-
-### Запуск Task02
-1. Перейти в каталог `Task02`:
-   `cd Task02`
-2. Запустить встроенный веб-сервер PHP:
-   `php -S localhost:3000 -t public`
-3. Открыть приложение в браузере:
-   `http://localhost:3000/` или `http://localhost:3000/index.html`
+- PHP >= 8.0 с расширениями `pdo`, `pdo_sqlite`
+- Composer
 --------------------------------------------------
 Check path: public
 --------------------------------------------------
 Total ok: 2
 Total error: 0
 --------------------------------------------------
-/home/andrey/labs/PHP/401_PHP_Kelmyashkin_DV
-Task02
-task from branch: Task02
-creation date: 03/07/2026 18:43:51
-To github.com-mrsu:andpop-mrsu/401_PHP_Kelmyashkin_DV.git
-To github.com-mrsu:andpop-mrsu/401_PHP_Kelmyashkin_DV.git
-   06bc0bc..96ef825  master -> master
-   06bc0bc..96ef825  master -> master
-401_PHP_Klimentev_AA
-401_PHP_Korpachan_NV
-=====================================================
-/home/andrey/labs/PHP/401_PHP_Korpachan_NV
-Из github.com-mrsu:andpop-mrsu/401_PHP_Korpachan_NV
-Из github.com-mrsu:andpop-mrsu/401_PHP_Korpachan_NV
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-   6ce9f5b..54f5716  master     -> teacher/master
-   6ce9f5b..54f5716  master     -> teacher/master
-Обновление 6ce9f5b..54f5716
-Fast-forward
- task04.md | 33 +++++++++++++++++++++++++++++++++
- 1 file changed, 33 insertions(+)
- create mode 100644 task04.md
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Из https://github.com/Kornyshon/401_PHP_Korpachan_NV_fork
-Из https://github.com/Kornyshon/401_PHP_Korpachan_NV_fork
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task03     -> student/Task03
-Merge made by the 'ort' strategy.
- Task03/public/index.php | 145 ++++++++++++++++++++++++++++++++++++++++++++++++
- 1 file changed, 145 insertions(+)
- create mode 100644 Task03/public/index.php
---------------------------------------------------
-Task:  /home/andrey/labs/PHP/401_PHP_Korpachan_NV/Task03
---------------------------------------------------
-Check path: README.md
-README.md not found
---------------------------------------------------
-Check path: public
---------------------------------------------------
-Total ok: 1
-Total error: 1
---------------------------------------------------
-/home/andrey/labs/PHP/401_PHP_Korpachan_NV
+/home/andrey/labs/PHP/401_PHP_YUnusov_AR
 Task03
 task from branch: Task03
-creation date: 03/07/2026 18:57:37
-To github.com-mrsu:andpop-mrsu/401_PHP_Korpachan_NV.git
-To github.com-mrsu:andpop-mrsu/401_PHP_Korpachan_NV.git
-   54f5716..20b2155  master -> master
-   54f5716..20b2155  master -> master
-=====================================================
-/home/andrey/labs/PHP/401_PHP_Korpachan_NV
-Из github.com-mrsu:andpop-mrsu/401_PHP_Korpachan_NV
-Из github.com-mrsu:andpop-mrsu/401_PHP_Korpachan_NV
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Merge made by the 'ort' strategy.
- Task02/.gitignore           |   3 +
- Task02/README.md            |  18 ++++++
- Task02/db/.gitkeep          |   0
- Task02/public/css/style.css | 146 ++++++++++++++++++++++++++++++++++++++++++++
- Task02/src/Game.php         | 110 +++++++++++++++++++++++++++++++++
- 5 files changed, 277 insertions(+)
- create mode 100644 Task02/.gitignore
- create mode 100644 Task02/README.md
- create mode 100644 Task02/db/.gitkeep
- create mode 100644 Task02/public/css/style.css
- create mode 100644 Task02/src/Game.php
---------------------------------------------------
-Task:  /home/andrey/labs/PHP/401_PHP_Korpachan_NV/Task02
---------------------------------------------------
-Check path: README.md
-# Task02 — Веб-приложение «Калькулятор»
-
-Веб-версия игры из `Task01`, реализованная на стандартных возможностях PHP с использованием SQLite и паттерна Page Controller.
-
-## Запуск
-
-1. Перейти в каталог `Task02`.
-2. Запустить встроенный веб-сервер PHP:
-
-   ```powershell
-   php -S localhost:3000 -t public
-   ```
-
-3. Открыть в браузере:
-   - `http://localhost:3000/` — игра
-   - `http://localhost:3000/history.php` — история партий
-
-База данных создается автоматически при первом обращении к приложению: `Task02/db/calculator.sqlite`.
---------------------------------------------------
-Check path: public
---------------------------------------------------
-Total ok: 2
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/PHP/401_PHP_Korpachan_NV
-Task02
-task from branch: Task02
-creation date: 03/07/2026 18:55:46
-To github.com-mrsu:andpop-mrsu/401_PHP_Korpachan_NV.git
-To github.com-mrsu:andpop-mrsu/401_PHP_Korpachan_NV.git
-   20b2155..c0d41c3  master -> master
-   20b2155..c0d41c3  master -> master
-401_PHP_Ponomarev_MA
-401_PHP_YUnusov_AR
+creation date: 03/09/2026 17:12:16
+To github.com-mrsu:andpop-mrsu/401_PHP_YUnusov_AR.git
+To github.com-mrsu:andpop-mrsu/401_PHP_YUnusov_AR.git
+   43c3172..fe4c572  master -> master
+   43c3172..fe4c572  master -> master
 402_PHP_Baranov_EA
 402_PHP_Borcov_ID
 402_PHP_CHumakov_VA
 402_PHP_Egorov_AS
-=====================================================
-/home/andrey/labs/PHP/402_PHP_Egorov_AS
-Из github.com-mrsu:andpop-mrsu/402_PHP_Egorov_AS
-Из github.com-mrsu:andpop-mrsu/402_PHP_Egorov_AS
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-   8c372e4..d0e3854  master     -> teacher/master
-   8c372e4..d0e3854  master     -> teacher/master
-Обновление 8c372e4..d0e3854
-Fast-forward
- Task02/README.md             |  40 ++++++++++
- Task02/db/.gitkeep           |   0
- Task02/db/progression.sqlite | Bin 0 -> 12288 bytes
- Task02/public/history.php    |  77 +++++++++++++++++++
- Task02/public/index.html     |  11 +++
- Task02/public/index.php      | 174 +++++++++++++++++++++++++++++++++++++++++++
- Task02/public/styles.css     | 136 +++++++++++++++++++++++++++++++++
- Task02/src/database.php      | 106 ++++++++++++++++++++++++++
- Task02/src/game.php          |  34 +++++++++
- task03.md                    |  73 ++++++++++++++++++
- task04.md                    |  33 ++++++++
- 11 files changed, 684 insertions(+)
- create mode 100644 Task02/README.md
- create mode 100644 Task02/db/.gitkeep
- create mode 100644 Task02/db/progression.sqlite
- create mode 100644 Task02/public/history.php
- create mode 100644 Task02/public/index.html
- create mode 100644 Task02/public/index.php
- create mode 100644 Task02/public/styles.css
- create mode 100644 Task02/src/database.php
- create mode 100644 Task02/src/game.php
- create mode 100644 task03.md
- create mode 100644 task04.md
-Из https://github.com/Eario13/402_PHP_Egorov_AS
-Из https://github.com/Eario13/402_PHP_Egorov_AS
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Обновление d0e3854..82f28f7
-Fast-forward (no commit created; -m option ignored)
- Task03/.gitignore        |   3 +
- Task03/README.md         |  63 ++++
- Task03/composer.json     |   6 +
- Task03/composer.lock     | 775 +++++++++++++++++++++++++++++++++++++++++++++++
- Task03/db/.gitkeep       |   1 +
- Task03/public/app.js     | 259 ++++++++++++++++
- Task03/public/index.html |  78 +++++
- Task03/public/index.php  | 223 ++++++++++++++
- Task03/public/styles.css | 124 ++++++++
- Task03/src/Database.php  | 278 +++++++++++++++++
- Task03/src/Game.php      |  34 +++
- 11 files changed, 1844 insertions(+)
- create mode 100644 Task03/.gitignore
- create mode 100644 Task03/README.md
- create mode 100644 Task03/composer.json
- create mode 100644 Task03/composer.lock
- create mode 100644 Task03/db/.gitkeep
- create mode 100644 Task03/public/app.js
- create mode 100644 Task03/public/index.html
- create mode 100644 Task03/public/index.php
- create mode 100644 Task03/public/styles.css
- create mode 100644 Task03/src/Database.php
- create mode 100644 Task03/src/Game.php
---------------------------------------------------
-Task:  /home/andrey/labs/PHP/402_PHP_Egorov_AS/Task03
---------------------------------------------------
-Check path: README.md
-# Task03: SPA + REST API на Slim
-
-В этом задании игра «Арифметическая прогрессия» реализована как Single Page Application.
-
-- Frontend: `public/index.html` + `public/app.js` + `public/styles.css`
-- Backend: `public/index.php` на Slim
-- База данных: SQLite `db/progression.sqlite`
-
-## Что реализовано
-
-- `GET /games` — список всех игр из БД;
-- `GET /games/{id}` — данные игры и ее ходов;
-- `POST /games` — создание новой игры, возврат `id`;
-- `POST /step/{id}` — сохранение хода по игре.
-
-## Установка и запуск
-
-1. Перейти в каталог задания:
-
-```bash
-cd Task03
-```
-
-2. Установить зависимости (Slim):
-
-```bash
-composer install
-```
-
-3. Запустить встроенный сервер PHP:
-
-```bash
-php -S localhost:3000 -t public
-```
-
-4. Открыть SPA:
-
-- `http://localhost:3000/`
-
-## Быстрая проверка REST API (PowerShell)
-
-Примеры запросов (в новом окне PowerShell, пока сервер запущен):
-
-```powershell
-# Создать новую игру
-$game = Invoke-RestMethod -Uri "http://localhost:3000/index.php/games" -Method Post -ContentType "application/json" -Body '{"player_name":"Anton"}'
-$game
-
-# Отправить ход
-Invoke-RestMethod -Uri ("http://localhost:3000/index.php/step/" + $game.id) -Method Post -ContentType "application/json" -Body '{"answer":"10"}'
-
-# Список игр
-Invoke-RestMethod -Uri "http://localhost:3000/index.php/games" -Method Get
-
-# Ходы конкретной игры
-Invoke-RestMethod -Uri ("http://localhost:3000/index.php/games/" + $game.id) -Method Get
-```
-
-## Структура
-
-- `public/` — публичные файлы сайта, включая единственную PHP-точку входа `index.php`;
-- `src/` — бизнес-логика игры и работа с SQLite;
-- `db/` — каталог базы данных.
---------------------------------------------------
-Check path: public
---------------------------------------------------
-Total ok: 2
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/PHP/402_PHP_Egorov_AS
-Task03
-task from branch: Task03
-creation date: 03/05/2026 20:22:59
-To github.com-mrsu:andpop-mrsu/402_PHP_Egorov_AS.git
-To github.com-mrsu:andpop-mrsu/402_PHP_Egorov_AS.git
-   d0e3854..82f28f7  master -> master
-   d0e3854..82f28f7  master -> master
 402_PHP_Ganchenkov_AA
 402_PHP_Grachev_AV
 402_PHP_Klinov_AV
@@ -434,158 +110,10 @@ To github.com-mrsu:andpop-mrsu/402_PHP_Egorov_AS.git
 Из github.com-mrsu:andpop-mrsu/402_PHP_Pyanzina_VD
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-   e9d8c25..a080b97  master     -> teacher/master
-   e9d8c25..a080b97  master     -> teacher/master
-Обновление e9d8c25..a080b97
-Fast-forward
- task04.md | 33 +++++++++++++++++++++++++++++++++
- 1 file changed, 33 insertions(+)
- create mode 100644 task04.md
+Уже актуально.
 error: внешний репозиторий student уже существует
 error: внешний репозиторий student уже существует
-Из https://github.com/iambadatnicknames/402_PHP_Pyanzina_VD
-Из https://github.com/iambadatnicknames/402_PHP_Pyanzina_VD
- * [новая ветка]     Task04     -> student/Task04
- * [новая ветка]     Task04     -> student/Task04
-Обновление a080b97..2e19001
-Fast-forward (no commit created; -m option ignored)
- Task04/.gitignore                                  |    1 +
- Task04/Makefile                                    |   11 +
- Task04/README.md                                   |   22 +
- Task04/laravel/.editorconfig                       |   18 +
- Task04/laravel/.env.example                        |   65 +
- Task04/laravel/.gitattributes                      |   11 +
- Task04/laravel/.gitignore                          |   24 +
- Task04/laravel/README.md                           |   59 +
- Task04/laravel/app/Http/Controllers/Controller.php |    8 +
- .../app/Http/Controllers/GameController.php        |  111 +
- Task04/laravel/app/Models/Game.php                 |   19 +
- Task04/laravel/app/Models/Step.php                 |   18 +
- .../laravel/app/Providers/AppServiceProvider.php   |   24 +
- Task04/laravel/artisan                             |   18 +
- Task04/laravel/bootstrap/app.php                   |   18 +
- Task04/laravel/bootstrap/cache/.gitignore          |    2 +
- Task04/laravel/bootstrap/providers.php             |    5 +
- Task04/laravel/composer.json                       |   86 +
- Task04/laravel/composer.lock                       | 8387 ++++++++++++++++++++
- Task04/laravel/config/app.php                      |  126 +
- Task04/laravel/config/auth.php                     |  115 +
- Task04/laravel/config/cache.php                    |  117 +
- Task04/laravel/config/database.php                 |  179 +
- Task04/laravel/config/filesystems.php              |   80 +
- Task04/laravel/config/logging.php                  |  132 +
- Task04/laravel/config/mail.php                     |  118 +
- Task04/laravel/config/queue.php                    |  129 +
- Task04/laravel/config/services.php                 |   38 +
- Task04/laravel/config/session.php                  |  217 +
- Task04/laravel/database/.gitignore                 |    1 +
- Task04/laravel/database/factories/UserFactory.php  |   44 +
- .../2026_03_04_141537_create_games_table.php       |   24 +
- .../2026_03_04_141537_create_steps_table.php       |   28 +
- Task04/laravel/database/seeders/DatabaseSeeder.php |   25 +
- Task04/laravel/package.json                        |   17 +
- Task04/laravel/phpunit.xml                         |   35 +
- Task04/laravel/public/.htaccess                    |   25 +
- Task04/laravel/public/favicon.ico                  |    0
- Task04/laravel/public/index.php                    |   20 +
- Task04/laravel/public/robots.txt                   |    2 +
- Task04/laravel/resources/css/app.css               |   11 +
- Task04/laravel/resources/js/app.js                 |    1 +
- Task04/laravel/resources/js/bootstrap.js           |    4 +
- .../laravel/resources/views/game-details.blade.php |   42 +
- Task04/laravel/resources/views/games.blade.php     |   34 +
- Task04/laravel/resources/views/history.blade.php   |   44 +
- Task04/laravel/resources/views/home.blade.php      |    9 +
- Task04/laravel/resources/views/index.blade.php     |   21 +
- .../laravel/resources/views/layouts/app.blade.php  |  220 +
- Task04/laravel/resources/views/new-game.blade.php  |   14 +
- Task04/laravel/resources/views/play.blade.php      |   20 +
- Task04/laravel/resources/views/result.blade.php    |   23 +
- Task04/laravel/routes/console.php                  |    8 +
- Task04/laravel/routes/web.php                      |   12 +
- Task04/laravel/storage/app/.gitignore              |    4 +
- Task04/laravel/storage/app/private/.gitignore      |    2 +
- Task04/laravel/storage/app/public/.gitignore       |    2 +
- Task04/laravel/storage/framework/.gitignore        |    9 +
- Task04/laravel/storage/framework/cache/.gitignore  |    3 +
- .../storage/framework/cache/data/.gitignore        |    2 +
- .../laravel/storage/framework/sessions/.gitignore  |    2 +
- .../laravel/storage/framework/testing/.gitignore   |    2 +
- Task04/laravel/storage/framework/views/.gitignore  |    2 +
- Task04/laravel/storage/logs/.gitignore             |    2 +
- Task04/laravel/tests/Feature/ExampleTest.php       |   19 +
- Task04/laravel/tests/TestCase.php                  |   10 +
- Task04/laravel/tests/Unit/ExampleTest.php          |   16 +
- Task04/laravel/vite.config.js                      |   18 +
- 68 files changed, 10935 insertions(+)
- create mode 100644 Task04/.gitignore
- create mode 100644 Task04/Makefile
- create mode 100644 Task04/README.md
- create mode 100644 Task04/laravel/.editorconfig
- create mode 100644 Task04/laravel/.env.example
- create mode 100644 Task04/laravel/.gitattributes
- create mode 100644 Task04/laravel/.gitignore
- create mode 100644 Task04/laravel/README.md
- create mode 100644 Task04/laravel/app/Http/Controllers/Controller.php
- create mode 100644 Task04/laravel/app/Http/Controllers/GameController.php
- create mode 100644 Task04/laravel/app/Models/Game.php
- create mode 100644 Task04/laravel/app/Models/Step.php
- create mode 100644 Task04/laravel/app/Providers/AppServiceProvider.php
- create mode 100755 Task04/laravel/artisan
- create mode 100644 Task04/laravel/bootstrap/app.php
- create mode 100644 Task04/laravel/bootstrap/cache/.gitignore
- create mode 100644 Task04/laravel/bootstrap/providers.php
- create mode 100644 Task04/laravel/composer.json
- create mode 100644 Task04/laravel/composer.lock
- create mode 100644 Task04/laravel/config/app.php
- create mode 100644 Task04/laravel/config/auth.php
- create mode 100644 Task04/laravel/config/cache.php
- create mode 100644 Task04/laravel/config/database.php
- create mode 100644 Task04/laravel/config/filesystems.php
- create mode 100644 Task04/laravel/config/logging.php
- create mode 100644 Task04/laravel/config/mail.php
- create mode 100644 Task04/laravel/config/queue.php
- create mode 100644 Task04/laravel/config/services.php
- create mode 100644 Task04/laravel/config/session.php
- create mode 100644 Task04/laravel/database/.gitignore
- create mode 100644 Task04/laravel/database/factories/UserFactory.php
- create mode 100644 Task04/laravel/database/migrations/2026_03_04_141537_create_games_table.php
- create mode 100644 Task04/laravel/database/migrations/2026_03_04_141537_create_steps_table.php
- create mode 100644 Task04/laravel/database/seeders/DatabaseSeeder.php
- create mode 100644 Task04/laravel/package.json
- create mode 100644 Task04/laravel/phpunit.xml
- create mode 100644 Task04/laravel/public/.htaccess
- create mode 100644 Task04/laravel/public/favicon.ico
- create mode 100644 Task04/laravel/public/index.php
- create mode 100644 Task04/laravel/public/robots.txt
- create mode 100644 Task04/laravel/resources/css/app.css
- create mode 100644 Task04/laravel/resources/js/app.js
- create mode 100644 Task04/laravel/resources/js/bootstrap.js
- create mode 100644 Task04/laravel/resources/views/game-details.blade.php
- create mode 100644 Task04/laravel/resources/views/games.blade.php
- create mode 100644 Task04/laravel/resources/views/history.blade.php
- create mode 100644 Task04/laravel/resources/views/home.blade.php
- create mode 100644 Task04/laravel/resources/views/index.blade.php
- create mode 100644 Task04/laravel/resources/views/layouts/app.blade.php
- create mode 100644 Task04/laravel/resources/views/new-game.blade.php
- create mode 100644 Task04/laravel/resources/views/play.blade.php
- create mode 100644 Task04/laravel/resources/views/result.blade.php
- create mode 100644 Task04/laravel/routes/console.php
- create mode 100644 Task04/laravel/routes/web.php
- create mode 100644 Task04/laravel/storage/app/.gitignore
- create mode 100644 Task04/laravel/storage/app/private/.gitignore
- create mode 100644 Task04/laravel/storage/app/public/.gitignore
- create mode 100644 Task04/laravel/storage/framework/.gitignore
- create mode 100644 Task04/laravel/storage/framework/cache/.gitignore
- create mode 100644 Task04/laravel/storage/framework/cache/data/.gitignore
- create mode 100644 Task04/laravel/storage/framework/sessions/.gitignore
- create mode 100644 Task04/laravel/storage/framework/testing/.gitignore
- create mode 100644 Task04/laravel/storage/framework/views/.gitignore
- create mode 100644 Task04/laravel/storage/logs/.gitignore
- create mode 100644 Task04/laravel/tests/Feature/ExampleTest.php
- create mode 100644 Task04/laravel/tests/TestCase.php
- create mode 100644 Task04/laravel/tests/Unit/ExampleTest.php
- create mode 100644 Task04/laravel/vite.config.js
+Уже актуально.
 --------------------------------------------------
 Task:  /home/andrey/labs/PHP/402_PHP_Pyanzina_VD/Task04
 --------------------------------------------------
@@ -621,418 +149,10 @@ Task04
 task from branch: Task04
 creation date: 03/05/2026 12:35:00
 402_PHP_Sergeev_SA
-=====================================================
-/home/andrey/labs/PHP/402_PHP_Sergeev_SA
-Из github.com-mrsu:andpop-mrsu/402_PHP_Sergeev_SA
-Из github.com-mrsu:andpop-mrsu/402_PHP_Sergeev_SA
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-   8d3c854..424f0ea  master     -> teacher/master
-   8d3c854..424f0ea  master     -> teacher/master
-Обновление 8d3c854..424f0ea
-Fast-forward
- Task02/README.md               |  47 +++++++++++
- Task02/db/.gitignore           |   2 +
- Task02/public/assets/style.css |  26 ++++++
- Task02/public/history.php      |  10 +++
- Task02/public/index.html       |  12 +++
- Task02/public/index.php        |  25 ++++++
- Task02/public/play.php         |  71 ++++++++++++++++
- Task02/public/result.php       |  22 +++++
- Task02/src/Database.php        |  86 ++++++++++++++++++++
- Task02/src/GcdGame.php         |  39 +++++++++
- Task02/src/Repo.php            | 181 +++++++++++++++++++++++++++++++++++++++++
- Task02/src/bootstrap.php       |  19 +++++
- Task02/src/helpers.php         |  31 +++++++
- Task02/src/render.php          |  17 ++++
- Task02/views/error.php         |   7 ++
- Task02/views/history.php       |  34 ++++++++
- Task02/views/home.php          |  23 ++++++
- Task02/views/layout.php        |  26 ++++++
- Task02/views/play.php          |  34 ++++++++
- Task02/views/result.php        |  74 +++++++++++++++++
- task03.md                      |  73 +++++++++++++++++
- task04.md                      |  33 ++++++++
- 22 files changed, 892 insertions(+)
- create mode 100644 Task02/README.md
- create mode 100644 Task02/db/.gitignore
- create mode 100644 Task02/public/assets/style.css
- create mode 100644 Task02/public/history.php
- create mode 100644 Task02/public/index.html
- create mode 100644 Task02/public/index.php
- create mode 100644 Task02/public/play.php
- create mode 100644 Task02/public/result.php
- create mode 100644 Task02/src/Database.php
- create mode 100644 Task02/src/GcdGame.php
- create mode 100644 Task02/src/Repo.php
- create mode 100644 Task02/src/bootstrap.php
- create mode 100644 Task02/src/helpers.php
- create mode 100644 Task02/src/render.php
- create mode 100644 Task02/views/error.php
- create mode 100644 Task02/views/history.php
- create mode 100644 Task02/views/home.php
- create mode 100644 Task02/views/layout.php
- create mode 100644 Task02/views/play.php
- create mode 100644 Task02/views/result.php
- create mode 100644 task03.md
- create mode 100644 task04.md
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Из https://github.com/Kulebyaka1337/402_PHP_Sergeev_SA
-Из https://github.com/Kulebyaka1337/402_PHP_Sergeev_SA
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task03     -> student/Task03
-   7e5a881..8d3c854  master     -> student/master
-   7e5a881..8d3c854  master     -> student/master
- * [новая ветка]     patch-1    -> student/patch-1
- * [новая ветка]     patch-1    -> student/patch-1
-Merge made by the 'ort' strategy.
- Task03/.gitignore             |   9 +
- Task03/README.md              |  78 +++++
- Task03/composer.json          |  18 +
- Task03/composer.lock          | 770 ++++++++++++++++++++++++++++++++++++++++++
- Task03/db/.gitignore          |   2 +
- Task03/public/app.js          | 232 +++++++++++++
- Task03/public/index.html      |  58 ++++
- Task03/public/index.php       |  95 ++++++
- Task03/public/style.css       | 129 +++++++
- Task03/src/Database.php       |  65 ++++
- Task03/src/GameEngine.php     |  34 ++
- Task03/src/GameRepository.php | 332 ++++++++++++++++++
- 12 files changed, 1822 insertions(+)
- create mode 100644 Task03/.gitignore
- create mode 100644 Task03/README.md
- create mode 100644 Task03/composer.json
- create mode 100644 Task03/composer.lock
- create mode 100644 Task03/db/.gitignore
- create mode 100644 Task03/public/app.js
- create mode 100644 Task03/public/index.html
- create mode 100644 Task03/public/index.php
- create mode 100644 Task03/public/style.css
- create mode 100644 Task03/src/Database.php
- create mode 100644 Task03/src/GameEngine.php
- create mode 100644 Task03/src/GameRepository.php
---------------------------------------------------
-Task:  /home/andrey/labs/PHP/402_PHP_Sergeev_SA/Task03
---------------------------------------------------
-Check path: README.md
-# Task03
-
-Лабораторная работа №3 по технологиям разработки серверных приложений на PHP.
-
-## Описание
-
-Проект представляет собой одностраничное веб-приложение (SPA) с REST API для игры.  
-Серверная часть реализована на PHP с использованием Slim, данные хранятся в SQLite.
-
-## Стек технологий
-
-- PHP 8+
-- Slim 4
-- SQLite
-- JavaScript
-- HTML/CSS
-
-## Структура проекта
-
-- `public/` — публичная часть приложения
-- `src/` — серверная логика
-- `db/` — база данных SQLite
-- `vendor/` — зависимости Composer
-
-## Установка зависимостей
-
-Перед запуском необходимо установить зависимости через Composer:
-
-```bash
-composer install
-```
-
-## Запуск проекта
-
-Из корневой папки проекта выполните:
-
-```bash
-php -S localhost:3000 -t public
-```
-
-После этого приложение будет доступно по адресу:
-
-```text
-http://localhost:3000
-```
-
-## Возможные проблемы
-
-Для работы SQLite в PHP должны быть включены расширения:
-
-- `pdo_sqlite`
-- `sqlite3`
-
-Проверить это можно командой:
-
-```bash
-php -m
-```
-
-## REST API
-
-Приложение поддерживает следующие маршруты:
-
-- `GET /games` — получить список игр
-- `GET /games/{id}` — получить информацию об игре
-- `POST /games` — создать новую игру
-- `POST /step/{id}` — выполнить ход в игре
-
-## Примечание
-
-Папка `vendor` и файл базы данных не добавляются в репозиторий, так как исключены через `.gitignore`.
-
-## Автор
-
-**Sergeev S.A.**
-GitHub: `Kulebyaka1337`
-
----
---------------------------------------------------
-Check path: public
---------------------------------------------------
-Total ok: 2
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/PHP/402_PHP_Sergeev_SA
-Task03
-task from branch: Task03
-creation date: 03/08/2026 19:06:08
-To github.com-mrsu:andpop-mrsu/402_PHP_Sergeev_SA.git
-To github.com-mrsu:andpop-mrsu/402_PHP_Sergeev_SA.git
-   424f0ea..42347a3  master -> master
-   424f0ea..42347a3  master -> master
 402_PHP_SHestakov_VA
-=====================================================
-/home/andrey/labs/PHP/402_PHP_SHestakov_VA
-Из github.com-mrsu:andpop-mrsu/402_PHP_SHestakov_VA
-Из github.com-mrsu:andpop-mrsu/402_PHP_SHestakov_VA
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-   f3aeebf..45dd582  master     -> teacher/master
-   f3aeebf..45dd582  master     -> teacher/master
-Обновление f3aeebf..45dd582
-Fast-forward
- task04.md | 33 +++++++++++++++++++++++++++++++++
- 1 file changed, 33 insertions(+)
- create mode 100644 task04.md
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Из https://github.com/Baklaniso/402_PHP_SHestakov_VA
-Из https://github.com/Baklaniso/402_PHP_SHestakov_VA
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task03     -> student/Task03
-   ff8a054..45dd582  master     -> student/master
-   ff8a054..45dd582  master     -> student/master
-Обновление 45dd582..90853ce
-Fast-forward (no commit created; -m option ignored)
- Task03/.gitignore             |   3 +
- Task03/README.md              |  18 +++
- Task03/composer.json          |  11 ++
- Task03/db/game.db             | Bin 0 -> 12288 bytes
- Task03/public/css/style.css   | 281 ++++++++++++++++++++++++++++++++++++++++++
- Task03/public/css/style1.css  | 167 +++++++++++++++++++++++++
- Task03/public/index.html      |  55 +++++++++
- Task03/public/index.php       | 144 ++++++++++++++++++++++
- Task03/public/js/app.js       | 193 +++++++++++++++++++++++++++++
- Task03/src/Database.php       |  41 ++++++
- Task03/src/GameController.php | 129 +++++++++++++++++++
- 11 files changed, 1042 insertions(+)
- create mode 100644 Task03/.gitignore
- create mode 100644 Task03/README.md
- create mode 100644 Task03/composer.json
- create mode 100644 Task03/db/game.db
- create mode 100644 Task03/public/css/style.css
- create mode 100644 Task03/public/css/style1.css
- create mode 100644 Task03/public/index.html
- create mode 100644 Task03/public/index.php
- create mode 100644 Task03/public/js/app.js
- create mode 100644 Task03/src/Database.php
- create mode 100644 Task03/src/GameController.php
---------------------------------------------------
-Task:  /home/andrey/labs/PHP/402_PHP_SHestakov_VA/Task03
---------------------------------------------------
-Check path: README.md
-# Калькулятор — Slim Framework (ЛР3)
-
-Веб-приложение "Калькулятор" на микрофреймворке **Slim** с **REST API** и **одностраничным интерфейсом (SPA)**.
-
-## Запуск приложения
-
-1. Перейдите в каталог `Task03`:
-   ```bash
-   cd Task03
-2. Установите зависимости Composer (если ещё не установлены):
-    ```bash
-    composer install
-3. Запустите встроенный веб-сервер PHP:
-    ```bash
-    php -S localhost:3000 -t public
-4. Откройте в браузере:
-    ```bash
-    http://localhost:3000/
---------------------------------------------------
-Check path: public
---------------------------------------------------
-Total ok: 2
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/PHP/402_PHP_SHestakov_VA
-Task03
-task from branch: Task03
-creation date: 03/07/2026 15:35:08
-To github.com-mrsu:andpop-mrsu/402_PHP_SHestakov_VA.git
-To github.com-mrsu:andpop-mrsu/402_PHP_SHestakov_VA.git
-   45dd582..90853ce  master -> master
-   45dd582..90853ce  master -> master
 402_PHP_SHeyanov_AV
 402_PHP_Simonov_AP
 402_PHP_Sokolov_RV
-=====================================================
-/home/andrey/labs/PHP/402_PHP_Sokolov_RV
-Из github.com-mrsu:andpop-mrsu/402_PHP_Sokolov_RV
-Из github.com-mrsu:andpop-mrsu/402_PHP_Sokolov_RV
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-   e48d1d6..88bed77  master     -> teacher/master
-   e48d1d6..88bed77  master     -> teacher/master
-Обновление e48d1d6..88bed77
-Fast-forward
- task04.md | 33 +++++++++++++++++++++++++++++++++
- 1 file changed, 33 insertions(+)
- create mode 100644 task04.md
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Из https://github.com/Nevall-von-Goodem/402_PHP_Sokolov_RV
-Из https://github.com/Nevall-von-Goodem/402_PHP_Sokolov_RV
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task03     -> student/Task03
-   e89e77b..88bed77  master     -> student/master
-   e89e77b..88bed77  master     -> student/master
-Обновление 88bed77..56fae12
-Fast-forward (no commit created; -m option ignored)
- Task03/.gitignore        |   4 +
- Task03/README.md         |  75 +++++
- Task03/composer.json     |  34 +++
- Task03/composer.lock     | 770 +++++++++++++++++++++++++++++++++++++++++++++++
- Task03/public/app.js     | 174 +++++++++++
- Task03/public/index.html |  62 ++++
- Task03/public/index.php  | 171 +++++++++++
- Task03/public/styles.css |  82 +++++
- Task03/src/Db.php        |  40 +++
- Task03/src/Gcd.php       |  17 ++
- 10 files changed, 1429 insertions(+)
- create mode 100644 Task03/.gitignore
- create mode 100644 Task03/README.md
- create mode 100644 Task03/composer.json
- create mode 100644 Task03/composer.lock
- create mode 100644 Task03/public/app.js
- create mode 100644 Task03/public/index.html
- create mode 100644 Task03/public/index.php
- create mode 100644 Task03/public/styles.css
- create mode 100644 Task03/src/Db.php
- create mode 100644 Task03/src/Gcd.php
---------------------------------------------------
-Task:  /home/andrey/labs/PHP/402_PHP_Sokolov_RV/Task03
---------------------------------------------------
-Check path: README.md
-# GCD Game (Наибольший общий делитель)
-
-Игра на PHP: по двум случайным целым числам нужно вычислить **НОД** и ввести его в терминале.
-
-Проект выполнен в рамках дисциплины  
-**«Технологии разработки серверных приложений на PHP»**.
-
-## Описание
-
-Single Page Application для игры «НОД» (GCD), которая взаимодействует с backend-частью по REST API и сохраняет данные в SQLite.
-
-Backend реализован на микрофреймворке Slim. Frontend обменивается данными с сервером в формате JSON через HTTP-запросы.
-
-Маршруты REST API:
-- `GET /games` — список игр
-- `GET /games/{id}` — список ходов выбранной игры
-- `POST /games` — создать новую игру (возвращает `id`)
-- `POST /step/{id}` — записать ход игры (возвращает результат проверки)
-
-## Требования
-
-- PHP 8.0+
-- Composer
-- SQLite (PDO + pdo_sqlite)
-
-## Установка
-
-Из каталога `Task03`:
-
-```bash
-composer install
-```
-
-## Запуск
-
-В задании сервер запускается на 3000 порту и корень — `public`. 
-
-Для корректной маршрутизации Slim во встроенном веб‑сервере PHP используйте тот же `public/index.php` как router‑script:
-
-```bash
-php -S localhost:3000 -t public public/index.php
-```
-
-Открыть в браузере:
-- http://localhost:3000/  (SPA)
-- http://localhost:3000/index.html
-
-## База данных
-
-SQLite файл создаётся автоматически в каталоге:
-- `Task03/db/gcd.sqlite`
-
-Каталог `db` расположен вне `public`, как требует задание. 
-
-## Структура проекта
-
-```
-Task03/
-  public/
-    index.php      # единственная PHP-точка входа (Slim)
-    index.html     # SPA
-    app.js
-    styles.css
-  src/
-    Db.php
-    Gcd.php
-  db/
-    gcd.sqlite     # создаётся автоматически
-  composer.json
-  README.md
-```
-## Автор
-
-Nevall von Goodem  
-GitHub: Nevall-von-Goodem
---------------------------------------------------
-Check path: public
---------------------------------------------------
-Total ok: 2
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/PHP/402_PHP_Sokolov_RV
-Task03
-task from branch: Task03
-creation date: 03/07/2026 13:19:21
-To github.com-mrsu:andpop-mrsu/402_PHP_Sokolov_RV.git
-To github.com-mrsu:andpop-mrsu/402_PHP_Sokolov_RV.git
-   88bed77..56fae12  master -> master
-   88bed77..56fae12  master -> master
 402_PHP_Tenishev_RR
 402_PHP_Urenkov_YUYU
 402_PHP_Votyakov_MA
@@ -1042,158 +162,10 @@ To github.com-mrsu:andpop-mrsu/402_PHP_Sokolov_RV.git
 Из github.com-mrsu:andpop-mrsu/402_PHP_Votyakov_MA
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-   514b082..b1b189f  master     -> teacher/master
-   514b082..b1b189f  master     -> teacher/master
-Обновление 514b082..b1b189f
-Fast-forward
- task04.md | 33 +++++++++++++++++++++++++++++++++
- 1 file changed, 33 insertions(+)
- create mode 100644 task04.md
+Уже актуально.
 error: внешний репозиторий student уже существует
 error: внешний репозиторий student уже существует
-Из https://github.com/Mih-gif/402_PHP_Votyakov_MA
-Из https://github.com/Mih-gif/402_PHP_Votyakov_MA
- * [новая ветка]     Task04     -> student/Task04
- * [новая ветка]     Task04     -> student/Task04
-   b415860..b1b189f  master     -> student/master
-   b415860..b1b189f  master     -> student/master
-Обновление b1b189f..354d24d
-Fast-forward (no commit created; -m option ignored)
- Task04/Makefile                                    |   20 +
- Task04/README.md                                   |   23 +
- Task04/laravel/.editorconfig                       |   18 +
- Task04/laravel/.env.example                        |   65 +
- Task04/laravel/.gitattributes                      |   11 +
- Task04/laravel/.gitignore                          |   41 +
- Task04/laravel/README.md                           |   59 +
- Task04/laravel/app/Http/Controllers/Controller.php |    8 +
- .../app/Http/Controllers/GameController.php        |  200 +
- Task04/laravel/app/Models/Game.php                 |   26 +
- Task04/laravel/app/Models/Progression.php          |   25 +
- Task04/laravel/app/Models/ProgressionNumber.php    |   20 +
- Task04/laravel/app/Models/User.php                 |   48 +
- .../laravel/app/Providers/AppServiceProvider.php   |   33 +
- Task04/laravel/artisan                             |   18 +
- Task04/laravel/bootstrap/app.php                   |   19 +
- Task04/laravel/bootstrap/cache/.gitignore          |    2 +
- Task04/laravel/bootstrap/providers.php             |    5 +
- Task04/laravel/composer.json                       |   86 +
- Task04/laravel/composer.lock                       | 8387 ++++++++++++++++++++
- Task04/laravel/config/app.php                      |  126 +
- Task04/laravel/config/auth.php                     |  115 +
- Task04/laravel/config/cache.php                    |  117 +
- Task04/laravel/config/database.php                 |  183 +
- Task04/laravel/config/filesystems.php              |   80 +
- Task04/laravel/config/logging.php                  |  132 +
- Task04/laravel/config/mail.php                     |  118 +
- Task04/laravel/config/queue.php                    |  129 +
- Task04/laravel/config/services.php                 |   38 +
- Task04/laravel/config/session.php                  |  217 +
- Task04/laravel/database/.gitignore                 |    1 +
- Task04/laravel/database/factories/UserFactory.php  |   44 +
- .../0001_01_01_000000_create_users_table.php       |   49 +
- .../0001_01_01_000001_create_cache_table.php       |   35 +
- .../0001_01_01_000002_create_jobs_table.php        |   57 +
- .../2026_03_07_120652_create_games_table.php       |   24 +
- ...2026_03_07_121237_create_progressions_table.php |   27 +
- ..._07_121308_create_progression_numbers_table.php |   25 +
- Task04/laravel/database/seeders/DatabaseSeeder.php |   25 +
- Task04/laravel/package.json                        |   17 +
- Task04/laravel/phpunit.xml                         |   35 +
- Task04/laravel/public/.htaccess                    |   25 +
- Task04/laravel/public/favicon.ico                  |    0
- Task04/laravel/public/index.php                    |   20 +
- Task04/laravel/public/robots.txt                   |    2 +
- Task04/laravel/resources/css/app.css               |   11 +
- Task04/laravel/resources/js/app.js                 |    1 +
- Task04/laravel/resources/js/bootstrap.js           |    4 +
- Task04/laravel/resources/views/game.blade.php      |  407 +
- Task04/laravel/resources/views/welcome.blade.php   |  277 +
- Task04/laravel/routes/api.php                      |    9 +
- Task04/laravel/routes/console.php                  |    8 +
- Task04/laravel/routes/web.php                      |   12 +
- Task04/laravel/storage/app/.gitignore              |    4 +
- Task04/laravel/storage/app/private/.gitignore      |    2 +
- Task04/laravel/storage/app/public/.gitignore       |    2 +
- Task04/laravel/storage/framework/.gitignore        |    9 +
- Task04/laravel/storage/framework/cache/.gitignore  |    3 +
- .../storage/framework/cache/data/.gitignore        |    2 +
- .../laravel/storage/framework/sessions/.gitignore  |    2 +
- .../laravel/storage/framework/testing/.gitignore   |    2 +
- Task04/laravel/storage/framework/views/.gitignore  |    2 +
- Task04/laravel/storage/logs/.gitignore             |    2 +
- Task04/laravel/tests/Feature/ExampleTest.php       |   19 +
- Task04/laravel/tests/TestCase.php                  |   10 +
- Task04/laravel/tests/Unit/ExampleTest.php          |   16 +
- Task04/laravel/vite.config.js                      |   18 +
- 67 files changed, 11577 insertions(+)
- create mode 100644 Task04/Makefile
- create mode 100644 Task04/README.md
- create mode 100644 Task04/laravel/.editorconfig
- create mode 100644 Task04/laravel/.env.example
- create mode 100644 Task04/laravel/.gitattributes
- create mode 100644 Task04/laravel/.gitignore
- create mode 100644 Task04/laravel/README.md
- create mode 100644 Task04/laravel/app/Http/Controllers/Controller.php
- create mode 100644 Task04/laravel/app/Http/Controllers/GameController.php
- create mode 100644 Task04/laravel/app/Models/Game.php
- create mode 100644 Task04/laravel/app/Models/Progression.php
- create mode 100644 Task04/laravel/app/Models/ProgressionNumber.php
- create mode 100644 Task04/laravel/app/Models/User.php
- create mode 100644 Task04/laravel/app/Providers/AppServiceProvider.php
- create mode 100644 Task04/laravel/artisan
- create mode 100644 Task04/laravel/bootstrap/app.php
- create mode 100644 Task04/laravel/bootstrap/cache/.gitignore
- create mode 100644 Task04/laravel/bootstrap/providers.php
- create mode 100644 Task04/laravel/composer.json
- create mode 100644 Task04/laravel/composer.lock
- create mode 100644 Task04/laravel/config/app.php
- create mode 100644 Task04/laravel/config/auth.php
- create mode 100644 Task04/laravel/config/cache.php
- create mode 100644 Task04/laravel/config/database.php
- create mode 100644 Task04/laravel/config/filesystems.php
- create mode 100644 Task04/laravel/config/logging.php
- create mode 100644 Task04/laravel/config/mail.php
- create mode 100644 Task04/laravel/config/queue.php
- create mode 100644 Task04/laravel/config/services.php
- create mode 100644 Task04/laravel/config/session.php
- create mode 100644 Task04/laravel/database/.gitignore
- create mode 100644 Task04/laravel/database/factories/UserFactory.php
- create mode 100644 Task04/laravel/database/migrations/0001_01_01_000000_create_users_table.php
- create mode 100644 Task04/laravel/database/migrations/0001_01_01_000001_create_cache_table.php
- create mode 100644 Task04/laravel/database/migrations/0001_01_01_000002_create_jobs_table.php
- create mode 100644 Task04/laravel/database/migrations/2026_03_07_120652_create_games_table.php
- create mode 100644 Task04/laravel/database/migrations/2026_03_07_121237_create_progressions_table.php
- create mode 100644 Task04/laravel/database/migrations/2026_03_07_121308_create_progression_numbers_table.php
- create mode 100644 Task04/laravel/database/seeders/DatabaseSeeder.php
- create mode 100644 Task04/laravel/package.json
- create mode 100644 Task04/laravel/phpunit.xml
- create mode 100644 Task04/laravel/public/.htaccess
- create mode 100644 Task04/laravel/public/favicon.ico
- create mode 100644 Task04/laravel/public/index.php
- create mode 100644 Task04/laravel/public/robots.txt
- create mode 100644 Task04/laravel/resources/css/app.css
- create mode 100644 Task04/laravel/resources/js/app.js
- create mode 100644 Task04/laravel/resources/js/bootstrap.js
- create mode 100644 Task04/laravel/resources/views/game.blade.php
- create mode 100644 Task04/laravel/resources/views/welcome.blade.php
- create mode 100644 Task04/laravel/routes/api.php
- create mode 100644 Task04/laravel/routes/console.php
- create mode 100644 Task04/laravel/routes/web.php
- create mode 100644 Task04/laravel/storage/app/.gitignore
- create mode 100644 Task04/laravel/storage/app/private/.gitignore
- create mode 100644 Task04/laravel/storage/app/public/.gitignore
- create mode 100644 Task04/laravel/storage/framework/.gitignore
- create mode 100644 Task04/laravel/storage/framework/cache/.gitignore
- create mode 100644 Task04/laravel/storage/framework/cache/data/.gitignore
- create mode 100644 Task04/laravel/storage/framework/sessions/.gitignore
- create mode 100644 Task04/laravel/storage/framework/testing/.gitignore
- create mode 100644 Task04/laravel/storage/framework/views/.gitignore
- create mode 100644 Task04/laravel/storage/logs/.gitignore
- create mode 100644 Task04/laravel/tests/Feature/ExampleTest.php
- create mode 100644 Task04/laravel/tests/TestCase.php
- create mode 100644 Task04/laravel/tests/Unit/ExampleTest.php
- create mode 100644 Task04/laravel/vite.config.js
+Уже актуально.
 --------------------------------------------------
 Task:  /home/andrey/labs/PHP/402_PHP_Votyakov_MA/Task04
 --------------------------------------------------
@@ -1233,51 +205,9 @@ creation date: 03/07/2026 14:50:39
 404_PHP_Gusejnov_SE
 405_PHP_Kalachin_DA
 405_PHP_Krepyshev_NA
-=====================================================
-/home/andrey/labs/PHP/405_PHP_Krepyshev_NA
-Из github.com-mrsu:andpop-mrsu/405_PHP_Krepyshev_NA
-Из github.com-mrsu:andpop-mrsu/405_PHP_Krepyshev_NA
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-   f62db86..cc97b14  master     -> teacher/master
-   f62db86..cc97b14  master     -> teacher/master
-Обновление 21a4591..cc97b14
-Fast-forward
- task04.md | 33 +++++++++++++++++++++++++++++++++
- 1 file changed, 33 insertions(+)
- create mode 100644 task04.md
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Из https://github.com/WitchBoy666/405_PHP_Krepyshev_NA
-Из https://github.com/WitchBoy666/405_PHP_Krepyshev_NA
- * [новая ветка]     Task3      -> student/Task3
- * [новая ветка]     Task3      -> student/Task3
-   f62db86..80eaa93  master     -> student/master
-   f62db86..80eaa93  master     -> student/master
-Обновление cc97b14..047a6a7
-Fast-forward (no commit created; -m option ignored)
- Task03/.gitignore        |  2 ++
- Task03/README.md         | 18 ++++++++++
- Task03/composer.json     |  6 ++++
- Task03/db/.gitignore     |  1 +
- Task03/public/index.html | 93 ++++++++++++++++++++++++++++++++++++++++++++++++
- Task03/public/index.php  | 66 ++++++++++++++++++++++++++++++++++
- Task03/public/style.css  | 47 ++++++++++++++++++++++++
- 7 files changed, 233 insertions(+)
- create mode 100644 Task03/.gitignore
- create mode 100644 Task03/README.md
- create mode 100644 Task03/composer.json
- create mode 100644 Task03/db/.gitignore
- create mode 100644 Task03/public/index.html
- create mode 100644 Task03/public/index.php
- create mode 100644 Task03/public/style.css
-Task3
-task from branch: Task3
-creation date: 03/07/2026 14:23:42
-Checking script check_Task3.ps1 not found
 405_PHP_Kulavskaya_YuE
 405_PHP_Nizhegorodov_YaN
 **********************
 PowerShell transcript end
-End time: 20260309081933
+End time: 20260310210120
 **********************
