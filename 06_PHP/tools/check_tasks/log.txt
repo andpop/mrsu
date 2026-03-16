@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20260304224923
+Start time: 20260310205531
 **********************
 Transcript started, output file is log.txt
 401_PHP_Bikchurin_ESH
@@ -9,6 +9,90 @@ Transcript started, output file is log.txt
 401_PHP_Korpachan_NV
 401_PHP_Ponomarev_MA
 401_PHP_YUnusov_AR
+=====================================================
+/home/andrey/labs/PHP/401_PHP_YUnusov_AR
+Из github.com-mrsu:andpop-mrsu/401_PHP_YUnusov_AR
+Из github.com-mrsu:andpop-mrsu/401_PHP_YUnusov_AR
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   666f5ed..43c3172  master     -> teacher/master
+   666f5ed..43c3172  master     -> teacher/master
+Обновление 666f5ed..43c3172
+Fast-forward
+ task04.md | 33 +++++++++++++++++++++++++++++++++
+ 1 file changed, 33 insertions(+)
+ create mode 100644 task04.md
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Из https://github.com/Aidar-555/401_PHP_YUnusov_AR
+Из https://github.com/Aidar-555/401_PHP_YUnusov_AR
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+Merge made by the 'ort' strategy.
+ Task03/README.md               |  31 ++++
+ Task03/composer.json           |  11 ++
+ Task03/db/gitkeep.txt          |   1 +
+ Task03/public/assets/style.css | 122 +++++++++++++++
+ Task03/public/index.html       | 284 +++++++++++++++++++++++++++++++++++
+ Task03/public/index.php        | 117 +++++++++++++++
+ Task03/src/game.php            | 332 +++++++++++++++++++++++++++++++++++++++++
+ 7 files changed, 898 insertions(+)
+ create mode 100644 Task03/README.md
+ create mode 100644 Task03/composer.json
+ create mode 100644 Task03/db/gitkeep.txt
+ create mode 100644 Task03/public/assets/style.css
+ create mode 100644 Task03/public/index.html
+ create mode 100644 Task03/public/index.php
+ create mode 100644 Task03/src/game.php
+--------------------------------------------------
+Task:  /home/andrey/labs/PHP/401_PHP_YUnusov_AR/Task03
+--------------------------------------------------
+Check path: README.md
+# Task03 — «Простое ли число?»
+
+Веб-приложение (SPA) — игра, в которой игроку предлагается случайное целое число, и он должен определить, является ли оно простым.
+
+## Запуск приложения
+
+### 1. Установить зависимости
+
+```bash
+cd Task03
+composer install
+```
+
+### 2. Запустить локальный веб-сервер
+
+```bash
+php -S localhost:3000 -t public
+```
+
+### 3. Открыть в браузере
+
+```
+http://localhost:3000/
+```
+
+База данных `db/prime.db` создаётся автоматически при первом запросе.
+
+## Требования
+
+- PHP >= 8.0 с расширениями `pdo`, `pdo_sqlite`
+- Composer
+--------------------------------------------------
+Check path: public
+--------------------------------------------------
+Total ok: 2
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/PHP/401_PHP_YUnusov_AR
+Task03
+task from branch: Task03
+creation date: 03/09/2026 17:12:16
+To github.com-mrsu:andpop-mrsu/401_PHP_YUnusov_AR.git
+To github.com-mrsu:andpop-mrsu/401_PHP_YUnusov_AR.git
+   43c3172..fe4c572  master -> master
+   43c3172..fe4c572  master -> master
 402_PHP_Baranov_EA
 402_PHP_Borcov_ID
 402_PHP_CHumakov_VA
@@ -19,294 +103,111 @@ Transcript started, output file is log.txt
 402_PHP_Korotkevich_DA
 402_PHP_Krestyanskova_MA
 402_PHP_Novikov_ME
+402_PHP_Pyanzina_VD
 =====================================================
-/home/andrey/labs/PHP/402_PHP_Novikov_ME
-Из github.com-mrsu:andpop-mrsu/402_PHP_Novikov_ME
-Из github.com-mrsu:andpop-mrsu/402_PHP_Novikov_ME
+/home/andrey/labs/PHP/402_PHP_Pyanzina_VD
+Из github.com-mrsu:andpop-mrsu/402_PHP_Pyanzina_VD
+Из github.com-mrsu:andpop-mrsu/402_PHP_Pyanzina_VD
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-   da1dc1f..67f9d93  master     -> teacher/master
-   da1dc1f..67f9d93  master     -> teacher/master
-Обновление da1dc1f..67f9d93
-Fast-forward
- task04.md | 33 +++++++++++++++++++++++++++++++++
- 1 file changed, 33 insertions(+)
- create mode 100644 task04.md
+Уже актуально.
 error: внешний репозиторий student уже существует
 error: внешний репозиторий student уже существует
-Из https://github.com/darkflade/402_PHP_Novikov_ME
-Из https://github.com/darkflade/402_PHP_Novikov_ME
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task03     -> student/Task03
-   5b3f89e..da1dc1f  master     -> student/master
-   5b3f89e..da1dc1f  master     -> student/master
-Merge made by the 'ort' strategy.
- Task03/README.md                |  33 ++++
- Task03/composer.json            |   6 +
- Task03/db/.gitkeep              |   1 +
- Task03/public/assets/styles.css | 144 +++++++++++++++++
- Task03/public/index.html        | 284 ++++++++++++++++++++++++++++++++++
- Task03/public/index.php         | 103 +++++++++++++
- Task03/src/game.php             | 332 ++++++++++++++++++++++++++++++++++++++++
- 7 files changed, 903 insertions(+)
- create mode 100644 Task03/README.md
- create mode 100644 Task03/composer.json
- create mode 100644 Task03/db/.gitkeep
- create mode 100644 Task03/public/assets/styles.css
- create mode 100644 Task03/public/index.html
- create mode 100644 Task03/public/index.php
- create mode 100644 Task03/src/game.php
+Уже актуально.
 --------------------------------------------------
-Task:  /home/andrey/labs/PHP/402_PHP_Novikov_ME/Task03
+Task:  /home/andrey/labs/PHP/402_PHP_Pyanzina_VD/Task04
 --------------------------------------------------
 Check path: README.md
-# Task03: Prime Game SPA (Slim 4.15.1)
+# Игра «Наибольший общий делитель» (GCD)
 
-Single Page Application for the game "Is the number prime?" with backend REST API on Slim and SQLite.
+Веб-приложение на Laravel.
 
-## Requirements
-- PHP 8+
-- Composer
-
-## Install
-From `Task03` directory:
+## Установка
 
 ```bash
-composer install
+make install
 ```
 
-## Run
-From `Task03` directory:
+## Запуск 
 
 ```bash
-php -S localhost:3000 -t public
+cd laravel
+php artisan serve
 ```
 
-Open:
-- `http://localhost:3000/`
-- `http://localhost:3000/index.html`
+Или 
 
-Database file is created in `Task03/db/game.sqlite`.
-
-## API
-- `GET /games` - all games
-- `GET /games/{id}` - one game with steps
-- `POST /games` - create game, JSON body: `{"player_name":"Alex"}`
-- `POST /step/{id}` - add step, JSON body: `{"number":17,"user_answer":"yes"}`
+```bash
+make start
+```
 --------------------------------------------------
-Check path: public
---------------------------------------------------
-Total ok: 2
+Total ok: 1
 Total error: 0
 --------------------------------------------------
-/home/andrey/labs/PHP/402_PHP_Novikov_ME
-Task03
-task from branch: Task03
-creation date: 03/01/2026 15:26:28
-To github.com-mrsu:andpop-mrsu/402_PHP_Novikov_ME.git
-To github.com-mrsu:andpop-mrsu/402_PHP_Novikov_ME.git
-   67f9d93..3d324af  master -> master
-   67f9d93..3d324af  master -> master
-402_PHP_Pyanzina_VD
+/home/andrey/labs/PHP/402_PHP_Pyanzina_VD
+Task04
+task from branch: Task04
+creation date: 03/05/2026 12:35:00
 402_PHP_Sergeev_SA
 402_PHP_SHestakov_VA
 402_PHP_SHeyanov_AV
 402_PHP_Simonov_AP
 402_PHP_Sokolov_RV
 402_PHP_Tenishev_RR
-=====================================================
-/home/andrey/labs/PHP/402_PHP_Tenishev_RR
-Из github.com-mrsu:andpop-mrsu/402_PHP_Tenishev_RR
-Из github.com-mrsu:andpop-mrsu/402_PHP_Tenishev_RR
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-   d9c75fc..473a2e2  master     -> teacher/master
-   d9c75fc..473a2e2  master     -> teacher/master
-Обновление d9c75fc..473a2e2
-Fast-forward
- Task02/.gitignore           |   3 +
- Task02/README.md            |  18 ++++++
- Task02/db/.gitkeep          |   0
- Task02/public/css/style.css | 146 ++++++++++++++++++++++++++++++++++++++++++++
- Task02/public/history.php   |  14 +++++
- Task02/public/index.php     |  44 +++++++++++++
- Task02/src/Database.php     |  39 ++++++++++++
- Task02/src/Game.php         | 105 +++++++++++++++++++++++++++++++
- Task02/views/game.php       |  26 ++++++++
- Task02/views/history.php    |  32 ++++++++++
- Task02/views/layout.php     |  28 +++++++++
- task03.md                   |  73 ++++++++++++++++++++++
- task04.md                   |  33 ++++++++++
- 13 files changed, 561 insertions(+)
- create mode 100644 Task02/.gitignore
- create mode 100644 Task02/README.md
- create mode 100644 Task02/db/.gitkeep
- create mode 100644 Task02/public/css/style.css
- create mode 100644 Task02/public/history.php
- create mode 100644 Task02/public/index.php
- create mode 100644 Task02/src/Database.php
- create mode 100644 Task02/src/Game.php
- create mode 100644 Task02/views/game.php
- create mode 100644 Task02/views/history.php
- create mode 100644 Task02/views/layout.php
- create mode 100644 task03.md
- create mode 100644 task04.md
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Из https://github.com/tenishevR/402_PHP_Tenishev_RR
-Из https://github.com/tenishevR/402_PHP_Tenishev_RR
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task03     -> student/Task03
-   be0ba93..2a73df5  master     -> student/master
-   be0ba93..2a73df5  master     -> student/master
-Merge made by the 'ort' strategy.
- Task03/.gitignore             |   8 ++
- Task03/README.md              |  18 ++++
- Task03/composer.json          |  17 ++++
- Task03/public/css/style.css   | 167 ++++++++++++++++++++++++++++++++++++
- Task03/public/index.html      |  59 +++++++++++++
- Task03/public/index.php       | 144 +++++++++++++++++++++++++++++++
- Task03/public/js/app.js       | 193 ++++++++++++++++++++++++++++++++++++++++++
- Task03/src/Database.php       |  41 +++++++++
- Task03/src/GameController.php | 129 ++++++++++++++++++++++++++++
- 9 files changed, 776 insertions(+)
- create mode 100644 Task03/.gitignore
- create mode 100644 Task03/README.md
- create mode 100644 Task03/composer.json
- create mode 100644 Task03/public/css/style.css
- create mode 100644 Task03/public/index.html
- create mode 100644 Task03/public/index.php
- create mode 100644 Task03/public/js/app.js
- create mode 100644 Task03/src/Database.php
- create mode 100644 Task03/src/GameController.php
---------------------------------------------------
-Task:  /home/andrey/labs/PHP/402_PHP_Tenishev_RR/Task03
---------------------------------------------------
-Check path: README.md
-# Калькулятор — Slim Framework (ЛР3)
-
-Веб-приложение "Калькулятор" на микрофреймворке **Slim** с **REST API** и **одностраничным интерфейсом (SPA)**.
-
-## Запуск приложения
-
-1. Перейдите в каталог `Task03`:
-   ```bash
-   cd Task03
-2. Установите зависимости Composer (если ещё не установлены):
-    ```bash
-    composer install
-3. Запустите встроенный веб-сервер PHP:
-    ```bash
-    php -S localhost:3000 -t public
-4. Откройте в браузере:
-    ```bash
-    http://localhost:3000/
---------------------------------------------------
-Check path: public
---------------------------------------------------
-Total ok: 2
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/PHP/402_PHP_Tenishev_RR
-Task03
-task from branch: Task03
-creation date: 03/04/2026 11:15:02
-To github.com-mrsu:andpop-mrsu/402_PHP_Tenishev_RR.git
-To github.com-mrsu:andpop-mrsu/402_PHP_Tenishev_RR.git
-   473a2e2..3b2f93f  master -> master
-   473a2e2..3b2f93f  master -> master
 402_PHP_Urenkov_YUYU
+402_PHP_Votyakov_MA
 =====================================================
-/home/andrey/labs/PHP/402_PHP_Urenkov_YUYU
-Из github.com-mrsu:andpop-mrsu/402_PHP_Urenkov_YUYU
-Из github.com-mrsu:andpop-mrsu/402_PHP_Urenkov_YUYU
+/home/andrey/labs/PHP/402_PHP_Votyakov_MA
+Из github.com-mrsu:andpop-mrsu/402_PHP_Votyakov_MA
+Из github.com-mrsu:andpop-mrsu/402_PHP_Votyakov_MA
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-   55dfe7f..9d20522  master     -> teacher/master
-   55dfe7f..9d20522  master     -> teacher/master
-Обновление 55dfe7f..9d20522
-Fast-forward
- task03.md | 73 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
- task04.md | 33 +++++++++++++++++++++++++++++
- 2 files changed, 106 insertions(+)
- create mode 100644 task03.md
- create mode 100644 task04.md
-Из https://github.com/werrys3021/402_PHP_Urenkov_YUYU
-Из https://github.com/werrys3021/402_PHP_Urenkov_YUYU
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Merge made by the 'ort' strategy.
- Task02/.gitignore           |   3 +
- Task02/README.md            |  18 ++++
- Task02/db/.gitkeep          |   0
- Task02/public/css/style.css | 214 ++++++++++++++++++++++++++++++++++++++++++++
- Task02/public/history.php   |  14 +++
- Task02/public/index.php     |  44 +++++++++
- Task02/src/Database.php     |  39 ++++++++
- Task02/src/Game.php         | 105 ++++++++++++++++++++++
- Task02/views/game.php       |  26 ++++++
- Task02/views/history.php    |  32 +++++++
- Task02/views/layout.php     |  24 +++++
- 11 files changed, 519 insertions(+)
- create mode 100644 Task02/.gitignore
- create mode 100644 Task02/README.md
- create mode 100644 Task02/db/.gitkeep
- create mode 100644 Task02/public/css/style.css
- create mode 100644 Task02/public/history.php
- create mode 100644 Task02/public/index.php
- create mode 100644 Task02/src/Database.php
- create mode 100644 Task02/src/Game.php
- create mode 100644 Task02/views/game.php
- create mode 100644 Task02/views/history.php
- create mode 100644 Task02/views/layout.php
+Уже актуально.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Уже актуально.
 --------------------------------------------------
-Task:  /home/andrey/labs/PHP/402_PHP_Urenkov_YUYU/Task02
+Task:  /home/andrey/labs/PHP/402_PHP_Votyakov_MA/Task04
 --------------------------------------------------
 Check path: README.md
-# Task02 — Веб-приложение «Калькулятор»
+# Арифметическая прогрессия
 
-Веб-версия игры из `Task01`, реализованная на стандартных возможностях PHP с использованием SQLite и паттерна Page Controller.
+Веб-приложение "Арифметическая прогрессия" на Laravel.
 
-## Запуск
+## Установка
+make install
+cd Task04/laravel
+php artisan serve
+После запуска откройте в браузере: http://localhost:8000
 
-1. Перейти в каталог `Task02`.
-2. Запустить встроенный веб-сервер PHP:
 
-   ```powershell
-   php -S localhost:3000 -t public
-   ```
+## Использование
+1. Введите имя игрока
+2. Нажмите "Новая игра"
+3. Угадайте пропущенное число в арифметической прогрессии
+4. Результаты сохраняются в базе данных и отображаются в истории игр
 
-3. Открыть в браузере:
-   - `http://localhost:3000/` — игра
-   - `http://localhost:3000/history.php` — история партий
-
-База данных создается автоматически при первом обращении к приложению: `Task02/db/calculator.sqlite`.
+## Структура проекта
+1. app/Models/ - модели Game, Progression, ProgressionNumber
+2. app/Http/Controllers/ - контроллеры
+3. database/migrations/ - миграции базы данных
+4. resources/views/ - шаблоны представлений
+5. routes/ - маршруты приложения
 --------------------------------------------------
-Check path: public
---------------------------------------------------
-Total ok: 2
+Total ok: 1
 Total error: 0
 --------------------------------------------------
-/home/andrey/labs/PHP/402_PHP_Urenkov_YUYU
-Task02
-task from branch: Task02
-creation date: 03/03/2026 11:21:39
-To github.com-mrsu:andpop-mrsu/402_PHP_Urenkov_YUYU.git
-To github.com-mrsu:andpop-mrsu/402_PHP_Urenkov_YUYU.git
-   9d20522..484b5ff  master -> master
-   9d20522..484b5ff  master -> master
-402_PHP_Votyakov_MA
+/home/andrey/labs/PHP/402_PHP_Votyakov_MA
+Выполнил ЛР4
+task from branch: Task04
+creation date: 03/07/2026 14:50:39
 403_PHP_Shegurov_AM
 404_PHP_Gusejnov_SE
 405_PHP_Kalachin_DA
 405_PHP_Krepyshev_NA
+405_PHP_Kulavskaya_YuE
+405_PHP_Nizhegorodov_YaN
 **********************
 PowerShell transcript end
-End time: 20260304230805
+End time: 20260310210120
 **********************

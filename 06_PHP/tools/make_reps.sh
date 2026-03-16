@@ -2,8 +2,8 @@
 
 token=123
 rm ./reps.txt
-for student in $(cat students-list_405.txt); do
-   echo "405_PHP_$student" >> reps.txt
+for student in $(cat students-list_404.txt); do
+   echo "404_PHP_$student" >> reps.txt
 done
 
 for repo in $(cat reps.txt) ; do
