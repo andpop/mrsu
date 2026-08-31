@@ -1,7 +1,7 @@
 #!/bin/bash
 
 BASE_DIR="/home/andrey/labs/DBTech"
-REPS_FILE="reps.txt"
+REPS_FILE="reps_all.txt"
 # TEACHER_PROFILE="https://github.com/andpop-mrsu"
 # Привязку к удаленному репозиторию делаем по SSH, а не по HTTPS
 TEACHER_PROFILE="git@github.com-mrsu:andpop-mrsu"
