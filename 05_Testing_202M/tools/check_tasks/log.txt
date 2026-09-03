@@ -1,41 +1,236 @@
 **********************
 PowerShell transcript start
-Start time: 20260310205107
+Start time: 20260324140157
 **********************
 Transcript started, output file is log.txt
 202M_Testing_Bochkov_NM
-202M_Testing_Burlakova_TS
 =====================================================
-/home/andrey/labs/Testing_202M/202M_Testing_Burlakova_TS
-Из github.com-mrsu:andpop-mrsu/202M_Testing_Burlakova_TS
-Из github.com-mrsu:andpop-mrsu/202M_Testing_Burlakova_TS
+/home/andrey/labs/Testing_202M/202M_Testing_Bochkov_NM
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Bochkov_NM
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Bochkov_NM
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
 Уже актуально.
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Из https://github.com/btat7/202M_Testing_Burlakova_TS
-Из https://github.com/btat7/202M_Testing_Burlakova_TS
+Из https://github.com/vokkin/202M_Testing_Bochkov_NM
+Из https://github.com/vokkin/202M_Testing_Bochkov_NM
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
  * [новая ветка]     Task03     -> student/Task03
  * [новая ветка]     Task03     -> student/Task03
-Merge made by the 'ort' strategy.
- Task03/Task03.pdf | Bin 0 -> 1670686 bytes
- 1 file changed, 0 insertions(+), 0 deletions(-)
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 1a22c01..ff436d6
+Fast-forward (no commit created; -m option ignored)
+ Task03/Task03.pdf | 765 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 765 insertions(+)
  create mode 100644 Task03/Task03.pdf
 --------------------------------------------------
-Task:  /home/andrey/labs/Testing_202M/202M_Testing_Burlakova_TS/Task03
+Task:  /home/andrey/labs/Testing_202M/202M_Testing_Bochkov_NM/Task03
 --------------------------------------------------
 Total ok: 0
 Total error: 0
 --------------------------------------------------
-/home/andrey/labs/Testing_202M/202M_Testing_Burlakova_TS
+/home/andrey/labs/Testing_202M/202M_Testing_Bochkov_NM
 Task03
 Task from branch: Task03
-Creation date: 03/09/2026 13:30:29
-To github.com-mrsu:andpop-mrsu/202M_Testing_Burlakova_TS.git
-To github.com-mrsu:andpop-mrsu/202M_Testing_Burlakova_TS.git
-   7ee92aa..be53712  master -> master
-   7ee92aa..be53712  master -> master
+Creation date: 03/24/2026 09:39:56
+To github.com-mrsu:andpop-mrsu/202M_Testing_Bochkov_NM.git
+To github.com-mrsu:andpop-mrsu/202M_Testing_Bochkov_NM.git
+   1a22c01..ff436d6  master -> master
+   1a22c01..ff436d6  master -> master
+=====================================================
+/home/andrey/labs/Testing_202M/202M_Testing_Bochkov_NM
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Bochkov_NM
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Bochkov_NM
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Merge made by the 'recursive' strategy.
+ Task02/Task02.pdf | Bin 0 -> 9053202 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Task02/Task02.pdf
+--------------------------------------------------
+Task:  /home/andrey/labs/Testing_202M/202M_Testing_Bochkov_NM/Task02
+--------------------------------------------------
+Total ok: 0
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/Testing_202M/202M_Testing_Bochkov_NM
+Task02
+Task from branch: Task02
+Creation date: 03/24/2026 09:38:53
+To github.com-mrsu:andpop-mrsu/202M_Testing_Bochkov_NM.git
+To github.com-mrsu:andpop-mrsu/202M_Testing_Bochkov_NM.git
+   ff436d6..83df9bc  master -> master
+   ff436d6..83df9bc  master -> master
+=====================================================
+/home/andrey/labs/Testing_202M/202M_Testing_Bochkov_NM
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Bochkov_NM
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Bochkov_NM
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Merge made by the 'recursive' strategy.
+ Task01/check.txt         |  19 +++++++++
+ Task01/equation.txt      |  13 ++++++
+ Task01/quadratic.py      |  25 ++++++++++++
+ Task01/test_class.py     | 103 +++++++++++++++++++++++++++++++++++++++++++++++
+ Task01/test_func.py      |  63 +++++++++++++++++++++++++++++
+ Task01/triangle_class.py |  57 ++++++++++++++++++++++++++
+ Task01/triangle_func.py  |  49 ++++++++++++++++++++++
+ 7 files changed, 329 insertions(+)
+ create mode 100644 Task01/check.txt
+ create mode 100644 Task01/equation.txt
+ create mode 100644 Task01/quadratic.py
+ create mode 100644 Task01/test_class.py
+ create mode 100644 Task01/test_func.py
+ create mode 100644 Task01/triangle_class.py
+ create mode 100644 Task01/triangle_func.py
+--------------------------------------------------
+Task:  /home/andrey/labs/Testing_202M/202M_Testing_Bochkov_NM/Task01
+--------------------------------------------------
+Check path: check.txt
+# Чек-лист для тестирования функции get_triangle_type
+
+# ПОЗИТИВНЫЕ ТЕСТЫ
+# =================
+1) 3, 3, 3 | "equilateral" | Равносторонний треугольник
+2) 5, 5, 3 | "isosceles" | Равнобедренный треугольник
+3) 4, 5, 6 | "nonequilateral" | Разносторонний треугольник
+4) 7, 7, 7 | "equilateral" | Равносторонний треугольник с большими сторонами
+5) 2.5, 2.5, 3.5 | "isosceles" | Равнобедренный треугольник с дробными сторонами
+6) 3.2, 4.1, 5.7 | "nonequilateral" | Разносторонний треугольник с дробными сторонами
+
+# НЕГАТИВНЫЕ ТЕСТЫ
+# =================
+7) 0, 1, 2 | IncorrectTriangleSides | Нулевая сторона
+8) -1, 2, 3 | IncorrectTriangleSides | Отрицательная сторона
+9) 1, 2, 3 | IncorrectTriangleSides | Нарушение неравенства треугольника (1+2=3)
+10) 1, 2, 4 | IncorrectTriangleSides | Нарушение неравенства треугольника (1+2<4)
+11) 'a', 2, 3 | IncorrectTriangleSides | Нечисловое значение
+12) None, 2, 3 | IncorrectTriangleSides | Некорректный тип данных
+--------------------------------------------------
+Check path: triangle_func.py
+--------------------------------------------------
+Check path: triangle_class.py
+--------------------------------------------------
+Check path: test_func.py
+--------------------------------------------------
+Check path: test_class.py
+--------------------------------------------------
+Run: python3 triangle_func.py -v
+Trying:
+    get_triangle_type(3, 3, 3)
+Expecting:
+    'equilateral'
+ok
+Trying:
+    get_triangle_type(5, 5, 3)
+Expecting:
+    'isosceles'
+ok
+Trying:
+    get_triangle_type(4, 5, 6)
+Expecting:
+    'nonequilateral'
+ok
+Trying:
+    get_triangle_type(0, 1, 2)
+Expecting:
+    Traceback (most recent call last):
+        ...
+    IncorrectTriangleSides: Стороны должны быть положительными числами
+ok
+Trying:
+    get_triangle_type(1, 2, 3)
+Expecting:
+    Traceback (most recent call last):
+        ...
+    IncorrectTriangleSides: Треугольник с такими сторонами не существует
+ok
+Trying:
+    get_triangle_type('a', 2, 3)
+Expecting:
+    Traceback (most recent call last):
+        ...
+    IncorrectTriangleSides: Стороны должны быть числами
+ok
+2 items had no tests:
+    __main__
+    __main__.IncorrectTriangleSides
+1 items passed all tests:
+   6 tests in __main__.get_triangle_type
+6 tests in 3 items.
+6 passed and 0 failed.
+Test passed.
+--------------------------------------------------
+Run: python3 test_func.py -v
+
+--------------------------------------------------
+Run: pytest -v
+============================= test session starts ==============================
+platform linux -- Python 3.8.10, pytest-7.2.1, pluggy-1.0.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/andrey/labs/Testing_202M/202M_Testing_Bochkov_NM/Task01
+collecting ... collected 36 items
+
+test_class.py::TestTriangle::test_create_equilateral PASSED              [  2%]
+test_class.py::TestTriangle::test_create_isosceles PASSED                [  5%]
+test_class.py::TestTriangle::test_create_nonequilateral PASSED           [  8%]
+test_class.py::TestTriangle::test_create_float_sides PASSED              [ 11%]
+test_class.py::TestTriangle::test_create_zero_side PASSED                [ 13%]
+test_class.py::TestTriangle::test_create_negative_side PASSED            [ 16%]
+test_class.py::TestTriangle::test_create_triangle_inequality PASSED      [ 19%]
+test_class.py::TestTriangle::test_create_non_numeric PASSED              [ 22%]
+test_class.py::TestTriangle::test_create_none_value PASSED               [ 25%]
+test_class.py::TestTriangle::test_type_equilateral PASSED                [ 27%]
+test_class.py::TestTriangle::test_type_isosceles PASSED                  [ 30%]
+test_class.py::TestTriangle::test_type_nonequilateral PASSED             [ 33%]
+test_class.py::TestTriangle::test_perimeter_equilateral PASSED           [ 36%]
+test_class.py::TestTriangle::test_perimeter_isosceles PASSED             [ 38%]
+test_class.py::TestTriangle::test_perimeter_nonequilateral PASSED        [ 41%]
+test_class.py::TestTriangle::test_perimeter_float PASSED                 [ 44%]
+test_class.py::TestTriangle::test_triangle_properties[3-3-3-equilateral-9] PASSED [ 47%]
+test_class.py::TestTriangle::test_triangle_properties[5-5-3-isosceles-13] PASSED [ 50%]
+test_class.py::TestTriangle::test_triangle_properties[4-5-6-nonequilateral-15] PASSED [ 52%]
+test_class.py::TestTriangle::test_triangle_properties[3.5-4.2-5.8-nonequilateral-13.5] PASSED [ 55%]
+test_class.py::TestTriangle::test_invalid_triangles[0-1-2] PASSED        [ 58%]
+test_class.py::TestTriangle::test_invalid_triangles[-1-2-3] PASSED       [ 61%]
+test_class.py::TestTriangle::test_invalid_triangles[1-2-4] PASSED        [ 63%]
+test_class.py::TestTriangle::test_invalid_triangles[a-2-3] PASSED        [ 66%]
+test_class.py::TestTriangle::test_invalid_triangles[None-2-3] PASSED     [ 69%]
+test_func.py::TestTriangleFunc::test_boolean_input PASSED                [ 72%]
+test_func.py::TestTriangleFunc::test_equilateral PASSED                  [ 75%]
+test_func.py::TestTriangleFunc::test_isosceles PASSED                    [ 77%]
+test_func.py::TestTriangleFunc::test_negative_side PASSED                [ 80%]
+test_func.py::TestTriangleFunc::test_non_numeric_input PASSED            [ 83%]
+test_func.py::TestTriangleFunc::test_none_input PASSED                   [ 86%]
+test_func.py::TestTriangleFunc::test_nonequilateral PASSED               [ 88%]
+test_func.py::TestTriangleFunc::test_string_input PASSED                 [ 91%]
+test_func.py::TestTriangleFunc::test_triangle_inequality_equal PASSED    [ 94%]
+test_func.py::TestTriangleFunc::test_triangle_inequality_less PASSED     [ 97%]
+test_func.py::TestTriangleFunc::test_zero_side PASSED                    [100%]
+
+============================== 36 passed in 0.06s ==============================
+--------------------------------------------------
+Total ok: 8
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/Testing_202M/202M_Testing_Bochkov_NM
+Task01
+Task from branch: Task01
+Creation date: 03/24/2026 09:34:57
+To github.com-mrsu:andpop-mrsu/202M_Testing_Bochkov_NM.git
+To github.com-mrsu:andpop-mrsu/202M_Testing_Bochkov_NM.git
+   83df9bc..d5b0c1d  master -> master
+   83df9bc..d5b0c1d  master -> master
+202M_Testing_Burlakova_TS
 202M_Testing_Egorova_OA
 202M_Testing_Harb_S
 202M_Testing_Holopov_DV
@@ -47,9 +242,51 @@ To github.com-mrsu:andpop-mrsu/202M_Testing_Burlakova_TS.git
 202M_Testing_Moskajkin_SO
 202M_Testing_Nazarov_KV
 202M_Testing_Tereshkina_ES
+=====================================================
+/home/andrey/labs/Testing_202M/202M_Testing_Tereshkina_ES
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Tereshkina_ES
+Из github.com-mrsu:andpop-mrsu/202M_Testing_Tereshkina_ES
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+   a1b7657..95dbbd3  master     -> teacher/master
+   a1b7657..95dbbd3  master     -> teacher/master
+Обновление a1b7657..95dbbd3
+Fast-forward
+ Task02/Task02.pdf | Bin 0 -> 3161905 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Task02/Task02.pdf
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+Из https://github.com/catl1nka/202M_Testing_Tereshkina_ES
+Из https://github.com/catl1nka/202M_Testing_Tereshkina_ES
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+Обновление 95dbbd3..dce742e
+Fast-forward (no commit created; -m option ignored)
+ Task03/Task03.pdf | Bin 0 -> 867901 bytes
+ Task03/Task03.py  | 280 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 280 insertions(+)
+ create mode 100644 Task03/Task03.pdf
+ create mode 100644 Task03/Task03.py
+--------------------------------------------------
+Task:  /home/andrey/labs/Testing_202M/202M_Testing_Tereshkina_ES/Task03
+--------------------------------------------------
+Total ok: 0
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/Testing_202M/202M_Testing_Tereshkina_ES
+Лабораторная работа №3
+Task from branch: Task03
+Creation date: 03/24/2026 09:30:23
+To github.com-mrsu:andpop-mrsu/202M_Testing_Tereshkina_ES.git
+To github.com-mrsu:andpop-mrsu/202M_Testing_Tereshkina_ES.git
+   95dbbd3..dce742e  master -> master
+   95dbbd3..dce742e  master -> master
 202M_Testing_Tyurin_SA
 202M_Testing_YAkunchev_NS
 **********************
 PowerShell transcript end
-End time: 20260310205303
+End time: 20260324140330
 **********************

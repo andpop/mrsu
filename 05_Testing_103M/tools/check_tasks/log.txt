@@ -1,51 +1,9 @@
 **********************
 PowerShell transcript start
-Start time: 20260310204002
+Start time: 20260605100003
 **********************
 Transcript started, output file is log.txt
 103M_Testing_Abramov_AI
-=====================================================
-/home/andrey/labs/Testing_103M/103M_Testing_Abramov_AI
-Из github.com-mrsu:andpop-mrsu/103M_Testing_Abramov_AI
-Из github.com-mrsu:andpop-mrsu/103M_Testing_Abramov_AI
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-   e928e5c..652d07e  master     -> teacher/master
-   e928e5c..652d07e  master     -> teacher/master
-Обновление e928e5c..652d07e
-Fast-forward
- task03.md | 61 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
- 1 file changed, 61 insertions(+)
- create mode 100644 task03.md
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Из https://github.com/Antonizsar13/103M_Testing_Abramov_AI
-Из https://github.com/Antonizsar13/103M_Testing_Abramov_AI
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task03     -> student/Task03
-   5894ad7..652d07e  master     -> student/master
-   5894ad7..652d07e  master     -> student/master
-Обновление 652d07e..ec1217b
-Fast-forward (no commit created; -m option ignored)
- Task03/test-cases.docx | Bin 0 -> 29845 bytes
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 Task03/test-cases.docx
---------------------------------------------------
-Task:  /home/andrey/labs/Testing_103M/103M_Testing_Abramov_AI/Task03
---------------------------------------------------
-Check path: test-cases.docx
---------------------------------------------------
-Total ok: 1
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/Testing_103M/103M_Testing_Abramov_AI
-Task03
-Task from branch: Task03
-Creation date: 03/09/2026 17:52:11
-To github.com-mrsu:andpop-mrsu/103M_Testing_Abramov_AI.git
-To github.com-mrsu:andpop-mrsu/103M_Testing_Abramov_AI.git
-   652d07e..ec1217b  master -> master
-   652d07e..ec1217b  master -> master
 103M_Testing_Afonin_VI
 103M_Testing_Biushkin_DV
 103M_Testing_Cybisov_IE
@@ -59,52 +17,10 @@ To github.com-mrsu:andpop-mrsu/103M_Testing_Abramov_AI.git
 103M_Testing_Rybina_EA
 103M_Testing_Semushkin_GO
 103M_Testing_SHurygina_KN
-=====================================================
-/home/andrey/labs/Testing_103M/103M_Testing_SHurygina_KN
-Из github.com-mrsu:andpop-mrsu/103M_Testing_SHurygina_KN
-Из github.com-mrsu:andpop-mrsu/103M_Testing_SHurygina_KN
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-   1b90aac..7c232ff  master     -> teacher/master
-   1b90aac..7c232ff  master     -> teacher/master
-Обновление 1b90aac..7c232ff
-Fast-forward
- task03.md | 61 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
- 1 file changed, 61 insertions(+)
- create mode 100644 task03.md
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Из https://github.com/shuryginaKN/103M_Testing_SHurygina_KN
-Из https://github.com/shuryginaKN/103M_Testing_SHurygina_KN
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task03     -> student/Task03
-   90736f2..7c232ff  master     -> student/master
-   90736f2..7c232ff  master     -> student/master
-Обновление 7c232ff..6e0387d
-Fast-forward (no commit created; -m option ignored)
- Task03/test-cases.docx | Bin 0 -> 23286 bytes
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 Task03/test-cases.docx
---------------------------------------------------
-Task:  /home/andrey/labs/Testing_103M/103M_Testing_SHurygina_KN/Task03
---------------------------------------------------
-Check path: test-cases.docx
---------------------------------------------------
-Total ok: 1
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/Testing_103M/103M_Testing_SHurygina_KN
-Task03
-Task from branch: Task03
-Creation date: 03/09/2026 16:02:18
-To github.com-mrsu:andpop-mrsu/103M_Testing_SHurygina_KN.git
-To github.com-mrsu:andpop-mrsu/103M_Testing_SHurygina_KN.git
-   7c232ff..6e0387d  master -> master
-   7c232ff..6e0387d  master -> master
 103M_Testing_Slushkin_DV
 103M_Testing_Tenyakshev_MA
 103M_Testing_YUdashkin_OA
 **********************
 PowerShell transcript end
-End time: 20260310204530
+End time: 20260605100014
 **********************

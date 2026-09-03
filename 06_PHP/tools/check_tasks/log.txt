@@ -1,6 +1,6 @@
 **********************
 PowerShell transcript start
-Start time: 20260310205531
+Start time: 20260410155538
 **********************
 Transcript started, output file is log.txt
 401_PHP_Bikchurin_ESH
@@ -9,145 +9,162 @@ Transcript started, output file is log.txt
 401_PHP_Korpachan_NV
 401_PHP_Ponomarev_MA
 401_PHP_YUnusov_AR
-=====================================================
-/home/andrey/labs/PHP/401_PHP_YUnusov_AR
-Из github.com-mrsu:andpop-mrsu/401_PHP_YUnusov_AR
-Из github.com-mrsu:andpop-mrsu/401_PHP_YUnusov_AR
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-   666f5ed..43c3172  master     -> teacher/master
-   666f5ed..43c3172  master     -> teacher/master
-Обновление 666f5ed..43c3172
-Fast-forward
- task04.md | 33 +++++++++++++++++++++++++++++++++
- 1 file changed, 33 insertions(+)
- create mode 100644 task04.md
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Из https://github.com/Aidar-555/401_PHP_YUnusov_AR
-Из https://github.com/Aidar-555/401_PHP_YUnusov_AR
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task03     -> student/Task03
-Merge made by the 'ort' strategy.
- Task03/README.md               |  31 ++++
- Task03/composer.json           |  11 ++
- Task03/db/gitkeep.txt          |   1 +
- Task03/public/assets/style.css | 122 +++++++++++++++
- Task03/public/index.html       | 284 +++++++++++++++++++++++++++++++++++
- Task03/public/index.php        | 117 +++++++++++++++
- Task03/src/game.php            | 332 +++++++++++++++++++++++++++++++++++++++++
- 7 files changed, 898 insertions(+)
- create mode 100644 Task03/README.md
- create mode 100644 Task03/composer.json
- create mode 100644 Task03/db/gitkeep.txt
- create mode 100644 Task03/public/assets/style.css
- create mode 100644 Task03/public/index.html
- create mode 100644 Task03/public/index.php
- create mode 100644 Task03/src/game.php
---------------------------------------------------
-Task:  /home/andrey/labs/PHP/401_PHP_YUnusov_AR/Task03
---------------------------------------------------
-Check path: README.md
-# Task03 — «Простое ли число?»
-
-Веб-приложение (SPA) — игра, в которой игроку предлагается случайное целое число, и он должен определить, является ли оно простым.
-
-## Запуск приложения
-
-### 1. Установить зависимости
-
-```bash
-cd Task03
-composer install
-```
-
-### 2. Запустить локальный веб-сервер
-
-```bash
-php -S localhost:3000 -t public
-```
-
-### 3. Открыть в браузере
-
-```
-http://localhost:3000/
-```
-
-База данных `db/prime.db` создаётся автоматически при первом запросе.
-
-## Требования
-
-- PHP >= 8.0 с расширениями `pdo`, `pdo_sqlite`
-- Composer
---------------------------------------------------
-Check path: public
---------------------------------------------------
-Total ok: 2
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/PHP/401_PHP_YUnusov_AR
-Task03
-task from branch: Task03
-creation date: 03/09/2026 17:12:16
-To github.com-mrsu:andpop-mrsu/401_PHP_YUnusov_AR.git
-To github.com-mrsu:andpop-mrsu/401_PHP_YUnusov_AR.git
-   43c3172..fe4c572  master -> master
-   43c3172..fe4c572  master -> master
 402_PHP_Baranov_EA
 402_PHP_Borcov_ID
 402_PHP_CHumakov_VA
 402_PHP_Egorov_AS
 402_PHP_Ganchenkov_AA
+=====================================================
+/home/andrey/labs/PHP/402_PHP_Ganchenkov_AA
+error: Невозможно выполнить получение, так как у вас имеются не слитые файлы.
+error: Невозможно выполнить получение, так как у вас имеются не слитые файлы.
+подсказка: Исправьте их в рабочем каталоге, затем запустите «git add/rm <файл>»,
+подсказка: Исправьте их в рабочем каталоге, затем запустите «git add/rm <файл>»,
+подсказка: чтобы пометить исправление и сделайте коммит.
+подсказка: чтобы пометить исправление и сделайте коммит.
+fatal: Выход из-за неразрешенного конфликта.
+fatal: Выход из-за неразрешенного конфликта.
+fatal: внешний репозиторий student уже существует
+fatal: внешний репозиторий student уже существует
+error: Невозможно выполнить слияние, так как у вас имеются не слитые файлы.
+error: Невозможно выполнить слияние, так как у вас имеются не слитые файлы.
+подсказка: Исправьте их в рабочем каталоге, затем запустите «git add/rm <файл>»,
+подсказка: Исправьте их в рабочем каталоге, затем запустите «git add/rm <файл>»,
+подсказка: чтобы пометить исправление и сделайте коммит.
+подсказка: чтобы пометить исправление и сделайте коммит.
+fatal: Выход из-за неразрешенного конфликта.
+fatal: Выход из-за неразрешенного конфликта.
+--------------------------------------------------
+Task:  /home/andrey/labs/PHP/402_PHP_Ganchenkov_AA/Task01
+--------------------------------------------------
+Check path: README.md
+# Progression
+
+`Progression` is a console PHP game where the player must find the missing number in an arithmetic progression.
+
+## Requirements
+
+- PHP 8.1 or newer
+- Composer
+
+## Installation
+
+### Local installation
+
+```bash
+composer install
+```
+
+### Global installation with Composer
+
+```bash
+composer global require relflly/progression
+```
+
+After global installation add Composer's global `bin` directory to `PATH` and run:
+
+```bash
+progression
+```
+
+## Run
+
+```bash
+php bin/progression
+```
+
+## Development
+
+Generate optimized autoload files:
+
+```bash
+composer dump-autoload -o
+```
+
+Check PSR-12:
+
+```bash
+php vendor/squizlabs/php_codesniffer/bin/phpcs --standard=PSR12 src bin/progression
+```
+--------------------------------------------------
+Check path: composer.json
+{
+    "name": "relflly/progression",
+    "description": "Console arithmetic progression game for PHP CLI.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Relflly",
+            "email": "andretea@yandex.ru"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "wp-cli/php-cli-tools": "^0.12.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.10"
+    },
+    "autoload": {
+        "files": [
+            "src/Controller.php",
+            "src/View.php"
+        ]
+    },
+    "bin": [
+        "bin/progression"
+    ]
+}
+--------------------------------------------------
+Check path: bin/progression
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use function Relflly\Progression\Controller\startGame;
+
+startGame();
+--------------------------------------------------
+Run: phpcs --standard=PSR12 ./src/*
+
+FILE: /home/andrey/labs/PHP/402_PHP_Ganchenkov_AA/Task01/progression/src/View.php
+------------------------------------------------------------------------------------
+FOUND 5 ERRORS AND 1 WARNING AFFECTING 4 LINES
+------------------------------------------------------------------------------------
+  1 | WARNING | [ ] A file should declare new symbols (classes, functions,
+    |         |     constants, etc.) and cause no other side effects, or it should
+    |         |     execute logic with side effects, but should not do both. The
+    |         |     first symbol is defined on line 9 and the first side effect is
+    |         |     on line 28.
+ 37 | ERROR   | [x] Line indented incorrectly; expected 0 spaces, found 4
+ 41 | ERROR   | [x] Line indented incorrectly; expected 0 spaces, found 4
+ 45 | ERROR   | [x] Expected at least 1 space after "<<"; 0 found
+ 45 | ERROR   | [x] Expected at least 1 space before "<<"; 0 found
+ 45 | ERROR   | [x] Expected at least 1 space after "<<"; 0 found
+------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 5 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------
+
+Time: 37ms; Memory: 6MB
+Execution fails
+--------------------------------------------------
+Total ok: 3
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/PHP/402_PHP_Ganchenkov_AA
+Task01
+task from branch: Task01
+creation date: 04/09/2026 17:17:58
 402_PHP_Grachev_AV
 402_PHP_Klinov_AV
 402_PHP_Korotkevich_DA
 402_PHP_Krestyanskova_MA
 402_PHP_Novikov_ME
 402_PHP_Pyanzina_VD
-=====================================================
-/home/andrey/labs/PHP/402_PHP_Pyanzina_VD
-Из github.com-mrsu:andpop-mrsu/402_PHP_Pyanzina_VD
-Из github.com-mrsu:andpop-mrsu/402_PHP_Pyanzina_VD
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Уже актуально.
---------------------------------------------------
-Task:  /home/andrey/labs/PHP/402_PHP_Pyanzina_VD/Task04
---------------------------------------------------
-Check path: README.md
-# Игра «Наибольший общий делитель» (GCD)
-
-Веб-приложение на Laravel.
-
-## Установка
-
-```bash
-make install
-```
-
-## Запуск 
-
-```bash
-cd laravel
-php artisan serve
-```
-
-Или 
-
-```bash
-make start
-```
---------------------------------------------------
-Total ok: 1
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/PHP/402_PHP_Pyanzina_VD
-Task04
-task from branch: Task04
-creation date: 03/05/2026 12:35:00
 402_PHP_Sergeev_SA
 402_PHP_SHestakov_VA
 402_PHP_SHeyanov_AV
@@ -156,58 +173,13 @@ creation date: 03/05/2026 12:35:00
 402_PHP_Tenishev_RR
 402_PHP_Urenkov_YUYU
 402_PHP_Votyakov_MA
-=====================================================
-/home/andrey/labs/PHP/402_PHP_Votyakov_MA
-Из github.com-mrsu:andpop-mrsu/402_PHP_Votyakov_MA
-Из github.com-mrsu:andpop-mrsu/402_PHP_Votyakov_MA
- * branch            master     -> FETCH_HEAD
- * branch            master     -> FETCH_HEAD
-Уже актуально.
-error: внешний репозиторий student уже существует
-error: внешний репозиторий student уже существует
-Уже актуально.
---------------------------------------------------
-Task:  /home/andrey/labs/PHP/402_PHP_Votyakov_MA/Task04
---------------------------------------------------
-Check path: README.md
-# Арифметическая прогрессия
-
-Веб-приложение "Арифметическая прогрессия" на Laravel.
-
-## Установка
-make install
-cd Task04/laravel
-php artisan serve
-После запуска откройте в браузере: http://localhost:8000
-
-
-## Использование
-1. Введите имя игрока
-2. Нажмите "Новая игра"
-3. Угадайте пропущенное число в арифметической прогрессии
-4. Результаты сохраняются в базе данных и отображаются в истории игр
-
-## Структура проекта
-1. app/Models/ - модели Game, Progression, ProgressionNumber
-2. app/Http/Controllers/ - контроллеры
-3. database/migrations/ - миграции базы данных
-4. resources/views/ - шаблоны представлений
-5. routes/ - маршруты приложения
---------------------------------------------------
-Total ok: 1
-Total error: 0
---------------------------------------------------
-/home/andrey/labs/PHP/402_PHP_Votyakov_MA
-Выполнил ЛР4
-task from branch: Task04
-creation date: 03/07/2026 14:50:39
 403_PHP_Shegurov_AM
 404_PHP_Gusejnov_SE
+404_PHP_Korolev_OE
 405_PHP_Kalachin_DA
 405_PHP_Krepyshev_NA
-405_PHP_Kulavskaya_YuE
 405_PHP_Nizhegorodov_YaN
 **********************
 PowerShell transcript end
-End time: 20260310210120
+End time: 20260410155604
 **********************
