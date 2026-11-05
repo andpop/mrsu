@@ -1,11 +1,1157 @@
 **********************
 PowerShell transcript start
-Start time: 20260903095132
+Start time: 20261101214201
 **********************
 Transcript started, output file is log.txt
 301_DBTech_Ageev_DA
+=====================================================
+/home/andrey/labs/DBTech/301_DBTech_Ageev_DA
+Из github.com-mrsu:andpop-mrsu/301_DBTech_Ageev_DA
+Из github.com-mrsu:andpop-mrsu/301_DBTech_Ageev_DA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Из https://github.com/ageevdanila12/301_DBTech_Ageev_DA
+Из https://github.com/ageevdanila12/301_DBTech_Ageev_DA
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task04     -> student/Task04
+Merge made by the 'ort' strategy.
+ Task04/db_init.sql | 33147 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ Task04/task4.bat   |    44 +
+ 2 files changed, 33191 insertions(+)
+ create mode 100644 Task04/db_init.sql
+ create mode 100644 Task04/task4.bat
+--------------------------------------------------
+Task:  /home/andrey/labs/DBTech/301_DBTech_Ageev_DA/Task04
+--------------------------------------------------
+Check path: db_init.sql
+--------------------------------------------------
+Check path: task4.bat
+#!/bin/bash
+chcp 65001
+
+sqlite3 movies_rating.db < db_init.sql
+
+echo "1. Найти все пары пользователей, оценивших один и тот же фильм. Устранить дубликаты, проверить отсутствие пар с самим собой. Для каждой пары должны быть указаны имена пользователей и название фильма, который они ценили. В списке оставить первые 100 записей."
+echo "----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+sqlite3 -box movies_rating.db "SELECT DISTINCT u1.name AS user1, u2.name AS user2, m.title FROM ratings r1 JOIN ratings r2 ON r1.movie_id = r2.movie_id AND r1.user_id < r2.user_id JOIN users u1 ON r1.user_id = u1.id JOIN users u2 ON r2.user_id = u2.id JOIN movies m ON r1.movie_id = m.id LIMIT 100;"
+echo ""
+
+echo "2. Найти 10 самых свежих оценок от разных пользователей, вывести названия фильмов, имена пользователей, оценку, дату отзыва в формате ГГГГ-ММ-ДД."
+echo "----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+sqlite3 -box movies_rating.db "SELECT m.title, u.name, r.rating, strftime('%Y-%m-%d', r.timestamp, 'unixepoch') AS date FROM ratings r JOIN users u ON r.user_id = u.id JOIN movies m ON r.movie_id = m.id GROUP BY r.user_id ORDER BY r.timestamp DESC LIMIT 10;"
+echo ""
+
+echo "3. Вывести в одном списке все фильмы с максимальным средним рейтингом и все фильмы с минимальным средним рейтингом. Общий список отсортировать по году выпуска и названию фильма. В зависимости от рейтинга в колонке 'Рекомендуем' для фильмов должно быть написано 'Да' или 'Нет'."
+echo "----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+sqlite3 -box movies_rating.db "WITH avg_ratings AS (SELECT movie_id, AVG(rating) as avg_r FROM ratings GROUP BY movie_id), max_avg AS (SELECT MAX(avg_r) as m FROM avg_ratings), min_avg AS (SELECT MIN(avg_r) as m FROM avg_ratings) SELECT m.title, m.year, CASE WHEN ar.avg_r = (SELECT m FROM max_avg) THEN 'Да' ELSE 'Нет' END AS 'Рекомендуем' FROM movies m JOIN avg_ratings ar ON m.id = ar.movie_id WHERE ar.avg_r = (SELECT m FROM max_avg) OR ar.avg_r = (SELECT m FROM min_avg) ORDER BY m.year ASC, m.title ASC;"
+echo ""
+
+echo "4. Вычислить количество оценок и среднюю оценку, которую дали фильмам пользователи-женщины в период с 2010 по 2012 год."
+echo "----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+sqlite3 -box movies_rating.db "SELECT COUNT(*) as count_ratings, AVG(r.rating) as avg_rating FROM ratings r JOIN users u ON r.user_id = u.id WHERE u.gender = 'female' AND r.timestamp BETWEEN strftime('%s', '2010-01-01') AND strftime('%s', '2012-12-31 23:59:59');"
+echo ""
+
+echo "5. Составить список фильмов с указанием их средней оценки и места в рейтинге по средней оценке. Полученный список отсортировать по году выпуска и названиям фильмов. В списке оставить первые 20 записей."
+echo "----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+sqlite3 -box movies_rating.db "SELECT m.title, m.year, AVG(r.rating) as avg_rating, RANK() OVER (ORDER BY AVG(r.rating) DESC) as rank FROM movies m JOIN ratings r ON m.id = r.movie_id GROUP BY m.id ORDER BY m.year ASC, m.title ASC LIMIT 20;"
+echo ""
+
+echo "6. Вывести список из 10 последних зарегистрированных пользователей в формате 'Фамилия Имя|Дата регистрации' (сначала фамилия, потом имя)."
+echo "----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+sqlite3 -box movies_rating.db "SELECT SUBSTR(name, INSTR(name, ' ') + 1) || ' ' || SUBSTR(name, 1, INSTR(name, ' ') - 1) || '|' || register_date AS 'Фамилия Имя|Дата регистрации' FROM users ORDER BY register_date DESC LIMIT 10;"
+echo ""
+
+echo "7. С помощью рекурсивного CTE составить таблицу умножения для чисел от 1 до 10. Должен получиться один столбец."
+echo "----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+sqlite3 -box movies_rating.db "WITH RECURSIVE multiplication(a, b) AS (SELECT 1, 1 UNION ALL SELECT CASE WHEN b < 10 THEN a ELSE a + 1 END, CASE WHEN b < 10 THEN b + 1 ELSE 1 END FROM multiplication WHERE a <= 10) SELECT a || 'x' || b || '=' || (a * b) AS result FROM multiplication WHERE a <= 10;"
+echo ""
+
+echo "8. С помощью рекурсивного CTE выделить все жанры фильмов, имеющиеся в таблице movies (каждый жанр в отдельной строке)."
+echo "----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+sqlite3 -box movies_rating.db "WITH RECURSIVE split_genres(movie_id, genre, rest) AS (SELECT id, '', genres || '|' FROM movies UNION ALL SELECT movie_id, SUBSTR(rest, 1, INSTR(rest, '|') - 1), SUBSTR(rest, INSTR(rest, '|') + 1) FROM split_genres WHERE rest != '') SELECT DISTINCT genre FROM split_genres WHERE genre != '' ORDER BY genre;"
+echo ""
+--------------------------------------------------
+Run: ./task4.bat
+PS>TerminatingError(): "Cannot run a document in the middle of a pipeline: /home/andrey/labs/DBTech/301_DBTech_Ageev_DA/Task04/task4.bat."
+InvalidOperation: /home/andrey/projects/mrsu/07_DB_Tech/tools/check_tasks/checks_for_task.ps1:32
+Line |
+  32 |      $str = (& $command $params | Out-String)
+     |              ~~~~~~~~~~~~~~~~~~
+     | Cannot run a document in the middle of a pipeline: /home/andrey/labs/DBTech/301_DBTech_Ageev_DA/Task04/task4.bat.
+InvalidOperation: /home/andrey/projects/mrsu/07_DB_Tech/tools/check_tasks/checks_for_task.ps1:32
+Line |
+  32 |      $str = (& $command $params | Out-String)
+     |              ~~~~~~~~~~~~~~~~~~
+     | Cannot run a document in the middle of a pipeline:
+     | /home/andrey/labs/DBTech/301_DBTech_Ageev_DA/Task04/task4.bat.
+
+
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/DBTech/301_DBTech_Ageev_DA
+Выполнил Task04
+Task from branch: Task04
+Creation date: 11/01/2026 13:40:15
+To github.com-mrsu:andpop-mrsu/301_DBTech_Ageev_DA.git
+To github.com-mrsu:andpop-mrsu/301_DBTech_Ageev_DA.git
+   00c9bcb..4704eee  master -> master
+   00c9bcb..4704eee  master -> master
 301_DBTech_Bahlov_RA
 301_DBTech_Bobro_SA
+=====================================================
+/home/andrey/labs/DBTech/301_DBTech_Bobro_SA
+Из github.com-mrsu:andpop-mrsu/301_DBTech_Bobro_SA
+Из github.com-mrsu:andpop-mrsu/301_DBTech_Bobro_SA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+Из https://github.com/BobroSA301/301_DBTech_Bobro_SA
+Из https://github.com/BobroSA301/301_DBTech_Bobro_SA
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     master     -> student/master
+ * [новая ветка]     master     -> student/master
+Обновление 6f2b6c2..25f7b89
+Fast-forward (no commit created; -m option ignored)
+ Task04/db_init.sql | 33185 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ Task04/task4.bat   |   185 +
+ 2 files changed, 33370 insertions(+)
+ create mode 100644 Task04/db_init.sql
+ create mode 100755 Task04/task4.bat
+--------------------------------------------------
+Task:  /home/andrey/labs/DBTech/301_DBTech_Bobro_SA/Task04
+--------------------------------------------------
+Check path: db_init.sql
+--------------------------------------------------
+Check path: task4.bat
+#!/bin/bash
+
+# Устанавливаем кодовую страницу Windows, если команда доступна.
+if command -v chcp >/dev/null 2>&1; then
+    chcp 65001
+fi
+
+# Создание базы данных из скрипта лабораторной работы 2.
+sqlite3 movies_rating.db < db_init.sql
+
+echo "1. Найти все пары пользователей, оценивших один и тот же фильм. Устранить дубликаты, исключить пары с самими собой. Для каждой пары вывести имена пользователей и название фильма. Оставить первые 100 записей."
+echo "--------------------------------------------------"
+sqlite3 movies_rating.db -box -echo "SELECT DISTINCT
+    u1.name AS user1,
+    u2.name AS user2,
+    m.title AS movie
+FROM ratings r1
+JOIN ratings r2
+    ON r1.movie_id = r2.movie_id
+   AND r1.user_id < r2.user_id
+JOIN users u1 ON u1.id = r1.user_id
+JOIN users u2 ON u2.id = r2.user_id
+JOIN movies m ON m.id = r1.movie_id
+ORDER BY u1.name, u2.name, m.title
+LIMIT 100;"
+echo " "
+
+echo "2. Найти 10 самых свежих оценок от разных пользователей. Вывести название фильма, имя пользователя, оценку и дату отзыва в формате ГГГГ-ММ-ДД."
+echo "--------------------------------------------------"
+sqlite3 movies_rating.db -box -echo "WITH latest_ratings AS (
+    SELECT
+        r.user_id,
+        r.movie_id,
+        r.rating,
+        r.timestamp,
+        ROW_NUMBER() OVER (
+            PARTITION BY r.user_id
+            ORDER BY r.timestamp DESC
+        ) AS rn
+    FROM ratings r
+)
+SELECT
+    m.title,
+    u.name AS user_name,
+    lr.rating,
+    date(lr.timestamp, 'unixepoch') AS rating_date
+FROM latest_ratings lr
+JOIN users u ON u.id = lr.user_id
+JOIN movies m ON m.id = lr.movie_id
+WHERE lr.rn = 1
+ORDER BY lr.timestamp DESC
+LIMIT 10;"
+echo " "
+
+echo "3. Вывести в одном списке все фильмы с максимальным и минимальным средним рейтингом. Отсортировать по году выпуска и названию фильма. В колонке Рекомендуем указать Да для максимального рейтинга и Нет для минимального."
+echo "--------------------------------------------------"
+sqlite3 movies_rating.db -box -echo "WITH movie_averages AS (
+    SELECT
+        m.id,
+        m.title,
+        m.year,
+        AVG(r.rating) AS avg_rating
+    FROM movies m
+    JOIN ratings r ON r.movie_id = m.id
+    GROUP BY m.id, m.title, m.year
+),
+rating_limits AS (
+    SELECT
+        MAX(avg_rating) AS max_rating,
+        MIN(avg_rating) AS min_rating
+    FROM movie_averages
+)
+SELECT
+    ma.title,
+    ma.year,
+    ROUND(ma.avg_rating, 3) AS avg_rating,
+    CASE
+        WHEN ma.avg_rating = rl.max_rating THEN 'Да'
+        ELSE 'Нет'
+    END AS 'Рекомендуем'
+FROM movie_averages ma
+CROSS JOIN rating_limits rl
+WHERE ma.avg_rating = rl.max_rating
+   OR ma.avg_rating = rl.min_rating
+ORDER BY ma.year, ma.title;"
+echo " "
+
+echo "4. Вычислить количество оценок и среднюю оценку, которую дали фильмам пользователи-женщины в период с 2010 по 2012 год."
+echo "--------------------------------------------------"
+sqlite3 movies_rating.db -box -echo "SELECT
+    COUNT(*) AS ratings_count,
+    ROUND(AVG(r.rating), 3) AS average_rating
+FROM ratings r
+JOIN users u ON u.id = r.user_id
+WHERE u.gender = 'female'
+  AND date(r.timestamp, 'unixepoch') >= '2010-01-01'
+  AND date(r.timestamp, 'unixepoch') < '2013-01-01';"
+echo " "
+
+echo "5. Составить список фильмов с указанием их средней оценки и места в рейтинге по средней оценке. Отсортировать по году выпуска и названию фильма. Оставить первые 20 записей."
+echo "--------------------------------------------------"
+sqlite3 movies_rating.db -box -echo "WITH movie_ratings AS (
+    SELECT
+        m.id,
+        m.title,
+        m.year,
+        AVG(r.rating) AS avg_rating
+    FROM movies m
+    JOIN ratings r ON r.movie_id = m.id
+    GROUP BY m.id, m.title, m.year
+),
+ranked_movies AS (
+    SELECT
+        title,
+        year,
+        avg_rating,
+        RANK() OVER (ORDER BY avg_rating DESC) AS rating_rank
+    FROM movie_ratings
+)
+SELECT
+    title,
+    year,
+    ROUND(avg_rating, 3) AS avg_rating,
+    rating_rank
+FROM ranked_movies
+ORDER BY year, title
+LIMIT 20;"
+echo " "
+
+echo "6. Вывести список из 10 последних зарегистрированных пользователей в формате Фамилия Имя|Дата регистрации."
+echo "--------------------------------------------------"
+sqlite3 movies_rating.db -box -echo "SELECT
+    substr(name, instr(name, ' ') + 1)
+    || ' ' ||
+    substr(name, 1, instr(name, ' ') - 1)
+    || '|' || register_date AS user_info
+FROM users
+ORDER BY register_date DESC, id DESC
+LIMIT 10;"
+echo " "
+
+echo "7. С помощью рекурсивного CTE составить таблицу умножения для чисел от 1 до 10. Результат должен быть представлен одним столбцом."
+echo "--------------------------------------------------"
+sqlite3 movies_rating.db -box -echo "WITH RECURSIVE numbers(n) AS (
+    SELECT 1
+    UNION ALL
+    SELECT n + 1
+    FROM numbers
+    WHERE n < 100
+)
+SELECT
+    printf(
+        '%dx%d=%d',
+        (n - 1) / 10 + 1,
+        (n - 1) % 10 + 1,
+        ((n - 1) / 10 + 1) * ((n - 1) % 10 + 1)
+    ) AS multiplication
+FROM numbers
+ORDER BY n;"
+echo " "
+
+echo "8. С помощью рекурсивного CTE выделить все жанры фильмов, имеющиеся в таблице movies. Каждый жанр вывести в отдельной строке."
+echo "--------------------------------------------------"
+sqlite3 movies_rating.db -box -echo "WITH RECURSIVE genre_parts(rest, genre) AS (
+    SELECT genres || '|', ''
+    FROM movies
+    WHERE genres IS NOT NULL
+      AND genres <> ''
+      AND genres <> '(no genres listed)'
+
+    UNION ALL
+
+    SELECT
+        substr(rest, instr(rest, '|') + 1),
+        substr(rest, 1, instr(rest, '|') - 1)
+    FROM genre_parts
+    WHERE rest <> ''
+)
+SELECT DISTINCT genre
+FROM genre_parts
+WHERE genre <> ''
+ORDER BY genre;"
+echo " "
+
+echo "TASK04 ЗАВЕРШЁН"
+--------------------------------------------------
+Run: ./task4.bat
+1. Найти все пары пользователей, оценивших один и тот же фильм. Устранить дубликаты, исключить пары с самими собой. Для каждой пары вывести имена пользователей и название фильма. Оставить первые 100 записей.
+--------------------------------------------------
+SELECT DISTINCT
+    u1.name AS user1,
+    u2.name AS user2,
+    m.title AS movie
+FROM ratings r1
+JOIN ratings r2
+    ON r1.movie_id = r2.movie_id
+   AND r1.user_id < r2.user_id
+JOIN users u1 ON u1.id = r1.user_id
+JOIN users u2 ON u2.id = r2.user_id
+JOIN movies m ON m.id = r1.movie_id
+ORDER BY u1.name, u2.name, m.title
+LIMIT 100;
+┌──────────────────┬────────────────────┬──────────────────────────────────────────────────────────────────────────────────────────┐
+│      user1       │       user2        │                                          movie                                           │
+├──────────────────┼────────────────────┼──────────────────────────────────────────────────────────────────────────────────────────┤
+│ Adell Gusikowski │ Celestino Bergnaum │ 40-Year-Old Virgin, The (2005)                                                           │
+│ Adell Gusikowski │ Celestino Bergnaum │ Amadeus (1984)                                                                           │
+│ Adell Gusikowski │ Celestino Bergnaum │ Blade Runner (1982)                                                                      │
+│ Adell Gusikowski │ Celestino Bergnaum │ Crouching Tiger, Hidden Dragon (Wo hu cang long) (2000)                                  │
+│ Adell Gusikowski │ Celestino Bergnaum │ Forrest Gump (1994)                                                                      │
+│ Adell Gusikowski │ Celestino Bergnaum │ Gandhi (1982)                                                                            │
+│ Adell Gusikowski │ Celestino Bergnaum │ Gladiator (2000)                                                                         │
+│ Adell Gusikowski │ Celestino Bergnaum │ Godfather, The (1972)                                                                    │
+│ Adell Gusikowski │ Celestino Bergnaum │ Good Will Hunting (1997)                                                                 │
+│ Adell Gusikowski │ Celestino Bergnaum │ Graduate, The (1967)                                                                     │
+│ Adell Gusikowski │ Celestino Bergnaum │ Hotel Rwanda (2004)                                                                      │
+│ Adell Gusikowski │ Celestino Bergnaum │ Ocean's Eleven (2001)                                                                    │
+│ Adell Gusikowski │ Celestino Bergnaum │ One Flew Over the Cuckoo's Nest (1975)                                                   │
+│ Adell Gusikowski │ Celestino Bergnaum │ Pianist, The (2002)                                                                      │
+│ Adell Gusikowski │ Celestino Bergnaum │ Pirates of the Caribbean: The Curse of the Black Pearl (2003)                            │
+│ Adell Gusikowski │ Celestino Bergnaum │ Psycho (1960)                                                                            │
+│ Adell Gusikowski │ Celestino Bergnaum │ Raiders of the Lost Ark (Indiana Jones and the Raiders of the Lost Ark) (1981)           │
+│ Adell Gusikowski │ Celestino Bergnaum │ Schindler's List (1993)                                                                  │
+│ Adell Gusikowski │ Celestino Bergnaum │ Scream (1996)                                                                            │
+│ Adell Gusikowski │ Celestino Bergnaum │ Seven (a.k.a. Se7en) (1995)                                                              │
+│ Adell Gusikowski │ Celestino Bergnaum │ Shrek 2 (2004)                                                                           │
+│ Adell Gusikowski │ Celestino Bergnaum │ Silence of the Lambs, The (1991)                                                         │
+│ Adell Gusikowski │ Celestino Bergnaum │ Spider-Man (2002)                                                                        │
+│ Adell Gusikowski │ Celestino Bergnaum │ Terminator 2: Judgment Day (1991)                                                        │
+│ Adell Gusikowski │ Destinee Wolf      │ Braveheart (1995)                                                                        │
+│ Adell Gusikowski │ Destinee Wolf      │ Casino (1995)                                                                            │
+│ Adell Gusikowski │ Destinee Wolf      │ Forrest Gump (1994)                                                                      │
+│ Adell Gusikowski │ Destinee Wolf      │ Heat (1995)                                                                              │
+│ Adell Gusikowski │ Destinee Wolf      │ Pulp Fiction (1994)                                                                      │
+│ Adell Gusikowski │ Destinee Wolf      │ Schindler's List (1993)                                                                  │
+│ Adell Gusikowski │ Destinee Wolf      │ Seven (a.k.a. Se7en) (1995)                                                              │
+│ Adell Gusikowski │ Destinee Wolf      │ Shawshank Redemption, The (1994)                                                         │
+│ Adell Gusikowski │ Destinee Wolf      │ Silence of the Lambs, The (1991)                                                         │
+│ Adell Gusikowski │ Destinee Wolf      │ Terminator 2: Judgment Day (1991)                                                        │
+│ Adell Gusikowski │ Destinee Wolf      │ Trainspotting (1996)                                                                     │
+│ Adell Gusikowski │ Destinee Wolf      │ Twelve Monkeys (a.k.a. 12 Monkeys) (1995)                                                │
+│ Adell Gusikowski │ Destinee Wolf      │ Usual Suspects, The (1995)                                                               │
+│ Adell Gusikowski │ Donna Bahringer    │ Fargo (1996)                                                                             │
+│ Adell Gusikowski │ Donna Bahringer    │ Godfather, The (1972)                                                                    │
+│ Adell Gusikowski │ Donna Bahringer    │ Star Wars: Episode IV - A New Hope (1977)                                                │
+│ Adell Gusikowski │ Donna Bahringer    │ Twelve Monkeys (a.k.a. 12 Monkeys) (1995)                                                │
+│ Adell Gusikowski │ Earlene Marks      │ Avatar (2009)                                                                            │
+│ Adell Gusikowski │ Earlene Marks      │ Big Hero 6 (2014)                                                                        │
+│ Adell Gusikowski │ Earlene Marks      │ Braveheart (1995)                                                                        │
+│ Adell Gusikowski │ Earlene Marks      │ Casino (1995)                                                                            │
+│ Adell Gusikowski │ Earlene Marks      │ Dark Knight Rises, The (2012)                                                            │
+│ Adell Gusikowski │ Earlene Marks      │ Dark Knight, The (2008)                                                                  │
+│ Adell Gusikowski │ Earlene Marks      │ District 9 (2009)                                                                        │
+│ Adell Gusikowski │ Earlene Marks      │ Django Unchained (2012)                                                                  │
+│ Adell Gusikowski │ Earlene Marks      │ Forrest Gump (1994)                                                                      │
+│ Adell Gusikowski │ Earlene Marks      │ Gone in 60 Seconds (2000)                                                                │
+│ Adell Gusikowski │ Earlene Marks      │ Green Mile, The (1999)                                                                   │
+│ Adell Gusikowski │ Earlene Marks      │ Heat (1995)                                                                              │
+│ Adell Gusikowski │ Earlene Marks      │ Inception (2010)                                                                         │
+│ Adell Gusikowski │ Earlene Marks      │ Inglourious Basterds (2009)                                                              │
+│ Adell Gusikowski │ Earlene Marks      │ Interstellar (2014)                                                                      │
+│ Adell Gusikowski │ Earlene Marks      │ Lord of the Rings: The Fellowship of the Ring, The (2001)                                │
+│ Adell Gusikowski │ Earlene Marks      │ Lord of the Rings: The Return of the King, The (2003)                                    │
+│ Adell Gusikowski │ Earlene Marks      │ Lord of the Rings: The Two Towers, The (2002)                                            │
+│ Adell Gusikowski │ Earlene Marks      │ Matrix, The (1999)                                                                       │
+│ Adell Gusikowski │ Earlene Marks      │ Raiders of the Lost Ark (Indiana Jones and the Raiders of the Lost Ark) (1981)           │
+│ Adell Gusikowski │ Earlene Marks      │ Saving Private Ryan (1998)                                                               │
+│ Adell Gusikowski │ Earlene Marks      │ Seven (a.k.a. Se7en) (1995)                                                              │
+│ Adell Gusikowski │ Earlene Marks      │ Silence of the Lambs, The (1991)                                                         │
+│ Adell Gusikowski │ Earlene Marks      │ Star Wars: Episode IV - A New Hope (1977)                                                │
+│ Adell Gusikowski │ Earlene Marks      │ Trainspotting (1996)                                                                     │
+│ Adell Gusikowski │ Earlene Marks      │ Twelve Monkeys (a.k.a. 12 Monkeys) (1995)                                                │
+│ Adell Gusikowski │ Earlene Marks      │ Up (2009)                                                                                │
+│ Adell Gusikowski │ Earlene Marks      │ Usual Suspects, The (1995)                                                               │
+│ Adell Gusikowski │ Ernesto Schulist   │ Along Came Polly (2004)                                                                  │
+│ Adell Gusikowski │ Ernesto Schulist   │ Amelie (Fabuleux destin d'Amélie Poulain, Le) (2001)                                     │
+│ Adell Gusikowski │ Ernesto Schulist   │ American Beauty (1999)                                                                   │
+│ Adell Gusikowski │ Ernesto Schulist   │ Apartment, The (1960)                                                                    │
+│ Adell Gusikowski │ Ernesto Schulist   │ Apocalypse Now (1979)                                                                    │
+│ Adell Gusikowski │ Ernesto Schulist   │ Blade Runner (1982)                                                                      │
+│ Adell Gusikowski │ Ernesto Schulist   │ Braveheart (1995)                                                                        │
+│ Adell Gusikowski │ Ernesto Schulist   │ City of God (Cidade de Deus) (2002)                                                      │
+│ Adell Gusikowski │ Ernesto Schulist   │ Fargo (1996)                                                                             │
+│ Adell Gusikowski │ Ernesto Schulist   │ Fight Club (1999)                                                                        │
+│ Adell Gusikowski │ Ernesto Schulist   │ Full Metal Jacket (1987)                                                                 │
+│ Adell Gusikowski │ Ernesto Schulist   │ Gold Rush, The (1925)                                                                    │
+│ Adell Gusikowski │ Ernesto Schulist   │ Great Dictator, The (1940)                                                               │
+│ Adell Gusikowski │ Ernesto Schulist   │ Little Miss Sunshine (2006)                                                              │
+│ Adell Gusikowski │ Ernesto Schulist   │ Matrix, The (1999)                                                                       │
+│ Adell Gusikowski │ Ernesto Schulist   │ Men in Black II (a.k.a. MIIB) (a.k.a. MIB 2) (2002)                                      │
+│ Adell Gusikowski │ Ernesto Schulist   │ Modern Times (1936)                                                                      │
+│ Adell Gusikowski │ Ernesto Schulist   │ Old Boy (2003)                                                                           │
+│ Adell Gusikowski │ Ernesto Schulist   │ One Flew Over the Cuckoo's Nest (1975)                                                   │
+│ Adell Gusikowski │ Ernesto Schulist   │ Pulp Fiction (1994)                                                                      │
+│ Adell Gusikowski │ Ernesto Schulist   │ Raiders of the Lost Ark (Indiana Jones and the Raiders of the Lost Ark) (1981)           │
+│ Adell Gusikowski │ Ernesto Schulist   │ Requiem for a Dream (2000)                                                               │
+│ Adell Gusikowski │ Ernesto Schulist   │ Reservoir Dogs (1992)                                                                    │
+│ Adell Gusikowski │ Ernesto Schulist   │ Saving Private Ryan (1998)                                                               │
+│ Adell Gusikowski │ Ernesto Schulist   │ Schindler's List (1993)                                                                  │
+│ Adell Gusikowski │ Ernesto Schulist   │ Seven (a.k.a. Se7en) (1995)                                                              │
+│ Adell Gusikowski │ Ernesto Schulist   │ Sixth Sense, The (1999)                                                                  │
+│ Adell Gusikowski │ Ernesto Schulist   │ Snatch (2000)                                                                            │
+│ Adell Gusikowski │ Ernesto Schulist   │ Spring, Summer, Fall, Winter... and Spring (Bom yeoreum gaeul gyeoul geurigo bom) (2003) │
+│ Adell Gusikowski │ Ernesto Schulist   │ Taxi Driver (1976)                                                                       │
+│ Adell Gusikowski │ Ernesto Schulist   │ Trainspotting (1996)                                                                     │
+└──────────────────┴────────────────────┴──────────────────────────────────────────────────────────────────────────────────────────┘
+ 
+2. Найти 10 самых свежих оценок от разных пользователей. Вывести название фильма, имя пользователя, оценку и дату отзыва в формате ГГГГ-ММ-ДД.
+--------------------------------------------------
+WITH latest_ratings AS (
+    SELECT
+        r.user_id,
+        r.movie_id,
+        r.rating,
+        r.timestamp,
+        ROW_NUMBER() OVER (
+            PARTITION BY r.user_id
+            ORDER BY r.timestamp DESC
+        ) AS rn
+    FROM ratings r
+)
+SELECT
+    m.title,
+    u.name AS user_name,
+    lr.rating,
+    date(lr.timestamp, 'unixepoch') AS rating_date
+FROM latest_ratings lr
+JOIN users u ON u.id = lr.user_id
+JOIN movies m ON m.id = lr.movie_id
+WHERE lr.rn = 1
+ORDER BY lr.timestamp DESC
+LIMIT 10;
+┌───────────────────────────────────────────────────────────────────────────┬─────────────────────┬────────┬─────────────┐
+│                                   title                                   │      user_name      │ rating │ rating_date │
+├───────────────────────────────────────────────────────────────────────────┼─────────────────────┼────────┼─────────────┤
+│ Blood Diamond (2006)                                                      │ Edmund Mueller      │ 4.5    │ 2018-09-13  │
+│ Good, the Bad and the Ugly, The (Buono, il brutto, il cattivo, Il) (1966) │ Cassandra Powlowski │ 4.0    │ 2018-09-13  │
+│ Deadpool 2 (2018)                                                         │ Gaston Rippin       │ 5.0    │ 2018-08-28  │
+│ Bourne Ultimatum, The (2007)                                              │ Ardella Lockman     │ 3.0    │ 2018-08-24  │
+│ The African Doctor (2016)                                                 │ Taya Rath           │ 3.5    │ 2018-08-20  │
+│ Muppets, The (2011)                                                       │ Alaina Beatty       │ 3.0    │ 2018-07-29  │
+│ 10 Cloverfield Lane (2016)                                                │ Octavia Mayert      │ 4.5    │ 2018-07-24  │
+│ George Carlin: You Are All Diseased (1999)                                │ Adell Gusikowski    │ 5.0    │ 2018-05-13  │
+│ Bambi (1942)                                                              │ Brigitte Johnston   │ 3.5    │ 2018-03-27  │
+│ Frankenstein 90 (1984)                                                    │ Zechariah Kuphal    │ 4.0    │ 2018-03-07  │
+└───────────────────────────────────────────────────────────────────────────┴─────────────────────┴────────┴─────────────┘
+ 
+3. Вывести в одном списке все фильмы с максимальным и минимальным средним рейтингом. Отсортировать по году выпуска и названию фильма. В колонке Рекомендуем указать Да для максимального рейтинга и Нет для минимального.
+--------------------------------------------------
+WITH movie_averages AS (
+    SELECT
+        m.id,
+        m.title,
+        m.year,
+        AVG(r.rating) AS avg_rating
+    FROM movies m
+    JOIN ratings r ON r.movie_id = m.id
+    GROUP BY m.id, m.title, m.year
+),
+rating_limits AS (
+    SELECT
+        MAX(avg_rating) AS max_rating,
+        MIN(avg_rating) AS min_rating
+    FROM movie_averages
+)
+SELECT
+    ma.title,
+    ma.year,
+    ROUND(ma.avg_rating, 3) AS avg_rating,
+    CASE
+        WHEN ma.avg_rating = rl.max_rating THEN 'Да'
+        ELSE 'Нет'
+    END AS 'Рекомендуем'
+FROM movie_averages ma
+CROSS JOIN rating_limits rl
+WHERE ma.avg_rating = rl.max_rating
+   OR ma.avg_rating = rl.min_rating
+ORDER BY ma.year, ma.title;
+┌──────────────────────────────────────────────────────────────────────────────────────────────────┬──────┬────────────┬─────────────┐
+│                                              title                                               │ year │ avg_rating │ Рекомендуем │
+├──────────────────────────────────────────────────────────────────────────────────────────────────┼──────┼────────────┼─────────────┤
+│ Black Mirror                                                                                     │      │ 5.0        │ Да          │
+│ Death Note: Desu nôto (2006–2007)                                                                │      │ 5.0        │ Да          │
+│ The Adventures of Sherlock Holmes and Doctor Watson                                              │      │ 5.0        │ Да          │
+│ Man with the Movie Camera, The (Chelovek s kino-apparatom) (1929)                                │ 1929 │ 5.0        │ Да          │
+│ All Quiet on the Western Front (1930)                                                            │ 1930 │ 5.0        │ Да          │
+│ Girls About Town (1931)                                                                          │ 1931 │ 5.0        │ Да          │
+│ Gulliver's Travels (1939)                                                                        │ 1939 │ 5.0        │ Да          │
+│ Chump at Oxford, A (1940)                                                                        │ 1940 │ 5.0        │ Да          │
+│ Down Argentine Way (1940)                                                                        │ 1940 │ 5.0        │ Да          │
+│ Saboteur (1942)                                                                                  │ 1942 │ 5.0        │ Да          │
+│ Tales of Manhattan (1942)                                                                        │ 1942 │ 5.0        │ Да          │
+│ To Be or Not to Be (1942)                                                                        │ 1942 │ 0.5        │ Нет         │
+│ Lifeboat (1944)                                                                                  │ 1944 │ 5.0        │ Да          │
+│ Big Sleep, The (1946)                                                                            │ 1946 │ 5.0        │ Да          │
+│ Key Largo (1948)                                                                                 │ 1948 │ 5.0        │ Да          │
+│ All the King's Men (1949)                                                                        │ 1949 │ 5.0        │ Да          │
+│ High Noon (1952)                                                                                 │ 1952 │ 5.0        │ Да          │
+│ Strada, La (1954)                                                                                │ 1954 │ 5.0        │ Да          │
+│ Man Who Knew Too Much, The (1956)                                                                │ 1956 │ 5.0        │ Да          │
+│ Searchers, The (1956)                                                                            │ 1956 │ 5.0        │ Да          │
+│ The Girls (1961)                                                                                 │ 1961 │ 5.0        │ Да          │
+│ Gypsy (1962)                                                                                     │ 1962 │ 0.5        │ Нет         │
+│ Ivan's Childhood (a.k.a. My Name is Ivan) (Ivanovo detstvo) (1962)                               │ 1962 │ 5.0        │ Да          │
+│ Trial, The (Procès, Le) (1962)                                                                   │ 1962 │ 5.0        │ Да          │
+│ What Ever Happened to Baby Jane? (1962)                                                          │ 1962 │ 5.0        │ Да          │
+│ Goodbye Charlie (1964)                                                                           │ 1964 │ 5.0        │ Да          │
+│ Obsession (1965)                                                                                 │ 1965 │ 5.0        │ Да          │
+│ Repulsion (1965)                                                                                 │ 1965 │ 5.0        │ Да          │
+│ Vovka in the Kingdom of Far Far Away (1965)                                                      │ 1965 │ 5.0        │ Да          │
+│ Follow Me, Boys! (1966)                                                                          │ 1966 │ 0.5        │ Нет         │
+│ It's the Great Pumpkin, Charlie Brown (1966)                                                     │ 1966 │ 5.0        │ Да          │
+│ Man and a Woman, A (Un homme et une femme) (1966)                                                │ 1966 │ 5.0        │ Да          │
+│ Who's Afraid of Virginia Woolf? (1966)                                                           │ 1966 │ 5.0        │ Да          │
+│ Doctor Dolittle (1967)                                                                           │ 1967 │ 5.0        │ Да          │
+│ Guess Who's Coming to Dinner (1967)                                                              │ 1967 │ 5.0        │ Да          │
+│ Oscar (1967)                                                                                     │ 1967 │ 5.0        │ Да          │
+│ Play Time (a.k.a. Playtime) (1967)                                                               │ 1967 │ 5.0        │ Да          │
+│ To Sir with Love (1967)                                                                          │ 1967 │ 5.0        │ Да          │
+│ Junior and Karlson (1968)                                                                        │ 1968 │ 5.0        │ Да          │
+│ Thomas Crown Affair, The (1968)                                                                  │ 1968 │ 5.0        │ Да          │
+│ Gena the Crocodile (1969)                                                                        │ 1969 │ 5.0        │ Да          │
+│ The Bremen Town Musicians (1969)                                                                 │ 1969 │ 5.0        │ Да          │
+│ True Grit (1969)                                                                                 │ 1969 │ 5.0        │ Да          │
+│ Winnie Pooh (1969)                                                                               │ 1969 │ 5.0        │ Да          │
+│ Karlson Returns (1970)                                                                           │ 1970 │ 5.0        │ Да          │
+│ Cheburashka (1971)                                                                               │ 1971 │ 5.0        │ Да          │
+│ Little Murders (1971)                                                                            │ 1971 │ 5.0        │ Да          │
+│ Shaft (1971)                                                                                     │ 1971 │ 5.0        │ Да          │
+│ Winnie the Pooh Goes Visiting (1971)                                                             │ 1971 │ 5.0        │ Да          │
+│ Jeremiah Johnson (1972)                                                                          │ 1972 │ 5.0        │ Да          │
+│ Trinity and Sartana Are Coming (1972)                                                            │ 1972 │ 5.0        │ Да          │
+│ Winnie the Pooh and the Day of Concern (1972)                                                    │ 1972 │ 5.0        │ Да          │
+│ Fantastic Planet, The (Planète sauvage, La) (1973)                                               │ 1973 │ 5.0        │ Да          │
+│ Harder They Come, The (1973)                                                                     │ 1973 │ 5.0        │ Да          │
+│ On the Trail of the Bremen Town Musicians (1973)                                                 │ 1973 │ 5.0        │ Да          │
+│ Alice Doesn't Live Here Anymore (1974)                                                           │ 1974 │ 5.0        │ Да          │
+│ Odessa File, The (1974)                                                                          │ 1974 │ 5.0        │ Да          │
+│ Death Race 2000 (1975)                                                                           │ 1975 │ 5.0        │ Да          │
+│ Love and Death (1975)                                                                            │ 1975 │ 5.0        │ Да          │
+│ Passenger, The (Professione: reporter) (1975)                                                    │ 1975 │ 5.0        │ Да          │
+│ Shampoo (1975)                                                                                   │ 1975 │ 5.0        │ Да          │
+│ 12 Chairs (1976)                                                                                 │ 1976 │ 5.0        │ Да          │
+│ Bobik Visiting Barbos (1977)                                                                     │ 1977 │ 5.0        │ Да          │
+│ Christmas Carol, A (1977)                                                                        │ 1977 │ 0.5        │ Нет         │
+│ Suspiria (1977)                                                                                  │ 1977 │ 5.0        │ Да          │
+│ Autumn Sonata (Höstsonaten) (1978)                                                               │ 1978 │ 5.0        │ Да          │
+│ Three from Prostokvashino (1978)                                                                 │ 1978 │ 5.0        │ Да          │
+│ Marriage of Maria Braun, The (Ehe der Maria Braun, Die) (1979)                                   │ 1979 │ 5.0        │ Да          │
+│ Moscow Does Not Believe in Tears (Moskva slezam ne verit) (1979)                                 │ 1979 │ 5.0        │ Да          │
+│ Priklyucheniya Kapitana Vrungelya (1979)                                                         │ 1979 │ 5.0        │ Да          │
+│ Scooby-Doo Goes Hollywood (1979)                                                                 │ 1979 │ 5.0        │ Да          │
+│ Sherlock Holmes and Dr. Watson: Acquaintance (1979)                                              │ 1979 │ 5.0        │ Да          │
+│ The Adventures of Sherlock Holmes and Dr. Watson: Bloody Signature (1979)                        │ 1979 │ 5.0        │ Да          │
+│ Alien Contamination (1980)                                                                       │ 1980 │ 5.0        │ Да          │
+│ Altered States (1980)                                                                            │ 1980 │ 5.0        │ Да          │
+│ Hangar 18 (1980)                                                                                 │ 1980 │ 5.0        │ Да          │
+│ Ordinary People (1980)                                                                           │ 1980 │ 5.0        │ Да          │
+│ Saturn 3 (1980)                                                                                  │ 1980 │ 5.0        │ Да          │
+│ The Adventures of Sherlock Holmes and Doctor Watson: King of Blackmailers (1980)                 │ 1980 │ 5.0        │ Да          │
+│ Vacations in Prostokvashino (1980)                                                               │ 1980 │ 5.0        │ Да          │
+│ A Plasticine Crow (1981)                                                                         │ 1981 │ 5.0        │ Да          │
+│ Galaxy of Terror (Quest) (1981)                                                                  │ 1981 │ 5.0        │ Да          │
+│ Mephisto (1981)                                                                                  │ 1981 │ 5.0        │ Да          │
+│ Mystery of the Third Planet, The (Tayna tretey planety) (1981)                                   │ 1981 │ 5.0        │ Да          │
+│ Amityville II: The Possession (1982)                                                             │ 1982 │ 0.5        │ Нет         │
+│ Android (1982)                                                                                   │ 1982 │ 5.0        │ Да          │
+│ Monty Python Live at the Hollywood Bowl (1982)                                                   │ 1982 │ 5.0        │ Да          │
+│ Sophie's Choice (1982)                                                                           │ 1982 │ 5.0        │ Да          │
+│ There Once Was a Dog (1982)                                                                      │ 1982 │ 5.0        │ Да          │
+│ Last Year's Snow Was Falling (1983)                                                              │ 1983 │ 5.0        │ Да          │
+│ Never Say Never Again (1983)                                                                     │ 1983 │ 5.0        │ Да          │
+│ Terms of Endearment (1983)                                                                       │ 1983 │ 5.0        │ Да          │
+│ The Adventures of Sherlock Holmes and Doctor Watson: The Treasures of Agra (1983)                │ 1983 │ 5.0        │ Да          │
+│ Travels of an Ant (1983)                                                                         │ 1983 │ 5.0        │ Да          │
+│ Wow! A Talking Fish! (1983)                                                                      │ 1983 │ 5.0        │ Да          │
+│ Broadway Danny Rose (1984)                                                                       │ 1984 │ 5.0        │ Да          │
+│ Cruel Romance, A (Zhestokij Romans) (1984)                                                       │ 1984 │ 5.0        │ Да          │
+│ Formula of Love (1984)                                                                           │ 1984 │ 5.0        │ Да          │
+│ In the blue sea, in the white foam. (1984)                                                       │ 1984 │ 5.0        │ Да          │
+│ Meantime (1984)                                                                                  │ 1984 │ 5.0        │ Да          │
+│ Night of the Comet (1984)                                                                        │ 1984 │ 5.0        │ Да          │
+│ Winter in Prostokvashino (1984)                                                                  │ 1984 │ 5.0        │ Да          │
+│ Chorus Line, A (1985)                                                                            │ 1985 │ 5.0        │ Да          │
+│ Love and Pigeons (1985)                                                                          │ 1985 │ 5.0        │ Да          │
+│ 52 Pick-Up (1986)                                                                                │ 1986 │ 5.0        │ Да          │
+│ Adventures Of Sherlock Holmes And Dr. Watson: The Twentieth Century Approaches (1986)            │ 1986 │ 5.0        │ Да          │
+│ Fugitives (1986)                                                                                 │ 1986 │ 5.0        │ Да          │
+│ Investigation Held by Kolobki (1986)                                                             │ 1986 │ 5.0        │ Да          │
+│ Jean de Florette (1986)                                                                          │ 1986 │ 5.0        │ Да          │
+│ Willy/Milly (1986)                                                                               │ 1986 │ 5.0        │ Да          │
+│ Wings, Legs and Tails (1986)                                                                     │ 1986 │ 5.0        │ Да          │
+│ Babette's Feast (Babettes gæstebud) (1987)                                                       │ 1987 │ 5.0        │ Да          │
+│ Claymation Christmas Celebration, A (1987)                                                       │ 1987 │ 0.5        │ Нет         │
+│ Eddie Murphy Raw (1987)                                                                          │ 1987 │ 5.0        │ Да          │
+│ Harry and the Hendersons (1987)                                                                  │ 1987 │ 5.0        │ Да          │
+│ Bright Lights, Big City (1988)                                                                   │ 1988 │ 5.0        │ Да          │
+│ Grave of the Fireflies (Hotaru no haka) (1988)                                                   │ 1988 │ 5.0        │ Да          │
+│ Great Outdoors, The (1988)                                                                       │ 1988 │ 5.0        │ Да          │
+│ Hellbound: Hellraiser II (1988)                                                                  │ 1988 │ 5.0        │ Да          │
+│ Hollywood Chainsaw Hookers (1988)                                                                │ 1988 │ 5.0        │ Да          │
+│ Light Years (Gandahar) (1988)                                                                    │ 1988 │ 5.0        │ Да          │
+│ Return to Treasure Island (1988)                                                                 │ 1988 │ 5.0        │ Да          │
+│ Story of Women (Affaire de femmes, Une) (1988)                                                   │ 1988 │ 5.0        │ Да          │
+│ Unbearable Lightness of Being, The (1988)                                                        │ 1988 │ 5.0        │ Да          │
+│ Always (1989)                                                                                    │ 1989 │ 5.0        │ Да          │
+│ Decalogue, The (Dekalog) (1989)                                                                  │ 1989 │ 5.0        │ Да          │
+│ UHF (1989)                                                                                       │ 1989 │ 5.0        │ Да          │
+│ Akira Kurosawa's Dreams (Dreams) (1990)                                                          │ 1990 │ 5.0        │ Да          │
+│ Europa Europa (Hitlerjunge Salomon) (1990)                                                       │ 1990 │ 5.0        │ Да          │
+│ Joe Versus the Volcano (1990)                                                                    │ 1990 │ 5.0        │ Да          │
+│ Paris Is Burning (1990)                                                                          │ 1990 │ 5.0        │ Да          │
+│ Troll 2 (1990)                                                                                   │ 1990 │ 5.0        │ Да          │
+│ World of Glory (1991)                                                                            │ 1991 │ 5.0        │ Да          │
+│ George Carlin: Jammin' in New York (1992)                                                        │ 1992 │ 5.0        │ Да          │
+│ Indochine (1992)                                                                                 │ 1992 │ 5.0        │ Да          │
+│ Man Bites Dog (C'est arrivé près de chez vous) (1992)                                            │ 1992 │ 5.0        │ Да          │
+│ The Godfather Trilogy: 1972-1990 (1992)                                                          │ 1992 │ 5.0        │ Да          │
+│ Bill Hicks: Revelations (1993)                                                                   │ 1993 │ 5.0        │ Да          │
+│ Farewell My Concubine (Ba wang bie ji) (1993)                                                    │ 1993 │ 5.0        │ Да          │
+│ My Life (1993)                                                                                   │ 1993 │ 5.0        │ Да          │
+│ RoboCop 3 (1993)                                                                                 │ 1993 │ 5.0        │ Да          │
+│ A Flintstones Christmas Carol (1994)                                                             │ 1994 │ 5.0        │ Да          │
+│ Lamerica (1994)                                                                                  │ 1994 │ 5.0        │ Да          │
+│ Lassie (1994)                                                                                    │ 1994 │ 5.0        │ Да          │
+│ Lesson Faust (1994)                                                                              │ 1994 │ 5.0        │ Да          │
+│ Lightning Jack (1994)                                                                            │ 1994 │ 5.0        │ Да          │
+│ Stand, The (1994)                                                                                │ 1994 │ 5.0        │ Да          │
+│ Angels and Insects (1995)                                                                        │ 1995 │ 5.0        │ Да          │
+│ Anne Frank Remembered (1995)                                                                     │ 1995 │ 5.0        │ Да          │
+│ Antonia's Line (Antonia) (1995)                                                                  │ 1995 │ 5.0        │ Да          │
+│ Canadian Bacon (1995)                                                                            │ 1995 │ 5.0        │ Да          │
+│ Jerky Boys, The (1995)                                                                           │ 1995 │ 0.5        │ Нет         │
+│ Operation Dumbo Drop (1995)                                                                      │ 1995 │ 0.5        │ Нет         │
+│ Runaway Brain (1995)                                                                             │ 1995 │ 5.0        │ Да          │
+│ Children of the Corn IV: The Gathering (1996)                                                    │ 1996 │ 5.0        │ Да          │
+│ Entertaining Angels: The Dorothy Day Story (1996)                                                │ 1996 │ 5.0        │ Да          │
+│ Flirting With Disaster (1996)                                                                    │ 1996 │ 5.0        │ Да          │
+│ Freeway (1996)                                                                                   │ 1996 │ 5.0        │ Да          │
+│ George Carlin: Back in Town (1996)                                                               │ 1996 │ 5.0        │ Да          │
+│ Hamlet (1996)                                                                                    │ 1996 │ 5.0        │ Да          │
+│ Hard Core Logo (1996)                                                                            │ 1996 │ 5.0        │ Да          │
+│ Jane Eyre (1996)                                                                                 │ 1996 │ 5.0        │ Да          │
+│ Ponette (1996)                                                                                   │ 1996 │ 5.0        │ Да          │
+│ Preacher's Wife, The (1996)                                                                      │ 1996 │ 5.0        │ Да          │
+│ Secrets & Lies (1996)                                                                            │ 1996 │ 5.0        │ Да          │
+│ Tenchi Muyô! In Love (1996)                                                                      │ 1996 │ 5.0        │ Да          │
+│ Assignment, The (1997)                                                                           │ 1997 │ 5.0        │ Да          │
+│ Brother (Brat) (1997)                                                                            │ 1997 │ 5.0        │ Да          │
+│ Geri's Game (1997)                                                                               │ 1997 │ 5.0        │ Да          │
+│ Good Burger (1997)                                                                               │ 1997 │ 0.5        │ Нет         │
+│ Mrs. Dalloway (1997)                                                                             │ 1997 │ 5.0        │ Да          │
+│ Spice World (1997)                                                                               │ 1997 │ 0.5        │ Нет         │
+│ The Love Bug (1997)                                                                              │ 1997 │ 5.0        │ Да          │
+│ Black Cat, White Cat (Crna macka, beli macor) (1998)                                             │ 1998 │ 5.0        │ Да          │
+│ Central Station (Central do Brasil) (1998)                                                       │ 1998 │ 5.0        │ Да          │
+│ Everest (1998)                                                                                   │ 1998 │ 5.0        │ Да          │
+│ Newton Boys, The (1998)                                                                          │ 1998 │ 5.0        │ Да          │
+│ SLC Punk! (1998)                                                                                 │ 1998 │ 5.0        │ Да          │
+│ Show Me Love (Fucking Åmål) (1998)                                                               │ 1998 │ 5.0        │ Да          │
+│ Taxi (1998)                                                                                      │ 1998 │ 5.0        │ Да          │
+│ All About My Mother (Todo sobre mi madre) (1999)                                                 │ 1999 │ 5.0        │ Да          │
+│ Cookie's Fortune (1999)                                                                          │ 1999 │ 5.0        │ Да          │
+│ Eddie Izzard: Dress to Kill (1999)                                                               │ 1999 │ 5.0        │ Да          │
+│ Five Senses, The (1999)                                                                          │ 1999 │ 5.0        │ Да          │
+│ Flawless (1999)                                                                                  │ 1999 │ 5.0        │ Да          │
+│ George Carlin: You Are All Diseased (1999)                                                       │ 1999 │ 5.0        │ Да          │
+│ Mickey's Once Upon a Christmas (1999)                                                            │ 1999 │ 5.0        │ Да          │
+│ Siam Sunset (1999)                                                                               │ 1999 │ 5.0        │ Да          │
+│ Sun Alley (Sonnenallee) (1999)                                                                   │ 1999 │ 5.0        │ Да          │
+│ Dune (2000)                                                                                      │ 2000 │ 5.0        │ Да          │
+│ Ginger Snaps (2000)                                                                              │ 2000 │ 5.0        │ Да          │
+│ I'm the One That I Want (2000)                                                                   │ 2000 │ 5.0        │ Да          │
+│ Pokémon the Movie 2000 (2000)                                                                    │ 2000 │ 0.5        │ Нет         │
+│ Princess and the Warrior, The (Krieger und die Kaiserin, Der) (2000)                             │ 2000 │ 5.0        │ Да          │
+│ Rugrats in Paris: The Movie (2000)                                                               │ 2000 │ 0.5        │ Нет         │
+│ Saving Grace (2000)                                                                              │ 2000 │ 5.0        │ Да          │
+│ Where the Money Is (2000)                                                                        │ 2000 │ 5.0        │ Да          │
+│ Iris (2001)                                                                                      │ 2001 │ 5.0        │ Да          │
+│ Joy Ride (2001)                                                                                  │ 2001 │ 0.5        │ Нет         │
+│ L.I.E. (2001)                                                                                    │ 2001 │ 5.0        │ Да          │
+│ Life as a House (2001)                                                                           │ 2001 │ 5.0        │ Да          │
+│ Lovely & Amazing (2001)                                                                          │ 2001 │ 5.0        │ Да          │
+│ Metropolis (2001)                                                                                │ 2001 │ 5.0        │ Да          │
+│ Mutant Aliens (2001)                                                                             │ 2001 │ 5.0        │ Да          │
+│ My Life as McDull (Mak dau goo si) (2001)                                                        │ 2001 │ 5.0        │ Да          │
+│ My Sassy Girl (Yeopgijeogin geunyeo) (2001)                                                      │ 2001 │ 5.0        │ Да          │
+│ No Man's Land (2001)                                                                             │ 2001 │ 5.0        │ Да          │
+│ Pokémon 3: The Movie (2001)                                                                      │ 2001 │ 0.5        │ Нет         │
+│ Rivers and Tides (2001)                                                                          │ 2001 │ 5.0        │ Да          │
+│ Sisters (Syostry) (2001)                                                                         │ 2001 │ 5.0        │ Да          │
+│ Thirteen Conversations About One Thing (a.k.a. 13 Conversations) (2001)                          │ 2001 │ 5.0        │ Да          │
+│ Waking Life (2001)                                                                               │ 2001 │ 5.0        │ Да          │
+│ It's a Very Merry Muppet Christmas Movie (2002)                                                  │ 2002 │ 0.5        │ Нет         │
+│ Magdalene Sisters, The (2002)                                                                    │ 2002 │ 5.0        │ Да          │
+│ My Left Eye Sees Ghosts (Ngo joh aan gin diy gwai) (2002)                                        │ 2002 │ 5.0        │ Да          │
+│ Pokemon 4 Ever (a.k.a. Pokémon 4: The Movie) (2002)                                              │ 2002 │ 0.5        │ Нет         │
+│ Solaris (2002)                                                                                   │ 2002 │ 5.0        │ Да          │
+│ Spy Kids 2: The Island of Lost Dreams (2002)                                                     │ 2002 │ 0.5        │ Нет         │
+│ Stuart Little 2 (2002)                                                                           │ 2002 │ 5.0        │ Да          │
+│ Tuxedo, The (2002)                                                                               │ 2002 │ 5.0        │ Да          │
+│ Whale Rider (2002)                                                                               │ 2002 │ 5.0        │ Да          │
+│ Dogville (2003)                                                                                  │ 2003 │ 5.0        │ Да          │
+│ Duplex (2003)                                                                                    │ 2003 │ 5.0        │ Да          │
+│ Pokémon Heroes (2003)                                                                            │ 2003 │ 0.5        │ Нет         │
+│ Stitch! The Movie (2003)                                                                         │ 2003 │ 5.0        │ Да          │
+│ Texas Chainsaw Massacre, The (2003)                                                              │ 2003 │ 0.5        │ Нет         │
+│ After the Sunset (2004)                                                                          │ 2004 │ 5.0        │ Да          │
+│ Alesha Popovich and Tugarin the Dragon (2004)                                                    │ 2004 │ 5.0        │ Да          │
+│ Calcium Kid, The (2004)                                                                          │ 2004 │ 5.0        │ Да          │
+│ Dylan Moran: Monster (2004)                                                                      │ 2004 │ 5.0        │ Да          │
+│ First Daughter (2004)                                                                            │ 2004 │ 5.0        │ Да          │
+│ Garfield: The Movie (2004)                                                                       │ 2004 │ 5.0        │ Да          │
+│ Go for Zucker! (Alles auf Zucker!) (2004)                                                        │ 2004 │ 5.0        │ Да          │
+│ Scooby-Doo! and the Loch Ness Monster (2004)                                                     │ 2004 │ 5.0        │ Да          │
+│ Aristocrats, The (2005)                                                                          │ 2005 │ 5.0        │ Да          │
+│ Boy Eats Girl (2005)                                                                             │ 2005 │ 5.0        │ Да          │
+│ Films to Keep You Awake: The Christmas Tale (Películas para no dormir: Cuento de navidad) (2005) │ 2005 │ 0.5        │ Нет         │
+│ George Carlin: Life Is Worth Losing (2005)                                                       │ 2005 │ 5.0        │ Да          │
+│ Guy X (2005)                                                                                     │ 2005 │ 5.0        │ Да          │
+│ Mrs. Henderson Presents (2005)                                                                   │ 2005 │ 0.5        │ Нет         │
+│ Stuart Little 3: Call of the Wild (2005)                                                         │ 2005 │ 5.0        │ Да          │
+│ The Eye: Infinity (2005)                                                                         │ 2005 │ 5.0        │ Да          │
+│ Asterix and the Vikings (Astérix et les Vikings) (2006)                                          │ 2006 │ 5.0        │ Да          │
+│ Breed, The (2006)                                                                                │ 2006 │ 5.0        │ Да          │
+│ Deliver Us from Evil (2006)                                                                      │ 2006 │ 5.0        │ Да          │
+│ Jackass Number Two (2006)                                                                        │ 2006 │ 5.0        │ Да          │
+│ Lady in the Water (2006)                                                                         │ 2006 │ 0.5        │ Нет         │
+│ My Love (2006)                                                                                   │ 2006 │ 5.0        │ Да          │
+│ Once (2006)                                                                                      │ 2006 │ 5.0        │ Да          │
+│ Scary Movie 4 (2006)                                                                             │ 2006 │ 0.5        │ Нет         │
+│ The Fox and the Hound 2 (2006)                                                                   │ 2006 │ 5.0        │ Да          │
+│ Tom and Jerry: Shiver Me Whiskers (2006)                                                         │ 2006 │ 5.0        │ Да          │
+│ Ugly Duckling and Me!, The (2006)                                                                │ 2006 │ 5.0        │ Да          │
+│ Valet, The (La doublure) (2006)                                                                  │ 2006 │ 5.0        │ Да          │
+│ Control (2007)                                                                                   │ 2007 │ 5.0        │ Да          │
+│ Empties (2007)                                                                                   │ 2007 │ 5.0        │ Да          │
+│ Hannibal Rising (2007)                                                                           │ 2007 │ 5.0        │ Да          │
+│ Heima (2007)                                                                                     │ 2007 │ 5.0        │ Да          │
+│ Jackass 2.5 (2007)                                                                               │ 2007 │ 5.0        │ Да          │
+│ Jump In! (2007)                                                                                  │ 2007 │ 5.0        │ Да          │
+│ King of Kong, The (2007)                                                                         │ 2007 │ 5.0        │ Да          │
+│ Like Stars on Earth (Taare Zameen Par) (2007)                                                    │ 2007 │ 5.0        │ Да          │
+│ National Lampoon's Bag Boy (2007)                                                                │ 2007 │ 5.0        │ Да          │
+│ Reign Over Me (2007)                                                                             │ 2007 │ 5.0        │ Да          │
+│ Tom and Jerry: A Nutcracker Tale (2007)                                                          │ 2007 │ 5.0        │ Да          │
+│ Watching the Detectives (2007)                                                                   │ 2007 │ 5.0        │ Да          │
+│ What Love Is (2007)                                                                              │ 2007 │ 5.0        │ Да          │
+│ Berlin Calling (2008)                                                                            │ 2008 │ 5.0        │ Да          │
+│ Cottage, The (2008)                                                                              │ 2008 │ 5.0        │ Да          │
+│ Front of the Class (2008)                                                                        │ 2008 │ 5.0        │ Да          │
+│ George Carlin: It's Bad for Ya! (2008)                                                           │ 2008 │ 5.0        │ Да          │
+│ Man on Wire (2008)                                                                               │ 2008 │ 0.5        │ Нет         │
+│ Presto (2008)                                                                                    │ 2008 │ 5.0        │ Да          │
+│ Prom Night (2008)                                                                                │ 2008 │ 0.5        │ Нет         │
+│ Radio Day (2008)                                                                                 │ 2008 │ 5.0        │ Да          │
+│ Strictly Sexual (2008)                                                                           │ 2008 │ 5.0        │ Да          │
+│ Zombie Strippers! (2008)                                                                         │ 2008 │ 0.5        │ Нет         │
+│ American: The Bill Hicks Story (2009)                                                            │ 2009 │ 5.0        │ Да          │
+│ Antichrist (2009)                                                                                │ 2009 │ 5.0        │ Да          │
+│ Fired Up (2009)                                                                                  │ 2009 │ 5.0        │ Да          │
+│ Garfield's Pet Force (2009)                                                                      │ 2009 │ 5.0        │ Да          │
+│ Get Low (2009)                                                                                   │ 2009 │ 5.0        │ Да          │
+│ Home (2009)                                                                                      │ 2009 │ 5.0        │ Да          │
+│ Human Centipede, The (First Sequence) (2009)                                                     │ 2009 │ 0.5        │ Нет         │
+│ Jennifer's Body (2009)                                                                           │ 2009 │ 0.5        │ Нет         │
+│ Scooby-Doo! and the Samurai Sword (2009)                                                         │ 2009 │ 5.0        │ Да          │
+│ Serious Man, A (2009)                                                                            │ 2009 │ 0.5        │ Нет         │
+│ Cop Out (2010)                                                                                   │ 2010 │ 5.0        │ Да          │
+│ Four Lions (2010)                                                                                │ 2010 │ 5.0        │ Да          │
+│ Get Him to the Greek (2010)                                                                      │ 2010 │ 5.0        │ Да          │
+│ Let Me In (2010)                                                                                 │ 2010 │ 5.0        │ Да          │
+│ Miss Nobody (2010)                                                                               │ 2010 │ 5.0        │ Да          │
+│ Scooby-Doo! Abracadabra-Doo (2010)                                                               │ 2010 │ 5.0        │ Да          │
+│ Scooby-Doo! Curse of the Lake Monster (2010)                                                     │ 2010 │ 5.0        │ Да          │
+│ The Man from Nowhere (2010)                                                                      │ 2010 │ 5.0        │ Да          │
+│ The Pacific (2010)                                                                               │ 2010 │ 5.0        │ Да          │
+│ What Men Talk About (2010)                                                                       │ 2010 │ 5.0        │ Да          │
+│ Yogi Bear (2010)                                                                                 │ 2010 │ 0.5        │ Нет         │
+│ Happy Feet Two (2011)                                                                            │ 2011 │ 5.0        │ Да          │
+│ Jackass 3.5 (2011)                                                                               │ 2011 │ 5.0        │ Да          │
+│ Just Go with It (2011)                                                                           │ 2011 │ 5.0        │ Да          │
+│ Melancholia (2011)                                                                               │ 2011 │ 5.0        │ Да          │
+│ Monsieur Lazhar (2011)                                                                           │ 2011 │ 5.0        │ Да          │
+│ Snowflake, the White Gorilla (2011)                                                              │ 2011 │ 5.0        │ Да          │
+│ Spellbound (2011)                                                                                │ 2011 │ 5.0        │ Да          │
+│ Terri (2011)                                                                                     │ 2011 │ 5.0        │ Да          │
+│ Your Highness (2011)                                                                             │ 2011 │ 5.0        │ Да          │
+│ Big Top Scooby-Doo! (2012)                                                                       │ 2012 │ 5.0        │ Да          │
+│ English Vinglish (2012)                                                                          │ 2012 │ 5.0        │ Да          │
+│ Fantastic Fear of Everything, A (2012)                                                           │ 2012 │ 5.0        │ Да          │
+│ Ghost Graduation (2012)                                                                          │ 2012 │ 5.0        │ Да          │
+│ Hellbenders (2012)                                                                               │ 2012 │ 5.0        │ Да          │
+│ Maria Bamford: The Special Special Special! (2012)                                               │ 2012 │ 0.5        │ Нет         │
+│ On the Other Side of the Tracks (De l'autre côté du périph) (2012)                               │ 2012 │ 5.0        │ Да          │
+│ Rust and Bone (De rouille et d'os) (2012)                                                        │ 2012 │ 0.5        │ Нет         │
+│ Unicorn City (2012)                                                                              │ 2012 │ 5.0        │ Да          │
+│ Chinese Puzzle (Casse-tête chinois) (2013)                                                       │ 2013 │ 5.0        │ Да          │
+│ Craig Ferguson: I'm Here To Help (2013)                                                          │ 2013 │ 5.0        │ Да          │
+│ Drinking Buddies (2013)                                                                          │ 2013 │ 0.5        │ Нет         │
+│ Family, The (2013)                                                                               │ 2013 │ 5.0        │ Да          │
+│ Filth (2013)                                                                                     │ 2013 │ 5.0        │ Да          │
+│ Garden of Words, The (Koto no ha no niwa) (2013)                                                 │ 2013 │ 5.0        │ Да          │
+│ Great Beauty, The (Grande Bellezza, La) (2013)                                                   │ 2013 │ 5.0        │ Да          │
+│ Hunting Elephants (2013)                                                                         │ 2013 │ 5.0        │ Да          │
+│ Saving Santa (2013)                                                                              │ 2013 │ 5.0        │ Да          │
+│ Black Mirror: White Christmas (2014)                                                             │ 2014 │ 5.0        │ Да          │
+│ Haunted House 2, A (2014)                                                                        │ 2014 │ 0.5        │ Нет         │
+│ Love & Mercy (2014)                                                                              │ 2014 │ 5.0        │ Да          │
+│ Mr. Peabody & Sherman (2014)                                                                     │ 2014 │ 5.0        │ Да          │
+│ PK (2014)                                                                                        │ 2014 │ 5.0        │ Да          │
+│ Predestination (2014)                                                                            │ 2014 │ 5.0        │ Да          │
+│ The Raid 2: Berandal (2014)                                                                      │ 2014 │ 5.0        │ Да          │
+│ The Salt of the Earth (2014)                                                                     │ 2014 │ 5.0        │ Да          │
+│ Tom Segura: Completely Normal (2014)                                                             │ 2014 │ 5.0        │ Да          │
+│ 10 Cent Pistol (2015)                                                                            │ 2015 │ 0.5        │ Нет         │
+│ A Perfect Day (2015)                                                                             │ 2015 │ 5.0        │ Да          │
+│ Bloodsucking Bastards (2015)                                                                     │ 2015 │ 5.0        │ Да          │
+│ Buzzard (2015)                                                                                   │ 2015 │ 5.0        │ Да          │
+│ Cosmic Scrat-tastrophe (2015)                                                                    │ 2015 │ 5.0        │ Да          │
+│ Deathgasm (2015)                                                                                 │ 2015 │ 5.0        │ Да          │
+│ Fifty Shades of Grey (2015)                                                                      │ 2015 │ 0.5        │ Нет         │
+│ Human (2015)                                                                                     │ 2015 │ 5.0        │ Да          │
+│ L.A. Slasher (2015)                                                                              │ 2015 │ 5.0        │ Да          │
+│ Lumberjack Man (2015)                                                                            │ 2015 │ 5.0        │ Да          │
+│ Ooops! Noah is Gone... (2015)                                                                    │ 2015 │ 5.0        │ Да          │
+│ Sorrow (2015)                                                                                    │ 2015 │ 0.5        │ Нет         │
+│ The Editor (2015)                                                                                │ 2015 │ 5.0        │ Да          │
+│ The Gracefield Incident (2015)                                                                   │ 2015 │ 0.5        │ Нет         │
+│ The Jinx: The Life and Deaths of Robert Durst (2015)                                             │ 2015 │ 5.0        │ Да          │
+│ 13 Hours (2016)                                                                                  │ 2016 │ 5.0        │ Да          │
+│ All Yours (2016)                                                                                 │ 2016 │ 5.0        │ Да          │
+│ Bad Santa 2 (2016)                                                                               │ 2016 │ 0.5        │ Нет         │
+│ Central Intelligence (2016)                                                                      │ 2016 │ 5.0        │ Да          │
+│ Ice Age: The Great Egg-Scapade (2016)                                                            │ 2016 │ 5.0        │ Да          │
+│ Satanic (2016)                                                                                   │ 2016 │ 0.5        │ Нет         │
+│ Tom Segura: Mostly Stories (2016)                                                                │ 2016 │ 5.0        │ Да          │
+│ Death Note (2017)                                                                                │ 2017 │ 0.5        │ Нет         │
+│ Loving Vincent (2017)                                                                            │ 2017 │ 5.0        │ Да          │
+└──────────────────────────────────────────────────────────────────────────────────────────────────┴──────┴────────────┴─────────────┘
+ 
+4. Вычислить количество оценок и среднюю оценку, которую дали фильмам пользователи-женщины в период с 2010 по 2012 год.
+--------------------------------------------------
+SELECT
+    COUNT(*) AS ratings_count,
+    ROUND(AVG(r.rating), 3) AS average_rating
+FROM ratings r
+JOIN users u ON u.id = r.user_id
+WHERE u.gender = 'female'
+  AND date(r.timestamp, 'unixepoch') >= '2010-01-01'
+  AND date(r.timestamp, 'unixepoch') < '2013-01-01';
+┌───────────────┬────────────────┐
+│ ratings_count │ average_rating │
+├───────────────┼────────────────┤
+│ 804           │ 3.507          │
+└───────────────┴────────────────┘
+ 
+5. Составить список фильмов с указанием их средней оценки и места в рейтинге по средней оценке. Отсортировать по году выпуска и названию фильма. Оставить первые 20 записей.
+--------------------------------------------------
+WITH movie_ratings AS (
+    SELECT
+        m.id,
+        m.title,
+        m.year,
+        AVG(r.rating) AS avg_rating
+    FROM movies m
+    JOIN ratings r ON r.movie_id = m.id
+    GROUP BY m.id, m.title, m.year
+),
+ranked_movies AS (
+    SELECT
+        title,
+        year,
+        avg_rating,
+        RANK() OVER (ORDER BY avg_rating DESC) AS rating_rank
+    FROM movie_ratings
+)
+SELECT
+    title,
+    year,
+    ROUND(avg_rating, 3) AS avg_rating,
+    rating_rank
+FROM ranked_movies
+ORDER BY year, title
+LIMIT 20;
+┌──────────────────────────────────────────────────────────┬──────┬────────────┬─────────────┐
+│                          title                           │ year │ avg_rating │ rating_rank │
+├──────────────────────────────────────────────────────────┼──────┼────────────┼─────────────┤
+│ Black Mirror                                             │      │ 5.0        │ 1           │
+│ Death Note: Desu nôto (2006–2007)                        │      │ 5.0        │ 1           │
+│ Generation Iron 2                                        │      │ 3.5        │ 2343        │
+│ Maria Bamford: Old Baby                                  │      │ 1.0        │ 4611        │
+│ The Adventures of Sherlock Holmes and Doctor Watson      │      │ 5.0        │ 1           │
+│ Trip to the Moon, A (Voyage dans la lune, Le) (1902)     │ 1902 │ 4.0        │ 1019        │
+│ The Electric Hotel (1908)                                │ 1908 │ 4.0        │ 1019        │
+│ 20,000 Leagues Under the Sea (1916)                      │ 1916 │ 4.0        │ 1019        │
+│ Rink, The (1916)                                         │ 1916 │ 3.5        │ 2343        │
+│ Immigrant, The (1917)                                    │ 1917 │ 4.5        │ 357         │
+│ One Week (1920)                                          │ 1920 │ 3.5        │ 2343        │
+│ Kid, The (1921)                                          │ 1921 │ 4.5        │ 357         │
+│ Nosferatu (Nosferatu, eine Symphonie des Grauens) (1922) │ 1922 │ 3.8        │ 1922        │
+│ Safety Last! (1923)                                      │ 1923 │ 3.0        │ 3315        │
+│ Battleship Potemkin (1925)                               │ 1925 │ 4.0        │ 1019        │
+│ Gold Rush, The (1925)                                    │ 1925 │ 4.25       │ 773         │
+│ General, The (1926)                                      │ 1926 │ 3.5        │ 2343        │
+│ Cat and the Canary, The (1927)                           │ 1927 │ 3.0        │ 3315        │
+│ Lodger: A Story of the London Fog, The (1927)            │ 1927 │ 3.0        │ 3315        │
+│ Metropolis (1927)                                        │ 1927 │ 3.75       │ 1968        │
+└──────────────────────────────────────────────────────────┴──────┴────────────┴─────────────┘
+ 
+6. Вывести список из 10 последних зарегистрированных пользователей в формате Фамилия Имя|Дата регистрации.
+--------------------------------------------------
+SELECT
+    substr(name, instr(name, ' ') + 1)
+    || ' ' ||
+    substr(name, 1, instr(name, ' ') - 1)
+    || '|' || register_date AS user_info
+FROM users
+ORDER BY register_date DESC, id DESC
+LIMIT 10;
+┌──────────────────────────────┐
+│          user_info           │
+├──────────────────────────────┤
+│ Swaniawski Zula|2021-01-13   │
+│ Reynolds Eda|2021-01-08      │
+│ Herzog Filomena|2021-01-06   │
+│ Spencer Meredith|2021-01-01  │
+│ McCullough Lucius|2020-12-28 │
+│ Bins Ross|2020-12-25         │
+│ Prosacco Anita|2020-12-21    │
+│ Bahringer Donna|2020-12-15   │
+│ Sipes Clara|2020-12-14       │
+│ Mante Kennith|2020-12-10     │
+└──────────────────────────────┘
+ 
+7. С помощью рекурсивного CTE составить таблицу умножения для чисел от 1 до 10. Результат должен быть представлен одним столбцом.
+--------------------------------------------------
+WITH RECURSIVE numbers(n) AS (
+    SELECT 1
+    UNION ALL
+    SELECT n + 1
+    FROM numbers
+    WHERE n < 100
+)
+SELECT
+    printf(
+        '%dx%d=%d',
+        (n - 1) / 10 + 1,
+        (n - 1) % 10 + 1,
+        ((n - 1) / 10 + 1) * ((n - 1) % 10 + 1)
+    ) AS multiplication
+FROM numbers
+ORDER BY n;
+┌────────────────┐
+│ multiplication │
+├────────────────┤
+│ 1x1=1          │
+│ 1x2=2          │
+│ 1x3=3          │
+│ 1x4=4          │
+│ 1x5=5          │
+│ 1x6=6          │
+│ 1x7=7          │
+│ 1x8=8          │
+│ 1x9=9          │
+│ 1x10=10        │
+│ 2x1=2          │
+│ 2x2=4          │
+│ 2x3=6          │
+│ 2x4=8          │
+│ 2x5=10         │
+│ 2x6=12         │
+│ 2x7=14         │
+│ 2x8=16         │
+│ 2x9=18         │
+│ 2x10=20        │
+│ 3x1=3          │
+│ 3x2=6          │
+│ 3x3=9          │
+│ 3x4=12         │
+│ 3x5=15         │
+│ 3x6=18         │
+│ 3x7=21         │
+│ 3x8=24         │
+│ 3x9=27         │
+│ 3x10=30        │
+│ 4x1=4          │
+│ 4x2=8          │
+│ 4x3=12         │
+│ 4x4=16         │
+│ 4x5=20         │
+│ 4x6=24         │
+│ 4x7=28         │
+│ 4x8=32         │
+│ 4x9=36         │
+│ 4x10=40        │
+│ 5x1=5          │
+│ 5x2=10         │
+│ 5x3=15         │
+│ 5x4=20         │
+│ 5x5=25         │
+│ 5x6=30         │
+│ 5x7=35         │
+│ 5x8=40         │
+│ 5x9=45         │
+│ 5x10=50        │
+│ 6x1=6          │
+│ 6x2=12         │
+│ 6x3=18         │
+│ 6x4=24         │
+│ 6x5=30         │
+│ 6x6=36         │
+│ 6x7=42         │
+│ 6x8=48         │
+│ 6x9=54         │
+│ 6x10=60        │
+│ 7x1=7          │
+│ 7x2=14         │
+│ 7x3=21         │
+│ 7x4=28         │
+│ 7x5=35         │
+│ 7x6=42         │
+│ 7x7=49         │
+│ 7x8=56         │
+│ 7x9=63         │
+│ 7x10=70        │
+│ 8x1=8          │
+│ 8x2=16         │
+│ 8x3=24         │
+│ 8x4=32         │
+│ 8x5=40         │
+│ 8x6=48         │
+│ 8x7=56         │
+│ 8x8=64         │
+│ 8x9=72         │
+│ 8x10=80        │
+│ 9x1=9          │
+│ 9x2=18         │
+│ 9x3=27         │
+│ 9x4=36         │
+│ 9x5=45         │
+│ 9x6=54         │
+│ 9x7=63         │
+│ 9x8=72         │
+│ 9x9=81         │
+│ 9x10=90        │
+│ 10x1=10        │
+│ 10x2=20        │
+│ 10x3=30        │
+│ 10x4=40        │
+│ 10x5=50        │
+│ 10x6=60        │
+│ 10x7=70        │
+│ 10x8=80        │
+│ 10x9=90        │
+│ 10x10=100      │
+└────────────────┘
+ 
+8. С помощью рекурсивного CTE выделить все жанры фильмов, имеющиеся в таблице movies. Каждый жанр вывести в отдельной строке.
+--------------------------------------------------
+WITH RECURSIVE genre_parts(rest, genre) AS (
+    SELECT genres || '|', ''
+    FROM movies
+    WHERE genres IS NOT NULL
+      AND genres <> ''
+      AND genres <> '(no genres listed)'
+
+    UNION ALL
+
+    SELECT
+        substr(rest, instr(rest, '|') + 1),
+        substr(rest, 1, instr(rest, '|') - 1)
+    FROM genre_parts
+    WHERE rest <> ''
+)
+SELECT DISTINCT genre
+FROM genre_parts
+WHERE genre <> ''
+ORDER BY genre;
+┌─────────────┐
+│    genre    │
+├─────────────┤
+│ Action      │
+│ Adventure   │
+│ Animation   │
+│ Children    │
+│ Comedy      │
+│ Crime       │
+│ Documentary │
+│ Drama       │
+│ Fantasy     │
+│ Film-Noir   │
+│ Horror      │
+│ IMAX        │
+│ Musical     │
+│ Mystery     │
+│ Romance     │
+│ Sci-Fi      │
+│ Thriller    │
+│ War         │
+│ Western     │
+└─────────────┘
+ 
+TASK04 ЗАВЕРШЁН
+--------------------------------------------------
+Total ok: 3
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/DBTech/301_DBTech_Bobro_SA
+Complete Task04
+Task from branch: Task04
+Creation date: 11/01/2026 14:47:22
+To github.com-mrsu:andpop-mrsu/301_DBTech_Bobro_SA.git
+To github.com-mrsu:andpop-mrsu/301_DBTech_Bobro_SA.git
+   6f2b6c2..25f7b89  master -> master
+   6f2b6c2..25f7b89  master -> master
 301_DBTech_Bulatova_SI
 301_DBTech_Cvetkov_MS
 301_DBTech_Galstyan_VN
@@ -16,12 +1162,896 @@ Transcript started, output file is log.txt
 301_DBTech_Muntyan_YAR
 301_DBTech_Romanov_VS
 301_DBTech_Salagaev_RA
+=====================================================
+/home/andrey/labs/DBTech/301_DBTech_Salagaev_RA
+Из github.com-mrsu:andpop-mrsu/301_DBTech_Salagaev_RA
+Из github.com-mrsu:andpop-mrsu/301_DBTech_Salagaev_RA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Из https://github.com/Rombik456/301_DBTech_Salagaev_RA
+Из https://github.com/Rombik456/301_DBTech_Salagaev_RA
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task04     -> student/Task04
+Merge made by the 'ort' strategy.
+ Task04/db_init.sql | 33184 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ Task04/task4.bat   |    43 +
+ 2 files changed, 33227 insertions(+)
+ create mode 100644 Task04/db_init.sql
+ create mode 100755 Task04/task4.bat
+--------------------------------------------------
+Task:  /home/andrey/labs/DBTech/301_DBTech_Salagaev_RA/Task04
+--------------------------------------------------
+Check path: db_init.sql
+--------------------------------------------------
+Check path: task4.bat
+#!/bin/bash
+chcp 65001
+
+sqlite3 movies_rating.db < db_init.sql
+
+echo "1. Пары пользователей, оценивших один и тот же фильм"
+echo --------------------------------------------------
+sqlite3 movies_rating.db -box -echo "SELECT u1.first_name || ' ' || u1.last_name AS user1, u2.first_name || ' ' || u2.last_name AS user2, m.title FROM ratings r1 JOIN ratings r2 ON r1.movie_id = r2.movie_id AND r1.user_id < r2.user_id JOIN users u1 ON r1.user_id = u1.id JOIN users u2 ON r2.user_id = u2.id JOIN movies m ON r1.movie_id = m.id LIMIT 100;"
+echo " "
+
+echo "2. 10 самых старых оценок"
+echo --------------------------------------------------
+sqlite3 movies_rating.db -box -echo "SELECT m.title, u.first_name || ' ' || u.last_name AS user_name, r.rating, DATE(r.timestamp, 'unixepoch') AS rating_date FROM ratings r JOIN users u ON r.user_id = u.id JOIN movies m ON r.movie_id = m.id ORDER BY r.timestamp ASC LIMIT 10;"
+echo " "
+
+echo "3. Фильмы с максимальным и минимальным средним рейтингом"
+echo --------------------------------------------------
+sqlite3 movies_rating.db -box -echo "WITH movie_avg AS (SELECT movie_id, AVG(rating) AS avg_score FROM ratings GROUP BY movie_id) SELECT m.title, m.year, ma.avg_score, CASE WHEN ma.avg_score = (SELECT MAX(avg_score) FROM movie_avg) THEN 'Да' ELSE 'Нет' END AS 'Рекомендуем' FROM movie_avg ma JOIN movies m ON ma.movie_id = m.id WHERE ma.avg_score = (SELECT MAX(avg_score) FROM movie_avg) OR ma.avg_score = (SELECT MIN(avg_score) FROM movie_avg) ORDER BY m.year, m.title;"
+echo " "
+
+echo "4. Оценки мужчин за 2011-2014 гг."
+echo --------------------------------------------------
+sqlite3 movies_rating.db -box -echo "SELECT COUNT(*) AS total_ratings, ROUND(AVG(r.rating), 2) AS avg_rating FROM ratings r JOIN users u ON r.user_id = u.id WHERE u.gender = 'M' AND STRFTIME('%Y', r.timestamp, 'unixepoch') BETWEEN '2011' AND '2014';"
+echo " "
+
+echo "5. Фильмы со средней оценкой и количеством пользователей"
+echo --------------------------------------------------
+sqlite3 movies_rating.db -box -echo "SELECT m.title, m.year, ROUND(AVG(r.rating), 2) AS avg_rating, COUNT(DISTINCT r.user_id) AS user_count FROM movies m JOIN ratings r ON m.id = r.movie_id GROUP BY m.id ORDER BY m.year, m.title LIMIT 20;"
+echo " "
+
+echo "6. Самый распространенный жанр"
+echo --------------------------------------------------
+sqlite3 movies_rating.db -box -echo "WITH RECURSIVE split_genres(genre, rest) AS (SELECT NULL, genres || '|' FROM movies UNION ALL SELECT SUBSTR(rest, 1, INSTR(rest, '|') - 1), SUBSTR(rest, INSTR(rest, '|') + 1) FROM split_genres WHERE rest != '') SELECT genre, COUNT(*) AS movie_count FROM split_genres WHERE genre IS NOT NULL AND genre != '' GROUP BY genre ORDER BY movie_count DESC LIMIT 1;"
+echo " "
+
+echo "7. 10 последних зарегистрированных пользователей"
+echo --------------------------------------------------
+sqlite3 movies_rating.db -box -echo "SELECT u.last_name || ' ' || u.first_name || '|' || DATE(u.registration_date) AS 'Пользователь' FROM users u ORDER BY u.registration_date DESC LIMIT 10;"
+echo " "
+
+echo "8. Дни недели дня рождения по годам"
+echo --------------------------------------------------
+sqlite3 movies_rating.db -box -echo "WITH RECURSIVE birthday_years(b_year, b_date) AS (SELECT 2000, '2000-04-15' UNION ALL SELECT b_year + 1, DATE(b_date, '+1 year') FROM birthday_years WHERE b_year < 2026) SELECT b_year AS 'Год', b_date AS 'Дата', CASE STRFTIME('%w', b_date) WHEN '0' THEN 'Воскресенье' WHEN '1' THEN 'Понедельник' WHEN '2' THEN 'Вторник' WHEN '3' THEN 'Среда' WHEN '4' THEN 'Четверг' WHEN '5' THEN 'Пятница' WHEN '6' THEN 'Суббота' END AS 'День недели' FROM birthday_years;"
+--------------------------------------------------
+Run: ./task4.bat
+1. Пары пользователей, оценивших один и тот же фильм
+--------------------------------------------------
+SELECT u1.first_name || ' ' || u1.last_name AS user1, u2.first_name || ' ' || u2.last_name AS user2, m.title FROM ratings r1 JOIN ratings r2 ON r1.movie_id = r2.movie_id AND r1.user_id < r2.user_id JOIN users u1 ON r1.user_id = u1.id JOIN users u2 ON r2.user_id = u2.id JOIN movies m ON r1.movie_id = m.id LIMIT 100;
+ 
+2. 10 самых старых оценок
+--------------------------------------------------
+SELECT m.title, u.first_name || ' ' || u.last_name AS user_name, r.rating, DATE(r.timestamp, 'unixepoch') AS rating_date FROM ratings r JOIN users u ON r.user_id = u.id JOIN movies m ON r.movie_id = m.id ORDER BY r.timestamp ASC LIMIT 10;
+ 
+3. Фильмы с максимальным и минимальным средним рейтингом
+--------------------------------------------------
+WITH movie_avg AS (SELECT movie_id, AVG(rating) AS avg_score FROM ratings GROUP BY movie_id) SELECT m.title, m.year, ma.avg_score, CASE WHEN ma.avg_score = (SELECT MAX(avg_score) FROM movie_avg) THEN 'Да' ELSE 'Нет' END AS 'Рекомендуем' FROM movie_avg ma JOIN movies m ON ma.movie_id = m.id WHERE ma.avg_score = (SELECT MAX(avg_score) FROM movie_avg) OR ma.avg_score = (SELECT MIN(avg_score) FROM movie_avg) ORDER BY m.year, m.title;
+┌───────────────────────────────────────────────────────────────────────────────────────────┬──────┬───────────┬─────────────┐
+│                                           title                                           │ year │ avg_score │ Рекомендуем │
+├───────────────────────────────────────────────────────────────────────────────────────────┼──────┼───────────┼─────────────┤
+│ Black Mirror                                                                              │      │ 5.0       │ Да          │
+│ Death Note: Desu nôto (2006–2007)                                                         │      │ 5.0       │ Да          │
+│ The Adventures of Sherlock Holmes and Doctor Watson                                       │      │ 5.0       │ Да          │
+│ Man with the Movie Camera, The (Chelovek s kino-apparatom)                                │ 1929 │ 5.0       │ Да          │
+│ All Quiet on the Western Front                                                            │ 1930 │ 5.0       │ Да          │
+│ Girls About Town                                                                          │ 1931 │ 5.0       │ Да          │
+│ Gulliver's Travels                                                                        │ 1939 │ 5.0       │ Да          │
+│ Chump at Oxford, A                                                                        │ 1940 │ 5.0       │ Да          │
+│ Down Argentine Way                                                                        │ 1940 │ 5.0       │ Да          │
+│ Saboteur                                                                                  │ 1942 │ 5.0       │ Да          │
+│ Tales of Manhattan                                                                        │ 1942 │ 5.0       │ Да          │
+│ To Be or Not to Be                                                                        │ 1942 │ 0.5       │ Нет         │
+│ Lifeboat                                                                                  │ 1944 │ 5.0       │ Да          │
+│ Big Sleep, The                                                                            │ 1946 │ 5.0       │ Да          │
+│ Key Largo                                                                                 │ 1948 │ 5.0       │ Да          │
+│ All the King's Men                                                                        │ 1949 │ 5.0       │ Да          │
+│ High Noon                                                                                 │ 1952 │ 5.0       │ Да          │
+│ Strada, La                                                                                │ 1954 │ 5.0       │ Да          │
+│ Man Who Knew Too Much, The                                                                │ 1956 │ 5.0       │ Да          │
+│ Searchers, The                                                                            │ 1956 │ 5.0       │ Да          │
+│ The Girls                                                                                 │ 1961 │ 5.0       │ Да          │
+│ Gypsy                                                                                     │ 1962 │ 0.5       │ Нет         │
+│ Ivan's Childhood (a.k.a. My Name is Ivan) (Ivanovo detstvo)                               │ 1962 │ 5.0       │ Да          │
+│ Trial, The (Procès, Le)                                                                   │ 1962 │ 5.0       │ Да          │
+│ What Ever Happened to Baby Jane?                                                          │ 1962 │ 5.0       │ Да          │
+│ Goodbye Charlie                                                                           │ 1964 │ 5.0       │ Да          │
+│ Obsession                                                                                 │ 1965 │ 5.0       │ Да          │
+│ Repulsion                                                                                 │ 1965 │ 5.0       │ Да          │
+│ Vovka in the Kingdom of Far Far Away                                                      │ 1965 │ 5.0       │ Да          │
+│ Follow Me, Boys!                                                                          │ 1966 │ 0.5       │ Нет         │
+│ It's the Great Pumpkin, Charlie Brown                                                     │ 1966 │ 5.0       │ Да          │
+│ Man and a Woman, A (Un homme et une femme)                                                │ 1966 │ 5.0       │ Да          │
+│ Who's Afraid of Virginia Woolf?                                                           │ 1966 │ 5.0       │ Да          │
+│ Doctor Dolittle                                                                           │ 1967 │ 5.0       │ Да          │
+│ Guess Who's Coming to Dinner                                                              │ 1967 │ 5.0       │ Да          │
+│ Oscar                                                                                     │ 1967 │ 5.0       │ Да          │
+│ Play Time (a.k.a. Playtime)                                                               │ 1967 │ 5.0       │ Да          │
+│ To Sir with Love                                                                          │ 1967 │ 5.0       │ Да          │
+│ Junior and Karlson                                                                        │ 1968 │ 5.0       │ Да          │
+│ Thomas Crown Affair, The                                                                  │ 1968 │ 5.0       │ Да          │
+│ Gena the Crocodile                                                                        │ 1969 │ 5.0       │ Да          │
+│ The Bremen Town Musicians                                                                 │ 1969 │ 5.0       │ Да          │
+│ True Grit                                                                                 │ 1969 │ 5.0       │ Да          │
+│ Winnie Pooh                                                                               │ 1969 │ 5.0       │ Да          │
+│ Karlson Returns                                                                           │ 1970 │ 5.0       │ Да          │
+│ Cheburashka                                                                               │ 1971 │ 5.0       │ Да          │
+│ Little Murders                                                                            │ 1971 │ 5.0       │ Да          │
+│ Shaft                                                                                     │ 1971 │ 5.0       │ Да          │
+│ Winnie the Pooh Goes Visiting                                                             │ 1971 │ 5.0       │ Да          │
+│ Jeremiah Johnson                                                                          │ 1972 │ 5.0       │ Да          │
+│ Trinity and Sartana Are Coming                                                            │ 1972 │ 5.0       │ Да          │
+│ Winnie the Pooh and the Day of Concern                                                    │ 1972 │ 5.0       │ Да          │
+│ Fantastic Planet, The (Planète sauvage, La)                                               │ 1973 │ 5.0       │ Да          │
+│ Harder They Come, The                                                                     │ 1973 │ 5.0       │ Да          │
+│ On the Trail of the Bremen Town Musicians                                                 │ 1973 │ 5.0       │ Да          │
+│ Alice Doesn't Live Here Anymore                                                           │ 1974 │ 5.0       │ Да          │
+│ Odessa File, The                                                                          │ 1974 │ 5.0       │ Да          │
+│ Death Race 2000                                                                           │ 1975 │ 5.0       │ Да          │
+│ Love and Death                                                                            │ 1975 │ 5.0       │ Да          │
+│ Passenger, The (Professione: reporter)                                                    │ 1975 │ 5.0       │ Да          │
+│ Shampoo                                                                                   │ 1975 │ 5.0       │ Да          │
+│ 12 Chairs                                                                                 │ 1976 │ 5.0       │ Да          │
+│ Bobik Visiting Barbos                                                                     │ 1977 │ 5.0       │ Да          │
+│ Christmas Carol, A                                                                        │ 1977 │ 0.5       │ Нет         │
+│ Suspiria                                                                                  │ 1977 │ 5.0       │ Да          │
+│ Autumn Sonata (Höstsonaten)                                                               │ 1978 │ 5.0       │ Да          │
+│ Three from Prostokvashino                                                                 │ 1978 │ 5.0       │ Да          │
+│ Marriage of Maria Braun, The (Ehe der Maria Braun, Die)                                   │ 1979 │ 5.0       │ Да          │
+│ Moscow Does Not Believe in Tears (Moskva slezam ne verit)                                 │ 1979 │ 5.0       │ Да          │
+│ Priklyucheniya Kapitana Vrungelya                                                         │ 1979 │ 5.0       │ Да          │
+│ Scooby-Doo Goes Hollywood                                                                 │ 1979 │ 5.0       │ Да          │
+│ Sherlock Holmes and Dr. Watson: Acquaintance                                              │ 1979 │ 5.0       │ Да          │
+│ The Adventures of Sherlock Holmes and Dr. Watson: Bloody Signature                        │ 1979 │ 5.0       │ Да          │
+│ Alien Contamination                                                                       │ 1980 │ 5.0       │ Да          │
+│ Altered States                                                                            │ 1980 │ 5.0       │ Да          │
+│ Hangar 18                                                                                 │ 1980 │ 5.0       │ Да          │
+│ Ordinary People                                                                           │ 1980 │ 5.0       │ Да          │
+│ Saturn 3                                                                                  │ 1980 │ 5.0       │ Да          │
+│ The Adventures of Sherlock Holmes and Doctor Watson: King of Blackmailers                 │ 1980 │ 5.0       │ Да          │
+│ Vacations in Prostokvashino                                                               │ 1980 │ 5.0       │ Да          │
+│ A Plasticine Crow                                                                         │ 1981 │ 5.0       │ Да          │
+│ Galaxy of Terror (Quest)                                                                  │ 1981 │ 5.0       │ Да          │
+│ Mephisto                                                                                  │ 1981 │ 5.0       │ Да          │
+│ Mystery of the Third Planet, The (Tayna tretey planety)                                   │ 1981 │ 5.0       │ Да          │
+│ Amityville II: The Possession                                                             │ 1982 │ 0.5       │ Нет         │
+│ Android                                                                                   │ 1982 │ 5.0       │ Да          │
+│ Monty Python Live at the Hollywood Bowl                                                   │ 1982 │ 5.0       │ Да          │
+│ Sophie's Choice                                                                           │ 1982 │ 5.0       │ Да          │
+│ There Once Was a Dog                                                                      │ 1982 │ 5.0       │ Да          │
+│ Last Year's Snow Was Falling                                                              │ 1983 │ 5.0       │ Да          │
+│ Never Say Never Again                                                                     │ 1983 │ 5.0       │ Да          │
+│ Terms of Endearment                                                                       │ 1983 │ 5.0       │ Да          │
+│ The Adventures of Sherlock Holmes and Doctor Watson: The Treasures of Agra                │ 1983 │ 5.0       │ Да          │
+│ Travels of an Ant                                                                         │ 1983 │ 5.0       │ Да          │
+│ Wow! A Talking Fish!                                                                      │ 1983 │ 5.0       │ Да          │
+│ Broadway Danny Rose                                                                       │ 1984 │ 5.0       │ Да          │
+│ Cruel Romance, A (Zhestokij Romans)                                                       │ 1984 │ 5.0       │ Да          │
+│ Formula of Love                                                                           │ 1984 │ 5.0       │ Да          │
+│ In the blue sea, in the white foam.                                                       │ 1984 │ 5.0       │ Да          │
+│ Meantime                                                                                  │ 1984 │ 5.0       │ Да          │
+│ Night of the Comet                                                                        │ 1984 │ 5.0       │ Да          │
+│ Winter in Prostokvashino                                                                  │ 1984 │ 5.0       │ Да          │
+│ Chorus Line, A                                                                            │ 1985 │ 5.0       │ Да          │
+│ Love and Pigeons                                                                          │ 1985 │ 5.0       │ Да          │
+│ 52 Pick-Up                                                                                │ 1986 │ 5.0       │ Да          │
+│ Adventures Of Sherlock Holmes And Dr. Watson: The Twentieth Century Approaches            │ 1986 │ 5.0       │ Да          │
+│ Fugitives                                                                                 │ 1986 │ 5.0       │ Да          │
+│ Investigation Held by Kolobki                                                             │ 1986 │ 5.0       │ Да          │
+│ Jean de Florette                                                                          │ 1986 │ 5.0       │ Да          │
+│ Willy/Milly                                                                               │ 1986 │ 5.0       │ Да          │
+│ Wings, Legs and Tails                                                                     │ 1986 │ 5.0       │ Да          │
+│ Babette's Feast (Babettes gæstebud)                                                       │ 1987 │ 5.0       │ Да          │
+│ Claymation Christmas Celebration, A                                                       │ 1987 │ 0.5       │ Нет         │
+│ Eddie Murphy Raw                                                                          │ 1987 │ 5.0       │ Да          │
+│ Harry and the Hendersons                                                                  │ 1987 │ 5.0       │ Да          │
+│ Bright Lights, Big City                                                                   │ 1988 │ 5.0       │ Да          │
+│ Grave of the Fireflies (Hotaru no haka)                                                   │ 1988 │ 5.0       │ Да          │
+│ Great Outdoors, The                                                                       │ 1988 │ 5.0       │ Да          │
+│ Hellbound: Hellraiser II                                                                  │ 1988 │ 5.0       │ Да          │
+│ Hollywood Chainsaw Hookers                                                                │ 1988 │ 5.0       │ Да          │
+│ Light Years (Gandahar)                                                                    │ 1988 │ 5.0       │ Да          │
+│ Return to Treasure Island                                                                 │ 1988 │ 5.0       │ Да          │
+│ Story of Women (Affaire de femmes, Une)                                                   │ 1988 │ 5.0       │ Да          │
+│ Unbearable Lightness of Being, The                                                        │ 1988 │ 5.0       │ Да          │
+│ Always                                                                                    │ 1989 │ 5.0       │ Да          │
+│ Decalogue, The (Dekalog)                                                                  │ 1989 │ 5.0       │ Да          │
+│ UHF                                                                                       │ 1989 │ 5.0       │ Да          │
+│ Akira Kurosawa's Dreams (Dreams)                                                          │ 1990 │ 5.0       │ Да          │
+│ Europa Europa (Hitlerjunge Salomon)                                                       │ 1990 │ 5.0       │ Да          │
+│ Joe Versus the Volcano                                                                    │ 1990 │ 5.0       │ Да          │
+│ Paris Is Burning                                                                          │ 1990 │ 5.0       │ Да          │
+│ Troll 2                                                                                   │ 1990 │ 5.0       │ Да          │
+│ World of Glory                                                                            │ 1991 │ 5.0       │ Да          │
+│ George Carlin: Jammin' in New York                                                        │ 1992 │ 5.0       │ Да          │
+│ Indochine                                                                                 │ 1992 │ 5.0       │ Да          │
+│ Man Bites Dog (C'est arrivé près de chez vous)                                            │ 1992 │ 5.0       │ Да          │
+│ The Godfather Trilogy: 1972-1990                                                          │ 1992 │ 5.0       │ Да          │
+│ Bill Hicks: Revelations                                                                   │ 1993 │ 5.0       │ Да          │
+│ Farewell My Concubine (Ba wang bie ji)                                                    │ 1993 │ 5.0       │ Да          │
+│ My Life                                                                                   │ 1993 │ 5.0       │ Да          │
+│ RoboCop 3                                                                                 │ 1993 │ 5.0       │ Да          │
+│ A Flintstones Christmas Carol                                                             │ 1994 │ 5.0       │ Да          │
+│ Lamerica                                                                                  │ 1994 │ 5.0       │ Да          │
+│ Lassie                                                                                    │ 1994 │ 5.0       │ Да          │
+│ Lesson Faust                                                                              │ 1994 │ 5.0       │ Да          │
+│ Lightning Jack                                                                            │ 1994 │ 5.0       │ Да          │
+│ Stand, The                                                                                │ 1994 │ 5.0       │ Да          │
+│ Angels and Insects                                                                        │ 1995 │ 5.0       │ Да          │
+│ Anne Frank Remembered                                                                     │ 1995 │ 5.0       │ Да          │
+│ Antonia's Line (Antonia)                                                                  │ 1995 │ 5.0       │ Да          │
+│ Canadian Bacon                                                                            │ 1995 │ 5.0       │ Да          │
+│ Jerky Boys, The                                                                           │ 1995 │ 0.5       │ Нет         │
+│ Operation Dumbo Drop                                                                      │ 1995 │ 0.5       │ Нет         │
+│ Runaway Brain                                                                             │ 1995 │ 5.0       │ Да          │
+│ Children of the Corn IV: The Gathering                                                    │ 1996 │ 5.0       │ Да          │
+│ Entertaining Angels: The Dorothy Day Story                                                │ 1996 │ 5.0       │ Да          │
+│ Flirting With Disaster                                                                    │ 1996 │ 5.0       │ Да          │
+│ Freeway                                                                                   │ 1996 │ 5.0       │ Да          │
+│ George Carlin: Back in Town                                                               │ 1996 │ 5.0       │ Да          │
+│ Hamlet                                                                                    │ 1996 │ 5.0       │ Да          │
+│ Hard Core Logo                                                                            │ 1996 │ 5.0       │ Да          │
+│ Jane Eyre                                                                                 │ 1996 │ 5.0       │ Да          │
+│ Ponette                                                                                   │ 1996 │ 5.0       │ Да          │
+│ Preacher's Wife, The                                                                      │ 1996 │ 5.0       │ Да          │
+│ Secrets & Lies                                                                            │ 1996 │ 5.0       │ Да          │
+│ Tenchi Muyô! In Love                                                                      │ 1996 │ 5.0       │ Да          │
+│ Assignment, The                                                                           │ 1997 │ 5.0       │ Да          │
+│ Brother (Brat)                                                                            │ 1997 │ 5.0       │ Да          │
+│ Geri's Game                                                                               │ 1997 │ 5.0       │ Да          │
+│ Good Burger                                                                               │ 1997 │ 0.5       │ Нет         │
+│ Mrs. Dalloway                                                                             │ 1997 │ 5.0       │ Да          │
+│ Spice World                                                                               │ 1997 │ 0.5       │ Нет         │
+│ The Love Bug                                                                              │ 1997 │ 5.0       │ Да          │
+│ Black Cat, White Cat (Crna macka, beli macor)                                             │ 1998 │ 5.0       │ Да          │
+│ Central Station (Central do Brasil)                                                       │ 1998 │ 5.0       │ Да          │
+│ Everest                                                                                   │ 1998 │ 5.0       │ Да          │
+│ Newton Boys, The                                                                          │ 1998 │ 5.0       │ Да          │
+│ SLC Punk!                                                                                 │ 1998 │ 5.0       │ Да          │
+│ Show Me Love (Fucking Åmål)                                                               │ 1998 │ 5.0       │ Да          │
+│ Taxi                                                                                      │ 1998 │ 5.0       │ Да          │
+│ All About My Mother (Todo sobre mi madre)                                                 │ 1999 │ 5.0       │ Да          │
+│ Cookie's Fortune                                                                          │ 1999 │ 5.0       │ Да          │
+│ Eddie Izzard: Dress to Kill                                                               │ 1999 │ 5.0       │ Да          │
+│ Five Senses, The                                                                          │ 1999 │ 5.0       │ Да          │
+│ Flawless                                                                                  │ 1999 │ 5.0       │ Да          │
+│ George Carlin: You Are All Diseased                                                       │ 1999 │ 5.0       │ Да          │
+│ Mickey's Once Upon a Christmas                                                            │ 1999 │ 5.0       │ Да          │
+│ Siam Sunset                                                                               │ 1999 │ 5.0       │ Да          │
+│ Sun Alley (Sonnenallee)                                                                   │ 1999 │ 5.0       │ Да          │
+│ Dune                                                                                      │ 2000 │ 5.0       │ Да          │
+│ Ginger Snaps                                                                              │ 2000 │ 5.0       │ Да          │
+│ I'm the One That I Want                                                                   │ 2000 │ 5.0       │ Да          │
+│ Pokémon the Movie 2000                                                                    │ 2000 │ 0.5       │ Нет         │
+│ Princess and the Warrior, The (Krieger und die Kaiserin, Der)                             │ 2000 │ 5.0       │ Да          │
+│ Rugrats in Paris: The Movie                                                               │ 2000 │ 0.5       │ Нет         │
+│ Saving Grace                                                                              │ 2000 │ 5.0       │ Да          │
+│ Where the Money Is                                                                        │ 2000 │ 5.0       │ Да          │
+│ Iris                                                                                      │ 2001 │ 5.0       │ Да          │
+│ Joy Ride                                                                                  │ 2001 │ 0.5       │ Нет         │
+│ L.I.E.                                                                                    │ 2001 │ 5.0       │ Да          │
+│ Life as a House                                                                           │ 2001 │ 5.0       │ Да          │
+│ Lovely & Amazing                                                                          │ 2001 │ 5.0       │ Да          │
+│ Metropolis                                                                                │ 2001 │ 5.0       │ Да          │
+│ Mutant Aliens                                                                             │ 2001 │ 5.0       │ Да          │
+│ My Life as McDull (Mak dau goo si)                                                        │ 2001 │ 5.0       │ Да          │
+│ My Sassy Girl (Yeopgijeogin geunyeo)                                                      │ 2001 │ 5.0       │ Да          │
+│ No Man's Land                                                                             │ 2001 │ 5.0       │ Да          │
+│ Pokémon 3: The Movie                                                                      │ 2001 │ 0.5       │ Нет         │
+│ Rivers and Tides                                                                          │ 2001 │ 5.0       │ Да          │
+│ Sisters (Syostry)                                                                         │ 2001 │ 5.0       │ Да          │
+│ Thirteen Conversations About One Thing (a.k.a. 13 Conversations)                          │ 2001 │ 5.0       │ Да          │
+│ Waking Life                                                                               │ 2001 │ 5.0       │ Да          │
+│ It's a Very Merry Muppet Christmas Movie                                                  │ 2002 │ 0.5       │ Нет         │
+│ Magdalene Sisters, The                                                                    │ 2002 │ 5.0       │ Да          │
+│ My Left Eye Sees Ghosts (Ngo joh aan gin diy gwai)                                        │ 2002 │ 5.0       │ Да          │
+│ Pokemon 4 Ever (a.k.a. Pokémon 4: The Movie)                                              │ 2002 │ 0.5       │ Нет         │
+│ Solaris                                                                                   │ 2002 │ 5.0       │ Да          │
+│ Spy Kids 2: The Island of Lost Dreams                                                     │ 2002 │ 0.5       │ Нет         │
+│ Stuart Little 2                                                                           │ 2002 │ 5.0       │ Да          │
+│ Tuxedo, The                                                                               │ 2002 │ 5.0       │ Да          │
+│ Whale Rider                                                                               │ 2002 │ 5.0       │ Да          │
+│ Dogville                                                                                  │ 2003 │ 5.0       │ Да          │
+│ Duplex                                                                                    │ 2003 │ 5.0       │ Да          │
+│ Pokémon Heroes                                                                            │ 2003 │ 0.5       │ Нет         │
+│ Stitch! The Movie                                                                         │ 2003 │ 5.0       │ Да          │
+│ Texas Chainsaw Massacre, The                                                              │ 2003 │ 0.5       │ Нет         │
+│ After the Sunset                                                                          │ 2004 │ 5.0       │ Да          │
+│ Alesha Popovich and Tugarin the Dragon                                                    │ 2004 │ 5.0       │ Да          │
+│ Calcium Kid, The                                                                          │ 2004 │ 5.0       │ Да          │
+│ Dylan Moran: Monster                                                                      │ 2004 │ 5.0       │ Да          │
+│ First Daughter                                                                            │ 2004 │ 5.0       │ Да          │
+│ Garfield: The Movie                                                                       │ 2004 │ 5.0       │ Да          │
+│ Go for Zucker! (Alles auf Zucker!)                                                        │ 2004 │ 5.0       │ Да          │
+│ Scooby-Doo! and the Loch Ness Monster                                                     │ 2004 │ 5.0       │ Да          │
+│ Aristocrats, The                                                                          │ 2005 │ 5.0       │ Да          │
+│ Boy Eats Girl                                                                             │ 2005 │ 5.0       │ Да          │
+│ Films to Keep You Awake: The Christmas Tale (Películas para no dormir: Cuento de navidad) │ 2005 │ 0.5       │ Нет         │
+│ George Carlin: Life Is Worth Losing                                                       │ 2005 │ 5.0       │ Да          │
+│ Guy X                                                                                     │ 2005 │ 5.0       │ Да          │
+│ Mrs. Henderson Presents                                                                   │ 2005 │ 0.5       │ Нет         │
+│ Stuart Little 3: Call of the Wild                                                         │ 2005 │ 5.0       │ Да          │
+│ The Eye: Infinity                                                                         │ 2005 │ 5.0       │ Да          │
+│ Asterix and the Vikings (Astérix et les Vikings)                                          │ 2006 │ 5.0       │ Да          │
+│ Breed, The                                                                                │ 2006 │ 5.0       │ Да          │
+│ Deliver Us from Evil                                                                      │ 2006 │ 5.0       │ Да          │
+│ Jackass Number Two                                                                        │ 2006 │ 5.0       │ Да          │
+│ Lady in the Water                                                                         │ 2006 │ 0.5       │ Нет         │
+│ My Love                                                                                   │ 2006 │ 5.0       │ Да          │
+│ Once                                                                                      │ 2006 │ 5.0       │ Да          │
+│ Scary Movie 4                                                                             │ 2006 │ 0.5       │ Нет         │
+│ The Fox and the Hound 2                                                                   │ 2006 │ 5.0       │ Да          │
+│ Tom and Jerry: Shiver Me Whiskers                                                         │ 2006 │ 5.0       │ Да          │
+│ Ugly Duckling and Me!, The                                                                │ 2006 │ 5.0       │ Да          │
+│ Valet, The (La doublure)                                                                  │ 2006 │ 5.0       │ Да          │
+│ Control                                                                                   │ 2007 │ 5.0       │ Да          │
+│ Empties                                                                                   │ 2007 │ 5.0       │ Да          │
+│ Hannibal Rising                                                                           │ 2007 │ 5.0       │ Да          │
+│ Heima                                                                                     │ 2007 │ 5.0       │ Да          │
+│ Jackass 2.5                                                                               │ 2007 │ 5.0       │ Да          │
+│ Jump In!                                                                                  │ 2007 │ 5.0       │ Да          │
+│ King of Kong, The                                                                         │ 2007 │ 5.0       │ Да          │
+│ Like Stars on Earth (Taare Zameen Par)                                                    │ 2007 │ 5.0       │ Да          │
+│ National Lampoon's Bag Boy                                                                │ 2007 │ 5.0       │ Да          │
+│ Reign Over Me                                                                             │ 2007 │ 5.0       │ Да          │
+│ Tom and Jerry: A Nutcracker Tale                                                          │ 2007 │ 5.0       │ Да          │
+│ Watching the Detectives                                                                   │ 2007 │ 5.0       │ Да          │
+│ What Love Is                                                                              │ 2007 │ 5.0       │ Да          │
+│ Berlin Calling                                                                            │ 2008 │ 5.0       │ Да          │
+│ Cottage, The                                                                              │ 2008 │ 5.0       │ Да          │
+│ Front of the Class                                                                        │ 2008 │ 5.0       │ Да          │
+│ George Carlin: It's Bad for Ya!                                                           │ 2008 │ 5.0       │ Да          │
+│ Man on Wire                                                                               │ 2008 │ 0.5       │ Нет         │
+│ Presto                                                                                    │ 2008 │ 5.0       │ Да          │
+│ Prom Night                                                                                │ 2008 │ 0.5       │ Нет         │
+│ Radio Day                                                                                 │ 2008 │ 5.0       │ Да          │
+│ Strictly Sexual                                                                           │ 2008 │ 5.0       │ Да          │
+│ Zombie Strippers!                                                                         │ 2008 │ 0.5       │ Нет         │
+│ American: The Bill Hicks Story                                                            │ 2009 │ 5.0       │ Да          │
+│ Antichrist                                                                                │ 2009 │ 5.0       │ Да          │
+│ Fired Up                                                                                  │ 2009 │ 5.0       │ Да          │
+│ Garfield's Pet Force                                                                      │ 2009 │ 5.0       │ Да          │
+│ Get Low                                                                                   │ 2009 │ 5.0       │ Да          │
+│ Home                                                                                      │ 2009 │ 5.0       │ Да          │
+│ Human Centipede, The (First Sequence)                                                     │ 2009 │ 0.5       │ Нет         │
+│ Jennifer's Body                                                                           │ 2009 │ 0.5       │ Нет         │
+│ Scooby-Doo! and the Samurai Sword                                                         │ 2009 │ 5.0       │ Да          │
+│ Serious Man, A                                                                            │ 2009 │ 0.5       │ Нет         │
+│ Cop Out                                                                                   │ 2010 │ 5.0       │ Да          │
+│ Four Lions                                                                                │ 2010 │ 5.0       │ Да          │
+│ Get Him to the Greek                                                                      │ 2010 │ 5.0       │ Да          │
+│ Let Me In                                                                                 │ 2010 │ 5.0       │ Да          │
+│ Miss Nobody                                                                               │ 2010 │ 5.0       │ Да          │
+│ Scooby-Doo! Abracadabra-Doo                                                               │ 2010 │ 5.0       │ Да          │
+│ Scooby-Doo! Curse of the Lake Monster                                                     │ 2010 │ 5.0       │ Да          │
+│ The Man from Nowhere                                                                      │ 2010 │ 5.0       │ Да          │
+│ The Pacific                                                                               │ 2010 │ 5.0       │ Да          │
+│ What Men Talk About                                                                       │ 2010 │ 5.0       │ Да          │
+│ Yogi Bear                                                                                 │ 2010 │ 0.5       │ Нет         │
+│ Happy Feet Two                                                                            │ 2011 │ 5.0       │ Да          │
+│ Jackass 3.5                                                                               │ 2011 │ 5.0       │ Да          │
+│ Just Go with It                                                                           │ 2011 │ 5.0       │ Да          │
+│ Melancholia                                                                               │ 2011 │ 5.0       │ Да          │
+│ Monsieur Lazhar                                                                           │ 2011 │ 5.0       │ Да          │
+│ Snowflake, the White Gorilla                                                              │ 2011 │ 5.0       │ Да          │
+│ Spellbound                                                                                │ 2011 │ 5.0       │ Да          │
+│ Terri                                                                                     │ 2011 │ 5.0       │ Да          │
+│ Your Highness                                                                             │ 2011 │ 5.0       │ Да          │
+│ Big Top Scooby-Doo!                                                                       │ 2012 │ 5.0       │ Да          │
+│ English Vinglish                                                                          │ 2012 │ 5.0       │ Да          │
+│ Fantastic Fear of Everything, A                                                           │ 2012 │ 5.0       │ Да          │
+│ Ghost Graduation                                                                          │ 2012 │ 5.0       │ Да          │
+│ Hellbenders                                                                               │ 2012 │ 5.0       │ Да          │
+│ Maria Bamford: The Special Special Special!                                               │ 2012 │ 0.5       │ Нет         │
+│ On the Other Side of the Tracks (De l'autre côté du périph)                               │ 2012 │ 5.0       │ Да          │
+│ Rust and Bone (De rouille et d'os)                                                        │ 2012 │ 0.5       │ Нет         │
+│ Unicorn City                                                                              │ 2012 │ 5.0       │ Да          │
+│ Chinese Puzzle (Casse-tête chinois)                                                       │ 2013 │ 5.0       │ Да          │
+│ Craig Ferguson: I'm Here To Help                                                          │ 2013 │ 5.0       │ Да          │
+│ Drinking Buddies                                                                          │ 2013 │ 0.5       │ Нет         │
+│ Family, The                                                                               │ 2013 │ 5.0       │ Да          │
+│ Filth                                                                                     │ 2013 │ 5.0       │ Да          │
+│ Garden of Words, The (Koto no ha no niwa)                                                 │ 2013 │ 5.0       │ Да          │
+│ Great Beauty, The (Grande Bellezza, La)                                                   │ 2013 │ 5.0       │ Да          │
+│ Hunting Elephants                                                                         │ 2013 │ 5.0       │ Да          │
+│ Saving Santa                                                                              │ 2013 │ 5.0       │ Да          │
+│ Black Mirror: White Christmas                                                             │ 2014 │ 5.0       │ Да          │
+│ Haunted House 2, A                                                                        │ 2014 │ 0.5       │ Нет         │
+│ Love & Mercy                                                                              │ 2014 │ 5.0       │ Да          │
+│ Mr. Peabody & Sherman                                                                     │ 2014 │ 5.0       │ Да          │
+│ PK                                                                                        │ 2014 │ 5.0       │ Да          │
+│ Predestination                                                                            │ 2014 │ 5.0       │ Да          │
+│ The Raid 2: Berandal                                                                      │ 2014 │ 5.0       │ Да          │
+│ The Salt of the Earth                                                                     │ 2014 │ 5.0       │ Да          │
+│ Tom Segura: Completely Normal                                                             │ 2014 │ 5.0       │ Да          │
+│ 10 Cent Pistol                                                                            │ 2015 │ 0.5       │ Нет         │
+│ A Perfect Day                                                                             │ 2015 │ 5.0       │ Да          │
+│ Bloodsucking Bastards                                                                     │ 2015 │ 5.0       │ Да          │
+│ Buzzard                                                                                   │ 2015 │ 5.0       │ Да          │
+│ Cosmic Scrat-tastrophe                                                                    │ 2015 │ 5.0       │ Да          │
+│ Deathgasm                                                                                 │ 2015 │ 5.0       │ Да          │
+│ Fifty Shades of Grey                                                                      │ 2015 │ 0.5       │ Нет         │
+│ Human                                                                                     │ 2015 │ 5.0       │ Да          │
+│ L.A. Slasher                                                                              │ 2015 │ 5.0       │ Да          │
+│ Lumberjack Man                                                                            │ 2015 │ 5.0       │ Да          │
+│ Ooops! Noah is Gone...                                                                    │ 2015 │ 5.0       │ Да          │
+│ Sorrow                                                                                    │ 2015 │ 0.5       │ Нет         │
+│ The Editor                                                                                │ 2015 │ 5.0       │ Да          │
+│ The Gracefield Incident                                                                   │ 2015 │ 0.5       │ Нет         │
+│ The Jinx: The Life and Deaths of Robert Durst                                             │ 2015 │ 5.0       │ Да          │
+│ 13 Hours                                                                                  │ 2016 │ 5.0       │ Да          │
+│ All Yours                                                                                 │ 2016 │ 5.0       │ Да          │
+│ Bad Santa 2                                                                               │ 2016 │ 0.5       │ Нет         │
+│ Central Intelligence                                                                      │ 2016 │ 5.0       │ Да          │
+│ Ice Age: The Great Egg-Scapade                                                            │ 2016 │ 5.0       │ Да          │
+│ Satanic                                                                                   │ 2016 │ 0.5       │ Нет         │
+│ Tom Segura: Mostly Stories                                                                │ 2016 │ 5.0       │ Да          │
+│ Death Note                                                                                │ 2017 │ 0.5       │ Нет         │
+│ Loving Vincent                                                                            │ 2017 │ 5.0       │ Да          │
+└───────────────────────────────────────────────────────────────────────────────────────────┴──────┴───────────┴─────────────┘
+ 
+4. Оценки мужчин за 2011-2014 гг.
+--------------------------------------------------
+SELECT COUNT(*) AS total_ratings, ROUND(AVG(r.rating), 2) AS avg_rating FROM ratings r JOIN users u ON r.user_id = u.id WHERE u.gender = 'M' AND STRFTIME('%Y', r.timestamp, 'unixepoch') BETWEEN '2011' AND '2014';
+┌───────────────┬────────────┐
+│ total_ratings │ avg_rating │
+├───────────────┼────────────┤
+│ 0             │            │
+└───────────────┴────────────┘
+ 
+5. Фильмы со средней оценкой и количеством пользователей
+--------------------------------------------------
+SELECT m.title, m.year, ROUND(AVG(r.rating), 2) AS avg_rating, COUNT(DISTINCT r.user_id) AS user_count FROM movies m JOIN ratings r ON m.id = r.movie_id GROUP BY m.id ORDER BY m.year, m.title LIMIT 20;
+┌─────────────────────────────────────────────────────┬──────┬────────────┬────────────┐
+│                        title                        │ year │ avg_rating │ user_count │
+├─────────────────────────────────────────────────────┼──────┼────────────┼────────────┤
+│ Black Mirror                                        │      │ 5.0        │ 1          │
+│ Death Note: Desu nôto (2006–2007)                   │      │ 5.0        │ 1          │
+│ Generation Iron 2                                   │      │ 3.5        │ 1          │
+│ Maria Bamford: Old Baby                             │      │ 1.0        │ 1          │
+│ The Adventures of Sherlock Holmes and Doctor Watson │      │ 5.0        │ 1          │
+│ Trip to the Moon, A (Voyage dans la lune, Le)       │ 1902 │ 4.0        │ 2          │
+│ The Electric Hotel                                  │ 1908 │ 4.0        │ 1          │
+│ 20,000 Leagues Under the Sea                        │ 1916 │ 4.0        │ 1          │
+│ Rink, The                                           │ 1916 │ 3.5        │ 1          │
+│ Immigrant, The                                      │ 1917 │ 4.5        │ 1          │
+│ One Week                                            │ 1920 │ 3.5        │ 1          │
+│ Kid, The                                            │ 1921 │ 4.5        │ 1          │
+│ Nosferatu (Nosferatu, eine Symphonie des Grauens)   │ 1922 │ 3.8        │ 5          │
+│ Safety Last!                                        │ 1923 │ 3.0        │ 1          │
+│ Battleship Potemkin                                 │ 1925 │ 4.0        │ 1          │
+│ Gold Rush, The                                      │ 1925 │ 4.25       │ 2          │
+│ General, The                                        │ 1926 │ 3.5        │ 5          │
+│ Cat and the Canary, The                             │ 1927 │ 3.0        │ 1          │
+│ Lodger: A Story of the London Fog, The              │ 1927 │ 3.0        │ 1          │
+│ Metropolis                                          │ 1927 │ 3.75       │ 2          │
+└─────────────────────────────────────────────────────┴──────┴────────────┴────────────┘
+ 
+6. Самый распространенный жанр
+--------------------------------------------------
+WITH RECURSIVE split_genres(genre, rest) AS (SELECT NULL, genres || '|' FROM movies UNION ALL SELECT SUBSTR(rest, 1, INSTR(rest, '|') - 1), SUBSTR(rest, INSTR(rest, '|') + 1) FROM split_genres WHERE rest != '') SELECT genre, COUNT(*) AS movie_count FROM split_genres WHERE genre IS NOT NULL AND genre != '' GROUP BY genre ORDER BY movie_count DESC LIMIT 1;
+┌───────┬─────────────┐
+│ genre │ movie_count │
+├───────┼─────────────┤
+│ Drama │ 4361        │
+└───────┴─────────────┘
+ 
+7. 10 последних зарегистрированных пользователей
+--------------------------------------------------
+SELECT u.last_name || ' ' || u.first_name || '|' || DATE(u.registration_date) AS 'Пользователь' FROM users u ORDER BY u.registration_date DESC LIMIT 10;
+ 
+8. Дни недели дня рождения по годам
+--------------------------------------------------
+WITH RECURSIVE birthday_years(b_year, b_date) AS (SELECT 2000, '2000-04-15' UNION ALL SELECT b_year + 1, DATE(b_date, '+1 year') FROM birthday_years WHERE b_year < 2026) SELECT b_year AS 'Год', b_date AS 'Дата', CASE STRFTIME('%w', b_date) WHEN '0' THEN 'Воскресенье' WHEN '1' THEN 'Понедельник' WHEN '2' THEN 'Вторник' WHEN '3' THEN 'Среда' WHEN '4' THEN 'Четверг' WHEN '5' THEN 'Пятница' WHEN '6' THEN 'Суббота' END AS 'День недели' FROM birthday_years;
+┌──────┬────────────┬─────────────┐
+│ Год  │    Дата    │ День недели │
+├──────┼────────────┼─────────────┤
+│ 2000 │ 2000-04-15 │ Суббота     │
+│ 2001 │ 2001-04-15 │ Воскресенье │
+│ 2002 │ 2002-04-15 │ Понедельник │
+│ 2003 │ 2003-04-15 │ Вторник     │
+│ 2004 │ 2004-04-15 │ Четверг     │
+│ 2005 │ 2005-04-15 │ Пятница     │
+│ 2006 │ 2006-04-15 │ Суббота     │
+│ 2007 │ 2007-04-15 │ Воскресенье │
+│ 2008 │ 2008-04-15 │ Вторник     │
+│ 2009 │ 2009-04-15 │ Среда       │
+│ 2010 │ 2010-04-15 │ Четверг     │
+│ 2011 │ 2011-04-15 │ Пятница     │
+│ 2012 │ 2012-04-15 │ Воскресенье │
+│ 2013 │ 2013-04-15 │ Понедельник │
+│ 2014 │ 2014-04-15 │ Вторник     │
+│ 2015 │ 2015-04-15 │ Среда       │
+│ 2016 │ 2016-04-15 │ Пятница     │
+│ 2017 │ 2017-04-15 │ Суббота     │
+│ 2018 │ 2018-04-15 │ Воскресенье │
+│ 2019 │ 2019-04-15 │ Понедельник │
+│ 2020 │ 2020-04-15 │ Среда       │
+│ 2021 │ 2021-04-15 │ Четверг     │
+│ 2022 │ 2022-04-15 │ Пятница     │
+│ 2023 │ 2023-04-15 │ Суббота     │
+│ 2024 │ 2024-04-15 │ Понедельник │
+│ 2025 │ 2025-04-15 │ Вторник     │
+│ 2026 │ 2026-04-15 │ Среда       │
+└──────┴────────────┴─────────────┘
+--------------------------------------------------
+Total ok: 3
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/DBTech/301_DBTech_Salagaev_RA
+Task04
+Task from branch: Task04
+Creation date: 10/30/2026 20:27:56
+To github.com-mrsu:andpop-mrsu/301_DBTech_Salagaev_RA.git
+To github.com-mrsu:andpop-mrsu/301_DBTech_Salagaev_RA.git
+   ded7964..20d718e  master -> master
+   ded7964..20d718e  master -> master
 301_DBTech_Serov_SA
+=====================================================
+/home/andrey/labs/DBTech/301_DBTech_Serov_SA
+Из github.com-mrsu:andpop-mrsu/301_DBTech_Serov_SA
+Из github.com-mrsu:andpop-mrsu/301_DBTech_Serov_SA
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Уже актуально.
+--------------------------------------------------
+Task:  /home/andrey/labs/DBTech/301_DBTech_Serov_SA/Task04
+--------------------------------------------------
+Check path: db_init.sql
+--------------------------------------------------
+Check path: task4.bat
+
+#!/bin/bash
+
+sqlite3 movies_rating.db < db_init.sql
+
+echo "1. Найти все пары пользователей, оценивших один и тот же фильм. Устранить дубликаты и исключить пары с самим собой. Первые 100 записей."
+echo "--------------------------------------------------"
+sqlite3 movies_rating.db -box -echo "
+SELECT DISTINCT
+       u1.name AS user1,
+       u2.name AS user2,
+       m.title AS movie
+FROM ratings AS r1
+JOIN ratings AS r2
+    ON r1.movie_id = r2.movie_id
+   AND r1.user_id < r2.user_id
+JOIN users AS u1 ON u1.id = r1.user_id
+JOIN users AS u2 ON u2.id = r2.user_id
+JOIN movies AS m ON m.id = r1.movie_id
+ORDER BY u1.name, u2.name, m.title
+LIMIT 100;
+"
+echo " "
+
+
+echo "2. Найти 10 самых старых оценок от разных пользователей. Вывести фильм, пользователя, оценку и дату отзыва."
+echo "--------------------------------------------------"
+sqlite3 movies_rating.db -box -echo "
+SELECT m.title AS movie,
+       u.name AS user,
+       r.rating,
+       date(r.timestamp, 'unixepoch') AS rating_date
+FROM ratings AS r
+JOIN users AS u ON u.id = r.user_id
+JOIN movies AS m ON m.id = r.movie_id
+ORDER BY r.timestamp ASC, r.user_id ASC
+LIMIT 10;
+"
+echo " "
+
+
+echo "3. Найти фильмы с максимальным и минимальным средним рейтингом. Для максимального указать Да, для минимального Нет."
+echo "--------------------------------------------------"
+sqlite3 movies_rating.db -box -echo "
+WITH movie_avg AS (
+    SELECT
+        m.id,
+        m.title,
+        m.year,
+        AVG(r.rating) AS avg_rating
+    FROM movies AS m
+    JOIN ratings AS r ON r.movie_id = m.id
+    GROUP BY m.id, m.title, m.year
+),
+extremes AS (
+    SELECT
+        MAX(avg_rating) AS max_avg,
+        MIN(avg_rating) AS min_avg
+    FROM movie_avg
+)
+SELECT
+    movie_avg.title AS movie,
+    movie_avg.year AS year,
+    ROUND(movie_avg.avg_rating, 2) AS avg_rating,
+    CASE
+        WHEN movie_avg.avg_rating = extremes.max_avg THEN 'Да'
+        ELSE 'Нет'
+    END AS 'Рекомендуем'
+FROM movie_avg
+CROSS JOIN extremes
+WHERE movie_avg.avg_rating = extremes.max_avg
+   OR movie_avg.avg_rating = extremes.min_avg
+ORDER BY movie_avg.year, movie_avg.title;
+"
+echo " "
+
+
+echo "4. Подсчитать количество оценок и средний рейтинг, выставленный мужчинами в период с 2011 по 2014 год."
+echo "--------------------------------------------------"
+sqlite3 movies_rating.db -box -echo "
+SELECT
+    COUNT(*) AS rating_count,
+    ROUND(AVG(r.rating), 2) AS avg_rating
+FROM ratings AS r
+JOIN users AS u ON u.id = r.user_id
+WHERE u.gender = 'male'
+  AND strftime('%Y', r.timestamp, 'unixepoch')
+      BETWEEN '2011' AND '2014';
+"
+echo " "
+
+
+
+echo "5. Вывести фильмы со средним рейтингом и количеством пользователей, поставивших оценку. Сортировка по году и названию, первые 20 записей."
+echo "--------------------------------------------------"
+sqlite3 movies_rating.db -box -echo "
+SELECT
+    m.title AS movie,
+    m.year AS year,
+    ROUND(AVG(r.rating), 2) AS avg_rating,
+    COUNT(DISTINCT r.user_id) AS user_count
+FROM movies AS m
+JOIN ratings AS r ON r.movie_id = m.id
+GROUP BY m.id, m.title, m.year
+ORDER BY m.year, m.title
+LIMIT 20;
+"
+echo " "
+
+
+
+echo "6. Определить самый распространённый жанр и количество фильмов этого жанра."
+echo "--------------------------------------------------"
+sqlite3 movies_rating.db -box -echo "
+WITH RECURSIVE split(movie_id, rest, genre) AS (
+    SELECT id, genres || '|', ''
+    FROM movies
+    WHERE genres IS NOT NULL AND genres <> ''
+
+    UNION ALL
+
+    SELECT
+        movie_id,
+        substr(rest, instr(rest, '|') + 1),
+        trim(substr(rest, 1, instr(rest, '|') - 1))
+    FROM split
+    WHERE rest <> ''
+),
+genre_counts AS (
+    SELECT
+        genre,
+        COUNT(DISTINCT movie_id) AS movie_count
+    FROM split
+    WHERE genre <> ''
+    GROUP BY genre
+)
+SELECT
+    genre,
+    movie_count
+FROM genre_counts
+WHERE movie_count = (
+    SELECT MAX(movie_count)
+    FROM genre_counts
+)
+ORDER BY genre;
+"
+echo " "
+
+
+
+echo "7. Вывести 10 последних зарегистрированных пользователей в формате Фамилия Имя|Дата регистрации."
+echo "--------------------------------------------------"
+sqlite3 movies_rating.db -box -echo "
+SELECT
+    trim(substr(name, instr(name, ' ') + 1)) || ' ' ||
+    substr(name, 1, instr(name, ' ') - 1) || '|' ||
+    register_date AS 'Фамилия Имя|Дата регистрации'
+FROM users
+ORDER BY register_date DESC, id DESC
+LIMIT 10;
+"
+echo " "
+
+
+
+echo "8. С помощью рекурсивного CTE определить день недели дня рождения в каждом году с 2006 по 2026."
+echo "--------------------------------------------------"
+sqlite3 movies_rating.db -box -echo "
+WITH RECURSIVE years(y) AS (
+    SELECT 2006
+    UNION ALL
+    SELECT y + 1
+    FROM years
+    WHERE y < 2026
+)
+SELECT
+    y AS year,
+    printf('%02d.%02d.%04d', 29, 11, y) AS birthday,
+    CASE strftime('%w', printf('%04d-11-29', y))
+        WHEN '0' THEN 'Воскресенье'
+        WHEN '1' THEN 'Понедельник'
+        WHEN '2' THEN 'Вторник'
+        WHEN '3' THEN 'Среда'
+        WHEN '4' THEN 'Четверг'
+        WHEN '5' THEN 'Пятница'
+        WHEN '6' THEN 'Суббота'
+    END AS weekday
+FROM years
+ORDER BY y;
+"
+echo " "
+--------------------------------------------------
+Run: ./task4.bat
+PS>TerminatingError(): "Program 'task4.bat' failed to run: An error occurred trying to start process '/home/andrey/labs/DBTech/301_DBTech_Serov_SA/Task04/task4.bat' with working directory '/home/andrey/labs/DBTech/301_DBTech_Serov_SA/Task04'. Exec format errorAt /home/andrey/projects/mrsu/07_DB_Tech/tools/check_tasks/checks_for_task.ps1:32 char:13
++     $str = (& $command $params | Out-String)
++             ~~~~~~~~~~~~~~~~~~."
+ResourceUnavailable: /home/andrey/projects/mrsu/07_DB_Tech/tools/check_tasks/checks_for_task.ps1:32
+Line |
+  32 |      $str = (& $command $params | Out-String)
+     |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Program 'task4.bat' failed to run: An error occurred trying to start process '/home/andrey/labs/DBTech/301_DBTech_Serov_SA/Task04/task4.bat' with working directory '/home/andrey/labs/DBTech/301_DBTech_Serov_SA/Task04'. Exec format errorAt /home/andrey/projects/mrsu/07_DB_Tech/tools/check_tasks/checks_for_task.ps1:32 char:13 +     $str = (& $command $params | Out-String) +             ~~~~~~~~~~~~~~~~~~.
+ResourceUnavailable: /home/andrey/projects/mrsu/07_DB_Tech/tools/check_tasks/checks_for_task.ps1:32
+Line |
+  32 |      $str = (& $command $params | Out-String)
+     |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Program 'task4.bat' failed to run: An error occurred trying to start process
+     | '/home/andrey/labs/DBTech/301_DBTech_Serov_SA/Task04/task4.bat' with working directory
+     | '/home/andrey/labs/DBTech/301_DBTech_Serov_SA/Task04'. Exec format errorAt
+     | /home/andrey/projects/mrsu/07_DB_Tech/tools/check_tasks/checks_for_task.ps1:32 char:13 +     $str
+     | = (& $command $params | Out-String) +             ~~~~~~~~~~~~~~~~~~.
+
+
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/DBTech/301_DBTech_Serov_SA
+Лабораторная работа 4
+Task from branch: Task04
+Creation date: 10/29/2026 16:57:12
+To github.com-mrsu:andpop-mrsu/301_DBTech_Serov_SA.git
+To github.com-mrsu:andpop-mrsu/301_DBTech_Serov_SA.git
+   ae3a4c5..efded7c  master -> master
+   ae3a4c5..efded7c  master -> master
 301_DBTech_SHaposhnikov_MV
 301_DBTech_Smirnov_AS
 301_DBTech_Umyarov_AR
 301_DBTech_Vashurkina_AD
 301_DBTech_Vorobeva_AD
+=====================================================
+/home/andrey/labs/DBTech/301_DBTech_Vorobeva_AD
+Из github.com-mrsu:andpop-mrsu/301_DBTech_Vorobeva_AD
+Из github.com-mrsu:andpop-mrsu/301_DBTech_Vorobeva_AD
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Из https://github.com/5alevtina555-bit/301_DBTech_Vorobeva_AD
+Из https://github.com/5alevtina555-bit/301_DBTech_Vorobeva_AD
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task04     -> student/Task04
+Merge made by the 'ort' strategy.
+ Task04/db_init.sql      | 33187 ++++++++++++++++++++++++++++++++++++++++++++++
+ Task04/movies_rating.db |   Bin 0 -> 1069056 bytes
+ Task04/task4.bat        |    47 +
+ 3 files changed, 33234 insertions(+)
+ create mode 100644 Task04/db_init.sql
+ create mode 100644 Task04/movies_rating.db
+ create mode 100644 Task04/task4.bat
+--------------------------------------------------
+Task:  /home/andrey/labs/DBTech/301_DBTech_Vorobeva_AD/Task04
+--------------------------------------------------
+Check path: db_init.sql
+--------------------------------------------------
+Check path: task4.bat
+#!/bin/bash
+
+# Проверяем, существует ли база данных. Если нет - создаем.
+if [ ! -f movies_rating.db ]; then
+    echo "Создание базы данных..."
+    sqlite3 movies_rating.db < db_init.sql
+    echo "База создана!"
+fi
+
+echo "1. Найти все пары пользователей, оценивших один и тот же фильм. Устранить дубликаты, проверить отсутствие пар с самим собой. Для каждой пары должны быть указаны имена пользователей и название фильма, который они ценили. В списке оставить первые 100 записей."
+echo "--------------------------------------------------------------------------------"
+sqlite3 movies_rating.db -box -echo "SELECT DISTINCT u1.name AS user1, u2.name AS user2, m.title FROM ratings r1 JOIN ratings r2 ON r1.movie_id = r2.movie_id AND r1.user_id < r2.user_id JOIN users u1 ON r1.user_id = u1.id JOIN users u2 ON r2.user_id = u2.id JOIN movies m ON r1.movie_id = m.id LIMIT 100;"
+echo " "
+
+echo "2. Найти 10 самых свежих оценок от разных пользователей, вывести названия фильмов, имена пользователей, оценку, дату отзыва в формате ГГГГ-ММ-ДД."
+echo "--------------------------------------------------------------------------------"
+sqlite3 movies_rating.db -box -echo "SELECT m.title, u.name, r.rating, date(r.timestamp, 'unixepoch') AS rating_date FROM ratings r JOIN users u ON r.user_id = u.id JOIN movies m ON r.movie_id = m.id GROUP BY r.user_id ORDER BY r.timestamp DESC LIMIT 10;"
+echo " "
+
+echo "3. Вывести в одном списке все фильмы с максимальным средним рейтингом и все фильмы с минимальным средним рейтингом. Общий список отсортировать по году выпуска и названию фильма. В зависимости от рейтинга в колонке 'Рекомендуем' для фильмов должно быть написано 'Да' или 'Нет'."
+echo "--------------------------------------------------------------------------------"
+sqlite3 movies_rating.db -box -echo "WITH AvgRatings AS (SELECT m.id, m.title, m.year, AVG(r.rating) AS avg_rating FROM movies m JOIN ratings r ON m.id = r.movie_id WHERE m.year IS NOT NULL GROUP BY m.id), MinMax AS (SELECT MAX(avg_rating) AS max_r, MIN(avg_rating) AS min_r FROM AvgRatings) SELECT title, year, avg_rating, CASE WHEN avg_rating = (SELECT max_r FROM MinMax) THEN 'Да' ELSE 'Нет' END AS 'Рекомендуем' FROM AvgRatings WHERE avg_rating = (SELECT max_r FROM MinMax) OR avg_rating = (SELECT min_r FROM MinMax) ORDER BY year ASC, title ASC;"
+echo " "
+
+echo "4. Вычислить количество оценок и среднюю оценку, которую дали фильмам пользователи-женщины в период с 2010 по 2012 год."
+echo "--------------------------------------------------------------------------------"
+sqlite3 movies_rating.db -box -echo "SELECT COUNT(r.id) AS count_ratings, AVG(r.rating) AS avg_rating FROM ratings r JOIN users u ON r.user_id = u.id WHERE u.gender = 'female' AND strftime('%Y', datetime(r.timestamp, 'unixepoch')) BETWEEN '2010' AND '2012';"
+echo " "
+
+echo "5. Составить список фильмов с указанием их средней оценки и места в рейтинге по средней оценке. Полученный список отсортировать по году выпуска и названиям фильмов. В списке оставить первые 20 записей."
+echo "--------------------------------------------------------------------------------"
+sqlite3 movies_rating.db -box -echo "WITH AvgRatings AS (SELECT m.id, m.title, m.year, AVG(r.rating) AS avg_rating FROM movies m JOIN ratings r ON m.id = r.movie_id WHERE m.year IS NOT NULL GROUP BY m.id) SELECT title, year, avg_rating, RANK() OVER (ORDER BY avg_rating DESC) AS rating_place FROM AvgRatings ORDER BY year ASC, title ASC LIMIT 20;"
+echo " "
+
+echo "6. Вывести список из 10 последних зарегистрированных пользователей в формате 'Фамилия Имя|Дата регистрации' (сначала фамилия, потом имя)."
+echo "--------------------------------------------------------------------------------"
+sqlite3 movies_rating.db -box -echo "SELECT substr(name, instr(name, ' ') + 1) || ' ' || substr(name, 1, instr(name, ' ') - 1) || '|' || register_date AS user_info FROM users ORDER BY register_date DESC LIMIT 10;"
+echo " "
+
+echo "7. С помощью рекурсивного CTE составить таблицу умножения для чисел от 1 до 10. Должен получиться один столбец следующего вида:"
+echo "--------------------------------------------------------------------------------"
+sqlite3 movies_rating.db -box -echo "WITH RECURSIVE multiplication(i, j) AS (SELECT 1, 1 UNION ALL SELECT CASE WHEN j = 10 THEN i + 1 ELSE i END, CASE WHEN j = 10 THEN 1 ELSE j + 1 END FROM multiplication WHERE i <= 10 AND NOT (i = 10 AND j = 10)) SELECT i || 'x' || j || '=' || (i * j) AS result FROM multiplication;"
+echo " "
+
+echo "8. С помощью рекурсивного CTE выделить все жанры фильмов, имеющиеся в таблице movies (каждый жанр в отдельной строке)."
+echo "--------------------------------------------------------------------------------"
+sqlite3 movies_rating.db -box -echo "WITH RECURSIVE split(genre, rest) AS (SELECT '', genres || '|' FROM movies UNION ALL SELECT substr(rest, 0, instr(rest, '|')), substr(rest, instr(rest, '|') + 1) FROM split WHERE rest <> '') SELECT DISTINCT genre FROM split WHERE genre <> '' ORDER BY genre;"
+--------------------------------------------------
+Run: ./task4.bat
+PS>TerminatingError(): "Cannot run a document in the middle of a pipeline: /home/andrey/labs/DBTech/301_DBTech_Vorobeva_AD/Task04/task4.bat."
+InvalidOperation: /home/andrey/projects/mrsu/07_DB_Tech/tools/check_tasks/checks_for_task.ps1:32
+Line |
+  32 |      $str = (& $command $params | Out-String)
+     |              ~~~~~~~~~~~~~~~~~~
+     | Cannot run a document in the middle of a pipeline: /home/andrey/labs/DBTech/301_DBTech_Vorobeva_AD/Task04/task4.bat.
+InvalidOperation: /home/andrey/projects/mrsu/07_DB_Tech/tools/check_tasks/checks_for_task.ps1:32
+Line |
+  32 |      $str = (& $command $params | Out-String)
+     |              ~~~~~~~~~~~~~~~~~~
+     | Cannot run a document in the middle of a pipeline:
+     | /home/andrey/labs/DBTech/301_DBTech_Vorobeva_AD/Task04/task4.bat.
+
+
+Execution fails
+--------------------------------------------------
+Total ok: 2
+Total error: 1
+--------------------------------------------------
+/home/andrey/labs/DBTech/301_DBTech_Vorobeva_AD
+Лаба 4
+Task from branch: Task04
+Creation date: 10/29/2026 18:36:25
+To github.com-mrsu:andpop-mrsu/301_DBTech_Vorobeva_AD.git
+To github.com-mrsu:andpop-mrsu/301_DBTech_Vorobeva_AD.git
+   b6d0514..4c50de5  master -> master
+   b6d0514..4c50de5  master -> master
 301_DBTech_YAskin_DE
 301_DBTech_Zinyaev_ME
 302_DBTech_Ali_AAA
@@ -49,5 +2079,5 @@ Transcript started, output file is log.txt
 302_DBTech_Zabolotnaya_SA
 **********************
 PowerShell transcript end
-End time: 20260903095158
+End time: 20261101215237
 **********************

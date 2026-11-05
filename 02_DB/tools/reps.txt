@@ -7,8 +7,8 @@
 304_DB_Denisov_MS
 304_DB_Efimkin_KD
 304_DB_Zyuzin_VV
-304_DB_Igushkin_Evgenij_V
-304_DB_KochkarovaSH
+304_DB_Igushkin_EV
+304_DB_Kochkarova_SH
 304_DB_Kryazhev_IO
 304_DB_Ksenofontov_SS
 304_DB_Madonov_AS
@@ -17,3 +17,8 @@
 304_DB_Puzanov_SA
 304_DB_Rustamova_A
 304_DB_Semonchenkov_IV
+304_DB_Suldina_AN
+304_DB_Tuzhilkin_EV
+304_DB_Fedorova_DA
+304_DB_CHadin_EYU
+304_DB_CHelnakov_DS

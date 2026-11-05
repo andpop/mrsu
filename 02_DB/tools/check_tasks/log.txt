@@ -1,136 +1,112 @@
 **********************
 PowerShell transcript start
-Start time: 20260304215627
+Start time: 20261101220800
 **********************
 Transcript started, output file is log.txt
-304_DB_Lukovataya_KV
-304_DB_Nepyanova_AP
+304_DB_Ariskin_IV
+304_DB_Bajol_AA
 =====================================================
-/home/andrey/labs/DB/304_DB_Nepyanova_AP
-Из github.com-mrsu:andpop-mrsu/304_DB_Nepyanova_AP
-Из github.com-mrsu:andpop-mrsu/304_DB_Nepyanova_AP
+/home/andrey/labs/DB/304_DB_Bajol_AA
+Из github.com-mrsu:andpop-mrsu/304_DB_Bajol_AA
+Из github.com-mrsu:andpop-mrsu/304_DB_Bajol_AA
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
-   c452858..2a17410  master     -> teacher/master
-   c452858..2a17410  master     -> teacher/master
-Обновление c452858..2a17410
-Fast-forward
- task07.md | 26 ++++++++++++++++++++++++++
- task08.md | 37 +++++++++++++++++++++++++++++++++++++
- 2 files changed, 63 insertions(+)
- create mode 100644 task07.md
- create mode 100644 task08.md
-Из https://github.com/Phosgene1/304_DB_Nepyanova_AP
-Из https://github.com/Phosgene1/304_DB_Nepyanova_AP
+Уже актуально.
+Из https://github.com/AnastasBayol/304_DB_Bajol_AA
+Из https://github.com/AnastasBayol/304_DB_Bajol_AA
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task01     -> student/Task01
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task02     -> student/Task02
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task03     -> student/Task03
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task05     -> student/Task05
  * [новая ветка]     master     -> student/master
  * [новая ветка]     master     -> student/master
-Обновление 2a17410..542b133
+Обновление 2aa89bf..e921781
 Fast-forward (no commit created; -m option ignored)
- Task01/README.md                  |   104 +
- Task01/genres.txt                 |    18 +
- Task01/movies.csv                 |  9743 +++++++++++
- Task01/occupation.txt             |    21 +
- Task01/ratings.csv                | 18774 ++++++++++++++++++++
- Task01/ratings_count.txt          |     2 +
- Task01/sqlite.txt                 |    29 +
- Task01/tags.csv                   |  3684 ++++
- Task01/users.txt                  |   943 +
- Task02/README.md                  |   127 +
- Task02/db_init.bat                |     3 +
- Task02/db_init.sql                | 33183 ++++++++++++++++++++++++++++++++++++
- Task02/genres.txt                 |    18 +
- Task02/make_db_init.py            |   206 +
- Task02/movies.csv                 |  9743 +++++++++++
- Task02/movies_rating.db           |   Bin 0 -> 1069056 bytes
- Task02/occupation.txt             |    21 +
- Task02/ratings.csv                | 18774 ++++++++++++++++++++
- Task02/tags.csv                   |  3684 ++++
- Task02/users.txt                  |   943 +
- Task03/db_init.sql                | 33183 ++++++++++++++++++++++++++++++++++++
- Task03/movies_rating.db           |   Bin 0 -> 1069056 bytes
- Task03/task3.bat                  |    44 +
- Task04/db_init.sql                | 33183 ++++++++++++++++++++++++++++++++++++
- Task04/movies_rating.db           |   Bin 0 -> 1069056 bytes
- Task04/task4.bat                  |    43 +
- Task05/data_add.sql               |    66 +
- Task05/db_init.sql                |    81 +
- Task05/db_schema.jpg              |   Bin 0 -> 150558 bytes
- Task05/movies_rating.db           |   Bin 0 -> 81920 bytes
- Task06/ER.jpg                     |   Bin 0 -> 226716 bytes
- Task06/db_init.sql                |   163 +
- Task06/db_schema.jpg              |   Bin 0 -> 217128 bytes
- Task07/index.php                  |   188 +
- Task07/task7_cli.php              |   186 +
- Task08/data/init.sql              |    76 +
- Task08/data/service_station.db    |   Bin 0 -> 32768 bytes
- Task08/public/Database.php        |    14 +
- Task08/public/employee_add.php    |    72 +
- Task08/public/employee_delete.php |    73 +
- Task08/public/employee_edit.php   |    87 +
- Task08/public/index.php           |    81 +
- Task08/public/schedule.php        |   106 +
- Task08/public/schedule_add.php    |   105 +
- Task08/public/schedule_delete.php |    75 +
- Task08/public/schedule_edit.php   |   104 +
- Task08/public/work_add.php        |    95 +
- Task08/public/work_delete.php     |    73 +
- Task08/public/work_edit.php       |    99 +
- Task08/public/works.php           |   103 +
- 50 files changed, 168320 insertions(+)
- create mode 100644 Task01/README.md
- create mode 100644 Task01/genres.txt
- create mode 100644 Task01/movies.csv
- create mode 100644 Task01/occupation.txt
- create mode 100644 Task01/ratings.csv
- create mode 100644 Task01/ratings_count.txt
- create mode 100644 Task01/sqlite.txt
- create mode 100644 Task01/tags.csv
- create mode 100644 Task01/users.txt
- create mode 100644 Task02/README.md
- create mode 100644 Task02/db_init.bat
- create mode 100644 Task02/db_init.sql
- create mode 100644 Task02/genres.txt
- create mode 100644 Task02/make_db_init.py
- create mode 100644 Task02/movies.csv
- create mode 100644 Task02/movies_rating.db
- create mode 100644 Task02/occupation.txt
- create mode 100644 Task02/ratings.csv
- create mode 100644 Task02/tags.csv
- create mode 100644 Task02/users.txt
- create mode 100644 Task03/db_init.sql
- create mode 100644 Task03/movies_rating.db
- create mode 100644 Task03/task3.bat
- create mode 100644 Task04/db_init.sql
- create mode 100644 Task04/movies_rating.db
- create mode 100644 Task04/task4.bat
+ Task05/data_add.sql  |    27 +
+ Task05/db_init.sql   | 54475 +++++++++++++++++++++++++++++++++++++++++++++++++
+ Task05/db_schema.jpg |   Bin 0 -> 45303 bytes
+ 3 files changed, 54502 insertions(+)
  create mode 100644 Task05/data_add.sql
  create mode 100644 Task05/db_init.sql
  create mode 100644 Task05/db_schema.jpg
- create mode 100644 Task05/movies_rating.db
- create mode 100644 Task06/ER.jpg
- create mode 100644 Task06/db_init.sql
- create mode 100644 Task06/db_schema.jpg
- create mode 100644 Task07/index.php
- create mode 100644 Task07/task7_cli.php
- create mode 100644 Task08/data/init.sql
- create mode 100644 Task08/data/service_station.db
- create mode 100644 Task08/public/Database.php
- create mode 100644 Task08/public/employee_add.php
- create mode 100644 Task08/public/employee_delete.php
- create mode 100644 Task08/public/employee_edit.php
- create mode 100644 Task08/public/index.php
- create mode 100644 Task08/public/schedule.php
- create mode 100644 Task08/public/schedule_add.php
- create mode 100644 Task08/public/schedule_delete.php
- create mode 100644 Task08/public/schedule_edit.php
- create mode 100644 Task08/public/work_add.php
- create mode 100644 Task08/public/work_delete.php
- create mode 100644 Task08/public/work_edit.php
- create mode 100644 Task08/public/works.php
-Task from branch: master
-Creation date: 03/03/2026 20:19:46
-Checking script check_master.ps1 not found
+--------------------------------------------------
+Task:  /home/andrey/labs/DB/304_DB_Bajol_AA/Task05
+--------------------------------------------------
+Check path: db_init.sql
+--------------------------------------------------
+Check path: data_add.sql
+-- 1. Добавление 5 новых пользователей (я + 4 соседа по списку)
+INSERT INTO users (first_name, last_name, email, gender, occupation_id) VALUES 
+('Ilya', 'Ariskin', 'ilya.ariskin@uni.edu', 'male', (SELECT id FROM occupations WHERE name = 'student')),
+('Anastasia', 'Bajol', 'anastasia.bajol@uni.edu', 'female', (SELECT id FROM occupations WHERE name = 'student')),
+('Maxim', 'Bashmakov', 'maxim.bashmakov@uni.edu', 'male', (SELECT id FROM occupations WHERE name = 'student')),
+('Ilya', 'Berman', 'ilya.berman@uni.edu', 'male', (SELECT id FROM occupations WHERE name = 'student')),
+('Gleb', 'Veldyaskin', 'gleb.veldyaskin@uni.edu', 'male', (SELECT id FROM occupations WHERE name = 'student'));
+
+-- 2. Добавление 3 новых фильмов разных жанров
+INSERT OR IGNORE INTO movies (title, year) VALUES 
+('The Matrix', 1999),
+('Inception', 2010),
+('The Grand Budapest Hotel', 2014);
+
+-- Связываем фильмы с жанрами 
+INSERT OR IGNORE INTO movie_genres (movie_id, genre_id) VALUES 
+((SELECT id FROM movies WHERE title = 'The Matrix'), (SELECT id FROM genres WHERE name = 'Sci-Fi')),
+((SELECT id FROM movies WHERE title = 'The Matrix'), (SELECT id FROM genres WHERE name = 'Action')),
+((SELECT id FROM movies WHERE title = 'Inception'), (SELECT id FROM genres WHERE name = 'Sci-Fi')),
+((SELECT id FROM movies WHERE title = 'Inception'), (SELECT id FROM genres WHERE name = 'Thriller')),
+((SELECT id FROM movies WHERE title = 'The Grand Budapest Hotel'), (SELECT id FROM genres WHERE name = 'Comedy'));
+
+-- 3. Добавление 3 новых отзывов от меня (Anastasia Bajol)
+INSERT INTO ratings (user_id, movie_id, rating) VALUES 
+((SELECT id FROM users WHERE email = 'anastasia.bajol@uni.edu'), (SELECT id FROM movies WHERE title = 'The Matrix'), 5.0),
+((SELECT id FROM users WHERE email = 'anastasia.bajol@uni.edu'), (SELECT id FROM movies WHERE title = 'Inception'), 4.5),
+((SELECT id FROM users WHERE email = 'anastasia.bajol@uni.edu'), (SELECT id FROM movies WHERE title = 'The Grand Budapest Hotel'), 5.0);
+--------------------------------------------------
+Check path: db_schema.jpg
+--------------------------------------------------
+Run: sqlite3 test.db .read db_init.sql
+
+--------------------------------------------------
+Run: sqlite3 test.db select count(*) from users
+943
+--------------------------------------------------
+Total ok: 5
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/DB/304_DB_Bajol_AA
+Лабораторная работа 5. Байол А.А
+Task from branch: Task05
+Creation date: 10/31/2026 22:48:27
+304_DB_Bashmakov_MI
+304_DB_Berman_IA
+304_DB_CHadin_EYU
+304_DB_CHelnakov_DS
+304_DB_Denisov_MS
+304_DB_Efimkin_KD
+304_DB_Fedorova_DA
+304_DB_Igushkin_EV
+304_DB_Kochkarova_SH
+304_DB_Kryazhev_IO
+304_DB_Ksenofontov_SS
+304_DB_Madonov_AS
+304_DB_Medvedev_GI
+304_DB_Mena_VES
+304_DB_Puzanov_SA
+304_DB_Rustamova_A
+304_DB_Semonchenkov_IV
+304_DB_Suldina_AN
+304_DB_Tuzhilkin_EV
+304_DB_Veldyaskin_GV
+304_DB_Voronin_AS
+304_DB_Zyuzin_VV
 **********************
 PowerShell transcript end
-End time: 20260304215633
+End time: 20261101220820
 **********************
