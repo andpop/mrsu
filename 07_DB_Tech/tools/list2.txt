@@ -1,8 +1,9 @@
-301_DBTech_Eremin_VS
-301_DBTech_ZHurin_IA
-301_DBTech_Karmyshev_IR
-301_DBTech_Kuchina_AS
-301_DBTech_Larkin_MS
-302_DBTech_Karmazov_NA
-302_DBTech_Kitaev_EV
-302_DBTech_Kopein_AS
+301_DBTech_Vashurkina_AD
+301_DBTech_Vorobeva_AD
+301_DBTech_Galstyan_VN
+301_DBTech_Zinyaev_ME
+302_DBTech_Verochkin_DA
+302_DBTech_Ganin_NS
+302_DBTech_Gudkov_MA
+302_DBTech_Gusev_DD
+

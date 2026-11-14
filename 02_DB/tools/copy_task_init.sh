@@ -8,8 +8,8 @@ echo $pwd
 
 # task_number=$2
 
-for student in $(cat "${pwd}/students-list1.txt"); do
-# for student in $(cat "${pwd}/list4.txt"); do
+# for student in $(cat "${pwd}/students-list2.txt"); do
+for student in $(cat "${pwd}/list5.txt"); do
 # for student in $(cat "$REPS_FILE"); do
     echo "----------------------------------------------------------------------------------"
     echo $student
@@ -28,15 +28,15 @@ for student in $(cat "${pwd}/students-list1.txt"); do
     # cp "${pwd}/../tasks/task02.md" "${student_dir}/task02.md"
     # cp "${pwd}/../tasks/task04_1.md" "${student_dir}/task04.md"
     # cp "${pwd}/../tasks/task04_1.md" "${student_dir}/task04.md"
-    cp "${pwd}/../tasks/task05.md" "${student_dir}/task05.md"
-    # cp "${pwd}/../tasks/task06.md" "${student_dir}/task06.md"
+    # cp "${pwd}/../tasks/task05.md" "${student_dir}/task05.md"
+    cp "${pwd}/../tasks/task06.md" "${student_dir}/task06.md"
     # cp "${pwd}/../tasks/task07_1.md" "${student_dir}/task07.md"
     # cp "${pwd}/../tasks/task08_1.md" "${student_dir}/task08.md"
     # cp "${pwd}/tasks/task09_5.md" "${student_dir}/task09.md"
-    # cp "${pwd}/../tasks/specification_04.md" "${student_dir}/specification.md"
+    cp "${pwd}/../tasks/specification_05.md" "${student_dir}/specification.md"
 
     git add -A
-    git commit -m "Add task05"
+    git commit -m "Add task06"
     git push teacher master
     cd "${pwd}"
 done

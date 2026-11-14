@@ -1,7 +1,6 @@
-304_DB_Kuvakin_RA
-304_DB_Kurmakaev_RA
-304_DB_Lukovataya_KV
-304_DB_Migachev_IP
-304_DB_Moiseev_OM
-
+304_DB_Kochkarova_SH
+304_DB_Kryazhev_IO
+304_DB_Ksenofontov_SS
+304_DB_Madonov_AS
+304_DB_Medvedev_GI
 

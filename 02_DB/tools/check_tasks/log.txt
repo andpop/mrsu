@@ -1,73 +1,65 @@
 **********************
 PowerShell transcript start
-Start time: 20261101220800
+Start time: 20261114133711
 **********************
 Transcript started, output file is log.txt
 304_DB_Ariskin_IV
-304_DB_Bajol_AA
 =====================================================
-/home/andrey/labs/DB/304_DB_Bajol_AA
-Из github.com-mrsu:andpop-mrsu/304_DB_Bajol_AA
-Из github.com-mrsu:andpop-mrsu/304_DB_Bajol_AA
+/home/andrey/labs/DB/304_DB_Ariskin_IV
+Из github.com-mrsu:andpop-mrsu/304_DB_Ariskin_IV
+Из github.com-mrsu:andpop-mrsu/304_DB_Ariskin_IV
  * branch            master     -> FETCH_HEAD
  * branch            master     -> FETCH_HEAD
 Уже актуально.
-Из https://github.com/AnastasBayol/304_DB_Bajol_AA
-Из https://github.com/AnastasBayol/304_DB_Bajol_AA
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task01     -> student/Task01
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task02     -> student/Task02
- * [новая ветка]     Task03     -> student/Task03
- * [новая ветка]     Task03     -> student/Task03
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Из https://github.com/ilipashka/304_DB_Ariskin_IV
+Из https://github.com/ilipashka/304_DB_Ariskin_IV
  * [новая ветка]     Task04     -> student/Task04
  * [новая ветка]     Task04     -> student/Task04
  * [новая ветка]     Task05     -> student/Task05
  * [новая ветка]     Task05     -> student/Task05
- * [новая ветка]     master     -> student/master
- * [новая ветка]     master     -> student/master
-Обновление 2aa89bf..e921781
-Fast-forward (no commit created; -m option ignored)
- Task05/data_add.sql  |    27 +
- Task05/db_init.sql   | 54475 +++++++++++++++++++++++++++++++++++++++++++++++++
- Task05/db_schema.jpg |   Bin 0 -> 45303 bytes
- 3 files changed, 54502 insertions(+)
+   e0b7bf9..edbda0e  master     -> student/master
+   e0b7bf9..edbda0e  master     -> student/master
+Merge made by the 'ort' strategy.
+ Task05/data_add.sql  |    25 +
+ Task05/db_init.sql   | 55135 +++++++++++++++++++++++++++++++++++++++++++++++++
+ Task05/db_schema.jpg |   Bin 0 -> 59643 bytes
+ 3 files changed, 55160 insertions(+)
  create mode 100644 Task05/data_add.sql
  create mode 100644 Task05/db_init.sql
  create mode 100644 Task05/db_schema.jpg
 --------------------------------------------------
-Task:  /home/andrey/labs/DB/304_DB_Bajol_AA/Task05
+Task:  /home/andrey/labs/DB/304_DB_Ariskin_IV/Task05
 --------------------------------------------------
 Check path: db_init.sql
 --------------------------------------------------
 Check path: data_add.sql
 -- 1. Добавление 5 новых пользователей (я + 4 соседа по списку)
 INSERT INTO users (first_name, last_name, email, gender, occupation_id) VALUES 
-('Ilya', 'Ariskin', 'ilya.ariskin@uni.edu', 'male', (SELECT id FROM occupations WHERE name = 'student')),
-('Anastasia', 'Bajol', 'anastasia.bajol@uni.edu', 'female', (SELECT id FROM occupations WHERE name = 'student')),
-('Maxim', 'Bashmakov', 'maxim.bashmakov@uni.edu', 'male', (SELECT id FROM occupations WHERE name = 'student')),
-('Ilya', 'Berman', 'ilya.berman@uni.edu', 'male', (SELECT id FROM occupations WHERE name = 'student')),
-('Gleb', 'Veldyaskin', 'gleb.veldyaskin@uni.edu', 'male', (SELECT id FROM occupations WHERE name = 'student'));
+('Ilya', 'Ariskin', 'arisili@ya.ru', 'male', (SELECT id FROM occupations WHERE name = 'student')),
+('Anastasia', 'Bajol', 'anastasiabajol@gmail.com', 'female', (SELECT id FROM occupations WHERE name = 'student')),
+('Maxim', 'Bashmakov', 'maximbashmakov@gmail.com', 'male', (SELECT id FROM occupations WHERE name = 'student')),
+('Ilya', 'Berman', 'ilyaberman@gmail.com', 'male', (SELECT id FROM occupations WHERE name = 'student')),
+('Gleb', 'Veldyaskin', 'glebveldyaskin@gmail.com', 'male', (SELECT id FROM occupations WHERE name = 'student'));
 
 -- 2. Добавление 3 новых фильмов разных жанров
 INSERT OR IGNORE INTO movies (title, year) VALUES 
-('The Matrix', 1999),
-('Inception', 2010),
-('The Grand Budapest Hotel', 2014);
+('Drive', 2011),
+('Intouchables', 2011),
+('Interstellar', 2014);
 
 -- Связываем фильмы с жанрами 
 INSERT OR IGNORE INTO movie_genres (movie_id, genre_id) VALUES 
-((SELECT id FROM movies WHERE title = 'The Matrix'), (SELECT id FROM genres WHERE name = 'Sci-Fi')),
-((SELECT id FROM movies WHERE title = 'The Matrix'), (SELECT id FROM genres WHERE name = 'Action')),
-((SELECT id FROM movies WHERE title = 'Inception'), (SELECT id FROM genres WHERE name = 'Sci-Fi')),
-((SELECT id FROM movies WHERE title = 'Inception'), (SELECT id FROM genres WHERE name = 'Thriller')),
-((SELECT id FROM movies WHERE title = 'The Grand Budapest Hotel'), (SELECT id FROM genres WHERE name = 'Comedy'));
+((SELECT id FROM movies WHERE title = 'Drive'), (SELECT id FROM genres WHERE name = 'Thriller')),
+((SELECT id FROM movies WHERE title = 'Intouchables'), (SELECT id FROM genres WHERE name = 'Comedy')),
+((SELECT id FROM movies WHERE title = 'Interstellar'), (SELECT id FROM genres WHERE name = 'Sci-Fi'));
 
 -- 3. Добавление 3 новых отзывов от меня (Anastasia Bajol)
 INSERT INTO ratings (user_id, movie_id, rating) VALUES 
-((SELECT id FROM users WHERE email = 'anastasia.bajol@uni.edu'), (SELECT id FROM movies WHERE title = 'The Matrix'), 5.0),
-((SELECT id FROM users WHERE email = 'anastasia.bajol@uni.edu'), (SELECT id FROM movies WHERE title = 'Inception'), 4.5),
-((SELECT id FROM users WHERE email = 'anastasia.bajol@uni.edu'), (SELECT id FROM movies WHERE title = 'The Grand Budapest Hotel'), 5.0);
+((SELECT id FROM users WHERE email = 'arisili@ya.ru'), (SELECT id FROM movies WHERE title = 'Drive'), 4.1),
+((SELECT id FROM users WHERE email = 'arisili@ya.ru'), (SELECT id FROM movies WHERE title = 'Intouchables'), 4.6),
+((SELECT id FROM users WHERE email = 'arisili@ya.ru'), (SELECT id FROM movies WHERE title = 'Interstellar'), 5.0);
 --------------------------------------------------
 Check path: db_schema.jpg
 --------------------------------------------------
@@ -80,11 +72,135 @@ Run: sqlite3 test.db select count(*) from users
 Total ok: 5
 Total error: 0
 --------------------------------------------------
-/home/andrey/labs/DB/304_DB_Bajol_AA
-Лабораторная работа 5. Байол А.А
+/home/andrey/labs/DB/304_DB_Ariskin_IV
+Task05
 Task from branch: Task05
-Creation date: 10/31/2026 22:48:27
+Creation date: 11/13/2026 11:32:46
+To github.com-mrsu:andpop-mrsu/304_DB_Ariskin_IV.git
+To github.com-mrsu:andpop-mrsu/304_DB_Ariskin_IV.git
+   2b66161..49e8f00  master -> master
+   2b66161..49e8f00  master -> master
+304_DB_Bajol_AA
 304_DB_Bashmakov_MI
+=====================================================
+/home/andrey/labs/DB/304_DB_Bashmakov_MI
+Из github.com-mrsu:andpop-mrsu/304_DB_Bashmakov_MI
+Из github.com-mrsu:andpop-mrsu/304_DB_Bashmakov_MI
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Из https://github.com/Klakles/304_DB_Bashmakov_MI
+Из https://github.com/Klakles/304_DB_Bashmakov_MI
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task05     -> student/Task05
+Merge made by the 'ort' strategy.
+ Task05/data_add.sql  |    72 +
+ Task05/db_init.sql   | 56925 +++++++++++++++++++++++++++++++++++++++++++++++++
+ Task05/db_schema.jpg |   Bin 0 -> 143229 bytes
+ 3 files changed, 56997 insertions(+)
+ create mode 100644 Task05/data_add.sql
+ create mode 100644 Task05/db_init.sql
+ create mode 100644 Task05/db_schema.jpg
+--------------------------------------------------
+Task:  /home/andrey/labs/DB/304_DB_Bashmakov_MI/Task05
+--------------------------------------------------
+Check path: db_init.sql
+--------------------------------------------------
+Check path: data_add.sql
+PRAGMA foreign_keys=ON;
+
+-- =====================================================
+-- 1. Добавление пяти новых пользователей
+--    (я + четыре соседа по списку группы)
+--    Дата регистрации определяется по системному времени
+-- =====================================================
+INSERT INTO users (name, email, gender_id, register_date, occupation_id)
+VALUES ('Башмаков Максим', 'bashmakov.mi@student.ru',
+        (SELECT id FROM genders WHERE name = 'male'),
+        DATE('now'),
+        (SELECT id FROM occupations WHERE name = 'student'));
+
+INSERT INTO users (name, email, gender_id, register_date, occupation_id)
+VALUES ('Иванов Иван', 'ivanov.ii@student.ru',
+        (SELECT id FROM genders WHERE name = 'male'),
+        DATE('now'),
+        (SELECT id FROM occupations WHERE name = 'student'));
+
+INSERT INTO users (name, email, gender_id, register_date, occupation_id)
+VALUES ('Петрова Анна', 'petrova.aa@student.ru',
+        (SELECT id FROM genders WHERE name = 'female'),
+        DATE('now'),
+        (SELECT id FROM occupations WHERE name = 'student'));
+
+INSERT INTO users (name, email, gender_id, register_date, occupation_id)
+VALUES ('Сидоров Пётр', 'sidorov.pp@student.ru',
+        (SELECT id FROM genders WHERE name = 'male'),
+        DATE('now'),
+        (SELECT id FROM occupations WHERE name = 'student'));
+
+INSERT INTO users (name, email, gender_id, register_date, occupation_id)
+VALUES ('Козлова Мария', 'kozlova.mm@student.ru',
+        (SELECT id FROM genders WHERE name = 'female'),
+        DATE('now'),
+        (SELECT id FROM occupations WHERE name = 'student'));
+
+-- =====================================================
+-- 2. Добавление трёх новых фильмов разных жанров
+-- =====================================================
+INSERT INTO movies (title, year) VALUES ('День программиста', 2025);
+INSERT INTO movie_genres (movie_id, genre_id)
+VALUES ((SELECT id FROM movies WHERE title = 'День программиста'),
+        (SELECT id FROM genres WHERE name = 'Comedy'));
+
+INSERT INTO movies (title, year) VALUES ('Тайны баз данных', 2025);
+INSERT INTO movie_genres (movie_id, genre_id)
+VALUES ((SELECT id FROM movies WHERE title = 'Тайны баз данных'),
+        (SELECT id FROM genres WHERE name = 'Documentary'));
+
+INSERT INTO movies (title, year) VALUES ('Нормализация: Начало', 2026);
+INSERT INTO movie_genres (movie_id, genre_id)
+VALUES ((SELECT id FROM movies WHERE title = 'Нормализация: Начало'),
+        (SELECT id FROM genres WHERE name = 'Sci-Fi'));
+
+-- =====================================================
+-- 3. Добавление трёх отзывов о новых фильмах от себя
+-- =====================================================
+INSERT INTO ratings (user_id, movie_id, rating, timestamp)
+VALUES ((SELECT id FROM users WHERE email = 'bashmakov.mi@student.ru'),
+        (SELECT id FROM movies WHERE title = 'День программиста'),
+        5.0, strftime('%s', 'now'));
+
+INSERT INTO ratings (user_id, movie_id, rating, timestamp)
+VALUES ((SELECT id FROM users WHERE email = 'bashmakov.mi@student.ru'),
+        (SELECT id FROM movies WHERE title = 'Тайны баз данных'),
+        4.5, strftime('%s', 'now'));
+
+INSERT INTO ratings (user_id, movie_id, rating, timestamp)
+VALUES ((SELECT id FROM users WHERE email = 'bashmakov.mi@student.ru'),
+        (SELECT id FROM movies WHERE title = 'Нормализация: Начало'),
+        4.0, strftime('%s', 'now'));
+--------------------------------------------------
+Check path: db_schema.jpg
+--------------------------------------------------
+Run: sqlite3 test.db .read db_init.sql
+
+--------------------------------------------------
+Run: sqlite3 test.db select count(*) from users
+943
+--------------------------------------------------
+Total ok: 5
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/DB/304_DB_Bashmakov_MI
+Task05: Нормализация реляционной базы данных. Поддержка логической це…
+Task from branch: Task05
+Creation date: 11/12/2026 21:52:55
+To github.com-mrsu:andpop-mrsu/304_DB_Bashmakov_MI.git
+To github.com-mrsu:andpop-mrsu/304_DB_Bashmakov_MI.git
+   4dca008..cddfa34  master -> master
+   4dca008..cddfa34  master -> master
 304_DB_Berman_IA
 304_DB_CHadin_EYU
 304_DB_CHelnakov_DS
@@ -94,6 +210,134 @@ Creation date: 10/31/2026 22:48:27
 304_DB_Igushkin_EV
 304_DB_Kochkarova_SH
 304_DB_Kryazhev_IO
+=====================================================
+/home/andrey/labs/DB/304_DB_Kryazhev_IO
+Из github.com-mrsu:andpop-mrsu/304_DB_Kryazhev_IO
+Из github.com-mrsu:andpop-mrsu/304_DB_Kryazhev_IO
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Из https://github.com/kryanp-web/304_DB_Kryazhev_IO
+Из https://github.com/kryanp-web/304_DB_Kryazhev_IO
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task04     -> student/Task04
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task05     -> student/Task05
+   a7abf0f..d688179  master     -> student/master
+   a7abf0f..d688179  master     -> student/master
+Merge made by the 'ort' strategy.
+ Task05/data_add.sql  |    77 +
+ Task05/db_init.sql   | 54487 +++++++++++++++++++++++++++++++++++++++++++++++++
+ Task05/db_schema.jpg |   Bin 0 -> 416183 bytes
+ 3 files changed, 54564 insertions(+)
+ create mode 100644 Task05/data_add.sql
+ create mode 100644 Task05/db_init.sql
+ create mode 100644 Task05/db_schema.jpg
+--------------------------------------------------
+Task:  /home/andrey/labs/DB/304_DB_Kryazhev_IO/Task05
+--------------------------------------------------
+Check path: db_init.sql
+--------------------------------------------------
+Check path: data_add.sql
+-- data_add.sql
+-- Добавление новых данных в movies_rating.db
+-- Запросы НЕ зависят от конкретных ID
+
+BEGIN TRANSACTION;
+
+-- ============================================
+-- 1. ПЯТЬ НОВЫХ ПОЛЬЗОВАТЕЛЕЙ
+-- ============================================
+-- Замените ФИО, email и профессии на свои и соседей по группе
+-- Дата регистрации = datetime('now') — системное время
+
+INSERT INTO users (name, email, gender, register_date, occupation_id)
+VALUES
+    ('Кряжев Иван Олегович', 'kryazhev.ivan06+lab5@mail.ru', 'male', datetime('now'),
+        (SELECT id FROM occupations WHERE name = 'engineer')),
+
+    ('Сосед Первый', 'sosed1@example.com', 'male', datetime('now'),
+        (SELECT id FROM occupations WHERE name = 'student')),
+
+    ('Сосед Второй', 'sosed2@example.com', 'female', datetime('now'),
+        (SELECT id FROM occupations WHERE name = 'student')),
+
+    ('Сосед Третий', 'sosed3@example.com', 'male', datetime('now'),
+        (SELECT id FROM occupations WHERE name = 'other')),
+
+    ('Сосед Четвертый', 'sosed4@example.com', 'female', datetime('now'),
+        (SELECT id FROM occupations WHERE name = 'other'));
+
+
+-- ============================================
+-- 2. ТРИ НОВЫХ ФИЛЬМА РАЗНЫХ ЖАНРОВ
+-- ============================================
+-- Жанры: Action, Comedy, Drama
+-- Все фильмы 2024 года (не пересекаются с датасетом)
+
+-- Фильм 1: Action
+INSERT INTO movies (title, year) VALUES ('Новый боевик', 2024);
+INSERT INTO movie_genres (movie_id, genre_id)
+VALUES
+    (last_insert_rowid(), (SELECT id FROM genres WHERE name = 'Action'));
+
+-- Фильм 2: Comedy
+INSERT INTO movies (title, year) VALUES ('Новая комедия', 2024);
+INSERT INTO movie_genres (movie_id, genre_id)
+VALUES
+    (last_insert_rowid(), (SELECT id FROM genres WHERE name = 'Comedy'));
+
+-- Фильм 3: Drama
+INSERT INTO movies (title, year) VALUES ('Новая драма', 2024);
+INSERT INTO movie_genres (movie_id, genre_id)
+VALUES
+    (last_insert_rowid(), (SELECT id FROM genres WHERE name = 'Drama'));
+
+
+-- ============================================
+-- 3. ТРИ НОВЫХ ОТЗЫВА ОТ СЕБЯ
+-- ============================================
+-- user_id = id Кряжева Ивана (по email)
+-- timestamp = текущее Unix-время
+
+INSERT INTO ratings (user_id, movie_id, rating, timestamp)
+VALUES
+    ((SELECT id FROM users WHERE email = 'kryazhev.ivan06+lab5@mail.ru'),
+     (SELECT id FROM movies WHERE title = 'Новый боевик' AND year = 2024),
+     5.0, strftime('%s', 'now')),
+
+    ((SELECT id FROM users WHERE email = 'kryazhev.ivan06+lab5@mail.ru'),
+     (SELECT id FROM movies WHERE title = 'Новая комедия' AND year = 2024),
+     4.5, strftime('%s', 'now')),
+
+    ((SELECT id FROM users WHERE email = 'kryazhev.ivan06+lab5@mail.ru'),
+     (SELECT id FROM movies WHERE title = 'Новая драма' AND year = 2024),
+     4.0, strftime('%s', 'now'));
+
+
+COMMIT;
+--------------------------------------------------
+Check path: db_schema.jpg
+--------------------------------------------------
+Run: sqlite3 test.db .read db_init.sql
+memory
+--------------------------------------------------
+Run: sqlite3 test.db select count(*) from users
+943
+--------------------------------------------------
+Total ok: 5
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/DB/304_DB_Kryazhev_IO
+Лабораторная работа 5
+Task from branch: Task05
+Creation date: 11/12/2026 18:38:50
+To github.com-mrsu:andpop-mrsu/304_DB_Kryazhev_IO.git
+To github.com-mrsu:andpop-mrsu/304_DB_Kryazhev_IO.git
+   725ed39..da7f540  master -> master
+   725ed39..da7f540  master -> master
 304_DB_Ksenofontov_SS
 304_DB_Madonov_AS
 304_DB_Medvedev_GI
@@ -104,9 +348,341 @@ Creation date: 10/31/2026 22:48:27
 304_DB_Suldina_AN
 304_DB_Tuzhilkin_EV
 304_DB_Veldyaskin_GV
+=====================================================
+/home/andrey/labs/DB/304_DB_Veldyaskin_GV
+Из github.com-mrsu:andpop-mrsu/304_DB_Veldyaskin_GV
+Из github.com-mrsu:andpop-mrsu/304_DB_Veldyaskin_GV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Из https://github.com/Xi-0123/304_DB_Veldyaskin_GV_MY
+Из https://github.com/Xi-0123/304_DB_Veldyaskin_GV_MY
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task05     -> student/Task05
+   c672037..c752650  master     -> student/master
+   c672037..c752650  master     -> student/master
+Merge made by the 'ort' strategy.
+ Task05/data_add.sql   |    42 +
+ Task05/db_init.sql    |    64 +
+ Task05/db_schema.jpg  |   Bin 0 -> 45303 bytes
+ Task05/genres.txt     |    18 +
+ Task05/movies.csv     |  9743 +++++++++++++++++++++++++
+ Task05/occupation.txt |    21 +
+ Task05/ratings.csv    | 18774 ++++++++++++++++++++++++++++++++++++++++++++++++
+ Task05/tags.csv       |  3684 ++++++++++
+ Task05/users.txt      |   943 +++
+ 9 files changed, 33289 insertions(+)
+ create mode 100644 Task05/data_add.sql
+ create mode 100644 Task05/db_init.sql
+ create mode 100644 Task05/db_schema.jpg
+ create mode 100644 Task05/genres.txt
+ create mode 100644 Task05/movies.csv
+ create mode 100644 Task05/occupation.txt
+ create mode 100644 Task05/ratings.csv
+ create mode 100644 Task05/tags.csv
+ create mode 100644 Task05/users.txt
+--------------------------------------------------
+Task:  /home/andrey/labs/DB/304_DB_Veldyaskin_GV/Task05
+--------------------------------------------------
+Check path: db_init.sql
+--------------------------------------------------
+Check path: data_add.sql
+-- Включаем поддержку внешних ключей
+PRAGMA foreign_keys = ON;
+
+-- 1. Добавляем 5 новых пользователей (я + 4 соседа)
+-- Дата регистрации определяется системным временем через date('now')
+INSERT INTO users (name, email, gender, reg_date, occupation) VALUES
+('Вельдяскин Г.В.', 'veldyaskin@student.mrsu.ru', 'male', date('now'), 'student'),
+(' Воронин А.С.', 'ivanov@student.mrsu.ru', 'male', date('now'), 'student'),
+('Денисов М.С.', 'petrova@student.mrsu.ru', 'female', date('now'), 'student'),
+('Ефимкин К.Д.', 'sidorov@student.mrsu.ru', 'male', date('now'), 'student'),
+('Зюзин В.В.', 'smirnova@student.mrsu.ru', 'female', date('now'), 'student');
+
+-- 2. Добавляем 3 новых фильма разных жанров
+INSERT INTO movies (title, release_year, genres) VALUES
+('Дюна: Часть вторая (Dune: Part Two)', 2024, 'Action|Adventure|Sci-Fi'),
+('Оппенгеймер (Oppenheimer)', 2023, 'Biography|Drama|History'),
+('Человек-паук: Паутина вселенных (Spider-Man: Across the Spider-Verse)', 2023, 'Animation|Action|Adventure');
+
+-- 3. Добавляем 3 отзыва от "Вельдяскин Г.В." на эти новые фильмы
+-- Мы НЕ указываем ID вручную! Мы динамически находим их через подзапросы.
+-- strftime('%s', 'now') получает текущий timestamp UNIX.
+
+INSERT INTO ratings (userId, movieId, rating, timestamp)
+SELECT 
+    (SELECT userId FROM users WHERE name = 'Вельдяскин Г.В.'),
+    (SELECT movieId FROM movies WHERE title = 'Дюна: Часть вторая (Dune: Part Two)'),
+    5.0,
+    strftime('%s', 'now');
+
+INSERT INTO ratings (userId, movieId, rating, timestamp)
+SELECT 
+    (SELECT userId FROM users WHERE name = 'Вельдяяскин Г.В.'),
+    (SELECT movieId FROM movies WHERE title = 'Оппенгеймер (Oppenheimer)'),
+    4.5,
+    strftime('%s', 'now');
+
+INSERT INTO ratings (userId, movieId, rating, timestamp)
+SELECT 
+    (SELECT userId FROM users WHERE name = 'Вельдяскин Г.В.'),
+    (SELECT movieId FROM movies WHERE title = 'Человек-паук: Паутина вселенных (Spider-Man: Across the Spider-Verse)'),
+    5.0,
+    strftime('%s', 'now');
+--------------------------------------------------
+Check path: db_schema.jpg
+--------------------------------------------------
+Run: sqlite3 test.db .read db_init.sql
+
+--------------------------------------------------
+Run: sqlite3 test.db select count(*) from users
+942
+--------------------------------------------------
+Total ok: 5
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/DB/304_DB_Veldyaskin_GV
+Task05: нормализация БД до 3НФ, добавлены ограничения целостности, ин…
+Task from branch: Task05
+Creation date: 11/13/2026 13:25:10
+To github.com-mrsu:andpop-mrsu/304_DB_Veldyaskin_GV.git
+To github.com-mrsu:andpop-mrsu/304_DB_Veldyaskin_GV.git
+   0dc4363..2440660  master -> master
+   0dc4363..2440660  master -> master
 304_DB_Voronin_AS
+=====================================================
+/home/andrey/labs/DB/304_DB_Voronin_AS
+Из github.com-mrsu:andpop-mrsu/304_DB_Voronin_AS
+Из github.com-mrsu:andpop-mrsu/304_DB_Voronin_AS
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Из https://github.com/hypocr111te/304_DB_Voronin_AS
+Из https://github.com/hypocr111te/304_DB_Voronin_AS
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task05     -> student/Task05
+   2c15c29..8f43d8f  master     -> student/master
+   2c15c29..8f43d8f  master     -> student/master
+Merge made by the 'ort' strategy.
+ Task05/data_add.sql  |    79 +
+ Task05/db_init.sql   | 55423 +++++++++++++++++++++++++++++++++++++++++++++++++
+ Task05/db_schema.jpg |   Bin 0 -> 46036 bytes
+ 3 files changed, 55502 insertions(+)
+ create mode 100644 Task05/data_add.sql
+ create mode 100644 Task05/db_init.sql
+ create mode 100644 Task05/db_schema.jpg
+--------------------------------------------------
+Task:  /home/andrey/labs/DB/304_DB_Voronin_AS/Task05
+--------------------------------------------------
+Check path: db_init.sql
+--------------------------------------------------
+Check path: data_add.sql
+INSERT INTO users (first_name, last_name, email, gender, register_date, occupation_id)
+VALUES (
+  'Алексей', 'Воронин', 'voronin.as@mrsu.ru', 'male',
+  date('now'),
+  (SELECT id FROM occupations WHERE name = 'student')
+);
+
+INSERT INTO users (first_name, last_name, email, gender, register_date, occupation_id)
+VALUES (
+  'Илья', 'Берман', 'berman.ia@mrsu.ru', 'male',
+  date('now'),
+  (SELECT id FROM occupations WHERE name = 'student')
+);
+
+INSERT INTO users (first_name, last_name, email, gender, register_date, occupation_id)
+VALUES (
+  'Глеб', 'Вельдяскин', 'veldyaskin.gv@mrsu.ru', 'male',
+  date('now'),
+  (SELECT id FROM occupations WHERE name = 'student')
+);
+
+INSERT INTO users (first_name, last_name, email, gender, register_date, occupation_id)
+VALUES (
+  'Максим', 'Денисов', 'denisov.ms@mrsu.ru', 'male',
+  date('now'),
+  (SELECT id FROM occupations WHERE name = 'student')
+);
+
+INSERT INTO users (first_name, last_name, email, gender, register_date, occupation_id)
+VALUES (
+  'Кирилл', 'Ефимкин', 'efimkin.kd@mrsu.ru', 'male',
+  date('now'),
+  (SELECT id FROM occupations WHERE name = 'student')
+);
+
+INSERT INTO movies (title, year) VALUES ('Inception Fan Cut', 2024);
+INSERT INTO movie_genres (movie_id, genre_id)
+VALUES (
+  (SELECT id FROM movies WHERE title = 'Inception Fan Cut' AND year = 2024),
+  (SELECT id FROM genres WHERE name = 'Sci-Fi')
+);
+
+INSERT INTO movies (title, year) VALUES ('Campus Comedy Night', 2025);
+INSERT INTO movie_genres (movie_id, genre_id)
+VALUES (
+  (SELECT id FROM movies WHERE title = 'Campus Comedy Night' AND year = 2025),
+  (SELECT id FROM genres WHERE name = 'Comedy')
+);
+
+INSERT INTO movies (title, year) VALUES ('Northern Lights Drama', 2023);
+INSERT INTO movie_genres (movie_id, genre_id)
+VALUES (
+  (SELECT id FROM movies WHERE title = 'Northern Lights Drama' AND year = 2023),
+  (SELECT id FROM genres WHERE name = 'Drama')
+);
+
+INSERT INTO ratings (user_id, movie_id, rating, timestamp)
+VALUES (
+  (SELECT id FROM users WHERE email = 'voronin.as@mrsu.ru'),
+  (SELECT id FROM movies WHERE title = 'Inception Fan Cut' AND year = 2024),
+  4.5,
+  strftime('%s', 'now')
+);
+
+INSERT INTO ratings (user_id, movie_id, rating, timestamp)
+VALUES (
+  (SELECT id FROM users WHERE email = 'voronin.as@mrsu.ru'),
+  (SELECT id FROM movies WHERE title = 'Campus Comedy Night' AND year = 2025),
+  4.0,
+  strftime('%s', 'now')
+);
+
+INSERT INTO ratings (user_id, movie_id, rating, timestamp)
+VALUES (
+  (SELECT id FROM users WHERE email = 'voronin.as@mrsu.ru'),
+  (SELECT id FROM movies WHERE title = 'Northern Lights Drama' AND year = 2023),
+  5.0,
+  strftime('%s', 'now')
+);
+--------------------------------------------------
+Check path: db_schema.jpg
+--------------------------------------------------
+Run: sqlite3 test.db .read db_init.sql
+delete
+--------------------------------------------------
+Run: sqlite3 test.db select count(*) from users
+943
+--------------------------------------------------
+Total ok: 5
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/DB/304_DB_Voronin_AS
+Complete Task05
+Task from branch: Task05
+Creation date: 11/13/2026 17:18:18
+To github.com-mrsu:andpop-mrsu/304_DB_Voronin_AS.git
+To github.com-mrsu:andpop-mrsu/304_DB_Voronin_AS.git
+   8645ae1..ade8a37  master -> master
+   8645ae1..ade8a37  master -> master
 304_DB_Zyuzin_VV
+=====================================================
+/home/andrey/labs/DB/304_DB_Zyuzin_VV
+Из github.com-mrsu:andpop-mrsu/304_DB_Zyuzin_VV
+Из github.com-mrsu:andpop-mrsu/304_DB_Zyuzin_VV
+ * branch            master     -> FETCH_HEAD
+ * branch            master     -> FETCH_HEAD
+Уже актуально.
+error: внешний репозиторий student уже существует
+error: внешний репозиторий student уже существует
+Из https://github.com/kiyoukasu1getsu/304_DB_Zyuzin_VV
+Из https://github.com/kiyoukasu1getsu/304_DB_Zyuzin_VV
+ * [новая ветка]     Task05     -> student/Task05
+ * [новая ветка]     Task05     -> student/Task05
+Merge made by the 'ort' strategy.
+ Task05/data_add.sql  |  54 +++++++++++++++++++++
+ Task05/db_init.sql   | 135 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ Task05/db_schema.jpg | Bin 0 -> 79999 bytes
+ 3 files changed, 189 insertions(+)
+ create mode 100644 Task05/data_add.sql
+ create mode 100644 Task05/db_init.sql
+ create mode 100644 Task05/db_schema.jpg
+--------------------------------------------------
+Task:  /home/andrey/labs/DB/304_DB_Zyuzin_VV/Task05
+--------------------------------------------------
+Check path: db_init.sql
+--------------------------------------------------
+Check path: data_add.sql
+PRAGMA foreign_keys = ON;
+BEGIN TRANSACTION;
+
+INSERT OR IGNORE INTO occupations (name) VALUES ('student');
+
+INSERT INTO users (first_name, last_name, email, gender, occupation_id)
+VALUES 
+    ('Vitaliy', 'Zyuzin', 'vitaliy.zyuzin@gmail.com', 'male', (SELECT id FROM occupations WHERE name = 'student')),
+    ('Evgeniy', 'Igushkin', 'evgeniy.igushkin@gmail.com', 'male', (SELECT id FROM occupations WHERE name = 'student')),
+    ('Kirill', 'Efimkin', 'kirill.efimkin@gmail.com', 'male', (SELECT id FROM occupations WHERE name = 'student')),
+    ('Maxim', 'Denisov', 'maxim.denisov@gmail.com', 'female', (SELECT id FROM occupations WHERE name = 'student')),
+    ('Alexey', 'Voronin', 'alexey.voronin@gmail.com', 'male', (SELECT id FROM occupations WHERE name = 'student'));
+
+INSERT OR IGNORE INTO genres (name) VALUES ('Sci-Fi'), ('Comedy'), ('Drama');
+
+INSERT INTO movies (title, year) VALUES 
+    ('Dune: Part Two', 2024),
+    ('Deadpool & Wolverine', 2024),
+    ('Oppenheimer', 2023);
+
+INSERT OR IGNORE INTO movie_genres (movie_id, genre_id)
+VALUES 
+    (
+        (SELECT id FROM movies WHERE title = 'Dune: Part Two' AND year = 2024 LIMIT 1),
+        (SELECT id FROM genres WHERE name = 'Sci-Fi')
+    ),
+    (
+        (SELECT id FROM movies WHERE title = 'Deadpool & Wolverine' AND year = 2024 LIMIT 1),
+        (SELECT id FROM genres WHERE name = 'Comedy')
+    ),
+    (
+        (SELECT id FROM movies WHERE title = 'Oppenheimer' AND year = 2023 LIMIT 1),
+        (SELECT id FROM genres WHERE name = 'Drama')
+    );
+
+INSERT INTO ratings (user_id, movie_id, rating)
+VALUES 
+    (
+        (SELECT id FROM users WHERE email = 'vitaliy.zyuzin@gmail.com'),
+        (SELECT id FROM movies WHERE title = 'Dune: Part Two' AND year = 2024 LIMIT 1),
+        5.0
+    ),
+    (
+        (SELECT id FROM users WHERE email = 'vitaliy.zyuzin@gmail.com'),
+        (SELECT id FROM movies WHERE title = 'Deadpool & Wolverine' AND year = 2024 LIMIT 1),
+        4.5
+    ),
+    (
+        (SELECT id FROM users WHERE email = 'vitaliy.zyuzin@gmail.com'),
+        (SELECT id FROM movies WHERE title = 'Oppenheimer' AND year = 2023 LIMIT 1),
+        4.8
+    );
+
+COMMIT;
+--------------------------------------------------
+Check path: db_schema.jpg
+--------------------------------------------------
+Run: sqlite3 test.db .read db_init.sql
+memory
+--------------------------------------------------
+Run: sqlite3 test.db select count(*) from users
+943
+--------------------------------------------------
+Total ok: 5
+Total error: 0
+--------------------------------------------------
+/home/andrey/labs/DB/304_DB_Zyuzin_VV
+Task05
+Task from branch: Task05
+Creation date: 11/13/2026 20:31:20
+To github.com-mrsu:andpop-mrsu/304_DB_Zyuzin_VV.git
+To github.com-mrsu:andpop-mrsu/304_DB_Zyuzin_VV.git
+   082009a..4107a15  master -> master
+   082009a..4107a15  master -> master
 **********************
 PowerShell transcript end
-End time: 20261101220820
+End time: 20261114134506
 **********************

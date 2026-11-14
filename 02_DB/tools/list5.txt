@@ -1,6 +1,5 @@
-304_DB_Sergeeva_OD
-304_DB_Tumajkina_DA
-304_DB_Shagilov_KD
-304_DB_Shevolaev_IV
-304_DB_Yambaev_KN
-304_DB_Yastrebcev_DN
+304_DB_Tuzhilkin_EV
+304_DB_Fedorova_DA
+304_DB_CHadin_EYU
+304_DB_CHelnakov_DS
+

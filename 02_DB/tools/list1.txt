@@ -1,6 +1,6 @@
-304_DB_Aksenov_RM
-304_DB_Artemev_DA
-304_DB_Afonkin_DE
-304_DB_Geraskin_RG
-304_DB_Dolya_OA
+304_DB_Ariskin_IV
+304_DB_Bajol_AA
+304_DB_Bashmakov_MI
+304_DB_Berman_IA
+304_DB_Veldyaskin_GV
 
