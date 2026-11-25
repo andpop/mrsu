@@ -22,7 +22,7 @@
 * * *
 ### Требования к оформлению и коду
 * Работать нужно в ветке Task06 Git-репозитория.
-* В каталоге Task05 должны быть три файла: db_init.sql, data_add.sql и db_schema.jpg.
+* В каталоге Task06 должны быть три файла: db_init.sql, data_add.sql и db_schema.jpg.
 
 * * *
 
